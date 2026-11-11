@@ -10,7 +10,8 @@ that file disagree, the file wins.
 
 PHASE = 1                         # 0 kit | 1 pilot | 2 batch
 EPISODES = P005 P004 P002 P078 P055 P006
-LOOKS = F-tiltshift-diorama, E-flat-isometric-2.5D, B-two-colour-print   # phase 1 only: two episodes per look
+LOOKS = clay-diorama-tiltshift x4, flat-isometric-2.5D x1, two-colour-print x1   # phase 1 only
+REFERENCE = https://claude.ai/artifact/8K7FzQ6tWSwsx17kf2xMhq  (rated 7/10 by the director; you must beat it)
 
 Work on a branch named trailers/<phase>-<first-episode>. Do not edit files outside
 trailers/, and do not edit trailers/_kit/ unless PHASE = 0. Do not ask questions;
@@ -36,9 +37,22 @@ PHASE 1 and 2 — for each episode, in this order, without skipping:
    economic_question, ending) and, if present, episodes/<P>/brief.md and claims.csv.
    If brief.md has a G0 package, the trailer IS its "first 30 seconds"; do not invent
    a different hook.
+1b. Reference. Read the "기준작" section of production/TRAILERS.md. Keep its look grammar
+   (clay-toy diorama, depth-buffer tilt-shift blur as the last pass, props stepped at
+   15 Hz while the camera moves in continuous time, cuts locked to spoken words, the
+   shortest cut and an audio dropout right before the hit). Do NOT copy its omnibus
+   structure or its subjects: one trailer is one event with one protagonist object.
 2. Five-line spine, written into trailer.json before any code: the one question;
    the opening promise and the closing line; the protagonist object that stays in
    every shot; the one state change the viewer will see; the sound motif.
+2b. Narration. Write 60-75 English words in 4-6 sentences, for the ear: one idea per
+   sentence, concrete nouns, no jargon, the last sentence is the question. Synthesize
+   each sentence with a free local TTS (kokoro-onnx or equivalent; no paid API), save
+   vo/<n>.ogg, and write vo/timeline.json with word-level start/end times. Transcribe
+   the audio back (faster-whisper or equivalent) and compare with the script; fix
+   mispronounced words by respelling. timeline.json is the single source of timing for
+   shots, captions, hit-stops and sound cues. If no TTS can be installed, stop and
+   report that; do not ship a silent trailer.
 3. Shot list: 5-8 shots, each {start, length, shot size, camera move, cut type,
    reason for the cut, sound cue}. Shortest cut right before the peak.
 4. Technique. Pick one hero technique and at most two supporting ones from
@@ -54,6 +68,9 @@ PHASE 1 and 2 — for each episode, in this order, without skipping:
 7. Run verify.mjs. If it fails, fix and re-run at most twice. If it still fails,
    leave status FAILED with the reason. Never mark a failed trailer as passed and
    never loosen verify.mjs.
+7b. Sound. 8-14 synthesized effects tied to visible events (contact, ignition, cut,
+   stop), at most 6 kinds, same frame as the event. One motif stated, varied, resolved.
+   Silence for 0.3-0.5 s before the peak. Duck music under narration.
 8. Append one line to trailers/ledger.json: look, hero id, palette, transition,
    sound motif, verify numbers. Before choosing for the next episode, read the
    ledger: within one look, do not repeat the same hero technique or transition in
@@ -76,7 +93,7 @@ Hard rules
 Report (one block per episode, nothing else)
 1. Spine (5 lines) and look.
 2. Table: shot | hero id (+support) | technique in one sentence | how it was used.
-3. Sound: cue count and kinds.
+3. Narration script, word count, transcription match rate. Sound: cue count and kinds.
 4. verify.mjs output verbatim.
 5. What you did not verify.
 Then regenerate trailers/index.html, commit, push the branch and open a pull request

@@ -20,7 +20,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "INCIDENT",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 31,
+      "season": 6,
+      "note": null
+    }
   },
   {
     "p_id": "P002",
@@ -43,7 +53,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "A",
+      "door": "PROCESS",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 3,
+      "season": 1,
+      "note": null
+    }
   },
   {
     "p_id": "P003",
@@ -66,7 +86,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "A",
+      "door": "AI",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 17,
+      "season": 3,
+      "note": null
+    }
   },
   {
     "p_id": "P004",
@@ -89,7 +119,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "A",
+      "door": "COMPANY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 2,
+      "season": 1,
+      "note": null
+    }
   },
   {
     "p_id": "P005",
@@ -112,7 +152,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "REWORK_REQUIRED"
+    "title_review_status": "REWORK_REQUIRED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "A",
+      "door": "INCIDENT",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 1,
+      "season": 1,
+      "note": null
+    }
   },
   {
     "p_id": "P006",
@@ -135,7 +185,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "A",
+      "door": "INCIDENT",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 6,
+      "season": 1,
+      "note": null
+    }
   },
   {
     "p_id": "P007",
@@ -158,7 +218,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "PROCESS",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 29,
+      "season": 5,
+      "note": "Veritasium이 대형 히트. 다른 각도 확보 전 보류"
+    }
   },
   {
     "p_id": "P008",
@@ -181,7 +251,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "PROCESS",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 35,
+      "season": 6,
+      "note": null
+    }
   },
   {
     "p_id": "P009",
@@ -202,7 +282,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "C",
+      "door": "PROCESS",
+      "status": "MERGED",
+      "merged_into": "P038",
+      "release_queue": null,
+      "season": null,
+      "note": null
+    }
   },
   {
     "p_id": "P010",
@@ -225,7 +315,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "A",
+      "door": "MONEY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 24,
+      "season": 4,
+      "note": null
+    }
   },
   {
     "p_id": "P011",
@@ -248,7 +348,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "NO_DOOR",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 32,
+      "season": 6,
+      "note": null
+    }
   },
   {
     "p_id": "P012",
@@ -271,7 +381,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "C",
+      "door": "NO_DOOR",
+      "status": "LATE",
+      "merged_into": null,
+      "release_queue": null,
+      "season": null,
+      "note": null
+    }
   },
   {
     "p_id": "P013",
@@ -295,7 +415,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "NO_DOOR",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 38,
+      "season": 7,
+      "note": null
+    }
   },
   {
     "p_id": "P014",
@@ -318,7 +448,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "NO_DOOR",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 43,
+      "season": 8,
+      "note": null
+    }
   },
   {
     "p_id": "P015",
@@ -342,7 +482,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "NO_DOOR",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 48,
+      "season": 8,
+      "note": null
+    }
   },
   {
     "p_id": "P016",
@@ -365,7 +515,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "C",
+      "door": "NO_DOOR",
+      "status": "LATE",
+      "merged_into": null,
+      "release_queue": null,
+      "season": null,
+      "note": null
+    }
   },
   {
     "p_id": "P017",
@@ -388,7 +548,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "C",
+      "door": "NO_DOOR",
+      "status": "LATE",
+      "merged_into": null,
+      "release_queue": null,
+      "season": null,
+      "note": null
+    }
   },
   {
     "p_id": "P018",
@@ -411,7 +581,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "C",
+      "door": "NO_DOOR",
+      "status": "LATE",
+      "merged_into": null,
+      "release_queue": null,
+      "season": null,
+      "note": null
+    }
   },
   {
     "p_id": "P019",
@@ -434,7 +614,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "NO_DOOR",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 53,
+      "season": 9,
+      "note": null
+    }
   },
   {
     "p_id": "P020",
@@ -457,7 +647,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "PROCESS",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 40,
+      "season": 7,
+      "note": null
+    }
   },
   {
     "p_id": "P021",
@@ -480,7 +680,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "A",
+      "door": "PROCESS",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 15,
+      "season": 3,
+      "note": null
+    }
   },
   {
     "p_id": "P022",
@@ -503,7 +713,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "NO_DOOR",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 57,
+      "season": 10,
+      "note": null
+    }
   },
   {
     "p_id": "P023",
@@ -526,7 +746,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "PROCESS",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 45,
+      "season": 8,
+      "note": null
+    }
   },
   {
     "p_id": "P024",
@@ -549,7 +779,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "NO_DOOR",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 61,
+      "season": 11,
+      "note": null
+    }
   },
   {
     "p_id": "P025",
@@ -572,7 +812,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "C",
+      "door": "NO_DOOR",
+      "status": "LATE",
+      "merged_into": null,
+      "release_queue": null,
+      "season": null,
+      "note": null
+    }
   },
   {
     "p_id": "P026",
@@ -595,7 +845,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "PROCESS",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 50,
+      "season": 9,
+      "note": null
+    }
   },
   {
     "p_id": "P027",
@@ -618,7 +878,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "C",
+      "door": "PROCESS",
+      "status": "LATE",
+      "merged_into": null,
+      "release_queue": null,
+      "season": null,
+      "note": null
+    }
   },
   {
     "p_id": "P028",
@@ -641,7 +911,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "INCIDENT",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 37,
+      "season": 7,
+      "note": null
+    }
   },
   {
     "p_id": "P029",
@@ -662,7 +942,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "MONEY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 30,
+      "season": 5,
+      "note": null
+    }
   },
   {
     "p_id": "P030",
@@ -683,7 +973,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "C",
+      "door": "PROCESS",
+      "status": "HOLD_PUBLIC_SOURCES",
+      "merged_into": null,
+      "release_queue": null,
+      "season": null,
+      "note": null
+    }
   },
   {
     "p_id": "P031",
@@ -706,7 +1006,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "A",
+      "door": "PROCESS",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 8,
+      "season": 2,
+      "note": null
+    }
   },
   {
     "p_id": "P032",
@@ -729,7 +1039,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "A",
+      "door": "PROCESS",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 26,
+      "season": 5,
+      "note": "Veritasium·Branch Education이 다룸. '한 회사가 아니다' 각도로만"
+    }
   },
   {
     "p_id": "P033",
@@ -752,7 +1072,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "PROCESS",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 55,
+      "season": 10,
+      "note": null
+    }
   },
   {
     "p_id": "P034",
@@ -775,7 +1105,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "PROCESS",
+      "status": "HOLD_PUBLIC_SOURCES",
+      "merged_into": null,
+      "release_queue": null,
+      "season": null,
+      "note": null
+    }
   },
   {
     "p_id": "P035",
@@ -798,7 +1138,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "PROCESS",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 59,
+      "season": 10,
+      "note": null
+    }
   },
   {
     "p_id": "P036",
@@ -821,7 +1171,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "C",
+      "door": "PROCESS",
+      "status": "LATE",
+      "merged_into": null,
+      "release_queue": null,
+      "season": null,
+      "note": null
+    }
   },
   {
     "p_id": "P037",
@@ -842,7 +1202,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "C",
+      "door": "PROCESS",
+      "status": "HOLD_PUBLIC_SOURCES",
+      "merged_into": null,
+      "release_queue": null,
+      "season": null,
+      "note": null
+    }
   },
   {
     "p_id": "P038",
@@ -863,7 +1233,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "C",
+      "door": "PROCESS",
+      "status": "HOLD_PUBLIC_SOURCES",
+      "merged_into": null,
+      "release_queue": null,
+      "season": null,
+      "note": null
+    }
   },
   {
     "p_id": "P039",
@@ -884,7 +1264,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "C",
+      "door": "PROCESS",
+      "status": "HOLD_PUBLIC_SOURCES",
+      "merged_into": null,
+      "release_queue": null,
+      "season": null,
+      "note": null
+    }
   },
   {
     "p_id": "P040",
@@ -905,7 +1295,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "C",
+      "door": "PROCESS",
+      "status": "HOLD_PUBLIC_SOURCES",
+      "merged_into": null,
+      "release_queue": null,
+      "season": null,
+      "note": null
+    }
   },
   {
     "p_id": "P041",
@@ -928,7 +1328,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "A",
+      "door": "PROCESS",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 12,
+      "season": 2,
+      "note": null
+    }
   },
   {
     "p_id": "P042",
@@ -951,7 +1361,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "PROCESS",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 63,
+      "season": 11,
+      "note": null
+    }
   },
   {
     "p_id": "P043",
@@ -974,7 +1394,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "PROCESS",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 66,
+      "season": 11,
+      "note": null
+    }
   },
   {
     "p_id": "P044",
@@ -998,7 +1428,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "A",
+      "door": "COMPANY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 20,
+      "season": 4,
+      "note": null
+    }
   },
   {
     "p_id": "P045",
@@ -1021,7 +1461,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "COMPANY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 28,
+      "season": 5,
+      "note": null
+    }
   },
   {
     "p_id": "P046",
@@ -1044,7 +1494,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "A",
+      "door": "COMPANY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 14,
+      "season": 3,
+      "note": null
+    }
   },
   {
     "p_id": "P047",
@@ -1065,7 +1525,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "AI",
+      "status": "HOLD_PUBLIC_SOURCES",
+      "merged_into": null,
+      "release_queue": null,
+      "season": null,
+      "note": null
+    }
   },
   {
     "p_id": "P048",
@@ -1086,7 +1556,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "PROCESS",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 69,
+      "season": 12,
+      "note": null
+    }
   },
   {
     "p_id": "P049",
@@ -1107,7 +1587,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "PROCESS",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 71,
+      "season": 12,
+      "note": null
+    }
   },
   {
     "p_id": "P050",
@@ -1128,7 +1618,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "AI",
+      "status": "HOLD_PUBLIC_SOURCES",
+      "merged_into": null,
+      "release_queue": null,
+      "season": null,
+      "note": null
+    }
   },
   {
     "p_id": "P051",
@@ -1151,7 +1651,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "A",
+      "door": "COMPANY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 22,
+      "season": 4,
+      "note": null
+    }
   },
   {
     "p_id": "P052",
@@ -1174,7 +1684,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "COMPANY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 34,
+      "season": 6,
+      "note": null
+    }
   },
   {
     "p_id": "P053",
@@ -1198,7 +1718,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "COMPANY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 39,
+      "season": 7,
+      "note": null
+    }
   },
   {
     "p_id": "P054",
@@ -1221,7 +1751,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "C",
+      "door": "NO_DOOR",
+      "status": "LATE",
+      "merged_into": null,
+      "release_queue": null,
+      "season": null,
+      "note": null
+    }
   },
   {
     "p_id": "P055",
@@ -1244,7 +1784,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "A",
+      "door": "AI",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 5,
+      "season": 1,
+      "note": null
+    }
   },
   {
     "p_id": "P056",
@@ -1267,7 +1817,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "A",
+      "door": "AI",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 13,
+      "season": 3,
+      "note": null
+    }
   },
   {
     "p_id": "P057",
@@ -1290,7 +1850,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "A",
+      "door": "AI",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 7,
+      "season": 2,
+      "note": null
+    }
   },
   {
     "p_id": "P058",
@@ -1313,7 +1883,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "A",
+      "door": "INCIDENT",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 10,
+      "season": 2,
+      "note": null
+    }
   },
   {
     "p_id": "P059",
@@ -1334,7 +1914,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "COMPANY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 44,
+      "season": 8,
+      "note": null
+    }
   },
   {
     "p_id": "P060",
@@ -1355,7 +1945,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "COMPANY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 49,
+      "season": 9,
+      "note": null
+    }
   },
   {
     "p_id": "P061",
@@ -1378,7 +1978,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "A",
+      "door": "COMPANY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 18,
+      "season": 3,
+      "note": null
+    }
   },
   {
     "p_id": "P062",
@@ -1401,7 +2011,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "COMPANY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 54,
+      "season": 9,
+      "note": null
+    }
   },
   {
     "p_id": "P063",
@@ -1424,7 +2044,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "COMPANY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 58,
+      "season": 10,
+      "note": null
+    }
   },
   {
     "p_id": "P064",
@@ -1448,7 +2078,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "A",
+      "door": "COMPANY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 25,
+      "season": 5,
+      "note": null
+    }
   },
   {
     "p_id": "P065",
@@ -1471,7 +2111,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "COMPANY",
+      "status": "MERGED",
+      "merged_into": "P004",
+      "release_queue": null,
+      "season": null,
+      "note": null
+    }
   },
   {
     "p_id": "P066",
@@ -1494,7 +2144,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "COMPANY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 62,
+      "season": 11,
+      "note": null
+    }
   },
   {
     "p_id": "P067",
@@ -1517,7 +2177,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "COMPANY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 65,
+      "season": 11,
+      "note": null
+    }
   },
   {
     "p_id": "P068",
@@ -1540,7 +2210,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "COMPANY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 68,
+      "season": 12,
+      "note": null
+    }
   },
   {
     "p_id": "P069",
@@ -1563,7 +2243,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "COMPANY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 70,
+      "season": 12,
+      "note": null
+    }
   },
   {
     "p_id": "P070",
@@ -1584,7 +2274,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "COMPANY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 72,
+      "season": 12,
+      "note": null
+    }
   },
   {
     "p_id": "P071",
@@ -1607,7 +2307,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "MONEY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 36,
+      "season": 6,
+      "note": null
+    }
   },
   {
     "p_id": "P072",
@@ -1631,7 +2341,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "INCIDENT",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 42,
+      "season": 7,
+      "note": null
+    }
   },
   {
     "p_id": "P073",
@@ -1654,7 +2374,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "A",
+      "door": "COMPANY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 9,
+      "season": 2,
+      "note": null
+    }
   },
   {
     "p_id": "P074",
@@ -1677,7 +2407,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "MONEY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 41,
+      "season": 7,
+      "note": null
+    }
   },
   {
     "p_id": "P075",
@@ -1700,7 +2440,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "C",
+      "door": "MONEY",
+      "status": "LATE",
+      "merged_into": null,
+      "release_queue": null,
+      "season": null,
+      "note": null
+    }
   },
   {
     "p_id": "P076",
@@ -1723,7 +2473,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "A",
+      "door": "MONEY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 16,
+      "season": 3,
+      "note": null
+    }
   },
   {
     "p_id": "P077",
@@ -1746,7 +2506,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "MONEY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 46,
+      "season": 8,
+      "note": null
+    }
   },
   {
     "p_id": "P078",
@@ -1769,7 +2539,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "A",
+      "door": "COMPANY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 4,
+      "season": 1,
+      "note": null
+    }
   },
   {
     "p_id": "P079",
@@ -1790,7 +2570,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "A",
+      "door": "MONEY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 11,
+      "season": 2,
+      "note": null
+    }
   },
   {
     "p_id": "P080",
@@ -1811,7 +2601,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "MONEY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 51,
+      "season": 9,
+      "note": null
+    }
   },
   {
     "p_id": "P081",
@@ -1834,7 +2634,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "INCIDENT",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 47,
+      "season": 8,
+      "note": null
+    }
   },
   {
     "p_id": "P082",
@@ -1857,7 +2667,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "INCIDENT",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 52,
+      "season": 9,
+      "note": null
+    }
   },
   {
     "p_id": "P083",
@@ -1880,7 +2700,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "MONEY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 56,
+      "season": 10,
+      "note": null
+    }
   },
   {
     "p_id": "P084",
@@ -1903,7 +2733,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "C",
+      "door": "INCIDENT",
+      "status": "MERGED",
+      "merged_into": "P005",
+      "release_queue": null,
+      "season": null,
+      "note": null
+    }
   },
   {
     "p_id": "P085",
@@ -1926,7 +2766,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "MONEY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 60,
+      "season": 10,
+      "note": null
+    }
   },
   {
     "p_id": "P086",
@@ -1949,7 +2799,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "AI",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 27,
+      "season": 5,
+      "note": null
+    }
   },
   {
     "p_id": "P087",
@@ -1970,7 +2830,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "MONEY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 64,
+      "season": 11,
+      "note": null
+    }
   },
   {
     "p_id": "P088",
@@ -1991,7 +2861,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "AI",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 33,
+      "season": 6,
+      "note": null
+    }
   },
   {
     "p_id": "P089",
@@ -2014,7 +2894,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "A",
+      "door": "AI",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 23,
+      "season": 4,
+      "note": null
+    }
   },
   {
     "p_id": "P090",
@@ -2035,7 +2925,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "A",
+      "door": "MONEY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 21,
+      "season": 4,
+      "note": null
+    }
   },
   {
     "p_id": "P091",
@@ -2058,7 +2958,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "C",
+      "door": "NO_DOOR",
+      "status": "LATE",
+      "merged_into": null,
+      "release_queue": null,
+      "season": null,
+      "note": null
+    }
   },
   {
     "p_id": "P092",
@@ -2081,7 +2991,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "C",
+      "door": "PROCESS",
+      "status": "MERGED",
+      "merged_into": "P007",
+      "release_queue": null,
+      "season": null,
+      "note": null
+    }
   },
   {
     "p_id": "P093",
@@ -2104,7 +3024,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "PROCESS",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 73,
+      "season": 13,
+      "note": null
+    }
   },
   {
     "p_id": "P094",
@@ -2127,7 +3057,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "MONEY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 67,
+      "season": 12,
+      "note": null
+    }
   },
   {
     "p_id": "P095",
@@ -2148,7 +3088,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "PROCESS",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 74,
+      "season": 13,
+      "note": null
+    }
   },
   {
     "p_id": "P096",
@@ -2169,7 +3119,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "C",
+      "door": "PROCESS",
+      "status": "LATE",
+      "merged_into": null,
+      "release_queue": null,
+      "season": null,
+      "note": null
+    }
   },
   {
     "p_id": "P097",
@@ -2190,7 +3150,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "C",
+      "door": "PROCESS",
+      "status": "HOLD_PUBLIC_SOURCES",
+      "merged_into": null,
+      "release_queue": null,
+      "season": null,
+      "note": null
+    }
   },
   {
     "p_id": "P098",
@@ -2211,7 +3181,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "B",
+      "door": "PROCESS",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 75,
+      "season": 13,
+      "note": null
+    }
   },
   {
     "p_id": "P099",
@@ -2232,7 +3212,17 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "A",
+      "door": "AI",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "release_queue": 19,
+      "season": 4,
+      "note": null
+    }
   },
   {
     "p_id": "P100",
@@ -2255,6 +3245,16 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12",
+      "tier": "C",
+      "door": "NO_DOOR",
+      "status": "LATE",
+      "merged_into": null,
+      "release_queue": null,
+      "season": null,
+      "note": null
+    }
   }
 ]

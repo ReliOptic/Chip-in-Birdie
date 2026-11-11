@@ -12,6 +12,7 @@
 | [채널](channel/CHANNEL.md) | 누구에게 무엇을 약속하는가, 고정 값은 무엇인가 |
 | [첫 유입과 그립](channel/INFLOW.md) | 어느 채널의 시청자가 처음 들어오고 무엇으로 붙잡는가 |
 | [100편 검토](editorial/SLATE-REVIEW.md) | 편별 등급과 편성표의 문제 |
+| [게시 대기열](editorial/QUEUE.md) | 75편의 게시 순서와 보류·병합·후순위 |
 | [편성](editorial/PROGRAMMING.md) | 시즌 1에 무엇을 어떤 순서로 내는가 |
 | [편집 기준](editorial/PLAYBOOK.md) | 패키지·도입·비트·리뷰 판정 |
 | [작업 절차](ops/WORKFLOW.md) | 관문 G0–G5, 역할, CLI |
