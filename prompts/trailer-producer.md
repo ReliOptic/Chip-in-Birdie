@@ -9,7 +9,7 @@ before anything else. production/TRAILERS.md is the contract; if this prompt and
 that file disagree, the file wins.
 
 PHASE = 1                         # 0 kit | 1 pilot | 2 batch
-EPISODES = P004 P055 P046 P031 P076 P078
+EPISODES = P004 P061 P073 P066 P137 P070
 LOOKS = clay-diorama-tiltshift x4, flat-isometric-2.5D x1, two-colour-print x1   # phase 1 only
 REFERENCE = https://claude.ai/artifact/8K7FzQ6tWSwsx17kf2xMhq  (rated 7/10 by the director; you must beat it)
 
