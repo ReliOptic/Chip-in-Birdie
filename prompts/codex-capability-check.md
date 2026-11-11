@@ -21,6 +21,8 @@ GLOBAL RULES (apply to every test)
   window.__ready = true, and hides UI when the URL hash is #headless.
 - 16:9 canvas, 30 fps. English text only. No real company logos, no real people.
 - You cannot hear. Never describe how audio sounds. Report numbers only.
+- No explanatory labels or titles on screen ("03 / DEPTH STUDY"); only captions and
+  the text a test asks for. Captions are plain text on the picture, no boxes or pills.
 - Never write that something "looks good". For each snapshot, write one line saying
   what is literally visible.
 
@@ -38,8 +40,10 @@ scrub bar, seeded rand/hash, spring and easing helpers, __seek/__meta/__ready) a
 kit/verify.mjs, which for a given test folder: loads the page headless, checks for
 console errors, renders t = 8 evenly spaced times to shots/*.png, renders the first
 time twice and compares bytes, measures seek-to-pixels time over 20 seeks (report
-median and p95 in ms), and writes result.json. verify.mjs must exit non-zero on any
-failure. All later tests use this kit.
+median and p95 in ms), and writes result.json. Frame time is recorded, not judged:
+the environment is likely software WebGL and the output is rendered offline, so do
+not fail a test on speed unless p95 exceeds 250 ms. verify.mjs must exit non-zero on
+any other failure. All later tests use this kit.
 
 T2 TYPE IN MOTION (8 s, Canvas 2D)
 Sentence: "The company that makes everyone's chips sells none of its own."
@@ -56,8 +60,10 @@ wafer the size of a coin leaning beside it for scale, soft shadows.
 Required: (a) tilt-shift depth of field as a final full-screen pass computed from
 the depth buffer; (b) props animate stepped at 15 Hz while the camera moves in
 continuous time; (c) one camera push-in and one focus rack from building to wafer;
-(d) <= 200k triangles, no per-frame geometry rebuild. Report triangle count and
-p95 frame time.
+(d) between 30k and 200k triangles, no per-frame geometry rebuild; (e) the table is
+dressed: at least 12 distinct props besides the two heroes, so no frame is an object
+alone on an empty field; (f) scene and depth rendered at full canvas resolution.
+Report triangle count, prop count and p95 frame time.
 
 T5 BAKED SIMULATION (6 s)
 400 dust particles settling onto a wafer surface with collisions against the
@@ -82,12 +88,14 @@ and sum in fixed order in JS. Bake twice and compare a hash. Report cue table, h
 equality, peak and RMS level in dBFS.
 
 T9 NARRATION (attach to T7)
-Narration text (33 words): "Nvidia designs the chip. Apple designs the chip. Neither
+Narration text (35 words): "Nvidia designs the chip. Apple designs the chip. Neither
 of them makes it. One company does, on one island, and it has never sold a chip
 under its own name. Why would anyone trust it?"
 Use the local TTS from T0. Save vo/*.ogg and vo/timeline.json with word start/end
 times. Transcribe it back with the local speech-to-text and report word match rate.
 Cuts and captions in T7 must then follow timeline.json. Duck music under speech.
+If the narration must fit a duration, re-synthesize at a different speed; never
+resample in a way that changes pitch.
 If no TTS could be installed, mark T9 as BLOCKED with the reason; do not fake it.
 
 T10 TECHNIQUE BORROWING
