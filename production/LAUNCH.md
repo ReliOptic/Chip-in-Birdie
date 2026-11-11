@@ -71,5 +71,6 @@
 
 | 날짜 | 한 일 |
 |---|---|
+| 2026-11-12 | 100편 등급 검토(`editorial/SLATE-REVIEW.md`), 첫 유입·그립·연출 기준(`channel/INFLOW.md`) |
 | 2026-11-12 | 30초 예고편 트랙 추가(CIB-046). 계약 `TRAILERS.md`, Codex 프롬프트 `prompts/trailer-producer.md` |
 | 2026-11-11 | 런북 작성. P005 G0·G1·G2 초안, P004·P002 G0 초안 작성. P005를 TASK-001로 제출, 리뷰 대기 |
