@@ -1,23 +1,54 @@
 {
-  "task_id": "TASK-001",
-  "episode_id": "H095",
-  "title": "기존 H095 자산 회수와 채널 관객 기준 재검토",
-  "objective": "기존 영상·음성·대본의 실제 리비전을 확인하고, 시사·산업 맥락의 사건 흥미와 시청 보상이 공통 관객에게 성립하는지 판단한다. 새 제목만 붙여 생산으로 넘기지 않는다.",
-  "audience_ref": "channel/audience.json",
-  "status": "OPEN",
-  "required_review_roles": [
-    "evidence",
-    "editorial",
-    "viewer"
-  ],
   "acceptance_evidence": [
     "현재 자산 위치·해시 또는 미확보 사유",
     "기술·공급·고객 시간차의 주장별 근거",
     "채널 관객 관점의 유지/수정/보류 판단과 이유"
   ],
-  "claim": null,
-  "revision": 0,
-  "current_delivery_id": null,
-  "history": [],
-  "release_implication": "none: task completion is not video READY or publication"
+  "audience_ref": "channel/audience.json",
+  "claim": {
+    "actor": "claude-chief-producer",
+    "claimed_at": "2026-11-11T15:01:30.406565Z",
+    "lease_expires_at": "2026-11-11T19:01:30.406586Z",
+    "model": "claude-fable-5-2",
+    "session_id": "session_01PGnDYYxzhNZtTcKkxmFo3L",
+    "session_id_source": "explicit"
+  },
+  "current_delivery_id": "TASK-001-r0001",
+  "episode_id": "H095",
+  "history": [
+    {
+      "actor": "claude-chief-producer",
+      "at": "2026-11-11T15:01:30.406604Z",
+      "claim": {
+        "actor": "claude-chief-producer",
+        "claimed_at": "2026-11-11T15:01:30.406565Z",
+        "lease_expires_at": "2026-11-11T19:01:30.406586Z",
+        "model": "claude-fable-5-2",
+        "session_id": "session_01PGnDYYxzhNZtTcKkxmFo3L",
+        "session_id_source": "explicit"
+      },
+      "event": "CLAIMED"
+    },
+    {
+      "actor": "claude-chief-producer",
+      "at": "2026-11-11T15:01:30.480917Z",
+      "bundle_sha256": "4f7b8a1014c5ff7729aa45a3b1748b296c07cf1b79cbe531a6e159e0af60ee7d",
+      "delivery_id": "TASK-001-r0001",
+      "event": "SUBMITTED",
+      "revision": 1
+    }
+  ],
+  "objective": "기존 영상·음성·대본의 실제 리비전을 확인하고, 시사·산업 맥락의 사건 흥미와 시청 보상이 공통 관객에게 성립하는지 판단한다. 새 제목만 붙여 생산으로 넘기지 않는다.",
+  "release_implication": "none: task completion is not video READY or publication",
+  "required_review_roles": [
+    "evidence",
+    "editorial",
+    "viewer"
+  ],
+  "revision": 1,
+  "scope": "episode",
+  "status": "IN_REVIEW",
+  "task_id": "TASK-001",
+  "title": "기존 H095 자산 회수와 채널 관객 기준 재검토",
+  "updated_at": "2026-11-11T15:01:30.480931Z"
 }

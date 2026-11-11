@@ -1,0 +1,37 @@
+{
+  "artifacts": [
+    {
+      "path": "episodes/P005/brief.md",
+      "sha256": "48dfe9b2ecc37b5f4d2a715aa1f2ee101e67117032584a3befaec903ef6f2e38",
+      "size_bytes": 3147,
+      "snapshot_path": "work/deliveries/TASK-001-r0001/artifacts/episodes/P005/brief.md"
+    },
+    {
+      "path": "episodes/P005/claims.csv",
+      "sha256": "8ed4a88bcb903d092fe3dec0100597c22baad393f74b0af2be019edfd36e80d0",
+      "size_bytes": 3588,
+      "snapshot_path": "work/deliveries/TASK-001-r0001/artifacts/episodes/P005/claims.csv"
+    },
+    {
+      "path": "episodes/P005/script.en.md",
+      "sha256": "cad0d43cfb2c4c27c13b67fcb02b6fc0190d236632f3a7f237b64f36542b328d",
+      "size_bytes": 6773,
+      "snapshot_path": "work/deliveries/TASK-001-r0001/artifacts/episodes/P005/script.en.md"
+    }
+  ],
+  "bundle_sha256": "4f7b8a1014c5ff7729aa45a3b1748b296c07cf1b79cbe531a6e159e0af60ee7d",
+  "delivery_id": "TASK-001-r0001",
+  "episode_id": "H095",
+  "manifest_sha256": "0b60c076bdec22f98fc8ae7c1621e9d5e686c2fb5000cb6cf81aee42cf630893",
+  "previous_delivery_id": null,
+  "producer": {
+    "actor": "claude-chief-producer",
+    "model": "claude-fable-5-2",
+    "session_id": "session_01PGnDYYxzhNZtTcKkxmFo3L"
+  },
+  "revision": 1,
+  "schema_version": "1.0",
+  "scope": "episode",
+  "submitted_at": "2026-11-11T15:01:30.476254Z",
+  "task_id": "TASK-001"
+}
