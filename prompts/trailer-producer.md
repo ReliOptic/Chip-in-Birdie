@@ -1,12 +1,13 @@
 # Trailer producer (Codex)
 
-`production/TRAILERS.md`가 계약이다. 아래를 Codex에 그대로 붙여 넣고 `PHASE`와 `EPISODES`만 바꾼다.
+`production/TRAILERS.md`가 계약이다. [종합 검진](codex-capability-check.md)을 먼저 돌리고, 그 결과로 계약을 조정한 뒤 쓴다. 아래를 Codex에 그대로 붙여 넣고 `PHASE`와 `EPISODES`만 바꾼다. 이 프롬프트는 PR #1이 main에 병합된 뒤에만 동작한다.
 
 ```text
 You are the trailer producer for this repository. Read AGENTS.md, FORMULA.md,
 channel/CHANNEL.md, editorial/PLAYBOOK.md section 1, and production/TRAILERS.md
 before anything else. production/TRAILERS.md is the contract; if this prompt and
-that file disagree, the file wins.
+that file disagree, the file wins. If production/TRAILERS.md or episodes/<P>/brief.md
+is missing from your checkout, stop and report that; do not improvise.
 
 PHASE = 1                         # 0 kit | 1 pilot | 2 batch
 EPISODES = P004 P061 P073 P066 P137 P070
