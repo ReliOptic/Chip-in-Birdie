@@ -1,145 +1,52 @@
-# 100편 편성 검토 (2026-11-12)
+# 100편 재편 (2026-11-12, 2차)
 
-유튜브 운영 관점의 1차 등급이다. 제목과 기획 필드만 보고 매겼고, 사실 검증과 예고편 채점 전이다. 예고편 선별 뒤 다시 매긴다.
+1차 검토는 "클릭될 것인가"로 등급을 매겼다. 감독의 지적으로 기준을 바꿨다: **그 일이 없었다면 오늘의 산업이 달랐는가.** 순서와 편별 기록은 [게시 대기열](QUEUE.md)과 `proposals.json`의 `slate_review`에 있다. 1차 검토 원문은 git 이력에 있다.
 
-이 검토는 2026-11-12에 감독이 받아들였다. 등급·상태·게시 순번은 `proposals.json`의 `slate_review`에 기록했고, 순서는 [게시 대기열](QUEUE.md)에 있다.
+## 기준
 
-## 등급 기준
-
-| 등급 | 뜻 | 편수 |
+| 무게 | 뜻 | 처리 |
 |---|---|---|
-| A | 비전공자가 아는 이름·사건에서 출발하고, 긴장이 한 문장에 있고, 메커니즘이 눈에 보인다. 개국 첫 26주의 후보 | 26 |
-| B | 내용은 성립한다. 입구(제목·도입)를 아는 이름 쪽으로 다시 잡아야 클릭된다 | 53 |
-| C | 단독으로는 유입이 어렵다: 추상적, 다른 편과 겹침, 현업 인접, 인지도 없는 초기사 | 21 |
+| 3 | 산업의 구조나 방향을 바꾼 결정·발명·사건 | 편성 |
+| 2 | 한 기술·회사의 전환점. 뒤의 편들이 기대는 일 | 편성, 뒤 순서 |
+| 1 | 원리 설명이나 공정 세부. 전환점이 아님 | 제외. 다른 편의 한 장면으로 |
+| 0 | 구조를 바꾸지 않은 사고·일화 | 제외 |
 
-## 판정
+무게 다음으로 보는 것: 기술 조건 → 선택 → 오늘의 결과가 한 편에 있는가, 아는 이름이 있는가, 뒤의 편들이 여기서 갈라지는가, 5년 뒤에도 유효한가, 공개 자료로 채울 수 있는가.
 
-**100편의 내용은 쓸 만하다. 순서와 포장이 유튜브용이 아니다.**
+## 결과
 
-1. **순서가 교과서다.** 10막이 주제별로 묶여 있어 02막(초기 반도체사)과 03막(공정)에 인지도 낮은 편이 연속으로 몰린다. 게시 순서는 막이 아니라 등급과 연결로 정한다.
-2. **A급은 다섯 군데에 몰려 있다.** AI·GPU(P003 P055–P057 P089 P099), 아는 회사의 선택(P004 P046 P073 P078 P061 P064), 사고·사건(P005 P006 P058), 눈에 보이는 공정(P002 P021 P031 P041), 돈·무역(P076 P079 P090). 이 다섯이 채널의 입구다.
-3. **제목의 틀이 좁다.** 100편 중 52편이 The/A로 시작하고 19편이 'The X That Y' 꼴이다. 피드에 나란히 놓이면 구분이 안 된다. G0에서 틀을 섞는다: 사건 서술, 숫자 대비, 고유명사 + 동사.
-4. **겹치는 편이 있다.** P004/P065, P005/P084/P082, P007/P092, P009/P038. 합치면 실질 편수는 95 안팎이다.
-5. **현업·고객사 인접 편이 9편이다.** P030 P034 P037–P040 P047 P050 P097. 공개 출처만으로 채워질 때까지 편성하지 않는다.
-6. **큰 채널이 이미 다룬 소재가 있다.** 블루 LED(P007), EUV(P032). 같은 이야기를 더 작게 만들면 진다. 그 영상이 지나간 한 장면을 8분으로 판다.
-7. **100편 전부 출처 미확인이다.** 등급은 흥미의 등급이지 사실의 등급이 아니다.
+| | 편수 |
+|---|---|
+| 기존 100편 중 유지 | 52 |
+| 제외 | 22 |
+| 다른 편에 병합 | 16 |
+| 보류 (현업·고객사 인접) | 10 |
+| 신규 추가 (P101–P148) | 48 |
+| **새 100편** | **100** (무게 3: 77, 무게 2: 22, 피날레 1) |
 
-## 막별 분포
+## 제외한 것의 유형
 
-| 막 | A | B | C |
-|---|---|---|---|
-| 01 작동하는데 실패한다 | 6 | 3 | 1 |
-| 02 최초는 결승점이 아니다 | 0 | 6 | 4 |
-| 03 웨이퍼는 불량을 기억한다 | 1 | 6 | 3 |
-| 04 빛이 만든 오차 | 2 | 3 | 5 |
-| 05 기억의 가격 | 3 | 7 | 0 |
-| 06 코드는 기계를 붙잡는다 | 5 | 4 | 1 |
-| 07 지식은 누구의 공장에 있는가 | 2 | 8 | 0 |
-| 08 공장보다 느린 돈 | 4 | 5 | 1 |
-| 09 공급망에 마침표는 없다 | 2 | 7 | 1 |
-| 10 반도체의 다음 경계 | 1 | 4 | 5 |
+- **사고·일화:** 르네사스 화재(P005)와 그 계열(P081 P082 P084 P085 P086), 폴란드 컴퓨터(P001, 7400 편에 흡수).
+- **원리·공정 세부:** P012 P013 P014 P018 P028 P036 P048 P049 P095 P096 P098.
+- **실제 사례가 없는 가상의 역설:** P029 P071 P077 P080 P087 P088.
+- **같은 이야기의 조각:** 16편을 중심 편에 병합(예: Nvidia 3편 → 2편, EUV 3편 → 1편, 표면·산화막 2편 → 1편).
 
-## 편별 등급
+## 새로 넣은 것의 유형
 
-| 편 | 등급 | 작업 제목 | 메모 |
-|---|---|---|---|
-| P001 | B | The Polish Computer the USSR Never Bought | 기획 1번이지만 이름 인지도가 낮음. 개국용 아님 |
-| P002 | A | The Deliberately Distorted Photomask |  |
-| P003 | A | The Memory That Stalled the GPU | AI·GPU 입구 |
-| P004 | A | TSMC's No-Competition Promise |  |
-| P005 | A | One Fab Fire, Silent Car Factories |  |
-| P006 | A | Intel's Division Bug |  |
-| P007 | B | Blue Light at Last | Veritasium이 같은 소재로 대형 히트. 다른 각도가 없으면 보류 |
-| P008 | B | The Cost of Breaking Up a Chip |  |
-| P009 | C | Two Instruments, Two Verdicts | P038과 겹침, 추상적 |
-| P010 | A | Moore's Law Became a Factory Deadline |  |
-| P011 | B | The First Transistor's Second Problem |  |
-| P012 | C | The Crystal That Conducted More When Heated |  |
-| P013 | B | The Crystal That Made Radio Audible |  |
-| P014 | B | The Transistor Drawn Twenty Years Early |  |
-| P015 | B | The First Integrated Circuit Still Had Wires |  |
-| P016 | C | The Oxide Film That Saved the Transistor |  |
-| P017 | C | The Silicon Surface Holding Transistors Back |  |
-| P018 | C | More Voltage, Less Current |  |
-| P019 | B | The Charge That Became Memory |  |
-| P020 | B | When Memory Became a Camera |  |
-| P021 | A | One Speck of Dust, One Broken Chip | 보편적이고 눈에 보임 |
-| P022 | B | Radar's Demand for a Purer Crystal |  |
-| P023 | B | The Heat That Purified Silicon |  |
-| P024 | B | Why Silicon Replaced Germanium |  |
-| P025 | C | The Transistor That Aligned Itself |  |
-| P026 | B | Why Copper Threatened Silicon |  |
-| P027 | C | A Uniform Film Deep Inside the Chip |  |
-| P028 | B | The Culprit in the Wafer Defect Map |  |
-| P029 | B | The Fab That Lost Money at Higher Yield | 역설은 좋으나 실제 사례 출처가 필요 |
-| P030 | C | The Error in the Golden Mask | 현업 인접 |
-| P031 | A | Water Under the Lithography Lens | ASML 대 니콘, 물 한 방울 |
-| P032 | A | EUV Was Never a One-Company Invention | Veritasium·Branch Education이 다룸. '한 회사가 아니다'라는 각도로만 |
-| P033 | B | A Sharper Lens, a Smaller Image |  |
-| P034 | B | A Chip Defect From Too Few Photons | 현업 인접 가능성. 공개 출처만 |
-| P035 | B | The Two Stages Inside the Scanner |  |
-| P036 | C | The Scanner That Corrects Itself |  |
-| P037 | C | The Invisible Flaw in a Perfect-Looking Mask | 현업 인접 |
-| P038 | C | Two Instruments Read One Nanometer Differently | 현업 인접 |
-| P039 | C | Predicting a Wafer From Its Mask | 현업 인접 |
-| P040 | C | The Second Test After Mask Repair | 현업 인접 |
-| P041 | A | When Computer Memory Was Handwoven | 아폴로, 손으로 짠 메모리 |
-| P042 | B | Two Components, One Bit of DRAM |  |
-| P043 | B | The Memory That Grew Upward |  |
-| P044 | A | Inventing Flash Didn't Win the Market |  |
-| P045 | B | The DRAM Race That Never Ends |  |
-| P046 | A | The Memory Business Intel Walked Away From |  |
-| P047 | B | Heat Trapped Inside HBM | 고객사 사업과 인접. 공개 출처만 |
-| P048 | B | The DRAM That Forgets on Its Own |  |
-| P049 | B | The Hole Through Hundreds of NAND Layers |  |
-| P050 | B | HBM's Claim on the DRAM Factory | 뉴스성 강함. 고객사 사업과 인접, 공개 출처만 |
-| P051 | A | The CPU Born From a Calculator Order |  |
-| P052 | B | The Old Software IBM Wouldn't Abandon |  |
-| P053 | B | Old Instructions in a New CPU |  |
-| P054 | C | The Chip You Can Change After Buying |  |
-| P055 | A | Games Paid for the AI GPU |  |
-| P056 | A | CUDA Opened GPUs to Science |  |
-| P057 | A | Two GPUs Upended an AI Competition |  |
-| P058 | A | Secrets Leaked From a CPU Shortcut | 보안 사고, 인지도 높음 |
-| P059 | B | The Chip Designed by Many Companies |  |
-| P060 | B | An Open CPU Standard, an Expensive Chip |  |
-| P061 | A | Eight Resignations From a Chip Startup |  |
-| P062 | B | Bell Labs Sold the Transistor Playbook |  |
-| P063 | B | The Hearing Aid That Needed Transistors |  |
-| P064 | A | Sony Bought the License, Then Built the Radio |  |
-| P065 | B | The Decision That Created TSMC | P004와 겹침. 한 편으로 합치거나 전·후편 |
-| P066 | B | Nineteen Engineers Returned to Taiwan |  |
-| P067 | B | Japanese Chip Rivals Shared a Laboratory |  |
-| P068 | B | US Chip Rivals Shared Their Defects |  |
-| P069 | B | Three Rivals Funded One EUV Future |  |
-| P070 | B | Qualcomm's Chips Without a Fab |  |
-| P071 | B | The Debt Clock of a DRAM Factory |  |
-| P072 | B | The DRAM Company Died, the Fab Kept Running |  |
-| P073 | A | AMD Sold Its Fab and Kept Designing Chips |  |
-| P074 | B | NASA Retested the Chips It Bought |  |
-| P075 | C | NASA and the Military Wanted Different Chips |  |
-| P076 | A | When DRAM Prices Became a Trade Dispute | 무역 분쟁 뉴스와 공명 |
-| P077 | B | A Fab Is Not a Semiconductor Industry |  |
-| P078 | A | Apple Designs Chips Without a Fab |  |
-| P079 | A | A Fab Announcement Is Not Chip Production | 뉴스 입구. 사례 출처 필요 |
-| P080 | B | The Fab Built Before Its Customers Arrived |  |
-| P081 | B | An Earthquake Cut Off Chip Materials |  |
-| P082 | B | Power Returned. The Wafers Were Lost. | P005와 주제 인접. 간격을 둠 |
-| P083 | B | Why a Fab Rejected New Materials |  |
-| P084 | C | Automakers Lost Their Wafer Slots | P005와 같은 사건. 합침 |
-| P085 | B | The EUV Machine Arrived Before the Chips |  |
-| P086 | B | GPU and HBM Ready. No Server. |  |
-| P087 | B | The Water That Returns to a Fab |  |
-| P088 | B | The Substrate That Delayed AI Chips |  |
-| P089 | A | The AI Chip Redesigned for Export Rules |  |
-| P090 | A | The Chip That Traveled the World | 물류 다큐 시청층과 겹침 |
-| P091 | C | The Low-Power Chip Before Its Time |  |
-| P092 | C | The Semiconductor That Made Light | P007과 겹침 |
-| P093 | B | From Space Cameras to Smartphones |  |
-| P094 | B | The EV That Chose a Pricier Chip |  |
-| P095 | B | Power Wires Moved to the Back of the Chip |  |
-| P096 | C | Stacking Transistors Vertically |  |
-| P097 | C | The Bet on a 12-Inch EUV Mask | 현업 인접 |
-| P098 | B | Connecting Chips With Light |  |
-| P099 | A | Faster Chips, Not Enough Power | AI 전력 뉴스 입구 |
-| P100 | C | The Fab Is Finished. The Story Isn't. | 피날레용. 단독 유입력 없음 |
+기존 100편에 빠져 있던 전환점들이다.
+
+- **파운드리의 기술적 전제:** 설계 규칙과 공유 제작(P109), 설계 자동화(P110).
+- **Intel의 흥망:** 복수 공급 중단(P113), Intel Inside(P114), 아이폰 거절(P116), 10나노(P117). AMD 쪽은 64비트 표준(P115), Zen(P118).
+- **일본의 승리와 패배:** 품질 보고서(P119), PC 시대를 놓침(P120), 페어차일드 인수 무산(P121), TI 특허 소송(P122).
+- **장비와 공정의 갈림길:** ASML의 출발(P126), GCA의 몰락(P127), X선 노광(P128), 핀 구조(P130), 450mm 무산(P131), Copy Exactly(P132), 적층 패키징(P139).
+- **지정학:** 소련의 복제 결정(P101), SMIC(P134), 화웨이 칩(P135), EUV 수출 불허(P136).
+- **칩이 세상에 들어간 경로:** 계산기(P108), 6502(P112), 자동차 배출가스 규제(P142), 태양전지(P143), 광통신 레이저(P144), 저가 휴대폰(P141), 구글 자체 칩(P140).
+- **발명의 순간:** 평면 공정(P103), MOSFET(P104), 사진 인쇄(P105), 단결정(P106), 7400(P102), RISC(P111).
+
+## 주의
+
+- **신규 48편은 제목과 한 줄 전제뿐이다.** 무게는 편집 판단이고 사실은 하나도 검증하지 않았다. 전제의 연도·인물·인과는 G1에서 출처로 확인하고, 틀리면 편을 고치거나 뺀다.
+- **무게 판정이 갈릴 편:** P021(클린룸), P041(코어 메모리), P090(칩의 세계 일주), P079(투자 발표와 생산)는 2로 남겼다. 전환점보다 설명에 가깝다고 보면 뺄 후보다.
+- **고객사 공개 역사:** P045(삼성의 DRAM 진입), P124(하이닉스), P125(낸드 선급)는 공개 자료만으로 만든다는 조건을 달았다. 불편하면 보류로 옮긴다.
+- **문의 쏠림:** 회사의 선택이 34편, AI는 5편이다. 역사 기준으로 고르면 AI는 적다. 최근 일은 아직 역사가 아니기 때문이다.
+- **시즌 5 이후:** 무게와 문으로 기계적으로 돌린 순서다.

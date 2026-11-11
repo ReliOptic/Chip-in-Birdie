@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "channel_id": "chip-in-birdie",
-  "revision": "2026-11-11.3",
+  "revision": "2026-11-12.1",
   "channel_name": "Chip in Birdie",
   "master_language": "en",
   "one_sentence_promise": "반도체를 통해 기술·산업·돈·사회의 맥락을 이해하는 교양 다큐멘터리.",
@@ -55,11 +55,11 @@
   "active_slate": "editorial/proposals.json",
   "lineage_catalog": "editorial/catalog.json",
   "season_1": [
-    "P005",
     "P004",
-    "P002",
-    "P078",
     "P055",
-    "P006"
+    "P046",
+    "P031",
+    "P076",
+    "P078"
   ]
 }

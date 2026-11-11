@@ -8,33 +8,26 @@
 
 ## 시즌 1 (6편)
 
-선정 기준: ① 비전공자가 아는 이름·사건에서 출발 ② 눈에 보이는 메커니즘 ③ 공개 출처로 주장을 채울 수 있음 ④ 앞뒤 편과 이어짐.
+선정 기준: ① 산업의 구조를 바꾼 일인가 ② 기술 조건 → 선택 → 오늘의 결과가 한 편에 있는가 ③ 아는 이름 ④ 뒤의 편들이 여기서 갈라지는가 ⑤ 5년 뒤에도 유효한가 ⑥ 공개 자료.
 
-| 순서 | 편 | 작업 제목 (미승인) | 시험하는 유입 가설 | 상태 |
+| 순서 | 편 | 작업 제목 (미승인) | 문 | 왜 이 자리인가 |
 |---|---|---|---|---|
-| 1 | P005 / H095 | One Fab Fire, Silent Car Factories | 시사·경제 뉴스 | TASK-001 |
-| 2 | P004 / H039 | TSMC's No-Competition Promise | 기업·경영·돈 | TASK-002 |
-| 3 | P002 / H080 | The Deliberately Distorted Photomask | 과학·기술 | TASK-003 |
-| 4 | P078 / H086 | Apple Designs Chips Without a Fab | 기업 (2편에서 이어짐) | 대기 |
-| 5 | P055 / H081 | Games Paid for the AI GPU | 시사 | 대기 |
-| 6 | P006 / H068 | Intel's Division Bug | 과학·기술 | 대기 |
+| 1 | P004 | TSMC's No-Competition Promise | COMPANY | 설계와 제조의 분리. 뒤따르는 편의 전제 |
+| 2 | P055 | Games Paid for the AI GPU | AI | 1편이 만든 구조 위에서 가장 커진 회사 |
+| 3 | P046 | The Memory Business Intel Walked Away From | COMPANY | 정체성을 바꾼 결정의 전형 |
+| 4 | P031 | Water Under the Lithography Lens | PROCESS | 물 한 겹이 장비 산업의 1위를 바꿈 |
+| 5 | P076 | When DRAM Prices Became a Trade Dispute | MONEY | 칩이 국가 간 문제가 된 첫 장면. 3편과 같은 시기 |
+| 6 | P078 | Apple Designs Chips Without a Fab | COMPANY | 1편의 약속이 30년 뒤 만든 결과 |
 
-1–3편이 READY가 되면 개국하고, 1편부터 매주 한 편씩 게시한다. 세 편이 서로 다른 유입 가설을 하나씩 맡으므로 같은 경과일 기준으로 어느 입구가 열리는지 비교할 수 있다. 4–6편은 개국 시점에 대본 잠금까지 끝낸다. 일정과 담당은 [개국 런북](../production/LAUNCH.md).
+1–3편이 READY가 되면 개국하고, 1편부터 매주 한 편씩 게시한다. 4–6편은 개국 시점에 대본 잠금까지 끝낸다. 일정과 담당은 [개국 런북](../production/LAUNCH.md).
 
 제목은 [패키지 관문](PLAYBOOK.md#1-패키지-먼저)을 통과해야 승인된다. 표의 제목은 출발점이다.
 
 ## 시즌 2 이후
 
-순서는 [게시 대기열](QUEUE.md)이 정한다. 2026-11-12 개편으로 100편은 이렇게 나뉜다.
+순서는 [게시 대기열](QUEUE.md)이 정한다. 2026-11-12 재편으로 기존 100편 중 52편을 남기고 48편을 새로 넣었다. 기준과 내역은 [100편 재편](SLATE-REVIEW.md).
 
-| 상태 | 편수 | 뜻 |
-|---|---|---|
-| 대기열 | 75 | 시즌 1–4(24편)는 A급으로 확정, 시즌 5부터는 예고편 선별 뒤 다시 매김 |
-| 후순위 | 12 | 단독 유입이 어려움. 구독자가 쌓인 뒤, 또는 다른 편의 한 장면으로 |
-| 보류 | 9 | 현업·고객사 인접. 공개 출처로 전부 채워진 뒤 |
-| 병합 | 4 | P065→P004, P084→P005, P092→P007, P009→P038 |
-
-한 시즌(6편)에는 다섯 문이 섞인다: `AI`, `COMPANY`(아는 회사의 선택), `INCIDENT`(사고·사건), `PROCESS`(눈에 보이는 공정), `MONEY`(돈·무역). 같은 문을 연속으로 내지 않는다. 문이 없는 편(`NO_DOOR`)은 G0에서 아는 이름 쪽으로 입구를 다시 잡아야 대기열에 남는다.
+문은 여섯이다: `COMPANY`(회사의 선택), `MONEY`(돈·무역·국가), `PROCESS`(공정·장비의 갈림길), `ORIGIN`(발명의 순간), `AI`, `INCIDENT`. 같은 문을 연속으로 내지 않는다.
 
 10막 구성은 계보로만 남는다. 게시 순서에 쓰지 않는다.
 

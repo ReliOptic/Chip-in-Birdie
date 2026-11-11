@@ -22,14 +22,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
-      "door": "INCIDENT",
-      "status": "ACTIVE",
-      "merged_into": null,
-      "release_queue": 31,
-      "season": 6,
-      "note": null
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
+      "status": "MERGED",
+      "merged_into": "P102",
+      "reason": null,
+      "reframe": null,
+      "release_queue": null,
+      "season": null
     }
   },
   {
@@ -55,14 +56,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "A",
+      "reviewed": "2026-11-12.2",
+      "weight": 2,
       "door": "PROCESS",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 3,
-      "season": 1,
-      "note": null
+      "reason": null,
+      "reframe": null,
+      "release_queue": 78,
+      "season": 13
     }
   },
   {
@@ -88,14 +90,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "A",
-      "door": "AI",
-      "status": "ACTIVE",
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
+      "status": "HOLD_PUBLIC_SOURCES",
       "merged_into": null,
-      "release_queue": 17,
-      "season": 3,
-      "note": null
+      "reason": "현업·고객사 인접",
+      "reframe": null,
+      "release_queue": null,
+      "season": null
     }
   },
   {
@@ -121,14 +124,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "A",
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
       "door": "COMPANY",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 2,
-      "season": 1,
-      "note": null
+      "reason": null,
+      "reframe": null,
+      "release_queue": 1,
+      "season": 1
     }
   },
   {
@@ -154,14 +158,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "REWORK_REQUIRED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "A",
-      "door": "INCIDENT",
-      "status": "ACTIVE",
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
+      "status": "CUT",
       "merged_into": null,
-      "release_queue": 1,
-      "season": 1,
-      "note": null
+      "reason": "구조를 바꾸지 않은 사건·일화",
+      "reframe": null,
+      "release_queue": null,
+      "season": null
     }
   },
   {
@@ -187,14 +192,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "A",
+      "reviewed": "2026-11-12.2",
+      "weight": 2,
       "door": "INCIDENT",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 6,
-      "season": 1,
-      "note": null
+      "reason": null,
+      "reframe": null,
+      "release_queue": 81,
+      "season": 14
     }
   },
   {
@@ -220,14 +226,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
       "door": "PROCESS",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 29,
-      "season": 5,
-      "note": "Veritasium이 대형 히트. 다른 각도 확보 전 보류"
+      "reason": null,
+      "reframe": "Veritasium과 다른 각도 확보 전 제작 보류",
+      "release_queue": 99,
+      "season": 17
     }
   },
   {
@@ -253,14 +260,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
+      "reviewed": "2026-11-12.2",
+      "weight": 2,
       "door": "PROCESS",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 35,
-      "season": 6,
-      "note": null
+      "reason": null,
+      "reframe": null,
+      "release_queue": 83,
+      "season": 14
     }
   },
   {
@@ -284,14 +292,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "C",
-      "door": "PROCESS",
-      "status": "MERGED",
-      "merged_into": "P038",
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
+      "status": "CUT",
+      "merged_into": null,
+      "reason": "공정 세부. 다른 편의 한 장면으로",
+      "reframe": null,
       "release_queue": null,
-      "season": null,
-      "note": null
+      "season": null
     }
   },
   {
@@ -317,14 +326,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "A",
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
       "door": "MONEY",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 24,
-      "season": 4,
-      "note": null
+      "reason": null,
+      "reframe": null,
+      "release_queue": 7,
+      "season": 2
     }
   },
   {
@@ -350,14 +360,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
-      "door": "NO_DOOR",
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "ORIGIN",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 32,
-      "season": 6,
-      "note": null
+      "reason": null,
+      "reframe": "트랜지스터의 발명 자체를 사건으로",
+      "release_queue": 23,
+      "season": 4
     }
   },
   {
@@ -383,14 +394,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "C",
-      "door": "NO_DOOR",
-      "status": "LATE",
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
+      "status": "CUT",
       "merged_into": null,
+      "reason": "구조를 바꾸지 않은 사건·일화",
+      "reframe": null,
       "release_queue": null,
-      "season": null,
-      "note": null
+      "season": null
     }
   },
   {
@@ -417,14 +429,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
-      "door": "NO_DOOR",
-      "status": "ACTIVE",
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
+      "status": "CUT",
       "merged_into": null,
-      "release_queue": 38,
-      "season": 7,
-      "note": null
+      "reason": "구조를 바꾸지 않은 사건·일화",
+      "reframe": null,
+      "release_queue": null,
+      "season": null
     }
   },
   {
@@ -450,14 +463,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
-      "door": "NO_DOOR",
-      "status": "ACTIVE",
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
+      "status": "CUT",
       "merged_into": null,
-      "release_queue": 43,
-      "season": 8,
-      "note": null
+      "reason": "구조를 바꾸지 않은 사건·일화",
+      "reframe": null,
+      "release_queue": null,
+      "season": null
     }
   },
   {
@@ -484,14 +498,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
-      "door": "NO_DOOR",
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "ORIGIN",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 48,
-      "season": 8,
-      "note": null
+      "reason": null,
+      "reframe": null,
+      "release_queue": 18,
+      "season": 3
     }
   },
   {
@@ -517,14 +532,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "C",
-      "door": "NO_DOOR",
-      "status": "LATE",
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "ORIGIN",
+      "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": null,
-      "season": null,
-      "note": null
+      "reason": null,
+      "reframe": "표면 문제 해결(P017 포함)이 평면 공정과 MOS를 연 이야기로",
+      "release_queue": 29,
+      "season": 5
     }
   },
   {
@@ -550,14 +566,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "C",
-      "door": "NO_DOOR",
-      "status": "LATE",
-      "merged_into": null,
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
+      "status": "MERGED",
+      "merged_into": "P016",
+      "reason": null,
+      "reframe": null,
       "release_queue": null,
-      "season": null,
-      "note": null
+      "season": null
     }
   },
   {
@@ -583,14 +600,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "C",
-      "door": "NO_DOOR",
-      "status": "LATE",
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
+      "status": "CUT",
       "merged_into": null,
+      "reason": "구조를 바꾸지 않은 사건·일화",
+      "reframe": null,
       "release_queue": null,
-      "season": null,
-      "note": null
+      "season": null
     }
   },
   {
@@ -616,14 +634,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
-      "door": "NO_DOOR",
-      "status": "ACTIVE",
-      "merged_into": null,
-      "release_queue": 53,
-      "season": 9,
-      "note": null
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
+      "status": "MERGED",
+      "merged_into": "P044",
+      "reason": null,
+      "reframe": null,
+      "release_queue": null,
+      "season": null
     }
   },
   {
@@ -649,14 +668,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
-      "door": "PROCESS",
-      "status": "ACTIVE",
-      "merged_into": null,
-      "release_queue": 40,
-      "season": 7,
-      "note": null
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
+      "status": "MERGED",
+      "merged_into": "P093",
+      "reason": null,
+      "reframe": null,
+      "release_queue": null,
+      "season": null
     }
   },
   {
@@ -682,14 +702,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "A",
+      "reviewed": "2026-11-12.2",
+      "weight": 2,
       "door": "PROCESS",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 15,
-      "season": 3,
-      "note": null
+      "reason": null,
+      "reframe": "클린룸의 발명으로",
+      "release_queue": 88,
+      "season": 15
     }
   },
   {
@@ -715,14 +736,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
-      "door": "NO_DOOR",
+      "reviewed": "2026-11-12.2",
+      "weight": 2,
+      "door": "ORIGIN",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 57,
-      "season": 10,
-      "note": null
+      "reason": null,
+      "reframe": null,
+      "release_queue": 80,
+      "season": 14
     }
   },
   {
@@ -748,14 +770,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
-      "door": "PROCESS",
-      "status": "ACTIVE",
-      "merged_into": null,
-      "release_queue": 45,
-      "season": 8,
-      "note": null
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
+      "status": "MERGED",
+      "merged_into": "P022",
+      "reason": null,
+      "reframe": null,
+      "release_queue": null,
+      "season": null
     }
   },
   {
@@ -781,14 +804,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
-      "door": "NO_DOOR",
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "ORIGIN",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 61,
-      "season": 11,
-      "note": null
+      "reason": null,
+      "reframe": null,
+      "release_queue": 33,
+      "season": 6
     }
   },
   {
@@ -814,14 +838,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "C",
-      "door": "NO_DOOR",
-      "status": "LATE",
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "ORIGIN",
+      "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": null,
-      "season": null,
-      "note": null
+      "reason": null,
+      "reframe": "실리콘 게이트가 Intel과 MOS 시대를 연 이야기로",
+      "release_queue": 37,
+      "season": 7
     }
   },
   {
@@ -847,14 +872,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
+      "reviewed": "2026-11-12.2",
+      "weight": 2,
       "door": "PROCESS",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 50,
-      "season": 9,
-      "note": null
+      "reason": null,
+      "reframe": null,
+      "release_queue": 91,
+      "season": 16
     }
   },
   {
@@ -880,14 +906,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "C",
+      "reviewed": "2026-11-12.2",
+      "weight": 2,
       "door": "PROCESS",
-      "status": "LATE",
+      "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": null,
-      "season": null,
-      "note": null
+      "reason": null,
+      "reframe": null,
+      "release_queue": 93,
+      "season": 16
     }
   },
   {
@@ -913,14 +940,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
-      "door": "INCIDENT",
-      "status": "ACTIVE",
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
+      "status": "CUT",
       "merged_into": null,
-      "release_queue": 37,
-      "season": 7,
-      "note": null
+      "reason": "구조를 바꾸지 않은 사건·일화",
+      "reframe": null,
+      "release_queue": null,
+      "season": null
     }
   },
   {
@@ -944,14 +972,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
-      "door": "MONEY",
-      "status": "ACTIVE",
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
+      "status": "CUT",
       "merged_into": null,
-      "release_queue": 30,
-      "season": 5,
-      "note": null
+      "reason": "구조를 바꾸지 않은 사건·일화",
+      "reframe": null,
+      "release_queue": null,
+      "season": null
     }
   },
   {
@@ -975,14 +1004,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "C",
-      "door": "PROCESS",
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
       "status": "HOLD_PUBLIC_SOURCES",
       "merged_into": null,
+      "reason": "현업·고객사 인접",
+      "reframe": null,
       "release_queue": null,
-      "season": null,
-      "note": null
+      "season": null
     }
   },
   {
@@ -1008,14 +1038,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "A",
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
       "door": "PROCESS",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 8,
-      "season": 2,
-      "note": null
+      "reason": null,
+      "reframe": null,
+      "release_queue": 4,
+      "season": 1
     }
   },
   {
@@ -1041,14 +1072,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "A",
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
       "door": "PROCESS",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 26,
-      "season": 5,
-      "note": "Veritasium·Branch Education이 다룸. '한 회사가 아니다' 각도로만"
+      "reason": null,
+      "reframe": "'한 회사의 발명이 아니다' 각도로만(P069, P033 포함)",
+      "release_queue": 21,
+      "season": 4
     }
   },
   {
@@ -1074,14 +1106,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
-      "door": "PROCESS",
-      "status": "ACTIVE",
-      "merged_into": null,
-      "release_queue": 55,
-      "season": 10,
-      "note": null
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
+      "status": "MERGED",
+      "merged_into": "P032",
+      "reason": null,
+      "reframe": null,
+      "release_queue": null,
+      "season": null
     }
   },
   {
@@ -1107,14 +1140,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
-      "door": "PROCESS",
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
       "status": "HOLD_PUBLIC_SOURCES",
       "merged_into": null,
+      "reason": "현업·고객사 인접",
+      "reframe": null,
       "release_queue": null,
-      "season": null,
-      "note": null
+      "season": null
     }
   },
   {
@@ -1140,14 +1174,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
-      "door": "PROCESS",
-      "status": "ACTIVE",
-      "merged_into": null,
-      "release_queue": 59,
-      "season": 10,
-      "note": null
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
+      "status": "MERGED",
+      "merged_into": "P031",
+      "reason": null,
+      "reframe": null,
+      "release_queue": null,
+      "season": null
     }
   },
   {
@@ -1173,14 +1208,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "C",
-      "door": "PROCESS",
-      "status": "LATE",
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
+      "status": "CUT",
       "merged_into": null,
+      "reason": "공정 세부. 다른 편의 한 장면으로",
+      "reframe": null,
       "release_queue": null,
-      "season": null,
-      "note": null
+      "season": null
     }
   },
   {
@@ -1204,14 +1240,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "C",
-      "door": "PROCESS",
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
       "status": "HOLD_PUBLIC_SOURCES",
       "merged_into": null,
+      "reason": "현업·고객사 인접",
+      "reframe": null,
       "release_queue": null,
-      "season": null,
-      "note": null
+      "season": null
     }
   },
   {
@@ -1235,14 +1272,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "C",
-      "door": "PROCESS",
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
       "status": "HOLD_PUBLIC_SOURCES",
       "merged_into": null,
+      "reason": "현업·고객사 인접",
+      "reframe": null,
       "release_queue": null,
-      "season": null,
-      "note": null
+      "season": null
     }
   },
   {
@@ -1266,14 +1304,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "C",
-      "door": "PROCESS",
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
       "status": "HOLD_PUBLIC_SOURCES",
       "merged_into": null,
+      "reason": "현업·고객사 인접",
+      "reframe": null,
       "release_queue": null,
-      "season": null,
-      "note": null
+      "season": null
     }
   },
   {
@@ -1297,14 +1336,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "C",
-      "door": "PROCESS",
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
       "status": "HOLD_PUBLIC_SOURCES",
       "merged_into": null,
+      "reason": "현업·고객사 인접",
+      "reframe": null,
       "release_queue": null,
-      "season": null,
-      "note": null
+      "season": null
     }
   },
   {
@@ -1330,14 +1370,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "A",
+      "reviewed": "2026-11-12.2",
+      "weight": 2,
       "door": "PROCESS",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 12,
-      "season": 2,
-      "note": null
+      "reason": null,
+      "reframe": null,
+      "release_queue": 95,
+      "season": 16
     }
   },
   {
@@ -1363,14 +1404,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
       "door": "PROCESS",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 63,
-      "season": 11,
-      "note": null
+      "reason": null,
+      "reframe": null,
+      "release_queue": 27,
+      "season": 5
     }
   },
   {
@@ -1396,14 +1438,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
+      "reviewed": "2026-11-12.2",
+      "weight": 2,
       "door": "PROCESS",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 66,
-      "season": 11,
-      "note": null
+      "reason": null,
+      "reframe": null,
+      "release_queue": 96,
+      "season": 16
     }
   },
   {
@@ -1430,14 +1473,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "A",
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
       "door": "COMPANY",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 20,
-      "season": 4,
-      "note": null
+      "reason": null,
+      "reframe": null,
+      "release_queue": 17,
+      "season": 3
     }
   },
   {
@@ -1463,14 +1507,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
       "door": "COMPANY",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 28,
-      "season": 5,
-      "note": null
+      "reason": null,
+      "reframe": "1983년 삼성의 DRAM 진입 결정으로",
+      "release_queue": 26,
+      "season": 5
     }
   },
   {
@@ -1496,14 +1541,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "A",
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
       "door": "COMPANY",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 14,
-      "season": 3,
-      "note": null
+      "reason": null,
+      "reframe": null,
+      "release_queue": 3,
+      "season": 1
     }
   },
   {
@@ -1527,14 +1573,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
-      "door": "AI",
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
       "status": "HOLD_PUBLIC_SOURCES",
       "merged_into": null,
+      "reason": "현업·고객사 인접",
+      "reframe": null,
       "release_queue": null,
-      "season": null,
-      "note": null
+      "season": null
     }
   },
   {
@@ -1558,14 +1605,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
-      "door": "PROCESS",
-      "status": "ACTIVE",
-      "merged_into": null,
-      "release_queue": 69,
-      "season": 12,
-      "note": null
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
+      "status": "MERGED",
+      "merged_into": "P042",
+      "reason": null,
+      "reframe": null,
+      "release_queue": null,
+      "season": null
     }
   },
   {
@@ -1589,14 +1637,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
-      "door": "PROCESS",
-      "status": "ACTIVE",
-      "merged_into": null,
-      "release_queue": 71,
-      "season": 12,
-      "note": null
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
+      "status": "MERGED",
+      "merged_into": "P043",
+      "reason": null,
+      "reframe": null,
+      "release_queue": null,
+      "season": null
     }
   },
   {
@@ -1620,14 +1669,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
-      "door": "AI",
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
       "status": "HOLD_PUBLIC_SOURCES",
       "merged_into": null,
+      "reason": "현업·고객사 인접",
+      "reframe": null,
       "release_queue": null,
-      "season": null,
-      "note": null
+      "season": null
     }
   },
   {
@@ -1653,14 +1703,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "A",
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
       "door": "COMPANY",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 22,
-      "season": 4,
-      "note": null
+      "reason": null,
+      "reframe": null,
+      "release_queue": 15,
+      "season": 3
     }
   },
   {
@@ -1686,14 +1737,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
       "door": "COMPANY",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 34,
-      "season": 6,
-      "note": null
+      "reason": null,
+      "reframe": null,
+      "release_queue": 30,
+      "season": 5
     }
   },
   {
@@ -1720,14 +1772,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
       "door": "COMPANY",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 39,
-      "season": 7,
-      "note": null
+      "reason": null,
+      "reframe": "1981년 IBM PC가 Intel 칩을 고른 결정으로",
+      "release_queue": 34,
+      "season": 6
     }
   },
   {
@@ -1753,14 +1806,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "C",
-      "door": "NO_DOOR",
-      "status": "LATE",
-      "merged_into": null,
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
+      "status": "MERGED",
+      "merged_into": "P070",
+      "reason": null,
+      "reframe": null,
       "release_queue": null,
-      "season": null,
-      "note": null
+      "season": null
     }
   },
   {
@@ -1786,14 +1840,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "A",
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
       "door": "AI",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 5,
-      "season": 1,
-      "note": null
+      "reason": null,
+      "reframe": null,
+      "release_queue": 2,
+      "season": 1
     }
   },
   {
@@ -1819,14 +1874,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "A",
-      "door": "AI",
-      "status": "ACTIVE",
-      "merged_into": null,
-      "release_queue": 13,
-      "season": 3,
-      "note": null
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
+      "status": "MERGED",
+      "merged_into": "P055",
+      "reason": null,
+      "reframe": null,
+      "release_queue": null,
+      "season": null
     }
   },
   {
@@ -1852,14 +1908,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "A",
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
       "door": "AI",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 7,
-      "season": 2,
-      "note": null
+      "reason": null,
+      "reframe": null,
+      "release_queue": 8,
+      "season": 2
     }
   },
   {
@@ -1885,14 +1942,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "A",
+      "reviewed": "2026-11-12.2",
+      "weight": 2,
       "door": "INCIDENT",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 10,
-      "season": 2,
-      "note": null
+      "reason": null,
+      "reframe": null,
+      "release_queue": 86,
+      "season": 15
     }
   },
   {
@@ -1916,14 +1974,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
       "door": "COMPANY",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 44,
-      "season": 8,
-      "note": null
+      "reason": null,
+      "reframe": "ARM의 설계 라이선스 모델로",
+      "release_queue": 19,
+      "season": 4
     }
   },
   {
@@ -1947,14 +2006,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
+      "reviewed": "2026-11-12.2",
+      "weight": 2,
       "door": "COMPANY",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 49,
-      "season": 9,
-      "note": null
+      "reason": null,
+      "reframe": null,
+      "release_queue": 77,
+      "season": 13
     }
   },
   {
@@ -1980,14 +2040,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "A",
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
       "door": "COMPANY",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 18,
-      "season": 3,
-      "note": null
+      "reason": null,
+      "reframe": null,
+      "release_queue": 10,
+      "season": 2
     }
   },
   {
@@ -2013,14 +2074,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
       "door": "COMPANY",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 54,
-      "season": 9,
-      "note": null
+      "reason": null,
+      "reframe": null,
+      "release_queue": 38,
+      "season": 7
     }
   },
   {
@@ -2046,14 +2108,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
-      "door": "COMPANY",
-      "status": "ACTIVE",
-      "merged_into": null,
-      "release_queue": 58,
-      "season": 10,
-      "note": null
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
+      "status": "MERGED",
+      "merged_into": "P062",
+      "reason": null,
+      "reframe": null,
+      "release_queue": null,
+      "season": null
     }
   },
   {
@@ -2080,14 +2143,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "A",
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
       "door": "COMPANY",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 25,
-      "season": 5,
-      "note": null
+      "reason": null,
+      "reframe": null,
+      "release_queue": 12,
+      "season": 2
     }
   },
   {
@@ -2113,14 +2177,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
-      "door": "COMPANY",
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
       "status": "MERGED",
       "merged_into": "P004",
+      "reason": null,
+      "reframe": null,
       "release_queue": null,
-      "season": null,
-      "note": null
+      "season": null
     }
   },
   {
@@ -2146,14 +2211,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
       "door": "COMPANY",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 62,
-      "season": 11,
-      "note": null
+      "reason": null,
+      "reframe": "1976년 RCA 기술 이전과 대만 정부의 결정으로(P065 일부 포함)",
+      "release_queue": 42,
+      "season": 7
     }
   },
   {
@@ -2179,14 +2245,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
       "door": "COMPANY",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 65,
-      "season": 11,
-      "note": null
+      "reason": null,
+      "reframe": null,
+      "release_queue": 46,
+      "season": 8
     }
   },
   {
@@ -2212,14 +2279,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
       "door": "COMPANY",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 68,
-      "season": 12,
-      "note": null
+      "reason": null,
+      "reframe": null,
+      "release_queue": 50,
+      "season": 9
     }
   },
   {
@@ -2245,14 +2313,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
-      "door": "COMPANY",
-      "status": "ACTIVE",
-      "merged_into": null,
-      "release_queue": 70,
-      "season": 12,
-      "note": null
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
+      "status": "MERGED",
+      "merged_into": "P032",
+      "reason": null,
+      "reframe": null,
+      "release_queue": null,
+      "season": null
     }
   },
   {
@@ -2276,14 +2345,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
+      "reviewed": "2026-11-12.2",
+      "weight": 2,
       "door": "COMPANY",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 72,
-      "season": 12,
-      "note": null
+      "reason": null,
+      "reframe": null,
+      "release_queue": 82,
+      "season": 14
     }
   },
   {
@@ -2309,14 +2379,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
-      "door": "MONEY",
-      "status": "ACTIVE",
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
+      "status": "CUT",
       "merged_into": null,
-      "release_queue": 36,
-      "season": 6,
-      "note": null
+      "reason": "구조를 바꾸지 않은 사건·일화",
+      "reframe": null,
+      "release_queue": null,
+      "season": null
     }
   },
   {
@@ -2343,14 +2414,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
-      "door": "INCIDENT",
+      "reviewed": "2026-11-12.2",
+      "weight": 2,
+      "door": "COMPANY",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 42,
-      "season": 7,
-      "note": null
+      "reason": null,
+      "reframe": null,
+      "release_queue": 87,
+      "season": 15
     }
   },
   {
@@ -2376,14 +2448,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "A",
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
       "door": "COMPANY",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 9,
-      "season": 2,
-      "note": null
+      "reason": null,
+      "reframe": null,
+      "release_queue": 14,
+      "season": 3
     }
   },
   {
@@ -2409,14 +2482,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
       "door": "MONEY",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 41,
-      "season": 7,
-      "note": null
+      "reason": null,
+      "reframe": "아폴로·미사일 조달이 집적회로 시장을 만든 이야기로(P075 포함)",
+      "release_queue": 28,
+      "season": 5
     }
   },
   {
@@ -2442,14 +2516,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "C",
-      "door": "MONEY",
-      "status": "LATE",
-      "merged_into": null,
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
+      "status": "MERGED",
+      "merged_into": "P074",
+      "reason": null,
+      "reframe": null,
       "release_queue": null,
-      "season": null,
-      "note": null
+      "season": null
     }
   },
   {
@@ -2475,14 +2550,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "A",
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
       "door": "MONEY",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 16,
-      "season": 3,
-      "note": null
+      "reason": null,
+      "reframe": null,
+      "release_queue": 5,
+      "season": 1
     }
   },
   {
@@ -2508,14 +2584,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
-      "door": "MONEY",
-      "status": "ACTIVE",
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
+      "status": "CUT",
       "merged_into": null,
-      "release_queue": 46,
-      "season": 8,
-      "note": null
+      "reason": "구조를 바꾸지 않은 사건·일화",
+      "reframe": null,
+      "release_queue": null,
+      "season": null
     }
   },
   {
@@ -2541,14 +2618,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "A",
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
       "door": "COMPANY",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 4,
-      "season": 1,
-      "note": null
+      "reason": null,
+      "reframe": null,
+      "release_queue": 6,
+      "season": 1
     }
   },
   {
@@ -2572,14 +2650,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "A",
+      "reviewed": "2026-11-12.2",
+      "weight": 2,
       "door": "MONEY",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 11,
-      "season": 2,
-      "note": null
+      "reason": null,
+      "reframe": null,
+      "release_queue": 79,
+      "season": 14
     }
   },
   {
@@ -2603,14 +2682,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
-      "door": "MONEY",
-      "status": "ACTIVE",
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
+      "status": "CUT",
       "merged_into": null,
-      "release_queue": 51,
-      "season": 9,
-      "note": null
+      "reason": "구조를 바꾸지 않은 사건·일화",
+      "reframe": null,
+      "release_queue": null,
+      "season": null
     }
   },
   {
@@ -2636,14 +2716,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
-      "door": "INCIDENT",
-      "status": "ACTIVE",
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
+      "status": "CUT",
       "merged_into": null,
-      "release_queue": 47,
-      "season": 8,
-      "note": null
+      "reason": "구조를 바꾸지 않은 사건·일화",
+      "reframe": null,
+      "release_queue": null,
+      "season": null
     }
   },
   {
@@ -2669,14 +2750,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
-      "door": "INCIDENT",
-      "status": "ACTIVE",
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
+      "status": "CUT",
       "merged_into": null,
-      "release_queue": 52,
-      "season": 9,
-      "note": null
+      "reason": "구조를 바꾸지 않은 사건·일화",
+      "reframe": null,
+      "release_queue": null,
+      "season": null
     }
   },
   {
@@ -2702,14 +2784,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
+      "reviewed": "2026-11-12.2",
+      "weight": 2,
       "door": "MONEY",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 56,
-      "season": 10,
-      "note": null
+      "reason": null,
+      "reframe": null,
+      "release_queue": 84,
+      "season": 14
     }
   },
   {
@@ -2735,14 +2818,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "C",
-      "door": "INCIDENT",
-      "status": "MERGED",
-      "merged_into": "P005",
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
+      "status": "CUT",
+      "merged_into": null,
+      "reason": "구조를 바꾸지 않은 사건·일화",
+      "reframe": null,
       "release_queue": null,
-      "season": null,
-      "note": null
+      "season": null
     }
   },
   {
@@ -2768,14 +2852,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
-      "door": "MONEY",
-      "status": "ACTIVE",
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
+      "status": "CUT",
       "merged_into": null,
-      "release_queue": 60,
-      "season": 10,
-      "note": null
+      "reason": "구조를 바꾸지 않은 사건·일화",
+      "reframe": null,
+      "release_queue": null,
+      "season": null
     }
   },
   {
@@ -2801,14 +2886,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
-      "door": "AI",
-      "status": "ACTIVE",
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
+      "status": "CUT",
       "merged_into": null,
-      "release_queue": 27,
-      "season": 5,
-      "note": null
+      "reason": "구조를 바꾸지 않은 사건·일화",
+      "reframe": null,
+      "release_queue": null,
+      "season": null
     }
   },
   {
@@ -2832,14 +2918,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
-      "door": "MONEY",
-      "status": "ACTIVE",
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
+      "status": "CUT",
       "merged_into": null,
-      "release_queue": 64,
-      "season": 11,
-      "note": null
+      "reason": "구조를 바꾸지 않은 사건·일화",
+      "reframe": null,
+      "release_queue": null,
+      "season": null
     }
   },
   {
@@ -2863,14 +2950,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
-      "door": "AI",
-      "status": "ACTIVE",
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
+      "status": "CUT",
       "merged_into": null,
-      "release_queue": 33,
-      "season": 6,
-      "note": null
+      "reason": "구조를 바꾸지 않은 사건·일화",
+      "reframe": null,
+      "release_queue": null,
+      "season": null
     }
   },
   {
@@ -2896,14 +2984,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "A",
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
       "door": "AI",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 23,
-      "season": 4,
-      "note": null
+      "reason": null,
+      "reframe": null,
+      "release_queue": 11,
+      "season": 2
     }
   },
   {
@@ -2927,14 +3016,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "A",
+      "reviewed": "2026-11-12.2",
+      "weight": 2,
       "door": "MONEY",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 21,
-      "season": 4,
-      "note": null
+      "reason": null,
+      "reframe": null,
+      "release_queue": 89,
+      "season": 15
     }
   },
   {
@@ -2960,14 +3050,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "C",
-      "door": "NO_DOOR",
-      "status": "LATE",
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "ORIGIN",
+      "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": null,
-      "season": null,
-      "note": null
+      "reason": null,
+      "reframe": "너무 일찍 나온 CMOS가 시계·계산기를 거쳐 표준이 된 이야기로",
+      "release_queue": 41,
+      "season": 7
     }
   },
   {
@@ -2993,14 +3084,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "C",
-      "door": "PROCESS",
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
       "status": "MERGED",
       "merged_into": "P007",
+      "reason": null,
+      "reframe": null,
       "release_queue": null,
-      "season": null,
-      "note": null
+      "season": null
     }
   },
   {
@@ -3026,14 +3118,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
       "door": "PROCESS",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 73,
-      "season": 13,
-      "note": null
+      "reason": null,
+      "reframe": null,
+      "release_queue": 31,
+      "season": 6
     }
   },
   {
@@ -3059,14 +3152,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
+      "reviewed": "2026-11-12.2",
+      "weight": 2,
       "door": "MONEY",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 67,
-      "season": 12,
-      "note": null
+      "reason": null,
+      "reframe": null,
+      "release_queue": 92,
+      "season": 16
     }
   },
   {
@@ -3090,14 +3184,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
-      "door": "PROCESS",
-      "status": "ACTIVE",
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
+      "status": "CUT",
       "merged_into": null,
-      "release_queue": 74,
-      "season": 13,
-      "note": null
+      "reason": "공정 세부. 다른 편의 한 장면으로",
+      "reframe": null,
+      "release_queue": null,
+      "season": null
     }
   },
   {
@@ -3121,14 +3216,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "C",
-      "door": "PROCESS",
-      "status": "LATE",
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
+      "status": "CUT",
       "merged_into": null,
+      "reason": "공정 세부. 다른 편의 한 장면으로",
+      "reframe": null,
       "release_queue": null,
-      "season": null,
-      "note": null
+      "season": null
     }
   },
   {
@@ -3152,14 +3248,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "C",
-      "door": "PROCESS",
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
       "status": "HOLD_PUBLIC_SOURCES",
       "merged_into": null,
+      "reason": "현업·고객사 인접",
+      "reframe": null,
       "release_queue": null,
-      "season": null,
-      "note": null
+      "season": null
     }
   },
   {
@@ -3183,14 +3280,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "B",
-      "door": "PROCESS",
-      "status": "ACTIVE",
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
+      "status": "CUT",
       "merged_into": null,
-      "release_queue": 75,
-      "season": 13,
-      "note": null
+      "reason": "공정 세부. 다른 편의 한 장면으로",
+      "reframe": null,
+      "release_queue": null,
+      "season": null
     }
   },
   {
@@ -3214,14 +3312,15 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "A",
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
       "door": "AI",
       "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": 19,
-      "season": 4,
-      "note": null
+      "reason": null,
+      "reframe": "2005년 무렵 데나드 스케일링이 끝난 일로",
+      "release_queue": 24,
+      "season": 4
     }
   },
   {
@@ -3247,14 +3346,1599 @@
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
     "title_review_status": "NOT_APPROVED",
     "slate_review": {
-      "reviewed": "2026-11-12",
-      "tier": "C",
-      "door": "NO_DOOR",
-      "status": "LATE",
+      "reviewed": "2026-11-12.2",
+      "weight": null,
+      "door": null,
+      "status": "ACTIVE",
       "merged_into": null,
-      "release_queue": null,
-      "season": null,
-      "note": null
+      "reason": "피날레. 열린 질문",
+      "reframe": null,
+      "release_queue": 100,
+      "season": 17
     }
+  },
+  {
+    "p_id": "P101",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "소련은 왜 미국 칩을 베끼기로 했나",
+    "title_en": "Why the Soviet Union Chose to Copy American Chips",
+    "proposed_order": "101",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "MONEY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 32,
+      "season": 6
+    },
+    "premise": "젤레노그라드를 세우고도 독자 설계 대신 복제를 택한 결정과 그 대가"
+  },
+  {
+    "p_id": "P102",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "전 세계가 베낀 칩, 7400",
+    "title_en": "The 7400: The Chip Family the Whole World Copied",
+    "proposed_order": "102",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "ORIGIN",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 45,
+      "season": 8
+    },
+    "premise": "TI의 표준 논리 칩이 사실상의 규격이 되고 동구권까지 복제한 과정(P001 포함)"
+  },
+  {
+    "p_id": "P103",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "칩을 가능하게 한 납작한 트랜지스터",
+    "title_en": "The Flat Transistor That Made Chips Possible",
+    "proposed_order": "103",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "ORIGIN",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 49,
+      "season": 9
+    },
+    "premise": "페어차일드의 평면 공정이 집적회로와 대량생산의 전제가 된 이야기"
+  },
+  {
+    "p_id": "P104",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "벨연구소가 덮어 둔 트랜지스터",
+    "title_en": "The Transistor Bell Labs Shelved",
+    "proposed_order": "104",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "ORIGIN",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 53,
+      "season": 9
+    },
+    "premise": "1959년 MOSFET이 발명되고도 10년 가까이 외면받다가 모든 칩의 기본이 된 과정"
+  },
+  {
+    "p_id": "P105",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "거꾸로 쓴 현미경에서 시작된 칩 인쇄",
+    "title_en": "Chips Are Printed Because of an Upside-Down Microscope",
+    "proposed_order": "105",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "PROCESS",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 35,
+      "season": 6
+    },
+    "premise": "군 연구소에서 사진 기술로 회로를 찍기 시작한 순간"
+  },
+  {
+    "p_id": "P106",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "아무도 원하지 않았던 단결정",
+    "title_en": "The Crystal Nobody at Bell Labs Wanted Grown",
+    "proposed_order": "106",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "ORIGIN",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 57,
+      "season": 10
+    },
+    "premise": "단결정 성장 고집이 트랜지스터를 실험실에서 공장으로 옮긴 이야기"
+  },
+  {
+    "p_id": "P107",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "자기 메모리를 끝낸 Intel 칩",
+    "title_en": "The Intel Chip That Killed Magnetic Memory",
+    "proposed_order": "107",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "COMPANY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 54,
+      "season": 9
+    },
+    "premise": "1970년 1103 DRAM이 코어 메모리를 가격으로 밀어낸 과정"
+  },
+  {
+    "p_id": "P108",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "칩 산업을 키운 계산기 전쟁",
+    "title_en": "The Calculator War That Built the Chip Industry",
+    "proposed_order": "108",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "MONEY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 36,
+      "season": 6
+    },
+    "premise": "일본·미국 계산기 가격 전쟁이 MOS 대규모 집적의 첫 대량 수요가 된 이야기"
+  },
+  {
+    "p_id": "P109",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "누구나 칩을 설계하게 만든 교과서",
+    "title_en": "The Textbook That Let Anyone Design a Chip",
+    "proposed_order": "109",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "ORIGIN",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 60,
+      "season": 10
+    },
+    "premise": "설계 규칙을 공장에서 떼어 낸 미드-콘웨이 방법과 공유 제작 서비스. 파운드리의 기술적 전제"
+  },
+  {
+    "p_id": "P110",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "손으로 그릴 수 없게 된 칩",
+    "title_en": "When Chips Got Too Big to Draw by Hand",
+    "proposed_order": "110",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "PROCESS",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 39,
+      "season": 7
+    },
+    "premise": "회로 시뮬레이션과 논리 합성이 설계를 소프트웨어 산업으로 바꾼 과정"
+  },
+  {
+    "p_id": "P111",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "더 단순해서 이긴 칩",
+    "title_en": "The Simpler Chip That Won",
+    "proposed_order": "111",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "ORIGIN",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 63,
+      "season": 11
+    },
+    "premise": "명령어를 줄인 RISC가 대학 프로젝트에서 휴대폰의 표준이 되기까지"
+  },
+  {
+    "p_id": "P112",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "가정용 컴퓨터를 연 25달러 칩",
+    "title_en": "The $25 Chip That Started Home Computing",
+    "proposed_order": "112",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "COMPANY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 58,
+      "season": 10
+    },
+    "premise": "6502의 가격 파괴가 애플 II와 게임기를 가능하게 한 이야기"
+  },
+  {
+    "p_id": "P113",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "Intel이 나눠 주기를 멈춘 날",
+    "title_en": "The Day Intel Stopped Sharing",
+    "proposed_order": "113",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "COMPANY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 61,
+      "season": 11
+    },
+    "premise": "386부터 복수 공급 계약을 끊은 결정이 PC 칩 독점을 만든 과정"
+  },
+  {
+    "p_id": "P114",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "부품에 브랜드를 붙인 Intel",
+    "title_en": "How Intel Made People Care About a Part",
+    "proposed_order": "114",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "COMPANY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 64,
+      "season": 11
+    },
+    "premise": "Intel Inside가 보이지 않는 부품을 소비자 브랜드로 만든 이야기"
+  },
+  {
+    "p_id": "P115",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "AMD가 표준을 정한 순간",
+    "title_en": "The Time AMD Set the Standard",
+    "proposed_order": "115",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "COMPANY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 67,
+      "season": 12
+    },
+    "premise": "Intel의 새 64비트 구조 대신 AMD의 확장이 표준이 된 과정"
+  },
+  {
+    "p_id": "P116",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "Intel이 아이폰을 거절했다",
+    "title_en": "Intel Said No to the iPhone",
+    "proposed_order": "116",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "COMPANY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 9,
+      "season": 2
+    },
+    "premise": "원가 계산으로 내린 거절이 모바일 시대를 놓친 결정이 된 이야기"
+  },
+  {
+    "p_id": "P117",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "Intel이 10나노에서 잃은 5년",
+    "title_en": "The Five Years Intel Lost at 10 Nanometers",
+    "proposed_order": "117",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "COMPANY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 69,
+      "season": 12
+    },
+    "premise": "한 세대의 공정 목표가 제조 1위 자리를 바꾼 과정"
+  },
+  {
+    "p_id": "P118",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "파산 직전의 AMD와 Zen",
+    "title_en": "AMD Was Nearly Bankrupt. Then Came Zen.",
+    "proposed_order": "118",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "COMPANY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 22,
+      "season": 4
+    },
+    "premise": "공장을 판 회사가 설계 하나로 되살아난 과정"
+  },
+  {
+    "p_id": "P119",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "미국 칩 업계를 흔든 보고서",
+    "title_en": "The Report That Shocked American Chipmakers",
+    "proposed_order": "119",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "MONEY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 20,
+      "season": 4
+    },
+    "premise": "1980년 한 고객사의 불량률 비교가 일본 메모리의 품질 우위를 드러낸 순간"
+  },
+  {
+    "p_id": "P120",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "메모리를 이기고 PC 시대를 놓친 일본",
+    "title_en": "Japan Won Memory and Lost the PC Era",
+    "proposed_order": "120",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "MONEY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 40,
+      "season": 7
+    },
+    "premise": "고품질·장수명 설계가 값싼 PC용 메모리 시대에 약점이 된 과정"
+  },
+  {
+    "p_id": "P121",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "1987년 워싱턴이 막은 반도체 거래",
+    "title_en": "The Chip Deal Washington Blocked in 1987",
+    "proposed_order": "121",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "MONEY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 44,
+      "season": 8
+    },
+    "premise": "후지쯔의 페어차일드 인수 무산. 반도체가 안보 문제가 된 첫 장면"
+  },
+  {
+    "p_id": "P122",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "모두를 고소한 TI",
+    "title_en": "Texas Instruments Sued Everyone",
+    "proposed_order": "122",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "MONEY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 48,
+      "season": 8
+    },
+    "premise": "특허 사용료 소송이 일본·한국 업체의 원가와 미국 업체의 생존을 바꾼 이야기"
+  },
+  {
+    "p_id": "P123",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "미국 메모리를 살린 감자 재벌",
+    "title_en": "The Potato Billionaire Who Saved American Memory",
+    "proposed_order": "123",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "COMPANY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 71,
+      "season": 12
+    },
+    "premise": "마이크론이 미국의 마지막 DRAM 회사로 남기까지"
+  },
+  {
+    "p_id": "P124",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "팔리기를 거부한 메모리 회사",
+    "title_en": "The Memory Maker That Refused to Be Sold",
+    "proposed_order": "124",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "COMPANY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": "공개 자료만",
+      "reframe": null,
+      "release_queue": 72,
+      "season": 12
+    },
+    "premise": "2000년대 초 채권단 관리와 매각 무산을 거쳐 살아남은 하이닉스. 공개 자료만 사용"
+  },
+  {
+    "p_id": "P125",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "애플이 낸드 값을 미리 냈다",
+    "title_en": "Apple Paid in Advance for Flash Memory",
+    "proposed_order": "125",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "MONEY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": "공개 자료만",
+      "reframe": null,
+      "release_queue": 52,
+      "season": 9
+    },
+    "premise": "2005년 선급 계약이 낸드 시장의 규모를 바꾼 이야기. 공개 자료만 사용"
+  },
+  {
+    "p_id": "P126",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "새는 가건물에서 시작한 ASML",
+    "title_en": "ASML Started in a Leaky Shed",
+    "proposed_order": "126",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "COMPANY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 13,
+      "season": 3
+    },
+    "premise": "필립스가 버리려던 사업부가 1984년 합작사로 떨어져 나온 과정"
+  },
+  {
+    "p_id": "P127",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "미국이 발명하고 잃어버린 장비",
+    "title_en": "How America Lost the Machine It Invented",
+    "proposed_order": "127",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "COMPANY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 73,
+      "season": 13
+    },
+    "premise": "스테퍼를 만든 GCA가 일본 업체에 밀려 사라진 과정"
+  },
+  {
+    "p_id": "P128",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "IBM이 X선에 건 10억 달러",
+    "title_en": "IBM's Billion-Dollar Bet on X-Rays",
+    "proposed_order": "128",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "PROCESS",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 43,
+      "season": 8
+    },
+    "premise": "차세대로 지목됐던 X선 노광이 끝내 쓰이지 않은 이유"
+  },
+  {
+    "p_id": "P129",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "칩을 갈아 낸다는 미친 생각",
+    "title_en": "Polishing Chips Flat Sounded Crazy",
+    "proposed_order": "129",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 2,
+      "door": "PROCESS",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 97,
+      "season": 17
+    },
+    "premise": "연마 공정이 다층 배선을 가능하게 한 이야기"
+  },
+  {
+    "p_id": "P130",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "일어선 트랜지스터",
+    "title_en": "The Transistor That Stood Up",
+    "proposed_order": "130",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "PROCESS",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 47,
+      "season": 8
+    },
+    "premise": "평면 구조의 한계에서 핀 구조로 넘어간 결정"
+  },
+  {
+    "p_id": "P131",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "오지 않은 더 큰 웨이퍼",
+    "title_en": "The Bigger Wafer That Never Came",
+    "proposed_order": "131",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "MONEY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 56,
+      "season": 10
+    },
+    "premise": "300mm 전환은 됐고 450mm는 무산된 이유. 누가 비용을 내는가"
+  },
+  {
+    "p_id": "P132",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "아무것도 바꾸지 마라",
+    "title_en": "Intel's Rule: Change Nothing",
+    "proposed_order": "132",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "PROCESS",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 51,
+      "season": 9
+    },
+    "premise": "공장을 통째로 복제하는 Copy Exactly 원칙이 수율 문제를 푼 방식"
+  },
+  {
+    "p_id": "P133",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "칩의 마지막 공정이 아시아로 간 이유",
+    "title_en": "Why Your Chip Was Finished in Asia",
+    "proposed_order": "133",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "MONEY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 59,
+      "season": 10
+    },
+    "premise": "1960년대 홍콩 조립 공장에서 시작된 후공정 이전"
+  },
+  {
+    "p_id": "P134",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "상하이 빈 땅에 세운 칩 회사",
+    "title_en": "The Chipmaker Built on Empty Land in Shanghai",
+    "proposed_order": "134",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "COMPANY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 74,
+      "season": 13
+    },
+    "premise": "2000년 SMIC 설립과 대만 업체와의 소송"
+  },
+  {
+    "p_id": "P135",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "더는 만들 수 없게 된 휴대폰 칩",
+    "title_en": "The Phone Chip That Could No Longer Be Made",
+    "proposed_order": "135",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "MONEY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 16,
+      "season": 3
+    },
+    "premise": "2020년 제재로 화웨이 설계 칩의 위탁 생산이 끊긴 일"
+  },
+  {
+    "p_id": "P136",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "중국에 가지 못한 장비",
+    "title_en": "The Machine That Never Shipped to China",
+    "proposed_order": "136",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "MONEY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 62,
+      "season": 11
+    },
+    "premise": "2019년 EUV 장비 수출 허가가 나지 않은 결정"
+  },
+  {
+    "p_id": "P137",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "TSMC가 IBM에 거절한 날",
+    "title_en": "TSMC Said No to IBM",
+    "proposed_order": "137",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "COMPANY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 75,
+      "season": 13
+    },
+    "premise": "구리 배선 세대에서 기술 제휴 대신 자체 개발을 택한 결정"
+  },
+  {
+    "p_id": "P138",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "다음 세대를 감당한 건 셋뿐",
+    "title_en": "Only Three Could Afford the Next Chip",
+    "proposed_order": "138",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "MONEY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 65,
+      "season": 11
+    },
+    "premise": "2018년 글로벌파운드리의 7나노 포기와 선두 공정 과점"
+  },
+  {
+    "p_id": "P139",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "아무도 원하지 않던 패키징",
+    "title_en": "The Packaging Nobody Wanted",
+    "proposed_order": "139",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "PROCESS",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 55,
+      "season": 10
+    },
+    "premise": "비싸서 외면받던 TSMC의 적층 패키징이 AI 칩의 병목이 되기까지"
+  },
+  {
+    "p_id": "P140",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "구글이 칩을 직접 만들기 시작한 이유",
+    "title_en": "Why Google Started Making Its Own Chips",
+    "proposed_order": "140",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "AI",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 25,
+      "season": 5
+    },
+    "premise": "데이터센터 계산량 추정이 자체 AI 칩으로 이어진 결정"
+  },
+  {
+    "p_id": "P141",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "휴대폰을 싸게 만든 칩 세트",
+    "title_en": "The Chip Kit That Made Phones Cheap",
+    "proposed_order": "141",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "COMPANY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 76,
+      "season": 13
+    },
+    "premise": "미디어텍의 통합 설계 묶음이 저가 휴대폰 산업을 연 이야기"
+  },
+  {
+    "p_id": "P142",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "모든 차에 컴퓨터를 넣은 법",
+    "title_en": "The Law That Put a Computer in Every Car",
+    "proposed_order": "142",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "MONEY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 68,
+      "season": 12
+    },
+    "premise": "배출가스 규제가 엔진 제어 칩을 의무로 만든 과정. 차량용 칩 시장의 기원"
+  },
+  {
+    "p_id": "P143",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "실리콘의 다른 산업",
+    "title_en": "Silicon's Other Industry",
+    "proposed_order": "143",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "MONEY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 70,
+      "season": 12
+    },
+    "premise": "1954년 태양전지에서 폴리실리콘 공급 과점까지"
+  },
+  {
+    "p_id": "P144",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "전선에 들어갈 만큼 작은 레이저",
+    "title_en": "The Laser Small Enough for a Wire",
+    "proposed_order": "144",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 3,
+      "door": "ORIGIN",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 66,
+      "season": 11
+    },
+    "premise": "상온 반도체 레이저가 광통신을 가능하게 한 이야기"
+  },
+  {
+    "p_id": "P145",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "충돌을 느끼는 칩",
+    "title_en": "The Chip That Feels a Crash",
+    "proposed_order": "145",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 2,
+      "door": "PROCESS",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 98,
+      "season": 17
+    },
+    "premise": "에어백 가속도 센서에서 스마트폰 센서로 이어진 미세 기계 구조"
+  },
+  {
+    "p_id": "P146",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "칩에게 말을 가르친 장난감",
+    "title_en": "A Toy Taught Chips to Talk",
+    "proposed_order": "146",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 2,
+      "door": "ORIGIN",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 85,
+      "season": 15
+    },
+    "premise": "1978년 학습 완구가 신호처리 칩의 첫 대량 제품이 된 이야기"
+  },
+  {
+    "p_id": "P147",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "불량 분석에서 나온 메모리",
+    "title_en": "The Memory Found in a Failed Test",
+    "proposed_order": "147",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 2,
+      "door": "ORIGIN",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 90,
+      "season": 15
+    },
+    "premise": "지울 수 있는 메모리가 개발 방식 자체를 바꾼 과정"
+  },
+  {
+    "p_id": "P148",
+    "source_h_ids": [],
+    "map_type": "NEW",
+    "title_ko": "모든 정부가 막은 칩 거래",
+    "title_en": "The Chip Deal Every Government Blocked",
+    "proposed_order": "148",
+    "act": "11 2026-11-12 재편 추가",
+    "opening": null,
+    "mechanism": null,
+    "economic_question": null,
+    "ending": null,
+    "primary_source_hunt": null,
+    "source_status": "PREMISE_ONLY",
+    "source_evidence_status": "SOURCE_PENDING",
+    "source_snapshot_date": "2026-11-12",
+    "audience_ref": "channel/audience.json",
+    "release_slot": null,
+    "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
+    "title_review_status": "NOT_APPROVED",
+    "slate_review": {
+      "reviewed": "2026-11-12.2",
+      "weight": 2,
+      "door": "MONEY",
+      "status": "ACTIVE",
+      "merged_into": null,
+      "reason": null,
+      "reframe": null,
+      "release_queue": 94,
+      "season": 16
+    },
+    "premise": "설계 라이선스 회사 인수가 여러 나라 심사에서 무산된 일"
   }
 ]

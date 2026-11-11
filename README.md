@@ -11,8 +11,8 @@
 | [채널 공식](FORMULA.md) | 한 편이 성과를 내려면 무엇이 맞아야 하는가 |
 | [채널](channel/CHANNEL.md) | 누구에게 무엇을 약속하는가, 고정 값은 무엇인가 |
 | [첫 유입과 그립](channel/INFLOW.md) | 어느 채널의 시청자가 처음 들어오고 무엇으로 붙잡는가 |
-| [100편 검토](editorial/SLATE-REVIEW.md) | 편별 등급과 편성표의 문제 |
-| [게시 대기열](editorial/QUEUE.md) | 75편의 게시 순서와 보류·병합·후순위 |
+| [100편 재편](editorial/SLATE-REVIEW.md) | 무엇을 남기고 빼고 새로 넣었나 |
+| [게시 대기열](editorial/QUEUE.md) | 100편의 게시 순서와 제외·병합·보류 |
 | [편성](editorial/PROGRAMMING.md) | 시즌 1에 무엇을 어떤 순서로 내는가 |
 | [편집 기준](editorial/PLAYBOOK.md) | 패키지·도입·비트·리뷰 판정 |
 | [작업 절차](ops/WORKFLOW.md) | 관문 G0–G5, 역할, CLI |
@@ -22,13 +22,13 @@
 ## 지금 상태
 
 - 게시된 영상 0편. YouTube Analytics 미연결.
-- 시즌 1은 6편이다. 개국 배치 3편이 TASK-001–003으로 열려 있다.
+- 100편은 역사적 무게 기준으로 다시 세웠다. 첫 편은 P004(TSMC), 시즌 1은 6편이다.
 - 개국 목표 2026-12-19. 일정·담당·막힌 것은 [개국 런북](production/LAUNCH.md).
-- P005는 G0–G2 초안을 제출했고 리뷰를 기다린다. P004·P002는 G0 초안이 있다.
+- P004는 G0 초안이 있다. 나머지 시즌 1 편은 G0부터 시작한다.
 
 ## 자산
 
-- [proposals.json](editorial/proposals.json): 활성 편성표 P001–P100.
+- [proposals.json](editorial/proposals.json): P001–P148. `slate_review.status`가 `ACTIVE`인 100편이 편성표다.
 - [catalog.json](editorial/catalog.json): 연구 계보 H001–H100과 공개 자료 단서.
 - [work/](work): 작업·제출·리뷰 원장.
 - [prompts/](prompts), [templates/](templates): 역할 프롬프트와 제작 양식.

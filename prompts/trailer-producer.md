@@ -9,7 +9,7 @@ before anything else. production/TRAILERS.md is the contract; if this prompt and
 that file disagree, the file wins.
 
 PHASE = 1                         # 0 kit | 1 pilot | 2 batch
-EPISODES = P005 P004 P002 P078 P055 P006
+EPISODES = P004 P055 P046 P031 P076 P078
 LOOKS = clay-diorama-tiltshift x4, flat-isometric-2.5D x1, two-colour-print x1   # phase 1 only
 REFERENCE = https://claude.ai/artifact/8K7FzQ6tWSwsx17kf2xMhq  (rated 7/10 by the director; you must beat it)
 
@@ -34,7 +34,7 @@ PHASE 0 — build trailers/_kit/
 
 PHASE 1 and 2 — for each episode, in this order, without skipping:
 1. Inputs. Read the episode in editorial/proposals.json (opening, mechanism,
-   economic_question, ending) and, if present, episodes/<P>/brief.md and claims.csv.
+   economic_question, ending; for P101 and later only premise and slate_review) and, if present, episodes/<P>/brief.md and claims.csv.
    If brief.md has a G0 package, the trailer IS its "first 30 seconds"; do not invent
    a different hook.
 1b. Reference. Read the "기준작" section of production/TRAILERS.md. Keep its look grammar
