@@ -34,10 +34,12 @@ PHASE 0 — build trailers/_kit/
 - An empty example episode that passes verify. Stop after this phase.
 
 PHASE 1 and 2 — for each episode, in this order, without skipping:
-1. Inputs. Read the episode in editorial/proposals.json (opening, mechanism,
-   economic_question, ending; for P101 and later only premise and slate_review) and, if present, episodes/<P>/brief.md and claims.csv.
-   If brief.md has a G0 package, the trailer IS its "first 30 seconds"; do not invent
-   a different hook.
+1. Inputs. Read episodes/<P>/brief.md, channel/CORE.md and channel/READER.md. The
+   trailer IS the brief's "첫 30초" expanded to 30 seconds and ending on its "중심 질문";
+   do not invent a different hook. The on-screen title is title A from the brief. The
+   thumbnail line in the brief is the composition of your hero shot. Use only tier A
+   and B words from READER.md in narration and captions; a tier C word from the
+   brief's vocabulary list may appear once, attached to the object it names.
 1b. Reference. Read the "기준작" section of production/TRAILERS.md. Keep its look grammar
    (clay-toy diorama, depth-buffer tilt-shift blur as the last pass, props stepped at
    15 Hz while the camera moves in continuous time, cuts locked to spoken words, the
@@ -63,9 +65,10 @@ PHASE 1 and 2 — for each episode, in this order, without skipping:
    skill installed, use its technique index instead of browsing.
 5. Hero shot first (<= 6 s). Render stills at full size plus a zoomed crop, look at
    them, fix, at least twice. Only then build the remaining shots.
-6. Text on screen is English. No number, date or named fact unless it appears in
-   episodes/<P>/claims.csv with review_status other than UNVERIFIED. If there is no
-   claims file, use only the question and the scene.
+6. Text on screen is English. The briefs are not fact-checked yet. You may use the
+   years, names and events written in the brief's "첫 30초", and nothing else. List
+   every such factual token in trailer.json under unverified_claims and set status to
+   DRAFT_UNVERIFIED. Do not add figures, quotes or causes of your own.
 7. Run verify.mjs. If it fails, fix and re-run at most twice. If it still fails,
    leave status FAILED with the reason. Never mark a failed trailer as passed and
    never loosen verify.mjs.
@@ -101,9 +104,22 @@ Then regenerate trailers/index.html, commit, push the branch and open a pull req
 against main. One pull request per phase or per batch of ten.
 ```
 
+## 시즌 1–4 배치
+
+| 순서 | PHASE | LOOKS | EPISODES |
+|---|---|---|---|
+| 파일럿 = 시즌 1 | 1 | 기준작 룩 4편 + 대안 룩 2편 | P004 P061 P073 P066 P137 P070 |
+| 시즌 2 | 2 | 파일럿에서 고른 룩 하나 | P055 P011 P058 P091 P060 P057 |
+| 시즌 3 | 2 | 같은 룩 | P046 P041 P120 P025 P045 P147 |
+| 시즌 4 | 2 | 같은 룩 | P089 P022 P083 P101 P068 P067 |
+
+- 한 번에 한 시즌, PR 하나. 앞 시즌의 PR을 감독이 본 뒤 다음 시즌을 돌린다.
+- 시즌 안에서는 주인공 물체와 소리 모티프를 편마다 다르게, 팔레트와 자막 방식은 같게 한다. 시즌이 재생목록 하나로 보여야 한다.
+- 24편 모두 `DRAFT_UNVERIFIED`로 나온다. 게시(Shorts 포함)는 그 편의 G1 뒤에 한다.
+
 ## 쓰는 법
 
 - 0단계는 Astra로 한 번. 끝나면 PR을 병합한다.
 - 1단계는 위 값 그대로. 갤러리에서 룩 하나를 고른 뒤 `production/TRAILERS.md`에 적는다.
-- 2단계는 `PHASE = 2`, `LOOKS`는 고른 룩 하나, `EPISODES`는 10개씩.
+- 2단계는 `PHASE = 2`, `LOOKS`는 고른 룩 하나, `EPISODES`는 위 표의 한 시즌.
 - 리뷰는 다른 세션에 `prompts/viewer-reviewer.md`와 갤러리만 준다.
