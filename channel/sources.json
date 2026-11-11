@@ -58,5 +58,15 @@
     "read_scope": "월간 관객 및 Audience reports",
     "supported_summary": "월간 관객과 다른 채널·콘텐츠 시청을 관찰할 수 있으며 기간과 보고 범위가 다르다.",
     "limit": "No Chip in Birdie Analytics or algorithm weights were retrieved."
+  },
+  {
+    "source_id": "YT07",
+    "title": "A/B test titles & thumbnails",
+    "url": "https://support.google.com/youtube/answer/16391400?hl=en",
+    "checked_on": "2026-11-11",
+    "source_type": "official_platform_guidance",
+    "read_scope": "변형 수, 승자 지표, 결과 라벨, 기간, 자격·제한",
+    "supported_summary": "제목·썸네일을 최대 3안까지 시험한다. 승자는 클릭률이 아닌 시청 시간 점유율로 정한다. 2주 안에 끝나며 테스트 중 제목·썸네일을 바꾸면 중단된다. 데스크톱 Studio와 고급 기능이 필요하고 Shorts는 대상이 아니다.",
+    "limit": "No Chip in Birdie Analytics or algorithm weights were retrieved."
   }
 ]

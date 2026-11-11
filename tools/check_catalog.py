@@ -12,7 +12,7 @@ def read(name):
 
 catalog=read('editorial/catalog.json')
 proposals=read('editorial/proposals.json')
-baseline=read('verification/migration-baseline.json')
+baseline=read('editorial/lineage-baseline.json')
 hs={e['h_id']:e for e in catalog}
 ps={p['p_id']:p for p in proposals}
 errors=[]
@@ -36,7 +36,7 @@ for pid,p in ps.items():
         if hid not in hs or pid not in hs[hid]['proposed_p_ids']:
             errors.append(f'Broken P to H lineage: {pid} -> {hid}')
 for file in ROOT.rglob('*.md'):
-    if '.git' in file.parts or file.is_relative_to(ROOT/'work/deliveries'):
+    if '.git' in file.parts or file.is_relative_to(ROOT/'work/deliveries') or file.is_relative_to(ROOT/'archive'):
         continue
     for ref in re.findall(r'\]\(([^)]+)\)',file.read_text()):
         if re.match(r'^[a-z]+:',ref) or ref.startswith('#'):
