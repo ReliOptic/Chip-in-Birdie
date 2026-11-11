@@ -1,0 +1,23 @@
+{
+  "task_id": "TASK-003",
+  "episode_id": "H080",
+  "title": "H080 광학 보정을 산업의 선택과 연결",
+  "objective": "목표·마스크·공중상·웨이퍼의 차이를 눈으로 보여주고 계산·검증·제조 비용의 선택과 연결한다.",
+  "audience_ref": "channel/audience.json",
+  "status": "OPEN",
+  "required_review_roles": [
+    "evidence",
+    "editorial",
+    "viewer"
+  ],
+  "acceptance_evidence": [
+    "같은 조건의 공개 근거 또는 설명용 모델의 명시적 한계",
+    "공통 관객의 무사전지식 이해 검토용 대표 장면",
+    "정확성·사용권·영상 재현 계획"
+  ],
+  "claim": null,
+  "revision": 0,
+  "current_delivery_id": null,
+  "history": [],
+  "release_implication": "none: task completion is not video READY or publication"
+}

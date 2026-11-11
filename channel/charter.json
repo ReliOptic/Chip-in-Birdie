@@ -1,0 +1,35 @@
+{
+  "schema_version": "2.0",
+  "channel_id": "chip-in-birdie",
+  "revision": "2026-11-11.2",
+  "channel_name": "Chip in Birdie",
+  "master_language": "en",
+  "one_sentence_promise": "반도체를 통해 기술·산업·돈·사회의 맥락을 이해하는 교양 다큐멘터리.",
+  "audience_ref": "channel/audience.json",
+  "default_runtime_seconds": {
+    "min": 480,
+    "max": 540,
+    "planning_point": 510,
+    "basis": "inherited_production_direction_not_algorithm_optimum"
+  },
+  "input_performance_language": "ko",
+  "future_locales": [
+    "en",
+    "ja",
+    "de"
+  ],
+  "required_locales_policy": "defined_per_release; not every expansion locale is required for every release",
+  "launch_buffer_goal": {
+    "approximate_finished_episodes": 10,
+    "actual_ready_count": null
+  },
+  "director_model": "human_on_the_loop",
+  "ready_gate": "independent_QA_of_identified_media_revision",
+  "youtube_channel_id": null,
+  "analytics_connected": false,
+  "authority": {
+    "channel_audience_scope": "user_directive_2026-11-11",
+    "entry_path_hypotheses": "editorial_proposal_to_validate",
+    "historical_contracts": "preserved_not_new_approval"
+  }
+}

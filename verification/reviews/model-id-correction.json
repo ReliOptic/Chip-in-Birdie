@@ -1,0 +1,9 @@
+{
+  "reason": "Same model identity used different explanatory suffixes; cross_model in r0001 is a string-label artefact, not evidence of distinct model families.",
+  "old_delivery": "TASK-000-r0001",
+  "current_delivery": "TASK-000-r0002",
+  "actual_canonical_model": "GPT-6 Astra Pro",
+  "artifact_contents_changed": false,
+  "reviewer_contexts_remain_independent": true,
+  "new_review_acknowledgements_required": true
+}

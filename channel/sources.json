@@ -1,0 +1,62 @@
+[
+  {
+    "source_id": "YT01",
+    "title": "YouTube’s Recommendation System",
+    "url": "https://support.google.com/youtube/answer/16533387?hl=en",
+    "checked_on": "2026-11-11",
+    "source_type": "official_platform_guidance",
+    "read_scope": "추천의 두 목표, 개인화, 채널 성장 전략",
+    "supported_summary": "시청자 이력·관심·맥락과 콘텐츠 반응, 장기 만족을 설명한다.",
+    "limit": "No Chip in Birdie Analytics or algorithm weights were retrieved."
+  },
+  {
+    "source_id": "YT02",
+    "title": "How YouTube recommendations work",
+    "url": "https://support.google.com/youtube/answer/16089387?hl=en",
+    "checked_on": "2026-11-11",
+    "source_type": "official_platform_guidance",
+    "read_scope": "추천 면과 주요 신호",
+    "supported_summary": "홈은 주로 시청 이력, 다음 영상은 현재 영상이 단서다. 만족도 설문도 사용한다.",
+    "limit": "No Chip in Birdie Analytics or algorithm weights were retrieved."
+  },
+  {
+    "source_id": "YT03",
+    "title": "Good to know about recommendations",
+    "url": "https://support.google.com/youtube/answer/16559651?hl=en",
+    "checked_on": "2026-11-11",
+    "source_type": "official_platform_guidance",
+    "read_scope": "영상 길이, 시청 맥락, 포맷 실험, 개별 성과",
+    "supported_summary": "새 포맷과 한 편의 저성과 자체는 채널 전체 벌점이 아니다. 보편적인 최적 길이는 없다.",
+    "limit": "No Chip in Birdie Analytics or algorithm weights were retrieved."
+  },
+  {
+    "source_id": "YT04",
+    "title": "Understand new, casual, & regular viewers",
+    "url": "https://support.google.com/youtube/answer/10246996?hl=en",
+    "checked_on": "2026-11-11",
+    "source_type": "official_platform_guidance",
+    "read_scope": "행동 분류와 core audience",
+    "supported_summary": "시청 행동 이력의 분류이며 라벨 자체가 도달·수익화를 결정하지 않는다.",
+    "limit": "No Chip in Birdie Analytics or algorithm weights were retrieved."
+  },
+  {
+    "source_id": "YT05",
+    "title": "Understand your content performance",
+    "url": "https://support.google.com/youtube/answer/16559650?hl=en",
+    "checked_on": "2026-11-11",
+    "source_type": "official_platform_guidance",
+    "read_scope": "Appeal, engagement, satisfaction",
+    "supported_summary": "시청 선택·시청 지속·만족을 구분하고 제목의 약속을 영상에서 제공하도록 안내한다.",
+    "limit": "No Chip in Birdie Analytics or algorithm weights were retrieved."
+  },
+  {
+    "source_id": "YT06",
+    "title": "Understand your YouTube audience",
+    "url": "https://support.google.com/youtube/answer/9314416?hl=en",
+    "checked_on": "2026-11-11",
+    "source_type": "official_platform_guidance",
+    "read_scope": "월간 관객 및 Audience reports",
+    "supported_summary": "월간 관객과 다른 채널·콘텐츠 시청을 관찰할 수 있으며 기간과 보고 범위가 다르다.",
+    "limit": "No Chip in Birdie Analytics or algorithm weights were retrieved."
+  }
+]

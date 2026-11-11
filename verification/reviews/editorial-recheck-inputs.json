@@ -1,0 +1,57 @@
+{
+  "captured_at": "2026-11-11T11:06:55.588310+00:00",
+  "review_type": "EDITORIAL_INDEPENDENT_RECHECK",
+  "source_mutated_by_reviewer": false,
+  "inputs": [
+    {
+      "path": "README.md",
+      "sha256": "7a9bb2b6b72217f512efc4fbe9d97b90f4521501ca5f638dae05cc71084da4d6",
+      "bytes": 4387
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "513def0535ed1d25ed35bb4d693455fa903194e95f3ba1a07a14219190279897",
+      "bytes": 5414
+    },
+    {
+      "path": "channel/AUDIENCE.md",
+      "sha256": "431ef607493537b1f157e785a6a5877de235ff684d2bb0b22d0585cf66fb66c3",
+      "bytes": 6403
+    },
+    {
+      "path": "channel/CHARTER.md",
+      "sha256": "838fd01121e6e0e26e64f2931217adce18d1fc806310829a8c96c7a1722b09ef",
+      "bytes": 3766
+    },
+    {
+      "path": "editorial/PLAYBOOK.md",
+      "sha256": "de6167846987c888c5fe6b0b0349b41e48fabc1cf0cf36d9be3eed0d0d36a498",
+      "bytes": 4924
+    },
+    {
+      "path": "editorial/PROGRAMMING.md",
+      "sha256": "4973b2b12f25986942e8154a0a0d77aae8c3f281d10e961fc2a102e8010d5e6a",
+      "bytes": 3640
+    }
+  ],
+  "snapshot_history": [
+    {
+      "captured_at": "2026-11-11T11:01:03.005915+00:00",
+      "superseded_input": {
+        "path": "AGENTS.md",
+        "sha256": "ce36970011f2f013d1d408343476889daf4331d3796860ee6a989720a588eff1"
+      }
+    }
+  ],
+  "incremental_check": {
+    "checked_at": "2026-11-11T11:06:55.588310+00:00",
+    "path": "AGENTS.md",
+    "previous_sha256": "ce36970011f2f013d1d408343476889daf4331d3796860ee6a989720a588eff1",
+    "current_sha256": "513def0535ed1d25ed35bb4d693455fa903194e95f3ba1a07a14219190279897",
+    "change": "Added python3 tools/check_catalog.py to the completion-evidence command list.",
+    "only_declared_change_verified_by_restoring_previous_hash": true,
+    "other_five_input_hashes_unchanged": true,
+    "editorial_policy_changed": false,
+    "checker_executed_by_editorial_reviewer": false
+  }
+}

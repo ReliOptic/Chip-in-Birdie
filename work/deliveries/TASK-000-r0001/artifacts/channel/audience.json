@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "audience_id": "CIB-CHANNEL-AUDIENCE-01",
+  "scope": "channel",
+  "revision": "2026-11-11.2",
+  "shared_viewing_context": "반도체와 무관한 일을 긴 하루 동안 한 뒤 잠들기 전에 보아도, 사전 공부 없이 사건의 기술·산업·경영·경제·사회 맥락을 이해한다.",
+  "shared_viewer_reward": "익숙한 뉴스나 뜻밖의 사건이 왜 그런 선택과 결과로 이어졌는지 이해하고, 다른 소재의 다음 편에서도 같은 보상을 기대한다.",
+  "entry_paths": [
+    {
+      "entry_id": "NEWS_CONTEXT",
+      "label": "시사·경제 뉴스의 맥락",
+      "hypothesis": "기업·가격·공급·국가 경쟁의 실제 원인을 알고 싶어 들어온다.",
+      "return_reason": "다른 뉴스도 산업 구조부터 이해하게 되는 경험",
+      "status": "UNMEASURED_HYPOTHESIS"
+    },
+    {
+      "entry_id": "BUSINESS_CHOICES",
+      "label": "기업·경영·돈의 선택",
+      "hypothesis": "투자·분업·표준·신뢰의 선택과 대가를 알고 싶어 들어온다.",
+      "return_reason": "기술을 이해해야 설명되는 판단의 맥락",
+      "status": "UNMEASURED_HYPOTHESIS"
+    },
+    {
+      "entry_id": "TECH_CURIOSITY",
+      "label": "과학·기술의 뜻밖의 장면",
+      "hypothesis": "구체적인 현상이나 물체의 작동을 이해하고 싶어 들어온다.",
+      "return_reason": "원리가 산업과 사회의 결과까지 이어지는 이야기",
+      "status": "UNMEASURED_HYPOTHESIS"
+    },
+    {
+      "entry_id": "HISTORY_SOCIETY",
+      "label": "역사·사회·제도의 호기심",
+      "hypothesis": "당시의 정보·조직·제도가 어떤 선택을 가능하게 했는지 알고 싶어 들어온다.",
+      "return_reason": "현재의 결과를 당연하게 보지 않는 관점",
+      "status": "UNMEASURED_HYPOTHESIS"
+    }
+  ],
+  "entry_paths_are_exclusive": false,
+  "entry_paths_are_official_youtube_segments": false,
+  "measurement_status": "NO_CHANNEL_ANALYTICS_CONNECTED",
+  "observed_channel_metrics": null,
+  "episode_policy": "inherit_this_channel_audience_do_not_assign_per_episode_target",
+  "legacy_S1_S5_policy": "historical_topic_interest_tags_only_not_audience_or_KPI",
+  "recommendation_model_basis": [
+    "YT01",
+    "YT02",
+    "YT03",
+    "YT04",
+    "YT05",
+    "YT06"
+  ]
+}

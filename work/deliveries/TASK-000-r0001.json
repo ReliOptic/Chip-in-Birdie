@@ -1,0 +1,103 @@
+{
+  "artifacts": [
+    {
+      "path": ".github/workflows/validate.yml",
+      "sha256": "97dd07a3a64119b65cd95139f9ca4116105e4eba9e917712cbee3950c73e7c7e",
+      "size_bytes": 713,
+      "snapshot_path": "work/deliveries/TASK-000-r0001/artifacts/.github/workflows/validate.yml"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "513def0535ed1d25ed35bb4d693455fa903194e95f3ba1a07a14219190279897",
+      "size_bytes": 5414,
+      "snapshot_path": "work/deliveries/TASK-000-r0001/artifacts/AGENTS.md"
+    },
+    {
+      "path": "README.md",
+      "sha256": "7a9bb2b6b72217f512efc4fbe9d97b90f4521501ca5f638dae05cc71084da4d6",
+      "size_bytes": 4387,
+      "snapshot_path": "work/deliveries/TASK-000-r0001/artifacts/README.md"
+    },
+    {
+      "path": "channel/AUDIENCE.md",
+      "sha256": "431ef607493537b1f157e785a6a5877de235ff684d2bb0b22d0585cf66fb66c3",
+      "size_bytes": 6403,
+      "snapshot_path": "work/deliveries/TASK-000-r0001/artifacts/channel/AUDIENCE.md"
+    },
+    {
+      "path": "channel/CHARTER.md",
+      "sha256": "838fd01121e6e0e26e64f2931217adce18d1fc806310829a8c96c7a1722b09ef",
+      "size_bytes": 3766,
+      "snapshot_path": "work/deliveries/TASK-000-r0001/artifacts/channel/CHARTER.md"
+    },
+    {
+      "path": "channel/audience.json",
+      "sha256": "17e8d969d252ee0fa2866ab727aa9878107a263815c1b974000929844582f7f9",
+      "size_bytes": 2369,
+      "snapshot_path": "work/deliveries/TASK-000-r0001/artifacts/channel/audience.json"
+    },
+    {
+      "path": "channel/charter.json",
+      "sha256": "d2ccf18d30f91b83877d8f44d0bf24dbfaeea8bb87988a7d8ad09f2ac764aa39",
+      "size_bytes": 1164,
+      "snapshot_path": "work/deliveries/TASK-000-r0001/artifacts/channel/charter.json"
+    },
+    {
+      "path": "editorial/PLAYBOOK.md",
+      "sha256": "de6167846987c888c5fe6b0b0349b41e48fabc1cf0cf36d9be3eed0d0d36a498",
+      "size_bytes": 4924,
+      "snapshot_path": "work/deliveries/TASK-000-r0001/artifacts/editorial/PLAYBOOK.md"
+    },
+    {
+      "path": "editorial/PROGRAMMING.md",
+      "sha256": "4973b2b12f25986942e8154a0a0d77aae8c3f281d10e961fc2a102e8010d5e6a",
+      "size_bytes": 3640,
+      "snapshot_path": "work/deliveries/TASK-000-r0001/artifacts/editorial/PROGRAMMING.md"
+    },
+    {
+      "path": "editorial/catalog.json",
+      "sha256": "722c14c0e0330edf076510c64822041dc6ad648beca4ecd6114eac493de0a35e",
+      "size_bytes": 296372,
+      "snapshot_path": "work/deliveries/TASK-000-r0001/artifacts/editorial/catalog.json"
+    },
+    {
+      "path": "editorial/proposals.json",
+      "sha256": "b617ded4bbc42c56eb12438f0f7296d868b86d6be3b4801f6cd031263e9163a8",
+      "size_bytes": 101857,
+      "snapshot_path": "work/deliveries/TASK-000-r0001/artifacts/editorial/proposals.json"
+    },
+    {
+      "path": "tests/test_channel.py",
+      "sha256": "f6bbdb674dd92d11db3fadffabec947452ec096adb901e61c53f6485d631ce5d",
+      "size_bytes": 25356,
+      "snapshot_path": "work/deliveries/TASK-000-r0001/artifacts/tests/test_channel.py"
+    },
+    {
+      "path": "tools/channel.py",
+      "sha256": "c77ad072acfc1cfd9e3af14f75946f034c2cb21af75374fdffd820eff170bfac",
+      "size_bytes": 40543,
+      "snapshot_path": "work/deliveries/TASK-000-r0001/artifacts/tools/channel.py"
+    },
+    {
+      "path": "tools/check_catalog.py",
+      "sha256": "06fb4baa064ee2c5b63c9ceb6235dddc7c42d3a84816ce9fc2d6aeaba2e0c617",
+      "size_bytes": 2379,
+      "snapshot_path": "work/deliveries/TASK-000-r0001/artifacts/tools/check_catalog.py"
+    }
+  ],
+  "bundle_sha256": "585d30a16919d3fef5b2813b60cd10349a94a55e08fa6d7cf6b9ec68dfb3a4fc",
+  "delivery_id": "TASK-000-r0001",
+  "episode_id": null,
+  "manifest_sha256": "023544edb92039b27f737a769c97219a9f300d1658a932d0b30738b48a605d12",
+  "previous_delivery_id": null,
+  "producer": {
+    "actor": "/root",
+    "model": "GPT-6 Astra Pro (session designation)",
+    "session_id": "/root/channel-v2-implementation"
+  },
+  "revision": 1,
+  "schema_version": "1.0",
+  "scope": "channel",
+  "submitted_at": "2026-11-11T11:07:37.661287Z",
+  "task_id": "TASK-000"
+}

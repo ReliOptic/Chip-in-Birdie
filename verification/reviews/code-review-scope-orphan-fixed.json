@@ -1,0 +1,8 @@
+{
+  "source_sha256": "c77ad072acfc1cfd9e3af14f75946f034c2cb21af75374fdffd820eff170bfac",
+  "tests_sha256": "f6bbdb674dd92d11db3fadffabec947452ec096adb901e61c53f6485d631ce5d",
+  "recovery_error": "An orphaned revision exists with different inputs; inspect it before retrying",
+  "task_unchanged": true,
+  "manifest_unchanged": true,
+  "task_status": "CLAIMED"
+}

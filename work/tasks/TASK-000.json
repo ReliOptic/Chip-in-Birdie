@@ -1,0 +1,150 @@
+{
+  "attempt": 2,
+  "audience_ref": "channel/audience.json",
+  "blocked_reason": null,
+  "claim": null,
+  "completed_at": "2026-11-11T11:11:27.102906Z",
+  "contributors": [
+    {
+      "actor": "/root",
+      "role": "channel direction, integration, publishing"
+    },
+    {
+      "actor": "/root/episode_inventory",
+      "role": "workflow CLI and regression tests"
+    },
+    {
+      "actor": "/root/repo_audit",
+      "role": "official platform research and independent code review"
+    },
+    {
+      "actor": "/root/design_sources",
+      "role": "independent editorial review"
+    }
+  ],
+  "current_delivery_id": "TASK-000-r0002",
+  "episode_id": null,
+  "history": [
+    {
+      "actor": "/root",
+      "at": "2026-11-11T11:06:08.925359Z",
+      "claim": {
+        "actor": "/root",
+        "claimed_at": "2026-11-11T11:06:08.925335Z",
+        "lease_expires_at": "2026-11-11T15:06:08.925348Z",
+        "model": "GPT-6 Astra Pro (session designation)",
+        "session_id": "/root/channel-v2-implementation",
+        "session_id_source": "explicit"
+      },
+      "event": "CLAIMED"
+    },
+    {
+      "actor": "/root",
+      "at": "2026-11-11T11:07:37.676162Z",
+      "bundle_sha256": "585d30a16919d3fef5b2813b60cd10349a94a55e08fa6d7cf6b9ec68dfb3a4fc",
+      "delivery_id": "TASK-000-r0001",
+      "event": "SUBMITTED",
+      "revision": 1
+    },
+    {
+      "actor": "/root/repo_audit",
+      "at": "2026-11-11T11:07:38.133552Z",
+      "blocking": false,
+      "event": "REVIEW_RECORDED",
+      "review_id": "TASK-000-r0001-evidence-bac056becaa0",
+      "role": "evidence",
+      "verdict": "pass"
+    },
+    {
+      "actor": "/root/design_sources",
+      "at": "2026-11-11T11:07:38.618235Z",
+      "blocking": false,
+      "event": "REVIEW_RECORDED",
+      "review_id": "TASK-000-r0001-editorial-46a3b20a262b",
+      "role": "editorial",
+      "verdict": "pass"
+    },
+    {
+      "actor": "/root",
+      "at": "2026-11-11T11:07:39.111152Z",
+      "delivery_id": "TASK-000-r0001",
+      "event": "COMPLETED",
+      "review_ids": [
+        "TASK-000-r0001-editorial-46a3b20a262b",
+        "TASK-000-r0001-evidence-bac056becaa0"
+      ],
+      "scope": "TASK_DELIVERY_ONLY_NOT_VIDEO_READY"
+    },
+    {
+      "actor": "/root",
+      "at": "2026-11-11T11:08:26.937673Z",
+      "event": "RETRY",
+      "preserved_delivery_id": "TASK-000-r0001",
+      "previous_state": "DONE",
+      "reason": "Metadata correction: the same actual model was recorded with two explanatory suffixes, so string comparison incorrectly marked cross_model=true. Use one canonical model identifier; artifacts and independent reviewer contexts are unchanged.",
+      "revision": 1
+    },
+    {
+      "actor": "/root",
+      "at": "2026-11-11T11:08:26.939480Z",
+      "claim": {
+        "actor": "/root",
+        "claimed_at": "2026-11-11T11:08:26.939462Z",
+        "lease_expires_at": "2026-11-11T15:08:26.939469Z",
+        "model": "GPT-6 Astra Pro",
+        "session_id": "/root/channel-v2-implementation",
+        "session_id_source": "explicit"
+      },
+      "event": "CLAIMED"
+    },
+    {
+      "actor": "/root",
+      "at": "2026-11-11T11:08:26.958974Z",
+      "bundle_sha256": "cdd34871d15938637f4e2aece9609ad9aa2943b6df47d1a4b57d4ec280bc48ce",
+      "delivery_id": "TASK-000-r0002",
+      "event": "SUBMITTED",
+      "revision": 2
+    },
+    {
+      "actor": "/root/repo_audit",
+      "at": "2026-11-11T11:11:26.996404Z",
+      "blocking": false,
+      "event": "REVIEW_RECORDED",
+      "review_id": "TASK-000-r0002-evidence-825fa155dc0c",
+      "role": "evidence",
+      "verdict": "pass"
+    },
+    {
+      "actor": "/root/design_sources",
+      "at": "2026-11-11T11:11:27.058404Z",
+      "blocking": false,
+      "event": "REVIEW_RECORDED",
+      "review_id": "TASK-000-r0002-editorial-679c81f09602",
+      "role": "editorial",
+      "verdict": "pass"
+    },
+    {
+      "actor": "/root",
+      "at": "2026-11-11T11:11:27.102919Z",
+      "delivery_id": "TASK-000-r0002",
+      "event": "COMPLETED",
+      "review_ids": [
+        "TASK-000-r0002-editorial-679c81f09602",
+        "TASK-000-r0002-evidence-825fa155dc0c"
+      ],
+      "scope": "TASK_DELIVERY_ONLY_NOT_VIDEO_READY"
+    }
+  ],
+  "objective": "채널단위 유입·재방문 관객, 비전공자의 시사적 이해, 다중 모델 협업·독립 리뷰를 실제 문서·데이터·도구로 구현한다.",
+  "release_implication": "channel operating system task only; no video READY or publication",
+  "required_review_roles": [
+    "evidence",
+    "editorial"
+  ],
+  "revision": 2,
+  "scope": "channel",
+  "status": "DONE",
+  "task_id": "TASK-000",
+  "title": "채널 관객 정의 전환과 공유 운영 저장소 구축",
+  "updated_at": "2026-11-11T11:11:27.102923Z"
+}

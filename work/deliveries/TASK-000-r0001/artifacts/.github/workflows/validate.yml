@@ -1,0 +1,23 @@
+name: Channel integrity and workflow tests
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out reviewed repository
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4, resolved 2026-11-11
+        with:
+          persist-credentials: false
+      - name: Validate the operating catalogue
+        run: python3 tools/channel.py validate
+      - name: Preserve original episode lineage
+        run: python3 tools/check_catalog.py
+      - name: Exercise meaningful state and review failures
+        run: python3 -m unittest discover -s tests -v

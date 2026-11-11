@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.channel.lock
+.env
+.env.*
+!.env.example
+.DS_Store
+private/
+raw-media/
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.zip
+*.key
+*.pem

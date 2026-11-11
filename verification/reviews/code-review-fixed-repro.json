@@ -1,0 +1,41 @@
+{
+  "source_sha256": "8101fe71bc734db40ed737a4accee88ed664d2ac2f712ef4ee145fee0a09a1ff",
+  "tests_sha256": "6bd09cb8cdb19a2c4638d59d23432f0c3fc2e8abe628d8579ef0031aa1808c67",
+  "cases": {
+    "submit_session": {
+      "error": "Task is claimed by another session",
+      "status_unchanged": true,
+      "no_manifest": true
+    },
+    "symlink_output": {
+      "error": "Output path contains a symlink: work/deliveries/TASK-001-r0001.json",
+      "external_files": 0,
+      "state": "CLAIMED",
+      "revision": 0
+    },
+    "done_revisions": {
+      "later_live_edit_validate": "PASS",
+      "new_review_requires_live_match": "Stale artifact hash: drafts/research.md; submit a new revision",
+      "snapshot_tampering_rejected": "Stale artifact hash: work/deliveries/TASK-001-r0001/artifacts/drafts/research.md; submit a new revision"
+    },
+    "metric_semantics": {
+      "errors": {
+        "average_view_duration_seconds": "Invalid unit for average_view_duration_seconds on row 2",
+        "watch_time_hours": "Invalid unit for watch_time_hours on row 2",
+        "ctrr": "Unknown metric on row 2: ctrr"
+      },
+      "no_observations_file": true
+    },
+    "task_enumeration": {
+      "claim_error": "task_id must begin with TASK- and include a suffix",
+      "validate_error": "task_id must begin with TASK- and include a suffix",
+      "status_error": "task_id must begin with TASK- and include a suffix"
+    },
+    "blank_review_session": {
+      "error": "session_id is required",
+      "review_files": 0,
+      "task_unchanged": true,
+      "validate": "PASS"
+    }
+  }
+}

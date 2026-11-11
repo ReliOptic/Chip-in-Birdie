@@ -1,0 +1,91 @@
+{
+  "review_type": "EDITORIAL_INDEPENDENT_RECHECK",
+  "completed_at": "2026-11-11T11:01:54.595216+00:00",
+  "reviewer_session": "/root/design_sources",
+  "runtime_reported_model": "GPT-6 Astra Pro",
+  "provider_api_response_model_id": null,
+  "distinct_additional_model_family_claimed": false,
+  "status": "RECHECK_COMPLETE_NO_OPEN_EDITORIAL_FINDINGS",
+  "approval_claimed": false,
+  "source_mutated_by_reviewer": false,
+  "open_editorial_findings": 0,
+  "findings": [
+    {
+      "id": "EDR-01",
+      "status": "RESOLVED",
+      "artifact": "editorial/PLAYBOOK.md",
+      "evidence": "Review table contains ongoing curiosity and narrative progression row."
+    },
+    {
+      "id": "EDR-02",
+      "status": "WITHDRAWN_REVIEWER_ERROR",
+      "artifact": "editorial/PLAYBOOK.md",
+      "evidence": "Subtask scope was incorrectly attributed to user. Prior user title feedback remains valid. Optional compression is not a blocking or required change."
+    },
+    {
+      "id": "EDR-03",
+      "status": "RESOLVED",
+      "artifact": "channel/AUDIENCE.md",
+      "evidence": "Historical per-episode primary/secondary assignment and current retirement into legacy tags are separately stated."
+    }
+  ],
+  "inputs_captured_at": "2026-11-11T11:06:55.588310+00:00",
+  "inputs": [
+    {
+      "path": "README.md",
+      "sha256": "7a9bb2b6b72217f512efc4fbe9d97b90f4521501ca5f638dae05cc71084da4d6",
+      "bytes": 4387,
+      "changed_since_initial_review": false
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "513def0535ed1d25ed35bb4d693455fa903194e95f3ba1a07a14219190279897",
+      "bytes": 5414,
+      "changed_since_initial_review": true
+    },
+    {
+      "path": "channel/AUDIENCE.md",
+      "sha256": "431ef607493537b1f157e785a6a5877de235ff684d2bb0b22d0585cf66fb66c3",
+      "bytes": 6403,
+      "changed_since_initial_review": true
+    },
+    {
+      "path": "channel/CHARTER.md",
+      "sha256": "838fd01121e6e0e26e64f2931217adce18d1fc806310829a8c96c7a1722b09ef",
+      "bytes": 3766,
+      "changed_since_initial_review": false
+    },
+    {
+      "path": "editorial/PLAYBOOK.md",
+      "sha256": "de6167846987c888c5fe6b0b0349b41e48fabc1cf0cf36d9be3eed0d0d36a498",
+      "bytes": 4924,
+      "changed_since_initial_review": true
+    },
+    {
+      "path": "editorial/PROGRAMMING.md",
+      "sha256": "4973b2b12f25986942e8154a0a0d77aae8c3f281d10e961fc2a102e8010d5e6a",
+      "bytes": 3640,
+      "changed_since_initial_review": false
+    }
+  ],
+  "limits": [
+    "editorial documentation only",
+    "no runtime or full catalog validation",
+    "no media playback or asset rights verification",
+    "no observed human audience response or analytics",
+    "no actual multi-model API execution verification",
+    "no publication approval"
+  ],
+  "snapshot_updated_at": "2026-11-11T11:06:55.588310+00:00",
+  "incremental_check": {
+    "checked_at": "2026-11-11T11:06:55.588310+00:00",
+    "path": "AGENTS.md",
+    "previous_sha256": "ce36970011f2f013d1d408343476889daf4331d3796860ee6a989720a588eff1",
+    "current_sha256": "513def0535ed1d25ed35bb4d693455fa903194e95f3ba1a07a14219190279897",
+    "change": "Added python3 tools/check_catalog.py to the completion-evidence command list.",
+    "only_declared_change_verified_by_restoring_previous_hash": true,
+    "other_five_input_hashes_unchanged": true,
+    "editorial_policy_changed": false,
+    "checker_executed_by_editorial_reviewer": false
+  }
+}

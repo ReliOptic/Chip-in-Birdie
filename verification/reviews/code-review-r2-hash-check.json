@@ -1,0 +1,162 @@
+{
+  "task_id": "TASK-000",
+  "r1": {
+    "delivery_id": "TASK-000-r0001",
+    "scope": "channel",
+    "episode_id": null,
+    "revision": 1,
+    "bundle_sha256": "585d30a16919d3fef5b2813b60cd10349a94a55e08fa6d7cf6b9ec68dfb3a4fc",
+    "manifest_sha256": "023544edb92039b27f737a769c97219a9f300d1658a932d0b30738b48a605d12",
+    "producer": {
+      "actor": "/root",
+      "model": "GPT-6 Astra Pro (session designation)",
+      "session_id": "/root/channel-v2-implementation"
+    }
+  },
+  "r2": {
+    "delivery_id": "TASK-000-r0002",
+    "scope": "channel",
+    "episode_id": null,
+    "revision": 2,
+    "previous_delivery_id": "TASK-000-r0001",
+    "bundle_sha256": "cdd34871d15938637f4e2aece9609ad9aa2943b6df47d1a4b57d4ec280bc48ce",
+    "manifest_sha256": "8b80fa2c8fb83638a2e4e0deef7ba02caa2090707df671d8fa41f87f6d44cef4",
+    "producer": {
+      "actor": "/root",
+      "model": "GPT-6 Astra Pro",
+      "session_id": "/root/channel-v2-implementation"
+    }
+  },
+  "artifact_count_r1": 14,
+  "artifact_count_r2": 14,
+  "same_path_set": true,
+  "manifest_seals_and_bundle_hashes_valid": true,
+  "artifacts": [
+    {
+      "path": ".github/workflows/validate.yml",
+      "both_present": true,
+      "sha256": "97dd07a3a64119b65cd95139f9ca4116105e4eba9e917712cbee3950c73e7c7e",
+      "size_bytes": 713,
+      "declared_hash_and_size_equal": true,
+      "snapshot_bytes_equal": true,
+      "live_hash_matches": true
+    },
+    {
+      "path": "AGENTS.md",
+      "both_present": true,
+      "sha256": "513def0535ed1d25ed35bb4d693455fa903194e95f3ba1a07a14219190279897",
+      "size_bytes": 5414,
+      "declared_hash_and_size_equal": true,
+      "snapshot_bytes_equal": true,
+      "live_hash_matches": true
+    },
+    {
+      "path": "README.md",
+      "both_present": true,
+      "sha256": "7a9bb2b6b72217f512efc4fbe9d97b90f4521501ca5f638dae05cc71084da4d6",
+      "size_bytes": 4387,
+      "declared_hash_and_size_equal": true,
+      "snapshot_bytes_equal": true,
+      "live_hash_matches": true
+    },
+    {
+      "path": "channel/AUDIENCE.md",
+      "both_present": true,
+      "sha256": "431ef607493537b1f157e785a6a5877de235ff684d2bb0b22d0585cf66fb66c3",
+      "size_bytes": 6403,
+      "declared_hash_and_size_equal": true,
+      "snapshot_bytes_equal": true,
+      "live_hash_matches": true
+    },
+    {
+      "path": "channel/CHARTER.md",
+      "both_present": true,
+      "sha256": "838fd01121e6e0e26e64f2931217adce18d1fc806310829a8c96c7a1722b09ef",
+      "size_bytes": 3766,
+      "declared_hash_and_size_equal": true,
+      "snapshot_bytes_equal": true,
+      "live_hash_matches": true
+    },
+    {
+      "path": "channel/audience.json",
+      "both_present": true,
+      "sha256": "17e8d969d252ee0fa2866ab727aa9878107a263815c1b974000929844582f7f9",
+      "size_bytes": 2369,
+      "declared_hash_and_size_equal": true,
+      "snapshot_bytes_equal": true,
+      "live_hash_matches": true
+    },
+    {
+      "path": "channel/charter.json",
+      "both_present": true,
+      "sha256": "d2ccf18d30f91b83877d8f44d0bf24dbfaeea8bb87988a7d8ad09f2ac764aa39",
+      "size_bytes": 1164,
+      "declared_hash_and_size_equal": true,
+      "snapshot_bytes_equal": true,
+      "live_hash_matches": true
+    },
+    {
+      "path": "editorial/PLAYBOOK.md",
+      "both_present": true,
+      "sha256": "de6167846987c888c5fe6b0b0349b41e48fabc1cf0cf36d9be3eed0d0d36a498",
+      "size_bytes": 4924,
+      "declared_hash_and_size_equal": true,
+      "snapshot_bytes_equal": true,
+      "live_hash_matches": true
+    },
+    {
+      "path": "editorial/PROGRAMMING.md",
+      "both_present": true,
+      "sha256": "4973b2b12f25986942e8154a0a0d77aae8c3f281d10e961fc2a102e8010d5e6a",
+      "size_bytes": 3640,
+      "declared_hash_and_size_equal": true,
+      "snapshot_bytes_equal": true,
+      "live_hash_matches": true
+    },
+    {
+      "path": "editorial/catalog.json",
+      "both_present": true,
+      "sha256": "722c14c0e0330edf076510c64822041dc6ad648beca4ecd6114eac493de0a35e",
+      "size_bytes": 296372,
+      "declared_hash_and_size_equal": true,
+      "snapshot_bytes_equal": true,
+      "live_hash_matches": true
+    },
+    {
+      "path": "editorial/proposals.json",
+      "both_present": true,
+      "sha256": "b617ded4bbc42c56eb12438f0f7296d868b86d6be3b4801f6cd031263e9163a8",
+      "size_bytes": 101857,
+      "declared_hash_and_size_equal": true,
+      "snapshot_bytes_equal": true,
+      "live_hash_matches": true
+    },
+    {
+      "path": "tests/test_channel.py",
+      "both_present": true,
+      "sha256": "f6bbdb674dd92d11db3fadffabec947452ec096adb901e61c53f6485d631ce5d",
+      "size_bytes": 25356,
+      "declared_hash_and_size_equal": true,
+      "snapshot_bytes_equal": true,
+      "live_hash_matches": true
+    },
+    {
+      "path": "tools/channel.py",
+      "both_present": true,
+      "sha256": "c77ad072acfc1cfd9e3af14f75946f034c2cb21af75374fdffd820eff170bfac",
+      "size_bytes": 40543,
+      "declared_hash_and_size_equal": true,
+      "snapshot_bytes_equal": true,
+      "live_hash_matches": true
+    },
+    {
+      "path": "tools/check_catalog.py",
+      "both_present": true,
+      "sha256": "06fb4baa064ee2c5b63c9ceb6235dddc7c42d3a84816ce9fc2d6aeaba2e0c617",
+      "size_bytes": 2379,
+      "declared_hash_and_size_equal": true,
+      "snapshot_bytes_equal": true,
+      "live_hash_matches": true
+    }
+  ]
+}

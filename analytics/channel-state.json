@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "measurement_status": "NOT_CONNECTED",
+  "youtube_channel_id": null,
+  "observed_at": null,
+  "monthly_audience": null,
+  "new_viewers": null,
+  "returning_viewers": null,
+  "casual_viewers": null,
+  "regular_viewers": null,
+  "outside_channels_observation": null,
+  "outside_content_observation": null,
+  "note": "null is unknown, not zero. No observed growth or recommendation performance is claimed."
+}

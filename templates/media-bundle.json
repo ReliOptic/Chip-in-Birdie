@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "episode_id": null,
+  "revision": null,
+  "status": "TEMPLATE_NOT_READY",
+  "script_sha256": null,
+  "performance": {
+    "required_language": "ko",
+    "status": null,
+    "artifact": null,
+    "sha256": null
+  },
+  "video": {
+    "status": null,
+    "artifact": null,
+    "sha256": null,
+    "duration_seconds": null
+  },
+  "required_locales": [],
+  "locale_qa": {},
+  "claims_review": null,
+  "rights_review": null,
+  "full_playback_review": null,
+  "independent_release_qa": {
+    "actor": null,
+    "session": null,
+    "result": null,
+    "evidence": null
+  },
+  "director_exception": null,
+  "publication": {
+    "url": null,
+    "observed_at": null,
+    "status": null
+  }
+}

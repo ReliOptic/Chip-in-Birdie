@@ -1,0 +1,32 @@
+name: 채널 운영 작업
+description: 공통 채널 관객을 기준으로 연구·편집·제작·측정 작업을 정의합니다.
+title: "[작업] "
+body:
+  - type: input
+    id: task_id
+    attributes:
+      label: 작업과 에피소드 ID
+      description: 기존 task 또는 새 범위. H_ID는 선택 사항입니다.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 해결할 문제
+      description: 채널 공통 관객에게 어떤 이해와 시청 보상을 만들 것인지 적습니다. 영상별 타깃을 새로 지정하지 않습니다.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 입력과 근거
+      description: 실제 읽은 범위, 미확인 조건, 공개 가능한 출처를 구분합니다.
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: 산출물과 완료 증거
+      description: 파일·revision·필수 리뷰 역할·검증 범위를 적습니다.
+    validations:
+      required: true

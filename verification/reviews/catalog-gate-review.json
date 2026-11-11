@@ -1,0 +1,40 @@
+{
+  "source_sha256": "06fb4baa064ee2c5b63c9ceb6235dddc7c42d3a84816ce9fc2d6aeaba2e0c617",
+  "workflow_sha256": "97dd07a3a64119b65cd95139f9ca4116105e4eba9e917712cbee3950c73e7c7e",
+  "cases": {
+    "preserved_baseline_and_historical_links_ignored": {
+      "exit_code": 0,
+      "result": {
+        "status": "PASS",
+        "preserved_original_H_ids": 100,
+        "preserved_original_P_ids": 100,
+        "errors": [],
+        "scope": "identity, original title and lineage preservation; not factual or media QA"
+      }
+    },
+    "broken_active_link_rejected": {
+      "exit_code": 1,
+      "result": {
+        "status": "FAIL",
+        "preserved_original_H_ids": 100,
+        "preserved_original_P_ids": 100,
+        "errors": [
+          "Broken document link: ACTIVE.md -> missing.md"
+        ],
+        "scope": "identity, original title and lineage preservation; not factual or media QA"
+      }
+    },
+    "original_title_change_rejected": {
+      "exit_code": 1,
+      "result": {
+        "status": "FAIL",
+        "preserved_original_H_ids": 100,
+        "preserved_original_P_ids": 100,
+        "errors": [
+          "Original working title changed: H001; retain it and use a separate proposal/title field"
+        ],
+        "scope": "identity, original title and lineage preservation; not factual or media QA"
+      }
+    }
+  }
+}

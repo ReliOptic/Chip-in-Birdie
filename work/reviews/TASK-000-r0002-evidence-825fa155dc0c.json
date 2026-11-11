@@ -1,0 +1,24 @@
+{
+  "blocking": false,
+  "bundle_sha256": "cdd34871d15938637f4e2aece9609ad9aa2943b6df47d1a4b57d4ec280bc48ce",
+  "context_verification": "caller_declaration_not_runtime_attestation",
+  "created_at": "2026-11-11T11:11:26.994236Z",
+  "cross_model": false,
+  "delivery_id": "TASK-000-r0002",
+  "fresh_context_declared": false,
+  "notes": "# 261111 TASK-000 revision 2 — evidence 검토 적용 확인\n\n## 판단\n\n**ACK / PASS — 기존 코드·구조 evidence 검토 결과를 아래 revision 2의 동일 바이트 산출물에 적용할 수 있다.**\n\n- Task: `TASK-000`\n- Current delivery: `TASK-000-r0002`\n- Current bundle SHA-256: `cdd34871d15938637f4e2aece9609ad9aa2943b6df47d1a4b57d4ec280bc48ce`\n- Current manifest SHA-256: `8b80fa2c8fb83638a2e4e0deef7ba02caa2090707df671d8fa41f87f6d44cef4`\n- Previous delivery: `TASK-000-r0001`\n- Reviewer role: evidence\n\n## 이번에 직접 확인한 내용\n\n두 manifest의 seal과 bundle hash를 재계산했다. 두 제출 모두 `scope=channel`, `episode_id=null`이며 r2가 r1을 previous delivery로 참조한다. **14개 artifact의 원본 경로 집합, 선언된 SHA-256, 크기, r1/r2 snapshot 실제 바이트가 모두 일치**한다. 현재 작업 파일 14개도 r2의 hash와 크기에 일치한다.\n\nr2의 bundle hash가 r1과 다른 것은 revision 및 snapshot 경로가 새 delivery를 가리키기 때문이다. 이번 비교에서 artifact 내용 변경은 없었다.\n\n기존 최종 코드 검토 대상도 그대로다.\n\n| 파일 | 확인한 SHA-256 |\n|---|---|\n| tools/channel.py | c77ad072acfc1cfd9e3af14f75946f034c2cb21af75374fdffd820eff170bfac |\n| tests/test_channel.py | f6bbdb674dd92d11db3fadffabec947452ec096adb901e61c53f6485d631ce5d |\n| tools/check_catalog.py | 06fb4baa064ee2c5b63c9ceb6235dddc7c42d3a84816ce9fc2d6aeaba2e0c617 |\n| .github/workflows/validate.yml | 97dd07a3a64119b65cd95139f9ca4116105e4eba9e917712cbee3950c73e7c7e |\n\n이 동일 코드에 대해 앞선 독립 검토에서 33개 테스트 통과, 실제 데이터 구조 검사 통과, 발견한 7개 결함의 해결을 직접 확인했다. 이번 확인에서는 코드가 바뀌지 않았으므로 전체 테스트를 다시 실행하지 않았다. 기존 검토의 범위를 넓히거나 14개 문서 전체에 대해 새 사실 검증을 수행한 것으로 해석하지 않는다.\n\n## 모델 표기 정정의 의미\n\nr1 producer의 `GPT-6 Astra Pro (session designation)` 표기는 r2에서 `GPT-6 Astra Pro`로 정규화됐다. 생산자와 검토자의 canonical model 표기는 모두 `GPT-6 Astra Pro`로 기록해야 한다. 괄호 설명 문자열의 차이는 서로 다른 모델을 실행했다는 증거가 아니다. **동일 모델의 서로 다른 작업자·세션을 통한 검토**이며, 다른 모델 family를 실행했다고 주장하지 않는다. 실제 runtime 신원의 인증도 별도 검증하지 않았다.\n\n이 ACK는 현재 r2 bundle을 대상으로 한 새로운 적용 확인이다. r1 리뷰가 CLI에서 자동으로 r2 승인으로 승계되었다는 뜻이 아니며, r1 기록과 metadata 정정 이력은 보존한다.\n\n## 범위\n\n앞선 evidence 검토와 동일하게 로컬 운영 코드, 상태 전이, artifact/review 무결성 및 catalog 구조 검사에 한정한다. TASK-000 작업의 완료 근거로 사용할 수 있으나 영상 READY, 게시 승인, 실제 YouTube 연결, 다른 모델 family 실행, 전체 역사 연구의 사실 검증 완료를 의미하지 않는다. 이번 비교에서 새 blocking finding은 없다.\n",
+  "notes_sha256": "52a42fa48137fbbec606d0f7c41d7b2cdf733988b22af952b4d3110d6ff09772",
+  "notes_source_name": "code-review-r2-ack.md",
+  "record_sha256": "863984fc601c0bd94b77fec2f6c45d46de0e8a5403c63b4917d623d0eaf8fc60",
+  "review_id": "TASK-000-r0002-evidence-825fa155dc0c",
+  "reviewer": {
+    "actor": "/root/repo_audit",
+    "model": "GPT-6 Astra Pro",
+    "session_id": "/root/repo_audit/channel-v2-independent"
+  },
+  "revision": 2,
+  "role": "evidence",
+  "schema_version": "1.0",
+  "task_id": "TASK-000",
+  "verdict": "pass"
+}

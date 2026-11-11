@@ -1,0 +1,23 @@
+{
+  "task_id": "TASK-002",
+  "episode_id": "H039",
+  "title": "H039 기업의 선택을 이해하는 공통 관객용 브리프",
+  "objective": "파운드리와 분업의 맥락을 반도체 업무 경험이 없는 관객도 이해할 사건·도입·핵심 장면으로 설계한다.",
+  "audience_ref": "channel/audience.json",
+  "status": "OPEN",
+  "required_review_roles": [
+    "evidence",
+    "editorial",
+    "viewer"
+  ],
+  "acceptance_evidence": [
+    "초기 고객·설계 보호·비경쟁 약속의 실제 근거와 반론",
+    "채널 공통 관객용 브리프와 영어 도입 후보",
+    "제조와 기업 선택의 연결을 보여주는 장면 지시"
+  ],
+  "claim": null,
+  "revision": 0,
+  "current_delivery_id": null,
+  "history": [],
+  "release_implication": "none: task completion is not video READY or publication"
+}
