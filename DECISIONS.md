@@ -31,6 +31,7 @@
 | CIB-043 | OPERATING | 값의 정본은 JSON, 설명은 문서 하나. 같은 내용을 두 문서에 쓰지 않음 | 관객 정의가 여섯 곳에 서로 다른 문장으로 있었음 |
 | CIB-044 | OPERATING | 현업 인접 주제(P030, P037–P040, P097)는 공개 출처 100% + 이해상충 점검 뒤 편성 | 비공개 정보 혼입 위험 |
 | CIB-045 | OPERATING | 본편 READY 뒤 Shorts 1개, 별도 목표 없음 | 새 포맷은 따로 평가됨 [YT03]. 본편 제작을 밀어내지 않는 범위 |
+| CIB-046 | USER_DIRECTIVE | 결과물은 code as video로 만든다. 편마다 30초 예고편을 Codex로 제작해 선별에 쓴다 | 키트 → 파일럿 6편 → 10편 단위 배치 순서. 기본 모델 GPT-6.1 Sol, 키트·룩 설계·재시도는 GPT-6 Astra → [TRAILERS.md](production/TRAILERS.md) |
 
 CIB-032–045는 2026-11-11 저장소 정리에서 내린 운영 결정이다. 사용자가 거부하면 해당 행을 `ARCHIVED`로 옮기고 이전 값을 되살린다.
 
