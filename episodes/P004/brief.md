@@ -6,9 +6,10 @@ audience_ref: `channel/audience.json`
 
 - **로그라인:** 1987년 대만의 새 회사가 고객에게 이상한 약속을 했다. 우리 이름으로는 칩을 팔지 않겠다. 그 약속이 세계에서 가장 중요한 공장을 만들었다.
 - **영어 제목 3안**
-  - A. TSMC's First Product Was a Promise
-  - B. The Factory That Promised Never to Compete
-  - C. Why Chip Designers Trust One Factory With Their Secrets
+  - A. The Company That Makes Everyone's Chips Sells None of Its Own
+  - B. Nvidia and Apple Don't Make Their Chips. One Factory Does.
+  - C. The Factory That Promised Never to Compete
+  - (TSMC라는 이름은 미국 성인의 30%만 들어 봤다. 제목에서 빼고 본문에서 소개한다)
 - **한국어 검토 제목:** TSMC가 처음 판 것은 약속이었다
 - **썸네일 2안**
   - 1. 웨이퍼 한 장, 칩마다 로고 자리가 비어 있다. 글자: `NO NAME`
