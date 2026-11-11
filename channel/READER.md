@@ -48,6 +48,8 @@ A층은 조사 수치가 뒷받침한다(AI, 데이터센터, 중국). B·C층�
 
 ## 시즌 1 제목에 적용하면
 
+시즌 1–4 전체의 제목은 [SEASONS-1-4.md](../editorial/SEASONS-1-4.md)에 있다. 아래는 규칙을 처음 적용한 예다.
+
 | 편 | 지금 작업 제목 | 문제 | 방향 (미승인) |
 |---|---|---|---|
 | P004 | TSMC's No-Competition Promise | TSMC는 30%만 안다 | The Company That Makes Everyone's Chips Sells None of Its Own |

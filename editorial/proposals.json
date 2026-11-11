@@ -116,8 +116,8 @@
       "H039"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "남의 칩만 만들기로 한 TSMC",
-    "title_en": "TSMC's No-Competition Promise",
+    "title_ko": "모두의 칩을 만들지만 자기 칩은 팔지 않는 회사",
+    "title_en": "The Company That Makes Everyone's Chips Sells None of Its Own",
     "proposed_order": "4",
     "act": "01 작동하는데 실패한다",
     "opening": "자기 이름 없는 칩이 나오는 제조 라인",
@@ -145,7 +145,13 @@
       "theme": "MAKE",
       "theme_title": "누가 만드는가",
       "year_approx": 1987
-    }
+    },
+    "previous_title_en": "TSMC's No-Competition Promise",
+    "title_candidates": [
+      "The Company That Makes Everyone's Chips Sells None of Its Own",
+      "Nvidia and Apple Don't Make Their Chips. One Factory Does.",
+      "Why the World's Most Valuable Chips Come From One Island"
+    ]
   },
   {
     "p_id": "P005",
@@ -373,8 +379,8 @@
       "H012"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "트랜지스터 첫 성공의 함정",
-    "title_en": "The First Transistor's Second Problem",
+    "title_ko": "모든 것 안에 들어 있는 스위치",
+    "title_en": "The Tiny Switch That Runs Your Entire Life",
     "proposed_order": "11",
     "act": "02 최초는 결승점이 아니다",
     "opening": "1947년 점접촉 트랜지스터의 바늘 두 개",
@@ -402,7 +408,13 @@
       "theme": "LIMITS",
       "theme_title": "한계와 다음 수",
       "year_approx": 1947
-    }
+    },
+    "previous_title_en": "The First Transistor's Second Problem",
+    "title_candidates": [
+      "The Tiny Switch That Runs Your Entire Life",
+      "Three Men Invented the Transistor. Then They Fell Out.",
+      "Before Chips, There Was One Switch"
+    ]
   },
   {
     "p_id": "P012",
@@ -782,8 +794,8 @@
       "H010"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "레이더가 키운 깨끗한 결정",
-    "title_en": "Radar's Demand for a Purer Crystal",
+    "title_ko": "레이더가 칩 산업을 가능하게 했다",
+    "title_en": "Radar Made the Chip Industry Possible",
     "proposed_order": "22",
     "act": "03 웨이퍼는 불량을 기억한다",
     "opening": "레이더 수신부에서 실패한 결정 접점",
@@ -811,7 +823,13 @@
       "theme": "NATION",
       "theme_title": "국가와 칩",
       "year_approx": 1942
-    }
+    },
+    "previous_title_en": "Radar's Demand for a Purer Crystal",
+    "title_candidates": [
+      "Radar Made the Chip Industry Possible",
+      "World War II Needed a Crystal. It Became the Chip.",
+      "The War Project That Purified Silicon"
+    ]
   },
   {
     "p_id": "P023",
@@ -893,8 +911,8 @@
       "H045"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "정렬할 일을 없앤 트랜지스터",
-    "title_en": "The Transistor That Aligned Itself",
+    "title_ko": "칩이 스스로 줄을 맞추게 한 요령",
+    "title_en": "The Trick That Let Chips Line Themselves Up",
     "proposed_order": "25",
     "act": "03 웨이퍼는 불량을 기억한다",
     "opening": "겹쳐야 할 두 마스크의 십자표적",
@@ -922,7 +940,13 @@
       "theme": "MEMORY",
       "theme_title": "기억의 값",
       "year_approx": 1968
-    }
+    },
+    "previous_title_en": "The Transistor That Aligned Itself",
+    "title_candidates": [
+      "The Trick That Let Chips Line Themselves Up",
+      "One Manufacturing Shortcut Created Intel",
+      "Why Memory Chips Suddenly Got Cheap"
+    ]
   },
   {
     "p_id": "P026",
@@ -1473,8 +1497,8 @@
       "H043"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "손으로 짜던 컴퓨터 메모리",
-    "title_en": "When Computer Memory Was Handwoven",
+    "title_ko": "컴퓨터 메모리는 손으로 짰다",
+    "title_en": "Computer Memory Used to Be Woven by Hand",
     "proposed_order": "41",
     "act": "05 기억의 가격",
     "opening": "여성이 엮은 코어 메모리 매트와 실리콘 칩",
@@ -1502,7 +1526,13 @@
       "theme": "MEMORY",
       "theme_title": "기억의 값",
       "year_approx": 1953
-    }
+    },
+    "previous_title_en": "When Computer Memory Was Handwoven",
+    "title_candidates": [
+      "Computer Memory Used to Be Woven by Hand",
+      "The Moon Landing's Software Was Sewn Together",
+      "Before Memory Chips, There Was Thread"
+    ]
   },
   {
     "p_id": "P042",
@@ -1622,8 +1652,8 @@
       "H037"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "끝나지 않는 DRAM 추격전",
-    "title_en": "The DRAM Race That Never Ends",
+    "title_ko": "삼성은 칩에서 실패할 거라는 말을 들었다",
+    "title_en": "Samsung Was Told It Would Fail at Chips",
     "proposed_order": "45",
     "act": "05 기억의 가격",
     "opening": "새로운 DRAM 세대 발표 직후 달력",
@@ -1651,7 +1681,13 @@
       "theme": "MEMORY",
       "theme_title": "기억의 값",
       "year_approx": 1983
-    }
+    },
+    "previous_title_en": "The DRAM Race That Never Ends",
+    "title_candidates": [
+      "Samsung Was Told It Would Fail at Chips",
+      "The 1983 Bet That Made Samsung a Chip Giant",
+      "Why Samsung Entered a Business Everyone Was Losing"
+    ]
   },
   {
     "p_id": "P046",
@@ -1659,8 +1695,8 @@
       "H061"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "인텔이 버린 메모리 사업",
-    "title_en": "The Memory Business Intel Walked Away From",
+    "title_ko": "Intel이 자기가 만든 사업을 버린 날",
+    "title_en": "The Day Intel Quit the Business It Invented",
     "proposed_order": "46",
     "act": "05 기억의 가격",
     "opening": "인텔 초기 DRAM 제품과 CPU 장부",
@@ -1688,7 +1724,13 @@
       "theme": "MEMORY",
       "theme_title": "기억의 값",
       "year_approx": 1985
-    }
+    },
+    "previous_title_en": "The Memory Business Intel Walked Away From",
+    "title_candidates": [
+      "The Day Intel Quit the Business It Invented",
+      "Intel Fired Itself to Survive",
+      "Why Intel Walked Away From Memory Chips"
+    ]
   },
   {
     "p_id": "P047",
@@ -1985,8 +2027,8 @@
       "H081"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "게임이 키운 AI용 GPU",
-    "title_en": "Games Paid for the AI GPU",
+    "title_ko": "AI 붐의 값은 게임이 치렀다",
+    "title_en": "Video Games Paid for the AI Boom",
     "proposed_order": "55",
     "act": "06 코드는 기계를 붙잡는다",
     "opening": "게임 화면의 픽셀과 여러 계산 유닛",
@@ -2014,7 +2056,13 @@
       "theme": "LIMITS",
       "theme_title": "한계와 다음 수",
       "year_approx": 1999
-    }
+    },
+    "previous_title_en": "Games Paid for the AI GPU",
+    "title_candidates": [
+      "Video Games Paid for the AI Boom",
+      "Why AI Runs on a Chip Made for Video Games",
+      "Nvidia Built AI's Engine for Gamers First"
+    ]
   },
   {
     "p_id": "P056",
@@ -2059,8 +2107,8 @@
       "H083"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "GPU 두 대가 뒤집은 AI 대회",
-    "title_en": "Two GPUs Upended an AI Competition",
+    "title_ko": "게임용 카드 두 장이 AI 연구실 전부를 이겼다",
+    "title_en": "Two Gaming Cards Beat Every AI Lab in 2012",
     "proposed_order": "57",
     "act": "06 코드는 기계를 붙잡는다",
     "opening": "이미지 분류 대회 성적표와 GPU 두 대",
@@ -2088,7 +2136,13 @@
       "theme": "LIMITS",
       "theme_title": "한계와 다음 수",
       "year_approx": 2012
-    }
+    },
+    "previous_title_en": "Two GPUs Upended an AI Competition",
+    "title_candidates": [
+      "Two Gaming Cards Beat Every AI Lab in 2012",
+      "The Contest That Started the AI Boom",
+      "AI's Breakthrough Was a Hardware Trick"
+    ]
   },
   {
     "p_id": "P058",
@@ -2096,8 +2150,8 @@
       "H087"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "CPU의 지름길로 새어난 비밀",
-    "title_en": "Secrets Leaked From a CPU Shortcut",
+    "title_ko": "칩을 빠르게 한 요령이 비밀을 흘렸다",
+    "title_en": "The Speed Trick That Leaked Everyone's Secrets",
     "proposed_order": "58",
     "act": "06 코드는 기계를 붙잡는다",
     "opening": "평범한 프로그램이 읽을 수 없어야 할 흔적",
@@ -2125,7 +2179,13 @@
       "theme": "LIMITS",
       "theme_title": "한계와 다음 수",
       "year_approx": 2018
-    }
+    },
+    "previous_title_en": "Secrets Leaked From a CPU Shortcut",
+    "title_candidates": [
+      "The Speed Trick That Leaked Everyone's Secrets",
+      "Every Computer Had the Same Flaw for 20 Years",
+      "Why Making Chips Faster Made Them Unsafe"
+    ]
   },
   {
     "p_id": "P059",
@@ -2166,8 +2226,8 @@
     "p_id": "P060",
     "source_h_ids": [],
     "map_type": "NEW",
-    "title_ko": "열린 CPU 규격, 비싼 칩",
-    "title_en": "An Open CPU Standard, an Expensive Chip",
+    "title_ko": "아무도 소유하지 않는 칩 설계",
+    "title_en": "The Chip Design Nobody Owns",
     "proposed_order": "60",
     "act": "06 코드는 기계를 붙잡는다",
     "opening": "공개 ISA 문서와 실제 실리콘 가격표",
@@ -2195,7 +2255,13 @@
       "theme": "LIMITS",
       "theme_title": "한계와 다음 수",
       "year_approx": 2015
-    }
+    },
+    "previous_title_en": "An Open CPU Standard, an Expensive Chip",
+    "title_candidates": [
+      "The Chip Design Nobody Owns",
+      "A University Project Is Now in Billions of Chips",
+      "Why Chipmakers Are Switching to a Free Design"
+    ]
   },
   {
     "p_id": "P061",
@@ -2203,8 +2269,8 @@
       "H023"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "반도체 회사를 떠난 사표 8장",
-    "title_en": "Eight Resignations From a Chip Startup",
+    "title_ko": "실리콘밸리는 사표 여덟 장에서 시작됐다",
+    "title_en": "Silicon Valley Started With Eight People Quitting",
     "proposed_order": "61",
     "act": "07 지식은 누구의 공장에 있는가",
     "opening": "한 장의 사직 결정을 둘러싼 연구진의 책상",
@@ -2232,7 +2298,13 @@
       "theme": "MAKE",
       "theme_title": "누가 만드는가",
       "year_approx": 1957
-    }
+    },
+    "previous_title_en": "Eight Resignations From a Chip Startup",
+    "title_candidates": [
+      "Silicon Valley Started With Eight People Quitting",
+      "Their Boss Won a Nobel Prize. They Quit Anyway.",
+      "The Eight Resignations Behind Every Chip Company"
+    ]
   },
   {
     "p_id": "P062",
@@ -2389,8 +2461,8 @@
       "H035"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "대만으로 돌아온 기술자 19명",
-    "title_en": "Nineteen Engineers Returned to Taiwan",
+    "title_ko": "대만은 어떻게 칩 만드는 법을 배웠나",
+    "title_en": "How Taiwan Learned to Make Chips",
     "proposed_order": "66",
     "act": "07 지식은 누구의 공장에 있는가",
     "opening": "해외 연수 사진과 텅 빈 현지 생산 설비",
@@ -2418,7 +2490,13 @@
       "theme": "MAKE",
       "theme_title": "누가 만드는가",
       "year_approx": 1976
-    }
+    },
+    "previous_title_en": "Nineteen Engineers Returned to Taiwan",
+    "title_candidates": [
+      "How Taiwan Learned to Make Chips",
+      "Taiwan Sent Engineers to America. They Came Back With an Industry.",
+      "The Country That Bought a Chip Industry"
+    ]
   },
   {
     "p_id": "P067",
@@ -2426,8 +2504,8 @@
       "H036"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "일본 칩 라이벌의 공동 연구실",
-    "title_en": "Japanese Chip Rivals Shared a Laboratory",
+    "title_ko": "일본은 경쟁사들을 한 연구실에 넣었다",
+    "title_en": "Japan Put Its Chip Rivals in One Laboratory",
     "proposed_order": "67",
     "act": "07 지식은 누구의 공장에 있는가",
     "opening": "다른 기업 배지가 붙은 공동 연구실 출입증",
@@ -2455,7 +2533,13 @@
       "theme": "NATION",
       "theme_title": "국가와 칩",
       "year_approx": 1976
-    }
+    },
+    "previous_title_en": "Japanese Chip Rivals Shared a Laboratory",
+    "title_candidates": [
+      "Japan Put Its Chip Rivals in One Laboratory",
+      "The Shared Lab That Made Japan a Chip Superpower",
+      "Five Rivals, One Lab, Four Years"
+    ]
   },
   {
     "p_id": "P068",
@@ -2463,8 +2547,8 @@
       "H038"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "불량을 공유한 미국 칩 경쟁사들",
-    "title_en": "US Chip Rivals Shared Their Defects",
+    "title_ko": "미국 칩 경쟁사들이 비밀을 나눈 때",
+    "title_en": "When America's Chip Rivals Shared Their Secrets",
     "proposed_order": "68",
     "act": "07 지식은 누구의 공장에 있는가",
     "opening": "각사에서 가져온 불량 웨이퍼 맵",
@@ -2492,7 +2576,13 @@
       "theme": "NATION",
       "theme_title": "국가와 칩",
       "year_approx": 1987
-    }
+    },
+    "previous_title_en": "US Chip Rivals Shared Their Defects",
+    "title_candidates": [
+      "When America's Chip Rivals Shared Their Secrets",
+      "The Government Paid Competitors to Cooperate",
+      "Rivals Pooled Their Failures to Beat Japan"
+    ]
   },
   {
     "p_id": "P069",
@@ -2535,8 +2625,8 @@
     "p_id": "P070",
     "source_h_ids": [],
     "map_type": "NEW",
-    "title_ko": "공장 없는 퀄컴의 반도체",
-    "title_en": "Qualcomm's Chips Without a Fab",
+    "title_ko": "휴대폰 속 칩을 만든 회사에는 공장이 없다",
+    "title_en": "The Chip in Your Phone Came From a Company With No Factory",
     "proposed_order": "70",
     "act": "07 지식은 누구의 공장에 있는가",
     "opening": "회로도만 있는 회사와 수만 장의 웨이퍼",
@@ -2564,7 +2654,13 @@
       "theme": "MAKE",
       "theme_title": "누가 만드는가",
       "year_approx": 1985
-    }
+    },
+    "previous_title_en": "Qualcomm's Chips Without a Fab",
+    "title_candidates": [
+      "The Chip in Your Phone Came From a Company With No Factory",
+      "The Business Model Behind Almost Every Phone Chip",
+      "How to Sell Chips Without Making Any"
+    ]
   },
   {
     "p_id": "P071",
@@ -2647,8 +2743,8 @@
       "H067"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "공장을 팔고도 칩을 만든 AMD",
-    "title_en": "AMD Sold Its Fab and Kept Designing Chips",
+    "title_ko": "AMD는 왜 공장을 전부 팔았나",
+    "title_en": "Why AMD Sold All Its Factories",
     "proposed_order": "73",
     "act": "08 공장보다 느린 돈",
     "opening": "공장 매각 계약서와 계속되는 칩 출하",
@@ -2676,7 +2772,13 @@
       "theme": "MAKE",
       "theme_title": "누가 만드는가",
       "year_approx": 2009
-    }
+    },
+    "previous_title_en": "AMD Sold Its Fab and Kept Designing Chips",
+    "title_candidates": [
+      "Why AMD Sold All Its Factories",
+      "The Chipmaker That Stopped Making Chips",
+      "AMD Gave Up Its Factories to Stay Alive"
+    ]
   },
   {
     "p_id": "P074",
@@ -3013,8 +3115,8 @@
       "H093"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "새 원료를 거절한 반도체 공장",
-    "title_en": "Why a Fab Rejected New Materials",
+    "title_ko": "세계의 메모리를 멈출 뻔한 화학물질 세 가지",
+    "title_en": "Three Chemicals That Nearly Stopped the World's Memory Chips",
     "proposed_order": "83",
     "act": "09 공급망에 마침표는 없다",
     "opening": "같은 이름을 단 두 공급사의 원료 통",
@@ -3042,7 +3144,13 @@
       "theme": "NATION",
       "theme_title": "국가와 칩",
       "year_approx": 2019
-    }
+    },
+    "previous_title_en": "Why a Fab Rejected New Materials",
+    "title_candidates": [
+      "Three Chemicals That Nearly Stopped the World's Memory Chips",
+      "The Trade Fight Fought With Chemicals",
+      "How Three Chemicals Became a Weapon"
+    ]
   },
   {
     "p_id": "P084",
@@ -3231,8 +3339,8 @@
       "H099"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "수출규제가 바꾼 AI 칩 설계",
-    "title_en": "The AI Chip Redesigned for Export Rules",
+    "title_ko": "법 아래로 지나가게 다시 만든 AI 칩",
+    "title_en": "The AI Chip Rebuilt to Slip Under a Law",
     "proposed_order": "89",
     "act": "09 공급망에 마침표는 없다",
     "opening": "설계 검토 회의에 도착한 수출규제 문서",
@@ -3260,7 +3368,13 @@
       "theme": "NATION",
       "theme_title": "국가와 칩",
       "year_approx": 2022
-    }
+    },
+    "previous_title_en": "The AI Chip Redesigned for Export Rules",
+    "title_candidates": [
+      "The AI Chip Rebuilt to Slip Under a Law",
+      "America Banned a Chip. Nvidia Made a Slower One.",
+      "Can a Government Ban a Chip?"
+    ]
   },
   {
     "p_id": "P090",
@@ -3303,8 +3417,8 @@
       "H028"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "너무 일찍 등장한 저전력 칩",
-    "title_en": "The Low-Power Chip Before Its Time",
+    "title_ko": "너무 느리다고 버려진 설계가 지금 모든 것을 돌린다",
+    "title_en": "The Chip Design Rejected as Too Slow Now Runs Everything",
     "proposed_order": "91",
     "act": "10 반도체의 다음 경계",
     "opening": "전력계가 더 낮은 소자와 당시 고객의 계산기",
@@ -3332,7 +3446,13 @@
       "theme": "LIMITS",
       "theme_title": "한계와 다음 수",
       "year_approx": 1963
-    }
+    },
+    "previous_title_en": "The Low-Power Chip Before Its Time",
+    "title_candidates": [
+      "The Chip Design Rejected as Too Slow Now Runs Everything",
+      "Why Your Phone Doesn't Melt",
+      "Engineers Shelved This Idea in 1963. It's in Every Phone."
+    ]
   },
   {
     "p_id": "P092",
@@ -3691,7 +3811,13 @@
       "theme_title": "국가와 칩",
       "year_approx": 1962
     },
-    "premise": "젤레노그라드를 세우고도 독자 설계 대신 복제를 택한 결정과 그 대가"
+    "premise": "젤레노그라드를 세우고도 독자 설계 대신 복제를 택한 결정과 그 대가",
+    "previous_title_en": "Why the Soviet Union Chose to Copy American Chips",
+    "title_candidates": [
+      "Why the Soviet Union Chose to Copy American Chips",
+      "The Soviets Had the Scientists. They Copied Anyway.",
+      "The Decision That Kept Soviet Computers Behind"
+    ]
   },
   {
     "p_id": "P102",
@@ -4345,8 +4471,8 @@
     "p_id": "P120",
     "source_h_ids": [],
     "map_type": "NEW",
-    "title_ko": "메모리를 이기고 PC 시대를 놓친 일본",
-    "title_en": "Japan Won Memory and Lost the PC Era",
+    "title_ko": "일본은 가장 좋은 메모리를 만들었다. 그게 문제였다",
+    "title_en": "Japan Made the Best Memory Chips. That Was the Problem.",
     "proposed_order": "120",
     "act": "11 2026-11-12 재편 추가",
     "opening": null,
@@ -4375,7 +4501,13 @@
       "theme_title": "기억의 값",
       "year_approx": 1995
     },
-    "premise": "고품질·장수명 설계가 값싼 PC용 메모리 시대에 약점이 된 과정"
+    "premise": "고품질·장수명 설계가 값싼 PC용 메모리 시대에 약점이 된 과정",
+    "previous_title_en": "Japan Won Memory and Lost the PC Era",
+    "title_candidates": [
+      "Japan Made the Best Memory Chips. That Was the Problem.",
+      "How Japan Won the Chip War and Lost the Market",
+      "Too Good: Why Japan's Chip Giants Fell"
+    ]
   },
   {
     "p_id": "P121",
@@ -4957,8 +5089,8 @@
     "p_id": "P137",
     "source_h_ids": [],
     "map_type": "NEW",
-    "title_ko": "TSMC가 IBM에 거절한 날",
-    "title_en": "TSMC Said No to IBM",
+    "title_ko": "IBM의 제안을 거절한 칩 공장",
+    "title_en": "The Chip Factory That Turned Down IBM",
     "proposed_order": "137",
     "act": "11 2026-11-12 재편 추가",
     "opening": null,
@@ -4987,7 +5119,13 @@
       "theme_title": "누가 만드는가",
       "year_approx": 2003
     },
-    "premise": "구리 배선 세대에서 기술 제휴 대신 자체 개발을 택한 결정"
+    "premise": "구리 배선 세대에서 기술 제휴 대신 자체 개발을 택한 결정",
+    "previous_title_en": "TSMC Said No to IBM",
+    "title_candidates": [
+      "The Chip Factory That Turned Down IBM",
+      "IBM Offered a Shortcut. The Factory Said No.",
+      "When the Contract Factory Stopped Borrowing"
+    ]
   },
   {
     "p_id": "P138",
@@ -5317,8 +5455,8 @@
     "p_id": "P147",
     "source_h_ids": [],
     "map_type": "NEW",
-    "title_ko": "불량 분석에서 나온 메모리",
-    "title_en": "The Memory Found in a Failed Test",
+    "title_ko": "창문 달린 칩",
+    "title_en": "The Chip With a Window",
     "proposed_order": "147",
     "act": "11 2026-11-12 재편 추가",
     "opening": null,
@@ -5347,7 +5485,13 @@
       "theme_title": "기억의 값",
       "year_approx": 1971
     },
-    "premise": "지울 수 있는 메모리가 개발 방식 자체를 바꾼 과정"
+    "premise": "지울 수 있는 메모리가 개발 방식 자체를 바꾼 과정",
+    "previous_title_en": "The Memory Found in a Failed Test",
+    "title_candidates": [
+      "The Chip With a Window",
+      "A Factory Defect Became a New Kind of Memory",
+      "The Memory You Could Erase With Light"
+    ]
   },
   {
     "p_id": "P148",

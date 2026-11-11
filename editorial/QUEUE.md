@@ -11,12 +11,12 @@
 
 | 순번 | 편 | 무렵 | 무게 | 작업 제목 | 메모 |
 |---|---|---|---|---|---|
-| 1 | P004 | 1987 | 3 | TSMC's No-Competition Promise |  |
-| 2 | P061 | 1957 | 3 | Eight Resignations From a Chip Startup |  |
-| 3 | P073 | 2009 | 3 | AMD Sold Its Fab and Kept Designing Chips |  |
-| 4 | P066 | 1976 | 3 | Nineteen Engineers Returned to Taiwan | 1976년 RCA 기술 이전과 대만 정부의 결정으로(P065 일부 포함) |
-| 5 | P137 | 2003 | 3 | TSMC Said No to IBM | 구리 배선 세대에서 기술 제휴 대신 자체 개발을 택한 결정 |
-| 6 | P070 | 1985 | 2 | Qualcomm's Chips Without a Fab |  |
+| 1 | P004 | 1987 | 3 | The Company That Makes Everyone's Chips Sells None of Its Own |  |
+| 2 | P061 | 1957 | 3 | Silicon Valley Started With Eight People Quitting |  |
+| 3 | P073 | 2009 | 3 | Why AMD Sold All Its Factories |  |
+| 4 | P066 | 1976 | 3 | How Taiwan Learned to Make Chips | 1976년 RCA 기술 이전과 대만 정부의 결정으로(P065 일부 포함) |
+| 5 | P137 | 2003 | 3 | The Chip Factory That Turned Down IBM | 구리 배선 세대에서 기술 제휴 대신 자체 개발을 택한 결정 |
+| 6 | P070 | 1985 | 2 | The Chip in Your Phone Came From a Company With No Factory |  |
 
 ## 시즌 2 · 한계와 다음 수
 
@@ -24,12 +24,12 @@
 
 | 순번 | 편 | 무렵 | 무게 | 작업 제목 | 메모 |
 |---|---|---|---|---|---|
-| 7 | P055 | 1999 | 3 | Games Paid for the AI GPU |  |
-| 8 | P011 | 1947 | 3 | The First Transistor's Second Problem | 트랜지스터의 발명 자체를 사건으로 |
-| 9 | P058 | 2018 | 2 | Secrets Leaked From a CPU Shortcut |  |
-| 10 | P091 | 1963 | 3 | The Low-Power Chip Before Its Time | 너무 일찍 나온 CMOS가 시계·계산기를 거쳐 표준이 된 이야기로 |
-| 11 | P060 | 2015 | 2 | An Open CPU Standard, an Expensive Chip |  |
-| 12 | P057 | 2012 | 3 | Two GPUs Upended an AI Competition |  |
+| 7 | P055 | 1999 | 3 | Video Games Paid for the AI Boom |  |
+| 8 | P011 | 1947 | 3 | The Tiny Switch That Runs Your Entire Life | 트랜지스터의 발명 자체를 사건으로 |
+| 9 | P058 | 2018 | 2 | The Speed Trick That Leaked Everyone's Secrets |  |
+| 10 | P091 | 1963 | 3 | The Chip Design Rejected as Too Slow Now Runs Everything | 너무 일찍 나온 CMOS가 시계·계산기를 거쳐 표준이 된 이야기로 |
+| 11 | P060 | 2015 | 2 | The Chip Design Nobody Owns |  |
+| 12 | P057 | 2012 | 3 | Two Gaming Cards Beat Every AI Lab in 2012 |  |
 
 ## 시즌 3 · 기억의 값
 
@@ -37,12 +37,12 @@
 
 | 순번 | 편 | 무렵 | 무게 | 작업 제목 | 메모 |
 |---|---|---|---|---|---|
-| 13 | P046 | 1985 | 3 | The Memory Business Intel Walked Away From |  |
-| 14 | P041 | 1953 | 2 | When Computer Memory Was Handwoven |  |
-| 15 | P120 | 1995 | 3 | Japan Won Memory and Lost the PC Era | 고품질·장수명 설계가 값싼 PC용 메모리 시대에 약점이 된 과정 |
-| 16 | P025 | 1968 | 3 | The Transistor That Aligned Itself | 실리콘 게이트가 Intel과 MOS 시대를 연 이야기로 |
-| 17 | P045 | 1983 | 3 | The DRAM Race That Never Ends | 1983년 삼성의 DRAM 진입 결정으로 |
-| 18 | P147 | 1971 | 2 | The Memory Found in a Failed Test | 지울 수 있는 메모리가 개발 방식 자체를 바꾼 과정 |
+| 13 | P046 | 1985 | 3 | The Day Intel Quit the Business It Invented |  |
+| 14 | P041 | 1953 | 2 | Computer Memory Used to Be Woven by Hand |  |
+| 15 | P120 | 1995 | 3 | Japan Made the Best Memory Chips. That Was the Problem. | 고품질·장수명 설계가 값싼 PC용 메모리 시대에 약점이 된 과정 |
+| 16 | P025 | 1968 | 3 | The Trick That Let Chips Line Themselves Up | 실리콘 게이트가 Intel과 MOS 시대를 연 이야기로 |
+| 17 | P045 | 1983 | 3 | Samsung Was Told It Would Fail at Chips | 1983년 삼성의 DRAM 진입 결정으로 |
+| 18 | P147 | 1971 | 2 | The Chip With a Window | 지울 수 있는 메모리가 개발 방식 자체를 바꾼 과정 |
 
 ## 시즌 4 · 국가와 칩
 
@@ -50,12 +50,12 @@
 
 | 순번 | 편 | 무렵 | 무게 | 작업 제목 | 메모 |
 |---|---|---|---|---|---|
-| 19 | P089 | 2022 | 3 | The AI Chip Redesigned for Export Rules |  |
-| 20 | P022 | 1942 | 2 | Radar's Demand for a Purer Crystal |  |
-| 21 | P083 | 2019 | 2 | Why a Fab Rejected New Materials |  |
+| 19 | P089 | 2022 | 3 | The AI Chip Rebuilt to Slip Under a Law |  |
+| 20 | P022 | 1942 | 2 | Radar Made the Chip Industry Possible |  |
+| 21 | P083 | 2019 | 2 | Three Chemicals That Nearly Stopped the World's Memory Chips |  |
 | 22 | P101 | 1962 | 3 | Why the Soviet Union Chose to Copy American Chips | 젤레노그라드를 세우고도 독자 설계 대신 복제를 택한 결정과 그 대가 |
-| 23 | P068 | 1987 | 3 | US Chip Rivals Shared Their Defects |  |
-| 24 | P067 | 1976 | 3 | Japanese Chip Rivals Shared a Laboratory |  |
+| 23 | P068 | 1987 | 3 | When America's Chip Rivals Shared Their Secrets |  |
+| 24 | P067 | 1976 | 3 | Japan Put Its Chip Rivals in One Laboratory |  |
 
 ## 시즌 5 · 빛과 기계
 
