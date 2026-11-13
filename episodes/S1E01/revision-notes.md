@@ -1,0 +1,5 @@
+# Local revisions after independent review
+
+Implemented: wafer/cassette scale correction; TSMC/Taiwan/Hsinchu sign moved into frame; linear guide, structural column and floor anchor added; wafer now stops and lowers onto supports while wrist/blade lower and retract. Shader/export mismatch corrected for silicon base color in the WebGL player; lighting reduced after overexposure was observed. These corrections require independent recheck and do not imply scene approval.
+
+Open: script is too general for the requested historical documentary. Source a concrete Morris Chang/founding decision and changed outcome before final VO regeneration; reduce repeated thesis and make opening object explicit. Add shot-level claims and reconstruction labels. Complete distinct full-film scenes; inspect reference frames when access is restored; revise the wafer material for more convincing silicon; finish postproduction and listen to names/phrasing. No soundtrack or extra effects added merely to mask weaknesses.

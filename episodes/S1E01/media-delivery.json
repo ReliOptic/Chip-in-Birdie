@@ -1,0 +1,45 @@
+{
+  "status": "DRAFT_NOT_READY",
+  "finished_episode_count": 0,
+  "source_pr": 4,
+  "full_english_vo_seconds": 469.882,
+  "rendered_scene_seconds": 6,
+  "rendered_scene_dimensions": [
+    960,
+    540
+  ],
+  "animation_sampling_fps": 12,
+  "encoded_fps": 24,
+  "release_qa": "CHANGES_REQUESTED",
+  "reference_video_inspection": "BLOCKED_PROXY",
+  "listening_review": "NOT_PERFORMED",
+  "files": {
+    "S1E01-English-VO.mp3": {
+      "bytes": 7519532,
+      "sha256": "d52678eba44338912cf1018de5cad5390f2ab54553197264753eafd87ed99ceb"
+    },
+    "S1E01-handoff-6s.mp4": {
+      "bytes": 1000308,
+      "sha256": "ddd0f725e4402736b48e4b8a9c4e38684a0f101756daa35d32ea698832b61342"
+    },
+    "README.md": {
+      "bytes": 1441,
+      "sha256": "761a4d09ac978dc95167cb0978cd3152ff73dd54a470fd21797c8eb4bb8c3157"
+    },
+    "hero.blend": {
+      "bytes": 3068728,
+      "sha256": "22852039b4e1fdbb7c4c855b8f281d6f4afb61a516b39cd8cd355f91e153d2ed"
+    },
+    "S1E01-contact-sheet.png": {
+      "bytes": 378789,
+      "sha256": "7eba5f3de51570848d5da3b42876c5dd4b0de985582c39b84094a7bc1487faca"
+    },
+    "S1E01-review.html": {
+      "bytes": 20708359,
+      "sha256": "e85d5b877043237e0bf0c30c4cc6de102e914dacea2c17efe31875e80c20a1cf"
+    }
+  },
+  "delivery_url": "https://github.com/ReliOptic/Chip-in-Birdie/tree/review-assets/s1e01-20261114/review-assets/S1E01",
+  "storage": "One bounded review revision on separate review-assets branch; no media merge into main",
+  "release_upload": "FAILED: uploads.github.com returned 401 Bad credentials; draft release was empty"
+}
