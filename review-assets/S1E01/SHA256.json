@@ -22,5 +22,9 @@
   "S1E01-review.html": {
     "bytes": 20708359,
     "sha256": "e85d5b877043237e0bf0c30c4cc6de102e914dacea2c17efe31875e80c20a1cf"
+  },
+  "standalone-qa.json": {
+    "bytes": 178,
+    "sha256": "2d4b20023322fa4258bcb98fa47eb587bea054a9208315470f5a65bc9343b69b"
   }
 }
