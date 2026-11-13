@@ -1,0 +1,37 @@
+{
+  "artifacts": [
+    {
+      "path": "editorial/SEASON_PROGRAM_S1-S4_PROPOSAL.md",
+      "sha256": "00762172c76791634e6d81a474fdb9d6bd94448e0dad58a581549b7beeb57a90",
+      "size_bytes": 15028,
+      "snapshot_path": "work/deliveries/TASK-004-r0001/artifacts/editorial/SEASON_PROGRAM_S1-S4_PROPOSAL.md"
+    },
+    {
+      "path": "editorial/season-program-s1-s4.proposal.json",
+      "sha256": "5d20dbf23d6d240121e61cc78012723fbb02229aaa7f3e9e4bc5df0d4b866fb2",
+      "size_bytes": 5031,
+      "snapshot_path": "work/deliveries/TASK-004-r0001/artifacts/editorial/season-program-s1-s4.proposal.json"
+    },
+    {
+      "path": "tests/test_season_program.py",
+      "sha256": "fd5dc6a4d6dc0fcc280609fee4219516aeea9ae132181a0327205e89cf70ccd0",
+      "size_bytes": 3014,
+      "snapshot_path": "work/deliveries/TASK-004-r0001/artifacts/tests/test_season_program.py"
+    }
+  ],
+  "bundle_sha256": "5fc5f2d4edae438b3827883be2766ab803d1b7a17247d1f3dd8499f5799bea51",
+  "delivery_id": "TASK-004-r0001",
+  "episode_id": null,
+  "manifest_sha256": "54d9a4dea8b53cf33c3ea29527fdd846c26449cc4442ac42e8b55b8256759b6a",
+  "previous_delivery_id": null,
+  "producer": {
+    "actor": "/root",
+    "model": "GPT-6",
+    "session_id": "chatgpt-261113-season-program"
+  },
+  "revision": 1,
+  "schema_version": "1.0",
+  "scope": "channel",
+  "submitted_at": "2026-11-13T00:50:59.351395Z",
+  "task_id": "TASK-004"
+}

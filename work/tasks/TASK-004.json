@@ -14,7 +14,7 @@
     "session_id": "chatgpt-261113-season-program",
     "session_id_source": "explicit"
   },
-  "current_delivery_id": null,
+  "current_delivery_id": "TASK-004-r0001",
   "episode_id": null,
   "history": [
     {
@@ -29,6 +29,14 @@
         "session_id_source": "explicit"
       },
       "event": "CLAIMED"
+    },
+    {
+      "actor": "/root",
+      "at": "2026-11-13T00:50:59.356902Z",
+      "bundle_sha256": "5fc5f2d4edae438b3827883be2766ab803d1b7a17247d1f3dd8499f5799bea51",
+      "delivery_id": "TASK-004-r0001",
+      "event": "SUBMITTED",
+      "revision": 1
     }
   ],
   "objective": "기존 10개 Act와 과거 S1–S5 관심 분류를 훼손하지 않으면서 4개 시즌의 시청자 경험, 24편 후보, 회차 전환, 근거·미디어 승인 관문을 제안한다.",
@@ -38,10 +46,10 @@
     "editorial",
     "viewer"
   ],
-  "revision": 0,
+  "revision": 1,
   "scope": "channel",
-  "status": "CLAIMED",
+  "status": "IN_REVIEW",
   "task_id": "TASK-004",
   "title": "S1–S4 편성 구조 제안과 P100 계보 연결",
-  "updated_at": "2026-11-13T00:46:27.694821Z"
+  "updated_at": "2026-11-13T00:50:59.356919Z"
 }
