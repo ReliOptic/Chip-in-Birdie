@@ -22,3 +22,15 @@
 `decision_id / date / changed_requirement / previous / next / authority_or_source / affected_artifacts / verification / remaining_unknowns`
 
 최신 지시를 모든 세부안의 승인으로 확대하지 않는다. 제목·공개 순서·20분 전환·새 캐릭터·플랫폼 업로드를 이 변경으로 확정하지 않았다. 이후 실제 관측과 사용자 편집을 보존하며 필요한 항목만 수정한다.
+
+## 2026-11-14 · Four-season execution directive
+
+CIB-046 USER_DIRECTIVE: Four seasons of 7–8 full English-VO 3D documentary episodes; selected 8 each (32). editorial/seasons.json is the canonical season selection; existing H/P catalogs retain lineage. Prior 6-episode/trailer contracts are superseded for this task. PR #1 is recovered at 3c66e4b, not merged wholesale.
+
+CIB-047 IMPLEMENTED_POLICY: Preserve 24 user-specified PR core episodes and add two existing PR candidates per season (P109/P078, P010/P099, P042/P044, P074/P076). Additions connect design interfaces, power constraints, bit economics and government procurement; they are new editorial judgments, not recovered user approvals of claims.
+
+CIB-048 USER_DIRECTIVE: Sequential production cycle S1E01 → S2E01 → S3E01 → S4E01, followed by E02 cycle. Initial milestone four finished full episodes. NOT_STARTED at slate save; no document or teaser establishes READY.
+
+CIB-049 IMPLEMENTED_POLICY: Target 8–9 minutes; 6–12 if the story needs it. English script and real VO lead animation timing. Documentary reconstructions and illustrative process models must be labeled. Historical 2022–23 export-control case requires dated rules; no statement of current legality. Original overclaiming titles retained only as provenance; reviewed working titles narrow them.
+
+CIB-050 USER_DIRECTIVE: Stay in Chat; no new payments or YouTube uploads. Source code, reproducible playback, real audio and QA required; independent review still applies. Production binary outputs remain outside Git.
