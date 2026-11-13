@@ -132,5 +132,17 @@
   "same_seek_pixel_identical": true,
   "page_errors": [],
   "played_seconds_observed": 6,
-  "full_episode_complete": false
+  "full_episode_complete": false,
+  "real_time_webgl_quality": "FRAME_LAG_OBSERVED; deterministic seek passes; pre-rendered playback is supplied",
+  "rendered_scene_playback": {
+    "duration": 6,
+    "currentTime": 6,
+    "ended": true,
+    "error": null,
+    "width": 960,
+    "height": 540
+  },
+  "rendered_from": "72 deterministic frames at 12 fps, encoded 24 fps via duplicated frames; not interpolated motion",
+  "full_narration_duration": 469.882,
+  "listening_review": "NOT_PERFORMED"
 }
