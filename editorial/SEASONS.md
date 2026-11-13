@@ -18,7 +18,7 @@ How did design and manufacturing become separate businesses?
 - Choice: Build a dedicated foundry rather than sell competing chip designs
 - 3D event: A customer's layout enters a wafer carrier; finished dies return while the customer retains the design
 - Payoff: The product is also a trusted manufacturing relationship
-- Next: S1E02 — The next episode tests another consequence of this season question; each stands alone.
+- Next: S1E02 — A factory can separate ownership from design; eight engineers leaving an employer show how the people and knowledge behind such companies first became mobile.
 - Selection: RECOVERED_PR1_CORE — Preserves user-recovered six-episode sequence; titles remain factual review drafts.
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: TSMC 창업 당시 인터뷰·초기 고객 계약·연차보고서.
 ### S1E02 · Silicon Valley Started With Eight People Quitting
@@ -29,7 +29,7 @@ How did design and manufacturing become separate businesses?
 - Choice: Leave and organize a new company
 - 3D event: Lab notebooks leave separate benches and arrive at a new fabrication line
 - Payoff: Skills travel with people, but institutions determine whether they become products
-- Next: S1E03 — The next episode tests another consequence of this season question; each stands alone.
+- Next: S1E03 — Leaving a company can create a new manufacturer; AMD later made the opposite move by keeping design and separating its factories.
 - Selection: RECOVERED_PR1_CORE — Preserves user-recovered six-episode sequence; titles remain factual review drafts.
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: Fairchild 창립 기록·개인 구술·계약 문서.
 ### S1E03 · Why AMD Sold All Its Factories
@@ -40,7 +40,7 @@ How did design and manufacturing become separate businesses?
 - Choice: Separate the manufacturing business
 - 3D event: A fab's ownership changes while design files still cross its loading boundary
 - Payoff: Fabless reduces ownership, not every manufacturing constraint
-- Next: S1E04 — The next episode tests another consequence of this season question; each stands alone.
+- Next: S1E04 — Selling a fab only works if another organization can run it; Taiwan's earlier technology-transfer program asks how that capability is learned.
 - Selection: RECOVERED_PR1_CORE — Preserves user-recovered six-episode sequence; titles remain factual review drafts.
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: AMD/GlobalFoundries 분사 공시·공급계약.
 ### S1E04 · How Taiwan Learned to Make Chips
@@ -51,7 +51,7 @@ How did design and manufacturing become separate businesses?
 - Choice: Transfer technology and train operators
 - 3D event: Operators qualify successive wafers on a period production line
 - Payoff: Learning to repeat a process precedes selling trust
-- Next: S1E05 — The next episode tests another consequence of this season question; each stands alone.
+- Next: S1E05 — Imported process knowledge can establish production; the next story tests when developing a process independently might become worth the risk.
 - Selection: RECOVERED_PR1_CORE — Preserves user-recovered six-episode sequence; titles remain factual review drafts.
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: ITRI 초기 인력 이전 기록·생산 보고서.
 ### S1E05 · TSMC, IBM and the Cost of Process Independence
@@ -62,7 +62,7 @@ How did design and manufacturing become separate businesses?
 - Choice: Investigate the claimed IBM alliance rejection against primary records
 - 3D event: Two copper integration routes meet reliability test stations; one route is held pending evidence
 - Payoff: Technical independence has costs; no unverified rejection scene is presented as history
-- Next: S1E06 — The next episode tests another consequence of this season question; each stands alone.
+- Next: S1E06 — Process independence is one form of control; Qualcomm shows how another company could build a business while buying its manufacturing.
 - Selection: RECOVERED_PR1_CORE — Preserves user-recovered six-episode sequence; titles remain factual review drafts.
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: 구리 배선 세대에서 기술 제휴 대신 자체 개발을 택한 결정.
 ### S1E06 · The Chip in Your Phone Came From a Company With No Factory
@@ -73,7 +73,7 @@ How did design and manufacturing become separate businesses?
 - Choice: Coordinate design with external manufacturing
 - 3D event: A phone board opens into design, wafer and packaging spaces
 - Payoff: No fab does not mean no production dependencies
-- Next: S1E07 — The next episode tests another consequence of this season question; each stands alone.
+- Next: S1E07 — A company without a fab still needs a reliable design-to-factory handoff; Mead and Conway's design rules reveal part of that interface.
 - Selection: RECOVERED_PR1_CORE — Preserves user-recovered six-episode sequence; titles remain factual review drafts.
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: Arm·Qualcomm·TSMC 공개 연차보고서 비교.
 ### S1E07 · The Textbook That Let Anyone Design a Chip
@@ -84,7 +84,7 @@ How did design and manufacturing become separate businesses?
 - Choice: Use scalable design rules and shared fabrication
 - 3D event: Several layouts nest onto a shared wafer and return as distinct chips
 - Payoff: A usable interface makes specialization possible
-- Next: S1E08 — The next episode tests another consequence of this season question; each stands alone.
+- Next: S1E08 — Shared design interfaces make specialization possible; Apple shows why a system company might then bring chip design back inside its own walls.
 - Selection: NEW_PRODUCTION_JUDGMENT — Added from existing PR candidates to connect design interfaces and system ownership
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: 설계 규칙을 공장에서 떼어 낸 미드-콘웨이 방법과 공유 제작 서비스. 파운드리의 기술적 전제.
 ### S1E08 · Apple Designs Chips Without a Fab
@@ -95,7 +95,7 @@ How did design and manufacturing become separate businesses?
 - Choice: Control system design and outsource fabrication
 - 3D event: A phone enclosure closes around a chip whose wafer came from another company
 - Payoff: Ownership follows the bottleneck a company chooses to control
-- Next: season resolution — Season question resolves in a wider system; no prerequisite viewing.
+- Next: season resolution — The season resolves in a choice of boundaries: companies can own system design, process development or neither, while still depending on the capabilities they buy.
 - Selection: NEW_PRODUCTION_JUDGMENT — Added from existing PR candidates to connect design interfaces and system ownership
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: Apple 공식 SoC 소개·TSMC 공개 제조 자료.
 
@@ -111,7 +111,7 @@ Which constraint makes the next architecture worth choosing?
 - Choice: Invest in parallel programmable hardware
 - 3D event: A graphics board renders pixels; the same execution lanes later process arrays
 - Payoff: Games supplied a market, but software and research supplied additional bridges
-- Next: S2E02 — The next episode tests another consequence of this season question; each stands alone.
+- Next: S2E02 — GPU parallelism is built from switches; the next episode returns to the fragile device whose repeatable manufacture made such architectures possible.
 - Selection: RECOVERED_PR1_CORE — Preserves user-recovered six-episode sequence; titles remain factual review drafts.
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: NVIDIA·ATI 초기 GPU 연혁·API/제품 스펙.
 ### S2E02 · The Tiny Switch That Runs Your Entire Life
@@ -122,7 +122,7 @@ Which constraint makes the next architecture worth choosing?
 - Choice: Turn a laboratory contact into reproducible devices
 - 3D event: A point contact amplifies a signal then fails a repeatability test
 - Payoff: Invention and reliable production solve different problems
-- Next: S2E03 — The next episode tests another consequence of this season question; each stands alone.
+- Next: S2E03 — Making the switch reliable opens the race to do more work; speculative processors reveal a case where pursuing speed changes what information escapes.
 - Selection: RECOVERED_PR1_CORE — Preserves user-recovered six-episode sequence; titles remain factual review drafts.
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: Bell Labs 노트·특허·연구자 구술 기록 날짜별 대조.
 ### S2E03 · The Speed Trick That Leaked Everyone's Secrets
@@ -133,7 +133,7 @@ Which constraint makes the next architecture worth choosing?
 - Choice: Speculate before access is resolved, then reconsider protections
 - 3D event: A rejected instruction leaves a cache trace that a second process times
 - Payoff: Undoing a result need not erase every physical trace
-- Next: S2E04 — The next episode tests another consequence of this season question; each stands alone.
+- Next: S2E04 — A shortcut can trade isolation for speed; early CMOS shows another tradeoff, accepting lower speed when power becomes the limiting cost.
 - Selection: RECOVERED_PR1_CORE — Preserves user-recovered six-episode sequence; titles remain factual review drafts.
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: Spectre/Meltdown 원논문·업체 공식 보안 권고.
 ### S2E04 · The Low-Power Chip Before Its Time
@@ -144,7 +144,7 @@ Which constraint makes the next architecture worth choosing?
 - Choice: Accept speed tradeoffs to reduce idle consumption
 - 3D event: Complementary switches alternate and an idle battery drain falls
 - Payoff: A constraint can change which technology wins; universal claims are removed
-- Next: S2E05 — The next episode tests another consequence of this season question; each stands alone.
+- Next: S2E05 — A circuit technology changes the cost of implementing instructions; RISC-V asks which costs remain when the instruction-set specification is open.
 - Selection: RECOVERED_PR1_CORE — Preserves user-recovered six-episode sequence; titles remain factual review drafts.
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: CMOS 초기 논문·RCA 제품·모바일 설계 역사.
 ### S2E05 · The Chip Design Nobody Owns
@@ -155,7 +155,7 @@ Which constraint makes the next architecture worth choosing?
 - Choice: Share an ISA while building distinct implementations
 - 3D event: One instruction passes through different processor cores and test benches
 - Payoff: An open specification is not a free finished chip
-- Next: S2E06 — The next episode tests another consequence of this season question; each stands alone.
+- Next: S2E06 — An open specification is only a starting point; AlexNet's two-GPU experiment shows how a particular implementation and software choice can change a result.
 - Selection: RECOVERED_PR1_CORE — Preserves user-recovered six-episode sequence; titles remain factual review drafts.
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: RISC-V International 규격·실제 구현체 공개 논문.
 ### S2E06 · Two GPUs and the 2012 ImageNet Breakthrough
@@ -166,7 +166,7 @@ Which constraint makes the next architecture worth choosing?
 - Choice: Partition training across two GPUs
 - 3D event: Image batches divide across two boards and reunite at an evaluation result
 - Payoff: A specific benchmark breakthrough, not a victory over every lab
-- Next: S2E07 — The next episode tests another consequence of this season question; each stands alone.
+- Next: S2E07 — One research result can redirect investment; Moore's forecast asks how an entire industry learned to coordinate around expectations of the next chip.
 - Selection: RECOVERED_PR1_CORE — Preserves user-recovered six-episode sequence; titles remain factual review drafts.
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: AlexNet 2012 논문·ImageNet 당시 규칙·후속 인프라 자료.
 ### S2E07 · Moore's Law Became a Factory Deadline
@@ -177,7 +177,7 @@ Which constraint makes the next architecture worth choosing?
 - Choice: Coordinate research and capital around scaling
 - 3D event: A wafer layout tightens while a machine delivery misses the next process window
 - Payoff: A curve on paper becomes commitments across companies
-- Next: S2E08 — The next episode tests another consequence of this season question; each stands alone.
+- Next: S2E08 — The investment deadline assumes useful gains from scaling; the power wall asks what happens when faster clocks stop being an affordable answer.
 - Selection: NEW_PRODUCTION_JUDGMENT — Added from existing PR candidates to connect scaling commitments and power limits
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: Gordon Moore 1965 원문·후속 인터뷰·산업 로드맵.
 ### S2E08 · Faster Chips, Not Enough Power
@@ -188,7 +188,7 @@ Which constraint makes the next architecture worth choosing?
 - Choice: Use architectural and parallel alternatives to clock scaling
 - 3D event: A heat spreader saturates as clock gains stop helping; work redistributes
 - Payoff: Performance is a system tradeoff, connecting back to GPUs
-- Next: season resolution — Season question resolves in a wider system; no prerequisite viewing.
+- Next: season resolution — The season returns to GPUs with a clearer constraint: useful performance depends on power, heat, memory and software, not clock speed alone.
 - Selection: NEW_PRODUCTION_JUDGMENT — Added from existing PR candidates to connect scaling commitments and power limits
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: 공개 GPU TDP·데이터센터 PUE·전력망 공시; 범위 명시.
 
@@ -204,7 +204,7 @@ Who bears the cost of making a bit cheaper?
 - Choice: Shift resources away from commodity DRAM toward processors
 - 3D event: Two product lots compete for fab slots; one loses its next allocation
 - Payoff: Leaving DRAM did not mean inventing or abandoning all memory
-- Next: S3E02 — The next episode tests another consequence of this season question; each stands alone.
+- Next: S3E02 — Intel's decision was a choice over the cost of producing bits; woven core memory makes that cost visible in the labor of building an earlier kind of bit.
 - Selection: RECOVERED_PR1_CORE — Preserves user-recovered six-episode sequence; titles remain factual review drafts.
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: Intel Andy Grove 회고와 당시 재무·제품 기록 분리.
 ### S3E02 · Computer Memory Used to Be Woven by Hand
@@ -215,7 +215,7 @@ Who bears the cost of making a bit cheaper?
 - Choice: Wire repeatable storage arrays then compare semiconductor alternatives
 - 3D event: A thread passes through ferrite rings and a read pulse flips a core
 - Payoff: A bit has a physical production cost
-- Next: S3E03 — The next episode tests another consequence of this season question; each stands alone.
+- Next: S3E03 — The hand-assembled bit exposes manufacturing effort; Japanese memory firms show how quality, customer requirements and price can pull a later market in different directions.
 - Selection: RECOVERED_PR1_CORE — Preserves user-recovered six-episode sequence; titles remain factual review drafts.
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: Computer History Museum 코어 메모리 기록·DRAM 전환 고객 자료.
 ### S3E03 · Japan’s Memory Giants and the Changing PC Market
@@ -226,7 +226,7 @@ Who bears the cost of making a bit cheaper?
 - Choice: Investigate product mix, costs and customer needs without a single-cause verdict
 - 3D event: Two qualification benches test distinct customer requirements beside a falling price order
 - Payoff: Quality alone cannot explain national industry outcomes
-- Next: S3E04 — The next episode tests another consequence of this season question; each stands alone.
+- Next: S3E04 — A changing market punishes the wrong costs; self-aligned silicon gates reveal a process choice that changed what manufacturers could build economically.
 - Selection: RECOVERED_PR1_CORE — Preserves user-recovered six-episode sequence; titles remain factual review drafts.
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: 고품질·장수명 설계가 값싼 PC용 메모리 시대에 약점이 된 과정.
 ### S3E04 · The Trick That Let Chips Line Themselves Up
@@ -237,7 +237,7 @@ Who bears the cost of making a bit cheaper?
 - Choice: Use the gate to define later processing boundaries
 - 3D event: A patterned gate shields the channel while adjacent regions are formed
 - Payoff: Self alignment links a process choice to density and reproducibility
-- Next: S3E05 — The next episode tests another consequence of this season question; each stands alone.
+- Next: S3E05 — A repeatable process can lower the barrier to denser products; Samsung's entry asks what an organization must commit before it can learn such a process.
 - Selection: RECOVERED_PR1_CORE — Preserves user-recovered six-episode sequence; titles remain factual review drafts.
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: 실리콘 게이트 특허·공정 플로우 원문.
 ### S3E05 · Samsung Was Told It Would Fail at Chips
@@ -248,7 +248,7 @@ Who bears the cost of making a bit cheaper?
 - Choice: Commit to DRAM development and process learning
 - 3D event: An initially sparse good-die map improves across successive lots
 - Payoff: Entry is a repeated capability-building process, not one announcement
-- Next: S3E06 — The next episode tests another consequence of this season question; each stands alone.
+- Next: S3E06 — Winning production capability is one path to value; the erasable EPROM shows how changing the way a customer reuses a chip can create another.
 - Selection: RECOVERED_PR1_CORE — Preserves user-recovered six-episode sequence; titles remain factual review drafts.
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: 미국·일본·한국 초기 DRAM 문서와 기업 공시.
 ### S3E06 · The Chip With a Window
@@ -259,7 +259,7 @@ Who bears the cost of making a bit cheaper?
 - Choice: Use electrically programmed charge and ultraviolet erasure
 - 3D event: A ceramic package's quartz window admits UV, then a programmer writes it again
 - Payoff: Erasability changes iteration; invented discovery dialogue is excluded
-- Next: S3E07 — The next episode tests another consequence of this season question; each stands alone.
+- Next: S3E07 — EPROM stores charge for reuse; DRAM stores charge under a different bargain, trading persistence for dense bits that must be refreshed.
 - Selection: RECOVERED_PR1_CORE — Preserves user-recovered six-episode sequence; titles remain factual review drafts.
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: 지울 수 있는 메모리가 개발 방식 자체를 바꾼 과정.
 ### S3E07 · Two Components, One Bit of DRAM
@@ -270,7 +270,7 @@ Who bears the cost of making a bit cheaper?
 - Choice: Store charge and restore it periodically
 - 3D event: A capacitor discharges, is sensed, then refreshed by the access path
 - Payoff: Cheap dense bits demand continuous care
-- Next: S3E08 — The next episode tests another consequence of this season question; each stands alone.
+- Next: S3E08 — The cell explains one cost of a bit; flash asks why inventing a useful storage mechanism still does not determine who captures the market.
 - Selection: NEW_PRODUCTION_JUDGMENT — Added from existing PR candidates to connect cell economics and commercialization
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: Dennard DRAM 특허·초기 메모리 상용 기록.
 ### S3E08 · Inventing Flash Didn't Win the Market
@@ -281,7 +281,7 @@ Who bears the cost of making a bit cheaper?
 - Choice: Convert a cell into reliable scalable products
 - 3D event: An erase block resets, then a factory tests endurance and yield
 - Payoff: Patent, product and production are different sources of value
-- Next: season resolution — Season question resolves in a wider system; no prerequisite viewing.
+- Next: season resolution — The season closes with three distinct costs of memory: making a cell work, making it repeatedly at scale, and building the product and customer relationships that sell it.
 - Selection: NEW_PRODUCTION_JUDGMENT — Added from existing PR candidates to connect cell economics and commercialization
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: Toshiba 초기 flash 논문·업체 사업 연혁·시장자료.
 
@@ -297,7 +297,7 @@ How do public decisions change what companies can build and sell?
 - Choice: Redesign a product against the rules applicable at that date
 - 3D event: Interconnect links narrow; an export gate applies a dated threshold
 - Payoff: Product design and legal classification move together; no claim about current legality
-- Next: S4E02 — The next episode tests another consequence of this season question; each stands alone.
+- Next: S4E02 — A dated export rule can change product design; wartime radar asks how public demand could instead pull material and device development forward.
 - Selection: RECOVERED_PR1_CORE — Preserves user-recovered six-episode sequence; titles remain factual review drafts.
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: 관할 정부 원문 규정·개정일·적용 예외 분리.
 ### S4E02 · Radar’s Demand for a Purer Crystal
@@ -308,7 +308,7 @@ How do public decisions change what companies can build and sell?
 - Choice: Improve crystal purity and contacts
 - 3D event: A receiver loses an echo, then a better detector resolves it
 - Payoff: Military demand accelerated specific capabilities, not the whole industry alone
-- Next: S4E03 — The next episode tests another consequence of this season question; each stands alone.
+- Next: S4E03 — Radar depended on suitable material; the 2019 licensing dispute shows why a modern fab cannot simply replace a constrained chemical with any available supply.
 - Selection: RECOVERED_PR1_CORE — Preserves user-recovered six-episode sequence; titles remain factual review drafts.
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: 전시 연구 기록·Bell Labs 결정 정제 회고.
 ### S4E03 · Japan’s 2019 Export Controls and the Fab Qualification Clock
@@ -319,7 +319,7 @@ How do public decisions change what companies can build and sell?
 - Choice: Qualify materials while managing supply uncertainty
 - 3D event: A new chemical lot stops at a qualification valve before reaching wafers
 - Payoff: Restrictions and technical substitution have different clocks
-- Next: S4E04 — The next episode tests another consequence of this season question; each stands alone.
+- Next: S4E04 — A material qualification creates a delay even after supply exists; Soviet copying asks which dependencies remain when a state tries to reproduce the device itself.
 - Selection: RECOVERED_PR1_CORE — Preserves user-recovered six-episode sequence; titles remain factual review drafts.
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: 재료 qualification 공개표준·대체 공급 사례.
 ### S4E04 · Why the Soviet Union Chose to Copy American Chips
@@ -330,7 +330,7 @@ How do public decisions change what companies can build and sell?
 - Choice: Investigate specific copied devices and policy decisions
 - 3D event: A die image is compared with a layout and a delayed production lot
 - Payoff: Copying needs device-specific evidence; no invented national single decision
-- Next: S4E05 — The next episode tests another consequence of this season question; each stands alone.
+- Next: S4E05 — Copying seeks access to capabilities developed elsewhere; SEMATECH shows a different policy route, sharing selected manufacturing problems among domestic rivals.
 - Selection: RECOVERED_PR1_CORE — Preserves user-recovered six-episode sequence; titles remain factual review drafts.
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: 젤레노그라드를 세우고도 독자 설계 대신 복제를 택한 결정과 그 대가.
 ### S4E05 · When America's Chip Rivals Shared Their Secrets
@@ -341,7 +341,7 @@ How do public decisions change what companies can build and sell?
 - Choice: Cooperate on precompetitive process research
 - 3D event: Separate sample wafers converge at a shared metrology station
 - Payoff: A shared tool problem can coexist with product competition
-- Next: S4E06 — The next episode tests another consequence of this season question; each stands alone.
+- Next: S4E06 — US rivals cooperated within a defined research boundary; Japan's VLSI program lets the viewer compare a different arrangement without treating cooperation as one universal recipe.
 - Selection: RECOVERED_PR1_CORE — Preserves user-recovered six-episode sequence; titles remain factual review drafts.
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: SEMATECH 설립문서·회원사 회고·공정 연구 공개자료.
 ### S4E06 · Japan’s Rivals and the VLSI Research Project
@@ -352,7 +352,7 @@ How do public decisions change what companies can build and sell?
 - Choice: Share selected research while retaining company capabilities
 - 3D event: Common research samples branch back into separate pilot lines
 - Payoff: Cooperation has boundaries; a single unified lab is an oversimplification
-- Next: S4E07 — The next episode tests another consequence of this season question; each stands alone.
+- Next: S4E07 — A research program can organize suppliers; NASA procurement shows how a public customer can also shape the tests and demand that turn devices into a market.
 - Selection: RECOVERED_PR1_CORE — Preserves user-recovered six-episode sequence; titles remain factual review drafts.
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: 일본 VLSI 프로젝트 공식 보고서·참여사 기술공개.
 ### S4E07 · NASA Retested the Chips It Bought
@@ -363,7 +363,7 @@ How do public decisions change what companies can build and sell?
 - Choice: Buy and qualify integrated circuits for demanding systems
 - 3D event: A purchased IC survives environmental testing before entering a guidance module
 - Payoff: Government demand shaped production while buyers had different needs
-- Next: S4E08 — The next episode tests another consequence of this season question; each stands alone.
+- Next: S4E08 — Procurement can support an industry's production; the US–Japan memory dispute shows how the resulting price and market access can become matters of trade law.
 - Selection: NEW_PRODUCTION_JUDGMENT — Added from existing PR candidates to connect procurement and trade rules
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: NASA 부품 적격성 문서·초기 반도체 채택 기록.
 ### S4E08 · When DRAM Prices Became a Trade Dispute
@@ -374,6 +374,6 @@ How do public decisions change what companies can build and sell?
 - Choice: Negotiate and enforce a semiconductor agreement
 - 3D event: Identical DRAM packages cross customs beside dated price comparison records
 - Payoff: A price is also a contested legal comparison, connecting to export rules
-- Next: season resolution — Season question resolves in a wider system; no prerequisite viewing.
+- Next: season resolution — The season returns to its export-control opening: governments shape chips through demand, research, qualification and trade rules, each operating on a different clock.
 - Selection: NEW_PRODUCTION_JUDGMENT — Added from existing PR candidates to connect procurement and trade rules
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: 당시 미·일 반도체 협정 및 무역 조사 원문.
