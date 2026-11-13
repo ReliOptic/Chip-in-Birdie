@@ -1,0 +1,93 @@
+{
+  "plan_id": "CIB-S1-S4-261113",
+  "plan_version": "0.1",
+  "status": "PROPOSED_NOT_RELEASE_APPROVED",
+  "created_on": "2026-11-13",
+  "base_commit": "a11b495b1281093ea93da75befc423a3c5e53f00",
+  "authority": {
+    "channel_contract": "channel/AUDIENCE.md",
+    "episode_index": "editorial/proposals.json",
+    "original_index": "editorial/catalog.json",
+    "editorial_policy": "editorial/PROGRAMMING.md",
+    "season_status": "editorial_proposal_not_original_claude_roster",
+    "reported_claude_voice_ids": ["P004", "P061", "P073", "P066", "P070"],
+    "reported_claude_script_count": 24,
+    "claude_source_html_available": false,
+    "original_other_19_ids_verified": false
+  },
+  "rules": {
+    "season_length": 6,
+    "preserve_existing_p100": true,
+    "candidate_order_is_release_slot": false,
+    "title_is_approved": false,
+    "readiness_is_verified": false,
+    "source_evidence_is_verified": false,
+    "audience_ref": "channel/audience.json"
+  },
+  "seasons": [
+    {
+      "season_id": "S1",
+      "working_title_ko": "칩은 누가 만드는가?",
+      "working_title_en": "Who Actually Makes the Chips?",
+      "central_question": "설계·공장·인력·계약 중 누가 반도체 제조의 가치를 소유하고 책임지는가?",
+      "episode_candidates": [
+        {"order": 1, "p_id": "P004", "function": "brand_hook", "claude_voice_reported": true},
+        {"order": 2, "p_id": "P061", "function": "people_move", "claude_voice_reported": true},
+        {"order": 3, "p_id": "P066", "function": "manufacturing_knowledge", "claude_voice_reported": true},
+        {"order": 4, "p_id": "P065", "function": "public_industrial_choice", "claude_voice_reported": false},
+        {"order": 5, "p_id": "P070", "function": "fabless_model", "claude_voice_reported": true},
+        {"order": 6, "p_id": "P073", "function": "asset_risk_payoff", "claude_voice_reported": true}
+      ]
+    },
+    {
+      "season_id": "S2",
+      "working_title_ko": "발명은 누가 사는가?",
+      "working_title_en": "When the Transistor Found a Customer",
+      "central_question": "작동한 발명이 어떻게 고객·제품·제조·공통 투자 규칙을 만나는가?",
+      "episode_candidates": [
+        {"order": 1, "p_id": "P063", "function": "human_product_hook", "claude_voice_reported": false},
+        {"order": 2, "p_id": "P011", "function": "lab_invention", "claude_voice_reported": false},
+        {"order": 3, "p_id": "P062", "function": "knowledge_license", "claude_voice_reported": false},
+        {"order": 4, "p_id": "P064", "function": "consumer_product", "claude_voice_reported": false},
+        {"order": 5, "p_id": "P015", "function": "manufacturing_limit", "claude_voice_reported": false},
+        {"order": 6, "p_id": "P010", "function": "industry_calendar_payoff", "claude_voice_reported": false}
+      ]
+    },
+    {
+      "season_id": "S3",
+      "working_title_ko": "공장은 돌지만 칩은 없다",
+      "working_title_en": "The Factory That Couldn't Ship",
+      "central_question": "장비 재가동에서 고객이 받을 양품까지 어떤 검증이 필요한가?",
+      "episode_candidates": [
+        {"order": 1, "p_id": "P005", "function": "visible_crisis_hook", "claude_voice_reported": false},
+        {"order": 2, "p_id": "P082", "function": "restart_is_not_recovery", "claude_voice_reported": false},
+        {"order": 3, "p_id": "P021", "function": "physical_defect", "claude_voice_reported": false},
+        {"order": 4, "p_id": "P002", "function": "counterintuitive_correction", "claude_voice_reported": false},
+        {"order": 5, "p_id": "P037", "function": "hidden_mask_defect", "claude_voice_reported": false},
+        {"order": 6, "p_id": "P040", "function": "verification_payoff", "claude_voice_reported": false}
+      ]
+    },
+    {
+      "season_id": "S4",
+      "working_title_ko": "AI는 왜 칩을 기다리는가?",
+      "working_title_en": "AI's Next Bottleneck",
+      "central_question": "계산을 빠르게 만들 때 병목은 어디로 이동하고 누가 비용을 감당하는가?",
+      "episode_candidates": [
+        {"order": 1, "p_id": "P055", "function": "known_culture_hook", "claude_voice_reported": false},
+        {"order": 2, "p_id": "P057", "function": "research_breakthrough", "claude_voice_reported": false},
+        {"order": 3, "p_id": "P003", "function": "memory_bottleneck", "claude_voice_reported": false},
+        {"order": 4, "p_id": "P047", "function": "packaging_heat", "claude_voice_reported": false},
+        {"order": 5, "p_id": "P089", "function": "policy_boundary", "claude_voice_reported": false},
+        {"order": 6, "p_id": "P099", "function": "system_power_payoff", "claude_voice_reported": false}
+      ]
+    }
+  ],
+  "review_state": {
+    "source_title_lineage_validation": "PASS_LOCAL_STRUCTURAL_ONLY",
+    "historical_claims": "SOURCE_PENDING",
+    "independent_editorial_review": "NOT_DONE",
+    "fresh_viewer_review": "NOT_DONE",
+    "media_review": "NOT_DONE",
+    "publication": "NOT_REQUESTED"
+  }
+}

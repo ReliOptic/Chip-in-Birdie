@@ -1,0 +1,55 @@
+{
+  "acceptance_evidence": [
+    "제안된 P-ID 24개가 P100에 존재하고 중복이 없음",
+    "기존 Claude S1 음성 5편은 보고 상태로만 보존하고 원본 미확보·대본 불일치 위험을 명시함",
+    "시즌별 중심 질문·회차 간 연결과 비전공 시청자 보상을 설명함",
+    "승인되지 않은 공개 슬롯·제목·사료를 확정이나 READY로 승격하지 않음"
+  ],
+  "audience_ref": "channel/audience.json",
+  "claim": {
+    "actor": "/root",
+    "claimed_at": "2026-11-13T00:46:27.694784Z",
+    "lease_expires_at": "2026-11-13T12:46:27.694797Z",
+    "model": "GPT-6",
+    "session_id": "chatgpt-261113-season-program",
+    "session_id_source": "explicit"
+  },
+  "current_delivery_id": "TASK-004-r0001",
+  "episode_id": null,
+  "history": [
+    {
+      "actor": "/root",
+      "at": "2026-11-13T00:46:27.694818Z",
+      "claim": {
+        "actor": "/root",
+        "claimed_at": "2026-11-13T00:46:27.694784Z",
+        "lease_expires_at": "2026-11-13T12:46:27.694797Z",
+        "model": "GPT-6",
+        "session_id": "chatgpt-261113-season-program",
+        "session_id_source": "explicit"
+      },
+      "event": "CLAIMED"
+    },
+    {
+      "actor": "/root",
+      "at": "2026-11-13T00:50:59.356902Z",
+      "bundle_sha256": "5fc5f2d4edae438b3827883be2766ab803d1b7a17247d1f3dd8499f5799bea51",
+      "delivery_id": "TASK-004-r0001",
+      "event": "SUBMITTED",
+      "revision": 1
+    }
+  ],
+  "objective": "기존 10개 Act와 과거 S1–S5 관심 분류를 훼손하지 않으면서 4개 시즌의 시청자 경험, 24편 후보, 회차 전환, 근거·미디어 승인 관문을 제안한다.",
+  "release_implication": "none: programming proposal only; not video READY, schedule or publication",
+  "required_review_roles": [
+    "evidence",
+    "editorial",
+    "viewer"
+  ],
+  "revision": 1,
+  "scope": "channel",
+  "status": "IN_REVIEW",
+  "task_id": "TASK-004",
+  "title": "S1–S4 편성 구조 제안과 P100 계보 연결",
+  "updated_at": "2026-11-13T00:50:59.356919Z"
+}
