@@ -1,0 +1,15 @@
+{
+  "actor": "codex-root",
+  "model": "gpt-6.1-sol",
+  "session": "chat-20261114-four-seasons",
+  "scope": [
+    "editorial/SEASONS.md",
+    "editorial/seasons.json",
+    "editorial/provenance",
+    "README.md",
+    "DECISIONS.md",
+    "episodes/S1E01"
+  ],
+  "status": "CLAIMED",
+  "note": "User-directed season canonicalization and sequential production; isolated coordination branch; no existing active owner on these paths"
+}
