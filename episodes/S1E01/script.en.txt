@@ -1,0 +1,41 @@
+A chip designer has a problem. The design is ready. The factory belongs to somebody else. And that somebody else might sell a competing chip.
+
+Hand over the design, and you expose something valuable. Build your own factory, and you accept a very different problem: paying for a production system before you know how much business it will have.
+
+In Taiwan, a company built a business around a promise about that choice. We will manufacture your chips. We will not sell our own competing chip products. This is the story of why that promise mattered, and why keeping it takes much more than an empty product catalog.
+
+The company is T S M C. It was established in nineteen eighty-seven, with its headquarters in Hsinchu, Taiwan. Its founding chairman was Morris Chang. The business became known as a dedicated foundry. The word sounds like a place where metal is poured. Here, it means a manufacturer that makes semiconductor products for customers.
+
+That definition hides the difficult part. A chip is not simply a drawing that any factory can print. The design has to fit a particular manufacturing process. The manufacturer has to turn that design into working devices, repeatedly, across a wafer. Both sides need information from the other. The relationship begins long before a finished chip comes out of a package.
+
+To see the problem, imagine a small team with a promising design. This team is illustrative. It is not a reconstruction of one secret meeting. Their chip could be useful. But useful designs do not automatically come with a fabrication plant, equipment, process recipes, or a workforce that can operate them.
+
+One route is to own those capabilities. Design and manufacturing stay inside the same company. That can create close coordination. It also puts the responsibility for both businesses on the same balance sheet. The team must find a way to develop the product and support the means of producing it.
+
+Another route is to buy manufacturing from a company that already has it. Now the team faces a question that has nothing to do with whether a transistor switches correctly. What if the supplier is also a competitor? A production contract does not make that question disappear.
+
+T S M C describes its answer in its annual report. It chose not to design, manufacture, or market semiconductor products under its own name. Instead, it focused on manufacturing its customers' products. The company presents this commitment as the foundation of customer trust. That is its stated business principle. It is not independent proof that every customer relationship has always been easy.
+
+The distinction matters. A foundry still competes with other manufacturers. It negotiates prices. It decides where to invest. It has to allocate capacity. Its customers may themselves compete with one another. The promise removes one particular conflict: the supplier introducing its own competing chip product. It does not remove every conflict in the supply chain.
+
+Now follow one wafer through our illustrative production space. The circular surface carries many copies of a design. Those copies do not appear all at once. Manufacturing builds and patterns structures through a sequence of controlled steps. The factory has to control materials, dimensions, contamination, and the connections between layers.
+
+A finished-looking wafer is not yet evidence that every chip works. Testing separates working devices from failures. The fraction that meets the required conditions helps determine how much useful output a production run delivers. That is why the manufacturer's capability is not captured by the size of its building, or by a photograph of its newest machine.
+
+For the customer, a design that cannot be manufactured reliably is still a business problem. For the manufacturer, an impressive process that customers cannot use is also a business problem. Each side needs the other to translate an idea into something that can be sold.
+
+This is where specialization becomes more than outsourcing a task. The design company can concentrate its resources on a product. The foundry can concentrate on a manufacturing platform used by multiple customers. Those customers do not need identical products. They do need a process and a relationship they can work with.
+
+There are limits to the attractive version of this story. Sharing manufacturing does not make factory investment cheap. It moves that investment into the manufacturer's business. Demand can change. A production line cannot instantly become any other production line. And customers that depend on the same supplier can be exposed to some of the same disruptions.
+
+Nor does specialization mean the customer stops doing difficult engineering. The design still has to work within physical and manufacturing constraints. The factory is not a universal printer. It is a set of capabilities, interfaces, and operating commitments that the designer has to understand.
+
+So why return to the promise? Because those technical exchanges ask for confidence. The customer must reveal enough to get the product made. The manufacturer must invest enough to remain useful. A commitment not to launch its own competing products gives that relationship a clearer boundary. It turns something the manufacturer refuses to sell into part of what the customer is buying.
+
+Our opening wafer now leaves the production space. The factory made the physical chip. The customer's product decision remains the customer's. Neither contribution cancels the other. The finished device is the result of a division of work, backed by a continuing relationship.
+
+T S M C did not make semiconductor manufacturing simple. Its model offered a particular answer to who should do it, and to how a supplier could earn business from companies that needed help without inviting another product rival into the room.
+
+The surprising product was never just the wafer. It was manufacturing capability with a boundary around competition. That boundary helped make room for companies whose most valuable work would be designing chips, rather than owning every step that made them.
+
+But companies do not appear just because a business model allows them to. People have to leave, organize, raise support, and try again. In the next episode, eight engineers walk out of a very different semiconductor company. What they carry with them will help change who gets to build the next one.
