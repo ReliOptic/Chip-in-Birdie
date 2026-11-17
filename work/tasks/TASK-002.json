@@ -6,11 +6,11 @@
   ],
   "audience_ref": "channel/audience.json",
   "claim": {
-    "actor": "codex-root",
-    "claimed_at": "2026-11-13T15:32:36.106937Z",
-    "lease_expires_at": "2026-11-13T19:32:36.106966Z",
-    "model": "gpt-6.1-sol",
-    "session_id": "chat-20261114-s1e01",
+    "actor": "codex-root-s1e01",
+    "claimed_at": "2026-11-17T06:43:51.918096Z",
+    "lease_expires_at": "2026-11-17T14:43:51.918098Z",
+    "model": "GPT-6",
+    "session_id": "chat-20261117-s1e01-full",
     "session_id_source": "explicit"
   },
   "current_delivery_id": null,
@@ -28,6 +28,32 @@
         "session_id_source": "explicit"
       },
       "event": "CLAIMED"
+    },
+    {
+      "actor": "codex-root-s1e01",
+      "at": "2026-11-17T06:43:51.918082Z",
+      "event": "LEASE_EXPIRED",
+      "previous_claim": {
+        "actor": "codex-root",
+        "claimed_at": "2026-11-13T15:32:36.106937Z",
+        "lease_expires_at": "2026-11-13T19:32:36.106966Z",
+        "model": "gpt-6.1-sol",
+        "session_id": "chat-20261114-s1e01",
+        "session_id_source": "explicit"
+      }
+    },
+    {
+      "actor": "codex-root-s1e01",
+      "at": "2026-11-17T06:43:51.918109Z",
+      "claim": {
+        "actor": "codex-root-s1e01",
+        "claimed_at": "2026-11-17T06:43:51.918096Z",
+        "lease_expires_at": "2026-11-17T14:43:51.918098Z",
+        "model": "GPT-6",
+        "session_id": "chat-20261117-s1e01-full",
+        "session_id_source": "explicit"
+      },
+      "event": "CLAIMED"
     }
   ],
   "objective": "파운드리와 분업의 맥락을 반도체 업무 경험이 없는 관객도 이해할 사건·도입·핵심 장면으로 설계한다.",
@@ -42,5 +68,5 @@
   "status": "CLAIMED",
   "task_id": "TASK-002",
   "title": "H039 기업의 선택을 이해하는 공통 관객용 브리프",
-  "updated_at": "2026-11-13T15:32:36.106999Z"
+  "updated_at": "2026-11-17T06:43:51.918112Z"
 }
