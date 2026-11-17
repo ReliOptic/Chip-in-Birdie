@@ -1,4 +1,12 @@
-# S1E01 — production draft, not a finished episode
+# S1E01 — full-length review build, not release ready
+
+## Current continuation · 2026-11-17
+
+[The full-r3 documentary](full/README.md) continues PR #4 with a **9:00.177** English narration, Korean/English captions and a complete 3D picture edit: 61 utterances, ten chapters, eight world families and 41 named shots / 44 phase beats. The exact compiled artifact, media links and review boundaries are recorded in [full/media-bundle.json](full/media-bundle.json) and [full/verification.md](full/verification.md).
+
+Source and full-duration HTML generation are implemented. Actual full-browser playback, final listening and independent audiovisual release QA remain open. **IN_PRODUCTION, finished episodes: 0.** The following r1 record is preserved and is not evidence for r3.
+
+## Historical r1 draft · six-second scene
 
 English VO: 469.882 seconds (7:49.882), 1,029 script words. This first draft falls in the authorized 6–12-minute range: it completes the foundry dilemma without stretching to eight minutes. Independent editorial review identifies that it still needs a verified historical decision scene, tighter repetition and claim-level sources before script lock. It is not the final documentary narration.
 

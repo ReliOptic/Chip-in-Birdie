@@ -1,4 +1,6 @@
 {
+  "record_scope": "Historical r1 only: six-second scene and old narration, preserved unchanged below",
+  "superseded_by": "episodes/S1E01/full/media-bundle.json",
   "status": "DRAFT_NOT_READY",
   "finished_episode_count": 0,
   "source_pr": 4,

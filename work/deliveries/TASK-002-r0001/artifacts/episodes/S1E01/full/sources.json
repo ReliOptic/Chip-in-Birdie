@@ -1,0 +1,79 @@
+[
+  {
+    "id": "A",
+    "title": "Morris Chang oral history · 24 August 2007",
+    "url": "https://archive.computerhistory.org/resources/text/Oral_History/Chang_Morris/Chang_Morris_1.oral_history.2007.102658129.pdf",
+    "locator": "CHM X4151.2008 · printed pp. 9–14",
+    "note": "Retrospective participant testimony: Chang's executive experience, Li as a minister without portfolio, the 1985 proposal, manufacturing as a potential strength, uncertain customers, early growth, and the need to prove technology and trust. Not a recording of a 1985 meeting. The transcript has apparent IDM/IBM transcription errors; no claim that IBM was the first customer is made."
+  },
+  {
+    "id": "B",
+    "title": "Morris Chang in conversation with Jen-Hsun Huang · 17 October 2007",
+    "url": "https://archive.computerhistory.org/resources/access/text/2012/05/102658254-05-01-acc.pdf",
+    "locator": "CHM X4614.2008 · printed p. 3; pp. 5–6",
+    "note": "Retrospective accounts: Chang's initial investment figures on p. 3 and Huang's accounts of customer visits, die size and repeated wafer-demand discussions on pp. 5–6. Investment figures are approximate, not a newly audited capitalization table. Huang's story is a later customer recollection, not a contemporaneous visit record, proof of the first customer or evidence of an unspoken purchasing motive."
+  },
+  {
+    "id": "C",
+    "title": "TSMC Annual Report 1994",
+    "url": "https://investor.tsmc.com/static/annualReports/1994/annual1994.pdf",
+    "locator": "Printed p. 5 (PDF page 8); p. 15 (PDF page 18)",
+    "note": "Period company record: founded in 1987; charter description restricting own-brand IC end products; Philips cooperation and ITRI leases beginning in 1987; Cirrus Logic International deposit and supply agreement beginning on 23 September 1993. Does not establish the first customer, chip identity, order volume or yield. Source PDF pages were rendered and read; they are not reproduced in the film."
+  },
+  {
+    "id": "D",
+    "title": "ITRI · The Birth of Taiwan’s Semiconductor Industry",
+    "url": "https://itritoday.itri.org/114/content/en/unit_01-2.html",
+    "locator": "ITRI Today · Fall 2023 · paragraph about the 1987 spin-off",
+    "note": "Institutional retrospective: transfer of facilities, equipment, technology and personnel to TSMC. Used narrowly for the resources sequence; the RCA prehistory belongs to other episodes."
+  },
+  {
+    "id": "E",
+    "title": "ASML · How microchips are made",
+    "url": "https://www.asml.com/en/technology/all-about-microchips/how-microchips-are-made",
+    "locator": "Opening manufacturing description; Tiny skyscrapers; Types of chipmakers",
+    "note": "Technical explanation: interconnected patterned layers, layer alignment, controlled fabrication, foundries and fabless/IDM distinctions. A modern mechanism source, not evidence of a 1987 TSMC facility or the exact geometry of the authored robot model."
+  },
+  {
+    "id": "F",
+    "title": "ASML · Six crucial steps in semiconductor manufacturing",
+    "url": "https://www.asml.com/en/company/stories/2021/semiconductor-manufacturing-process-steps",
+    "locator": "Deposition, Photoresist coating, Lithography and Etch sections",
+    "note": "General process support for the simplified layer sequence. Film geometry exaggerates layer thickness and does not specify a process node, recipe, yield or proprietary equipment geometry."
+  },
+  {
+    "id": "G",
+    "title": "TSMC · Interoperable EDA formats",
+    "url": "https://pr.tsmc.com/english/news/1609",
+    "locator": "7 April 2010 · paragraphs on process requirements and iPDK/iDRC",
+    "note": "Public description of process design kits and rule verification. It does not imply that production PDKs are publicly downloadable. Layout adjustments shown are illustrative, with no numerical design rule."
+  },
+  {
+    "id": "H",
+    "title": "TSMC · Quality and reliability",
+    "url": "https://www.tsmc.com/english/aboutTSMC/quality_and_reliability",
+    "locator": "Quality Management System / Technology Development",
+    "note": "Company description of design support, wafer manufacture, probing and testing. Supports the operational scope, not a claim that every unit meets specifications."
+  },
+  {
+    "id": "I",
+    "title": "TSMC · eFoundry engineering collaboration",
+    "url": "https://www.tsmc.com/english/dedicatedFoundry/services/eFoundry",
+    "locator": "Engineering Collaboration / Logistics Collaboration",
+    "note": "Publicly describes access to wafer yields, acceptance-test analysis, and fabrication/testing status. The displayed pass/fail marks are fabricated teaching data, not observed TSMC yield."
+  },
+  {
+    "id": "J",
+    "title": "Editorial interpretation and authored models",
+    "url": "https://github.com/ReliOptic/Chip-in-Birdie/pull/4",
+    "locator": "Full-film source and claims ledger",
+    "note": "Business-boundary diagrams, resource queues, customer layout and package are authored explanatory models. Capacity allocation, relative dimensions and test results are not historical measurements. This is the production record for the models, not an independent historical source."
+  },
+  {
+    "id": "K",
+    "title": "FormFactor · Applications",
+    "url": "https://www.formfactor.com/applications/",
+    "locator": "Parametric / manufacturing-process description: testing structures with electrical contact",
+    "note": "The test-equipment manufacturer's public explanation directly supports electrical contact with wafer-level test structures to characterize device performance. It does not validate the film's probe geometry, contact force, test program, pass/fail marks or any TSMC yield."
+  }
+]
