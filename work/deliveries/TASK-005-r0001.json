@@ -1,0 +1,31 @@
+{
+  "artifacts": [
+    {
+      "path": "editorial/benchmarks/261117_panboneun_narrative.md",
+      "sha256": "ea9a68d9079c91b15ebd4cac23fa93fc919afc33cb82f2e0618a365d6f44675b",
+      "size_bytes": 7403,
+      "snapshot_path": "work/deliveries/TASK-005-r0001/artifacts/editorial/benchmarks/261117_panboneun_narrative.md"
+    },
+    {
+      "path": "work/261117_execution_backlog.md",
+      "sha256": "1f11262f9adc0549d9fc10beb00c88e7c2e6058ac7854653e25274c55b312c71",
+      "size_bytes": 5509,
+      "snapshot_path": "work/deliveries/TASK-005-r0001/artifacts/work/261117_execution_backlog.md"
+    }
+  ],
+  "bundle_sha256": "089c1b7ad54677306953ada9aebadfbbee05d8fecc568a0108bb2f25c02a0d3e",
+  "delivery_id": "TASK-005-r0001",
+  "episode_id": null,
+  "manifest_sha256": "b19c9da7b285b6aaad4e7f352d6d298e898ab3ebf0c50fa8db8898093aad344b",
+  "previous_delivery_id": null,
+  "producer": {
+    "actor": "codex-root",
+    "model": "GPT-6",
+    "session_id": "chat-20261117-chipinbirdie-benchmark"
+  },
+  "revision": 1,
+  "schema_version": "1.0",
+  "scope": "channel",
+  "submitted_at": "2026-11-17T05:36:33.226371Z",
+  "task_id": "TASK-005"
+}
