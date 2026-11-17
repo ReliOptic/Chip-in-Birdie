@@ -9,10 +9,10 @@ const lerp=(a,b,t)=>a+(b-a)*t;
 const ease=n=>{n=clamp(n);return n*n*n*(10+n*(-15+6*n));};
 const pop=n=>1-Math.pow(1-clamp(n),3);
 
-export function createArchiveCinema({canvas,images,script,timeline}){
+export function createArchiveCinema({canvas,images,script,timeline,editShots=null}){
   const ctx=canvas.getContext('2d',{alpha:false});
   if(!ctx)throw new Error('Canvas documentary rendering is unavailable');
-  const shots=buildArchiveShots(script,timeline);
+  const shots=editShots||buildArchiveShots(script,timeline);
   for(const s of shots)for(const id of s.assetIds)if(!images[id])throw new Error('Missing archive image: '+id);
   let state=null;
   function rect(x,y,w,h,color){ctx.fillStyle=color;ctx.fillRect(x,y,w,h);}

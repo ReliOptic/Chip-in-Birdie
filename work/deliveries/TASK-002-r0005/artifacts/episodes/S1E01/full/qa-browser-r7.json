@@ -1,0 +1,27 @@
+{
+  "revision": "R7-cinematic-events",
+  "scope": "Selected managed Chromium observations before final audio-loader correction; not a final artifact playback pass",
+  "actual_browser": true,
+  "backend_observed": "CPU 3D compatibility renderer; WebGL2 unavailable",
+  "observations": [
+    {"passage_seconds": 0, "observed": "Empty PC connector and surrounding room rendered; dark initial PCB treatment was adjusted."},
+    {"passage_seconds": [96.6, 105.61], "observed": "Play advanced into the factory-return sequence; cart movement and cut to doorway observed."},
+    {"passage_seconds": 113, "observed": "Paused seek showed no return cart and retained empty equipment bays."},
+    {"passage_seconds": 198.62, "observed": "After geometry correction the card gold contacts enter the connector, rather than floating above it. Korean caption and Cinema controls visible."},
+    {"passage_seconds": 284.8, "observed": "Separate enlarged specimens shown during exchange, with the probe above them."},
+    {"passage_seconds": 289.7, "observed": "Gap close-up rendered, but audio error appeared during seeking. Underlying error category was not exposed in the prior UI."}
+  ],
+  "observed_controls": ["Play with forward time progression", "Pause", "Paused timeline seek", "CSS Cinema view", "Visible Korean captions"],
+  "subsequent_correction": "Fetch complete narration, reject HTTP/length/hash failures, load verified local Blob, include media error category. Persistent illustrative 1990s-PC label also added.",
+  "correction_browser_retest": "NOT_PERFORMED: browser reload rejected by security policy; no workaround attempted",
+  "saved_image": {"site_source_path": "review/r7/contact-preview.jpg", "sha256": "048eb021d9d640bde567c1dc3e27e24fd0f8412ae2af7f297b70882298d56e52", "passage_seconds": 198.62, "exact_final_artifact": false, "gpu": false},
+  "final_continuous_playback": "NOT_PERFORMED",
+  "natural_end": "NOT_VERIFIED_FOR_R7",
+  "browser_pixel_determinism": "NOT_VERIFIED_FOR_R7",
+  "real_audio_bake_determinism": "NOT_VERIFIED_FOR_R7",
+  "gpu_or_pbr_appearance": "NOT_VERIFIED",
+  "mobile_safari_touch": "NOT_VERIFIED",
+  "full_human_listening": "NOT_PERFORMED",
+  "independent_audiovisual_release_review": "NOT_PERFORMED",
+  "release_approval": false
+}

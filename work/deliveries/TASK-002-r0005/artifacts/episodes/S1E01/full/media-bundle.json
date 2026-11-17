@@ -1,0 +1,137 @@
+{
+  "schema_version": "1.0",
+  "episode_id": "S1E01",
+  "catalog_id": "H039",
+  "revision": "S1E01-full-r7",
+  "status": "SITES_REVIEW_DEPLOYED_PARTIAL_QA",
+  "source_pr": "https://github.com/ReliOptic/Chip-in-Birdie/pull/4",
+  "continued_from_commit": "ddba620e4edb215ccde832c30a6bf8274dca1985",
+  "accepted_claim_commit": "2c46228a6caff3764fcff28bf69798471016faac",
+  "script_sha256": "50eae44fd3e123e87130d14b0fc2ace165d7d8d207b6a835c838b8b01b65e039",
+  "performance": {
+    "required_language": "en",
+    "status": "GENERATED_DECODE_CHECKED_NOT_LISTENING_APPROVED",
+    "artifact": "narration.mp3 in authorized Sites source",
+    "sha256": "826a65a960334fc0f01af24e98dfbd038acf1ba3fcf9115a559241443640843f",
+    "wav_sha256": "e119e5c8bc26af3de5f4ba0de939d67558a34d47ea5c4a0da1be830fc9d33d22",
+    "duration_seconds": 384.41133333333335,
+    "sample_rate": 24000,
+    "total_samples": 9225872,
+    "utterances": 44,
+    "display_words": 905,
+    "voice": "Local Kokoro ONNX v1.0 bm_george, synthetic",
+    "speed": 1.1,
+    "timeline_sha256": "ecb1cf7ab05e5a9c2a952df42d1da00bbdc0441e5e70464fb9cec2a03a3ce43d",
+    "asr_sha256": "3ece591d387dcbd4ef34ed4c17940804372d272ff1771aa098b929cc98e1a9a7",
+    "human_listening_review": "NOT_PERFORMED"
+  },
+  "video": {
+    "artifact": "S1E01-full-documentary.html",
+    "sha256": "e47164cbda0ee80dd045e61e1b0c15e6908e3c0b2d370d6763815a498a95190f",
+    "bytes": 20258871,
+    "duration_seconds": 384.41133333333335,
+    "chapters": 6,
+    "named_shots": 83,
+    "photographs_used": 16,
+    "photographs_packaged": 17,
+    "aspect_ratio": "16:9",
+    "renderer": "Three.js r170 WebGL2 or CPU 3D compatibility, composited with attributed archive images and source summaries",
+    "timeline_fps": 30,
+    "fps_note": "Nominal timeline convention, not measured browser FPS",
+    "mp4_export": "NOT_REQUESTED_NOT_EXPORTED",
+    "spatial_shots": 45,
+    "shared_spatial_events": 16,
+    "illustration_limit": "Original generic spaces and mechanisms, not surveyed historical replicas"
+  },
+  "media_package": {
+    "artifact": "S1E01-sites-r7.tar.gz",
+    "source_code_location": "Git PR #4: episodes/S1E01/full",
+    "runtime_source_commit": "c9fd70c3afbe2a735fab879c3f81ae730fa8331d",
+    "runtime_source_project_id": "appgprj_6afc273728b8819189da26e9c2cf0f56",
+    "site_index_sha256": "616d04ddb05124b769798208ecfa06c24107f80eeef4d59252c73eb0e45bcabb",
+    "archive_content_hash": "sha256:a88403aaa947a8d861c8f9e1c7ca90e5b068c7f2d4de8ed8ab5a5d48772b8222",
+    "active_modules": 11,
+    "review_stills": "Sites source review/r7; one earlier actual browser capture and eight selected final Node/NAPI CPU frames, outside public assets",
+    "legacy_assets": "Earlier resources remain for revision history and existing download compatibility; active 11-module import graph verified",
+    "access": "Existing public access revision 2 preserved; raw media is not duplicated in GitHub",
+    "pinned_three_sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+  },
+  "required_locales": [
+    "en",
+    "ko"
+  ],
+  "claims_review": {
+    "status": "PRIMARY_SOURCE_LEDGER_AND_SCOPED_REVIEW_NOT_FULL_RELEASE_APPROVAL",
+    "claims": 44,
+    "source_entries": 16,
+    "claims_sha256": "c3f441ac8ca8feaa91cb3132ff64966e41a2db5a0aa233771c3dc56039b27f83",
+    "sources_sha256": "21fdfc6a673808db3cdb3a0fd54e18c9e10fc25af1abe8e720aca3711a8c7286",
+    "evidence": [
+      "claims.json",
+      "sources.json",
+      "review-r6.md"
+    ]
+  },
+  "rights_review": {
+    "status": "PROVENANCE_AND_LICENSE_NOTICES_PRESENT",
+    "asset_manifest_sha256": "ad27f4077faf7e0f0d964ec8c5fa1f0c8c4acd5ccef5a8014cbbcb9e0d0ac9b8",
+    "evidence": [
+      "archive-manifest.json",
+      "THIRD_PARTY_NOTICES.txt"
+    ],
+    "limits": "Copyright licenses do not imply endorsement or remove personality/trademark rights; dated modern portraits and objects are not period event photographs; R7 WebP delivery derivatives retain individual licenses and original/derivative hashes."
+  },
+  "verification": {
+    "static_mock_and_actual_asset_contracts": {
+      "passed": 38,
+      "failed": 0,
+      "artifact": "qa-r7-runtime.json",
+      "actual_browser": false
+    },
+    "geometry_and_event_contracts": {
+      "passed": 11,
+      "failed": 0,
+      "artifact": "qa-cinematic-r7-contract.json",
+      "actual_browser": false
+    },
+    "selected_final_cpu_frames": {
+      "count": 8,
+      "source_stable": true,
+      "repeated_pixels_match": true,
+      "report": "Sites source review/r7/cib-r7-final-picture-report.json",
+      "actual_browser": false
+    },
+    "audio_artifact": "audio-r6-report.json",
+    "browser_artifact": "qa-browser-r7.json",
+    "verification_notes": "verification-r7.md",
+    "final_browser_audio_correction_retest": "NOT_PERFORMED_SECURITY_POLICY_BLOCK",
+    "full_final_playback": "NOT_VERIFIED_FOR_R7",
+    "gpu_appearance": "NOT_VERIFIED"
+  },
+  "independent_release_qa": {
+    "result": "NOT_PERFORMED",
+    "actor": null,
+    "session": null
+  },
+  "director_exception": {
+    "duration": "Same full S1E01; source default does not force padding",
+    "treatment": "Latest request requires cinematic 3D events and consequences, without discarding archival evidence or shrinking the full S1E01; no QA waiver.",
+    "sites_deployment": "Explicit user request; existing audience preserved",
+    "qa_waiver": false
+  },
+  "publication": {
+    "url": "https://chip-in-birdie-s1e01-261117.reliqbit.chatgpt.site",
+    "project_id": "appgprj_6afc273728b8819189da26e9c2cf0f56",
+    "version_id": "appgprj_6afc273728b8819189da26e9c2cf0f56~appgver_e29e3d2675d881918a0e8433a834ff32",
+    "version_number": 4,
+    "deployment_id": "appgdep_6afcb0da25808191bf0d5ef5254b542e",
+    "source_commit": "c9fd70c3afbe2a735fab879c3f81ae730fa8331d",
+    "observed_at": "2026-11-17T19:54:24.240443+00:00",
+    "status": "SITES_DEPLOYMENT_SUCCEEDED",
+    "audience": "PUBLIC_PREEXISTING_REVISION_2_PRESERVED",
+    "youtube_status": "NOT_PUBLISHED"
+  },
+  "release_ready": false,
+  "finished_episode_count": 0,
+  "next_episodes_started_by_this_task": false
+}

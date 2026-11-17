@@ -29,7 +29,28 @@ ONNX runtime, or Python packages. It contains a locally generated synthetic
 narration recording; no human narrator impersonation is claimed.
 
 
-R6 ACTIVE RENDERER AND ARCHIVE COLLECTION — 2026-11-17
+R7 CURRENT PICTURE / DELIVERY ADDENDUM — 2026-11-17
+===================================================
+R7 integrates authored Three.js spatial sequences with the R6 photographic
+and document edit. Three.js r170 is active again. The R6 recording, script,
+source ledger and original photographic attribution below are retained.
+
+The PC, factory, inspection bench and design office are original editorial
+illustrations, not surveyed replicas, historical footage or evidence of a
+specific factory layout. The PC is a generic 1990s illustration, not an IBM
+5150 or an identified RIVA board. The lab fault and six-sample inspection
+are illustrative mechanisms, not NVIDIA's measured failure or yield.
+
+R7 photographic delivery derivatives: orientation normalization, reduction
+to at most 1920 pixels on the longest side and WebP quality 91 encoding.
+No historical content was added, generated or retouched. The delivered
+archive-manifest.json records the original and derivative hashes, creator,
+source, license and modifications for every image. Derivative work by Chip
+in Birdie, S1E01 R7. The same CC BY / CC BY-SA attribution and ShareAlike
+conditions below continue to apply. This addendum does not replace them.
+
+
+R6 ARCHIVE COLLECTION RECORD — 2026-11-17 (retained revision history)
 ====================================================
 Revision: S1E01-full-r6
 Locked script SHA-256: 50eae44fd3e123e87130d14b0fc2ace165d7d8d207b6a835c838b8b01b65e039

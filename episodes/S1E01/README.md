@@ -2,9 +2,9 @@
 
 ## Current continuation · 2026-11-17
 
-[The full-r3 documentary](full/README.md) continues PR #4 with a **9:00.177** English narration, Korean/English captions and a complete 3D picture edit: 61 utterances, ten chapters, eight world families and 41 named shots / 44 phase beats. The exact compiled artifact, media links and review boundaries are recorded in [full/media-bundle.json](full/media-bundle.json) and [full/verification.md](full/verification.md).
+[The full R7 documentary](full/README.md) continues the same PR #4 and existing Sites film: **6:24.411**, measured English narration, Korean/English captions and archival evidence integrated with causal 3D sequences. Orders leave a factory, a graphics card seats before a display powers on, and a rejected test specimen is exchanged for a different specimen. Camera cuts share the event clock rather than restarting the action. Exact artifacts and limits are in [full/media-bundle.json](full/media-bundle.json) and [full/verification-r7.md](full/verification-r7.md).
 
-Source and full-duration HTML generation are implemented. Actual full-browser playback, final listening and independent audiovisual release QA remain open. **IN_PRODUCTION, finished episodes: 0.** The following r1 record is preserved and is not evidence for r3.
+The latest source and full-duration HTML are implemented. Selected CPU-3D browser sequences were observed; a subsequent audio-loading correction, full R7 playback, GPU appearance and independent audiovisual release QA remain unverified. **IN_REVIEW, finished episodes: 0.** Previous revision results do not certify R7. The following r1 record is preserved as history.
 
 ## Historical r1 draft · six-second scene
 

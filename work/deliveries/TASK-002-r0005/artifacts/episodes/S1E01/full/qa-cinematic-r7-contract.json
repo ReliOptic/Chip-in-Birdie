@@ -1,0 +1,140 @@
+{
+  "schema": "cib-r7-cinematic-contract-v1",
+  "status": "PASS",
+  "scope": "Production shot clocks, finite camera/actor states, physical connector envelope, sample conservation and actor-state seek determinism.",
+  "browserUsed": false,
+  "webglUsed": false,
+  "renderedPixelsValidated": false,
+  "audioValidated": false,
+  "releaseApproval": false,
+  "limits": [
+    "Node/NAPI Canvas geometry-and-state tests are not browser playback or GPU evidence.",
+    "PC test verifies gold-finger alignment, monotonic travel and the authored connector opening envelope; it is not an exhaustive mesh collision analysis.",
+    "Lab counts and copper bridge are labelled illustrations, not historical NVIDIA yield or failure diagnosis.",
+    "No visual quality, historical accuracy, asset rights, narration or full-film independent viewing approval is asserted."
+  ],
+  "runtime": {
+    "node": "v24.22.1",
+    "platform": "linux",
+    "arch": "x64",
+    "threeRevision": "170",
+    "canvas": "@napi-rs/canvas · actual authored texture rasterization, no DOM/browser emulation"
+  },
+  "checks": {
+    "full_episode_coverage": {
+      "pass": true,
+      "shots": 83,
+      "spatial": 45,
+      "start": 0,
+      "end": 384.41133333333335,
+      "gaps": 0,
+      "overlaps": 0
+    },
+    "shared_event_clocks_not_sentence_resets": {
+      "pass": true,
+      "events": 16,
+      "continuousCameraSeams": 25,
+      "continuousSentenceSeams": 9,
+      "laterShotsWithAdvancedProgress": 27,
+      "payoffNeverReinserts": true
+    },
+    "finite_poses_and_actor_graphs_all_spatial_shots": {
+      "pass": true,
+      "spatialShots": 45,
+      "cases": 225,
+      "samplesPerShot": 5,
+      "geometryAndWorldMatricesFinite": true
+    },
+    "same_timestamps_reverse_and_unrelated_seeks": {
+      "pass": true,
+      "cases": 225,
+      "comparisons": 450,
+      "includesHiddenChildren": true,
+      "comparesGeometryMaterialsLightsTransformsVisibilityStateAndCamera": true
+    },
+    "fresh_reconstruction_same_timestamps": {
+      "pass": true,
+      "comparisons": 225,
+      "generatedIdsExcluded": true,
+      "actualTexturePixelHashesIncluded": true
+    },
+    "actor_action_continues_at_camera_and_sentence_cuts": {
+      "pass": true,
+      "cutsChecked": 25,
+      "cameraCutsDoNotRestartPhysicalActions": true
+    },
+    "lab_count_conservation_and_six_to_six_repeat": {
+      "pass": true,
+      "samples": 2002,
+      "initial": {
+        "tested": 6,
+        "accepted": 2,
+        "rejected": 4
+      },
+      "repeat": {
+        "tested": 6,
+        "accepted": 6,
+        "rejected": 0
+      },
+      "historicalYieldClaim": false
+    },
+    "macro_separate_specimens_and_clearance_during_swap": {
+      "pass": true,
+      "samples": 1001,
+      "swapNeverOccursWhileTouching": true,
+      "oldBridgeNotErased": true,
+      "distinctReplacementSpecimen": true
+    },
+    "pc_gold_fingers_alignment_insertion_and_power": {
+      "pass": true,
+      "samples": 1001,
+      "goldFingers": 24,
+      "insertionTravelMetres": 0.31,
+      "openingClearanceRangeMetres": [
+        -0.019999999552965164,
+        0.2900000004470348
+      ],
+      "poweredSamples": 130,
+      "emptyToSeatedToDisplay": true,
+      "scope": "Connector envelope only; no exhaustive collision certification."
+    },
+    "hidden_desk_state_resets_after_unrelated_seeks": {
+      "pass": true,
+      "cases": 2,
+      "hiddenAnnotationsPenAndPrototypeIncluded": true,
+      "designHasNoStaleForecastMarks": true
+    },
+    "source_snapshot_unchanged_during_run": {
+      "pass": true,
+      "files": 12
+    }
+  },
+  "failures": [],
+  "inputSHA256": {
+    "qa-cinematic-r7.mjs": "c080ea8ae965c95583c5c2290a1609a4bfb9215ced3654ed59f2816c00ca592d",
+    "script.json": "50eae44fd3e123e87130d14b0fc2ace165d7d8d207b6a835c838b8b01b65e039",
+    "cinematic-shotplan.mjs": "be6f6953866bed69d341d865dadcbe7ccb26f0ff10150d5a959a4c24aab26372",
+    "archive-shotplan.mjs": "b28c85a9f3474dc616d2f4f855c7860f68b11ad34db5097094e284e5d464fb9b",
+    "cinematic-director.mjs": "85f0ac02bb9987a14c29e64eebf5bef8b33ba9868f2427e141fdbbf44f10bd51",
+    "story-kit.mjs": "f1e73361726439a93e9e9beac32fbd5fd4da2e53f09580ce12d067bfc089e77f",
+    "story-pc.mjs": "80ea459be786f8d72671c308b3633ea93be0748ff7f5b91f5b7eef36ac544d87",
+    "story-factory.mjs": "47f1999685b8d3392430ede204b087d2d949b7f7ce15d11b0f675beec62e1224",
+    "story-lab.mjs": "41902411fb3e60d8132eabbe8b8cbd4f115a69d9f7b3ffb7ff58aecdbffa8c98",
+    "story-desk.mjs": "882157859d9987809d2574e726f4123e04723dce7120333f940217b3e02ad302",
+    "vendorThree": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+    "timeline": "ecb1cf7ab05e5a9c2a952df42d1da00bbdc0441e5e70464fb9cec2a03a3ce43d"
+  },
+  "timeline": {
+    "duration": 384.41133333333335,
+    "shotCount": 83,
+    "spatialShots": 45,
+    "archiveShots": 38,
+    "rows": 44
+  },
+  "summary": {
+    "checks": 11,
+    "passed": 11,
+    "failed": 0
+  },
+  "caseFingerprintCount": 225
+}

@@ -1,10 +1,10 @@
-import {createArchiveCinema} from './archive-cinema.mjs';
+import {createCinematicFilm} from './cinematic-director.mjs';
 
 const DATA = JSON.parse(document.getElementById('film-data').textContent);
 const $ = id => document.getElementById(id);
 const clamp = (n, a = 0, b = 1) => Math.max(a, Math.min(b, n));
 const fmt = t => Math.floor(t / 60).toString().padStart(2, '0') + ':' + Math.floor(t % 60).toString().padStart(2, '0');
-const STORAGE_KEY = 'cib-s1e01-r6';
+const STORAGE_KEY = 'cib-s1e01-r7';
 const headless = location.hash === '#headless';
 const qa = new URLSearchParams(location.search).has('qa');
 document.body.classList.toggle('headless', headless);
@@ -30,7 +30,8 @@ let locale = 'ko', muted = false, lastRow = null, activeShot = null, frameCount 
 let playRequest = 0, muteRequest = 0, initRequest = 0, lastPersist = 0;
 let archiveState = 'idle', archiveError = null, interfaceReady = false, restored = false, loopStarted = false;
 let theater = false, viewPending = false, viewRequest = 0, wantedExpanded = false, overflowBeforeTheater = '';
-const narration = new Audio(DATA.assets.narration);
+const narration = new Audio();
+let narrationURL = null, narrationFetch = null, narrationIntegrity = 'not loaded';
 narration.preload = 'auto';
 narration.loop = false;
 let context, voiceNode, sfxNode, sfxBuffer, audioState = 'idle', audioError = null, soundRequested = false;
@@ -75,6 +76,22 @@ async function loadArchiveImages(request) {
     }
   }));
 }
+async function loadNarrationFile() {
+  if(narrationURL)return;
+  if(narrationFetch)return narrationFetch;
+  narrationFetch=(async()=>{
+    // A complete verified local blob makes seeks independent of HTTP Range support
+    // and prevents a changed preview route from substituting an HTML error page.
+    const response=await fetch(DATA.assets.narration);
+    if(!response.ok)throw new Error('Narration download failed: HTTP '+response.status);
+    const bytes=await response.arrayBuffer();
+    if(bytes.byteLength<1024)throw new Error('Narration response is empty or truncated');
+    if(crypto.subtle&&DATA.audio_sha256){const actual=[...new Uint8Array(await crypto.subtle.digest('SHA-256',bytes))].map(n=>n.toString(16).padStart(2,'0')).join('');if(actual!==DATA.audio_sha256)throw new Error('Narration download hash mismatch');narrationIntegrity='SHA-256 verified';}
+    else narrationIntegrity='Loaded; SHA-256 API unavailable';
+    narrationURL=URL.createObjectURL(new Blob([bytes],{type:'audio/mpeg'}));narration.src=narrationURL;narration.load();
+  })().finally(()=>{narrationFetch=null;});
+  return narrationFetch;
+}
 function validateShots(list) {
   if (!Array.isArray(list) || !list.length) throw new Error('The archive edit contains no shots');
   const ids = new Set();
@@ -107,6 +124,16 @@ function setupCues() {
   }
   const ending = shots.at(-1);
   if (ending && ending.t1 - ending.t0 > .7) cueSpecs.push({t: ending.t0 + .18, kind: 'reveal', length: .6, seed: 761});
+  const eventMap=new Map(shots.filter(s=>s.eventClock).map(s=>[s.event,s.eventClock]));
+  function action(event,p,kind,length){const e=eventMap.get(event);if(!e||e.p0===e.p1||p<e.p0||p>e.p1)return;const t=e.t0+(p-e.p0)/(e.p1-e.p0)*(e.t1-e.t0);cueSpecs.push({t,kind,length:Math.min(length,duration-t),seed:901+cueSpecs.length,event,p});}
+  action('overflow',.39,'wheels',4.8);action('overflow',.69,'latch',.19);
+  action('assembly',.01,'panel',1.1);action('assembly',.8,'contact',.19);action('assembly',.87,'power',.7);
+  action('repair',.20,'servo',2.8);action('repair',.86,'test-pass',.24);
+  for(let i=0;i<6;i++){action('test',(i+.30)/6,'probe',.12);action('repeat',(i+.70)/6,'test-pass',.12);}
+  action('forecast',.06,'paper',.5);
+  action('capacity',.18,'wheels',4.3);action('capacity',.72,'servo',1.7);
+  action('orders',.61,'wheels',2.5);action('delivery',.61,'wheels',2.4);
+  cueSpecs.sort((a,b)=>a.t-b.t);
 }
 function rng(seed) { return () => { seed = (Math.imul(1664525, seed) + 1013904223) >>> 0; return seed / 4294967296; }; }
 function bakeCue(cue, sr) {
@@ -119,6 +146,12 @@ function bakeCue(cue, sr) {
     let value;
     if (cue.kind === 'paper') value = (filtered * .026 + noise * .004) * Math.sin(Math.PI * u) ** 2;
     else if (cue.kind === 'reveal') value = (Math.sin(2 * Math.PI * 196 * t) + .25 * Math.sin(2 * Math.PI * 294 * t)) * .005 * Math.sin(Math.PI * u) ** 2;
+    else if(cue.kind==='wheels') value=(filtered*.021+Math.sin(t*45)*.002)*Math.sin(Math.PI*u)**2;
+    else if(cue.kind==='servo') value=(Math.sin(2*Math.PI*(160*t+32*t*t))*.0028+filtered*.004)*Math.sin(Math.PI*u)**2;
+    else if(cue.kind==='test-pass') value=Math.sin(2*Math.PI*780*t)*.003*Math.sin(Math.PI*u)**2;
+    else if(cue.kind==='power') value=(Math.sin(2*Math.PI*61*t)*.004+filtered*.005)*Math.sin(Math.PI*u)**2;
+    else if(cue.kind==='panel') value=(filtered*.024+noise*.002)*Math.sin(Math.PI*u)**2;
+    else if(['contact','probe','latch'].includes(cue.kind)) value=(Math.sin(2*Math.PI*420*t)*.008+noise*.014)*Math.exp(-t/.018)*attack;
     else value = (Math.sin(2 * Math.PI * 180 * t) * .012 + noise * .003) * Math.exp(-t / .026) * attack;
     out[i] = Math.fround(value);
   }
@@ -238,11 +271,12 @@ function draw(t) {
     $('chapter-label').textContent = chapter.title;
     $('chapter-index').textContent = String(chapters.indexOf(chapter) + 1).padStart(2, '0') + ' / ' + String(chapters.length).padStart(2, '0');
     const shot = currentShot(current), assetIDs = activeShot.assetIds || shot?.assetIds || [];
-    $('frame-kind').textContent = activeShot.kind || shot?.kind || 'Archive';
+    $('frame-kind').textContent = state.kind || activeShot.kind || shot?.kind || 'Archive';
     $('frame-credit').textContent = assetIDs.map(id => {
       const asset = creditById.get(id);
       return asset ? asset.title + ' · ' + (asset.date_label || '') : '';
-    }).filter(Boolean).join(' / ');
+    }).filter(Boolean).join(' / ') || state.detail || '';
+    if (qa && $('scene-diagnostics')) $('scene-diagnostics').textContent = JSON.stringify({...state,shot:undefined}, null, 2);
     setCaption(row, current);
     if (row !== lastRow) {
       lastRow = row;
@@ -468,7 +502,7 @@ async function diagnostics() {
     let same = true;
     for (let i = samples.length - 1; i >= 0; i--) { seek(samples[i]); same &&= digest() === hashes[i]; await new Promise(requestAnimationFrame); }
     const a = await bakeScore(), b = await bakeScore();
-    const report = {scope: 'Current browser Canvas readback and independent OfflineAudioContext bakes; not viewing, listening or release approval', backend: 'canvas-archive', duration, shots: shots.length, utterances: rows.length, archiveImages: Object.keys(images).length, resolution: [$('film').width, $('film').height], samples: samples.map((time, i) => ({t: time, pixelFNV: hashes[i]})), orderIndependent: same, meanMs: times.reduce((sum, n) => sum + n, 0) / times.length, p95Ms: [...times].sort((x, y) => x - y)[Math.ceil(times.length * .95) - 1], sfx: {...checksum(a), equal: a.length === b.length && a.every((value, i) => value === b[i]), cues: cueSpecs.length, types: [...new Set(cueSpecs.map(cue => cue.kind))]}, errors: [...runtimeErrors]};
+    const report = {scope: 'Current browser composite pixels and independent OfflineAudioContext bakes; not listening, GPU verification or release approval', backend: renderer.backend, duration, shots: shots.length, utterances: rows.length, archiveImages: Object.keys(images).length, resolution: [$('film').width, $('film').height], samples: samples.map((time, i) => ({t: time, pixelFNV: hashes[i]})), orderIndependent: same, meanMs: times.reduce((sum, n) => sum + n, 0) / times.length, p95Ms: [...times].sort((x, y) => x - y)[Math.ceil(times.length * .95) - 1], sfx: {...checksum(a), equal: a.length === b.length && a.every((value, i) => value === b[i]), cues: cueSpecs.length, types: [...new Set(cueSpecs.map(cue => cue.kind))]}, errors: [...runtimeErrors]};
     $('diagnostics').textContent = JSON.stringify(report, null, 2); return report;
   } catch (error) { $('diagnostics').textContent = 'Diagnostics failed: ' + String(error); throw error; }
   finally { seek(saved); }
@@ -492,9 +526,10 @@ async function start() {
         } catch {}
       }
     }
-    await Promise.all([loadArchiveImages(request), document.fonts?.ready || Promise.resolve()]);
+    await Promise.all([loadArchiveImages(request), loadNarrationFile(), document.fonts?.ready || Promise.resolve()]);
     if (request !== initRequest) return;
-    renderer = createArchiveCinema({canvas: $('film'), images, script: DATA.script, timeline: DATA.timeline});
+    renderer?.dispose?.();
+    renderer = createCinematicFilm({canvas: $('film'), images, script: DATA.script, timeline: DATA.timeline});
     if (!renderer || typeof renderer.draw !== 'function') throw new Error('The archive renderer could not initialize');
     validateShots(renderer.shots); shots.splice(0, shots.length, ...renderer.shots); setupCues();
     $('locale').value = $('fs-locale').value = locale; $('seek').max = $('fs-seek').max = duration;
@@ -504,7 +539,7 @@ async function start() {
     for (const id of ['play', 'fs-play', 'big-play']) $(id).disabled = false;
     $('start').style.display = headless ? 'none' : 'grid';
     $('status').textContent = current > 0 ? 'Restored · paused' : 'Ready';
-    $('renderer-status').textContent = 'Archive film · Canvas';
+    $('renderer-status').textContent = renderer.backend;
     setMuted(muted);
     if (!loopStarted) { loopStarted = true; requestAnimationFrame(loop); }
   } catch (error) { if (request === initRequest) pictureFailed(error); }
@@ -531,7 +566,8 @@ document.addEventListener('keydown', event => {
 });
 narration.onended = () => { pause(); draw(duration); $('status').textContent = 'Finished · replay available'; persist(); };
 narration.onerror = () => {
-  audioError = 'Narration media could not be decoded'; pause(); $('status').textContent = 'Audio needs retry';
+  const names={1:'Narration load was aborted',2:'Narration network error',3:'Narration decoding error',4:'Narration format unavailable'};
+  audioError = (names[narration.error?.code]||'Narration media error') + (narration.error?.message ? ': '+narration.error.message : ''); pause(); $('status').textContent = 'Audio needs retry';
   showError(audioError + '. Your position is preserved.', () => { narration.load(); return play(); });
 };
 narration.addEventListener('waiting', onMediaWaiting); narration.addEventListener('playing', onMediaPlaying);
@@ -564,6 +600,6 @@ window.__seek = seek;
 window.__timeline = {SHOTS: shots, SPEECH: rows.map(row => [row.en, row.start, row.end, false, row.chapter, 0]), SCORE: cueSpecs};
 window.__meta = {title: DATA.script.title, duration, fps: 30, aspects: ['16:9'], aspect: '16:9', setAspect: aspect => { if (aspect !== 0 && aspect !== '16:9') throw new Error('Only the commissioned 16:9 film is supported'); resize(); }, audio: audioAPI, starter: false, loop: false, play, pause, get time() { return current; }, get playing() { return playing; }, get frameCount() { return frameCount; }};
 window.__film = {duration, fps: 30, seek, play, pause};
-window.__state = () => ({time: current, playing, pendingPlay, buffering, audioTime: narration.currentTime, audioPaused: narration.paused, audioState, archiveState, archiveError, archiveImages: Object.keys(images).length, shot: activeShot?.id, kind: activeShot?.kind, assetIds: activeShot?.assetIds, backend: 'canvas-archive', viewMode: viewMode(), viewPending, resolution: [$('film').width, $('film').height], sceneState: renderer?.state, frames: frameCount, errors: [...runtimeErrors]});
+window.__state = () => ({time: current, playing, pendingPlay, buffering, audioTime: narration.currentTime, audioPaused: narration.paused, audioState,narrationIntegrity, archiveState, archiveError, archiveImages: Object.keys(images).length, shot: activeShot?.id, kind: activeShot?.kind, assetIds: activeShot?.assetIds, backend: renderer?.backend, viewMode: viewMode(), viewPending, resolution: [$('film').width, $('film').height], sceneState: renderer?.state, frames: frameCount, errors: [...runtimeErrors]});
 window.__diagnostics = diagnostics;
 window.__bootPromise = start();

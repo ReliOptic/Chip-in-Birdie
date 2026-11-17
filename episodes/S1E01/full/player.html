@@ -136,12 +136,12 @@ body.theater-open{overflow:hidden}
 <header>
   <div class="masthead"><span class="brand">Chip in Birdie</span><span>Season 1 · Episode 01</span></div>
   <h1 id="film-title">__FILM_TITLE__</h1>
-  <div class="edition"><span>Archive documentary</span><span id="edition-time">English narration · 한국어 / English captions</span></div>
+  <div class="edition"><span>Documentary · 3D sequences & archive</span><span id="edition-time">English narration · 한국어 / English captions</span></div>
 </header>
 <main>
-  <section class="screen" id="screen" tabindex="0" aria-label="S1E01 archive documentary. Space to play or pause; arrow keys seek five seconds.">
+  <section class="screen" id="screen" tabindex="0" aria-label="S1E01 documentary. Space to play or pause; arrow keys seek five seconds.">
     <div id="picture">
-      <canvas id="film" width="960" height="540" aria-label="Archive documentary: photographs, records and explanatory graphics"></canvas>
+      <canvas id="film" width="960" height="540" aria-label="Documentary: cinematic 3D events, attributed photographs and historical records"></canvas>
       <div id="start"><button aria-label="Play documentary" id="big-play" disabled>▶</button></div>
       <div id="error" role="alert"></div>
     </div>
@@ -172,7 +172,7 @@ body.theater-open{overflow:hidden}
   </section>
   <ol class="chapters" id="chapters" aria-label="Chapters"></ol>
   <div class="below">
-    <div><p>Period records, attributed photographs and explanatory graphics. Image dates and limitations are identified in the credits.</p><p id="frame-credit"></p></div>
+    <div><p>Period records and attributed photographs, connected by illustrative 3D events. The modelled rooms, equipment and circuit failure are not historical reconstructions. Image dates and limitations are identified in the credits.</p><p id="frame-credit"></p></div>
     <nav aria-label="Film resources"><a href="#sources" id="evidence-link">Inspect the evidence</a><a id="download-film" href="./S1E01-full-documentary.html" download="S1E01-full-documentary.html">Download HTML</a></nav>
   </div>
   <aside id="transcript" hidden>
@@ -184,10 +184,11 @@ body.theater-open{overflow:hidden}
     <h3>Image credits & rights</h3><div id="archive-credits"></div>
     <details><summary>Software & voice notices</summary><pre id="third-party-notices"></pre></details>
   </aside>
-  <aside id="qa-panel"><h2>Runtime diagnostics</h2><button id="run-qa">Check frame and sound repeatability</button><button id="jump-end">Inspect ending</button><pre id="diagnostics">Not run</pre></aside>
+  <aside id="qa-panel"><h2>Runtime diagnostics</h2><button id="run-qa">Check frame and sound repeatability</button><button id="jump-end">Inspect ending</button><pre id="diagnostics">Not run</pre><details><summary>Current scene, camera and action state</summary><pre id="scene-diagnostics"></pre></details></aside>
   <p id="sr-status" role="status" aria-live="polite"></p>
 </main>
 <script id="film-data" type="application/json">__FILM_DATA__</script>
+<script type="importmap">__IMPORT_MAP__</script>
 <script type="module">import('__ENTRY_MODULE__').catch(error=>{window.__ready=false;document.getElementById('status').textContent='Film could not initialize';const box=document.getElementById('error');box.style.display='block';box.replaceChildren();const text=document.createElement('p');text.textContent='This browser could not initialize the archive film. JavaScript modules and Canvas are required. '+String(error);const retry=document.createElement('button');retry.textContent='Reload and retry';retry.onclick=()=>location.reload();box.append(text,retry);});</script>
 </body>
 </html>

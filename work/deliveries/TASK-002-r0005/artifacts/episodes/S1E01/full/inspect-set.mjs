@@ -1,0 +1,28 @@
+// Bounded software-rendered set inspection, not browser or GPU certification.
+import fs from 'node:fs';
+import path from 'node:path';
+import {createRequire} from 'node:module';
+import {fileURLToPath} from 'node:url';
+import {createStoryKit} from './story-kit.mjs';
+import {createSoftwareRenderer} from './software-renderer.mjs';
+const require=createRequire(import.meta.url);
+const {createCanvas}=require('@napi-rs/canvas');
+const args={};for(let i=2;i<process.argv.length;i+=2)args[process.argv[i].replace(/^--/,'')]=process.argv[i+1];
+if(!args.three||!args.out)throw new Error('--three FILE --out DIRECTORY [--set pc --act blocked --shot slot --p 0]');
+const T=await import('data:text/javascript;base64,'+fs.readFileSync(args.three).toString('base64'));
+globalThis.document={createElement:(tag)=>{if(tag!=='canvas')throw new Error(tag);const c=createCanvas(1,1);c.style={};return c;}};
+const names={pc:'createPCSet',factory:'createFactorySet',lab:'createLabSet',desk:'createDeskSet'};
+const name=args.set||'pc',module=await import('./story-'+name+'.mjs');
+const set=module[names[name]](T,createStoryKit(T));
+const scene=new T.Scene();scene.add(set.root);
+const key=new T.DirectionalLight('#ffedcd',3);key.position.set(-2.5,3,2);key.target.position.set(.1,1,0);key.castShadow=true;key.shadow.camera.left=-4;key.shadow.camera.right=4;key.shadow.camera.top=4;key.shadow.camera.bottom=-4;key.shadow.camera.near=.05;key.shadow.camera.far=14;scene.add(key,key.target);
+const fill=new T.DirectionalLight('#b3d9e5',1.3);fill.position.set(1.5,2,-1.8);scene.add(fill,new T.HemisphereLight('#e5f1ee','#74716a',1.35));
+const canvas=createCanvas(960,540),renderer=createSoftwareRenderer(T,{canvas,quality:'high'});renderer.setSize(960,540);
+const camera=new T.PerspectiveCamera(40,16/9,.012,80);
+const params={act:args.act||'blocked',shot:args.shot||'slot',p:Number(args.p||0),u:Number(args.u||.5),t:Number(args.t||0)};
+const frame=set.frame(params);camera.position.fromArray(frame.position);camera.lookAt(new T.Vector3(...frame.target));camera.fov=frame.fov;camera.updateProjectionMatrix();scene.background=new T.Color(frame.look?.background||'#222d30');renderer.toneMappingExposure=frame.look?.exposure||1;
+const started=performance.now();renderer.render(scene,camera);const elapsed=performance.now()-started;
+fs.mkdirSync(args.out,{recursive:true});const stem=[name,params.act,params.shot,params.p].join('-');
+fs.writeFileSync(path.join(args.out,stem+'.png'),canvas.toBuffer('image/png'));
+const report={scope:'NAPI Canvas CPU triangle render; no browser/GPU claim',params,frame,ms:elapsed,renderer:renderer.info};
+fs.writeFileSync(path.join(args.out,stem+'.json'),JSON.stringify(report,null,2));console.log(JSON.stringify({file:path.join(args.out,stem+'.png'),ms:elapsed,triangles:renderer.info.render.triangles,frame}));

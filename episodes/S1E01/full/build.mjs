@@ -56,23 +56,26 @@ export function readArchive(archivePath) {
   const publicMetadata = Array.isArray(raw) ? {} : Object.fromEntries(Object.entries(raw).filter(([key]) => !['assets', 'path_base'].includes(key)));
   return {assets, publicMetadata, manifest: {...publicMetadata, assets: assets.map(asset => asset.credit)}};
 }
-function bundleModules(entry) {
-  const modules = new Map(), active = new Set();
+function bundleModules(entry, threeFile) {
+  const modules = new Map(), active = new Set(), imports = {};
+  if (!threeFile || !fs.statSync(threeFile).isFile()) throw new Error('--three must identify the existing pinned Three.js module');
+  imports.three = dataURI(threeFile, 'text/javascript');
   function visit(file) {
     file = path.resolve(file);
     if (!file.startsWith(root + path.sep)) throw new Error('Runtime module escapes episode source: ' + file);
-    if (modules.has(file)) return modules.get(file).uri;
+    if (modules.has(file)) return modules.get(file).specifier;
     if (active.has(file)) throw new Error('Circular inline module import: ' + path.basename(file));
     active.add(file);
+    const specifier = 'cib-runtime/' + path.relative(root, file).replaceAll(path.sep, '/');
     let code = read(file);
     code = code.replace(/(\bfrom\s*|\bimport\s*)(['"])(\.{1,2}\/[^'"]+)\2/g, (_all, lead, quote, relative) => lead + quote + visit(path.resolve(path.dirname(file), relative)) + quote);
     const uri = 'data:text/javascript;base64,' + Buffer.from(code).toString('base64');
-    modules.set(file, {uri, sourceHash: hash(file)}); active.delete(file); return uri;
+    modules.set(file, {uri, specifier, sourceHash: hash(file)}); imports[specifier] = uri; active.delete(file); return specifier;
   }
-  return {entry: visit(entry), modules};
+  return {entry: visit(entry), modules, imports};
 }
-function makeHTML(template, data, entry) {
-  return template.replaceAll('__FILM_TITLE__', escapeHTML(data.script.title)).replace('__FILM_DATA__', scriptJSON(data)).replace('__ENTRY_MODULE__', entry);
+function makeHTML(template, data, entry, imports) {
+  return template.replaceAll('__FILM_TITLE__', escapeHTML(data.script.title)).replace('__FILM_DATA__', scriptJSON(data)).replace('__ENTRY_MODULE__', entry).replace('__IMPORT_MAP__',scriptJSON({imports}));
 }
 function vtt(timeline, locale) {
   const stamp = time => {
@@ -82,21 +85,21 @@ function vtt(timeline, locale) {
   return 'WEBVTT\n\n' + timeline.sentences.map(row => row.id + '\n' + stamp(row.start) + ' --> ' + stamp(row.end) + '\n' + row[locale] + '\n').join('\n');
 }
 export function build(args) {
-  if (!args.archive || !args.audio || !args.out) throw new Error('Usage: node build.mjs --archive /path/to/archive --audio /path/to/audio --out /path/to/output [--site /path/to/site/dist]');
+  if (!args.archive || !args.audio || !args.out || !args.three) throw new Error('Usage: node build.mjs --archive /path/to/archive --audio /path/to/audio --three /path/to/pinned-three.module.js --out /path/to/output [--site /path/to/site/dist]');
   const script = json(path.join(root, 'script.json')), timeline = json(path.join(args.audio, 'timeline.json'));
   const narrationFile = path.join(args.audio, 'narration.mp3'), scriptHash = hash(path.join(root, 'script.json')), narrationHash = hash(narrationFile);
   validateTimeline(script, timeline, scriptHash, narrationHash);
-  const archive = readArchive(args.archive), runtime = bundleModules(path.join(root, 'film.mjs'));
+  const archive = readArchive(args.archive), runtime = bundleModules(path.join(root, 'film.mjs'), path.resolve(args.three));
   const rawClaims = json(path.join(root, 'claims.json'));
   const data = {
     script, timeline, claims: Array.isArray(rawClaims) ? rawClaims : rawClaims.claims, sources: json(path.join(root, 'sources.json')),
     notices: read(path.join(root, 'THIRD_PARTY_NOTICES.txt')), audio_sha256: narrationHash,
     archiveCredits: archive.assets.map(asset => asset.credit), archiveRights: archive.publicMetadata,
-    deliveryMode: 'standalone',
+    deliveryMode: 'standalone', pictureRevision: 'R7-cinematic-events',
     assets: {narration: dataURI(narrationFile, 'audio/mpeg'), archive: Object.fromEntries(archive.assets.map(asset => [asset.credit.id, dataURI(asset.file, asset.mime)]))}
   };
-  const template = read(path.join(root, 'player.html')), html = makeHTML(template, data, runtime.entry);
-  if (/__FILM_TITLE__|__FILM_DATA__|__ENTRY_MODULE__/.test(html)) throw new Error('Unresolved film template placeholder');
+  const template = read(path.join(root, 'player.html')), html = makeHTML(template, data, runtime.entry, runtime.imports);
+  if (/__FILM_TITLE__|__FILM_DATA__|__ENTRY_MODULE__|__IMPORT_MAP__/.test(html)) throw new Error('Unresolved film template placeholder');
   const out = path.resolve(args.out), output = path.join(out, 'S1E01-full-documentary.html');
   if (args.site && Buffer.byteLength(html) >= 25 * 1024 * 1024) throw new Error('Downloadable standalone HTML exceeds the Sites 25 MiB static-file limit; reduce archive image delivery dimensions before publishing');
   fs.mkdirSync(out, {recursive: true});
@@ -108,6 +111,8 @@ export function build(args) {
   if (args.site) {
     const site = path.resolve(args.site);
     fs.mkdirSync(path.join(site, 'archive'), {recursive: true});
+    fs.mkdirSync(path.join(site, 'vendor'), {recursive: true});
+    if(path.resolve(args.three)!==path.join(site,'vendor','three.module.js'))fs.copyFileSync(args.three,path.join(site,'vendor','three.module.js'));
     for (const file of runtime.modules.keys()) {
       const relative = path.relative(root, file), target = path.join(site, relative);
       fs.mkdirSync(path.dirname(target), {recursive: true}); fs.copyFileSync(file, target);
@@ -116,13 +121,13 @@ export function build(args) {
     fs.copyFileSync(narrationFile, path.join(site, 'narration.mp3'));
     fs.copyFileSync(path.join(root, 'THIRD_PARTY_NOTICES.txt'), path.join(site, 'THIRD_PARTY_NOTICES.txt'));
     const siteData = {...data, deliveryMode: 'site', assets: {narration: './narration.mp3', archive: Object.fromEntries(archive.assets.map(asset => [asset.credit.id, './archive/' + asset.filename]))}};
-    fs.writeFileSync(path.join(site, 'index.html'), makeHTML(template, siteData, './film.mjs'));
+    fs.writeFileSync(path.join(site, 'index.html'), makeHTML(template, siteData, './film.mjs',{three:'./vendor/three.module.js'}));
     fs.copyFileSync(output, path.join(site, 'S1E01-full-documentary.html'));
     fs.writeFileSync(path.join(site, 'archive-manifest.json'), JSON.stringify(archive.manifest, null, 2));
   }
   const manifest = {
-    episode: 'S1E01', revision: script.revision, duration: timeline.duration, utterances: timeline.sentences.length,
-    picture: 'Archive-led Canvas documentary', archiveImages: archive.assets.length, releaseApproval: false,
+    episode: 'S1E01', revision: 'R7-cinematic-events', narrationRevision: script.revision, duration: timeline.duration, utterances: timeline.sentences.length,
+    picture: 'Causal 3D sequences with archival evidence; WebGL2 and CPU compatibility backends', archiveImages: archive.assets.length, releaseApproval: false, three_sha256: hash(args.three),
     script_sha256: scriptHash, narration_sha256: narrationHash,
     runtimeSources: Object.fromEntries([...runtime.modules].map(([file, value]) => [path.relative(root, file), value.sourceHash])),
     files: fs.readdirSync(out).filter(name => name !== 'manifest.json' && fs.statSync(path.join(out, name)).isFile()).map(name => ({path: name, bytes: fs.statSync(path.join(out, name)).size, sha256: hash(path.join(out, name))}))
@@ -134,7 +139,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   const args = {};
   for (let i = 2; i < process.argv.length; i += 2) {
     const name = process.argv[i];
-    if (!['--archive', '--audio', '--out', '--site'].includes(name) || !process.argv[i + 1] || process.argv[i + 1].startsWith('--')) throw new Error('Expected --archive PATH --audio PATH --out PATH [--site PATH]');
+    if (!['--archive', '--audio', '--out', '--site', '--three'].includes(name) || !process.argv[i + 1] || process.argv[i + 1].startsWith('--')) throw new Error('Expected --archive PATH --audio PATH --three FILE --out PATH [--site PATH]');
     args[name.slice(2)] = process.argv[i + 1];
   }
   console.log(JSON.stringify(build(args)));

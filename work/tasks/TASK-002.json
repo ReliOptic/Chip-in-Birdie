@@ -1,6 +1,6 @@
 {
   "acceptance_evidence": [
-    "PR #4의 정본과 이전 리비전을 보존하며 실제 사진·문서·설명 그래픽 중심으로 수정한 S1E01 전체 다큐멘터리 소스 및 자체 포함 HTML",
+    "PR #4 정본·이전 리비전·기존 사진과 문서를 보존하며 동작→결과가 이어지는 3D 시퀀스를 통합한 동일 S1E01 전체 소스와 자체 포함 HTML",
     "실제 영어 음성 샘플에 맞춘 전체 타임라인과 한국어·영어 자막",
     "역사적 선택·고객 관계·제조 원리의 문장별 근거와 해석 한계",
     "정확한 산출물 SHA, 실행 가능한 검증 코드, 실제 검증과 미검증의 구분",
@@ -18,7 +18,7 @@
     "session_id": "chat-20261117-s1e01-r7-film",
     "session_id_source": "explicit"
   },
-  "current_delivery_id": "TASK-002-r0004",
+  "current_delivery_id": "TASK-002-r0005",
   "episode_id": "H039",
   "history": [
     {
@@ -239,19 +239,35 @@
         "session_id_source": "explicit"
       },
       "event": "CLAIMED"
+    },
+    {
+      "actor": "codex-root-s1e01-r7",
+      "at": "2026-11-17T19:47:00Z",
+      "authority": "Director rejects orbit-only/identical scenes and asks when cinematic 3D storytelling will exist; latest direction retains prior full-film and Sites request.",
+      "event": "SCOPE_UPDATED",
+      "new_scope": "Same full film with causal 3D events and preserved archival evidence; shared action clocks, bounded physical/state verification, existing public Site deployment; no release approval or YouTube publication.",
+      "previous_scope": "R6 archive-led replacement of repetitive 3D"
+    },
+    {
+      "actor": "codex-root-s1e01-r7",
+      "at": "2026-11-17T19:55:22.468906Z",
+      "bundle_sha256": "d6fb14ca0b5ae88a965fb76f30c9a3a1052388a9f440b7d8583130b526e10659",
+      "delivery_id": "TASK-002-r0005",
+      "event": "SUBMITTED",
+      "revision": 5
     }
   ],
-  "objective": "PR #4의 동일 S1E01 전체본을 실제 사진·당시 제품·1차 문서·설명 그래픽 중심의 아카이브 다큐멘터리로 수정하고 기존 Sites의 현재 공개 범위를 유지하여 배포한다. 엔비디아의 1997년 공급 문제에서 TSMC 창업의 고객·투자·생산 위험으로 이어지는 전체 이야기, 실측 영어 음성, 한국어/영어 자막, 문장별 근거·사진 권리 UI와 정확한 리비전의 검증을 인계한다. 독립 시청·청취 승인 및 유튜브 출시는 별개로 남긴다.",
+  "objective": "PR #4의 동일 S1E01 전체본과 기존 아카이브 근거를 보존하면서, 주문 회수 후 빈 공장·카드 장착 후 화면 작동·실패 시편 교체와 재검사·설비 투자 후 출하로 이어지는 3D 사건을 구현한다. 동일 사건의 동작은 카메라·문장 컷에서 재시작하지 않으며, 실제 역사와 설명용 공간을 구분한다. 실측 영어 음성·한국어/영어 자막·사진 권리와 근거 UI를 유지하고 현재 공개 범위를 바꾸지 않고 기존 Sites에 배포한다. 독립 시청·청취 승인과 유튜브 출시는 별개로 남긴다.",
   "release_implication": "none: task completion is not video READY or publication",
   "required_review_roles": [
     "evidence",
     "editorial",
     "viewer"
   ],
-  "revision": 4,
+  "revision": 5,
   "scope": "episode",
-  "status": "CLAIMED",
+  "status": "IN_REVIEW",
   "task_id": "TASK-002",
-  "title": "S1E01 / H039 · PR #4 전체 아카이브 다큐멘터리 R6",
-  "updated_at": "2026-11-17T19:10:07.973871Z"
+  "title": "S1E01 / H039 · PR #4 전체 3D·아카이브 다큐멘터리 R7",
+  "updated_at": "2026-11-17T19:55:22.468926Z"
 }
