@@ -1,0 +1,211 @@
+{
+  "artifacts": [
+    {
+      "path": "episodes/S1E01/full/README.md",
+      "sha256": "83f31f64443320f6b6f0cfe26f408b3c7ba8bfe1cb053bd87ca55bab7ffbfdef",
+      "size_bytes": 6326,
+      "snapshot_path": "work/deliveries/TASK-002-r0002/artifacts/episodes/S1E01/full/README.md"
+    },
+    {
+      "path": "episodes/S1E01/full/SOFTWARE_RENDERER_QA.md",
+      "sha256": "eb3d871dca46e770813c588768a3316d37cc1b2801e383f5e8e415128dfa7ad3",
+      "size_bytes": 2933,
+      "snapshot_path": "work/deliveries/TASK-002-r0002/artifacts/episodes/S1E01/full/SOFTWARE_RENDERER_QA.md"
+    },
+    {
+      "path": "episodes/S1E01/full/THIRD_PARTY_NOTICES.txt",
+      "sha256": "1179fbcbef6a614278544d4dfa2eb2e737c7b715d89131c7204dd65348734477",
+      "size_bytes": 1491,
+      "snapshot_path": "work/deliveries/TASK-002-r0002/artifacts/episodes/S1E01/full/THIRD_PARTY_NOTICES.txt"
+    },
+    {
+      "path": "episodes/S1E01/full/audio-build.py",
+      "sha256": "aafdf873a5fd650aee1bb6591a272c7b263b7aab9d4e94f68242c9a6ad479a29",
+      "size_bytes": 16092,
+      "snapshot_path": "work/deliveries/TASK-002-r0002/artifacts/episodes/S1E01/full/audio-build.py"
+    },
+    {
+      "path": "episodes/S1E01/full/audio-env.md",
+      "sha256": "3527d2f7b7c897718d23abf729146d3da0f1a2dbb7d121f366b399f1fb871563",
+      "size_bytes": 13263,
+      "snapshot_path": "work/deliveries/TASK-002-r0002/artifacts/episodes/S1E01/full/audio-env.md"
+    },
+    {
+      "path": "episodes/S1E01/full/build.mjs",
+      "sha256": "814a4e7025c4522bc775cd35522405351e9f42c9f01daa134c73c9ca829611fe",
+      "size_bytes": 5689,
+      "snapshot_path": "work/deliveries/TASK-002-r0002/artifacts/episodes/S1E01/full/build.mjs"
+    },
+    {
+      "path": "episodes/S1E01/full/cinema.mjs",
+      "sha256": "40ce293b168a3e77e9fd50479a8d43660775895986449a551d2b5a0041679db0",
+      "size_bytes": 8252,
+      "snapshot_path": "work/deliveries/TASK-002-r0002/artifacts/episodes/S1E01/full/cinema.mjs"
+    },
+    {
+      "path": "episodes/S1E01/full/claims.json",
+      "sha256": "e27b6cb3ba4db688ca3a452bdef0b11982ddcfe991e8bf17525a07257dc647c5",
+      "size_bytes": 9942,
+      "snapshot_path": "work/deliveries/TASK-002-r0002/artifacts/episodes/S1E01/full/claims.json"
+    },
+    {
+      "path": "episodes/S1E01/full/direction.md",
+      "sha256": "e811bbf54537bab702869d246b2857fc13e7ab00ea78450c674693a1355ae957",
+      "size_bytes": 5733,
+      "snapshot_path": "work/deliveries/TASK-002-r0002/artifacts/episodes/S1E01/full/direction.md"
+    },
+    {
+      "path": "episodes/S1E01/full/film.mjs",
+      "sha256": "384e4822ac768822d7ff24b264b4dcca7a5be3ae7e552d97af85cbbeda366077",
+      "size_bytes": 27038,
+      "snapshot_path": "work/deliveries/TASK-002-r0002/artifacts/episodes/S1E01/full/film.mjs"
+    },
+    {
+      "path": "episodes/S1E01/full/mechanisms.mjs",
+      "sha256": "26d23ae65e0f6cef9ac17793fd2c8e8d802c68e676f1c43ebfdae6326185817d",
+      "size_bytes": 34133,
+      "snapshot_path": "work/deliveries/TASK-002-r0002/artifacts/episodes/S1E01/full/mechanisms.mjs"
+    },
+    {
+      "path": "episodes/S1E01/full/media-bundle.json",
+      "sha256": "cbb2e4a47046f7cfdba4a34aba047caaf3380a207dc6e168f74179cda81ae37f",
+      "size_bytes": 6107,
+      "snapshot_path": "work/deliveries/TASK-002-r0002/artifacts/episodes/S1E01/full/media-bundle.json"
+    },
+    {
+      "path": "episodes/S1E01/full/player.html",
+      "sha256": "d8ee70796b532bfcd32897efe45fdfab812bfdaa7872279e8474ffba026c576b",
+      "size_bytes": 16965,
+      "snapshot_path": "work/deliveries/TASK-002-r0002/artifacts/episodes/S1E01/full/player.html"
+    },
+    {
+      "path": "episodes/S1E01/full/qa-browser-r4-diagnostics.json",
+      "sha256": "494ddd430db87e5ef88d7e0561edd20c86a8b8e649c564ad9b23358dae49fba1",
+      "size_bytes": 1762,
+      "snapshot_path": "work/deliveries/TASK-002-r0002/artifacts/episodes/S1E01/full/qa-browser-r4-diagnostics.json"
+    },
+    {
+      "path": "episodes/S1E01/full/qa-browser-r4.json",
+      "sha256": "7746fcc394ee58018b891f24a5fde9e5b3be9324c1788d6a95fe97124cb444bb",
+      "size_bytes": 5289,
+      "snapshot_path": "work/deliveries/TASK-002-r0002/artifacts/episodes/S1E01/full/qa-browser-r4.json"
+    },
+    {
+      "path": "episodes/S1E01/full/qa-contract-r4.json",
+      "sha256": "484f6924b549c8744315306004d1f09715fa8f402ebe3a2a7a6511e3ed2454b0",
+      "size_bytes": 10451,
+      "snapshot_path": "work/deliveries/TASK-002-r0002/artifacts/episodes/S1E01/full/qa-contract-r4.json"
+    },
+    {
+      "path": "episodes/S1E01/full/qa-contract.mjs",
+      "sha256": "4d1a57a1a5e30c9b8ebe0b33e8c0ff892f7d5a63225dc583cd76e8f4ef37c932",
+      "size_bytes": 28754,
+      "snapshot_path": "work/deliveries/TASK-002-r0002/artifacts/episodes/S1E01/full/qa-contract.mjs"
+    },
+    {
+      "path": "episodes/S1E01/full/qa-site-r4.json",
+      "sha256": "6749ef4ea9f747131a53a631d42424e4b76b0ffbe89ff2b123e8121b1651748b",
+      "size_bytes": 2183,
+      "snapshot_path": "work/deliveries/TASK-002-r0002/artifacts/episodes/S1E01/full/qa-site-r4.json"
+    },
+    {
+      "path": "episodes/S1E01/full/qa-site.mjs",
+      "sha256": "b12d6285fbbc8e1162ad5db70493db1bab52bf285634d58c5f145e703e2c6b96",
+      "size_bytes": 3190,
+      "snapshot_path": "work/deliveries/TASK-002-r0002/artifacts/episodes/S1E01/full/qa-site.mjs"
+    },
+    {
+      "path": "episodes/S1E01/full/qa-software-r4-results.json",
+      "sha256": "4fcc91ad539aecb0b26e97e8cea1bcfc8f54f918975247599f09a79ef1f8ff2c",
+      "size_bytes": 6163,
+      "snapshot_path": "work/deliveries/TASK-002-r0002/artifacts/episodes/S1E01/full/qa-software-r4-results.json"
+    },
+    {
+      "path": "episodes/S1E01/full/qa-software.mjs",
+      "sha256": "d95f7bcd276cc360a19ce8a37a9a535b3d966e844803b67f3c8ecf47acecd298",
+      "size_bytes": 9536,
+      "snapshot_path": "work/deliveries/TASK-002-r0002/artifacts/episodes/S1E01/full/qa-software.mjs"
+    },
+    {
+      "path": "episodes/S1E01/full/qa-worlds-r4-results.json",
+      "sha256": "c228fa7deddf0c3c10479ec0cf0d0ff5d14e370e66e5cb71da1253f1be89ea75",
+      "size_bytes": 209350,
+      "snapshot_path": "work/deliveries/TASK-002-r0002/artifacts/episodes/S1E01/full/qa-worlds-r4-results.json"
+    },
+    {
+      "path": "episodes/S1E01/full/qa-worlds-r4.mjs",
+      "sha256": "ad8ca7f2c4224684e5472dcec49d9dd145b2e00c9a1c54c37d3aa98f8922a30a",
+      "size_bytes": 6069,
+      "snapshot_path": "work/deliveries/TASK-002-r0002/artifacts/episodes/S1E01/full/qa-worlds-r4.mjs"
+    },
+    {
+      "path": "episodes/S1E01/full/qa-worlds.mjs",
+      "sha256": "2171348e19a19b592efb44c5c8b68d0e24aae9a0bad81e38509f247b47d2b80e",
+      "size_bytes": 21674,
+      "snapshot_path": "work/deliveries/TASK-002-r0002/artifacts/episodes/S1E01/full/qa-worlds.mjs"
+    },
+    {
+      "path": "episodes/S1E01/full/recover-assets.mjs",
+      "sha256": "a1402fe343d5d949c7204f9018a9a62d3df94c280ada81c98176296aee7bd52a",
+      "size_bytes": 1476,
+      "snapshot_path": "work/deliveries/TASK-002-r0002/artifacts/episodes/S1E01/full/recover-assets.mjs"
+    },
+    {
+      "path": "episodes/S1E01/full/review-r4.md",
+      "sha256": "8f3774ef83d3b5c41d591dab38b5e91dffad6fa130697da03998909953e21402",
+      "size_bytes": 4124,
+      "snapshot_path": "work/deliveries/TASK-002-r0002/artifacts/episodes/S1E01/full/review-r4.md"
+    },
+    {
+      "path": "episodes/S1E01/full/rights.md",
+      "sha256": "3d403aa1b6e77a041c16987a5e022287414160be08fb2ec65542a0a0185c38a6",
+      "size_bytes": 6204,
+      "snapshot_path": "work/deliveries/TASK-002-r0002/artifacts/episodes/S1E01/full/rights.md"
+    },
+    {
+      "path": "episodes/S1E01/full/script.json",
+      "sha256": "277e2e129bb4e3f3752a0acdb2829b91e9918fe38e15586110f51cf9d231c42e",
+      "size_bytes": 30430,
+      "snapshot_path": "work/deliveries/TASK-002-r0002/artifacts/episodes/S1E01/full/script.json"
+    },
+    {
+      "path": "episodes/S1E01/full/software-renderer.mjs",
+      "sha256": "d9100eff41ce04e27aebf4c0bd9f0c57935ce3d7c002db85c5922dfcbdac8690",
+      "size_bytes": 24707,
+      "snapshot_path": "work/deliveries/TASK-002-r0002/artifacts/episodes/S1E01/full/software-renderer.mjs"
+    },
+    {
+      "path": "episodes/S1E01/full/sources.json",
+      "sha256": "658b9cec86501f5b60a22c704c26f6b930842aca02853d61823ed5c117bdd8a0",
+      "size_bytes": 5703,
+      "snapshot_path": "work/deliveries/TASK-002-r0002/artifacts/episodes/S1E01/full/sources.json"
+    },
+    {
+      "path": "episodes/S1E01/full/verification-r4.md",
+      "sha256": "d680130ad732f4447867bda4891925b9988e582ca32fda2f2151294f52cbd6d4",
+      "size_bytes": 7477,
+      "snapshot_path": "work/deliveries/TASK-002-r0002/artifacts/episodes/S1E01/full/verification-r4.md"
+    },
+    {
+      "path": "episodes/S1E01/full/worlds.mjs",
+      "sha256": "3c25b7393428189f95181cb00bdcd14c789f11b3b650bee568c847db1219454f",
+      "size_bytes": 31603,
+      "snapshot_path": "work/deliveries/TASK-002-r0002/artifacts/episodes/S1E01/full/worlds.mjs"
+    }
+  ],
+  "bundle_sha256": "8b50816620f8928f8ad9788fa3d4e1367fbb292082e061588b5201d00a5fa881",
+  "delivery_id": "TASK-002-r0002",
+  "episode_id": "H039",
+  "manifest_sha256": "e4de07636d523a4f464b3b82d6f7aa9a93f1a7514e14b368ff1e6a9c3c671188",
+  "previous_delivery_id": "TASK-002-r0001",
+  "producer": {
+    "actor": "codex-root-s1e01-r4",
+    "model": "GPT-6",
+    "session_id": "chat-20261117-s1e01-r4-sites"
+  },
+  "revision": 2,
+  "schema_version": "1.0",
+  "scope": "episode",
+  "submitted_at": "2026-11-17T11:00:35.301472Z",
+  "task_id": "TASK-002"
+}

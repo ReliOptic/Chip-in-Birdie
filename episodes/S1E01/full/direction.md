@@ -25,3 +25,17 @@ Technique study: aimotion 147 uses physically legible surfaces through controlle
 Real English Kokoro bm_george narration, same voice as PR #4. Synthesized sentence PCM bounds are the timing source. No estimated word timings called alignment. Korean text is a translation track, not recovered human Korean performance. Sound is restrained synthesized mechanical/contact cues, low enough to leave narration clear; no stock music. Film pauses/seeks with its audio clock. A replayed frame cannot depend on earlier visits.
 
 Delivery: full-duration self-contained HTML and reproducible source. Exported MP4 remains separate pending final picture confirmation, per the motion skill. No YouTube upload, paid service, or next-episode production in this task. Release READY remains contingent on the repository's independent release and listening requirements.
+
+## R4 director-requested correction · 2026-11-17
+
+The director rejected the viewing value of the previous delivery and explicitly requested correction plus Sites deployment. This supplements, rather than replaces, the episode's existing contract. Current title: **Someone else's chip**. Current duration: **8:54.139**, based on final generated PCM, not an editorial estimate.
+
+The opening now asks whether an expensive factory can find enough independent customers. The layout is seen close enough to recognize; then the camera reveals empty customer places and the factory's exposure. The ending repays that question with a customer's next product and the foundry's preparations, not a generic claim that all responsibility changes owners.
+
+Use close/wide contrast, overhead inserts and holds tied to actual physical changes. In the process section, development removes resist, etching removes exposed metal and stripping reveals the protected conductor. Registration states are a comparison, not a magical post-manufacture repair. Probe contact and failure marks must be readable. Growth fills an empty facility; risk makes several customers wait at one loadlock. The L-shaped identity remains visible in the final package cutaway.
+
+Keep essential evidence readable in the cinema overlay, not in a tiny texture on a decorative document. Date/source labels distinguish the founding story, later recollections and general process illustrations. The capital split is expressed by physically proportional forms plus an exact-text overlay; explanatory geometry is never disguised as archival imagery.
+
+The final cue sheet contains 22 deterministic mechanical/contact/paper cues located at action-specific phase offsets. Narration remains the master clock. A stalled stream stops effects, including when sound is re-enabled during buffering. This code contract is separate from full mix listening.
+
+The primary renderer remains WebGL. An explicitly identified CPU rasterizer is a compatibility mode for unavailable WebGL, with reduced resolution and approximate lighting—not an equivalent photoreal picture claim. Deployment is to the existing owner-only Sites project. Publication on Sites does not grant release approval or authorize a public channel upload.

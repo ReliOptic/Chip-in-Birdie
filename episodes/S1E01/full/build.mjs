@@ -14,8 +14,19 @@ const data={script,timeline,claims:json(path.join(root,'claims.json')).claims,so
 const imports={imports:{three:dataURI(path.join(args.assets,'vendor','three.module.js'),'text/javascript')}};
 const html=read(path.join(root,'player.html')).replace('__FILM_DATA__',JSON.stringify(data).replaceAll('<','\\u003c')).replace('__IMPORT_MAP__',JSON.stringify(imports)).replace('__ENTRY_MODULE__',moduleUri(path.join(root,'film.mjs')));
 const output=path.join(out,'S1E01-full-documentary.html');fs.writeFileSync(output,html);
+// Sites uses ordinary cacheable files: the document stays small and the voice
+// can stream. The archival single-file output above remains independently usable.
+if(args.site){
+  const site=path.resolve(args.site);fs.mkdirSync(path.join(site,'vendor'),{recursive:true});
+  for(const name of ['film.mjs','worlds.mjs','mechanisms.mjs','software-renderer.mjs','cinema.mjs'])fs.copyFileSync(path.join(root,name),path.join(site,name));
+  for(const name of ['three.module.js','RoomEnvironment.js','GLTFLoader.js','BufferGeometryUtils.js'])fs.copyFileSync(path.join(args.assets,'vendor',name),path.join(site,'vendor',name));
+  fs.copyFileSync(path.join(args.assets,'scene.glb'),path.join(site,'scene.glb'));fs.copyFileSync(path.join(args.audio,'narration.mp3'),path.join(site,'narration.mp3'));
+  const siteData={...data,assets:{scene:'./scene.glb',narration:'./narration.mp3'}};
+  const siteHTML=read(path.join(root,'player.html')).replace('__FILM_DATA__',JSON.stringify(siteData).replaceAll('<','\\u003c')).replace('__IMPORT_MAP__',JSON.stringify({imports:{three:'./vendor/three.module.js'}})).replace('__ENTRY_MODULE__','./film.mjs');
+  fs.writeFileSync(path.join(site,'index.html'),siteHTML);fs.copyFileSync(path.join(root,'THIRD_PARTY_NOTICES.txt'),path.join(site,'THIRD_PARTY_NOTICES.txt'));
+}
 fs.copyFileSync(path.join(args.audio,'timeline.json'),path.join(out,'timeline.json'));fs.copyFileSync(path.join(root,'script.json'),path.join(out,'script.json'));
 for(const name of ['claims.json','sources.json','THIRD_PARTY_NOTICES.txt'])fs.copyFileSync(path.join(root,name),path.join(out,name));
 function vtt(locale){const stamp=t=>{const ms=Math.round(t*1000);return `${Math.floor(ms/3600000).toString().padStart(2,'0')}:${Math.floor(ms/60000%60).toString().padStart(2,'0')}:${Math.floor(ms/1000%60).toString().padStart(2,'0')}.${(ms%1000).toString().padStart(3,'0')}`};return 'WEBVTT\n\n'+timeline.sentences.map(s=>`${s.id}\n${stamp(s.start)} --> ${stamp(s.end)}\n${s[locale]}\n`).join('\n')};
 for(const locale of ['en','ko'])fs.writeFileSync(path.join(out,`captions.${locale}.vtt`),vtt(locale));
-const manifest={episode:'S1E01',revision:'full-r3',duration:timeline.duration,utterances:timeline.sentences.length,fullPictureEdit:true,releaseApproval:false,script_sha256:hash(path.join(root,'script.json')),narration_sha256:data.audio_sha256,files:fs.readdirSync(out).filter(f=>f!=='manifest.json'&&fs.statSync(path.join(out,f)).isFile()).map(f=>({path:f,bytes:fs.statSync(path.join(out,f)).size,sha256:hash(path.join(out,f))}))};fs.writeFileSync(path.join(out,'manifest.json'),JSON.stringify(manifest,null,2));console.log(JSON.stringify({output,bytes:fs.statSync(output).size,sha256:hash(output),duration:timeline.duration,modules:memo.size}));
+const manifest={episode:'S1E01',revision:'full-r4',duration:timeline.duration,utterances:timeline.sentences.length,fullPictureEdit:true,releaseApproval:false,script_sha256:hash(path.join(root,'script.json')),narration_sha256:data.audio_sha256,files:fs.readdirSync(out).filter(f=>f!=='manifest.json'&&fs.statSync(path.join(out,f)).isFile()).map(f=>({path:f,bytes:fs.statSync(path.join(out,f)).size,sha256:hash(path.join(out,f))}))};fs.writeFileSync(path.join(out,'manifest.json'),JSON.stringify(manifest,null,2));console.log(JSON.stringify({output,bytes:fs.statSync(output).size,sha256:hash(output),duration:timeline.duration,modules:memo.size}));

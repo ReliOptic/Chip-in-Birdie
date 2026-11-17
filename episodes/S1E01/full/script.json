@@ -1,14 +1,14 @@
 {
-  "revision": "S1E01-full-r3",
-  "title": "TSMC — The Factory That Chose Not to Compete",
+  "revision": "S1E01-full-r4",
+  "title": "TSMC — Someone else's chip",
   "audience_ref": "channel/audience.json",
   "language_master": "en",
   "timing": "Actual synthesized sentence sample boundaries; no estimated word alignment",
   "chapters": [
     {
       "id": "design",
-      "title": "A design needs a factory",
-      "ko": "설계가 공장을 만날 때"
+      "title": "A factory needs a customer",
+      "ko": "공장에 필요한 것은 고객"
     },
     {
       "id": "choice",
@@ -17,8 +17,8 @@
     },
     {
       "id": "resources",
-      "title": "What a promise needs",
-      "ko": "약속을 작동시키는 자원"
+      "title": "An expensive bet",
+      "ko": "값비싼 선택"
     },
     {
       "id": "boundary",
@@ -52,8 +52,8 @@
     },
     {
       "id": "return",
-      "title": "What the customer buys",
-      "ko": "고객이 사는 것"
+      "title": "The customer's next product",
+      "ko": "고객의 다음 제품"
     }
   ],
   "sentences": [
@@ -63,9 +63,12 @@
       "shot": "design-close",
       "world": "design",
       "phase": "drawing",
-      "claim": [],
-      "en": "You have designed a chip. The factory you need belongs to a company that could sell against you.",
-      "ko": "칩을 설계했습니다. 그런데 필요한 공장은 경쟁 제품을 팔 수도 있는 회사의 것입니다."
+      "claim": [
+        "H03",
+        "H04"
+      ],
+      "en": "In nineteen eighty-seven, TSMC began a chip business with an unusual constraint: it would not sell its own competing chip products.",
+      "ko": "1987년, TSMC는 독특한 제약을 두고 출발했습니다. 고객과 경쟁하는 자체 칩 제품을 팔지 않는 것입니다."
     },
     {
       "id": "s02",
@@ -73,9 +76,11 @@
       "shot": "design-close",
       "world": "design",
       "phase": "drawing",
-      "claim": [],
-      "en": "This little pattern is our stand-in for that design: a recognizable shape, not a real customer's circuit.",
-      "ko": "이 작은 패턴은 설계를 나타내는 표식입니다. 실제 고객 회로는 아닙니다."
+      "claim": [
+        "H02"
+      ],
+      "en": "Its factory would depend on other people's designs. Morris Chang was betting on designers who wanted to start companies of their own.",
+      "ko": "공장은 다른 사람들의 설계에 의존해야 했습니다. 장중머우(Morris Chang)는 자기 회사를 세우려는 설계자들에게 기대를 걸었습니다."
     },
     {
       "id": "s03",
@@ -84,10 +89,11 @@
       "world": "design",
       "phase": "alternatives",
       "claim": [
-        "M01"
+        "M01",
+        "H02"
       ],
-      "en": "Keep manufacturing inside your company, and you must support both the product and the means of making it.",
-      "ko": "제조를 회사 안에 두면 제품과 생산 수단을 모두 책임져야 합니다."
+      "en": "For a new chip designer, the usual alternatives were demanding: finance a factory, or entrust production to another chipmaker.",
+      "ko": "새로 시작하는 칩 설계자에게 선택지는 만만치 않았습니다. 공장 자금을 마련하거나, 다른 반도체 회사에 생산을 맡겨야 했습니다."
     },
     {
       "id": "s04",
@@ -96,10 +102,11 @@
       "world": "design",
       "phase": "alternatives",
       "claim": [
-        "I01"
+        "I01",
+        "I03"
       ],
-      "en": "Buy it outside, and you need more than equipment. You need a supplier you can share the design with.",
-      "ko": "외부에 맡기려면 장비만으로는 부족합니다. 설계를 공유할 수 있는 공급자가 필요합니다."
+      "en": "That supplier could also sell competing products. Handing over a design did not remove that conflict.",
+      "ko": "생산을 맡는 회사가 경쟁 제품을 팔 수도 있었습니다. 설계를 넘겼다고 그 이해 충돌이 사라지지는 않았습니다."
     },
     {
       "id": "s05",
@@ -108,10 +115,11 @@
       "world": "boundary",
       "phase": "open",
       "claim": [
-        "H04"
+        "H04",
+        "M01"
       ],
-      "en": "TSMC built its identity around a particular answer: manufacture customers' chips, without launching its own competing chip products.",
-      "ko": "TSMC의 답은 고객의 칩을 만들되, 자사 경쟁 칩 제품을 내놓지 않는 것이었습니다."
+      "en": "TSMC offered a different boundary: customers would own the product, while TSMC concentrated on manufacturing it.",
+      "ko": "TSMC는 경계를 다르게 그었습니다. 제품은 고객의 것이고, TSMC는 그것을 제조하는 데 집중하는 것입니다."
     },
     {
       "id": "s06",
@@ -119,9 +127,11 @@
       "shot": "title-boundary",
       "world": "boundary",
       "phase": "open",
-      "claim": [],
-      "en": "But why would anyone build a factory around products that did not belong to them?",
-      "ko": "그런데 왜 남의 제품을 만들기 위해 공장을 세웠을까요?",
+      "claim": [
+        "H02"
+      ],
+      "en": "But there was an awkward question. Would enough independent customers appear to keep the factory alive?",
+      "ko": "하지만 난감한 질문이 남았습니다. 공장을 지탱할 만큼 독립적인 고객이 생겨날까요?",
       "pause_after": 0.65
     },
     {
@@ -134,7 +144,7 @@
         "H01"
       ],
       "en": "In nineteen eighty-five, Taiwan's minister K. T. Li asked Morris Chang, an experienced semiconductor executive, to propose a new company.",
-      "ko": "1985년, 대만의 장관 리궈딩은 반도체 경영 경험이 풍부한 모리스 창에게 새 회사를 제안해 달라고 요청했습니다."
+      "ko": "1985년, 대만의 장관 리궈딩은 반도체 경영 경험이 풍부한 장중머우에게 새 회사를 제안해 달라고 요청했습니다."
     },
     {
       "id": "s08",
@@ -145,8 +155,8 @@
       "claim": [
         "H01"
       ],
-      "en": "Chang's later account gives us his dilemma: what could Taiwan compete on?",
-      "ko": "훗날 창의 회고에 담긴 고민은 이것이었습니다. 대만은 무엇으로 경쟁할 수 있을까?"
+      "en": "The question was not whether chips were important. It was where a new Taiwanese company could compete.",
+      "ko": "문제는 반도체가 중요한가가 아니었습니다. 대만의 새 회사가 어디에서 경쟁할 수 있는가였습니다."
     },
     {
       "id": "s09",
@@ -206,7 +216,7 @@
         "H02"
       ],
       "en": "Chang hoped to serve designers who wanted their own companies but could not finance their own fabrication plants.",
-      "ko": "창은 창업을 원하지만 공장 자금을 마련하지 못하는 설계자들이 고객이 되기를 기대했습니다."
+      "ko": "장중머우는 창업을 원하지만 공장 자금을 마련하지 못하는 설계자들이 고객이 되기를 기대했습니다."
     },
     {
       "id": "s14",
@@ -241,7 +251,7 @@
         "I02"
       ],
       "en": "Chang later put the starting investment at about two hundred and twenty million US dollars. Choosing manufacturing had not made the factory cheap.",
-      "ko": "창이 훗날 밝힌 초기 투자금은 약 2억 2천만 달러였습니다. 제조에 집중한다고 공장이 저렴해지는 것은 아니었습니다."
+      "ko": "장중머우가 훗날 밝힌 초기 투자금은 약 2억 2천만 달러였습니다. 제조에 집중한다고 공장이 저렴해지는 것은 아니었습니다."
     },
     {
       "id": "s17",
@@ -264,8 +274,8 @@
       "claim": [
         "H06"
       ],
-      "en": "ITRI, Taiwan's industrial research institute, also describes transferring facilities, equipment, technology, and people when TSMC was spun off.",
-      "ko": "대만의 산업기술연구원 ITRI는 분사 과정에서 시설·장비·기술·인력이 이전됐다고 기록합니다."
+      "en": "ITRI, Taiwan's industrial research institute, describes the spin-off in terms of the resources it supplied: facilities, equipment, technology, and people.",
+      "ko": "대만 산업기술연구원 ITRI는 분사 당시 제공한 자원을 설명합니다. 시설과 장비, 기술과 인력이었습니다."
     },
     {
       "id": "s19",
@@ -313,8 +323,8 @@
       "claim": [
         "I03"
       ],
-      "en": "In our model, the customer's design enters the factory. The route to the manufacturer's own competing product stays closed.",
-      "ko": "모형에서 고객 설계는 공장으로 들어갑니다. 제조사의 경쟁 제품으로 이어지는 길은 닫혀 있습니다."
+      "en": "The customer's design crosses one boundary. The manufacturer's own competing product does not.",
+      "ko": "고객의 설계는 공장의 경계를 넘습니다. 제조사의 자체 경쟁 제품은 그 경계를 넘지 않습니다."
     },
     {
       "id": "s23",
@@ -347,10 +357,11 @@
       "world": "design",
       "phase": "fit",
       "claim": [
-        "I04"
+        "I04",
+        "M02"
       ],
-      "en": "That commitment would fail if a customer's design could not become reliable hardware. The promise needed an engineering interface.",
-      "ko": "고객의 설계가 믿을 수 있는 하드웨어가 되지 못한다면 약속은 힘을 잃습니다. 공학적 연결도 필요했습니다."
+      "en": "To see what that promise demands, leave the founding story for a moment. A customer's design still has to become usable hardware.",
+      "ko": "그 약속에 무엇이 필요한지 보려면, 창업 이야기에서 잠시 벗어나 봅시다. 고객의 설계는 결국 쓸 수 있는 소자가 되어야 합니다."
     },
     {
       "id": "s26",
@@ -361,8 +372,8 @@
       "claim": [
         "M02"
       ],
-      "en": "Our pattern now meets manufacturing rules. Two features too close together may be unacceptable for the chosen process.",
-      "ko": "패턴이 제조 규칙을 만납니다. 두 형상이 너무 가까우면 선택한 공정에서 허용되지 않을 수 있습니다."
+      "en": "Place two features too close together, and the chosen manufacturing process may not reproduce them reliably.",
+      "ko": "두 구조를 너무 가깝게 놓으면, 선택한 제조 공정이 이를 안정적으로 재현하지 못할 수 있습니다."
     },
     {
       "id": "s27",
@@ -371,10 +382,11 @@
       "world": "design",
       "phase": "repair",
       "claim": [
-        "M02"
+        "M02",
+        "I04"
       ],
-      "en": "The gap opens before production. Both sides are trying to avoid discovering an unmanufacturable design after money and time have been spent.",
-      "ko": "생산 전에 간격을 넓힙니다. 돈과 시간을 들인 뒤에야 만들 수 없는 설계였음을 발견하는 일을 양쪽 모두 피하려는 것입니다."
+      "en": "The design changes before a wafer is made. Discovering the mistake later would cost time, material, and money.",
+      "ko": "웨이퍼를 만들기 전에 설계를 바꿉니다. 잘못을 나중에 발견하면 시간과 재료, 비용을 잃습니다."
     },
     {
       "id": "s28",
@@ -418,9 +430,12 @@
       "shot": "rules-match",
       "world": "layers",
       "phase": "explode",
-      "claim": [],
-      "en": "Follow the same shape one step further. A drawing must become a structure, and that structure must actually function.",
-      "ko": "같은 형상을 한 단계 더 따라가 봅시다. 도면은 구조물이 되고, 그 구조물은 실제로 작동해야 합니다."
+      "claim": [
+        "M04",
+        "M05"
+      ],
+      "en": "Here is where that relationship becomes physical. Each layer must put the right material in the right place.",
+      "ko": "이제 두 회사의 관계가 물질이 됩니다. 각 층은 필요한 재료를 정확한 위치에 놓아야 합니다."
     },
     {
       "id": "s32",
@@ -432,8 +447,8 @@
         "M04",
         "I04"
       ],
-      "en": "To see what the manufacturer must deliver, step into a modern illustrative fab. The customer is buying a controlled process, not just access to machines.",
-      "ko": "제조사가 무엇을 제공해야 하는지 현대 팹의 설명용 모형에서 보겠습니다. 고객이 사는 것은 장비 사용권만이 아니라 통제된 공정입니다."
+      "en": "Inside a fab, every handoff serves that goal: deliver a controlled process, not merely an available machine.",
+      "ko": "팹 안의 모든 이송은 그 목표를 향합니다. 기계를 빌려주는 것이 아니라, 제어된 공정을 제공하는 일입니다."
     },
     {
       "id": "s33",
@@ -454,10 +469,11 @@
       "world": "fab",
       "phase": "detail",
       "claim": [
-        "M04"
+        "M04",
+        "I04"
       ],
-      "en": "The motion is brief. The controlled manufacturing sequence behind the wafer is not.",
-      "ko": "이 움직임은 짧습니다. 하지만 웨이퍼 뒤의 정밀한 제조 과정은 짧지 않습니다."
+      "en": "The movement takes seconds. Keeping an entire production sequence under control is the much larger task.",
+      "ko": "이 동작은 몇 초면 끝납니다. 훨씬 큰 과제는 전체 생산 과정의 통제를 유지하는 것입니다."
     },
     {
       "id": "s35",
@@ -492,8 +508,8 @@
       "claim": [
         "M05"
       ],
-      "en": "Our cutaway separates the stages so you can see them. A real chip uses many more materials and operations.",
-      "ko": "과정을 볼 수 있도록 단면을 나눴습니다. 실제 칩에는 훨씬 많은 재료와 공정이 쓰입니다."
+      "en": "Processing removes selected material. What remains must carry the pattern the next steps expect.",
+      "ko": "공정은 선택한 부분의 재료를 제거합니다. 남은 구조는 다음 단계가 요구하는 패턴을 갖춰야 합니다."
     },
     {
       "id": "s38",
@@ -514,10 +530,12 @@
       "world": "layers",
       "phase": "assembled",
       "claim": [
-        "I04"
+        "M04",
+        "I04",
+        "I07"
       ],
-      "en": "That is the physical reason a foundry sells a controlled process, not merely access to a large machine.",
-      "ko": "이 때문에 파운드리가 제공하는 것은 대형 장비의 사용권만이 아니라 제어된 공정입니다."
+      "en": "A connection that misses its target can make the customer's device fail. Reliable manufacturing is part of the reason to place another order.",
+      "ko": "연결부가 제 위치를 벗어나면 고객의 소자가 고장 날 수 있습니다. 안정적인 제조는 다음 주문을 맡길 이유 중 하나입니다."
     },
     {
       "id": "s40",
@@ -540,8 +558,8 @@
       "claim": [
         "M06"
       ],
-      "en": "Electrical tests examine devices through contacts. Our marks distinguish tested results; they are not a claim about TSMC's actual yield.",
-      "ko": "접점을 통해 전기적 검사를 합니다. 표식은 설명용 검사 결과이며 TSMC의 실제 수율을 뜻하지 않습니다."
+      "en": "Probes make electrical contact with individual devices. Tests separate devices that meet their requirements from those that do not.",
+      "ko": "프로브가 개별 소자에 전기적으로 접촉합니다. 시험은 요구 성능을 충족하는 소자와 그렇지 않은 소자를 구분합니다."
     },
     {
       "id": "s42",
@@ -564,8 +582,8 @@
       "claim": [
         "M07"
       ],
-      "en": "TSMC describes design support, wafer manufacture, probing, and testing within its quality system. The promise has an operational burden.",
-      "ko": "TSMC의 품질 체계에는 설계 지원, 웨이퍼 제조, 프로빙, 테스트가 포함됩니다. 약속에는 운영상의 책임이 따릅니다."
+      "en": "TSMC describes these services in its quality system, from design support to wafer manufacturing, probing, and testing.",
+      "ko": "TSMC는 품질 시스템에서 설계 지원부터 웨이퍼 제조, 프로빙과 시험까지 이들 서비스를 설명합니다."
     },
     {
       "id": "s44",
@@ -582,12 +600,12 @@
       "chapter": "market",
       "shot": "market-early",
       "world": "capacity",
-      "phase": "withdraw",
+      "phase": "growth",
       "claim": [
         "H08"
       ],
-      "en": "Chang recalled slow early growth, followed by faster growth around nineteen ninety-one and ninety-two as fabless companies expanded.",
-      "ko": "창은 초기에 성장이 느렸고, 1991~92년 무렵 팹리스 기업들의 성장과 함께 빨라졌다고 회고했습니다."
+      "en": "Back in TSMC's early years, growth was slow. Chang recalled an acceleration around nineteen ninety-one and ninety-two, as fabless companies expanded.",
+      "ko": "TSMC 초창기로 돌아가겠습니다. 성장은 느렸습니다. 장중머우는 팹리스 기업들이 커지며 1991~92년 무렵 성장이 빨라졌다고 회고했습니다."
     },
     {
       "id": "s46",
@@ -635,8 +653,8 @@
       "claim": [
         "H10"
       ],
-      "en": "Years later, Nvidia's Jensen Huang recalled Chang arriving for customer visits, asking about chip size and the next generation of designs.",
-      "ko": "훗날 엔비디아의 젠슨 황은 창이 고객을 방문해 칩 크기와 다음 세대 설계에 관해 물었다고 회고했습니다."
+      "en": "In a two-thousand-seven conversation, Nvidia's Jensen Huang recalled Chang visiting his chip-design company, asking about chip size and its next designs.",
+      "ko": "2007년 대담에서 엔비디아의 젠슨 황은 장중머우의 방문을 회상했습니다. 장중머우는 칩 크기와 차기 설계를 물었습니다."
     },
     {
       "id": "s50",
@@ -696,8 +714,8 @@
       "claim": [
         "I06"
       ],
-      "en": "Our queue is an illustration of that constraint, not an account of an actual allocation decision or shortage.",
-      "ko": "이 대기열은 제약을 설명하는 모형이며, 실제 배정 결정이나 공급 부족 사건을 재현한 것이 아닙니다."
+      "en": "A customer can own its design and still depend on someone else's production schedule.",
+      "ko": "고객이 설계를 소유하더라도, 생산 일정은 다른 회사에 의존할 수 있습니다."
     },
     {
       "id": "s55",
@@ -729,9 +747,11 @@
       "shot": "return-die",
       "world": "return",
       "phase": "die",
-      "claim": [],
-      "en": "Return to the shape on the desk. It began as a design. Now we can recognize it in a manufactured device.",
-      "ko": "책상 위 형상으로 돌아옵니다. 설계로 시작했던 형상을 이제 제조된 소자에서 확인할 수 있습니다."
+      "claim": [
+        "I07"
+      ],
+      "en": "Look again at the design from the opening. The product is still the customer's. Someone else has built the means to make it.",
+      "ko": "처음의 설계를 다시 보겠습니다. 제품은 여전히 고객의 것입니다. 다른 회사가 그것을 만들 수단을 갖췄습니다."
     },
     {
       "id": "s58",
@@ -740,10 +760,11 @@
       "world": "return",
       "phase": "package",
       "claim": [
+        "M01",
         "I07"
       ],
-      "en": "The customer still chooses its product. The manufacturer supplies the capability to make it within an agreed technical and commercial relationship.",
-      "ko": "제품은 여전히 고객이 선택합니다. 제조사는 합의된 기술적·상업적 관계 안에서 이를 만들 역량을 제공합니다."
+      "en": "That separation let designers concentrate on what to make, while a specialist invested in how to make it.",
+      "ko": "그 분리 덕분에 설계자는 무엇을 만들지에 집중하고, 전문 제조사는 어떻게 만들지에 투자할 수 있었습니다."
     },
     {
       "id": "s59",
@@ -752,10 +773,10 @@
       "world": "return",
       "phase": "together",
       "claim": [
-        "I07"
+        "I05"
       ],
-      "en": "The important change was making dedicated manufacturing the business itself, rather than a sideline to selling the manufacturer's own chips.",
-      "ko": "중요한 변화는 자사 칩 판매의 부수적인 일이 아니라, 전업 제조 자체를 사업으로 삼았다는 것입니다."
+      "en": "When Chang asked a customer about its next design, he was also asking about his own factory's future.",
+      "ko": "장중머우가 고객의 다음 설계를 물었을 때, 그것은 자기 공장의 미래를 묻는 일이기도 했습니다."
     },
     {
       "id": "s60",
@@ -766,8 +787,8 @@
       "claim": [
         "I07"
       ],
-      "en": "TSMC's promise set a boundary around competition. Engineering, investment, and earned trust made that boundary useful.",
-      "ko": "TSMC의 약속은 경쟁의 경계를 정했습니다. 공학, 투자, 쌓아온 신뢰가 그 경계를 유용하게 만들었습니다."
+      "en": "A promise not to compete was a starting point. It still had to be backed by a manufacturing process the customer could use.",
+      "ko": "경쟁하지 않겠다는 약속은 출발점이었습니다. 그 뒤에는 고객이 사용할 수 있는 제조 공정이 있어야 했습니다."
     },
     {
       "id": "s61",
@@ -776,10 +797,11 @@
       "world": "return",
       "phase": "final",
       "claim": [
+        "I05",
         "I07"
       ],
-      "en": "The customer was buying more than a wafer: a manufacturing partner committed not to sell its own competing chip products.",
-      "ko": "고객이 사는 것은 웨이퍼 이상이었습니다. 자사 경쟁 칩 제품을 팔지 않겠다고 약속한 제조 파트너였습니다.",
+      "en": "The next chip was the customer's. Preparing to make it was the foundry's business.",
+      "ko": "다음 칩은 고객의 것이었습니다. 그것을 만들 준비를 하는 일이 파운드리의 사업이었습니다.",
       "pause_after": 1.4
     }
   ]

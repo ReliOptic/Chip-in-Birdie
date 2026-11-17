@@ -4,7 +4,8 @@
     "실제 영어 음성 샘플에 맞춘 전체 타임라인과 한국어·영어 자막",
     "역사적 선택·고객 관계·제조 원리의 문장별 근거와 해석 한계",
     "정확한 산출물 SHA, 실행 가능한 검증 코드, 실제 검증과 미검증의 구분",
-    "독립 전체 시청·청취 검수가 남으면 READY 또는 완성 편수로 올리지 않는 인계"
+    "독립 전체 시청·청취 검수가 남으면 READY 또는 완성 편수로 올리지 않는 인계",
+    "동일 최종 소스의 비공개 Sites 배포 성공, 실제 검수 관찰 및 남은 출시 관문 기록"
   ],
   "attempt": 2,
   "audience_ref": "channel/audience.json",
@@ -17,7 +18,7 @@
     "session_id": "chat-20261117-s1e01-r4-sites",
     "session_id_source": "explicit"
   },
-  "current_delivery_id": "TASK-002-r0001",
+  "current_delivery_id": "TASK-002-r0002",
   "episode_id": "H039",
   "history": [
     {
@@ -105,19 +106,35 @@
         "session_id_source": "explicit"
       },
       "event": "CLAIMED"
+    },
+    {
+      "actor": "codex-root-s1e01-r4",
+      "at": "2026-11-17T10:53:58Z",
+      "authority": "Director explicitly requested substantive correction and Sites deployment of the same S1E01 full film",
+      "event": "SCOPE_UPDATED",
+      "new_scope": "Revised full S1E01, actual runtime review, owner-only Sites deployment and exact revision handoff; no YouTube publication, public audience change or next episode",
+      "previous_scope": "Full S1E01 picture, narration, subtitles, evidence player and bounded verification; no publication or next episode"
+    },
+    {
+      "actor": "codex-root-s1e01-r4",
+      "at": "2026-11-17T11:00:35.330975Z",
+      "bundle_sha256": "8b50816620f8928f8ad9788fa3d4e1367fbb292082e061588b5201d00a5fa881",
+      "delivery_id": "TASK-002-r0002",
+      "event": "SUBMITTED",
+      "revision": 2
     }
   ],
-  "objective": "PR #4를 이어 S1E01 전체 3D 다큐멘터리를 구현한다. 채널 공통 관객이 창업 선택·제조 능력·고객 관계를 한 편으로 이해하게 하고, 실제 음성에 맞춘 전체 영상·자막·출처 UI와 검증 가능한 소스를 인계한다. 출시 승인은 별도 검수로 남긴다.",
+  "objective": "PR #4의 S1E01 전체 3D 다큐멘터리를 이어 내러티브·장면 설명력·재생을 수정하고 Sites에 비공개 배포한다. 실제 영어 음성에 맞춘 전체 영상·한국어/영어 자막·출처 UI와 정확한 리비전의 검증 증거를 인계한다. 독립 시청·청취와 공개 출시는 별도 승인으로 남긴다.",
   "release_implication": "none: task completion is not video READY or publication",
   "required_review_roles": [
     "evidence",
     "editorial",
     "viewer"
   ],
-  "revision": 1,
+  "revision": 2,
   "scope": "episode",
-  "status": "CLAIMED",
+  "status": "IN_REVIEW",
   "task_id": "TASK-002",
   "title": "S1E01 / H039 · PR #4 전체 3D 다큐멘터리 후속 제작",
-  "updated_at": "2026-11-17T10:06:46.050440Z"
+  "updated_at": "2026-11-17T11:00:35.331067Z"
 }

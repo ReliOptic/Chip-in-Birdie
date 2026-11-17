@@ -16,6 +16,7 @@ import crypto from 'node:crypto';
 import vm from 'node:vm';
 import assert from 'node:assert/strict';
 import {fileURLToPath} from 'node:url';
+import {shotGrammar} from './cinema.mjs';
 
 const root = path.dirname(fileURLToPath(import.meta.url));
 const argIndex = process.argv.indexOf('--bundle');
@@ -26,7 +27,7 @@ if (typeof vm.SourceTextModule !== 'function') {
   throw new Error('Node --experimental-vm-modules is required for syntax/import inspection.');
 }
 const bundlePath = path.resolve(process.argv[argIndex + 1]);
-const sourceNames = ['player.html', 'film.mjs', 'build.mjs'];
+const sourceNames = ['player.html', 'film.mjs', 'build.mjs', 'cinema.mjs', 'software-renderer.mjs'];
 const sources = Object.fromEntries(sourceNames.map(name => [name, fs.readFileSync(path.join(root, name), 'utf8')]));
 const html = fs.readFileSync(bundlePath, 'utf8');
 const film = sources['film.mjs'];
@@ -133,8 +134,8 @@ function controlHarness({stage, stored} = {}) {
   let storage = stored === undefined ? null : JSON.stringify(stored);
   const ctx = {
     console, DATA: data, rows, duration, current: 10, playing: false, pendingPlay: false,
-    playRequest: 0, muteRequest: 0, locale: 'ko', muted: false, headless: false, qa: false,
-    lastPersist: 0, frameCount: 0, soundRequested: false, audioState: 'ready', audioError: null,
+    playRequest: 0, muteRequest: 0, locale: 'ko', muted: false, buffering: false, headless: false, qa: false,
+    lastPersist: 0, lastDrawWall: 0, renderer: {isSoftwareRenderer:false}, frameCount: 0, soundRequested: false, audioState: 'ready', audioError: null,
     runtimeErrors: [], sfxBuffer: {}, $: dom.get, document: dom.document,
     window: {__ready: true, addEventListener() {}},
     localStorage: {getItem: () => storage, setItem: (_key, value) => { storage = value; }},
@@ -146,6 +147,7 @@ function controlHarness({stage, stored} = {}) {
     context: {resume() { counts.resume++; return stage === 'resume' ? gate.promise : Promise.resolve(); }},
     narration: {
       currentTime: 10, paused: true, muted: false,
+      addEventListener(name,fn) { this['on'+name]=fn; },
       pause() { this.paused = true; counts.mediaPause++; },
       play() { this.paused = false; counts.mediaPlay++; return stage === 'media' ? gate.promise : Promise.resolve(); },
       load() {},
@@ -155,7 +157,7 @@ function controlHarness({stage, stored} = {}) {
     location: {reload() {}}, bakeScore: async () => new Float32Array(0), checksum: () => ({}),
   };
   vm.createContext(ctx);
-  for (const name of ['persist', 'pause', 'seek', 'play', 'setMuted', 'setLocale', 'loop', 'start', 'setCaption', 'renderPassageEvidence']) {
+  for (const name of ['persist', 'pause', 'seek', 'play', 'setMuted', 'setLocale', 'loop', 'start', 'setCaption', 'renderPassageEvidence', 'onMediaWaiting', 'onMediaPlaying']) {
     vm.runInContext(functionSource(name), ctx);
   }
   vm.runInContext(between(film, 'narration.onended=', 'function loop('), ctx);
@@ -228,7 +230,7 @@ await test('Utterances, claims, and source references', 'STATIC_DATA_CONTRACT', 
 });
 
 await test('Phase-aware shot grouping and time boundaries', 'ACTUAL_GROUPING_CODE_WITH_JSON', () => {
-  const ctx = {rows, duration}; vm.createContext(ctx);
+  const ctx = {rows, duration,shotGrammar}; vm.createContext(ctx);
   vm.runInContext(between(film, 'const shots=[];', 'let current='), ctx);
   vm.runInContext(functionSource('currentShot'), ctx);
   const shots = vm.runInContext('shots', ctx);
@@ -296,6 +298,18 @@ await test('UI/API mute stops SFX and updates accessibility', 'ACTUAL_MUTE_AND_A
   h.ctx.narration.currentTime = 31.25; await h.audio.setEnabled(true);
   assert.equal(h.ctx.narration.muted, false); assert.equal(h.counts.sfxStart.at(-1), 31.25);
   assert.equal(h.readStorage().muted, false);
+});
+
+await test('Streaming wait holds SFX and resumes from the media clock', 'ACTUAL_BUFFERING_FUNCTIONS_MOCK_MEDIA', async () => {
+  const h=controlHarness();await h.ctx.play();h.ctx.narration.currentTime=24.5;
+  h.ctx.onMediaWaiting();assert.equal(h.ctx.buffering,true);assert.match(h.dom.get('status').textContent,/Buffering/);
+  h.ctx.onMediaPlaying();assert.equal(h.ctx.buffering,false);assert.equal(h.counts.sfxStart.at(-1),24.5);
+  h.ctx.onMediaWaiting();h.ctx.pause();assert.equal(h.ctx.buffering,false);h.ctx.onMediaPlaying();assert.equal(h.ctx.playing,false);
+});
+
+await test('Common SFX guard also blocks unmute during buffering', 'ACTUAL_START_SFX_MOCK_AUDIO_NODE', () => {
+  let created=0,started=[];const ctx={sfxNode:null,muted:false,buffering:true,sfxBuffer:{},duration,stopSfx(){},context:{destination:{},createBufferSource(){created++;return{connect(){},start(_when,at){started.push(at)}}}}};vm.createContext(ctx);vm.runInContext(functionSource('startSfx'),ctx);
+  ctx.startSfx(10);assert.equal(created,0);ctx.buffering=false;ctx.startSfx(11);assert.equal(created,1);assert.deepEqual(started,[11]);ctx.muted=true;ctx.startSfx(12);assert.equal(created,1);
 });
 
 await test('Latest audio enabled request wins while preparing', 'ACTUAL_AUDIO_API_MOCK_ASYNC_PREPARATION', async () => {
@@ -380,7 +394,7 @@ await test('Build guards reject missing/stale hashes and invalid timing', 'ACTUA
 });
 
 await test('SFX cue ordering and repeatability under identity offline mock', 'ACTUAL_SFX_CODE_MOCK_OFFLINE_AUDIO_CONTEXT_NOT_AUDIO_RENDERING', async () => {
-  const ctx = {rows, duration, Float32Array, Math, window: {}}; vm.createContext(ctx);
+  const ctx = {rows, duration, shotGrammar, Float32Array, Math, window: {}}; vm.createContext(ctx);
   vm.runInContext(between(film, 'const shots=[];', 'let current='), ctx);
   vm.runInContext(between(film, 'const cueSpecs=', 'function rng('), ctx);
   let contexts = 0, zeroStarts = 0;
@@ -411,7 +425,7 @@ const report = {
   schema: 'cib-s1e01-nonbrowser-contract-qa-v1',
   generatedAtUTC: new Date().toISOString(),
   scope: 'Static bytes/import parsing plus isolated production-function tests with mock DOM, media, and offline-audio objects. No browser or renderer was started.',
-  producerIndependence: {playerAndBuildReview: 'Separate reviewer did not author player/build', audioApproval: 'EXCLUDED: reviewer produced the narration pipeline'},
+  producerIndependence: {playerAndBuildReview: 'Production regression harness; this run is not independent approval', audioApproval: 'EXCLUDED: generated PCM and ASR are not listening approval'},
   notTested: ['WebGL image correctness or frame order independence', 'Real browser playback or decoding', 'Real OfflineAudioContext output', 'Fullscreen appearance and interaction', 'Mobile layout and accessibility behavior', 'Human listening, pronunciation, translation or editorial release approval', 'External source URL availability'],
   inputs: {bundlePath, bundleSHA256: sha(html), bundleBytes: Buffer.byteLength(html), sourceSHA256: inputHashes, qaScriptSHA256: sha(fs.readFileSync(fileURLToPath(import.meta.url)))},
   summary: {passed: tests.length - failed, failed, total: tests.length, verdict: failed ? 'CONTRACT_FAILURES' : 'NON_BROWSER_CONTRACTS_PASS_ONLY', releaseApproval: false},

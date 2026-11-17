@@ -1,58 +1,67 @@
-# 261117 · S1E01 — full-length 3D documentary, review build
+# 261117 · S1E01 — Someone else's chip
 
-**TSMC — The Factory That Chose Not to Compete** continues [PR #4](https://github.com/ReliOptic/Chip-in-Birdie/pull/4). This is the full `S1E01-full-r3` picture edit, not the earlier six-second excerpt. It is **IN_PRODUCTION / NOT RELEASE READY**: the compiled artifact exists, but actual full-browser playback and independent listening remain unverified.
+**The complete 8:54 English-narrated 3D documentary is deployed for private review:**
 
-The English narration is **540.1766666666666 seconds (9:00.177)**: 61 utterances and 1,121 words, timed from 12,964,240 actual PCM samples at 24 kHz. The picture has ten chapters, eight 3D world families, 41 named shots and 44 phase beats. English and Korean captions are included; Korean is translated text, not a human Korean performance.
+[Watch S1E01 on Sites](https://chip-in-birdie-s1e01-261117.reliqbit.chatgpt.site)
 
-## What this episode makes
+This is `S1E01-full-r4`, continuing [PR #4](https://github.com/ReliOptic/Chip-in-Birdie/pull/4). It is the same full episode, not a new teaser, a slate reset or a report in place of the work. Korean and English captions, chapter navigation, transcript seeking and passage-specific sources are included. Sites may ask the owner to sign in with ChatGPT. The site remains owner-only; no public audience or YouTube release has been created.
 
-A fictional L-shaped customer layout is the through-object. The film follows Chang's attributed 1985 proposal, the resources behind the 1987 company, the documented competition boundary, the engineering needed to make another company's design, and the relationship revealed by a Cirrus supply agreement and Huang's 2007 recollection of customer visits. It returns to the original layout as an illustrated packaged device. Neither that geometry nor the modern factory is a historical reconstruction or an electrically simulated circuit.
+## The film
 
-| Chapter | Picture / narrative work |
+A new factory cannot live on a promise alone. In 1987, TSMC started a business that would depend on other people's chip designs. Would enough customers entrust it with their products—and their next products?
+
+One fictional L-shaped customer layout connects the opening to the ending. The story follows the proposed customers, the capital and resources assembled around the company, its noncompetition boundary, the manufacturing work required behind that promise, and evidence of longer customer commitments. It ends with the customer's next design and the foundry preparing to manufacture it.
+
+| Passage | What the picture now explains |
 | --- | --- |
-| A design needs a factory | A physical design and two ownership alternatives establish the customer's dilemma. |
-| Taiwan, 1985 | An authored archival desk distinguishes attributed retrospective evidence from present-day explanation. |
-| What a promise needs | Capital, ITRI resources and Philips cooperation make the proposed manufacturer possible. |
-| A boundary around competition | The 1994 report's charter account anchors the noncompetition boundary. |
-| Not a universal printer | Spacing, layer alignment and design/process interfaces explain why a promise needs engineering. |
-| The design becomes physical | The original PR #4 fab is retained alongside new schematic process models. |
-| A wafer is not the result | Contacting probes and an explicitly illustrative test map distinguish manufacturing from obtaining usable results. |
-| From spare capacity to commitment | Contracts and attributed customer visits give the initial demand question a concrete payoff. |
-| The risk changes owners | A physical queue illustrates finite capacity without pretending to show actual allocation data. |
-| What the customer buys | The initial layout returns; specialist manufacturing and a customer boundary close the episode. |
+| 00:00 · A factory needs a customer | A layout close-up pulls back to a factory and empty customer places. The customer's original design stays on its side of the boundary. |
+| 00:52 · Taiwan, 1985 | Chang's retrospective account is distinguished from a historical reconstruction or a proven ready-made market. |
+| 01:56 · An expensive bet | Readable capital proportions and joined resources give the initial promise physical stakes. |
+| 02:56 · A boundary around competition | The manufacturer's own competing-product route closes; this does not imply unlimited capacity or an absence of all conflicts. |
+| 03:38 · Not a universal printer | A spacing violation and mismatched layer registration become visible engineering conditions. |
+| 04:32 · The design becomes physical | Resist development, exposed-metal removal and stripping change actual geometry. The original PR #4 fab is retained. |
+| 05:36 · A wafer is not the result | Probe tips meet pads; failed results are marked with crosses as well as color. |
+| 06:21 · From spare capacity to commitment | Customer lots arrive at previously empty equipment. Contracts and attributed customer visits connect this to the opening question. |
+| 07:32 · The risk changes owners | Three customers share one loadlock: a physical queue exposes finite capacity. |
+| 08:14 · The customer's next product | The original layout is visible in an open package; a new design enters the manufacturing relationship. |
 
-## Delivered player
+The capital proportions derive from cited records. Layouts, process cross-sections, the queue and factory models are explanatory illustrations, not customer designs, actual allocation data, an electrically simulated circuit, or a reconstruction of the 1987 fab. Sources and limitations remain available beside the film.
 
-The compiled `S1E01-full-documentary.html` embeds its Three.js runtime, original GLB, narration, scene modules, script, claims and notices. No runtime CDN or font download is required. Source links are the only intentional outward navigation.
+## What changed from r3
 
-- Play/pause, seek, chapter navigation and transcript-to-time navigation.
-- Korean / English / off subtitles, in-picture and fullscreen controls.
-- Current-passage evidence, source locators and explicit claim limitations.
-- Saved time, subtitle and mute state; page visibility pause.
-- Cancelled pending playback on seek/pause; bounded retry, natural ending and replay.
-- Initialization and audio failures have visible retry paths; WebGL context loss preserves position and requests reload.
-- Narration is the media clock. Thirteen authored sound cues are scheduled against it; actual browser cue rendering and final mix listening are not yet verified.
+- Reframed the beginning around uncertain customer demand and gave it a concrete ending, rather than an abstract statement of manufacturing responsibility.
+- Added macro, overhead, wide and detail compositions tied to particular actions. Tiny document textures no longer carry the essential historical explanation.
+- Made process changes, probe contact and capacity competition legible in geometry; fixed the shot that previously showed orders withdrawing while narration described growth.
+- Standardized the main Korean identity reference, separated founding history from process explanation and narrowed manufacturing-service wording to avoid implying total product liability.
+- Rebuilt the actual English voice and caption timeline: **12,819,344 samples / 24 kHz = 534.139333 seconds**, 61 utterances, ten chapters, 41 named shots and 44 phase beats.
+- Replaced generic cue timing with 22 restrained action-linked sound cues. Buffering stops SFX and resumes it from the narration clock; unmuting cannot restart effects alone during a stall.
+- Added an explicitly labeled CPU 3D compatibility renderer for browsers where WebGL initialization fails. It rasterizes the actual geometry and camera; it is not equivalent to the primary WebGL/PBR renderer.
+- Built a normal relative-asset Sites version, with a 123 KB HTML entry instead of a 16 MB base64 entry. Local Three.js, GLB and MP3 dependencies are included; no runtime CDN is required.
 
-Download links and hashes are in [media-bundle.json](media-bundle.json). Open the HTML in a WebGL2-capable desktop browser and press Play. A local HTTP server is an alternative when file-origin policies prevent opening embedded modules. A phone file preview is not equivalent to an actual WebGL browser, and mobile playback is not claimed as tested.
+## Reproduction
 
-## Reproduce the current artifact
+The repo contains authored source and verification records. The private Sites source repository contains the deployed runtime and its assets. Raw models and audio are not added to this public source repository. Exact asset and deployment provenance is in [media-bundle.json](media-bundle.json).
 
-Source stays in Git; large media stays in the separately delivered review bundle. After extracting that bundle, set `S1E01_MEDIA` to its directory, then run from this repository's root:
+Using recovered PR #4 assets and the **full-r4** audio directory:
 
 ```bash
 node episodes/S1E01/full/build.mjs \
-  --assets "$S1E01_MEDIA/assets" \
-  --audio "$S1E01_MEDIA/audio" \
-  --out "$S1E01_MEDIA/rebuilt"
+  --assets "$S1E01_ASSETS" \
+  --audio "$S1E01_AUDIO_R4" \
+  --out "$S1E01_OUTPUT" \
+  --site "$S1E01_SITE_OUTPUT"
 
 node --experimental-vm-modules episodes/S1E01/full/qa-contract.mjs \
-  --bundle "$S1E01_MEDIA/rebuilt/S1E01-full-documentary.html"
+  --bundle "$S1E01_OUTPUT/S1E01-full-documentary.html"
+
+node --experimental-vm-modules episodes/S1E01/full/qa-site.mjs \
+  "$S1E01_SITE_OUTPUT"
 ```
 
-`assets/` contains the recovered PR #4 GLB and exact Three.js r170 modules. `audio/` contains the full-r3 narration, timeline and bounded ASR report. The build refuses a partial smoke test, a stale script/audio hash or inconsistent PCM duration. Do not point it at the old r1/r2 audio folder.
+See [audio-env.md](audio-env.md) for local voice regeneration. The build rejects a smoke test, stale script/audio hashes and inconsistent PCM timing. Carry [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt) and [rights.md](rights.md) with redistributed work.
 
-To regenerate narration, follow [audio-env.md](audio-env.md) and `audio-build.py`; model weights and voice databases are not redistributed in the media bundle. `recover-assets.mjs` can recover the original asset dependency set from the original review HTML. [rights.md](rights.md) and [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt) must travel with the work.
+## Verification and approval
 
-## Verification boundary
+[verification-r4.md](verification-r4.md) distinguishes actual browser observations, Node geometry/raster checks, isolated contract tests and remaining release checks. [review-r4.md](review-r4.md) records scoped reader/runtime feedback and the exact revisions rechecked. Earlier r3 reports remain historical, not evidence for this revision.
 
-Read [verification.md](verification.md) before using this artifact as approval evidence. The 22 contract tests are static and isolated mock tests, not a browser session. CPU model renders inspect actual geometry/camera exports under a different renderer; they are not WebGL screenshots. The fresh-viewer review covers only the exact r3 script. No full audiovisual approval, MP4 export, YouTube upload or next-episode production is represented by this delivery. **Finished episodes: 0.**
+**Private deployment is complete; independent full audiovisual release approval is not.** A generated voice, test pass or live URL does not establish enjoyable viewing, pronunciation quality or release readiness. No MP4 was requested/exported, no YouTube upload occurred and no next episode was started. The repository's finished-episode count remains unchanged.

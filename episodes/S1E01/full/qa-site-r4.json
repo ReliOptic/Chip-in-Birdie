@@ -1,0 +1,73 @@
+{
+  "scope": "Static Site file/dependency/source/asset integrity. No HTTP, browser, playback or listening.",
+  "status": "PASS",
+  "duration": 534.1393333333333,
+  "modules": 9,
+  "files": [
+    {
+      "path": "THIRD_PARTY_NOTICES.txt",
+      "bytes": 1491,
+      "sha256": "1179fbcbef6a614278544d4dfa2eb2e737c7b715d89131c7204dd65348734477"
+    },
+    {
+      "path": "cinema.mjs",
+      "bytes": 8252,
+      "sha256": "40ce293b168a3e77e9fd50479a8d43660775895986449a551d2b5a0041679db0"
+    },
+    {
+      "path": "film.mjs",
+      "bytes": 27038,
+      "sha256": "384e4822ac768822d7ff24b264b4dcca7a5be3ae7e552d97af85cbbeda366077"
+    },
+    {
+      "path": "index.html",
+      "bytes": 123412,
+      "sha256": "d508ab4e59af4a2635aaae3ba1a8eccb07424cdb89f695a24055cc523c1babad"
+    },
+    {
+      "path": "mechanisms.mjs",
+      "bytes": 34133,
+      "sha256": "26d23ae65e0f6cef9ac17793fd2c8e8d802c68e676f1c43ebfdae6326185817d"
+    },
+    {
+      "path": "narration.mp3",
+      "bytes": 8547500,
+      "sha256": "7b6751377802e88a529cf0035084ec47775ff8b2900880302371a4e9b28daa9b"
+    },
+    {
+      "path": "scene.glb",
+      "bytes": 1744832,
+      "sha256": "b7acf29ebead45e17ad6b70496ed7bea8951f70ea883dccbe8f1ec6aee551cd0"
+    },
+    {
+      "path": "software-renderer.mjs",
+      "bytes": 24707,
+      "sha256": "d9100eff41ce04e27aebf4c0bd9f0c57935ce3d7c002db85c5922dfcbdac8690"
+    },
+    {
+      "path": "vendor/BufferGeometryUtils.js",
+      "bytes": 31768,
+      "sha256": "c25b7930e570e9ec56173cd3b866ec8d2e10016630db3937efb439daf1cedbf6"
+    },
+    {
+      "path": "vendor/GLTFLoader.js",
+      "bytes": 152630,
+      "sha256": "c28102bebd55e827f5e9626bbad2d2406e60dc5d6b913aa7a89a09384f38e791"
+    },
+    {
+      "path": "vendor/RoomEnvironment.js",
+      "bytes": 3606,
+      "sha256": "85869bdd22f7cf0b22e68dcefe6cb710480af0f5c901a76f7a7764fd07fc8014"
+    },
+    {
+      "path": "vendor/three.module.js",
+      "bytes": 1314681,
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    },
+    {
+      "path": "worlds.mjs",
+      "bytes": 31603,
+      "sha256": "3c25b7393428189f95181cb00bdcd14c789f11b3b650bee568c847db1219454f"
+    }
+  ]
+}
