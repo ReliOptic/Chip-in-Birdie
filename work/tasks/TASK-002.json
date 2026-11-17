@@ -7,15 +7,15 @@
     "독립 전체 시청·청취 검수가 남으면 READY 또는 완성 편수로 올리지 않는 인계",
     "동일 최종 소스의 비공개 Sites 배포 성공, 실제 검수 관찰 및 남은 출시 관문 기록"
   ],
-  "attempt": 2,
+  "attempt": 3,
   "audience_ref": "channel/audience.json",
   "blocked_reason": null,
   "claim": {
-    "actor": "codex-root-s1e01-r4",
-    "claimed_at": "2026-11-17T10:06:46.050410Z",
-    "lease_expires_at": "2026-11-17T18:06:46.050425Z",
+    "actor": "codex-root-s1e01-r5",
+    "claimed_at": "2026-11-17T12:33:28.645142Z",
+    "lease_expires_at": "2026-11-17T20:33:28.645157Z",
     "model": "GPT-6",
-    "session_id": "chat-20261117-s1e01-r4-sites",
+    "session_id": "chat-20261117-s1e01-r5-business",
     "session_id_source": "explicit"
   },
   "current_delivery_id": "TASK-002-r0002",
@@ -122,6 +122,37 @@
       "delivery_id": "TASK-002-r0002",
       "event": "SUBMITTED",
       "revision": 2
+    },
+    {
+      "actor": "codex-root-s1e01-r5",
+      "at": "2026-11-17T12:33:28.505419Z",
+      "event": "BLOCK",
+      "preserved_delivery_id": "TASK-002-r0002",
+      "previous_state": "IN_REVIEW",
+      "reason": "Director rejects R4: definitions overextended, business benefit unclear, slow pace and repeated assets",
+      "revision": 2
+    },
+    {
+      "actor": "codex-root-s1e01-r5",
+      "at": "2026-11-17T12:33:28.574051Z",
+      "event": "RETRY",
+      "preserved_delivery_id": "TASK-002-r0002",
+      "previous_state": "BLOCKED",
+      "reason": "Revise same S1E01 around business choices, evidenced contracts and distinct causal scenes; retain private Sites delivery scope",
+      "revision": 2
+    },
+    {
+      "actor": "codex-root-s1e01-r5",
+      "at": "2026-11-17T12:33:28.645202Z",
+      "claim": {
+        "actor": "codex-root-s1e01-r5",
+        "claimed_at": "2026-11-17T12:33:28.645142Z",
+        "lease_expires_at": "2026-11-17T20:33:28.645157Z",
+        "model": "GPT-6",
+        "session_id": "chat-20261117-s1e01-r5-business",
+        "session_id_source": "explicit"
+      },
+      "event": "CLAIMED"
     }
   ],
   "objective": "PR #4의 S1E01 전체 3D 다큐멘터리를 이어 내러티브·장면 설명력·재생을 수정하고 Sites에 비공개 배포한다. 실제 영어 음성에 맞춘 전체 영상·한국어/영어 자막·출처 UI와 정확한 리비전의 검증 증거를 인계한다. 독립 시청·청취와 공개 출시는 별도 승인으로 남긴다.",
@@ -133,8 +164,8 @@
   ],
   "revision": 2,
   "scope": "episode",
-  "status": "IN_REVIEW",
+  "status": "CLAIMED",
   "task_id": "TASK-002",
   "title": "S1E01 / H039 · PR #4 전체 3D 다큐멘터리 후속 제작",
-  "updated_at": "2026-11-17T11:00:35.331067Z"
+  "updated_at": "2026-11-17T12:33:28.645206Z"
 }
