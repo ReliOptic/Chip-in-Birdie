@@ -1,12 +1,14 @@
 {
-  "revision": "S1E01-full-r4",
+  "revision": "S1E01-full-r5",
   "source_register": "sources.json",
-  "status": "PRIMARY_SOURCES_READ_AND_HISTORICAL_SCRIPT_REVIEWED_NOT_RELEASE_APPROVED",
+  "status": "PRIMARY_RECORDS_AND_LABELED_ECONOMIC_MODELS_NOT_RELEASE_APPROVED",
   "claims": [
     {
       "id": "H01",
       "kind": "retrospective_testimony",
-      "sources": ["A"],
+      "sources": [
+        "A"
+      ],
       "locator": "Printed pp. 9–12; Li's minister-without-portfolio role on p. 10; business-plan request on pp. 11–12",
       "claim": "Chang described his semiconductor executive experience, Li's role as a minister without portfolio, Li requesting a plan for a new company, and his assessment of manufacturing potential versus design, marketing and IP limitations.",
       "limitation": "Chang's 2007 judgment about 1985, not a comprehensive independent industry survey."
@@ -14,7 +16,9 @@
     {
       "id": "H02",
       "kind": "retrospective_testimony",
-      "sources": ["A"],
+      "sources": [
+        "A"
+      ],
       "locator": "Printed p. 13",
       "claim": "Spare-capacity orders could cease; Chang hoped designers unable to fund fabs could form companies.",
       "limitation": "Expectation and perceived risk, not proof that a ready customer market existed."
@@ -22,7 +26,9 @@
     {
       "id": "H03",
       "kind": "period_company_record",
-      "sources": ["C"],
+      "sources": [
+        "C"
+      ],
       "locator": "Printed p. 5 (PDF page 8)",
       "claim": "TSMC was founded in 1987.",
       "limitation": "The cited report was published in 1994."
@@ -30,7 +36,9 @@
     {
       "id": "H04",
       "kind": "attributed_company_principle",
-      "sources": ["C"],
+      "sources": [
+        "C"
+      ],
       "locator": "Printed p. 5 (PDF page 8), Company Background, second paragraph",
       "claim": "The report describes a charter preventing the design or manufacture of own-brand IC end products.",
       "limitation": "The original 1987 charter was not independently retrieved. This does not mean every commercial relationship is conflict-free."
@@ -38,7 +46,9 @@
     {
       "id": "H05",
       "kind": "retrospective_testimony",
-      "sources": ["B"],
+      "sources": [
+        "B"
+      ],
       "locator": "Printed p. 3",
       "claim": "Chang reported about US$220 million in initial capital: government 48%, Philips about 27%, and other Taiwanese investors the balance.",
       "limitation": "Approximate retrospective amounts; the displayed percentages are not presented as newly audited accounts."
@@ -46,15 +56,19 @@
     {
       "id": "H06",
       "kind": "institutional_retrospective",
-      "sources": ["D"],
+      "sources": [
+        "D"
+      ],
       "locator": "Paragraph about the 1987 spin-off",
-      "claim": "ITRI describes transferring facilities, equipment, technology and personnel to TSMC.",
+      "claim": "ITRI describes transferring facilities, equipment, technologies and 98 professionals to TSMC in 1987.",
       "limitation": "An institutional account published in 2023, not contemporaneous minutes."
     },
     {
       "id": "H07",
       "kind": "period_company_record",
-      "sources": ["C"],
+      "sources": [
+        "C"
+      ],
       "locator": "Printed p. 15 (PDF page 18), Important Contracts",
       "claim": "Philips technology cooperation and ITRI building and equipment leases list start dates in 1987.",
       "limitation": "Only the reported contractual scope is used. No proprietary technology details or guaranteed customer capacity are inferred."
@@ -62,7 +76,9 @@
     {
       "id": "H08",
       "kind": "retrospective_testimony",
-      "sources": ["A"],
+      "sources": [
+        "A"
+      ],
       "locator": "Printed p. 14",
       "claim": "Chang reported faster growth around 1991–92 and the need to prove technology and trust.",
       "limitation": "Not an independent causal measurement of the noncompetition policy."
@@ -70,7 +86,9 @@
     {
       "id": "H09",
       "kind": "period_company_record",
-      "sources": ["C"],
+      "sources": [
+        "C"
+      ],
       "locator": "Printed p. 15 (PDF page 18), Deposit and Supply Agreement",
       "claim": "The Cirrus Logic International agreement begins on 23 September 1993 and records a wafer-manufacturing commitment.",
       "limitation": "It does not identify the first customer, order quantity, chip design or production yield."
@@ -78,7 +96,9 @@
     {
       "id": "H10",
       "kind": "attributed_retrospective_customer_account",
-      "sources": ["B"],
+      "sources": [
+        "B"
+      ],
       "locator": "Printed pp. 5–6, Huang's accounts of customer visits, die size and repeated wafer-demand discussions",
       "claim": "Huang recalled Chang visiting Nvidia, hearing about die sizes and future growth, and returning to discuss how many wafers the customer would need.",
       "limitation": "Huang's 2007 recollection, not a recording or dated operational log of the visits. It does not establish Nvidia as the first customer, an actual order quantity, a specific chip design, or a motive for choosing TSMC. No verbatim dialogue is invented."
@@ -86,7 +106,9 @@
     {
       "id": "M01",
       "kind": "mechanism",
-      "sources": ["E"],
+      "sources": [
+        "E"
+      ],
       "locator": "Types of chipmakers",
       "claim": "IDMs integrate design and manufacture; fabless firms use foundry capability rather than owning all fabrication.",
       "limitation": "A general distinction, not an exhaustive business taxonomy."
@@ -94,7 +116,9 @@
     {
       "id": "M02",
       "kind": "illustrative_mechanism",
-      "sources": ["G"],
+      "sources": [
+        "G"
+      ],
       "locator": "Paragraph on process requirements and correct chip layout creation",
       "claim": "Layout must meet process-specific constraints; the spacing change is an illustrative example.",
       "limitation": "No actual design rule, numerical dimension or real customer layout is disclosed."
@@ -102,7 +126,9 @@
     {
       "id": "M03",
       "kind": "attributed_technical_documentation",
-      "sources": ["G"],
+      "sources": [
+        "G"
+      ],
       "locator": "iPDK and iDRC paragraphs",
       "claim": "Process information and design checks connect customer design with manufacturing capability.",
       "limitation": "A public description from 2010; it does not imply that production tools or PDKs are publicly downloadable."
@@ -110,7 +136,9 @@
     {
       "id": "M04",
       "kind": "illustrative_mechanism",
-      "sources": ["E"],
+      "sources": [
+        "E"
+      ],
       "locator": "Opening manufacturing description; Tiny skyscrapers; cleanroom paragraphs",
       "claim": "Modern fabrication controls materials, patterns and layer alignment. Wafer movement is shown through an authored illustration.",
       "limitation": "The PR #4 factory is an invented contemporary model, not a 1987 reconstruction or actual TSMC facility. The source does not validate its exact equipment geometry."
@@ -118,7 +146,9 @@
     {
       "id": "M05",
       "kind": "illustrative_mechanism",
-      "sources": ["F"],
+      "sources": [
+        "F"
+      ],
       "locator": "Deposition, Photoresist coating, Lithography and Etch sections",
       "claim": "Simplified pattern transfer and separated layers illustrate selected process operations.",
       "limitation": "Exaggerated scale; not a complete CMOS recipe or an optical simulation."
@@ -126,7 +156,11 @@
     {
       "id": "M06",
       "kind": "illustrative_mechanism",
-      "sources": ["H", "I", "K"],
+      "sources": [
+        "H",
+        "I",
+        "K"
+      ],
       "locator": "H: Quality Management System; I: Engineering Collaboration; K: Parametric / manufacturing-process description",
       "claim": "Electrical contact enables device-performance tests; the fraction of usable devices matters. TSMC describes probing, testing and access to yield information.",
       "limitation": "The green and red marks are fabricated explanatory results, never an estimate of TSMC's yield or a measured test dataset."
@@ -134,7 +168,9 @@
     {
       "id": "M07",
       "kind": "company_operational_description",
-      "sources": ["H"],
+      "sources": [
+        "H"
+      ],
       "locator": "Quality Management System, Overview",
       "claim": "The company's quality system encompasses design support, wafer manufacture, probing and testing.",
       "limitation": "A company description, not an independent audit or universal performance guarantee."
@@ -142,52 +178,134 @@
     {
       "id": "I01",
       "kind": "editorial_inference",
-      "sources": ["A", "C"],
+      "sources": [
+        "A",
+        "C"
+      ],
       "claim": "External manufacturing requires sharing technical information and confidence in the supplier.",
       "limitation": "Not a particular customer's testimony."
     },
     {
       "id": "I02",
       "kind": "editorial_inference",
-      "sources": ["B", "C", "D"],
+      "sources": [
+        "B",
+        "C",
+        "D"
+      ],
       "claim": "The foundry model required institutions, capital and manufacturing capabilities.",
       "limitation": "No quantitative attribution of success."
     },
     {
       "id": "I03",
       "kind": "editorial_model",
-      "sources": ["C", "J"],
+      "sources": [
+        "C",
+        "J"
+      ],
       "claim": "The noncompetition boundary addresses the manufacturer's own-product conflict, not all commercial interests.",
-      "limitation": "The 3D gate is an explanatory model, not an actual contract-flow diagram."
+      "limitation": "The shipping-counter model is authored interpretation. The own-brand restriction is not a guarantee about all IP, capacity, price or competitive relationships."
     },
     {
       "id": "I04",
       "kind": "editorial_inference",
-      "sources": ["E", "F", "G"],
+      "sources": [
+        "E",
+        "F",
+        "G"
+      ],
       "claim": "A controlled process and technical coordination matter, not access to machinery alone.",
       "limitation": "Qualitative interpretation, not a performance or cost simulation."
     },
     {
       "id": "I05",
       "kind": "editorial_inference",
-      "sources": ["B", "C"],
-      "locator": "B: printed pp. 5–6; C: printed p. 15 (PDF page 18), Deposit and Supply Agreement",
-      "claim": "The Cirrus agreement demonstrates a continuing manufacturing obligation. Huang's separate account connects a customer's evolving designs and wafer demand with the manufacturer's planning responsibility.",
-      "limitation": "The planning conclusion is editorial interpretation, not a direct quotation. Cirrus's 1993 contract and Huang's later recollections are separate evidence, not the same transaction. Neither establishes the first customer, an invented customer motive or industry-wide causality."
+      "sources": [
+        "A",
+        "D",
+        "J"
+      ],
+      "locator": "A: printed p.13; D: 1987 paragraph; J: R5 authored counterfactual financing comparison",
+      "claim": "A product company can buy foundry manufacturing without owning a fab. This can lower the up-front scope of financing and concentrate it on product development, while design, masks, packaging, testing and working capital remain. Outsourcing does not guarantee lower wafer prices. Steady demand can make factory ownership more justifiable; the model does not say every company should outsource.",
+      "limitation": "Qualitative business mechanism, not a cost estimate or a claim about the exact budget or success of any named startup."
     },
     {
       "id": "I06",
       "kind": "editorial_model",
-      "sources": ["A", "J"],
-      "claim": "Specialization retains factory costs and finite capacity while changing dependencies between companies.",
-      "limitation": "No actual allocation decision, shortage or customer-financing structure is asserted."
+      "sources": [
+        "A",
+        "J"
+      ],
+      "claim": "Compatible orders from multiple customers can use shared manufacturing assets and spread fixed costs over more output. Orders cannot be freely substituted across incompatible processes; customer demand can fall together and factory costs remain.",
+      "limitation": "Illustrative economics with no historical capacity, customer-volume, utilization or profit dataset. Sharing does not guarantee profitable output or remove cyclic demand.",
+      "locator": "A: printed pp.13–14; J: R5 compatible-booking model"
     },
     {
       "id": "I07",
       "kind": "editorial_synthesis",
-      "sources": ["A", "C", "G"],
-      "claim": "Dedicated manufacturing combines production capability with a commitment not to sell the manufacturer's own competing chip products.",
-      "limitation": "Not the invention of all contract manufacturing, nor a guarantee that other customers are not rivals."
+      "sources": [
+        "H",
+        "I",
+        "J"
+      ],
+      "claim": "For an invented two-supplier teaching comparison, A charges 100 processing-cost units with 60 usable chips from 100 candidates; B charges 120 with 90 usable from a separate 100. Cost per usable chip is 100/60 ≈ 1.67 and 120/90 ≈ 1.33. B's quote is 20% higher but its processing cost per usable chip is 20% lower.",
+      "limitation": "Not TSMC prices, measured yields, real supplier quotations or a forecast. Test, packaging, qualification and other cost differences are excluded. The rejected dies from A are never repaired or moved into B.",
+      "locator": "R5 authored two-quote model and exact arithmetic"
+    },
+    {
+      "id": "H11",
+      "kind": "period_customer_filing",
+      "sources": [
+        "L"
+      ],
+      "locator": "FY1997 10-K, Notes to Consolidated Financial Statements, Other Wafer Supply Arrangements, TSMC paragraph (SEC text lines 2801–2822)",
+      "claim": "Cirrus disclosed FY1993/FY1996 minimum wafer purchase commitments at market prices in exchange for guaranteed TSMC quantities. A per-wafer penalty could apply to the committed shortfall that TSMC did not sell to other customers.",
+      "limitation": "Contract-specific conditions, not the terms of every foundry order. No actual penalty payment or loss is claimed. Ten illustrative booking counters are not a historical volume."
+    },
+    {
+      "id": "H12",
+      "kind": "period_customer_filing",
+      "sources": [
+        "L"
+      ],
+      "locator": "Same financial-statement note, SEC lines 2807–2812",
+      "claim": "The FY1996 agreement called for approximately US$118m in advance payments, half in FY1998 and half in FY1999. At the FY1997 filing, the parties were reevaluating replacement by long-term purchase commitments; no new written agreement was concluded.",
+      "limitation": "Future commitment as disclosed in 1997, not cash already paid in 1993 or evidence of the final renegotiated outcome. Separate from TSMC's reported 23 September 1993 Cirrus International agreement."
+    },
+    {
+      "id": "H13",
+      "kind": "period_customer_filing",
+      "sources": [
+        "L"
+      ],
+      "locator": "Manufacturing; MiCRUS/Cirent and related financial-statement notes",
+      "claim": "Cirrus also held stakes in manufacturing joint ventures.",
+      "limitation": "The film uses a supply contract case, not Cirrus as a pure or permanently asset-free fabless archetype; no JV loss is attributed to TSMC."
+    },
+    {
+      "id": "I08",
+      "kind": "editorial_inference",
+      "sources": [
+        "L",
+        "J"
+      ],
+      "locator": "H11/H12/H13 and R5 contract model",
+      "claim": "Guaranteed supply and purchase commitments exchange customer supply access for manufacturer demand visibility. The customer may avoid full factory ownership yet retain capital or purchase obligations and supplier dependency.",
+      "limitation": "Interpretation of the identified terms, not a universal legal rule, forecast or quantified allocation of all business risk."
+    },
+    {
+      "id": "I09",
+      "kind": "editorial_synthesis",
+      "sources": [
+        "A",
+        "C",
+        "D",
+        "L",
+        "J"
+      ],
+      "locator": "Founding accounts, own-brand restriction and the stated supply-contract example",
+      "claim": "The model permits product specialization without a wholly owned fab and manufacturing sales to several product companies. Product and factory utilization risks remain, and contracts can distribute part of the exposure.",
+      "limitation": "Qualitative explanation, not a claim of inevitable success, guaranteed profit, universal lower cost, or that TSMC invented every form of contract manufacturing."
     }
   ]
 }

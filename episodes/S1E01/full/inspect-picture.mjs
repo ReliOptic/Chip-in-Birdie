@@ -1,0 +1,26 @@
+/** One-off art inspection of actual geometry using Node Canvas. Not browser/WebGL QA. */
+import fs from 'node:fs';
+import path from 'node:path';
+import {createRequire} from 'node:module';
+import {createSoftwareRenderer} from './software-renderer.mjs';
+import {createTransactions} from './business-transactions.mjs';
+import {createEconomics} from './business-economics.mjs';
+import {createInstitutions} from './business-institutions.mjs';
+const {createCanvas}=createRequire(import.meta.url)('@napi-rs/canvas');
+const [assets,output,world='deal',phase='opening',progress='.5']=process.argv.slice(2);
+if(!assets||!output)throw new Error('Usage: node inspect-picture.mjs ASSETS OUTPUT.png [world phase progress]');
+const T=await import('data:text/javascript;base64,'+fs.readFileSync(path.join(assets,'vendor/three.module.js')).toString('base64'));
+globalThis.document={createElement(tag){if(tag!=='canvas')throw new Error('Canvas only');return createCanvas(1,1);}};
+const canvas=createCanvas(1280,720),renderer=createSoftwareRenderer(T,{canvas,quality:'balanced'});renderer.setSize(1280,720);renderer.toneMappingExposure=1.03;
+const scene=new T.Scene();scene.background=new T.Color('#101613');
+scene.add(new T.HemisphereLight(0xc7dbe7,0x3c3025,1.3));
+const key=new T.DirectionalLight(0xffe1b4,3.3);key.position.set(-4,9,6);key.castShadow=true;key.shadow.camera.left=-10;key.shadow.camera.right=10;key.shadow.camera.top=10;key.shadow.camera.bottom=-10;key.shadow.camera.near=.1;key.shadow.camera.far=40;scene.add(key,key.target);
+const rim=new T.DirectionalLight(0x9dbbd3,2.4);rim.position.set(4,6,-5);scene.add(rim);const fill=new T.DirectionalLight(0xc4e1e2,.9);fill.position.set(3,2,5);scene.add(fill);
+const floor=new T.Mesh(new T.PlaneGeometry(80,80),new T.MeshStandardMaterial({color:0x17211c,roughness:.86}));floor.rotation.x=-Math.PI/2;floor.position.y=-.23;floor.receiveShadow=true;scene.add(floor);
+const worlds={...createTransactions(T),...createEconomics(T),...createInstitutions(T)},w=worlds[world];
+if(!w)throw new Error('Unknown world: '+world);
+scene.add(w.root);w.root.traverse(o=>{if(o.isMesh){o.castShadow=true;o.receiveShadow=true;}});w.update(+progress,phase);
+const c=w.cameraAt(+progress,phase),camera=new T.PerspectiveCamera(c.fov,16/9,.03,90);camera.position.fromArray(c.position);camera.lookAt(...c.target);camera.updateProjectionMatrix();camera.updateMatrixWorld();
+const began=performance.now();renderer.render(scene,camera);
+fs.mkdirSync(path.dirname(output),{recursive:true});fs.writeFileSync(output,canvas.toBuffer('image/png'));
+console.log(JSON.stringify({scope:'Actual Node CPU 3D pixels, not WebGL/browser',output,world,phase,progress:+progress,renderMs:performance.now()-began,triangles:renderer.info.render.triangles,drawCalls:renderer.info.render.calls,state:w.state?.()}));

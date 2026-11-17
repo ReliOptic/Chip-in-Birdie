@@ -75,5 +75,12 @@
     "url": "https://www.formfactor.com/applications/",
     "locator": "Parametric / manufacturing-process description: testing structures with electrical contact",
     "note": "The test-equipment manufacturer's public explanation directly supports electrical contact with wafer-level test structures to characterize device performance. It does not validate the film's probe geometry, contact force, test program, pass/fail marks or any TSMC yield."
+  },
+  {
+    "id": "L",
+    "title": "Cirrus Logic · FY1997 Form 10-K",
+    "url": "https://www.sec.gov/Archives/edgar/data/772406/0000772406-97-000077.txt",
+    "locator": "Fiscal year ended 29 March 1997; filed 17 June 1997; financial-statement note Other Wafer Supply Arrangements",
+    "note": "Primary customer filing. Minimum purchases, guaranteed quantities, conditional shortfall penalties and a future US$118m advance commitment under the FY1996 agreement. Reconsideration had not yet produced a new written agreement. Cirrus's manufacturing JV stakes mean it is not presented as a pure fabless archetype. Schematic reservation counts and costs are authored, not extracted from this record."
   }
 ]

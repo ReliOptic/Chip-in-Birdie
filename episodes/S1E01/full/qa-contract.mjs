@@ -27,7 +27,9 @@ if (typeof vm.SourceTextModule !== 'function') {
   throw new Error('Node --experimental-vm-modules is required for syntax/import inspection.');
 }
 const bundlePath = path.resolve(process.argv[argIndex + 1]);
-const sourceNames = ['player.html', 'film.mjs', 'build.mjs', 'cinema.mjs', 'software-renderer.mjs'];
+const sourceNames = ['player.html', 'film.mjs', 'build.mjs', 'cinema.mjs', 'software-renderer.mjs',
+  'business-transactions.mjs', 'business-economics.mjs', 'business-institutions.mjs',
+  'script.json', 'claims.json', 'sources.json', 'THIRD_PARTY_NOTICES.txt'];
 const sources = Object.fromEntries(sourceNames.map(name => [name, fs.readFileSync(path.join(root, name), 'utf8')]));
 const html = fs.readFileSync(bundlePath, 'utf8');
 const film = sources['film.mjs'];
@@ -182,19 +184,29 @@ await test('Bundle placeholders and source freshness', 'STATIC_BYTES', () => {
 });
 
 await test('Embedded module graph syntax and resolution', 'REAL_JS_PARSE_NO_EVALUATION', () => {
-  const seen = new Set(), modules = [];
-  function inspect(uri, label) {
+  const seen = new Set(), modules = [], matchedSources = new Set();
+  function inspect(uri, label, sourceName) {
     if (seen.has(uri)) return; seen.add(uri);
     const code = decode(uri).toString('utf8');
     const module = new vm.SourceTextModule(code);
+    const originals = sourceName ? new vm.SourceTextModule(sources[sourceName]).dependencySpecifiers : null;
+    if (originals) {
+      assert.equal(module.dependencySpecifiers.length, originals.length, `${sourceName} import count differs`);
+      let restored = code;
+      module.dependencySpecifiers.forEach((specifier, i) => { if (specifier.startsWith('data:')) restored = restored.replaceAll(specifier, originals[i]); });
+      assert.equal(restored, sources[sourceName], `Embedded ${sourceName} differs from current source`);
+      matchedSources.add(sourceName);
+    }
     modules.push({label, bytes: Buffer.byteLength(code), sha256: sha(code), imports: module.dependencySpecifiers.length});
     module.dependencySpecifiers.forEach((specifier, i) => {
       const resolved = specifier.startsWith('data:') ? specifier : importMap.imports[specifier];
-      assert.ok(resolved, `Unresolved ${label}: ${specifier}`); inspect(resolved, `${label}/${i}`);
+      const candidate = originals?.[i]?.startsWith('.') ? path.normalize(path.join(path.dirname(sourceName), originals[i])) : null;
+      assert.ok(resolved, `Unresolved ${label}: ${specifier}`); inspect(resolved, `${label}/${i}`, Object.hasOwn(sources, candidate) ? candidate : null);
     });
   }
-  inspect(entry, 'entry'); new vm.SourceTextModule(loader); new vm.SourceTextModule(builder);
-  return {uniqueModules: modules.length, unresolvedImports: 0, modules};
+  inspect(entry, 'entry', 'film.mjs'); new vm.SourceTextModule(loader); new vm.SourceTextModule(builder);
+  for (const name of sourceNames.filter(name => name.endsWith('.mjs') && name !== 'build.mjs')) assert.ok(matchedSources.has(name), `Production module ${name} is not reachable from the bundle`);
+  return {uniqueModules: modules.length, unresolvedImports: 0, sourceMatches: [...matchedSources], modules};
 });
 
 await test('Embedded assets and canonical PCM duration', 'STATIC_BYTES_AND_JSON', () => {
@@ -210,7 +222,15 @@ await test('Embedded assets and canonical PCM duration', 'STATIC_BYTES_AND_JSON'
 });
 
 await test('Utterances, claims, and source references', 'STATIC_DATA_CONTRACT', () => {
+  assert.deepEqual(data.script, JSON.parse(sources['script.json']));
+  assert.equal(data.timeline.source_script_sha256, inputHashes['script.json']);
+  assert.deepEqual(data.claims, JSON.parse(sources['claims.json']).claims);
+  assert.deepEqual(data.sources, JSON.parse(sources['sources.json']));
+  assert.equal(data.notices, sources['THIRD_PARTY_NOTICES.txt']);
   assert.equal(rows.length, data.script.sentences.length); assert.equal(new Set(rows.map(row => row.id)).size, rows.length);
+  const chapterIDs = data.script.chapters.map(chapter => chapter.id);
+  assert.ok(chapterIDs.length > 0); assert.equal(new Set(chapterIDs).size, chapterIDs.length);
+  assert.deepEqual(rows.filter((row, i) => !i || rows[i - 1].chapter !== row.chapter).map(row => row.chapter), chapterIDs, 'Every canonical chapter must occur once, in order, with at least one utterance');
   const claims = new Map(data.claims.map(claim => [claim.id, claim]));
   const sourceIDs = new Set(data.sources.map(source => source.id));
   for (let i = 0; i < rows.length; i++) {
@@ -218,6 +238,7 @@ await test('Utterances, claims, and source references', 'STATIC_DATA_CONTRACT', 
     assert.ok(Number.isFinite(row.start) && Number.isFinite(row.end) && row.start <= row.end && row.end <= duration);
     if (i) assert.ok(rows[i - 1].end <= row.start);
     for (const field of ['id', 'en', 'ko', 'chapter', 'shot', 'phase', 'world']) assert.equal(row[field], data.script.sentences[i][field]);
+    assert.deepEqual(row.claim, data.script.sentences[i].claim);
     assert.ok(Math.abs(row.start * data.timeline.sample_rate - row.start_sample) < 1e-6);
     assert.ok(Math.abs(row.end * data.timeline.sample_rate - row.end_sample) < 1e-6);
     assert.ok(data.script.chapters.some(chapter => chapter.id === row.chapter));
@@ -234,18 +255,26 @@ await test('Phase-aware shot grouping and time boundaries', 'ACTUAL_GROUPING_COD
   vm.runInContext(between(film, 'const shots=[];', 'let current='), ctx);
   vm.runInContext(functionSource('currentShot'), ctx);
   const shots = vm.runInContext('shots', ctx);
-  assert.equal(shots.length, 44); assert.equal(new Set(shots.map(shot => shot.id)).size, 41);
+  const scriptRows = data.script.sentences;
+  const boundaries = scriptRows.flatMap((row, i) => !i || ['shot', 'phase', 'world'].some(field => row[field] !== scriptRows[i - 1][field]) ? [i] : []);
+  const namedShots = new Set(scriptRows.map(row => row.shot)).size;
+  assert.equal(shots.length, boundaries.length); assert.equal(new Set(Array.from(shots, shot => shot.id)).size, namedShots);
   assert.equal(shots[0].t0, 0); assert.equal(shots.at(-1).t1, duration);
   for (let i = 0; i < shots.length; i++) {
     const shot = shots[i]; assert.ok(shot.t1 > shot.t0);
+    const from = boundaries[i], until = boundaries[i + 1] ?? scriptRows.length;
+    const expectedRows = scriptRows.slice(from, until);
+    assert.equal(shot.id, expectedRows[0].shot); assert.equal(shot.phase, expectedRows[0].phase); assert.equal(shot.world, expectedRows[0].world);
+    assert.deepEqual(Array.from(shot.rows, row => row.id), expectedRows.map(row => row.id), 'Shot grouping must preserve every canonical utterance exactly once');
+    assert.equal(shot.t0, i ? rows[from].start : 0); assert.equal(shot.t1, rows[until]?.start ?? duration);
     if (i) assert.equal(shots[i - 1].t1, shot.t0);
-    for (const row of shot.rows) { assert.equal(row.phase, shot.phase); assert.equal(row.world, shot.world); }
+    for (const row of shot.rows) { assert.equal(row.phase, shot.phase); assert.equal(row.world, shot.world); assert.equal(row.chapter, shot.chapter); }
     assert.equal(ctx.currentShot(shot.t0), shot);
     assert.equal(ctx.currentShot((shot.t0 + shot.t1) / 2), shot);
   }
   assert.equal(ctx.currentShot(duration), shots.at(-1));
   const phases = Object.fromEntries([...new Set(shots.map(shot => shot.id))].map(id => [id, shots.filter(shot => shot.id === id).map(shot => ({phase: shot.phase, start: shot.t0, end: shot.t1}))]).filter(([, value]) => value.length > 1));
-  return {namedShots: 41, phaseBeats: 44, splitNamedShots: phases};
+  return {namedShots, phaseBeats: shots.length, splitNamedShots: phases};
 });
 
 for (const stage of ['prepare', 'resume', 'media']) {
@@ -302,8 +331,12 @@ await test('UI/API mute stops SFX and updates accessibility', 'ACTUAL_MUTE_AND_A
 
 await test('Streaming wait holds SFX and resumes from the media clock', 'ACTUAL_BUFFERING_FUNCTIONS_MOCK_MEDIA', async () => {
   const h=controlHarness();await h.ctx.play();h.ctx.narration.currentTime=24.5;
-  h.ctx.onMediaWaiting();assert.equal(h.ctx.buffering,true);assert.match(h.dom.get('status').textContent,/Buffering/);
+  const before=h.counts.sfxStop;h.ctx.onMediaWaiting();assert.equal(h.ctx.buffering,true);assert.equal(h.counts.sfxStop,before+1);assert.match(h.dom.get('status').textContent,/Buffering/);
   h.ctx.onMediaPlaying();assert.equal(h.ctx.buffering,false);assert.equal(h.counts.sfxStart.at(-1),24.5);
+  const starts=h.counts.sfxStart.length;h.ctx.onMediaPlaying();assert.equal(h.counts.sfxStart.length,starts,'Duplicate playing event must not restart SFX');
+  h.ctx.narration.readyState=3;h.ctx.narration.onstalled();assert.equal(h.ctx.buffering,false,'A stalled download with playable data must not pause SFX');
+  h.ctx.narration.readyState=2;h.ctx.narration.onstalled();assert.equal(h.ctx.buffering,true,'An actual media stall must hold SFX');
+  h.ctx.onMediaPlaying();assert.equal(h.ctx.buffering,false);
   h.ctx.onMediaWaiting();h.ctx.pause();assert.equal(h.ctx.buffering,false);h.ctx.onMediaPlaying();assert.equal(h.ctx.playing,false);
 });
 

@@ -2,10 +2,11 @@ import * as T from 'three';
 import {RoomEnvironment} from './vendor/RoomEnvironment.js';
 import {GLTFLoader} from './vendor/GLTFLoader.js';
 import {mergeGeometries} from './vendor/BufferGeometryUtils.js';
-import {createWorlds} from './worlds.mjs';
-import {createMechanisms} from './mechanisms.mjs';
+import {createTransactions} from './business-transactions.mjs';
+import {createEconomics} from './business-economics.mjs';
+import {createInstitutions} from './business-institutions.mjs';
 import {createSoftwareRenderer} from './software-renderer.mjs';
-import {shotGrammar,updateCinema} from './cinema.mjs';
+import {shotGrammar,updateCinema,worldLook} from './cinema.mjs';
 
 const DATA=JSON.parse(document.getElementById('film-data').textContent);
 const $=id=>document.getElementById(id),clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x)),smooth=x=>{x=clamp(x);return x*x*(3-2*x)};
@@ -26,16 +27,21 @@ let context,sfxNode,voiceNode,sfxBuffer,audioState='idle',audioError=null,soundR
 const cueSpecs=[];
 function cue(shot,at,kind,length=.3){cueSpecs.push({t:shot.t0+(shot.t1-shot.t0)*at,kind,length,seed:117+cueSpecs.length})}
 for(const shot of shots){
-  if(shot.world==='archive'){cue(shot,.10,'paper',.65);if(['contracts','cirrus'].includes(shot.phase))cue(shot,.66,'contact',.28)}
-  if(shot.world==='fab'){cue(shot,0,'air',shot.t1-shot.t0);if(shot.phase==='handoff'){cue(shot,.18,'servo',2.2);cue(shot,.68,'contact',.3)}}
-  if(shot.world==='layers'&&shot.phase==='pattern')cue(shot,.3,'relay',.18);
-  if(shot.world==='layers'&&shot.phase==='etch')cue(shot,.24,'grain',Math.min(3.2,(shot.t1-shot.t0)*.45));
-  if(shot.world==='testing'&&shot.phase==='probe')cue(shot,.40,'contact',.23);
-  if(shot.world==='testing'&&shot.phase==='results')cue(shot,.08,'measure',.25);
-  if(shot.world==='design'&&shot.phase==='repair')cue(shot,.48,'paper',.4);
-  if(shot.world==='boundary'&&shot.phase==='close')cue(shot,.54,'contact',.3);
-  if(shot.world==='return'&&shot.phase==='package')cue(shot,.79,'contact',.3);
-  if(shot.world==='return'&&shot.phase==='final')cue(shot,.04,'resolve',Math.min(6,shot.t1-shot.t0));
+  if(shot.world==='deal'&&shot.phase==='opening')cue(shot,.17,'paper',.65);
+  if(shot.world==='deal'&&shot.phase==='terms')cue(shot,.63,'contact',.28);
+  if(shot.world==='founder'&&shot.phase==='without')cue(shot,.26,'servo',1.3);
+  if(shot.world==='founder'&&shot.phase==='remaining')cue(shot,.25,'paper',.5);
+  if(shot.world==='founding'&&shot.phase==='partners')cue(shot,.32,'contact',.24);
+  if(shot.world==='founding'&&shot.phase==='resources')cue(shot,.32,'servo',1.7);
+  if(shot.world==='bookings'&&['alone','shared','incompatible','slump','overflow','growth'].includes(shot.phase))cue(shot,.34,'contact',.24);
+  if(shot.world==='trust'&&shot.phase==='charter')cue(shot,.36,'contact',.24);
+  if(shot.world==='trust'&&shot.phase==='delivery')cue(shot,.38,'servo',1.6);
+  if(shot.world==='fab'){cue(shot,0,'air',shot.t1-shot.t0);cue(shot,.18,'servo',2.2);cue(shot,.68,'contact',.3);}
+  if(shot.world==='yield'&&['reject','improve'].includes(shot.phase))cue(shot,.32,'servo',1.2);
+  if(shot.world==='yield'&&shot.phase==='cost')cue(shot,.36,'contact',.23);
+  if(shot.world==='contract'&&['advance','renegotiate'].includes(shot.phase))cue(shot,.27,'paper',.6);
+  if(shot.world==='contract'&&['shortfall','resold','penalty'].includes(shot.phase))cue(shot,.50,'contact',.25);
+  if(shot.world==='market'&&shot.phase==='final')cue(shot,.04,'resolve',Math.min(6,shot.t1-shot.t0));
 }
 function rng(seed){return()=>{seed=(Math.imul(1664525,seed)+1013904223)>>>0;return seed/4294967296}}
 function bakeCue(c,sr){const N=Math.round(sr*c.length),a=new Float32Array(N),r=rng(c.seed);let filtered=0;for(let i=0;i<N;i++){const t=i/sr,u=i/N,noise=r()*2-1;filtered=.94*filtered+.06*noise;const edge=Math.min(1,t/.16,(c.length-t)/.25);let value=0;
@@ -67,7 +73,7 @@ scene.add(new T.HemisphereLight(0xc7dbe7,0x3c3025,1.3));
 const key=new T.DirectionalLight(0xffe1b4,3.3);key.position.set(-4,9,6);key.castShadow=true;key.shadow.mapSize.set(1024,1024);key.shadow.camera.left=-10;key.shadow.camera.right=10;key.shadow.camera.top=10;key.shadow.camera.bottom=-10;key.shadow.camera.near=.1;key.shadow.camera.far=40;key.shadow.normalBias=.015;key.shadow.bias=-.0003;scene.add(key,key.target);
 const rim=new T.DirectionalLight(0x9dbbd3,2.4);rim.position.set(4,6,-5);scene.add(rim);const fill=new T.DirectionalLight(0xc4e1e2,.9);fill.position.set(3,2,5);scene.add(fill);
 const floor=new T.Mesh(new T.PlaneGeometry(80,80),new T.MeshStandardMaterial({color:0x18242b,roughness:.86}));floor.rotation.x=-Math.PI/2;floor.position.y=-.23;floor.receiveShadow=true;scene.add(floor);
-const worlds={...createWorlds(T),...createMechanisms(T)};for(const [name,w]of Object.entries(worlds)){w.root.name='world-'+name;w.root.visible=false;scene.add(w.root);w.root.traverse(o=>{if(o.isMesh){o.castShadow=true;o.receiveShadow=true;o.frustumCulled=false}})}
+const worlds={...createTransactions(T),...createEconomics(T),...createInstitutions(T)};for(const [name,w]of Object.entries(worlds)){w.root.name='world-'+name;w.root.visible=false;scene.add(w.root);w.root.traverse(o=>{if(o.isMesh){o.castShadow=true;o.receiveShadow=true;o.frustumCulled=false}})}
 let fabMixer,fabCamera,fabRoot;
 async function loadFab(){const g=await new GLTFLoader().loadAsync(DATA.assets.scene);fabRoot=g.scene;fabRoot.updateMatrixWorld(true);const remove=[],groups=new Map();
   fabRoot.traverse(o=>{if(!o.isMesh||Array.isArray(o.material))return;const name=o.material.name;if(/Silicon thin film/.test(name)){o.material.color.set('#365473');o.material.roughness=.26;o.material.metalness=.75;o.material.envMapIntensity=.65}if(/Brushed stainless/.test(name)){o.material.color.set('#6c808c');o.material.roughness=.37}if(/white|porcelain/i.test(name))o.material.roughness=.52;
@@ -90,15 +96,15 @@ function cameraFor(w,shot,u){const q=smooth(u);if(shot.world==='fab'){
     if(shot.id==='return-die'){camera.position.set(3.7,4,4.3);camera.lookAt(.45,.45,0);camera.fov=33}
   }camera.updateProjectionMatrix();camera.updateMatrixWorld();}
 function setCaption(row,t){const text=locale==='off'?'':row[locale]||row.en;const live=t>=row.start&&t<=row.end+.18?text:'';$('caption').firstElementChild.textContent=live;$('caption').style.display=live?'block':'none';$('read-caption').textContent=live;$('read-caption').style.visibility=locale==='off'?'hidden':'visible';}
-function draw(t){if(!Number.isFinite(t))return;current=clamp(t,0,duration);const row=currentRow(current),shot=currentShot(current),w=worlds[shot.world];if(!w)return;for(const [k,v]of Object.entries(worlds))v.root.visible=k===shot.world;const u=clamp((current-shot.t0)/(shot.t1-shot.t0));w.update(u,shot.phase);floor.visible=shot.world!=='fab';cameraFor(w,shot,u);renderer.render(scene,camera);frameCount++;
+function draw(t){if(!Number.isFinite(t))return;current=clamp(t,0,duration);const row=currentRow(current),shot=currentShot(current),w=worlds[shot.world];if(!w)return;for(const [k,v]of Object.entries(worlds))v.root.visible=k===shot.world;const u=clamp((current-shot.t0)/(shot.t1-shot.t0));w.update(u,shot.phase);floor.visible=shot.world!=='fab';const look=worldLook(shot.world);scene.background.set(look.background);scene.fog.color.copy(scene.background);floor.material.color.set(look.floor);key.color.set(look.key);rim.color.set(look.rim);cameraFor(w,shot,u);renderer.render(scene,camera);frameCount++;
   $('seek').value=$('fs-seek').value=current;$('time').textContent=$('fs-time').textContent=`${fmt(current)} / ${fmt(duration)}`;setCaption(row,current);
-  const chapter=chapters.find(c=>c.id===shot.chapter);$('chapter-label').textContent=chapter.title;$('chapter-index').textContent=`${String(chapters.indexOf(chapter)+1).padStart(2,'0')} / 10`;$('disclosure').textContent=w.disclosure;
+  const chapter=chapters.find(c=>c.id===shot.chapter);$('chapter-label').textContent=chapter.title;$('chapter-index').textContent=`${String(chapters.indexOf(chapter)+1).padStart(2,'0')} / ${String(chapters.length).padStart(2,'0')}`;$('disclosure').textContent=w.disclosure;
   updateCinema($,row,shot,current);
   // A short chapter boundary fade, never a blanket transition on every sentence.
   const isNewChapter=shot===shots.find(s=>s.chapter===shot.chapter);$('veil').style.opacity=isNewChapter?String(.3*(1-smooth((current-shot.t0)/.45))):'0';
   if(row!==lastRow){lastRow=row;document.querySelectorAll('#transcript-list button[data-row]').forEach(b=>b.setAttribute('aria-current',String(b.dataset.row===row.id)));document.querySelectorAll('#chapters button').forEach(b=>b.setAttribute('aria-current',String(b.dataset.chapter===row.chapter)));renderPassageEvidence(row)}activeShot=shot;
 }
-function persist(){try{localStorage.setItem('cib-s1e01-r4',JSON.stringify({time:current>=duration-.2?0:current,locale,muted}))}catch{}}
+function persist(){try{localStorage.setItem('cib-s1e01-r5',JSON.stringify({time:current>=duration-.2?0:current,locale,muted}))}catch{}}
 function pause(){playRequest++;pendingPlay=false;playing=false;buffering=false;narration.pause();stopSfx();$('play').textContent=$('fs-play').textContent='▶';$('play').setAttribute('aria-label','Play');$('fs-play').setAttribute('aria-label','Play');$('start').style.display=headless?'none':'grid';$('status').textContent=current>=duration-.02?'Finished · replay available':'Paused';persist();}
 function seek(t){pause();current=clamp(Number(t)||0,0,duration);narration.currentTime=Math.min(current,Math.max(0,duration-.001));draw(current);persist();}
 async function play(){if(!window.__ready||pendingPlay)return;const request=++playRequest;pendingPlay=true;try{soundRequested=true;$('status').textContent='Preparing audio';const preparation=prepareAudio();const resumed=context.resume();await Promise.all([preparation,resumed]);if(request!==playRequest)return;if(current>=duration-.05){current=0;draw(0)}narration.currentTime=current;narration.muted=muted;await narration.play();if(request!==playRequest)return;startSfx(narration.currentTime);pendingPlay=false;playing=true;$('play').textContent=$('fs-play').textContent='Ⅱ';$('play').setAttribute('aria-label','Pause');$('fs-play').setAttribute('aria-label','Pause');$('start').style.display='none';$('status').textContent='Playing';$('error').style.display='none'}catch(e){if(request!==playRequest)return;pendingPlay=false;playing=false;narration.pause();stopSfx();audioError=String(e);$('status').textContent='Audio needs retry';showError('Audio could not start. Your position is preserved. '+String(e),play)}}
@@ -122,7 +128,7 @@ function loop(wall){if(playing){if(!renderer.isSoftwareRenderer||wall-lastDrawWa
 function renderPassageEvidence(row){const out=$('passage-evidence');out.replaceChildren();const h=document.createElement('h3');h.textContent=`${fmt(row.start)} · ${row.en}`;out.append(h);for(const id of row.claim||[]){const c=DATA.claims.find(c=>c.id===id);if(!c)continue;const item=document.createElement('section'),name=document.createElement('strong'),p=document.createElement('p'),limit=document.createElement('p');name.textContent=`${c.id} · ${c.kind.replaceAll('_',' ')}`;p.textContent=c.claim;limit.textContent='Limit: '+c.limitation;item.append(name,p,limit);for(const sourceID of c.sources){const source=DATA.sources.find(s=>s.id===sourceID);if(!source)continue;const a=document.createElement('a');a.href=source.url;a.target='_blank';a.rel='noopener noreferrer';a.textContent=`${source.id} · ${source.title} — ${c.locator||source.locator}`;item.append(a,document.createElement('br'))}out.append(item)}}
 function makeInterface(){for(const c of chapters){const li=document.createElement('li'),b=document.createElement('button'),stamp=document.createElement('span');stamp.textContent=fmt(c.start);b.append(stamp,document.createTextNode(c.title));b.dataset.chapter=c.id;b.onclick=()=>seek(c.start);li.append(b);$('chapters').append(li)}for(const row of rows){const wrap=document.createElement('div');wrap.className='passage';const b=document.createElement('button');b.dataset.row=row.id;const time=document.createElement('span');time.textContent=fmt(row.start);const text=document.createElement('span');text.append(document.createTextNode(row.en));const ko=document.createElement('span');ko.className='ko';ko.textContent=row.ko;text.append(ko);b.append(time,text);b.onclick=()=>seek(row.start);const evidence=document.createElement('button');evidence.className='passage-evidence-button';evidence.textContent='Evidence';evidence.setAttribute('aria-label',`Evidence for passage at ${fmt(row.start)}`);evidence.onclick=()=>{seek(row.start);renderPassageEvidence(row);panel('sources',true);$('sources').scrollIntoView({block:'start'})};wrap.append(b,evidence);$('transcript-list').append(wrap)}
   for(const s of DATA.sources){const d=document.createElement('div'),title=document.createElement('strong'),p=document.createElement('p'),a=document.createElement('a');title.textContent=s.id+' · '+s.title;p.textContent=s.note;a.href=s.url;a.textContent=s.locator||'Original source';a.target='_blank';a.rel='noopener noreferrer';d.append(title,p,a);$('source-list').append(d)}
-  const d=document.createElement('p');d.textContent='All 3D objects and documentary summaries are authored illustrations. Sources establish facts, not rights to reproduce their entire pages. Local synthetic voice: Kokoro bm_george. Three.js r170 MIT. Full listening and independent release approval are not claimed.';$('source-list').append(d);
+  const d=document.createElement('p');d.textContent='All 3D objects and documentary summaries are authored illustrations. Capacity and yield counts are teaching models, not TSMC data. The Cirrus payments are future obligations disclosed in FY1997, not a claim of cash already paid. Sources establish facts, not rights to reproduce their entire pages. Local synthetic voice: Kokoro bm_george. Three.js r170 MIT. Full listening and independent release approval are not claimed.';$('source-list').append(d);
   $('third-party-notices').textContent=DATA.notices;
 }
 function digest(){const gl=renderer.getContext(),w=renderer.domElement.width,h=renderer.domElement.height,a=new Uint8Array(w*h*4);gl.readPixels(0,0,w,h,gl.RGBA,gl.UNSIGNED_BYTE,a);let hash=2166136261;for(const v of a)hash=Math.imul(hash^v,16777619)>>>0;return hash.toString(16)}
@@ -131,5 +137,5 @@ $('run-qa').onclick=diagnostics;$('jump-end').onclick=()=>seek(duration-.8);
 window.__seek=seek;window.__timeline={SHOTS:shots,SPEECH:rows.map(r=>[r.en,r.start,r.end,false,r.chapter,0]),SCORE:cueSpecs};
 const audioAPI={prepare:prepareAudio,getBuffer:()=>sfxBuffer,verify:async()=>{const a=await bakeScore(),b=await bakeScore();return{...checksum(a),equal:a.every((v,i)=>v===b[i]),method:'independent OfflineAudioContext cue bakes',declaredNarrationSHA256:DATA.audio_sha256}},setEnabled:async enabled=>{const request=++muteRequest;if(enabled)await prepareAudio();if(request===muteRequest)setMuted(!enabled)},get status(){return audioState},get error(){return audioError},get enabled(){return!muted},get requested(){return soundRequested}};
 window.__meta={title:DATA.script.title,duration,fps:30,aspects:['16:9'],aspect:'16:9',setAspect:a=>{if(a!==0&&a!=='16:9')throw new Error('Only the commissioned 16:9 picture is supported');resize()},audio:audioAPI,starter:false,loop:false,play,pause,get time(){return current},get playing(){return playing},get frameCount(){return frameCount}};window.__film={duration,fps:30,seek,play,pause};window.__state=()=>({time:current,playing,pendingPlay,buffering,audioTime:narration.currentTime,audioPaused:narration.paused,audioState,shot:activeShot?.id,world:activeShot?.world,phase:activeShot?.phase,backend:renderer.isSoftwareRenderer?'cpu-3d':'webgl',resolution:[renderer.domElement.width,renderer.domElement.height],sceneState:worlds[activeShot?.world]?.state?.(),frames:frameCount,errors:runtimeErrors});
-async function start(){try{makeInterface();await loadFab();if(!headless&&!qa){try{const saved=JSON.parse(localStorage.getItem('cib-s1e01-r4'));if(saved){current=Number.isFinite(saved.time)?clamp(saved.time,0,duration):0;locale=['ko','en','off'].includes(saved.locale)?saved.locale:'ko';muted=Boolean(saved.muted)}}catch{}}$('locale').value=$('fs-locale').value=locale;$('seek').max=$('fs-seek').max=duration;resize();await document.fonts.ready;window.__ready=true;$('play').disabled=$('big-play').disabled=$('fs-play').disabled=false;$('status').textContent=current>0?'Restored · paused':'Ready';setMuted(muted);draw(current);requestAnimationFrame(loop);window.addEventListener('resize',resize);document.addEventListener('fullscreenchange',resize)}catch(e){runtimeErrors.push(String(e));$('status').textContent='Film could not load';showError(String(e),()=>location.reload())}}
+async function start(){try{makeInterface();await loadFab();if(!headless&&!qa){try{const saved=JSON.parse(localStorage.getItem('cib-s1e01-r5'));if(saved){current=Number.isFinite(saved.time)?clamp(saved.time,0,duration):0;locale=['ko','en','off'].includes(saved.locale)?saved.locale:'ko';muted=Boolean(saved.muted)}}catch{}}$('locale').value=$('fs-locale').value=locale;$('seek').max=$('fs-seek').max=duration;resize();await document.fonts.ready;window.__ready=true;$('play').disabled=$('big-play').disabled=$('fs-play').disabled=false;$('status').textContent=current>0?'Restored · paused':'Ready';setMuted(muted);draw(current);requestAnimationFrame(loop);window.addEventListener('resize',resize);document.addEventListener('fullscreenchange',resize)}catch(e){runtimeErrors.push(String(e));$('status').textContent='Film could not load';showError(String(e),()=>location.reload())}}
 start();

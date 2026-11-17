@@ -1,5 +1,7 @@
 # 261117 · S1E01 full-film continuation
 
+> Historical R3/R4 direction. The director rejected the slow definition and repeated through-object treatment. [direction-r5.md](direction-r5.md) is the governing current direction; this record is retained for continuity, not current approval.
+
 Continues PR #4 at eb46445; accepted takeover claim 98c6d010. Source, old English draft and six-second scene remain intact. This folder is the new full edit, not a reset of the slate.
 
 ## Story and picture contract

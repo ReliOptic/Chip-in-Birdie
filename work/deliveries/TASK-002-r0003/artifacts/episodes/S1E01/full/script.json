@@ -1,0 +1,582 @@
+{
+  "revision": "S1E01-full-r5",
+  "title": "TSMC — Who pays for the factory?",
+  "audience_ref": "channel/audience.json",
+  "language_master": "en",
+  "timing": "Actual synthesized utterance samples; captions use measured utterance boundaries, not guessed word timing",
+  "chapters": [
+    {
+      "id": "opening",
+      "title": "Buy production. Not a factory.",
+      "ko": "생산을 사되, 공장은 사지 않는다"
+    },
+    {
+      "id": "founder",
+      "title": "What a founder no longer has to finance",
+      "ko": "창업자가 직접 마련하지 않아도 되는 것"
+    },
+    {
+      "id": "taiwan",
+      "title": "Someone still pays for the factory",
+      "ko": "공장 비용을 부담하는 쪽"
+    },
+    {
+      "id": "volume",
+      "title": "Fill the same expensive assets",
+      "ko": "같은 설비를 더 많은 주문으로"
+    },
+    {
+      "id": "trust",
+      "title": "A customer, not a product rival",
+      "ko": "고객인가, 경쟁자인가"
+    },
+    {
+      "id": "quality",
+      "title": "Usable chips change the bill",
+      "ko": "쓸 수 있는 칩이 비용을 바꾼다"
+    },
+    {
+      "id": "commitment",
+      "title": "What the real contract required",
+      "ko": "실제 계약이 요구한 대가"
+    },
+    {
+      "id": "closing",
+      "title": "Two businesses worth financing",
+      "ko": "각자 투자할 이유가 생긴다"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "b01",
+      "chapter": "opening",
+      "shot": "deal-opening",
+      "world": "deal",
+      "phase": "opening",
+      "claim": [
+        "M01",
+        "I05"
+      ],
+      "en": "A chip company could launch without first buying a factory. TSMC would make its chips.",
+      "ko": "칩 회사는 공장을 먼저 사지 않고도 출발할 수 있었습니다. TSMC가 그 칩을 만들어주는 것입니다.",
+      "pause_after": 0.16
+    },
+    {
+      "id": "b02",
+      "chapter": "opening",
+      "shot": "deal-roles",
+      "world": "deal",
+      "phase": "roles",
+      "claim": [
+        "M01"
+      ],
+      "en": "The fabless company designs and sells the chip. The foundry manufactures it.",
+      "ko": "팹리스는 칩을 설계하고 판매하고, 파운드리는 그 칩을 생산합니다.",
+      "pause_after": 0.16
+    },
+    {
+      "id": "b03",
+      "chapter": "opening",
+      "shot": "deal-terms",
+      "world": "deal",
+      "phase": "terms",
+      "claim": [
+        "H11"
+      ],
+      "en": "Cirrus Logic's contracts show the exchange: TSMC guaranteed quantities of wafers; its customer promised to buy a minimum amount.",
+      "ko": "시러스 로직의 계약에는 그 교환이 드러납니다. TSMC는 웨이퍼 공급 물량을 보장하고, 고객은 최소 물량을 구매하기로 약속했습니다.",
+      "pause_after": 0.16
+    },
+    {
+      "id": "b05",
+      "chapter": "founder",
+      "shot": "founder-bundle",
+      "world": "founder",
+      "phase": "bundle",
+      "claim": [
+        "I05"
+      ],
+      "en": "Pitching a chip and building its factory are two different investment risks. One needs a winning product; the other needs a working production line.",
+      "ko": "칩 사업과 공장 건설은 서로 다른 투자 위험입니다. 하나에는 팔리는 제품이, 다른 하나에는 제대로 작동하는 생산라인이 필요합니다.",
+      "pause_after": 0.16
+    },
+    {
+      "id": "b06",
+      "chapter": "founder",
+      "shot": "founder-asset",
+      "world": "founder",
+      "phase": "asset",
+      "claim": [
+        "I05"
+      ],
+      "en": "Equipment, facilities and manufacturing specialists cost money before a successful product has paid for them.",
+      "ko": "설비와 시설, 제조 전문인력에는 제품이 성공해서 돈을 벌기 전부터 자금이 들어갑니다.",
+      "pause_after": 0.16
+    },
+    {
+      "id": "b07",
+      "chapter": "founder",
+      "shot": "founder-without",
+      "world": "founder",
+      "phase": "without",
+      "claim": [
+        "H02",
+        "I05"
+      ],
+      "en": "Chang recalled designers who wanted to start companies but could not raise the money for a fab. A foundry could remove that particular barrier.",
+      "ko": "장중머우는 창업하고 싶지만 공장 자금을 마련하지 못한 설계자들을 회고했습니다. 파운드리는 바로 그 장벽을 낮출 수 있었습니다.",
+      "pause_after": 0.16
+    },
+    {
+      "id": "b10",
+      "chapter": "founder",
+      "shot": "founder-remaining",
+      "world": "founder",
+      "phase": "remaining",
+      "claim": [
+        "I05"
+      ],
+      "en": "It is not a free launch. Design, masks, testing, packaging and working capital still cost money. A failed product is still the customer's problem.",
+      "ko": "창업 비용이 없어지는 것은 아닙니다. 설계와 마스크, 검사와 패키징, 운영자금은 여전히 필요합니다. 제품 실패의 위험도 고객에게 남습니다.",
+      "pause_after": 0.16
+    },
+    {
+      "id": "b11",
+      "chapter": "founder",
+      "shot": "founder-price",
+      "world": "founder",
+      "phase": "price",
+      "claim": [
+        "I05"
+      ],
+      "en": "A company with enough steady demand might still justify its own fab. The change was a viable route for companies that could not.",
+      "ko": "꾸준한 물량이 충분한 회사라면 자체 공장에 투자할 수도 있습니다. 달라진 것은, 그렇게 할 수 없는 회사에도 진입 경로가 생겼다는 점입니다.",
+      "pause_after": 0.16
+    },
+    {
+      "id": "b12",
+      "chapter": "taiwan",
+      "shot": "founding-choice",
+      "world": "founding",
+      "phase": "choice",
+      "claim": [
+        "H01",
+        "H03"
+      ],
+      "en": "For Taiwan, the other side of that deal was the opportunity. In nineteen eighty-five, Morris Chang judged manufacturing a more promising starting strength than chip design or marketing.",
+      "ko": "대만에는 그 거래의 반대편이 기회였습니다. 1985년, 장중머우는 칩 설계나 마케팅보다 제조를 출발점으로 삼는 편이 유망하다고 판단했습니다.",
+      "pause_after": 0.16
+    },
+    {
+      "id": "b13",
+      "chapter": "taiwan",
+      "shot": "founding-capital",
+      "world": "founding",
+      "phase": "capital",
+      "claim": [
+        "H05"
+      ],
+      "en": "TSMC began in nineteen eighty-seven with roughly two hundred and twenty million dollars of initial investment, according to Chang's later account.",
+      "ko": "장중머우의 훗날 회고에 따르면, TSMC는 약 2억 2천만 달러의 초기 투자금으로 1987년 출발했습니다.",
+      "pause_after": 0.16
+    },
+    {
+      "id": "b14",
+      "chapter": "taiwan",
+      "shot": "founding-partners",
+      "world": "founding",
+      "phase": "partners",
+      "claim": [
+        "H05",
+        "I06"
+      ],
+      "en": "Government: forty-eight percent. Philips: about twenty-seven. Other Taiwanese investors: about a quarter. Manufacturing capital was concentrated here instead of being required from every customer.",
+      "ko": "정부 48%, 필립스 약 27%, 다른 대만 투자자 약 25%. 모든 고객이 각자 마련하는 대신, 제조 자본이 이곳에 모였습니다.",
+      "pause_after": 0.16
+    },
+    {
+      "id": "b15",
+      "chapter": "taiwan",
+      "shot": "founding-resources",
+      "world": "founding",
+      "phase": "resources",
+      "claim": [
+        "H06",
+        "H07"
+      ],
+      "en": "ITRI contributed facilities, equipment, technology and ninety-eight professionals. The manufacturing base came from accumulated work and agreements, not a free factory.",
+      "ko": "ITRI가 시설과 장비, 기술, 전문인력 98명을 이전했습니다. 축적된 역량과 계약을 통해 제조 기반이 이어진 것이지, 공짜 공장이 생긴 것은 아닙니다.",
+      "pause_after": 0.16
+    },
+    {
+      "id": "b16",
+      "chapter": "taiwan",
+      "shot": "founding-operating",
+      "world": "founding",
+      "phase": "operating",
+      "claim": [
+        "I06"
+      ],
+      "en": "Now the investors owned a manufacturing business. Their return depended on other companies bringing enough work to make those assets earn.",
+      "ko": "이제 투자자들은 제조사업을 갖게 됐습니다. 그 설비가 돈을 벌 만큼 다른 회사들이 충분한 일을 맡겨야 투자수익이 생깁니다.",
+      "pause_after": 0.16
+    },
+    {
+      "id": "b17",
+      "chapter": "volume",
+      "shot": "bookings-alone",
+      "world": "bookings",
+      "phase": "alone",
+      "claim": [
+        "I06"
+      ],
+      "en": "A small design company might need only part of a factory's output. Owning the whole line would leave it paying for capacity its own product could not fill.",
+      "ko": "작은 설계회사의 제품 하나로는 공장 전체 생산능력을 채우기 어렵습니다. 라인 전체를 소유하면 쓰지 못하는 생산능력의 비용까지 부담합니다.",
+      "pause_after": 0.16
+    },
+    {
+      "id": "b18",
+      "chapter": "volume",
+      "shot": "bookings-shared",
+      "world": "bookings",
+      "phase": "shared",
+      "claim": [
+        "I06"
+      ],
+      "en": "A foundry can put compatible orders from several customers through shared facilities. Each customer buys production; it need not buy a duplicate set of those facilities.",
+      "ko": "파운드리는 호환되는 여러 고객의 주문을 공통 시설에서 생산할 수 있습니다. 각 고객은 생산을 구매하지, 똑같은 시설을 한 벌씩 살 필요는 없습니다.",
+      "pause_after": 0.16
+    },
+    {
+      "id": "b19",
+      "chapter": "volume",
+      "shot": "bookings-spread",
+      "world": "bookings",
+      "phase": "spread",
+      "claim": [
+        "I06"
+      ],
+      "en": "For the manufacturer, fuller facilities spread fixed costs across more output. It can earn from several product companies instead of depending on a single product's success.",
+      "ko": "제조사는 시설을 더 채워 고정비를 더 많은 생산량에 나눌 수 있습니다. 자기 제품 하나의 성공뿐 아니라 여러 제품회사의 주문으로 매출을 얻습니다.",
+      "pause_after": 0.16
+    },
+    {
+      "id": "b20",
+      "chapter": "volume",
+      "shot": "bookings-incompatible",
+      "world": "bookings",
+      "phase": "incompatible",
+      "claim": [
+        "I06"
+      ],
+      "en": "Only compatible work can share a process. These bookings do not mean every chip can run through interchangeable equipment.",
+      "ko": "같은 공정에서 나눠 만들 수 있는 주문이어야 합니다. 모든 칩을 어느 설비에서나 만들 수 있다는 뜻은 아닙니다.",
+      "pause_after": 0.16
+    },
+    {
+      "id": "b21",
+      "chapter": "volume",
+      "shot": "bookings-slump",
+      "world": "bookings",
+      "phase": "slump",
+      "claim": [
+        "I06"
+      ],
+      "en": "And several customers can slow down together. Shared capacity reduces duplication; it does not cancel the semiconductor cycle. Empty slots still leave an expensive factory behind.",
+      "ko": "여러 고객의 수요가 동시에 줄 수도 있습니다. 시설 공유는 중복 투자를 줄일 수 있지만 경기순환을 없애지는 못합니다. 주문이 비어도 값비싼 공장은 남습니다.",
+      "pause_after": 0.16
+    },
+    {
+      "id": "b22",
+      "chapter": "volume",
+      "shot": "bookings-overflow",
+      "world": "bookings",
+      "phase": "overflow",
+      "claim": [
+        "H02"
+      ],
+      "en": "Chang saw a particular problem with established chipmakers: they might send overflow work, then take it back when their own factories had room.",
+      "ko": "장중머우는 기존 반도체 회사의 주문에서 문제를 봤습니다. 생산능력이 부족할 때 맡긴 물량을, 자기 공장에 여유가 생기면 다시 가져갈 수 있었습니다.",
+      "pause_after": 0.16
+    },
+    {
+      "id": "b23",
+      "chapter": "volume",
+      "shot": "bookings-growth",
+      "world": "bookings",
+      "phase": "growth",
+      "claim": [
+        "H02",
+        "H08"
+      ],
+      "en": "Independent design companies offered a different possibility: recurring customers whose growth needed external manufacturing. That market was uncertain at the start; Chang recalled faster growth around nineteen ninety-one and ninety-two.",
+      "ko": "독립 설계회사에는 다른 가능성이 있었습니다. 성장할수록 외부 생산이 필요한 지속적 고객이 되는 것입니다. 처음부터 확실한 시장은 아니었고, 장중머우는 1991~92년 무렵 성장이 빨라졌다고 회고했습니다.",
+      "pause_after": 0.16
+    },
+    {
+      "id": "b24",
+      "chapter": "trust",
+      "shot": "trust-rival",
+      "world": "trust",
+      "phase": "rival",
+      "claim": [
+        "I03"
+      ],
+      "en": "There was another cost, harder to put on an invoice. Would you give your next product to a manufacturer that also wanted to sell a competing chip?",
+      "ko": "청구서에 적히지 않는 비용도 있었습니다. 다음 제품의 생산을, 경쟁 칩을 팔려는 제조사에 맡길 수 있을까요?",
+      "pause_after": 0.16
+    },
+    {
+      "id": "b25",
+      "chapter": "trust",
+      "shot": "trust-charter",
+      "world": "trust",
+      "phase": "charter",
+      "claim": [
+        "H04"
+      ],
+      "en": "TSMC's nineteen ninety-four report described a restriction on its own-brand chip products. Its proposition was to manufacture the customer's chip, not launch its own rival.",
+      "ko": "TSMC의 1994년 보고서는 자체 브랜드 칩 제품에 대한 제한을 설명합니다. 고객의 칩을 생산하되, 자체 경쟁 제품을 내놓는 사업은 하지 않겠다는 것입니다.",
+      "pause_after": 0.16
+    },
+    {
+      "id": "b26",
+      "chapter": "trust",
+      "shot": "trust-delivery",
+      "world": "trust",
+      "phase": "delivery",
+      "claim": [
+        "I03"
+      ],
+      "en": "A successful customer could bring more manufacturing orders. The foundry did not need to beat that customer in the market for its product.",
+      "ko": "고객의 성공은 추가 생산 주문이 될 수 있습니다. 파운드리가 고객의 제품 시장에서 직접 고객을 이길 필요는 없습니다.",
+      "pause_after": 0.16
+    },
+    {
+      "id": "b27",
+      "chapter": "trust",
+      "shot": "trust-competition",
+      "world": "trust",
+      "phase": "competition",
+      "claim": [
+        "H08",
+        "I03"
+      ],
+      "en": "The promise removed one conflict, not every conflict. Customers still had to trust the technology and delivery. Price, capacity and investment decisions could still put the two sides at odds.",
+      "ko": "경쟁하지 않겠다는 약속은 이해 충돌 하나를 줄인 것이지 전부 없앤 것은 아닙니다. 제조 능력과 납기를 믿을 수 있어야 했고, 가격과 생산능력을 두고는 여전히 충돌할 수 있었습니다.",
+      "pause_after": 0.16
+    },
+    {
+      "id": "b28",
+      "chapter": "quality",
+      "shot": "fab-handoff",
+      "world": "fab",
+      "phase": "handoff",
+      "claim": [
+        "M04",
+        "I07"
+      ],
+      "en": "What the customer buys is a repeatable manufacturing process, not simply a room full of machines.",
+      "ko": "고객이 구매하는 것은 기계가 가득한 방이 아니라, 같은 결과를 반복해서 만들어낼 수 있는 제조 공정입니다.",
+      "pause_after": 0.16
+    },
+    {
+      "id": "b29",
+      "chapter": "quality",
+      "shot": "yield-reject",
+      "world": "yield",
+      "phase": "reject",
+      "claim": [
+        "I07"
+      ],
+      "en": "Take a deliberately simplified choice. Supplier A charges one hundred cost units and returns sixty usable chips from a hundred candidates.",
+      "ko": "설명용 구매안을 비교해 보겠습니다. 공급자 A는 비용 100을 받고, 후보 칩 100개 중 쓸 수 있는 칩 60개를 제공합니다.",
+      "pause_after": 0.16
+    },
+    {
+      "id": "b30",
+      "chapter": "quality",
+      "shot": "yield-improve",
+      "world": "yield",
+      "phase": "improve",
+      "claim": [
+        "I07"
+      ],
+      "en": "Supplier B charges one hundred and twenty, twenty percent more, but returns ninety usable chips from a separate run of one hundred.",
+      "ko": "공급자 B는 20% 더 비싼 비용 120을 받지만, 별도의 생산에서 후보 칩 100개 중 쓸 수 있는 칩 90개를 제공합니다.",
+      "pause_after": 0.16
+    },
+    {
+      "id": "b31",
+      "chapter": "quality",
+      "shot": "yield-cost",
+      "world": "yield",
+      "phase": "cost",
+      "claim": [
+        "I07"
+      ],
+      "en": "Usable-chip cost is one point six seven with A, and one point three three with B. The more expensive run is cheaper per working chip.",
+      "ko": "쓸 수 있는 칩 한 개당 비용은 A가 1.67, B가 1.33입니다. 생산비는 더 비싸도, 정상 칩 기준으로는 더 쌉니다.",
+      "pause_after": 0.16
+    },
+    {
+      "id": "b32",
+      "chapter": "quality",
+      "shot": "yield-limit",
+      "world": "yield",
+      "phase": "limit",
+      "claim": [
+        "I07"
+      ],
+      "en": "In this example, B lowers that unit cost by twenty percent. A buyer needs price and expected usable output together; the wafer quote alone misses the bargain.",
+      "ko": "이 예에서 B의 정상 칩당 비용은 20% 낮습니다. 구매자는 가격과 예상 양품 수를 함께 봐야 합니다. 웨이퍼 견적만 보면 더 유리한 거래를 놓칩니다.",
+      "pause_after": 0.16
+    },
+    {
+      "id": "b33",
+      "chapter": "commitment",
+      "shot": "contract-terms",
+      "world": "contract",
+      "phase": "terms",
+      "claim": [
+        "H11",
+        "H12",
+        "H13"
+      ],
+      "en": "Cirrus was not purely fabless: it also held manufacturing stakes. But its nineteen ninety-seven filing reveals what securing outside production could cost.",
+      "ko": "시러스는 제조 지분도 가진 회사로, 순수 팹리스는 아니었습니다. 하지만 1997년 공시를 보면 외부 생산을 확보하는 데 어떤 대가가 따랐는지 알 수 있습니다.",
+      "pause_after": 0.16
+    },
+    {
+      "id": "b34",
+      "chapter": "commitment",
+      "shot": "contract-advance",
+      "world": "contract",
+      "phase": "advance",
+      "claim": [
+        "H12"
+      ],
+      "en": "Under a fiscal nineteen ninety-six agreement, Cirrus had promised roughly one hundred and eighteen million dollars in advance payments, split between fiscal nineteen ninety-eight and ninety-nine.",
+      "ko": "1996회계연도에 맺은 계약에서 시러스는 약 1억 1,800만 달러를 선급하기로 약속했습니다. 지급 시기는 1998·1999회계연도에 절반씩이었습니다.",
+      "pause_after": 0.16
+    },
+    {
+      "id": "b36",
+      "chapter": "commitment",
+      "shot": "contract-renegotiate",
+      "world": "contract",
+      "phase": "renegotiate",
+      "claim": [
+        "H12"
+      ],
+      "en": "Those terms were already under review. Cirrus said long-term purchase commitments might replace the advance payments; there was no new written agreement yet.",
+      "ko": "그 조건은 이미 재검토 중이었습니다. 시러스는 선급금이 장기 구매 약정으로 바뀔 수 있다고 했지만, 새로운 서면합의는 아직 없었습니다.",
+      "pause_after": 0.16
+    },
+    {
+      "id": "b37",
+      "chapter": "commitment",
+      "shot": "contract-shortfall",
+      "world": "contract",
+      "phase": "shortfall",
+      "claim": [
+        "H11"
+      ],
+      "en": "Both its fiscal nineteen ninety-three and ninety-six agreements had a shortfall condition. TSMC could try reselling the allocation that Cirrus failed to purchase.",
+      "ko": "1993년과 1996년 회계연도에 체결한 두 계약 모두 구매 미달 조건이 있었습니다. 시러스가 사지 않은 할당 물량을 TSMC가 다른 고객에게 판매할 수 있었습니다.",
+      "pause_after": 0.16
+    },
+    {
+      "id": "b38",
+      "chapter": "commitment",
+      "shot": "contract-resold",
+      "world": "contract",
+      "phase": "resold",
+      "claim": [
+        "H11"
+      ],
+      "en": "If another customer bought it, that shortfall was not the part exposed to the stated penalty. If it remained unsold, a per-wafer penalty could apply.",
+      "ko": "다른 고객에게 팔린 부족분은 이 페널티의 대상이 아니었습니다. 팔리지 않은 부족분에는 웨이퍼당 페널티가 붙을 수 있었습니다.",
+      "pause_after": 0.16
+    },
+    {
+      "id": "b39",
+      "chapter": "commitment",
+      "shot": "contract-penalty",
+      "world": "contract",
+      "phase": "penalty",
+      "claim": [
+        "I08"
+      ],
+      "en": "These terms put part of unused-capacity risk back on the buyer. Avoiding factory ownership did not remove the cost of a demand forecast going wrong.",
+      "ko": "이 조건은 유휴 생산능력 위험의 일부를 구매자에게 돌렸습니다. 공장을 소유하지 않아도 수요 예측이 빗나간 대가는 남았습니다.",
+      "pause_after": 0.16
+    },
+    {
+      "id": "b40",
+      "chapter": "commitment",
+      "shot": "contract-dependency",
+      "world": "contract",
+      "phase": "dependency",
+      "claim": [
+        "H13",
+        "I08"
+      ],
+      "en": "Buying wafers, reserving supply and holding a manufacturing stake trade capital for different levels of access and control. Asset-light does not mean obligation-free.",
+      "ko": "웨이퍼 구매, 공급 예약, 제조 지분 보유는 각각 자금과 공급 접근성·통제권을 다르게 맞바꿉니다. 자산이 가볍다고 의무까지 없는 것은 아닙니다.",
+      "pause_after": 0.16
+    },
+    {
+      "id": "b41",
+      "chapter": "closing",
+      "shot": "market-choices",
+      "world": "market",
+      "phase": "choices",
+      "claim": [
+        "I09"
+      ],
+      "en": "This is what changed the opportunity for a chip company: it could specialize in a product without first becoming a fully integrated manufacturer.",
+      "ko": "칩 회사의 기회가 달라진 지점은 이것입니다. 완전한 종합 제조업체가 되는 과정을 거치지 않고 제품 사업에 특화할 수 있게 된 것입니다.",
+      "pause_after": 0.16
+    },
+    {
+      "id": "b42",
+      "chapter": "closing",
+      "shot": "market-winners",
+      "world": "market",
+      "phase": "winners",
+      "claim": [
+        "I09"
+      ],
+      "en": "For the foundry, the opportunity ran the other way. Several product companies could support one manufacturing investment, when their orders fit its process.",
+      "ko": "파운드리의 기회는 반대편에 있었습니다. 공정에 맞는 주문이라면, 여러 제품 회사가 하나의 제조 투자를 뒷받침할 수 있었습니다.",
+      "pause_after": 0.16
+    },
+    {
+      "id": "b43",
+      "chapter": "closing",
+      "shot": "market-balance",
+      "world": "market",
+      "phase": "balance",
+      "claim": [
+        "I09"
+      ],
+      "en": "The gains were complementary, not automatic. Customers still carried product risk. The foundry still carried heavy assets and utilization risk. Contracts divided some of the exposure between them.",
+      "ko": "양쪽의 이익은 맞물렸지만 자동으로 생기지는 않았습니다. 고객에게는 제품 위험, 파운드리에는 큰 설비투자와 가동률 위험이 남았습니다. 계약이 그 일부를 양측에 나눴습니다.",
+      "pause_after": 0.16
+    },
+    {
+      "id": "b44",
+      "chapter": "closing",
+      "shot": "market-final",
+      "world": "market",
+      "phase": "final",
+      "claim": [
+        "I09"
+      ],
+      "en": "TSMC did not make factories unnecessary. It made owning one unnecessary for more chip companies, and made their growth the business of the factory.",
+      "ko": "TSMC가 공장을 필요 없게 만든 것은 아닙니다. 더 많은 칩 회사가 공장을 소유하지 않아도 되게 했고, 그들의 성장을 공장의 사업으로 만들었습니다.",
+      "pause_after": 0.4
+    }
+  ]
+}
