@@ -7,15 +7,15 @@
     "독립 전체 시청·청취 검수가 남으면 READY 또는 완성 편수로 올리지 않는 인계",
     "동일 최종 소스의 기존 Sites 배포 성공, 현재 공개 범위 보존, 실제 검수 관찰 및 남은 출시 관문 기록"
   ],
-  "attempt": 4,
+  "attempt": 5,
   "audience_ref": "channel/audience.json",
   "blocked_reason": null,
   "claim": {
-    "actor": "codex-root-s1e01-r6",
-    "claimed_at": "2026-11-17T16:25:03.736124Z",
-    "lease_expires_at": "2026-11-18T00:25:03.736142Z",
+    "actor": "codex-root-s1e01-r7",
+    "claimed_at": "2026-11-17T19:10:07.973841Z",
+    "lease_expires_at": "2026-11-18T03:10:07.973855Z",
     "model": "GPT-6",
-    "session_id": "chat-20261117-s1e01-r6-archive",
+    "session_id": "chat-20261117-s1e01-r7-film",
     "session_id_source": "explicit"
   },
   "current_delivery_id": "TASK-002-r0004",
@@ -208,6 +208,37 @@
       "delivery_id": "TASK-002-r0004",
       "event": "SUBMITTED",
       "revision": 4
+    },
+    {
+      "actor": "codex-root-s1e01-r7",
+      "at": "2026-11-17T19:10:07.868271Z",
+      "event": "BLOCK",
+      "preserved_delivery_id": "TASK-002-r0004",
+      "previous_state": "IN_REVIEW",
+      "reason": "Director rejects removal of 3D: wants cinematic spatial events, causal action and varied shot staging; archive-only R6 does not satisfy the full 3D film request.",
+      "revision": 4
+    },
+    {
+      "actor": "codex-root-s1e01-r7",
+      "at": "2026-11-17T19:10:07.918812Z",
+      "event": "RETRY",
+      "preserved_delivery_id": "TASK-002-r0004",
+      "previous_state": "BLOCKED",
+      "reason": "Continue same S1E01 and PR #4: cinematic 3D sequences integrated with existing documentary evidence and full measured narration, not another orbiting object demo.",
+      "revision": 4
+    },
+    {
+      "actor": "codex-root-s1e01-r7",
+      "at": "2026-11-17T19:10:07.973868Z",
+      "claim": {
+        "actor": "codex-root-s1e01-r7",
+        "claimed_at": "2026-11-17T19:10:07.973841Z",
+        "lease_expires_at": "2026-11-18T03:10:07.973855Z",
+        "model": "GPT-6",
+        "session_id": "chat-20261117-s1e01-r7-film",
+        "session_id_source": "explicit"
+      },
+      "event": "CLAIMED"
     }
   ],
   "objective": "PR #4의 동일 S1E01 전체본을 실제 사진·당시 제품·1차 문서·설명 그래픽 중심의 아카이브 다큐멘터리로 수정하고 기존 Sites의 현재 공개 범위를 유지하여 배포한다. 엔비디아의 1997년 공급 문제에서 TSMC 창업의 고객·투자·생산 위험으로 이어지는 전체 이야기, 실측 영어 음성, 한국어/영어 자막, 문장별 근거·사진 권리 UI와 정확한 리비전의 검증을 인계한다. 독립 시청·청취 승인 및 유튜브 출시는 별개로 남긴다.",
@@ -219,8 +250,8 @@
   ],
   "revision": 4,
   "scope": "episode",
-  "status": "IN_REVIEW",
+  "status": "CLAIMED",
   "task_id": "TASK-002",
   "title": "S1E01 / H039 · PR #4 전체 아카이브 다큐멘터리 R6",
-  "updated_at": "2026-11-17T17:27:19.592968Z"
+  "updated_at": "2026-11-17T19:10:07.973871Z"
 }
