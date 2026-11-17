@@ -6,13 +6,15 @@
     "정확한 산출물 SHA, 실행 가능한 검증 코드, 실제 검증과 미검증의 구분",
     "독립 전체 시청·청취 검수가 남으면 READY 또는 완성 편수로 올리지 않는 인계"
   ],
+  "attempt": 2,
   "audience_ref": "channel/audience.json",
+  "blocked_reason": null,
   "claim": {
-    "actor": "codex-root-s1e01",
-    "claimed_at": "2026-11-17T06:43:51.918096Z",
-    "lease_expires_at": "2026-11-17T14:43:51.918098Z",
+    "actor": "codex-root-s1e01-r4",
+    "claimed_at": "2026-11-17T10:06:46.050410Z",
+    "lease_expires_at": "2026-11-17T18:06:46.050425Z",
     "model": "GPT-6",
-    "session_id": "chat-20261117-s1e01-full",
+    "session_id": "chat-20261117-s1e01-r4-sites",
     "session_id_source": "explicit"
   },
   "current_delivery_id": "TASK-002-r0001",
@@ -72,6 +74,37 @@
       "delivery_id": "TASK-002-r0001",
       "event": "SUBMITTED",
       "revision": 1
+    },
+    {
+      "actor": "codex-root-s1e01-r4",
+      "at": "2026-11-17T10:06:45.938492Z",
+      "event": "BLOCK",
+      "preserved_delivery_id": "TASK-002-r0001",
+      "previous_state": "IN_REVIEW",
+      "reason": "Director requested substantive picture/story improvement and Sites deployment; prior review build is not accepted",
+      "revision": 1
+    },
+    {
+      "actor": "codex-root-s1e01-r4",
+      "at": "2026-11-17T10:06:45.996582Z",
+      "event": "RETRY",
+      "preserved_delivery_id": "TASK-002-r0001",
+      "previous_state": "BLOCKED",
+      "reason": "Continue the same full S1E01 from PR #4 under the new explicit revision/deployment request",
+      "revision": 1
+    },
+    {
+      "actor": "codex-root-s1e01-r4",
+      "at": "2026-11-17T10:06:46.050437Z",
+      "claim": {
+        "actor": "codex-root-s1e01-r4",
+        "claimed_at": "2026-11-17T10:06:46.050410Z",
+        "lease_expires_at": "2026-11-17T18:06:46.050425Z",
+        "model": "GPT-6",
+        "session_id": "chat-20261117-s1e01-r4-sites",
+        "session_id_source": "explicit"
+      },
+      "event": "CLAIMED"
     }
   ],
   "objective": "PR #4를 이어 S1E01 전체 3D 다큐멘터리를 구현한다. 채널 공통 관객이 창업 선택·제조 능력·고객 관계를 한 편으로 이해하게 하고, 실제 음성에 맞춘 전체 영상·자막·출처 UI와 검증 가능한 소스를 인계한다. 출시 승인은 별도 검수로 남긴다.",
@@ -83,8 +116,8 @@
   ],
   "revision": 1,
   "scope": "episode",
-  "status": "IN_REVIEW",
+  "status": "CLAIMED",
   "task_id": "TASK-002",
   "title": "S1E01 / H039 · PR #4 전체 3D 다큐멘터리 후속 제작",
-  "updated_at": "2026-11-17T07:38:56.830835Z"
+  "updated_at": "2026-11-17T10:06:46.050440Z"
 }
