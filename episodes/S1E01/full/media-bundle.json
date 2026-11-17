@@ -2,157 +2,113 @@
   "schema_version": "1.0",
   "episode_id": "S1E01",
   "catalog_id": "H039",
-  "revision": "S1E01-full-r5",
-  "status": "PRIVATE_REVIEW_DEPLOYED_NOT_RELEASE_READY",
+  "revision": "S1E01-full-r6",
+  "status": "SITES_REVIEW_DEPLOYED_NOT_RELEASE_READY",
   "source_pr": "https://github.com/ReliOptic/Chip-in-Birdie/pull/4",
-  "continued_from_commit": "28054bb5ca66432b451ab0b1327cdd212907e1fc",
-  "accepted_claim_commit": "d562f74ec45b3deb3591a1d5c8f4ab0463bf632f",
-  "script_sha256": "8c26607be81fa33f1f3099adb65d52fe8672f21ab138259d0b6b0cc949733db9",
+  "continued_from_commit": "6cc791f4e249a528a95a5905e70b32f1d7ba88ea",
+  "accepted_claim_commit": "d8e61a188047e44ae083e01891cf1e0207e6a421",
+  "script_sha256": "50eae44fd3e123e87130d14b0fc2ace165d7d8d207b6a835c838b8b01b65e039",
   "performance": {
     "required_language": "en",
-    "authorization": "Existing explicit direction for English VO; Korean is a subtitle track",
     "status": "GENERATED_DECODE_CHECKED_NOT_LISTENING_APPROVED",
-    "artifact": "narration.mp3 in the private Sites source",
-    "sha256": "62694e8cb093d8dd6312ca0dbfcc846eae196d02c36b4300fb02fd6249ab713d",
-    "wav_sha256": "371a18b96943c36f5ccccc5e153d0d32e1e6b012606df15b2de67fd5af5f6bf2",
-    "duration_seconds": 397.54,
+    "artifact": "narration.mp3 in authorized Sites source",
+    "sha256": "826a65a960334fc0f01af24e98dfbd038acf1ba3fcf9115a559241443640843f",
+    "wav_sha256": "e119e5c8bc26af3de5f4ba0de939d67558a34d47ea5c4a0da1be830fc9d33d22",
+    "duration_seconds": 384.41133333333335,
     "sample_rate": 24000,
-    "total_samples": 9540960,
-    "utterances": 40,
-    "display_words": 930,
+    "total_samples": 9225872,
+    "utterances": 44,
+    "display_words": 905,
     "voice": "Local Kokoro ONNX v1.0 bm_george, synthetic",
-    "speed": 1.08,
-    "timeline_sha256": "46515efea563978f6127d80a549611da5c925f341b4bab6cb5f75aa579736721",
-    "asr_sha256": "cfb2e337a242168466302375908783350ea7ad0459b112b852f34fd06c161ff0",
+    "speed": 1.1,
+    "timeline_sha256": "ecb1cf7ab05e5a9c2a952df42d1da00bbdc0441e5e70464fb9cec2a03a3ce43d",
+    "asr_sha256": "3ece591d387dcbd4ef34ed4c17940804372d272ff1771aa098b929cc98e1a9a7",
     "human_listening_review": "NOT_PERFORMED"
   },
   "video": {
-    "status": "FULL_DURATION_SITE_DEPLOYED_LOCAL_BROWSER_REVIEW",
     "artifact": "S1E01-full-documentary.html",
-    "sha256": "ee2e69c917802e0c240d9c42e121d91cce609706ebed7107feaa9bfaf9b78d36",
-    "bytes": 13214498,
-    "duration_seconds": 397.54,
-    "chapters": 8,
-    "new_business_worlds": 8,
-    "preserved_pr4_fab_worlds": 1,
-    "named_shots": 40,
-    "phase_beats": 40,
+    "sha256": "3a35e544211990f17cd3d49bf21135ca97963cc8431627ee0ea35fcb61ba1395",
+    "bytes": 26097838,
+    "duration_seconds": 384.41133333333335,
+    "chapters": 6,
+    "named_shots": 66,
+    "photographs_used": 16,
+    "photographs_packaged": 17,
     "aspect_ratio": "16:9",
+    "renderer": "Canvas 2D archival photographs, typeset records and explanatory graphics",
     "timeline_fps": 30,
-    "fps_note": "Nominal deterministic timeline convention, not measured browser FPS",
-    "primary_renderer": "WebGL / Three.js r170",
-    "compatibility_renderer": "Explicitly labeled CPU triangle rasterizer; approximate material/light treatment, not equivalent PBR quality",
+    "fps_note": "Nominal timeline convention, not measured browser FPS",
     "mp4_export": "NOT_REQUESTED_NOT_EXPORTED"
   },
   "media_package": {
-    "artifact": "S1E01-sites-r5.tar.gz",
-    "contents": [
-      "Relative-asset HTML player",
-      "English MP3",
-      "Original PR #4 GLB",
-      "Local Three.js r170 modules and notices",
-      "Eight newly authored business worlds and compatibility-renderer modules",
-      "Embedded timing, EN/KO subtitles, sources and claims"
-    ],
+    "artifact": "S1E01-sites-r6.tar.gz",
     "source_code_location": "Git PR #4: episodes/S1E01/full",
-    "runtime_source_commit": "4cd8b0e77a7093e56691ee195614d66d923a75ef",
+    "runtime_source_commit": "8573b176bec71a6f81e9f6d8be3e6f0a6de02449",
     "runtime_source_project_id": "appgprj_6afc273728b8819189da26e9c2cf0f56",
-    "review_screenshots": "Private Site source review/r5; not in the public asset directory",
-    "access": "Owner-only private Site; raw unpublished media is not added to public GitHub"
+    "site_index_sha256": "6e642c46013cca156c3e74a4d456325c6f570d0a76e430705c0a078d78f045b5",
+    "archive_content_hash": "sha256:3ff7c7a5acf9eb3d8f22f6a764af565299df162897c88aa4f4370dd3b95c64be",
+    "active_modules": 3,
+    "review_stills": "Sites source review/r6, outside deployed public asset directory",
+    "legacy_assets": "Earlier R5 resources remain in source history/retained package files; they are not imported by the R6 player",
+    "access": "Existing public access revision 2 preserved; raw media is not duplicated in GitHub"
   },
   "required_locales": [
     "en",
     "ko"
   ],
-  "locale_qa": {
-    "en": "Actual generated PCM timing connected; full pronunciation and listening pending",
-    "ko": "40 translated rows connected to actual sentence bounds; selected actual subtitle viewing completed, comprehensive translation/viewing approval pending"
-  },
   "claims_review": {
-    "status": "BOUNDED_PRIMARY_SOURCE_SCRIPT_CHECK_NO_FINAL_MEDIA_APPROVAL",
-    "claims": 29,
-    "source_entries": 12,
-    "claims_sha256": "f3f933d52de5072d277aca850a147788ae58173e3b4985c6a0cbf074a6cd9d0e",
-    "sources_sha256": "c4f1fd43c9925373420b2eb131e338aec4697a24b4e4f1d415e911869fadd1a6",
+    "status": "PRIMARY_SOURCE_LEDGER_AND_SCOPED_REVIEW_NOT_FULL_RELEASE_APPROVAL",
+    "claims": 44,
+    "source_entries": 16,
+    "claims_sha256": "c3f441ac8ca8feaa91cb3132ff64966e41a2db5a0aa233771c3dc56039b27f83",
+    "sources_sha256": "21fdfc6a673808db3cdb3a0fd54e18c9e10fc25af1abe8e720aca3711a8c7286",
     "evidence": [
       "claims.json",
       "sources.json",
-      "review-r5.md",
-      "verification-r5.md"
+      "review-r6.md"
     ]
   },
   "rights_review": {
-    "status": "PROVENANCE_REGISTER_AND_MIT_NOTICES_PRESENT_NOT_RELEASE_CLEARANCE",
+    "status": "PROVENANCE_AND_LICENSE_NOTICES_PRESENT",
+    "asset_manifest_sha256": "6e57ffbab529965f237f75303d3f881b432cdaa77378b33185c61f868319d560",
     "evidence": [
-      "rights.md",
-      "THIRD_PARTY_NOTICES.txt",
-      "audio-env.md"
-    ]
+      "archive-manifest.json",
+      "THIRD_PARTY_NOTICES.txt"
+    ],
+    "limits": "Copyright licenses do not imply endorsement or remove personality/trademark rights; dated modern portraits and objects are not period event photographs"
   },
   "verification": {
-    "static_mock_contracts": {
-      "passed": 24,
+    "static_mock_and_actual_asset_contracts": {
+      "passed": 30,
       "failed": 0,
-      "artifact": "qa-contract-r5.json",
+      "artifact": "qa-r6-runtime.json",
       "actual_browser": false
     },
-    "site_asset_integrity": {
-      "status": "PASS",
-      "modules": 11,
-      "files": 14,
-      "artifact": "qa-site-r5.json",
-      "actual_browser": false
-    },
-    "cpu_model_state": {
-      "baseline_cases": 200,
-      "comparison_modes": [
-        "baseline",
-        "reverse",
-        "interleaved",
-        "fresh construction"
-      ],
-      "artifact": "qa-worlds-r5-results.json",
-      "finite": true,
-      "contract_tile_pairs_checked": 135,
-      "contract_tile_overlap": 0,
-      "gpu_pixels": false
-    },
-    "scoped_reviews": {
-      "artifact": "review-r5.md",
-      "script_followup": "Three material reader findings corrected before final voice; not audiovisual approval",
-      "code_followup": "Hidden-state, plaque and tile-spacing defects corrected and rechecked"
-    },
-    "actual_browser": {
-      "artifact": "qa-browser-r5.json",
-      "scope": "Managed preview of the exact deployed asset build; cloud browser uses CPU compatibility mode; private production URL reaches login gate",
-      "full_playback": "NATURAL_END_AND_REPLAY_OBSERVED_CPU_COMPATIBILITY_MODE",
-      "selected_reverse_order_frames": 10,
-      "actual_offline_audio_context_double_bake": "PASS_EQUAL_9540960_SAMPLES_26_CUES",
-      "fullscreen": "UNAVAILABLE_IN_THIS_BROWSER_NOT_VERIFIED",
-      "webgl_picture": "UNAVAILABLE_IN_THIS_BROWSER"
-    }
+    "audio_artifact": "audio-r6-report.json",
+    "browser_artifact": "qa-browser-r6.json",
+    "verification_notes": "verification-r6.md"
   },
   "independent_release_qa": {
-    "actor": null,
-    "session": null,
     "result": "NOT_PERFORMED",
-    "evidence": "verification-r5.md"
+    "actor": null,
+    "session": null
   },
   "director_exception": {
-    "duration": "User-authorized 6–12-minute range; actual 6:37.540",
-    "private_sites_deployment": "Explicitly authorized by director on 2026-11-17; retained existing owner-only audience",
+    "duration": "Same full S1E01; source default does not force padding",
+    "treatment": "Latest user instruction: archive photographs/documents and Vox-like evidence-led editing replace repeated 3D worlds",
+    "sites_deployment": "Explicit user request; existing audience preserved",
     "qa_waiver": false
   },
   "publication": {
     "url": "https://chip-in-birdie-s1e01-261117.reliqbit.chatgpt.site",
     "project_id": "appgprj_6afc273728b8819189da26e9c2cf0f56",
-    "version_id": "appgprj_6afc273728b8819189da26e9c2cf0f56~appgver_309c39a2e71c8191b3b60c3a7e7339bf",
-    "deployment_id": "appgdep_6afc559b24dc8191af2cc7aa319201a1",
-    "source_commit": "4cd8b0e77a7093e56691ee195614d66d923a75ef",
-    "observed_at": "2026-11-17T13:24:57.649047+00:00",
-    "status": "PRIVATE_SITES_DEPLOYMENT_SUCCEEDED",
-    "audience": "OWNER_ONLY",
-    "browser_production_check": "Normal sign-in gate observed; no auth bypass; playback validated on exact managed-preview assets",
+    "version_id": "appgprj_6afc273728b8819189da26e9c2cf0f56~appgver_378234125194819180a940a354923be1",
+    "version_number": 3,
+    "deployment_id": "appgdep_6afc8c20981c8191b0d828409aa46154",
+    "source_commit": "8573b176bec71a6f81e9f6d8be3e6f0a6de02449",
+    "observed_at": "2026-11-17T17:17:46.718223+00:00",
+    "status": "SITES_DEPLOYMENT_SUCCEEDED",
+    "audience": "PUBLIC_PREEXISTING_REVISION_2_PRESERVED",
     "youtube_status": "NOT_PUBLISHED"
   },
   "release_ready": false,

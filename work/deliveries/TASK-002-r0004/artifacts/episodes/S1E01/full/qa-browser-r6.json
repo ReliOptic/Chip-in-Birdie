@@ -1,0 +1,190 @@
+{
+  "schema": "cib-s1e01-r6-browser-observations",
+  "observedDate": "2026-11-17",
+  "actor": "codex-root-s1e01-r6",
+  "artifact": {
+    "html_sha256": "3a35e544211990f17cd3d49bf21135ca97963cc8431627ee0ea35fcb61ba1395",
+    "site_index_sha256": "6e642c46013cca156c3e74a4d456325c6f570d0a76e430705c0a078d78f045b5",
+    "site_source_commit": "8573b176bec71a6f81e9f6d8be3e6f0a6de02449"
+  },
+  "environment": {
+    "browser": "Managed cloud Chromium, actual browser through CUA",
+    "preview": "http://127.0.0.1:4173/",
+    "production": "https://chip-in-birdie-s1e01-261117.reliqbit.chatgpt.site/",
+    "viewport": [
+      1363,
+      936
+    ],
+    "documentWidth": 1363,
+    "renderer": "Canvas 2D archive"
+  },
+  "observations": [
+    {
+      "action": "Final build continuous playback in cinema view, no seek/pause/reload/tab change before end",
+      "observed": [
+        "00:00 Playing",
+        "01:18 Playing with Korean caption",
+        "02:46 Playing with Korean caption",
+        "06:03 Playing with Korean caption",
+        "06:24 / 06:24 Finished · replay available"
+      ],
+      "result": "NATURAL_END_OBSERVED"
+    },
+    {
+      "action": "Play after natural end",
+      "observed": "00:00 Playing; slider 0.23 seconds",
+      "result": "REPLAY_OBSERVED"
+    },
+    {
+      "action": "Pause after replay",
+      "observed": "11.93 seconds, Paused; position remained fixed across subsequent UI actions",
+      "result": "OBSERVED"
+    },
+    {
+      "action": "English captions in cinema view",
+      "observed": "Its own filing records low manufacturing yields in December, and a manufacturing partner short of capacity.",
+      "result": "OBSERVED"
+    },
+    {
+      "action": "Mute then reload",
+      "observed": "Restored · paused at 11.93 seconds, locale en, mute aria-pressed true",
+      "result": "RESTORED_WITHOUT_AUTOPLAY"
+    },
+    {
+      "action": "Transcript r32 selection",
+      "observed": "04:42 / 06:24 Paused at 282.27 seconds",
+      "result": "OBSERVED"
+    },
+    {
+      "action": "Current passage evidence",
+      "observed": "R03 / P01, NVIDIA 1998 S-1 printed p12 / PDF p20; December yield versus then-current capacity condition retained; direct original link present; 17 archive-credit articles",
+      "result": "OBSERVED"
+    },
+    {
+      "action": "Captions off then Korean",
+      "observed": "Off cleared read-caption; Korean returned for the same design-process passage",
+      "result": "OBSERVED"
+    },
+    {
+      "action": "Native fullscreen request",
+      "observed": "Rejected by this browser; CSS Cinema view presented image, separate caption area and controls",
+      "result": "FALLBACK_OBSERVED_NOT_NATIVE_FULLSCREEN_APPROVAL"
+    },
+    {
+      "action": "Cinema Escape and Exit button",
+      "observed": "Both returned to inline view at the same paused position",
+      "result": "OBSERVED"
+    },
+    {
+      "action": "Cinema seek slider via actual UI",
+      "observed": "Set 286.6 seconds; rendered bridge labels visible outside the red shape, Korean caption below picture",
+      "result": "OBSERVED"
+    },
+    {
+      "action": "Production URL",
+      "observed": "Loaded R6 title and 17-image archive; actual Play advanced from 0.03 to 45.17 seconds with later Korean caption; returned to 00:00 Paused and marked for user",
+      "result": "PRODUCTION_PLAYBACK_OBSERVED_NOT_SECOND_FULL_DURATION_TEST"
+    },
+    {
+      "action": "Production Download HTML click",
+      "observed": "Browser download-event wait timed out after 20 seconds; page stayed on the film and continued playing. Asset exists in the byte-verified package. No completed browser download was observed.",
+      "result": "DOWNLOAD_UI_COMPLETION_NOT_VERIFIED"
+    }
+  ],
+  "diagnostics": {
+    "scope": "Current browser Canvas readback and independent OfflineAudioContext bakes; not viewing, listening or release approval",
+    "backend": "canvas-archive",
+    "duration": 384.41133333333335,
+    "shots": 66,
+    "utterances": 44,
+    "archiveImages": 17,
+    "resolution": [
+      1292,
+      727
+    ],
+    "samples": [
+      {
+        "t": 2.297166666666667,
+        "pixelFNV": "a4c417c8"
+      },
+      {
+        "t": 27.09059,
+        "pixelFNV": "09874add"
+      },
+      {
+        "t": 60.88366466666666,
+        "pixelFNV": "1aa5a11a"
+      },
+      {
+        "t": 93.90501766666667,
+        "pixelFNV": "2f553dd0"
+      },
+      {
+        "t": 128.81136666666666,
+        "pixelFNV": "73ed7607"
+      },
+      {
+        "t": 166.32504533333335,
+        "pixelFNV": "a8e492f8"
+      },
+      {
+        "t": 198.10255,
+        "pixelFNV": "c92f309f"
+      },
+      {
+        "t": 236.84466533333335,
+        "pixelFNV": "a5194c88"
+      },
+      {
+        "t": 273.1463543333333,
+        "pixelFNV": "dcfa68ed"
+      },
+      {
+        "t": 314.45966066666665,
+        "pixelFNV": "bb851612"
+      },
+      {
+        "t": 352.49553733333335,
+        "pixelFNV": "14caa98d"
+      }
+    ],
+    "orderIndependent": true,
+    "meanMs": 43.43636363609271,
+    "p95Ms": 89.19999999552965,
+    "sfx": {
+      "fnv1a": "35a915d0",
+      "peak": 0.015929531306028366,
+      "finite": true,
+      "samples": 9225872,
+      "sampleRate": 24000,
+      "equal": true,
+      "cues": 14,
+      "types": [
+        "cut",
+        "paper",
+        "reveal"
+      ]
+    },
+    "errors": []
+  },
+  "consoleScope": "Diagnostic application errors array empty. Captured dev error list contained chrome-extension metadata errors; not reported as clean whole-browser console.",
+  "screenshots": [
+    {
+      "path": "/workspace/shared/chip-in-birdie-r6/browser-natural-end.jpg",
+      "kind": "Actual managed-preview end screenshot"
+    },
+    {
+      "path": "/workspace/shared/chip-in-birdie-r6/production-r6.jpg",
+      "kind": "Actual production page screenshot"
+    }
+  ],
+  "notEstablished": [
+    "Actual iPad/iPhone/Safari or mobile/touch performance",
+    "Human full listening/pronunciation and comprehensive subtitle review",
+    "Independent full audiovisual release approval",
+    "Measured audience retention or entertainment value",
+    "Native fullscreen on this browser",
+    "Successful browser download completion"
+  ],
+  "releaseApproval": false
+}

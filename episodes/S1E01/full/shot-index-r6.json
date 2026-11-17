@@ -1,0 +1,614 @@
+{
+  "duration": 384.41133333333335,
+  "shots": 66,
+  "usedAssets": [
+    "jensen",
+    "riva128",
+    "taiwan",
+    "factory1989",
+    "chang",
+    "chang2022",
+    "itri",
+    "riva128zx",
+    "fab18",
+    "pc",
+    "pcboard",
+    "tntboard",
+    "wafer2017",
+    "tntdie",
+    "jensen2014",
+    "fab12b"
+  ],
+  "minimumShotSeconds": 3.0562000000000005,
+  "gapless": true,
+  "index": [
+    {
+      "id": "r01-01",
+      "from": 0,
+      "to": 4.176666666666667,
+      "kind": "portrait",
+      "assets": [
+        "jensen"
+      ],
+      "title": "NVIDIA’S\nSUPPLY\nPROBLEM."
+    },
+    {
+      "id": "r02-01",
+      "from": 4.176666666666667,
+      "to": 7.434060000000001,
+      "kind": "photo",
+      "assets": [
+        "riva128"
+      ],
+      "title": "1997"
+    },
+    {
+      "id": "r02-02",
+      "from": 7.434060000000001,
+      "to": 11.752,
+      "kind": "macro",
+      "assets": [
+        "riva128"
+      ],
+      "title": "Not enough working chips."
+    },
+    {
+      "id": "r03-01",
+      "from": 11.752,
+      "to": 15.475666666666665,
+      "kind": "document",
+      "assets": [],
+      "title": "December 1997"
+    },
+    {
+      "id": "r03-02",
+      "from": 15.475666666666665,
+      "to": 19.199333333333332,
+      "kind": "document",
+      "assets": [],
+      "title": "Demand exceeded what the partner could supply."
+    },
+    {
+      "id": "r04-01",
+      "from": 19.199333333333332,
+      "to": 24.769333333333332,
+      "kind": "object",
+      "assets": [
+        "riva128"
+      ],
+      "title": "Wanted.\nNot yet shipped."
+    },
+    {
+      "id": "r05-01",
+      "from": 24.769333333333332,
+      "to": 28.9898,
+      "kind": "macro",
+      "assets": [
+        "riva128"
+      ]
+    },
+    {
+      "id": "r05-02",
+      "from": 28.9898,
+      "to": 32.046,
+      "kind": "partnership",
+      "assets": [],
+      "title": "Not an exclusive relationship."
+    },
+    {
+      "id": "r06-01",
+      "from": 32.046,
+      "to": 36.49334666666667,
+      "kind": "map",
+      "assets": [
+        "taiwan"
+      ],
+      "title": "Why here?"
+    },
+    {
+      "id": "r06-02",
+      "from": 36.49334666666667,
+      "to": 42.388666666666666,
+      "kind": "rewind",
+      "assets": [],
+      "title": "Twelve years earlier."
+    },
+    {
+      "id": "r07-01",
+      "from": 42.388666666666666,
+      "to": 51.26533333333333,
+      "kind": "document",
+      "assets": [],
+      "title": "A pioneer leaves the memory business."
+    },
+    {
+      "id": "r08-01",
+      "from": 51.26533333333333,
+      "to": 56.73177333333333,
+      "kind": "record",
+      "assets": [],
+      "title": "Japan’s DRAM makers\nwere moving ahead."
+    },
+    {
+      "id": "r08-02",
+      "from": 56.73177333333333,
+      "to": 64.28066666666666,
+      "kind": "photo",
+      "assets": [
+        "factory1989"
+      ],
+      "title": "Capacity is expensive."
+    },
+    {
+      "id": "r09-01",
+      "from": 64.28066666666666,
+      "to": 69.57728666666667,
+      "kind": "portrait",
+      "assets": [
+        "chang"
+      ],
+      "title": "MORRIS\nCHANG"
+    },
+    {
+      "id": "r09-02",
+      "from": 69.57728666666667,
+      "to": 72.688,
+      "kind": "map",
+      "assets": [
+        "taiwan"
+      ],
+      "title": "A national ambition."
+    },
+    {
+      "id": "r10-01",
+      "from": 72.688,
+      "to": 78.4606,
+      "kind": "record",
+      "assets": [],
+      "title": "Design. Marketing.\nIntellectual property."
+    },
+    {
+      "id": "r10-02",
+      "from": 78.4606,
+      "to": 83.378,
+      "kind": "photo",
+      "assets": [
+        "chang"
+      ],
+      "title": "A possible advantage."
+    },
+    {
+      "id": "r11-01",
+      "from": 83.378,
+      "to": 90.99411333333333,
+      "kind": "partnership",
+      "assets": [],
+      "title": "No competing house-brand chips."
+    },
+    {
+      "id": "r11-02",
+      "from": 90.99411333333333,
+      "to": 96.28666666666666,
+      "kind": "question",
+      "assets": [],
+      "title": "But who would\nbuy the service?"
+    },
+    {
+      "id": "r12-01",
+      "from": 96.28666666666666,
+      "to": 104.32533333333333,
+      "kind": "orders",
+      "assets": [],
+      "title": "The obvious customers had factories."
+    },
+    {
+      "id": "r13-01",
+      "from": 104.32533333333333,
+      "to": 109.57533333333333,
+      "kind": "orders",
+      "assets": [],
+      "title": "Overflow is not dependable demand."
+    },
+    {
+      "id": "r14-01",
+      "from": 109.57533333333333,
+      "to": 115.65733333333333,
+      "kind": "question",
+      "assets": [],
+      "title": "The factory stays.\nThe orders can leave."
+    },
+    {
+      "id": "r15-01",
+      "from": 115.65733333333333,
+      "to": 120.63361333333333,
+      "kind": "photo",
+      "assets": [
+        "chang2022"
+      ],
+      "title": "The customers\nhe hoped would emerge."
+    },
+    {
+      "id": "r15-02",
+      "from": 120.63361333333333,
+      "to": 126.47533333333334,
+      "kind": "record",
+      "assets": [],
+      "title": "They could fund a product.\nNot an entire fab."
+    },
+    {
+      "id": "r16-01",
+      "from": 126.47533333333334,
+      "to": 130.72266666666667,
+      "kind": "backers",
+      "assets": [],
+      "title": "Someone still had to pay for the factory."
+    },
+    {
+      "id": "r17-01",
+      "from": 130.72266666666667,
+      "to": 138.91666666666666,
+      "kind": "funding",
+      "assets": []
+    },
+    {
+      "id": "r18-01",
+      "from": 138.91666666666666,
+      "to": 143.40647333333334,
+      "kind": "photo",
+      "assets": [
+        "itri"
+      ],
+      "title": "ITRI"
+    },
+    {
+      "id": "r18-02",
+      "from": 143.40647333333334,
+      "to": 147.388,
+      "kind": "number",
+      "assets": [],
+      "title": "The transfer included a team."
+    },
+    {
+      "id": "r19-01",
+      "from": 147.388,
+      "to": 155.60333333333332,
+      "kind": "timeline",
+      "assets": [],
+      "title": "1987: the company begins."
+    },
+    {
+      "id": "r20-01",
+      "from": 155.60333333333332,
+      "to": 163.09333333333333,
+      "kind": "boundary",
+      "assets": [
+        "riva128zx",
+        "fab18"
+      ],
+      "title": "Two investments. No longer one company."
+    },
+    {
+      "id": "r21-01",
+      "from": 163.09333333333333,
+      "to": 168.96917333333334,
+      "kind": "question",
+      "assets": [],
+      "title": "Could more designers\nbecome companies?"
+    },
+    {
+      "id": "r21-02",
+      "from": 168.96917333333334,
+      "to": 175.33466666666666,
+      "kind": "partnership",
+      "assets": [],
+      "title": "Trust becomes part of production."
+    },
+    {
+      "id": "r22-01",
+      "from": 175.33466666666666,
+      "to": 181.63,
+      "kind": "timeline",
+      "assets": [],
+      "title": "The first four years were difficult."
+    },
+    {
+      "id": "r23-01",
+      "from": 181.63,
+      "to": 186.6232,
+      "kind": "object",
+      "assets": [
+        "pc"
+      ],
+      "title": "A place for\nother companies."
+    },
+    {
+      "id": "r23-02",
+      "from": 186.6232,
+      "to": 189.952,
+      "kind": "photo",
+      "assets": [
+        "pcboard"
+      ],
+      "title": "Look inside."
+    },
+    {
+      "id": "r24-01",
+      "from": 189.952,
+      "to": 195.781,
+      "kind": "macro",
+      "assets": [
+        "pcboard"
+      ]
+    },
+    {
+      "id": "r24-02",
+      "from": 195.781,
+      "to": 200.002,
+      "kind": "object",
+      "assets": [
+        "tntboard"
+      ],
+      "title": "A graphics card."
+    },
+    {
+      "id": "r25-01",
+      "from": 200.002,
+      "to": 205.81322666666668,
+      "kind": "object",
+      "assets": [
+        "riva128"
+      ],
+      "title": "RIVA 128"
+    },
+    {
+      "id": "r25-02",
+      "from": 205.81322666666668,
+      "to": 213.20933333333332,
+      "kind": "record",
+      "assets": [],
+      "title": "Dell. Gateway.\nPC and board makers."
+    },
+    {
+      "id": "r26-01",
+      "from": 213.20933333333332,
+      "to": 219.43966666666665,
+      "kind": "partnership",
+      "assets": [],
+      "title": "A design win becomes a manufacturing order."
+    },
+    {
+      "id": "r26-02",
+      "from": 219.43966666666665,
+      "to": 225.67,
+      "kind": "orders",
+      "assets": [],
+      "title": "Not just overflow."
+    },
+    {
+      "id": "r27-01",
+      "from": 225.67,
+      "to": 232.02096,
+      "kind": "timeline",
+      "assets": [],
+      "title": "The customers grow into the model."
+    },
+    {
+      "id": "r27-02",
+      "from": 232.02096,
+      "to": 240.79133333333334,
+      "kind": "allocation",
+      "assets": [],
+      "title": "More businesses. One manufacturing partner."
+    },
+    {
+      "id": "r28-01",
+      "from": 240.79133333333334,
+      "to": 247.62773333333334,
+      "kind": "document",
+      "assets": [],
+      "title": "TSMC would expand production."
+    },
+    {
+      "id": "r28-02",
+      "from": 247.62773333333334,
+      "to": 252.18533333333335,
+      "kind": "object",
+      "assets": [
+        "riva128zx"
+      ],
+      "title": "The announced\nstarting point."
+    },
+    {
+      "id": "r29-01",
+      "from": 252.18533333333335,
+      "to": 259.21109333333334,
+      "kind": "compare",
+      "assets": [
+        "riva128",
+        "riva128zx"
+      ],
+      "title": "The earlier partner did not vanish."
+    },
+    {
+      "id": "r29-02",
+      "from": 259.21109333333334,
+      "to": 264.73133333333334,
+      "kind": "partnership",
+      "assets": [],
+      "title": "More capacity. Not a clean replacement."
+    },
+    {
+      "id": "r30-01",
+      "from": 264.73133333333334,
+      "to": 270.67871333333335,
+      "kind": "document",
+      "assets": [],
+      "title": "Initially: payment for wafers, regardless of yield."
+    },
+    {
+      "id": "r30-02",
+      "from": 270.67871333333335,
+      "to": 275.1653333333333,
+      "kind": "photo",
+      "assets": [
+        "wafer2017"
+      ],
+      "title": "A wafer is not\na shipment of good chips."
+    },
+    {
+      "id": "r31-01",
+      "from": 275.1653333333333,
+      "to": 282.27133333333336,
+      "kind": "yield",
+      "assets": [
+        "tntdie"
+      ],
+      "title": "A paid wafer can contain unsellable chips."
+    },
+    {
+      "id": "r32-01",
+      "from": 282.27133333333336,
+      "to": 290.4653333333333,
+      "kind": "coupling",
+      "assets": [],
+      "title": "The defect is not always just dirt."
+    },
+    {
+      "id": "r33-01",
+      "from": 290.4653333333333,
+      "to": 298.13621333333333,
+      "kind": "document",
+      "assets": [],
+      "title": "Test with customers. Then enter volume production."
+    },
+    {
+      "id": "r33-02",
+      "from": 298.13621333333333,
+      "to": 304.16333333333336,
+      "kind": "process",
+      "assets": [],
+      "title": "Before the volume order."
+    },
+    {
+      "id": "r34-01",
+      "from": 304.16333333333336,
+      "to": 311.92466666666667,
+      "kind": "macro",
+      "assets": [
+        "tntdie"
+      ],
+      "title": "From a design to repeatable production."
+    },
+    {
+      "id": "r35-01",
+      "from": 311.92466666666667,
+      "to": 316.5337466666667,
+      "kind": "photo",
+      "assets": [
+        "jensen2014"
+      ],
+      "title": "How many\nwafers?"
+    },
+    {
+      "id": "r35-02",
+      "from": 316.5337466666667,
+      "to": 320.46,
+      "kind": "photo",
+      "assets": [
+        "chang2022"
+      ],
+      "title": "Business forecasts."
+    },
+    {
+      "id": "r36-01",
+      "from": 320.46,
+      "to": 327.07533333333333,
+      "kind": "forecast",
+      "assets": [],
+      "title": "A black book.\nA very practical question."
+    },
+    {
+      "id": "r37-01",
+      "from": 327.07533333333333,
+      "to": 335.12,
+      "kind": "photo",
+      "assets": [
+        "fab18"
+      ],
+      "title": "Build capacity\nwhere demand is growing."
+    },
+    {
+      "id": "r38-01",
+      "from": 335.12,
+      "to": 340.434,
+      "kind": "question",
+      "assets": [],
+      "title": "Whose future\nfills the factory?"
+    },
+    {
+      "id": "r39-01",
+      "from": 340.434,
+      "to": 349.908,
+      "kind": "milestone",
+      "assets": [],
+      "title": "Manufactured together."
+    },
+    {
+      "id": "r40-01",
+      "from": 349.908,
+      "to": 354.61261333333334,
+      "kind": "document",
+      "assets": [],
+      "title": "GeForce GPUs.\nnForce MCPs."
+    },
+    {
+      "id": "r40-02",
+      "from": 354.61261333333334,
+      "to": 358.95533333333333,
+      "kind": "timeline",
+      "assets": [],
+      "title": "An uncertain customer becomes a durable business."
+    },
+    {
+      "id": "r41-01",
+      "from": 358.95533333333333,
+      "to": 366.7866666666667,
+      "kind": "object",
+      "assets": [
+        "tntboard"
+      ],
+      "title": "Wanted.\nWorking.\nShipped."
+    },
+    {
+      "id": "r42-01",
+      "from": 366.7866666666667,
+      "to": 375.27933333333334,
+      "kind": "compare",
+      "assets": [
+        "jensen2014",
+        "chang2022"
+      ],
+      "title": "Neither could deliver the whole result alone."
+    },
+    {
+      "id": "r43-01",
+      "from": 375.27933333333334,
+      "to": 379.932,
+      "kind": "photo",
+      "assets": [
+        "jensen"
+      ],
+      "title": "The gamble found its customers."
+    },
+    {
+      "id": "r44-01",
+      "from": 379.932,
+      "to": 384.41133333333335,
+      "kind": "end",
+      "assets": [
+        "fab12b"
+      ],
+      "title": "Making enough\nworking chips."
+    }
+  ]
+}

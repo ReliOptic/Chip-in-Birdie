@@ -1,311 +1,523 @@
 {
-  "revision": "S1E01-full-r5",
+  "revision": "S1E01-full-r6",
+  "script_file": "script.json",
+  "script_sha256": "50eae44fd3e123e87130d14b0fc2ace165d7d8d207b6a835c838b8b01b65e039",
   "source_register": "sources.json",
-  "status": "PRIMARY_RECORDS_AND_LABELED_ECONOMIC_MODELS_NOT_RELEASE_APPROVED",
+  "status": "BOUND_TO_LOCKED_SCRIPT_NOT_RELEASE_APPROVED",
+  "maintainer_session": "/root/fresh_viewer",
+  "checked_on": "2026-11-17",
+  "binding": "One row per locked utterance. claim is a short evidence label; the complete EN/KO assertion remains in script.json at utterance_id. Interpretive language is not converted into source testimony.",
   "claims": [
     {
-      "id": "H01",
-      "kind": "retrospective_testimony",
-      "sources": [
-        "A"
-      ],
-      "locator": "Printed pp. 9–12; Li's minister-without-portfolio role on p. 10; business-plan request on pp. 11–12",
-      "claim": "Chang described his semiconductor executive experience, Li's role as a minister without portfolio, Li requesting a plan for a new company, and his assessment of manufacturing potential versus design, marketing and IP limitations.",
-      "limitation": "Chang's 2007 judgment about 1985, not a comprehensive independent industry survey."
-    },
-    {
-      "id": "H02",
-      "kind": "retrospective_testimony",
-      "sources": [
-        "A"
-      ],
-      "locator": "Printed p. 13",
-      "claim": "Spare-capacity orders could cease; Chang hoped designers unable to fund fabs could form companies.",
-      "limitation": "Expectation and perceived risk, not proof that a ready customer market existed."
-    },
-    {
-      "id": "H03",
+      "id": "R01",
+      "utterance_id": "r01",
       "kind": "period_company_record",
+      "claim": "Demand for the graphics product",
       "sources": [
-        "C"
+        "P02",
+        "P04",
+        "P05"
       ],
-      "locator": "Printed p. 5 (PDF page 8)",
-      "claim": "TSMC was founded in 1987.",
-      "limitation": "The cited report was published in 1994."
+      "locator": "P02: April/August/November 1997; P04: January 1998; P05: 23 February 1998 release.",
+      "limitation": "Demand framing, not a consumer survey or present-day executive-title claim."
     },
     {
-      "id": "H04",
-      "kind": "attributed_company_principle",
+      "id": "R02",
+      "utterance_id": "r02",
+      "kind": "period_customer_filing",
+      "claim": "Manufacturing supply constraint",
       "sources": [
-        "C"
+        "P01"
       ],
-      "locator": "Printed p. 5 (PDF page 8), Company Background, second paragraph",
-      "claim": "The report describes a charter preventing the design or manufacture of own-brand IC end products.",
-      "limitation": "The original 1987 charter was not independently retrieved. This does not mean every commercial relationship is conflict-free."
+      "locator": "P01: printed pp.11–12 (PDF pp.19–20), third-party manufacturing risk.",
+      "limitation": "No lost-sales amount or counterfactual bankruptcy outcome is established."
     },
     {
-      "id": "H05",
+      "id": "R03",
+      "utterance_id": "r03",
+      "kind": "period_customer_filing",
+      "claim": "December yield and capacity disclosure",
+      "sources": [
+        "P01"
+      ],
+      "locator": "P01: printed p.12 (PDF p.20), December 1997 example and following capacity sentence.",
+      "limitation": "Yield is dated December; the capacity wording describes the filing's then-current condition."
+    },
+    {
+      "id": "R04",
+      "utterance_id": "r04",
+      "kind": "editorial_inference",
+      "claim": "Design alone does not assure shipments",
+      "sources": [
+        "P01",
+        "P02"
+      ],
+      "locator": "P01: printed pp.11–12; P02: 1997 OEM relationships.",
+      "limitation": "Inference about the stated bottleneck, not proof design improvements have no value."
+    },
+    {
+      "id": "R05",
+      "utterance_id": "r05",
+      "kind": "period_customer_filing",
+      "claim": "Manufacturing partner identity and sequence",
+      "sources": [
+        "P01"
+      ],
+      "locator": "P01: printed p.11 (PDF p.19), third-party manufacturing risk.",
+      "limitation": "The disclosed wafer-fab location does not make a package's country marking wafer-provenance proof."
+    },
+    {
+      "id": "R06",
+      "utterance_id": "r06",
+      "kind": "editorial_bridge",
+      "claim": "Rewind from 1997 to 1985",
+      "sources": [
+        "P05",
+        "P08"
+      ],
+      "locator": "P05: dated partnership release; P08: printed pp.12–14.",
+      "limitation": "Narrative chronology; it does not establish inevitability or uninterrupted later supply."
+    },
+    {
+      "id": "R07",
+      "utterance_id": "r07",
+      "kind": "institutional_history_with_editorial_framing",
+      "claim": "Intel's DRAM withdrawal",
+      "sources": [
+        "P13"
+      ],
+      "locator": "P13: 10 October 1985 entry and associated internal-publication caption.",
+      "limitation": "DRAM only, not Intel's exit from all memory or all semiconductors."
+    },
+    {
+      "id": "R08",
+      "utterance_id": "r08",
+      "kind": "period_records_with_editorial_inference",
+      "claim": "Competition and excess-capacity context",
+      "sources": [
+        "P14",
+        "P15"
+      ],
+      "locator": "P14: printed p.31, Results of Operations; P15: DRAM—Market Shares, April 1987, section p.2.",
+      "limitation": "Japanese leadership is DRAM-specific. The investment conclusion is editorial; PDFs checked through indexed primary text, not rendered scans."
+    },
+    {
+      "id": "R09",
+      "utterance_id": "r09",
       "kind": "retrospective_testimony",
+      "claim": "Request for a semiconductor business plan",
       "sources": [
-        "B"
+        "P08"
       ],
-      "locator": "Printed p. 3",
-      "claim": "Chang reported about US$220 million in initial capital: government 48%, Philips about 27%, and other Taiwanese investors the balance.",
-      "limitation": "Approximate retrospective amounts; the displayed percentages are not presented as newly audited accounts."
+      "locator": "P08: printed pp.9–12, career and K.T. Li's request.",
+      "limitation": "Participant recollection in 2007, not a recording of the 1985 meeting."
     },
     {
-      "id": "H06",
+      "id": "R10",
+      "utterance_id": "r10",
+      "kind": "retrospective_testimony",
+      "claim": "Chang's assessment of Taiwan's capabilities",
+      "sources": [
+        "P08"
+      ],
+      "locator": "P08: printed pp.12–13, capabilities comparison.",
+      "limitation": "His historical assessment, not an independent survey or claim that Taiwan lacked an existing industry."
+    },
+    {
+      "id": "R11",
+      "utterance_id": "r11",
+      "kind": "retrospective_testimony_and_period_record",
+      "claim": "Manufacturing focus and own-brand boundary",
+      "sources": [
+        "P08",
+        "P12"
+      ],
+      "locator": "P08: printed pp.12–13; P12: Company Profile, charter paragraph.",
+      "limitation": "Potential strength is not proven superiority. The own-brand boundary does not remove every commercial conflict."
+    },
+    {
+      "id": "R12",
+      "utterance_id": "r12",
+      "kind": "editorial_inference",
+      "claim": "The initial customer problem",
+      "sources": [
+        "P08"
+      ],
+      "locator": "P08: printed p.13, prospective incumbent customers.",
+      "limitation": "Refers to incumbents in Chang's account, not literally every chip company."
+    },
+    {
+      "id": "R13",
+      "utterance_id": "r13",
+      "kind": "retrospective_testimony",
+      "claim": "Conditional overflow demand",
+      "sources": [
+        "P08"
+      ],
+      "locator": "P08: printed p.13, capacity-dependent orders.",
+      "limitation": "A perceived customer behavior, not a quantified order history."
+    },
+    {
+      "id": "R14",
+      "utterance_id": "r14",
+      "kind": "editorial_inference",
+      "claim": "Risk of an unstable customer base",
+      "sources": [
+        "P08"
+      ],
+      "locator": "P08: printed p.13.",
+      "limitation": "A conditional risk, not a claim all customers actually disappeared."
+    },
+    {
+      "id": "R15",
+      "utterance_id": "r15",
+      "kind": "retrospective_testimony",
+      "claim": "Engineers facing a factory-financing barrier",
+      "sources": [
+        "P08"
+      ],
+      "locator": "P08: printed p.13, designers seeking independence.",
+      "limitation": "An expectation, not evidence of a ready market or identification of particular photographed people."
+    },
+    {
+      "id": "R16",
+      "utterance_id": "r16",
+      "kind": "retrospective_testimony",
+      "claim": "Founding investor groups",
+      "sources": [
+        "P09"
+      ],
+      "locator": "P09: printed p.3, initial-capital discussion.",
+      "limitation": "Historical investor groups; not the current ownership structure."
+    },
+    {
+      "id": "R17",
+      "utterance_id": "r17",
+      "kind": "retrospective_testimony",
+      "claim": "Approximate initial capital",
+      "sources": [
+        "P09"
+      ],
+      "locator": "P09: printed p.3.",
+      "limitation": "Attributed approximate recollection, not a newly audited capitalization table or inflation-adjusted sum."
+    },
+    {
+      "id": "R18",
+      "utterance_id": "r18",
       "kind": "institutional_retrospective",
+      "claim": "Transfer of a manufacturing foundation",
       "sources": [
-        "D"
+        "P10"
       ],
-      "locator": "Paragraph about the 1987 spin-off",
-      "claim": "ITRI describes transferring facilities, equipment, technologies and 98 professionals to TSMC in 1987.",
-      "limitation": "An institutional account published in 2023, not contemporaneous minutes."
+      "locator": "P10: narrative paragraph beginning with the 1986 Philips collaboration, 1987 spin-off.",
+      "limitation": "Later institutional history, not contemporaneous transfer minutes."
     },
     {
-      "id": "H07",
-      "kind": "period_company_record",
+      "id": "R19",
+      "utterance_id": "r19",
+      "kind": "institutional_record_with_editorial_inference",
+      "claim": "1987 start and the remaining business task",
       "sources": [
-        "C"
+        "P10",
+        "P12"
       ],
-      "locator": "Printed p. 15 (PDF page 18), Important Contracts",
-      "claim": "Philips technology cooperation and ITRI building and equipment leases list start dates in 1987.",
-      "limitation": "Only the reported contractual scope is used. No proprietary technology details or guaranteed customer capacity are inferred."
+      "locator": "P10: 1987 spin-off paragraph; P12: opening Company Profile paragraph.",
+      "limitation": "The date is recorded; dependable business is an editorial distinction, not a measured reliability score."
     },
     {
-      "id": "H08",
+      "id": "R20",
+      "utterance_id": "r20",
+      "kind": "editorial_inference",
+      "claim": "Separating product investment from fab ownership",
+      "sources": [
+        "P08",
+        "P10",
+        "P12"
+      ],
+      "locator": "P08: printed p.13; P10: IC design-company commissioning paragraph; P12: foundry scope.",
+      "limitation": "Qualitative capital boundary; no numerical saving, zero-capital claim, or promise of lower wafer prices."
+    },
+    {
+      "id": "R21",
+      "utterance_id": "r21",
+      "kind": "editorial_synthesis",
+      "claim": "The demand-and-trust gamble",
+      "sources": [
+        "P08",
+        "P10"
+      ],
+      "locator": "P08: printed pp.13–14; P10: spin-off and design-company account.",
+      "limitation": "Interpretation, not a verbatim investment thesis or prediction of NVIDIA."
+    },
+    {
+      "id": "R22",
+      "utterance_id": "r22",
       "kind": "retrospective_testimony",
+      "claim": "Difficult first four years",
       "sources": [
-        "A"
+        "P09"
       ],
-      "locator": "Printed p. 14",
-      "claim": "Chang reported faster growth around 1991–92 and the need to prove technology and trust.",
-      "limitation": "Not an independent causal measurement of the noncompetition policy."
+      "locator": "P09: printed p.4, 1987–1990 discussion.",
+      "limitation": "Retrospective characterization; no continuous four-year loss claim."
     },
     {
-      "id": "H09",
-      "kind": "period_company_record",
+      "id": "R23",
+      "utterance_id": "r23",
+      "kind": "editorial_bridge",
+      "claim": "Customer formation and the PC opportunity",
       "sources": [
-        "C"
+        "P09",
+        "P16"
       ],
-      "locator": "Printed p. 15 (PDF page 18), Deposit and Supply Agreement",
-      "claim": "The Cirrus Logic International agreement begins on 23 September 1993 and records a wafer-manufacturing commitment.",
-      "limitation": "It does not identify the first customer, order quantity, chip design or production yield."
+      "locator": "P09: printed p.4; P16: Architecture section.",
+      "limitation": "The queue is figurative; the PC transition spans years, not one simultaneous event."
     },
     {
-      "id": "H10",
-      "kind": "attributed_retrospective_customer_account",
+      "id": "R24",
+      "utterance_id": "r24",
+      "kind": "institutional_retrospective",
+      "claim": "IBM PC architecture and complementary products",
       "sources": [
-        "B"
+        "P16"
       ],
-      "locator": "Printed pp. 5–6, Huang's accounts of customer visits, die size and repeated wafer-demand discussions",
-      "claim": "Huang recalled Chang visiting Nvidia, hearing about die sizes and future growth, and returning to discuss how many wafers the customer would need.",
-      "limitation": "Huang's 2007 recollection, not a recording or dated operational log of the visits. It does not establish Nvidia as the first customer, an actual order quantity, a specific chip design, or a motive for choosing TSMC. No verbatim dialogue is invented."
+      "locator": "P16: Architecture section, technical-reference and peripheral-development paragraph.",
+      "limitation": "Not a claim IBM invented the first PC or alone caused TSMC's growth."
     },
     {
-      "id": "M01",
-      "kind": "mechanism",
+      "id": "R25",
+      "utterance_id": "r25",
+      "kind": "company_historical_record",
+      "claim": "RIVA 128 and PC relationships",
       "sources": [
-        "E"
+        "P02"
       ],
-      "locator": "Types of chipmakers",
-      "claim": "IDMs integrate design and manufacture; fabless firms use foundry capability rather than owning all fabrication.",
-      "limitation": "A general distinction, not an exhaustive business taxonomy."
+      "locator": "P02: April, August and November 1997 entries.",
+      "limitation": "OEM relationships are not all direct chip purchasers; board makers remain part of the chain."
     },
     {
-      "id": "M02",
-      "kind": "illustrative_mechanism",
-      "sources": [
-        "G"
-      ],
-      "locator": "Paragraph on process requirements and correct chip layout creation",
-      "claim": "Layout must meet process-specific constraints; the spacing change is an illustrative example.",
-      "limitation": "No actual design rule, numerical dimension or real customer layout is disclosed."
-    },
-    {
-      "id": "M03",
-      "kind": "attributed_technical_documentation",
-      "sources": [
-        "G"
-      ],
-      "locator": "iPDK and iDRC paragraphs",
-      "claim": "Process information and design checks connect customer design with manufacturing capability.",
-      "limitation": "A public description from 2010; it does not imply that production tools or PDKs are publicly downloadable."
-    },
-    {
-      "id": "M04",
-      "kind": "illustrative_mechanism",
-      "sources": [
-        "E"
-      ],
-      "locator": "Opening manufacturing description; Tiny skyscrapers; cleanroom paragraphs",
-      "claim": "Modern fabrication controls materials, patterns and layer alignment. Wafer movement is shown through an authored illustration.",
-      "limitation": "The PR #4 factory is an invented contemporary model, not a 1987 reconstruction or actual TSMC facility. The source does not validate its exact equipment geometry."
-    },
-    {
-      "id": "M05",
-      "kind": "illustrative_mechanism",
-      "sources": [
-        "F"
-      ],
-      "locator": "Deposition, Photoresist coating, Lithography and Etch sections",
-      "claim": "Simplified pattern transfer and separated layers illustrate selected process operations.",
-      "limitation": "Exaggerated scale; not a complete CMOS recipe or an optical simulation."
-    },
-    {
-      "id": "M06",
-      "kind": "illustrative_mechanism",
-      "sources": [
-        "H",
-        "I",
-        "K"
-      ],
-      "locator": "H: Quality Management System; I: Engineering Collaboration; K: Parametric / manufacturing-process description",
-      "claim": "Electrical contact enables device-performance tests; the fraction of usable devices matters. TSMC describes probing, testing and access to yield information.",
-      "limitation": "The green and red marks are fabricated explanatory results, never an estimate of TSMC's yield or a measured test dataset."
-    },
-    {
-      "id": "M07",
-      "kind": "company_operational_description",
-      "sources": [
-        "H"
-      ],
-      "locator": "Quality Management System, Overview",
-      "claim": "The company's quality system encompasses design support, wafer manufacture, probing and testing.",
-      "limitation": "A company description, not an independent audit or universal performance guarantee."
-    },
-    {
-      "id": "I01",
+      "id": "R26",
+      "utterance_id": "r26",
       "kind": "editorial_inference",
+      "claim": "Design wins versus overflow-only business",
       "sources": [
-        "A",
-        "C"
+        "P02",
+        "P08",
+        "P12"
       ],
-      "claim": "External manufacturing requires sharing technical information and confidence in the supplier.",
-      "limitation": "Not a particular customer's testimony."
+      "locator": "P02: August 1997; P08: printed p.13; P12: Company Profile.",
+      "limitation": "NVIDIA is not TSMC's first customer; no exact order volume or exclusive relationship is inferred."
     },
     {
-      "id": "I02",
+      "id": "R27",
+      "utterance_id": "r27",
+      "kind": "retrospective_testimony_with_editorial_synthesis",
+      "claim": "Early fabless growth preceded NVIDIA",
+      "sources": [
+        "P09"
+      ],
+      "locator": "P09: printed p.4, early-1990s growth discussion.",
+      "limitation": "NVIDIA arrived later, not as the first customer. The final sentence is editorial synthesis."
+    },
+    {
+      "id": "R28",
+      "utterance_id": "r28",
+      "kind": "period_press_release",
+      "claim": "1998 partnership announcement",
+      "sources": [
+        "P05",
+        "P04"
+      ],
+      "locator": "P05: 23 February 1998, opening three release paragraphs; P04: March 1998 entry.",
+      "limitation": "Announcement dates differ by month; narration uses 1998. Not proof every 128ZX unit was TSMC-made."
+    },
+    {
+      "id": "R29",
+      "utterance_id": "r29",
+      "kind": "period_records_with_editorial_inference",
+      "claim": "Capacity expansion alongside ST",
+      "sources": [
+        "P05",
+        "P01"
+      ],
+      "locator": "P05: expansion-beyond-SGS-THOMSON paragraph; P01: printed pp.11–12 and ST relationship section.",
+      "limitation": "No claim of instant ST replacement or that TSMC made the original 1997 RIVA 128."
+    },
+    {
+      "id": "R30",
+      "utterance_id": "r30",
+      "kind": "period_customer_filing",
+      "claim": "Conditional wafer-payment exposure",
+      "sources": [
+        "P01"
+      ],
+      "locator": "P01: printed p.25 (PDF p.33), production-yield stabilization paragraph.",
+      "limitation": "Specific early terms, not a universal foundry pricing rule or measured loss."
+    },
+    {
+      "id": "R31",
+      "utterance_id": "r31",
+      "kind": "technical_explanation_with_editorial_inference",
+      "claim": "Usable output matters financially",
+      "sources": [
+        "P01",
+        "P18"
+      ],
+      "locator": "P01: printed p.25; P18: E-beam metrology and inspection.",
+      "limitation": "General defect mechanism; no diagnosis, defect size or yield percentage for the 1997 incident."
+    },
+    {
+      "id": "R32",
+      "utterance_id": "r32",
+      "kind": "general_technical_explanation",
+      "claim": "Design–process interaction",
+      "sources": [
+        "P19"
+      ],
+      "locator": "P19: process-window and design-rule coordination paragraphs.",
+      "limitation": "Modern explanation of a general mechanism; not evidence 1997 used a named modern DTCO workflow."
+    },
+    {
+      "id": "R33",
+      "utterance_id": "r33",
+      "kind": "period_company_release",
+      "claim": "Customer pilot work before the partnership",
+      "sources": [
+        "P17"
+      ],
+      "locator": "P17: 19 June 1996 release, Don Brooks paragraphs.",
+      "limitation": "SRAM case, not a NVIDIA graphics-chip yield or an identical manufacturing process."
+    },
+    {
+      "id": "R34",
+      "utterance_id": "r34",
       "kind": "editorial_inference",
+      "claim": "Repeatable production as the business benefit",
       "sources": [
-        "B",
-        "C",
-        "D"
+        "P17",
+        "P19",
+        "P12"
       ],
-      "claim": "The foundry model required institutions, capital and manufacturing capabilities.",
-      "limitation": "No quantitative attribution of success."
+      "locator": "P17: customer pilot work; P19: process-window iteration; P12: manufacturing-service scope.",
+      "limitation": "Interpretation of service value, not a quoted customer motive, contract deliverable or guaranteed result."
     },
     {
-      "id": "I03",
-      "kind": "editorial_model",
+      "id": "R35",
+      "utterance_id": "r35",
+      "kind": "retrospective_customer_testimony",
+      "claim": "A later customer visit",
       "sources": [
-        "C",
-        "J"
+        "P09"
       ],
-      "claim": "The noncompetition boundary addresses the manufacturer's own-product conflict, not all commercial interests.",
-      "limitation": "The shipping-counter model is authored interpretation. The own-brand restriction is not a guarantee about all IP, capacity, price or competitive relationships."
+      "locator": "P09: printed p.6, Friday-afternoon visit recollection.",
+      "limitation": "A later visit recalled in 2007, separate from the 1997 meeting on p.5."
     },
     {
-      "id": "I04",
+      "id": "R36",
+      "utterance_id": "r36",
+      "kind": "retrospective_testimony_with_editorial_inference",
+      "claim": "Demand notes and checked calculations",
+      "sources": [
+        "P09"
+      ],
+      "locator": "P09: printed p.6, black-book recollection.",
+      "limitation": "No notebook artifact or verbatim dialogue is reproduced; consequences is editorial framing."
+    },
+    {
+      "id": "R37",
+      "utterance_id": "r37",
+      "kind": "retrospective_testimony",
+      "claim": "Reinvestment and flexible allocation",
+      "sources": [
+        "P09"
+      ],
+      "locator": "P09: printed p.7, capacity-building and growing-customer discussion.",
+      "limitation": "Company founder's account, not a customer-level allocation dataset."
+    },
+    {
+      "id": "R38",
+      "utterance_id": "r38",
       "kind": "editorial_inference",
+      "claim": "Investment planning around customers",
       "sources": [
-        "E",
-        "F",
-        "G"
+        "P09"
       ],
-      "claim": "A controlled process and technical coordination matter, not access to machinery alone.",
-      "limitation": "Qualitative interpretation, not a performance or cost simulation."
+      "locator": "P09: printed pp.6–7.",
+      "limitation": "Interpretation, not a separate quotation or claim about an exact forecast."
     },
     {
-      "id": "I05",
-      "kind": "editorial_inference",
+      "id": "R39",
+      "utterance_id": "r39",
+      "kind": "period_joint_company_release",
+      "claim": "The 2006 production milestone",
       "sources": [
-        "A",
-        "D",
-        "J"
+        "P06"
       ],
-      "locator": "A: printed p.13; D: 1987 paragraph; J: R5 authored counterfactual financing comparison",
-      "claim": "A product company can buy foundry manufacturing without owning a fab. This can lower the up-front scope of financing and concentrate it on product development, while design, masks, packaging, testing and working capital remain. Outsourcing does not guarantee lower wafer prices. Steady demand can make factory ownership more justifiable; the model does not say every company should outsource.",
-      "limitation": "Qualitative business mechanism, not a cost estimate or a claim about the exact budget or success of any named startup."
+      "locator": "P06: 24 October 2006, opening and high-volume-production paragraphs.",
+      "limitation": "Company-reported count, not an independent audit. Processors include more than GPUs."
     },
     {
-      "id": "I06",
-      "kind": "editorial_model",
-      "sources": [
-        "A",
-        "J"
-      ],
-      "claim": "Compatible orders from multiple customers can use shared manufacturing assets and spread fixed costs over more output. Orders cannot be freely substituted across incompatible processes; customer demand can fall together and factory costs remain.",
-      "limitation": "Illustrative economics with no historical capacity, customer-volume, utilization or profit dataset. Sharing does not guarantee profitable output or remove cyclic demand.",
-      "locator": "A: printed pp.13–14; J: R5 compatible-booking model"
-    },
-    {
-      "id": "I07",
+      "id": "R40",
+      "utterance_id": "r40",
       "kind": "editorial_synthesis",
+      "claim": "A sustained, multi-product relationship",
       "sources": [
-        "H",
-        "I",
-        "J"
+        "P05",
+        "P06"
       ],
-      "claim": "For an invented two-supplier teaching comparison, A charges 100 processing-cost units with 60 usable chips from 100 candidates; B charges 120 with 90 usable from a separate 100. Cost per usable chip is 100/60 ≈ 1.67 and 120/90 ≈ 1.33. B's quote is 20% higher but its processing cost per usable chip is 20% lower.",
-      "limitation": "Not TSMC prices, measured yields, real supplier quotations or a forecast. Test, packaging, qualification and other cost differences are excluded. The rejected dies from A are never repaired or moved into B.",
-      "locator": "R5 authored two-quote model and exact arithmetic"
+      "locator": "P05: 1998 partnership release; P06: 2006 milestone and product categories.",
+      "limitation": "No attribution of all NVIDIA growth to one supplier or proof success was inevitable."
     },
     {
-      "id": "H11",
-      "kind": "period_customer_filing",
-      "sources": [
-        "L"
-      ],
-      "locator": "FY1997 10-K, Notes to Consolidated Financial Statements, Other Wafer Supply Arrangements, TSMC paragraph (SEC text lines 2801–2822)",
-      "claim": "Cirrus disclosed FY1993/FY1996 minimum wafer purchase commitments at market prices in exchange for guaranteed TSMC quantities. A per-wafer penalty could apply to the committed shortfall that TSMC did not sell to other customers.",
-      "limitation": "Contract-specific conditions, not the terms of every foundry order. No actual penalty payment or loss is claimed. Ten illustrative booking counters are not a historical volume."
-    },
-    {
-      "id": "H12",
-      "kind": "period_customer_filing",
-      "sources": [
-        "L"
-      ],
-      "locator": "Same financial-statement note, SEC lines 2807–2812",
-      "claim": "The FY1996 agreement called for approximately US$118m in advance payments, half in FY1998 and half in FY1999. At the FY1997 filing, the parties were reevaluating replacement by long-term purchase commitments; no new written agreement was concluded.",
-      "limitation": "Future commitment as disclosed in 1997, not cash already paid in 1993 or evidence of the final renegotiated outcome. Separate from TSMC's reported 23 September 1993 Cirrus International agreement."
-    },
-    {
-      "id": "H13",
-      "kind": "period_customer_filing",
-      "sources": [
-        "L"
-      ],
-      "locator": "Manufacturing; MiCRUS/Cirent and related financial-statement notes",
-      "claim": "Cirrus also held stakes in manufacturing joint ventures.",
-      "limitation": "The film uses a supply contract case, not Cirrus as a pure or permanently asset-free fabless archetype; no JV loss is attributed to TSMC."
-    },
-    {
-      "id": "I08",
-      "kind": "editorial_inference",
-      "sources": [
-        "L",
-        "J"
-      ],
-      "locator": "H11/H12/H13 and R5 contract model",
-      "claim": "Guaranteed supply and purchase commitments exchange customer supply access for manufacturer demand visibility. The customer may avoid full factory ownership yet retain capital or purchase obligations and supplier dependency.",
-      "limitation": "Interpretation of the identified terms, not a universal legal rule, forecast or quantified allocation of all business risk."
-    },
-    {
-      "id": "I09",
+      "id": "R41",
+      "utterance_id": "r41",
       "kind": "editorial_synthesis",
+      "claim": "Product, design and delivery together",
       "sources": [
-        "A",
-        "C",
-        "D",
-        "L",
-        "J"
+        "P02",
+        "P17",
+        "P06"
       ],
-      "locator": "Founding accounts, own-brand restriction and the stated supply-contract example",
-      "claim": "The model permits product specialization without a wholly owned fab and manufacturing sales to several product companies. Product and factory utilization risks remain, and contracts can distribute part of the exposure.",
-      "limitation": "Qualitative explanation, not a claim of inevitable success, guaranteed profit, universal lower cost, or that TSMC invented every form of contract manufacturing."
+      "locator": "P02: product/OEM history; P17: production work; P06: manufactured-processor milestone.",
+      "limitation": "A chip foundry is not thereby the assembler of the finished graphics card."
+    },
+    {
+      "id": "R42",
+      "utterance_id": "r42",
+      "kind": "editorial_synthesis",
+      "claim": "Interdependence and an emerging customer class",
+      "sources": [
+        "P08",
+        "P12",
+        "P06"
+      ],
+      "locator": "P08: printed pp.13–14; P12: service scope; P06: joint milestone.",
+      "limitation": "Not a claim no fabless firms existed, or that two firms alone supplied every card component."
+    },
+    {
+      "id": "R43",
+      "utterance_id": "r43",
+      "kind": "editorial_conclusion",
+      "claim": "NVIDIA became one of the customers",
+      "sources": [
+        "P05",
+        "P06",
+        "P09"
+      ],
+      "locator": "P05: 1998 release; P06: 2006 milestone; P09: printed p.4.",
+      "limitation": "One later customer, not the first or the sole reason the model succeeded."
+    },
+    {
+      "id": "R44",
+      "utterance_id": "r44",
+      "kind": "editorial_conclusion",
+      "claim": "Shared production responsibility",
+      "sources": [
+        "P17",
+        "P19",
+        "P09"
+      ],
+      "locator": "P17: pilot cooperation; P19: design–process coordination; P09: printed pp.6–7.",
+      "limitation": "General closing insight, not a claim the same 1997 fault persists or evidence of a current outage."
     }
   ]
 }

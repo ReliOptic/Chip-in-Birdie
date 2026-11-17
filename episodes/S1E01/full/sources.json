@@ -1,86 +1,210 @@
 [
   {
-    "id": "A",
-    "title": "Morris Chang oral history · 24 August 2007",
-    "url": "https://archive.computerhistory.org/resources/text/Oral_History/Chang_Morris/Chang_Morris_1.oral_history.2007.102658129.pdf",
-    "locator": "CHM X4151.2008 · printed pp. 9–14",
-    "note": "Retrospective participant testimony: Chang's executive experience, Li as a minister without portfolio, the 1985 proposal, manufacturing as a potential strength, uncertain customers, early growth, and the need to prove technology and trust. Not a recording of a 1985 meeting. The transcript has apparent IDM/IBM transcription errors; no claim that IBM was the first customer is made."
+    "id": "P01",
+    "title": "NVIDIA S-1 · filed 6 March 1998",
+    "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001045810/e198721c-58f6-4772-8633-cb95ca474654.pdf",
+    "kind": "period_customer_filing",
+    "locator": "Printed pp.11–13 (PDF pp.19–21); p.25 (PDF p.33)",
+    "note": "Historical disclosure, not current terms. Brief quotation/citation only; filing availability does not license complete document redistribution.",
+    "verification": {
+      "status": "retrieved_pdf_text",
+      "checked_on": "2026-11-17",
+      "scope": "Relevant text only; not audiovisual viewing, asset rights approval or release approval."
+    }
   },
   {
-    "id": "B",
+    "id": "P02",
+    "title": "NVIDIA corporate timeline · 1997",
+    "url": "https://www.nvidia.com/content/timeline/time_97.html",
+    "kind": "company_historical_record",
+    "locator": "April, August and November 1997 entries",
+    "note": "Retrospective company chronology; preserves the 1997 product and OEM sequence without adding quantities.",
+    "verification": {
+      "status": "retrieved_page_text",
+      "checked_on": "2026-11-17",
+      "scope": "Relevant text only; not audiovisual viewing, asset rights approval or release approval."
+    }
+  },
+  {
+    "id": "P04",
+    "title": "NVIDIA corporate timeline · 1998",
+    "url": "https://www.nvidia.com/content/timeline/time_98.html",
+    "kind": "company_historical_record",
+    "locator": "January–March 1998 entries",
+    "note": "The partnership month differs from P05's contemporaneous date. Use the year; do not silently merge dates.",
+    "verification": {
+      "status": "retrieved_page_text",
+      "checked_on": "2026-11-17",
+      "scope": "Relevant text only; not audiovisual viewing, asset rights approval or release approval."
+    }
+  },
+  {
+    "id": "P05",
+    "title": "NVIDIA partnership press release · 23 February 1998",
+    "url": "https://www.tomshardware.com/reviews/nvidia-announces-riva-128zx,58-3.html",
+    "kind": "primary_release_reproduced_by_third_party",
+    "locator": "Press Release 2: NVIDIA FORMS STRATEGIC PARTNERSHIP WITH TSMC, first three paragraphs",
+    "note": "NVIDIA-issued primary statement carried by Tom's Hardware, not an independently reported conclusion or a TSMC-only manufacturing claim.",
+    "verification": {
+      "status": "retrieved_reproduced_release_text",
+      "checked_on": "2026-11-17",
+      "scope": "Relevant text only; not audiovisual viewing, asset rights approval or release approval."
+    }
+  },
+  {
+    "id": "P06",
+    "title": "NVIDIA and TSMC · 500 million processors · 24 October 2006",
+    "url": "https://pr.tsmc.com/english/news/1408",
+    "kind": "period_joint_company_release",
+    "locator": "Opening paragraph and paragraph on high-volume production",
+    "note": "A company-reported milestone; GeForce GPUs and nForce MCPs are included. Not an audited current total.",
+    "verification": {
+      "status": "retrieved_page_text",
+      "checked_on": "2026-11-17",
+      "scope": "Relevant text only; not audiovisual viewing, asset rights approval or release approval."
+    }
+  },
+  {
+    "id": "P08",
+    "title": "Morris Chang oral history · 24 August 2007",
+    "url": "https://archive.computerhistory.org/resources/access/text/2013/05/102658129-05-01-acc.pdf",
+    "kind": "retrospective_participant_testimony",
+    "locator": "CHM X4151.2008, printed pp.9–14, especially pp.12–14",
+    "note": "Recollection, not contemporary minutes. Apparent IDM/IBM transcription ambiguity is not used to identify IBM as a first customer.",
+    "verification": {
+      "status": "retrieved_pdf_text",
+      "checked_on": "2026-11-17",
+      "scope": "Relevant text only; not audiovisual viewing, asset rights approval or release approval."
+    }
+  },
+  {
+    "id": "P09",
     "title": "Morris Chang in conversation with Jen-Hsun Huang · 17 October 2007",
     "url": "https://archive.computerhistory.org/resources/access/text/2012/05/102658254-05-01-acc.pdf",
-    "locator": "CHM X4614.2008 · printed p. 3; pp. 5–6",
-    "note": "Retrospective accounts: Chang's initial investment figures on p. 3 and Huang's accounts of customer visits, die size and repeated wafer-demand discussions on pp. 5–6. Investment figures are approximate, not a newly audited capitalization table. Huang's story is a later customer recollection, not a contemporaneous visit record, proof of the first customer or evidence of an unspoken purchasing motive."
+    "kind": "retrospective_participant_conversation",
+    "locator": "CHM X4614.2008, printed pp.3–7",
+    "note": "Retrospective figures and visits. The later notebook visit on p.6 must not become the first meeting on p.5; no spoken reenactment.",
+    "verification": {
+      "status": "retrieved_pdf_text",
+      "checked_on": "2026-11-17",
+      "scope": "Relevant text only; not audiovisual viewing, asset rights approval or release approval."
+    }
   },
   {
-    "id": "C",
-    "title": "TSMC Annual Report 1994",
-    "url": "https://investor.tsmc.com/static/annualReports/1994/annual1994.pdf",
-    "locator": "Printed p. 5 (PDF page 8); p. 15 (PDF page 18)",
-    "note": "Period company record: founded in 1987; charter description restricting own-brand IC end products; Philips cooperation and ITRI leases beginning in 1987; Cirrus Logic International deposit and supply agreement beginning on 23 September 1993. Does not establish the first customer, chip identity, order volume or yield. Source PDF pages were rendered and read; they are not reproduced in the film."
+    "id": "P10",
+    "title": "ITRI · Developing Semiconductors From Scratch",
+    "url": "https://50th.itri.org.tw/en/history/semiconductors/2/",
+    "kind": "institutional_retrospective",
+    "locator": "1986 collaboration / 1987 spin-off paragraph",
+    "note": "Later institutional history; used for resources and founding, not a verified reconstruction of the original facility.",
+    "verification": {
+      "status": "retrieved_page_text",
+      "checked_on": "2026-11-17",
+      "scope": "Relevant text only; not audiovisual viewing, asset rights approval or release approval."
+    }
   },
   {
-    "id": "D",
-    "title": "ITRI · The Birth of Taiwan’s Semiconductor Industry",
-    "url": "https://itritoday.itri.org/114/content/en/unit_01-2.html",
-    "locator": "ITRI Today · Fall 2023 · paragraph about the 1987 spin-off",
-    "note": "Institutional retrospective: transfer of facilities, equipment, technology and personnel to TSMC. Used narrowly for the resources sequence; the RCA prehistory belongs to other episodes."
+    "id": "P12",
+    "title": "TSMC Annual Report 1997 · Company Profile",
+    "url": "https://investor.tsmc.com/static/annualReports/1997/company1.html",
+    "kind": "period_company_record",
+    "locator": "Opening and charter paragraphs",
+    "note": "Period corporate description. The original founding charter itself is not reproduced or independently authenticated here.",
+    "verification": {
+      "status": "retrieved_page_text",
+      "checked_on": "2026-11-17",
+      "scope": "Relevant text only; not audiovisual viewing, asset rights approval or release approval."
+    }
   },
   {
-    "id": "E",
-    "title": "ASML · How microchips are made",
-    "url": "https://www.asml.com/en/technology/all-about-microchips/how-microchips-are-made",
-    "locator": "Opening manufacturing description; Tiny skyscrapers; Types of chipmakers",
-    "note": "Technical explanation: interconnected patterned layers, layer alignment, controlled fabrication, foundries and fabless/IDM distinctions. A modern mechanism source, not evidence of a 1987 TSMC facility or the exact geometry of the authored robot model."
+    "id": "P13",
+    "title": "Intel history · Farewell to DRAM",
+    "url": "https://timeline.intel.com/1985/farewell-to-dram",
+    "kind": "institutional_retrospective_with_period_artifact",
+    "locator": "10 October 1985 entry; internal-publication caption",
+    "note": "Narrowly the DRAM withdrawal. Company historical framing is not an independent assessment of every cause.",
+    "verification": {
+      "status": "retrieved_page_text",
+      "checked_on": "2026-11-17",
+      "scope": "Relevant text only; not audiovisual viewing, asset rights approval or release approval."
+    }
   },
   {
-    "id": "F",
-    "title": "ASML · Six crucial steps in semiconductor manufacturing",
-    "url": "https://www.asml.com/en/company/stories/2021/semiconductor-manufacturing-process-steps",
-    "locator": "Deposition, Photoresist coating, Lithography and Etch sections",
-    "note": "General process support for the simplified layer sequence. Film geometry exaggerates layer thickness and does not specify a process node, recipe, yield or proprietary equipment geometry."
+    "id": "P14",
+    "title": "Intel Corporation Annual Report 1986",
+    "url": "https://www.intel.com/content/dam/www/central-libraries/us/en/documents/2025-05/history-1986-annual-report.pdf",
+    "kind": "period_company_record",
+    "locator": "Printed p.31, Management's Discussion and Analysis / Results of Operations",
+    "note": "Relevant primary text was retrieved from the search index. Direct PDF open exceeded the tool size limit; no rendered-page verification is claimed.",
+    "verification": {
+      "status": "verified_indexed_primary_text",
+      "checked_on": "2026-11-17",
+      "scope": "Relevant text only; not audiovisual viewing, asset rights approval or release approval."
+    }
   },
   {
-    "id": "G",
-    "title": "TSMC · Interoperable EDA formats",
-    "url": "https://pr.tsmc.com/english/news/1609",
-    "locator": "7 April 2010 · paragraphs on process requirements and iPDK/iDRC",
-    "note": "Public description of process design kits and rule verification. It does not imply that production PDKs are publicly downloadable. Layout adjustments shown are illustrative, with no numerical design rule."
+    "id": "P15",
+    "title": "Dataquest · DRAM—Market Shares · April 1987",
+    "url": "https://archive.computerhistory.org/resources/access/text/2013/04/102723461-05-01-acc.pdf",
+    "kind": "period_market_research",
+    "locator": "SIS Memories, DRAM—Market Shares, section p.2, April 1987",
+    "note": "Indexed primary passage checked; complete PDF open hit a size limit. DRAM category and 1985–86 period only, not all semiconductor sales.",
+    "verification": {
+      "status": "verified_indexed_primary_text",
+      "checked_on": "2026-11-17",
+      "scope": "Relevant text only; not audiovisual viewing, asset rights approval or release approval."
+    }
   },
   {
-    "id": "H",
-    "title": "TSMC · Quality and reliability",
-    "url": "https://www.tsmc.com/english/aboutTSMC/quality_and_reliability",
-    "locator": "Quality Management System / Technology Development",
-    "note": "Company description of design support, wafer manufacture, probing and testing. Supports the operational scope, not a claim that every unit meets specifications."
+    "id": "P16",
+    "title": "IBM history · The IBM PC",
+    "url": "https://www.ibm.com/history/personal-computer",
+    "kind": "institutional_retrospective",
+    "locator": "Architecture section, technical-reference and peripherals paragraph",
+    "note": "Used for published architecture and complementary products, not a single-cause explanation for TSMC's growth.",
+    "verification": {
+      "status": "retrieved_page_text",
+      "checked_on": "2026-11-17",
+      "scope": "Relevant text only; not audiovisual viewing, asset rights approval or release approval."
+    }
   },
   {
-    "id": "I",
-    "title": "TSMC · eFoundry engineering collaboration",
-    "url": "https://www.tsmc.com/english/dedicatedFoundry/services/eFoundry",
-    "locator": "Engineering Collaboration / Logistics Collaboration",
-    "note": "Publicly describes access to wafer yields, acceptance-test analysis, and fabrication/testing status. The displayed pass/fail marks are fabricated teaching data, not observed TSMC yield."
+    "id": "P17",
+    "title": "TSMC · 0.35um SRAM volume production · 19 June 1996",
+    "url": "https://pr.tsmc.com/english/news/2061",
+    "kind": "period_company_release",
+    "locator": "Opening and Don Brooks pilot-production paragraphs",
+    "note": "Separate SRAM example. Its process-specific results must not become NVIDIA graphics-chip results.",
+    "verification": {
+      "status": "retrieved_page_text",
+      "checked_on": "2026-11-17",
+      "scope": "Relevant text only; not audiovisual viewing, asset rights approval or release approval."
+    }
   },
   {
-    "id": "J",
-    "title": "Editorial interpretation and authored models",
-    "url": "https://github.com/ReliOptic/Chip-in-Birdie/pull/4",
-    "locator": "Full-film source and claims ledger",
-    "note": "Business-boundary diagrams, resource queues, customer layout and package are authored explanatory models. Capacity allocation, relative dimensions and test results are not historical measurements. This is the production record for the models, not an independent historical source."
+    "id": "P18",
+    "title": "ASML · Measuring accuracy",
+    "url": "https://www.asml.com/en/technology/lithography-principles/measuring-accuracy",
+    "kind": "vendor_technical_explanation",
+    "locator": "Optical metrology / E-beam metrology and inspection",
+    "note": "General defect/yield mechanism. Modern tools, dimensions and images do not document the 1997 incident.",
+    "verification": {
+      "status": "retrieved_page_text",
+      "checked_on": "2026-11-17",
+      "scope": "Relevant text only; not audiovisual viewing, asset rights approval or release approval."
+    }
   },
   {
-    "id": "K",
-    "title": "FormFactor · Applications",
-    "url": "https://www.formfactor.com/applications/",
-    "locator": "Parametric / manufacturing-process description: testing structures with electrical contact",
-    "note": "The test-equipment manufacturer's public explanation directly supports electrical contact with wafer-level test structures to characterize device performance. It does not validate the film's probe geometry, contact force, test program, pass/fail marks or any TSMC yield."
-  },
-  {
-    "id": "L",
-    "title": "Cirrus Logic · FY1997 Form 10-K",
-    "url": "https://www.sec.gov/Archives/edgar/data/772406/0000772406-97-000077.txt",
-    "locator": "Fiscal year ended 29 March 1997; filed 17 June 1997; financial-statement note Other Wafer Supply Arrangements",
-    "note": "Primary customer filing. Minimum purchases, guaranteed quantities, conditional shortfall penalties and a future US$118m advance commitment under the FY1996 agreement. Reconsideration had not yet produced a new written agreement. Cirrus's manufacturing JV stakes mean it is not presented as a pure fabless archetype. Schematic reservation counts and costs are authored, not extracted from this record."
+    "id": "P19",
+    "title": "TSMC · What is DTCO? · 15 June 2022",
+    "url": "https://www.tsmc.com/english/news-events/blog-article-20220615",
+    "kind": "vendor_technical_explanation",
+    "locator": "Process-window iteration and design-rule coordination paragraphs",
+    "note": "General design–process interaction only; no claim that a named modern workflow was used in 1997.",
+    "verification": {
+      "status": "retrieved_page_text",
+      "checked_on": "2026-11-17",
+      "scope": "Relevant text only; not audiovisual viewing, asset rights approval or release approval."
+    }
   }
 ]

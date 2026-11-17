@@ -1,61 +1,59 @@
-# 261117 · S1E01 — Who pays for the factory?
+# 261117 · S1E01 — NVIDIA needed chips. TSMC needed customers.
 
-[Watch the existing private Site](https://chip-in-birdie-s1e01-261117.reliqbit.chatgpt.site)
+[Watch the existing Site](https://chip-in-birdie-s1e01-261117.reliqbit.chatgpt.site)
 
-**R5 is the same full S1E01, rebuilt around the business exchange.** It continues [PR #4](https://github.com/ReliOptic/Chip-in-Birdie/pull/4), with 6:37.540 of actual English narration and Korean / English captions. The precise deployment revision is recorded in [media-bundle.json](media-bundle.json). The Site stays owner-private.
+**R6 continues the same full S1E01 and [PR #4](https://github.com/ReliOptic/Chip-in-Birdie/pull/4).** It is an archive-led documentary: 6:24.411 of measured English narration, Korean / English / off captions, 66 authored shots and six chapters. Earlier 3D revisions remain historical; their rotating worlds are not imported by this player.
 
-## What the film now asks
+## The story
 
-A chip company no longer has to finance its own factory. What does it gain, what does the manufacturer gain, and what commitments can the customer still owe?
+NVIDIA had a product people wanted, but manufacturing constrained what it could ship. Its 1998 filing is the opening evidence. The film rewinds to the 1980s: why would someone build a manufacturing company for customers who either already had their own factories or barely existed yet?
 
-The definition takes approximately five seconds. A real customer contract appears at 00:11. The subsequent chapters add a different decision, rather than extending that definition with a long fabrication tour.
+The viewer follows the risk on both sides: financing a product without financing a fab; funding the manufacturer; surviving customers' temporary overflow orders; making good chips rather than merely buying wafers; and committing manufacturing capacity against uncertain forecasts. The definition of foundry/fabless is not the film's destination.
 
-| Start | Business consequence | Picture |
+| Start | Chapter | Main visual evidence / action |
 | --- | --- | --- |
-| 00:00 | Production access can be bought separately from ownership | Factory-ownership invoice leaves; a production order remains beside the product |
-| 00:20 | Product risk need not also require factory financing; costs and exceptions remain | Product plan and cutaway construction, residual cost receipts, make-or-buy choice |
-| 01:04 | Someone must capitalize the manufacturer | Approximate $220m starting investment; proportional 48/27/25 foundations; 98 transferred professionals |
-| 01:59 | Compatible customers can fill common assets, but downturns and transient overflow remain | Mechanical booking board, fixed-capacity spine, incompatible key, withdrawing orders |
-| 03:15 | A manufacturer need not become its customer's product rival | Shipment counter and withdrawn own-product catalogue; commercial controls remain |
-| 03:57 | A higher production quote can buy a lower usable-chip cost | Brief preserved PR #4 fab handoff, then independent A/B production trays |
-| 04:40 | Supply access can retain capital and unused-capacity obligations | Cirrus filing, future advance schedule, seven bought / two resold / one unsold illustrative units |
-| 05:55 | Product and manufacturing businesses have complementary—not identical—returns and risks | Distinct audio, graphics and network objects, launches and remaining exposures |
+| 00:00 | A hit. Not enough chips. | Huang, RIVA 128, actual ST/NVIDIA package markings and NVIDIA's S-1 |
+| 00:42 | 1985: a dangerous business | Intel's DRAM exit, dated factory context, Taiwan locator and Chang |
+| 01:44 | Customers that barely existed | Customer demand risk, initial backers and ITRI's technology/personnel transfer |
+| 02:55 | A place inside the PC | Preserved IBM PC, actual expansion slots, graphics boards and the 1998 production relationship |
+| 04:00 | What the contract could not fix | Wafer payment, illustrative yield/design-process mechanisms and documented customer pilot work |
+| 05:11 | Whose future fills the factory? | A later Chang–Huang forecasting anecdote, investment risk and the joint 2006 milestone |
 
-### The numerical decision
+## Picture and evidence boundaries
 
-An explicitly invented teaching comparison uses A: cost 100 / 60 usable chips and B: cost 120 / 90 usable chips. B has a 20% higher processing quote but a 20% lower processing cost per usable chip: 1.67 versus 1.33. These are not TSMC prices or yields; test, packaging and other differences are excluded. The two runs retain separate die identities.
+Sixteen distinct photographic assets appear; seventeen are packaged and credited, with the unused Intel 8088 image retained in the asset register. Portraits, period objects, photographs, documents and limited explanatory graphics have different jobs and compositions. Crops reveal real markings and expansion slots. There are no repeating 3D camera orbits in the active cut.
 
-The Cirrus contract is a different kind of evidence: an actual FY1997 filing. The film distinguishes the future $118m advance commitment, its incomplete renegotiation, and the shortfall clauses in the FY1993/FY1996 agreements. It does not claim that the $118m was already paid, that a penalty was actually incurred, or that Cirrus was a pure fabless company.
+- Product dates are not photo dates. Modern portraits/buildings are dated; the 1989 factory photograph is Erfurt, East Germany, not TSMC or Taiwan.
+- Both photographed RIVA packages carry ST marks. Neither is passed off as a proven TSMC-made unit.
+- Documentary pages are labeled source summaries or short typeset excerpts, not scans or facsimiles of original contracts.
+- The illustrative bridge/correction animation is not a diagnosis of NVIDIA's 1997 production problem. No invented defect yield is presented as measured.
+- Huang's black-book account is a later visit recalled in 2007, not footage or a record of the first 1997 meeting.
+- The 2006 joint total is 500 million processors, not 500 million GPUs. It includes GeForce GPUs and nForce media and communications processors.
+- Creator, source, license, dates, modifications and limits travel in the film's Sources & credits and [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt).
 
-## What changed from R4
-
-- Removed the repeated L-shaped circuit/wafer motif and the long layout / lithography / probing tour from the active edit. The old source remains in Git history and the repository; it is no longer imported by the player.
-- Eight new scene worlds carry different physical actions. Only the brief original fab handoff remains in the active film.
-- Reduced 8:54.139 to **6:37.540** through rewriting and removing repeated argument, not merely speeding playback.
-- Replaced blanket headlines with brief object-led labels, stronger chapter entrances and numeric inserts.
-- Rebuilt the actual narration: **9,540,960 samples at 24 kHz**, 40 measured utterances, eight chapters. No estimated word timings are presented as alignment.
-- Preserved pause, seek, restart, restoration, language selection, passage evidence, buffering recovery and an explicitly labeled CPU compatibility path.
+[Direction](direction-r6.md) · [Claims](claims.json) · [Primary sources](sources.json) · [Archive register](archive-manifest.json) · [Audio report](audio-r6-report.json) · [Verification](verification-r6.md) · [Exact deployed bundle](media-bundle.json)
 
 ## Reproduce
 
-Use the recovered original GLB / exact Three.js r170 assets and the matching full-r5 audio:
+Use the exact archived image bytes described by the manifest and matching full-r6 narration. The build rejects stale script hashes, mismatched text/timings and inconsistent PCM duration.
 
 ```bash
 node episodes/S1E01/full/build.mjs \
-  --assets /path/to/assets --audio /path/to/audio/full-r5 \
+  --archive /path/to/archive --audio /path/to/audio/full-r6 \
   --out /path/to/output --site /path/to/site/dist
 
-node --experimental-vm-modules episodes/S1E01/full/qa-contract.mjs \
-  --bundle /path/to/output/S1E01-full-documentary.html
-node --experimental-vm-modules episodes/S1E01/full/qa-site.mjs /path/to/site/dist
-node episodes/S1E01/full/qa-worlds-r5.mjs \
-  --assets /path/to/assets --out /path/to/world-results.json
+node --experimental-vm-modules episodes/S1E01/full/qa-archive-runtime.mjs \
+  --archive /path/to/archive \
+  --bundle /path/to/output/S1E01-full-documentary.html \
+  --site /path/to/site/dist
 ```
 
-The build rejects stale script/audio hashes and inconsistent PCM timing. Raw media lives in the private Site source, not the public GitHub repository. The single-file HTML is also built for archival use.
+The production player needs Canvas 2D, not WebGL. It includes pause, seek, restart, paused restoration, mute, transcript, passage-specific evidence, image-loading recovery and a CSS cinema view if native fullscreen is unavailable. Captions have a separate area and do not cover the image's source labels.
 
-## Evidence and approval boundary
+Raw photographs and audio are kept in the authorized Sites source, not duplicated in this GitHub repository. A matching single-file HTML is downloadable from the Site.
 
-See [direction-r5.md](direction-r5.md), [verification-r5.md](verification-r5.md), [claims.json](claims.json) and [sources.json](sources.json). R3/R4 reports remain historical and do not certify R5.
+## Review and publication
 
-A live Site, deterministic scene test or decoded voice does not prove enjoyable viewing or pronunciation quality. Independent full audiovisual release approval remains separate. No public audience change, YouTube release, MP4 export or next episode is included.
+The user's latest direction replaces the all-3D treatment with an archive-led film. The current Site access record is public (revision 2); this work preserves that setting and does not change the audience. Site publication is not YouTube publication.
+
+Earlier R3–R5 validation reports and immutable deliveries apply only to those revisions. R6's final checks and exact delivery are recorded separately. A successful build, natural playback end or repeatable rendering does not establish enjoyable viewing, perfect pronunciation, mobile Safari performance or independent audiovisual release approval. No READY/DONE or YouTube PUBLISHED claim is implied.
