@@ -7,15 +7,15 @@
     "독립 전체 시청·청취 검수가 남으면 READY 또는 완성 편수로 올리지 않는 인계",
     "동일 최종 소스의 비공개 Sites 배포 성공, 실제 검수 관찰 및 남은 출시 관문 기록"
   ],
-  "attempt": 3,
+  "attempt": 4,
   "audience_ref": "channel/audience.json",
   "blocked_reason": null,
   "claim": {
-    "actor": "codex-root-s1e01-r5",
-    "claimed_at": "2026-11-17T12:33:28.645142Z",
-    "lease_expires_at": "2026-11-17T20:33:28.645157Z",
+    "actor": "codex-root-s1e01-r6",
+    "claimed_at": "2026-11-17T16:25:03.736124Z",
+    "lease_expires_at": "2026-11-18T00:25:03.736142Z",
     "model": "GPT-6",
-    "session_id": "chat-20261117-s1e01-r5-business",
+    "session_id": "chat-20261117-s1e01-r6-archive",
     "session_id_source": "explicit"
   },
   "current_delivery_id": "TASK-002-r0003",
@@ -161,6 +161,37 @@
       "delivery_id": "TASK-002-r0003",
       "event": "SUBMITTED",
       "revision": 3
+    },
+    {
+      "actor": "codex-root-s1e01-r6",
+      "at": "2026-11-17T16:25:03.579144Z",
+      "event": "BLOCK",
+      "preserved_delivery_id": "TASK-002-r0003",
+      "previous_state": "IN_REVIEW",
+      "reason": "Director rejects R5: repeated objects, camera, texture and background; requests archive-led Vox-like documentary editing and a compelling familiar story.",
+      "revision": 3
+    },
+    {
+      "actor": "codex-root-s1e01-r6",
+      "at": "2026-11-17T16:25:03.646378Z",
+      "event": "RETRY",
+      "preserved_delivery_id": "TASK-002-r0003",
+      "previous_state": "BLOCKED",
+      "reason": "Continue the same full S1E01 and PR #4 with real licensed period imagery, NVIDIA 1997 manufacturing bottleneck, measured narration and existing Sites publication.",
+      "revision": 3
+    },
+    {
+      "actor": "codex-root-s1e01-r6",
+      "at": "2026-11-17T16:25:03.736162Z",
+      "claim": {
+        "actor": "codex-root-s1e01-r6",
+        "claimed_at": "2026-11-17T16:25:03.736124Z",
+        "lease_expires_at": "2026-11-18T00:25:03.736142Z",
+        "model": "GPT-6",
+        "session_id": "chat-20261117-s1e01-r6-archive",
+        "session_id_source": "explicit"
+      },
+      "event": "CLAIMED"
     }
   ],
   "objective": "PR #4의 S1E01 전체 3D 다큐멘터리를 이어 내러티브·장면 설명력·재생을 수정하고 Sites에 비공개 배포한다. 실제 영어 음성에 맞춘 전체 영상·한국어/영어 자막·출처 UI와 정확한 리비전의 검증 증거를 인계한다. 독립 시청·청취와 공개 출시는 별도 승인으로 남긴다.",
@@ -172,8 +203,8 @@
   ],
   "revision": 3,
   "scope": "episode",
-  "status": "IN_REVIEW",
+  "status": "CLAIMED",
   "task_id": "TASK-002",
   "title": "S1E01 / H039 · PR #4 전체 3D 다큐멘터리 후속 제작",
-  "updated_at": "2026-11-17T13:27:36.797624Z"
+  "updated_at": "2026-11-17T16:25:03.736196Z"
 }
