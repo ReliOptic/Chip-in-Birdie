@@ -1,0 +1,148 @@
+{
+  "scope": "Actual Chromium WebGL scene playback; not finished film or listening review",
+  "meta": {
+    "duration": 6,
+    "animationClips": 4,
+    "fullEpisode": false
+  },
+  "states": [
+    {
+      "time": 0,
+      "items": {
+        "Hero_wafer": [
+          -1,
+          1.7599999904632568,
+          -0.6800000071525574
+        ],
+        "Robot_wrist": [
+          -1,
+          1.649999976158142,
+          -0.1599999964237213
+        ],
+        "Macro_transfer_camera": [
+          1.149999976158142,
+          2.9200000762939453,
+          2.75
+        ]
+      },
+      "audioTime": 0,
+      "audioPaused": true
+    },
+    {
+      "time": 3,
+      "items": {
+        "Hero_wafer": [
+          -1,
+          1.7599999904632568,
+          -1.2853608131408691
+        ],
+        "Robot_wrist": [
+          -1,
+          1.649999976158142,
+          -0.765360951423645
+        ],
+        "Macro_transfer_camera": [
+          0.9520977735519409,
+          2.8210489749908447,
+          2.5768356323242188
+        ]
+      },
+      "audioTime": 0,
+      "audioPaused": true
+    },
+    {
+      "time": 4.7,
+      "items": {
+        "Hero_wafer": [
+          -1,
+          1.7200000286102295,
+          -1.399999976158142
+        ],
+        "Robot_wrist": [
+          -1,
+          1.5699999332427979,
+          -0.8783476638383585
+        ],
+        "Macro_transfer_camera": [
+          0.7988202876264446,
+          2.744410279711676,
+          2.442717939427122
+        ]
+      },
+      "audioTime": 0,
+      "audioPaused": true
+    },
+    {
+      "time": 5.9,
+      "items": {
+        "Hero_wafer": [
+          -1,
+          1.7200000286102295,
+          -1.399999976158142
+        ],
+        "Robot_wrist": [
+          -1,
+          1.5699999332427979,
+          -0.17197058362117484
+        ],
+        "Macro_transfer_camera": [
+          0.7503478282055742,
+          2.720173835424247,
+          2.4003045076324248
+        ]
+      },
+      "audioTime": 0,
+      "audioPaused": true
+    }
+  ],
+  "end_state": {
+    "time": 5.229561,
+    "items": {
+      "Hero_wafer": [
+        -1,
+        1.7200000286102295,
+        -1.399999976158142
+      ],
+      "Robot_wrist": [
+        -1,
+        1.5699999332427979,
+        -0.6032944205009539
+      ],
+      "Macro_transfer_camera": [
+        0.7683449046320356,
+        2.7291724685630268,
+        2.4160518315345967
+      ]
+    },
+    "audioTime": 6,
+    "audioPaused": false
+  },
+  "audio": [
+    {
+      "duration": 469.882,
+      "readyState": 4,
+      "error": null
+    },
+    {
+      "duration": 6,
+      "readyState": 4,
+      "error": null
+    }
+  ],
+  "same_seek_pixel_identical": true,
+  "page_errors": [],
+  "played_seconds_observed": 6,
+  "full_episode_complete": false,
+  "real_time_webgl_quality": "FRAME_LAG_OBSERVED; deterministic seek passes; pre-rendered playback is supplied",
+  "rendered_scene_playback": {
+    "duration": 6,
+    "currentTime": 6,
+    "ended": true,
+    "error": null,
+    "width": 960,
+    "height": 540
+  },
+  "rendered_from": "72 deterministic frames at 12 fps, encoded 24 fps via duplicated frames; not interpolated motion",
+  "full_narration_duration": 469.882,
+  "listening_review": "NOT_PERFORMED"
+}

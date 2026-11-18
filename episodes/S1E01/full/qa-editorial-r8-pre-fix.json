@@ -1,0 +1,41 @@
+{
+  "schema": "chip-in-birdie.bounded-editorial-qa/v1",
+  "date": "2026-11-18",
+  "status": "FINDINGS_OPEN_NOT_RELEASE_APPROVAL",
+  "review_role": "Cross-module source/timing/graphic review. This reviewer authored the candidate narration and process module; this record is not independent approval of those own deliverables.",
+  "method": ["Read actual script, shot plan, editorial renderer and director", "Compared narration text against generated audio timeline", "Computed shot/event boundary states", "Rendered reporting shots in NAPI Canvas at 15% and 85% progress and compared exact PNG hashes", "Ran world-space triangle aperture rays and paired-door bounds after process fix"],
+  "audio_duration_seconds": 477.3573333333333,
+  "script_audio_text_mismatches": [],
+  "snapshot_sha256": {
+    "script.json": "7b87d7d8c0f485291a5caad044ea2befe3b0d070447008c4a0f774370bbc3939",
+    "fab-shotplan-r8.mjs": "0f032e3957be3ce19c3f01a1e885178a60df40c4c9140fd72089e89a903a77a9",
+    "fab-editorial-r8.mjs": "0c2142d7e3a5490e14577264c0a3ea66e327143cb734949857a6b2c479404484",
+    "fab-director-r8.mjs": "fef00f1697695b18f3d53dcc760cb0bb3fc7c8d58c2560090b755655398e0863",
+    "fab-process-r8.mjs": "7afacf4c5cbd90472912d5e3a87de216060a67ca5102e501367ff32ff1992b0b"
+  },
+  "findings": [
+    {"id":"R8E01","severity":"critical","status":"SOURCE_RECHECKED_FIXED","location":"fab-shotplan-r8.mjs f08/f09 and load event","problem":"Earlier f09 restarted docking while narration said the handling robot could only then access wafers.","correction_observed":"handoff ends at73.794667; f08 second shot enters EFEM atp.16; load event continues through f09, whose first shot starts atp.418388 with door already clear. Actual generated narration text matches the script.","remaining":"Full movie frame/audio inspection still needed."},
+    {"id":"R8E02","severity":"high","status":"OPEN","location":"fab-shotplan-r8.mjs f10/f11","problem":"layers view begins atprocess p.235700, after deposition has finished atp.18. Adding the layer is therefore never visible. pattern starts atp.471399, then development begins about1.43s later.","proposed_fix":"Give each selected operation its own shot-local clock: chamber .20-.72; layers0-.34; pattern .34-.70; etch .70-1. Layer states remain continuous across their three cuts; chamber is a separately framed machine/principle."},
+    {"id":"R8E03","severity":"high","status":"SOURCE_RECHECKED_FIXED","location":"fab-shotplan-r8.mjs f29","problem":"Original f29 replayed the prior EFEM extraction atp.82-.98 after the work had completed.","correction_observed":"Replaced by a newly authored handoff-data reporting graphic. Add its explicit eFoundry/DTCO source entry to sourceByView rather than the generic fallback."},
+    {"id":"R8E04","severity":"high_editorial_risk","status":"OPEN","location":"fab-editorial-r8.mjs static reporting branches","problem":"13 reporting shots are exactly identical at15% and85% local progress, covering143.354s. The f31-f34 history block has48.235s of entirely static internal pictures. This directly risks repeating the user's unchanged-picture complaint.","proposed_fix":"Reveal distinct evidence, responsibility or consequence in narrated stages; prioritize collaboration, founding, report, customers, commitments and wafer-risk. Moving a decorative dot alone does not resolve the editorial issue.","not_claimed":"PNG equality is not an audience-quality test; a deliberate held image is not automatically an error."},
+    {"id":"R8E05","severity":"medium_semantic","status":"OPEN","location":"fab-editorial-r8.mjs roles","problem":"The arrow labelled design + rules runs designer-to-foundry, teaching the wrong principal direction for foundry design rules.","proposed_fix":"Forward: design + requirements. Return: process rules + data."},
+    {"id":"R8E06","severity":"medium_semantic","status":"OPEN","location":"fab-editorial-r8.mjs containment","problem":"All subsequent chip icons become green after a process change, implying confirmed recovery without new verification.","proposed_fix":"Keep future material neutral; show CHANGE then VERIFY. Only make success conditional on a new verification step, not a guaranteed consequence."},
+    {"id":"R8E07","severity":"medium_editorial_risk","status":"OPEN","location":"fab-editorial-r8.mjs order/measurement/containment/wafer-risk","problem":"The same patterned wafer with red X defects recurs four times; measurement, containment and wafer-risk repeat the left-wafer/right-text composition.","proposed_fix":"For wafer-risk emphasize the dated payment obligation and what yield uncertainty changes, rather than presenting the same red-X wafer again. Do not invent invoice prices, quantities or private contract graphics."},
+    {"id":"R8E08","severity":"low_semantic","status":"OPEN","location":"fab-editorial-r8.mjs route/routes","problem":"The illustrative Product B route visually skips coating before exposure.","proposed_fix":"Use the explicit label Selected tool visits; intervening steps omitted, or include the omitted prerequisites. Do not present this as a full valid process recipe."}
+  ],
+  "unchanged_graphic_shots": [
+    {"row":"f03","view":"roles","duration":9.803}, {"row":"f15","view":"qualification","duration":10.059},
+    {"row":"f16","view":"matrix","duration":10.293}, {"row":"f23","view":"measurement","duration":5.691},
+    {"row":"f24","view":"design","duration":9.013}, {"row":"f27","view":"efoundry","duration":10.144},
+    {"row":"f28","view":"collaboration","duration":14.752}, {"row":"f31","view":"founding","duration":11.125},
+    {"row":"f32","view":"report","duration":11.701}, {"row":"f33","view":"customers","duration":12.277},
+    {"row":"f34","view":"commitments","duration":13.131}, {"row":"f37","view":"wafer-risk","duration":13.664},
+    {"row":"f43","view":"ownership","duration":11.701}
+  ],
+  "process_module_fix": {
+    "cause":"Hardware loadport envelope changed from1.286m to1.386m; a height-specific removal filter left a solid backplate across the process aperture.",
+    "implementation":"Rebuild full local fascia while retaining only table and door assemblies. Align local loadport front door plane to FOUP by initial and animated z=-.1855 before withdrawal.",
+    "actual_geometry_tests":{"world_space_triangle_ray_paths":360,"blocked_hits":0,"paired_door_mesh_max_gap_m":7.301569349138504e-10},
+    "scope_limit":"Sampled aperture/contact geometry check, not a full swept-volume collision proof, dynamic simulation or OEM reconstruction certification. Current visual render still requires integrated review."
+  }
+}

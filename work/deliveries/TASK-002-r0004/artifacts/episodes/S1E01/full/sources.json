@@ -1,0 +1,210 @@
+[
+  {
+    "id": "P01",
+    "title": "NVIDIA S-1 · filed 6 March 1998",
+    "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001045810/e198721c-58f6-4772-8633-cb95ca474654.pdf",
+    "kind": "period_customer_filing",
+    "locator": "Printed pp.11–13 (PDF pp.19–21); p.25 (PDF p.33)",
+    "note": "Historical disclosure, not current terms. Brief quotation/citation only; filing availability does not license complete document redistribution.",
+    "verification": {
+      "status": "retrieved_pdf_text",
+      "checked_on": "2026-11-17",
+      "scope": "Relevant text only; not audiovisual viewing, asset rights approval or release approval."
+    }
+  },
+  {
+    "id": "P02",
+    "title": "NVIDIA corporate timeline · 1997",
+    "url": "https://www.nvidia.com/content/timeline/time_97.html",
+    "kind": "company_historical_record",
+    "locator": "April, August and November 1997 entries",
+    "note": "Retrospective company chronology; preserves the 1997 product and OEM sequence without adding quantities.",
+    "verification": {
+      "status": "retrieved_page_text",
+      "checked_on": "2026-11-17",
+      "scope": "Relevant text only; not audiovisual viewing, asset rights approval or release approval."
+    }
+  },
+  {
+    "id": "P04",
+    "title": "NVIDIA corporate timeline · 1998",
+    "url": "https://www.nvidia.com/content/timeline/time_98.html",
+    "kind": "company_historical_record",
+    "locator": "January–March 1998 entries",
+    "note": "The partnership month differs from P05's contemporaneous date. Use the year; do not silently merge dates.",
+    "verification": {
+      "status": "retrieved_page_text",
+      "checked_on": "2026-11-17",
+      "scope": "Relevant text only; not audiovisual viewing, asset rights approval or release approval."
+    }
+  },
+  {
+    "id": "P05",
+    "title": "NVIDIA partnership press release · 23 February 1998",
+    "url": "https://www.tomshardware.com/reviews/nvidia-announces-riva-128zx,58-3.html",
+    "kind": "primary_release_reproduced_by_third_party",
+    "locator": "Press Release 2: NVIDIA FORMS STRATEGIC PARTNERSHIP WITH TSMC, first three paragraphs",
+    "note": "NVIDIA-issued primary statement carried by Tom's Hardware, not an independently reported conclusion or a TSMC-only manufacturing claim.",
+    "verification": {
+      "status": "retrieved_reproduced_release_text",
+      "checked_on": "2026-11-17",
+      "scope": "Relevant text only; not audiovisual viewing, asset rights approval or release approval."
+    }
+  },
+  {
+    "id": "P06",
+    "title": "NVIDIA and TSMC · 500 million processors · 24 October 2006",
+    "url": "https://pr.tsmc.com/english/news/1408",
+    "kind": "period_joint_company_release",
+    "locator": "Opening paragraph and paragraph on high-volume production",
+    "note": "A company-reported milestone; GeForce GPUs and nForce MCPs are included. Not an audited current total.",
+    "verification": {
+      "status": "retrieved_page_text",
+      "checked_on": "2026-11-17",
+      "scope": "Relevant text only; not audiovisual viewing, asset rights approval or release approval."
+    }
+  },
+  {
+    "id": "P08",
+    "title": "Morris Chang oral history · 24 August 2007",
+    "url": "https://archive.computerhistory.org/resources/access/text/2013/05/102658129-05-01-acc.pdf",
+    "kind": "retrospective_participant_testimony",
+    "locator": "CHM X4151.2008, printed pp.9–14, especially pp.12–14",
+    "note": "Recollection, not contemporary minutes. Apparent IDM/IBM transcription ambiguity is not used to identify IBM as a first customer.",
+    "verification": {
+      "status": "retrieved_pdf_text",
+      "checked_on": "2026-11-17",
+      "scope": "Relevant text only; not audiovisual viewing, asset rights approval or release approval."
+    }
+  },
+  {
+    "id": "P09",
+    "title": "Morris Chang in conversation with Jen-Hsun Huang · 17 October 2007",
+    "url": "https://archive.computerhistory.org/resources/access/text/2012/05/102658254-05-01-acc.pdf",
+    "kind": "retrospective_participant_conversation",
+    "locator": "CHM X4614.2008, printed pp.3–7",
+    "note": "Retrospective figures and visits. The later notebook visit on p.6 must not become the first meeting on p.5; no spoken reenactment.",
+    "verification": {
+      "status": "retrieved_pdf_text",
+      "checked_on": "2026-11-17",
+      "scope": "Relevant text only; not audiovisual viewing, asset rights approval or release approval."
+    }
+  },
+  {
+    "id": "P10",
+    "title": "ITRI · Developing Semiconductors From Scratch",
+    "url": "https://50th.itri.org.tw/en/history/semiconductors/2/",
+    "kind": "institutional_retrospective",
+    "locator": "1986 collaboration / 1987 spin-off paragraph",
+    "note": "Later institutional history; used for resources and founding, not a verified reconstruction of the original facility.",
+    "verification": {
+      "status": "retrieved_page_text",
+      "checked_on": "2026-11-17",
+      "scope": "Relevant text only; not audiovisual viewing, asset rights approval or release approval."
+    }
+  },
+  {
+    "id": "P12",
+    "title": "TSMC Annual Report 1997 · Company Profile",
+    "url": "https://investor.tsmc.com/static/annualReports/1997/company1.html",
+    "kind": "period_company_record",
+    "locator": "Opening and charter paragraphs",
+    "note": "Period corporate description. The original founding charter itself is not reproduced or independently authenticated here.",
+    "verification": {
+      "status": "retrieved_page_text",
+      "checked_on": "2026-11-17",
+      "scope": "Relevant text only; not audiovisual viewing, asset rights approval or release approval."
+    }
+  },
+  {
+    "id": "P13",
+    "title": "Intel history · Farewell to DRAM",
+    "url": "https://timeline.intel.com/1985/farewell-to-dram",
+    "kind": "institutional_retrospective_with_period_artifact",
+    "locator": "10 October 1985 entry; internal-publication caption",
+    "note": "Narrowly the DRAM withdrawal. Company historical framing is not an independent assessment of every cause.",
+    "verification": {
+      "status": "retrieved_page_text",
+      "checked_on": "2026-11-17",
+      "scope": "Relevant text only; not audiovisual viewing, asset rights approval or release approval."
+    }
+  },
+  {
+    "id": "P14",
+    "title": "Intel Corporation Annual Report 1986",
+    "url": "https://www.intel.com/content/dam/www/central-libraries/us/en/documents/2025-05/history-1986-annual-report.pdf",
+    "kind": "period_company_record",
+    "locator": "Printed p.31, Management's Discussion and Analysis / Results of Operations",
+    "note": "Relevant primary text was retrieved from the search index. Direct PDF open exceeded the tool size limit; no rendered-page verification is claimed.",
+    "verification": {
+      "status": "verified_indexed_primary_text",
+      "checked_on": "2026-11-17",
+      "scope": "Relevant text only; not audiovisual viewing, asset rights approval or release approval."
+    }
+  },
+  {
+    "id": "P15",
+    "title": "Dataquest · DRAM—Market Shares · April 1987",
+    "url": "https://archive.computerhistory.org/resources/access/text/2013/04/102723461-05-01-acc.pdf",
+    "kind": "period_market_research",
+    "locator": "SIS Memories, DRAM—Market Shares, section p.2, April 1987",
+    "note": "Indexed primary passage checked; complete PDF open hit a size limit. DRAM category and 1985–86 period only, not all semiconductor sales.",
+    "verification": {
+      "status": "verified_indexed_primary_text",
+      "checked_on": "2026-11-17",
+      "scope": "Relevant text only; not audiovisual viewing, asset rights approval or release approval."
+    }
+  },
+  {
+    "id": "P16",
+    "title": "IBM history · The IBM PC",
+    "url": "https://www.ibm.com/history/personal-computer",
+    "kind": "institutional_retrospective",
+    "locator": "Architecture section, technical-reference and peripherals paragraph",
+    "note": "Used for published architecture and complementary products, not a single-cause explanation for TSMC's growth.",
+    "verification": {
+      "status": "retrieved_page_text",
+      "checked_on": "2026-11-17",
+      "scope": "Relevant text only; not audiovisual viewing, asset rights approval or release approval."
+    }
+  },
+  {
+    "id": "P17",
+    "title": "TSMC · 0.35um SRAM volume production · 19 June 1996",
+    "url": "https://pr.tsmc.com/english/news/2061",
+    "kind": "period_company_release",
+    "locator": "Opening and Don Brooks pilot-production paragraphs",
+    "note": "Separate SRAM example. Its process-specific results must not become NVIDIA graphics-chip results.",
+    "verification": {
+      "status": "retrieved_page_text",
+      "checked_on": "2026-11-17",
+      "scope": "Relevant text only; not audiovisual viewing, asset rights approval or release approval."
+    }
+  },
+  {
+    "id": "P18",
+    "title": "ASML · Measuring accuracy",
+    "url": "https://www.asml.com/en/technology/lithography-principles/measuring-accuracy",
+    "kind": "vendor_technical_explanation",
+    "locator": "Optical metrology / E-beam metrology and inspection",
+    "note": "General defect/yield mechanism. Modern tools, dimensions and images do not document the 1997 incident.",
+    "verification": {
+      "status": "retrieved_page_text",
+      "checked_on": "2026-11-17",
+      "scope": "Relevant text only; not audiovisual viewing, asset rights approval or release approval."
+    }
+  },
+  {
+    "id": "P19",
+    "title": "TSMC · What is DTCO? · 15 June 2022",
+    "url": "https://www.tsmc.com/english/news-events/blog-article-20220615",
+    "kind": "vendor_technical_explanation",
+    "locator": "Process-window iteration and design-rule coordination paragraphs",
+    "note": "General design–process interaction only; no claim that a named modern workflow was used in 1997.",
+    "verification": {
+      "status": "retrieved_page_text",
+      "checked_on": "2026-11-17",
+      "scope": "Relevant text only; not audiovisual viewing, asset rights approval or release approval."
+    }
+  }
+]

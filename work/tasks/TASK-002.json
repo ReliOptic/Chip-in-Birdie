@@ -1,23 +1,312 @@
 {
-  "task_id": "TASK-002",
-  "episode_id": "H039",
-  "title": "H039 기업의 선택을 이해하는 공통 관객용 브리프",
-  "objective": "파운드리와 분업의 맥락을 반도체 업무 경험이 없는 관객도 이해할 사건·도입·핵심 장면으로 설계한다.",
+  "acceptance_evidence": [
+    "PR #4 계보와 이전 리비전은 이력에 보존하되 기존 샷·사진을 재사용하지 않는 동일 S1E01 R8 전체 소스와 자체 포함 HTML",
+    "실제 영어 음성 샘플에 맞춘 전체 타임라인과 한국어·영어 자막",
+    "역사적 선택·고객 관계·제조 원리의 문장별 근거와 해석 한계",
+    "정확한 산출물 SHA, 실행 가능한 검증 코드, 실제 검증과 미검증의 구분",
+    "독립 전체 시청·청취 검수가 남으면 READY 또는 완성 편수로 올리지 않는 인계",
+    "동일 최종 소스의 기존 Sites 배포 성공, 현재 공개 범위 보존, 실제 검수 관찰 및 남은 출시 관문 기록"
+  ],
+  "attempt": 6,
   "audience_ref": "channel/audience.json",
-  "status": "OPEN",
+  "blocked_reason": null,
+  "claim": {
+    "actor": "codex-root-s1e01-r8",
+    "claimed_at": "2026-11-18T09:17:24.395630Z",
+    "lease_expires_at": "2026-11-18T17:17:24.395645Z",
+    "model": "GPT-6",
+    "session_id": "chat-20261118-s1e01-r8-fab",
+    "session_id_source": "explicit"
+  },
+  "current_delivery_id": "TASK-002-r0006",
+  "episode_id": "H039",
+  "history": [
+    {
+      "actor": "codex-root",
+      "at": "2026-11-13T15:32:36.106993Z",
+      "claim": {
+        "actor": "codex-root",
+        "claimed_at": "2026-11-13T15:32:36.106937Z",
+        "lease_expires_at": "2026-11-13T19:32:36.106966Z",
+        "model": "gpt-6.1-sol",
+        "session_id": "chat-20261114-s1e01",
+        "session_id_source": "explicit"
+      },
+      "event": "CLAIMED"
+    },
+    {
+      "actor": "codex-root-s1e01",
+      "at": "2026-11-17T06:43:51.918082Z",
+      "event": "LEASE_EXPIRED",
+      "previous_claim": {
+        "actor": "codex-root",
+        "claimed_at": "2026-11-13T15:32:36.106937Z",
+        "lease_expires_at": "2026-11-13T19:32:36.106966Z",
+        "model": "gpt-6.1-sol",
+        "session_id": "chat-20261114-s1e01",
+        "session_id_source": "explicit"
+      }
+    },
+    {
+      "actor": "codex-root-s1e01",
+      "at": "2026-11-17T06:43:51.918109Z",
+      "claim": {
+        "actor": "codex-root-s1e01",
+        "claimed_at": "2026-11-17T06:43:51.918096Z",
+        "lease_expires_at": "2026-11-17T14:43:51.918098Z",
+        "model": "GPT-6",
+        "session_id": "chat-20261117-s1e01-full",
+        "session_id_source": "explicit"
+      },
+      "event": "CLAIMED"
+    },
+    {
+      "actor": "codex-root-s1e01",
+      "at": "2026-11-17T07:32:54Z",
+      "authority": "User explicitly requested continuation of PR #4 to complete the full S1E01 3D documentary",
+      "event": "SCOPE_UPDATED",
+      "new_scope": "Full S1E01 picture, narration, subtitles, evidence player and bounded verification; no publication or next episode",
+      "previous_scope": "Common-audience brief and scene direction"
+    },
+    {
+      "actor": "codex-root-s1e01",
+      "at": "2026-11-17T07:38:56.830814Z",
+      "bundle_sha256": "515b3252b316bcdde1ce828a78b2cfcc4790166a9ca1489cd3fc1529a6d84298",
+      "delivery_id": "TASK-002-r0001",
+      "event": "SUBMITTED",
+      "revision": 1
+    },
+    {
+      "actor": "codex-root-s1e01-r4",
+      "at": "2026-11-17T10:06:45.938492Z",
+      "event": "BLOCK",
+      "preserved_delivery_id": "TASK-002-r0001",
+      "previous_state": "IN_REVIEW",
+      "reason": "Director requested substantive picture/story improvement and Sites deployment; prior review build is not accepted",
+      "revision": 1
+    },
+    {
+      "actor": "codex-root-s1e01-r4",
+      "at": "2026-11-17T10:06:45.996582Z",
+      "event": "RETRY",
+      "preserved_delivery_id": "TASK-002-r0001",
+      "previous_state": "BLOCKED",
+      "reason": "Continue the same full S1E01 from PR #4 under the new explicit revision/deployment request",
+      "revision": 1
+    },
+    {
+      "actor": "codex-root-s1e01-r4",
+      "at": "2026-11-17T10:06:46.050437Z",
+      "claim": {
+        "actor": "codex-root-s1e01-r4",
+        "claimed_at": "2026-11-17T10:06:46.050410Z",
+        "lease_expires_at": "2026-11-17T18:06:46.050425Z",
+        "model": "GPT-6",
+        "session_id": "chat-20261117-s1e01-r4-sites",
+        "session_id_source": "explicit"
+      },
+      "event": "CLAIMED"
+    },
+    {
+      "actor": "codex-root-s1e01-r4",
+      "at": "2026-11-17T10:53:58Z",
+      "authority": "Director explicitly requested substantive correction and Sites deployment of the same S1E01 full film",
+      "event": "SCOPE_UPDATED",
+      "new_scope": "Revised full S1E01, actual runtime review, owner-only Sites deployment and exact revision handoff; no YouTube publication, public audience change or next episode",
+      "previous_scope": "Full S1E01 picture, narration, subtitles, evidence player and bounded verification; no publication or next episode"
+    },
+    {
+      "actor": "codex-root-s1e01-r4",
+      "at": "2026-11-17T11:00:35.330975Z",
+      "bundle_sha256": "8b50816620f8928f8ad9788fa3d4e1367fbb292082e061588b5201d00a5fa881",
+      "delivery_id": "TASK-002-r0002",
+      "event": "SUBMITTED",
+      "revision": 2
+    },
+    {
+      "actor": "codex-root-s1e01-r5",
+      "at": "2026-11-17T12:33:28.505419Z",
+      "event": "BLOCK",
+      "preserved_delivery_id": "TASK-002-r0002",
+      "previous_state": "IN_REVIEW",
+      "reason": "Director rejects R4: definitions overextended, business benefit unclear, slow pace and repeated assets",
+      "revision": 2
+    },
+    {
+      "actor": "codex-root-s1e01-r5",
+      "at": "2026-11-17T12:33:28.574051Z",
+      "event": "RETRY",
+      "preserved_delivery_id": "TASK-002-r0002",
+      "previous_state": "BLOCKED",
+      "reason": "Revise same S1E01 around business choices, evidenced contracts and distinct causal scenes; retain private Sites delivery scope",
+      "revision": 2
+    },
+    {
+      "actor": "codex-root-s1e01-r5",
+      "at": "2026-11-17T12:33:28.645202Z",
+      "claim": {
+        "actor": "codex-root-s1e01-r5",
+        "claimed_at": "2026-11-17T12:33:28.645142Z",
+        "lease_expires_at": "2026-11-17T20:33:28.645157Z",
+        "model": "GPT-6",
+        "session_id": "chat-20261117-s1e01-r5-business",
+        "session_id_source": "explicit"
+      },
+      "event": "CLAIMED"
+    },
+    {
+      "actor": "codex-root-s1e01-r5",
+      "at": "2026-11-17T13:27:36.797601Z",
+      "bundle_sha256": "10a82524a6a8b88cfda0ff42e68e5fe49f1b296a66d69622ae09c8e87d9689db",
+      "delivery_id": "TASK-002-r0003",
+      "event": "SUBMITTED",
+      "revision": 3
+    },
+    {
+      "actor": "codex-root-s1e01-r6",
+      "at": "2026-11-17T16:25:03.579144Z",
+      "event": "BLOCK",
+      "preserved_delivery_id": "TASK-002-r0003",
+      "previous_state": "IN_REVIEW",
+      "reason": "Director rejects R5: repeated objects, camera, texture and background; requests archive-led Vox-like documentary editing and a compelling familiar story.",
+      "revision": 3
+    },
+    {
+      "actor": "codex-root-s1e01-r6",
+      "at": "2026-11-17T16:25:03.646378Z",
+      "event": "RETRY",
+      "preserved_delivery_id": "TASK-002-r0003",
+      "previous_state": "BLOCKED",
+      "reason": "Continue the same full S1E01 and PR #4 with real licensed period imagery, NVIDIA 1997 manufacturing bottleneck, measured narration and existing Sites publication.",
+      "revision": 3
+    },
+    {
+      "actor": "codex-root-s1e01-r6",
+      "at": "2026-11-17T16:25:03.736162Z",
+      "claim": {
+        "actor": "codex-root-s1e01-r6",
+        "claimed_at": "2026-11-17T16:25:03.736124Z",
+        "lease_expires_at": "2026-11-18T00:25:03.736142Z",
+        "model": "GPT-6",
+        "session_id": "chat-20261117-s1e01-r6-archive",
+        "session_id_source": "explicit"
+      },
+      "event": "CLAIMED"
+    },
+    {
+      "actor": "codex-root-s1e01-r6",
+      "at": "2026-11-17T17:02:00Z",
+      "authority": "Director explicitly rejected repetitive 3D objects/cameras and requested real archival imagery and Vox-like documentary editing, continuing the existing Sites delivery request.",
+      "event": "SCOPE_UPDATED",
+      "new_scope": "Same full S1E01 with real attributed images, contemporary records and purposeful explanatory graphics; no forced 3D aesthetic. Preserve the current Site audience returned by get_site (public, revision2, updated2026-11-17T16:14:19Z). No access mutation, YouTube upload or MP4 request.",
+      "previous_scope": "Full 3D film revision, assumed owner-private Site"
+    },
+    {
+      "actor": "codex-root-s1e01-r6",
+      "at": "2026-11-17T17:27:19.592951Z",
+      "bundle_sha256": "dbecb3bfb447c27e7f88c8c710f2e1c2f398975aa8e1ece5861b90c9c75d1e86",
+      "delivery_id": "TASK-002-r0004",
+      "event": "SUBMITTED",
+      "revision": 4
+    },
+    {
+      "actor": "codex-root-s1e01-r7",
+      "at": "2026-11-17T19:10:07.868271Z",
+      "event": "BLOCK",
+      "preserved_delivery_id": "TASK-002-r0004",
+      "previous_state": "IN_REVIEW",
+      "reason": "Director rejects removal of 3D: wants cinematic spatial events, causal action and varied shot staging; archive-only R6 does not satisfy the full 3D film request.",
+      "revision": 4
+    },
+    {
+      "actor": "codex-root-s1e01-r7",
+      "at": "2026-11-17T19:10:07.918812Z",
+      "event": "RETRY",
+      "preserved_delivery_id": "TASK-002-r0004",
+      "previous_state": "BLOCKED",
+      "reason": "Continue same S1E01 and PR #4: cinematic 3D sequences integrated with existing documentary evidence and full measured narration, not another orbiting object demo.",
+      "revision": 4
+    },
+    {
+      "actor": "codex-root-s1e01-r7",
+      "at": "2026-11-17T19:10:07.973868Z",
+      "claim": {
+        "actor": "codex-root-s1e01-r7",
+        "claimed_at": "2026-11-17T19:10:07.973841Z",
+        "lease_expires_at": "2026-11-18T03:10:07.973855Z",
+        "model": "GPT-6",
+        "session_id": "chat-20261117-s1e01-r7-film",
+        "session_id_source": "explicit"
+      },
+      "event": "CLAIMED"
+    },
+    {
+      "actor": "codex-root-s1e01-r7",
+      "at": "2026-11-17T19:47:00Z",
+      "authority": "Director rejects orbit-only/identical scenes and asks when cinematic 3D storytelling will exist; latest direction retains prior full-film and Sites request.",
+      "event": "SCOPE_UPDATED",
+      "new_scope": "Same full film with causal 3D events and preserved archival evidence; shared action clocks, bounded physical/state verification, existing public Site deployment; no release approval or YouTube publication.",
+      "previous_scope": "R6 archive-led replacement of repetitive 3D"
+    },
+    {
+      "actor": "codex-root-s1e01-r7",
+      "at": "2026-11-17T19:55:22.468906Z",
+      "bundle_sha256": "d6fb14ca0b5ae88a965fb76f30c9a3a1052388a9f440b7d8583130b526e10659",
+      "delivery_id": "TASK-002-r0005",
+      "event": "SUBMITTED",
+      "revision": 5
+    },
+    {
+      "actor": "codex-root-s1e01-r8",
+      "at": "2026-11-18T09:17:24.245425Z",
+      "event": "BLOCK",
+      "preserved_delivery_id": "TASK-002-r0005",
+      "previous_state": "IN_REVIEW",
+      "reason": "Director requests full Vox/BBC-style reporting overhaul, detailed expansive evidence-grounded fab/OHT, a concrete viewer payoff and no reused shots.",
+      "revision": 5
+    },
+    {
+      "actor": "codex-root-s1e01-r8",
+      "at": "2026-11-18T09:17:24.314786Z",
+      "event": "RETRY",
+      "preserved_delivery_id": "TASK-002-r0005",
+      "previous_state": "BLOCKED",
+      "reason": "Continue same PR #4/S1E01 and existing Sites URL with researched fab operations, new narration and entirely new shot coverage.",
+      "revision": 5
+    },
+    {
+      "actor": "codex-root-s1e01-r8",
+      "at": "2026-11-18T09:17:24.395692Z",
+      "claim": {
+        "actor": "codex-root-s1e01-r8",
+        "claimed_at": "2026-11-18T09:17:24.395630Z",
+        "lease_expires_at": "2026-11-18T17:17:24.395645Z",
+        "model": "GPT-6",
+        "session_id": "chat-20261118-s1e01-r8-fab",
+        "session_id_source": "explicit"
+      },
+      "event": "CLAIMED"
+    },
+    {
+      "actor": "codex-root-s1e01-r8",
+      "at": "2026-11-18T10:17:59.716693Z",
+      "bundle_sha256": "8e6f70cbe0e89ec06994ffd928988a23512edb731be89f96a8ffe93d6d5bba35",
+      "delivery_id": "TASK-002-r0006",
+      "event": "SUBMITTED",
+      "revision": 6
+    }
+  ],
+  "objective": "PR #4의 동일 S1E01을 Vox/BBC형 근거 중심 프리미엄 다큐멘터리로 개편한다. 실제 팹 영상과 장비 공개 치수를 연구해 넓은 클린룸, OHT·FOUP·로드포트, 내부 웨이퍼 취급, 선택 공정, 서브팹·계측·패키징을 서로 다른 신규 장면으로 구현한다. 이전 샷·이전 사진은 활성 편집에서 재사용하지 않는다. 팹리스가 얻는 제조 조직 접근과 남는 수율·납기·투자 협업의 의미를 시청자에게 돌려준다. 실측 영어 음성, 한국어/영어 자막, 출처·권리·실사/재구성 구분과 플레이어를 유지하고 같은 Sites URL·현재 공개 범위로 배포한다. 독립 시청·청취 승인, 실제 GPU 및 실기기 품질 검수와 유튜브 출시는 별개다.",
+  "release_implication": "none: task completion is not video READY or publication",
   "required_review_roles": [
     "evidence",
     "editorial",
     "viewer"
   ],
-  "acceptance_evidence": [
-    "초기 고객·설계 보호·비경쟁 약속의 실제 근거와 반론",
-    "채널 공통 관객용 브리프와 영어 도입 후보",
-    "제조와 기업 선택의 연결을 보여주는 장면 지시"
-  ],
-  "claim": null,
-  "revision": 0,
-  "current_delivery_id": null,
-  "history": [],
-  "release_implication": "none: task completion is not video READY or publication"
+  "revision": 6,
+  "scope": "episode",
+  "status": "IN_REVIEW",
+  "task_id": "TASK-002",
+  "title": "S1E01 / H039 · PR #4 실제 팹 근거 기반 전체 다큐멘터리 R8",
+  "updated_at": "2026-11-18T10:17:59.716737Z"
 }

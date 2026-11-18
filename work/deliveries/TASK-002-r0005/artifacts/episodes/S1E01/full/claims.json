@@ -1,0 +1,523 @@
+{
+  "revision": "S1E01-full-r6",
+  "script_file": "script.json",
+  "script_sha256": "50eae44fd3e123e87130d14b0fc2ace165d7d8d207b6a835c838b8b01b65e039",
+  "source_register": "sources.json",
+  "status": "BOUND_TO_LOCKED_SCRIPT_NOT_RELEASE_APPROVED",
+  "maintainer_session": "/root/fresh_viewer",
+  "checked_on": "2026-11-17",
+  "binding": "One row per locked utterance. claim is a short evidence label; the complete EN/KO assertion remains in script.json at utterance_id. Interpretive language is not converted into source testimony.",
+  "claims": [
+    {
+      "id": "R01",
+      "utterance_id": "r01",
+      "kind": "period_company_record",
+      "claim": "Demand for the graphics product",
+      "sources": [
+        "P02",
+        "P04",
+        "P05"
+      ],
+      "locator": "P02: April/August/November 1997; P04: January 1998; P05: 23 February 1998 release.",
+      "limitation": "Demand framing, not a consumer survey or present-day executive-title claim."
+    },
+    {
+      "id": "R02",
+      "utterance_id": "r02",
+      "kind": "period_customer_filing",
+      "claim": "Manufacturing supply constraint",
+      "sources": [
+        "P01"
+      ],
+      "locator": "P01: printed pp.11–12 (PDF pp.19–20), third-party manufacturing risk.",
+      "limitation": "No lost-sales amount or counterfactual bankruptcy outcome is established."
+    },
+    {
+      "id": "R03",
+      "utterance_id": "r03",
+      "kind": "period_customer_filing",
+      "claim": "December yield and capacity disclosure",
+      "sources": [
+        "P01"
+      ],
+      "locator": "P01: printed p.12 (PDF p.20), December 1997 example and following capacity sentence.",
+      "limitation": "Yield is dated December; the capacity wording describes the filing's then-current condition."
+    },
+    {
+      "id": "R04",
+      "utterance_id": "r04",
+      "kind": "editorial_inference",
+      "claim": "Design alone does not assure shipments",
+      "sources": [
+        "P01",
+        "P02"
+      ],
+      "locator": "P01: printed pp.11–12; P02: 1997 OEM relationships.",
+      "limitation": "Inference about the stated bottleneck, not proof design improvements have no value."
+    },
+    {
+      "id": "R05",
+      "utterance_id": "r05",
+      "kind": "period_customer_filing",
+      "claim": "Manufacturing partner identity and sequence",
+      "sources": [
+        "P01"
+      ],
+      "locator": "P01: printed p.11 (PDF p.19), third-party manufacturing risk.",
+      "limitation": "The disclosed wafer-fab location does not make a package's country marking wafer-provenance proof."
+    },
+    {
+      "id": "R06",
+      "utterance_id": "r06",
+      "kind": "editorial_bridge",
+      "claim": "Rewind from 1997 to 1985",
+      "sources": [
+        "P05",
+        "P08"
+      ],
+      "locator": "P05: dated partnership release; P08: printed pp.12–14.",
+      "limitation": "Narrative chronology; it does not establish inevitability or uninterrupted later supply."
+    },
+    {
+      "id": "R07",
+      "utterance_id": "r07",
+      "kind": "institutional_history_with_editorial_framing",
+      "claim": "Intel's DRAM withdrawal",
+      "sources": [
+        "P13"
+      ],
+      "locator": "P13: 10 October 1985 entry and associated internal-publication caption.",
+      "limitation": "DRAM only, not Intel's exit from all memory or all semiconductors."
+    },
+    {
+      "id": "R08",
+      "utterance_id": "r08",
+      "kind": "period_records_with_editorial_inference",
+      "claim": "Competition and excess-capacity context",
+      "sources": [
+        "P14",
+        "P15"
+      ],
+      "locator": "P14: printed p.31, Results of Operations; P15: DRAM—Market Shares, April 1987, section p.2.",
+      "limitation": "Japanese leadership is DRAM-specific. The investment conclusion is editorial; PDFs checked through indexed primary text, not rendered scans."
+    },
+    {
+      "id": "R09",
+      "utterance_id": "r09",
+      "kind": "retrospective_testimony",
+      "claim": "Request for a semiconductor business plan",
+      "sources": [
+        "P08"
+      ],
+      "locator": "P08: printed pp.9–12, career and K.T. Li's request.",
+      "limitation": "Participant recollection in 2007, not a recording of the 1985 meeting."
+    },
+    {
+      "id": "R10",
+      "utterance_id": "r10",
+      "kind": "retrospective_testimony",
+      "claim": "Chang's assessment of Taiwan's capabilities",
+      "sources": [
+        "P08"
+      ],
+      "locator": "P08: printed pp.12–13, capabilities comparison.",
+      "limitation": "His historical assessment, not an independent survey or claim that Taiwan lacked an existing industry."
+    },
+    {
+      "id": "R11",
+      "utterance_id": "r11",
+      "kind": "retrospective_testimony_and_period_record",
+      "claim": "Manufacturing focus and own-brand boundary",
+      "sources": [
+        "P08",
+        "P12"
+      ],
+      "locator": "P08: printed pp.12–13; P12: Company Profile, charter paragraph.",
+      "limitation": "Potential strength is not proven superiority. The own-brand boundary does not remove every commercial conflict."
+    },
+    {
+      "id": "R12",
+      "utterance_id": "r12",
+      "kind": "editorial_inference",
+      "claim": "The initial customer problem",
+      "sources": [
+        "P08"
+      ],
+      "locator": "P08: printed p.13, prospective incumbent customers.",
+      "limitation": "Refers to incumbents in Chang's account, not literally every chip company."
+    },
+    {
+      "id": "R13",
+      "utterance_id": "r13",
+      "kind": "retrospective_testimony",
+      "claim": "Conditional overflow demand",
+      "sources": [
+        "P08"
+      ],
+      "locator": "P08: printed p.13, capacity-dependent orders.",
+      "limitation": "A perceived customer behavior, not a quantified order history."
+    },
+    {
+      "id": "R14",
+      "utterance_id": "r14",
+      "kind": "editorial_inference",
+      "claim": "Risk of an unstable customer base",
+      "sources": [
+        "P08"
+      ],
+      "locator": "P08: printed p.13.",
+      "limitation": "A conditional risk, not a claim all customers actually disappeared."
+    },
+    {
+      "id": "R15",
+      "utterance_id": "r15",
+      "kind": "retrospective_testimony",
+      "claim": "Engineers facing a factory-financing barrier",
+      "sources": [
+        "P08"
+      ],
+      "locator": "P08: printed p.13, designers seeking independence.",
+      "limitation": "An expectation, not evidence of a ready market or identification of particular photographed people."
+    },
+    {
+      "id": "R16",
+      "utterance_id": "r16",
+      "kind": "retrospective_testimony",
+      "claim": "Founding investor groups",
+      "sources": [
+        "P09"
+      ],
+      "locator": "P09: printed p.3, initial-capital discussion.",
+      "limitation": "Historical investor groups; not the current ownership structure."
+    },
+    {
+      "id": "R17",
+      "utterance_id": "r17",
+      "kind": "retrospective_testimony",
+      "claim": "Approximate initial capital",
+      "sources": [
+        "P09"
+      ],
+      "locator": "P09: printed p.3.",
+      "limitation": "Attributed approximate recollection, not a newly audited capitalization table or inflation-adjusted sum."
+    },
+    {
+      "id": "R18",
+      "utterance_id": "r18",
+      "kind": "institutional_retrospective",
+      "claim": "Transfer of a manufacturing foundation",
+      "sources": [
+        "P10"
+      ],
+      "locator": "P10: narrative paragraph beginning with the 1986 Philips collaboration, 1987 spin-off.",
+      "limitation": "Later institutional history, not contemporaneous transfer minutes."
+    },
+    {
+      "id": "R19",
+      "utterance_id": "r19",
+      "kind": "institutional_record_with_editorial_inference",
+      "claim": "1987 start and the remaining business task",
+      "sources": [
+        "P10",
+        "P12"
+      ],
+      "locator": "P10: 1987 spin-off paragraph; P12: opening Company Profile paragraph.",
+      "limitation": "The date is recorded; dependable business is an editorial distinction, not a measured reliability score."
+    },
+    {
+      "id": "R20",
+      "utterance_id": "r20",
+      "kind": "editorial_inference",
+      "claim": "Separating product investment from fab ownership",
+      "sources": [
+        "P08",
+        "P10",
+        "P12"
+      ],
+      "locator": "P08: printed p.13; P10: IC design-company commissioning paragraph; P12: foundry scope.",
+      "limitation": "Qualitative capital boundary; no numerical saving, zero-capital claim, or promise of lower wafer prices."
+    },
+    {
+      "id": "R21",
+      "utterance_id": "r21",
+      "kind": "editorial_synthesis",
+      "claim": "The demand-and-trust gamble",
+      "sources": [
+        "P08",
+        "P10"
+      ],
+      "locator": "P08: printed pp.13–14; P10: spin-off and design-company account.",
+      "limitation": "Interpretation, not a verbatim investment thesis or prediction of NVIDIA."
+    },
+    {
+      "id": "R22",
+      "utterance_id": "r22",
+      "kind": "retrospective_testimony",
+      "claim": "Difficult first four years",
+      "sources": [
+        "P09"
+      ],
+      "locator": "P09: printed p.4, 1987–1990 discussion.",
+      "limitation": "Retrospective characterization; no continuous four-year loss claim."
+    },
+    {
+      "id": "R23",
+      "utterance_id": "r23",
+      "kind": "editorial_bridge",
+      "claim": "Customer formation and the PC opportunity",
+      "sources": [
+        "P09",
+        "P16"
+      ],
+      "locator": "P09: printed p.4; P16: Architecture section.",
+      "limitation": "The queue is figurative; the PC transition spans years, not one simultaneous event."
+    },
+    {
+      "id": "R24",
+      "utterance_id": "r24",
+      "kind": "institutional_retrospective",
+      "claim": "IBM PC architecture and complementary products",
+      "sources": [
+        "P16"
+      ],
+      "locator": "P16: Architecture section, technical-reference and peripheral-development paragraph.",
+      "limitation": "Not a claim IBM invented the first PC or alone caused TSMC's growth."
+    },
+    {
+      "id": "R25",
+      "utterance_id": "r25",
+      "kind": "company_historical_record",
+      "claim": "RIVA 128 and PC relationships",
+      "sources": [
+        "P02"
+      ],
+      "locator": "P02: April, August and November 1997 entries.",
+      "limitation": "OEM relationships are not all direct chip purchasers; board makers remain part of the chain."
+    },
+    {
+      "id": "R26",
+      "utterance_id": "r26",
+      "kind": "editorial_inference",
+      "claim": "Design wins versus overflow-only business",
+      "sources": [
+        "P02",
+        "P08",
+        "P12"
+      ],
+      "locator": "P02: August 1997; P08: printed p.13; P12: Company Profile.",
+      "limitation": "NVIDIA is not TSMC's first customer; no exact order volume or exclusive relationship is inferred."
+    },
+    {
+      "id": "R27",
+      "utterance_id": "r27",
+      "kind": "retrospective_testimony_with_editorial_synthesis",
+      "claim": "Early fabless growth preceded NVIDIA",
+      "sources": [
+        "P09"
+      ],
+      "locator": "P09: printed p.4, early-1990s growth discussion.",
+      "limitation": "NVIDIA arrived later, not as the first customer. The final sentence is editorial synthesis."
+    },
+    {
+      "id": "R28",
+      "utterance_id": "r28",
+      "kind": "period_press_release",
+      "claim": "1998 partnership announcement",
+      "sources": [
+        "P05",
+        "P04"
+      ],
+      "locator": "P05: 23 February 1998, opening three release paragraphs; P04: March 1998 entry.",
+      "limitation": "Announcement dates differ by month; narration uses 1998. Not proof every 128ZX unit was TSMC-made."
+    },
+    {
+      "id": "R29",
+      "utterance_id": "r29",
+      "kind": "period_records_with_editorial_inference",
+      "claim": "Capacity expansion alongside ST",
+      "sources": [
+        "P05",
+        "P01"
+      ],
+      "locator": "P05: expansion-beyond-SGS-THOMSON paragraph; P01: printed pp.11–12 and ST relationship section.",
+      "limitation": "No claim of instant ST replacement or that TSMC made the original 1997 RIVA 128."
+    },
+    {
+      "id": "R30",
+      "utterance_id": "r30",
+      "kind": "period_customer_filing",
+      "claim": "Conditional wafer-payment exposure",
+      "sources": [
+        "P01"
+      ],
+      "locator": "P01: printed p.25 (PDF p.33), production-yield stabilization paragraph.",
+      "limitation": "Specific early terms, not a universal foundry pricing rule or measured loss."
+    },
+    {
+      "id": "R31",
+      "utterance_id": "r31",
+      "kind": "technical_explanation_with_editorial_inference",
+      "claim": "Usable output matters financially",
+      "sources": [
+        "P01",
+        "P18"
+      ],
+      "locator": "P01: printed p.25; P18: E-beam metrology and inspection.",
+      "limitation": "General defect mechanism; no diagnosis, defect size or yield percentage for the 1997 incident."
+    },
+    {
+      "id": "R32",
+      "utterance_id": "r32",
+      "kind": "general_technical_explanation",
+      "claim": "Design–process interaction",
+      "sources": [
+        "P19"
+      ],
+      "locator": "P19: process-window and design-rule coordination paragraphs.",
+      "limitation": "Modern explanation of a general mechanism; not evidence 1997 used a named modern DTCO workflow."
+    },
+    {
+      "id": "R33",
+      "utterance_id": "r33",
+      "kind": "period_company_release",
+      "claim": "Customer pilot work before the partnership",
+      "sources": [
+        "P17"
+      ],
+      "locator": "P17: 19 June 1996 release, Don Brooks paragraphs.",
+      "limitation": "SRAM case, not a NVIDIA graphics-chip yield or an identical manufacturing process."
+    },
+    {
+      "id": "R34",
+      "utterance_id": "r34",
+      "kind": "editorial_inference",
+      "claim": "Repeatable production as the business benefit",
+      "sources": [
+        "P17",
+        "P19",
+        "P12"
+      ],
+      "locator": "P17: customer pilot work; P19: process-window iteration; P12: manufacturing-service scope.",
+      "limitation": "Interpretation of service value, not a quoted customer motive, contract deliverable or guaranteed result."
+    },
+    {
+      "id": "R35",
+      "utterance_id": "r35",
+      "kind": "retrospective_customer_testimony",
+      "claim": "A later customer visit",
+      "sources": [
+        "P09"
+      ],
+      "locator": "P09: printed p.6, Friday-afternoon visit recollection.",
+      "limitation": "A later visit recalled in 2007, separate from the 1997 meeting on p.5."
+    },
+    {
+      "id": "R36",
+      "utterance_id": "r36",
+      "kind": "retrospective_testimony_with_editorial_inference",
+      "claim": "Demand notes and checked calculations",
+      "sources": [
+        "P09"
+      ],
+      "locator": "P09: printed p.6, black-book recollection.",
+      "limitation": "No notebook artifact or verbatim dialogue is reproduced; consequences is editorial framing."
+    },
+    {
+      "id": "R37",
+      "utterance_id": "r37",
+      "kind": "retrospective_testimony",
+      "claim": "Reinvestment and flexible allocation",
+      "sources": [
+        "P09"
+      ],
+      "locator": "P09: printed p.7, capacity-building and growing-customer discussion.",
+      "limitation": "Company founder's account, not a customer-level allocation dataset."
+    },
+    {
+      "id": "R38",
+      "utterance_id": "r38",
+      "kind": "editorial_inference",
+      "claim": "Investment planning around customers",
+      "sources": [
+        "P09"
+      ],
+      "locator": "P09: printed pp.6–7.",
+      "limitation": "Interpretation, not a separate quotation or claim about an exact forecast."
+    },
+    {
+      "id": "R39",
+      "utterance_id": "r39",
+      "kind": "period_joint_company_release",
+      "claim": "The 2006 production milestone",
+      "sources": [
+        "P06"
+      ],
+      "locator": "P06: 24 October 2006, opening and high-volume-production paragraphs.",
+      "limitation": "Company-reported count, not an independent audit. Processors include more than GPUs."
+    },
+    {
+      "id": "R40",
+      "utterance_id": "r40",
+      "kind": "editorial_synthesis",
+      "claim": "A sustained, multi-product relationship",
+      "sources": [
+        "P05",
+        "P06"
+      ],
+      "locator": "P05: 1998 partnership release; P06: 2006 milestone and product categories.",
+      "limitation": "No attribution of all NVIDIA growth to one supplier or proof success was inevitable."
+    },
+    {
+      "id": "R41",
+      "utterance_id": "r41",
+      "kind": "editorial_synthesis",
+      "claim": "Product, design and delivery together",
+      "sources": [
+        "P02",
+        "P17",
+        "P06"
+      ],
+      "locator": "P02: product/OEM history; P17: production work; P06: manufactured-processor milestone.",
+      "limitation": "A chip foundry is not thereby the assembler of the finished graphics card."
+    },
+    {
+      "id": "R42",
+      "utterance_id": "r42",
+      "kind": "editorial_synthesis",
+      "claim": "Interdependence and an emerging customer class",
+      "sources": [
+        "P08",
+        "P12",
+        "P06"
+      ],
+      "locator": "P08: printed pp.13–14; P12: service scope; P06: joint milestone.",
+      "limitation": "Not a claim no fabless firms existed, or that two firms alone supplied every card component."
+    },
+    {
+      "id": "R43",
+      "utterance_id": "r43",
+      "kind": "editorial_conclusion",
+      "claim": "NVIDIA became one of the customers",
+      "sources": [
+        "P05",
+        "P06",
+        "P09"
+      ],
+      "locator": "P05: 1998 release; P06: 2006 milestone; P09: printed p.4.",
+      "limitation": "One later customer, not the first or the sole reason the model succeeded."
+    },
+    {
+      "id": "R44",
+      "utterance_id": "r44",
+      "kind": "editorial_conclusion",
+      "claim": "Shared production responsibility",
+      "sources": [
+        "P17",
+        "P19",
+        "P09"
+      ],
+      "locator": "P17: pilot cooperation; P19: design–process coordination; P09: printed pp.6–7.",
+      "limitation": "General closing insight, not a claim the same 1997 fault persists or evidence of a current outage."
+    }
+  ]
+}

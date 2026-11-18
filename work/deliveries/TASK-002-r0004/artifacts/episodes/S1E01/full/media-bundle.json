@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0",
+  "episode_id": "S1E01",
+  "catalog_id": "H039",
+  "revision": "S1E01-full-r6",
+  "status": "SITES_REVIEW_DEPLOYED_NOT_RELEASE_READY",
+  "source_pr": "https://github.com/ReliOptic/Chip-in-Birdie/pull/4",
+  "continued_from_commit": "6cc791f4e249a528a95a5905e70b32f1d7ba88ea",
+  "accepted_claim_commit": "d8e61a188047e44ae083e01891cf1e0207e6a421",
+  "script_sha256": "50eae44fd3e123e87130d14b0fc2ace165d7d8d207b6a835c838b8b01b65e039",
+  "performance": {
+    "required_language": "en",
+    "status": "GENERATED_DECODE_CHECKED_NOT_LISTENING_APPROVED",
+    "artifact": "narration.mp3 in authorized Sites source",
+    "sha256": "826a65a960334fc0f01af24e98dfbd038acf1ba3fcf9115a559241443640843f",
+    "wav_sha256": "e119e5c8bc26af3de5f4ba0de939d67558a34d47ea5c4a0da1be830fc9d33d22",
+    "duration_seconds": 384.41133333333335,
+    "sample_rate": 24000,
+    "total_samples": 9225872,
+    "utterances": 44,
+    "display_words": 905,
+    "voice": "Local Kokoro ONNX v1.0 bm_george, synthetic",
+    "speed": 1.1,
+    "timeline_sha256": "ecb1cf7ab05e5a9c2a952df42d1da00bbdc0441e5e70464fb9cec2a03a3ce43d",
+    "asr_sha256": "3ece591d387dcbd4ef34ed4c17940804372d272ff1771aa098b929cc98e1a9a7",
+    "human_listening_review": "NOT_PERFORMED"
+  },
+  "video": {
+    "artifact": "S1E01-full-documentary.html",
+    "sha256": "3a35e544211990f17cd3d49bf21135ca97963cc8431627ee0ea35fcb61ba1395",
+    "bytes": 26097838,
+    "duration_seconds": 384.41133333333335,
+    "chapters": 6,
+    "named_shots": 66,
+    "photographs_used": 16,
+    "photographs_packaged": 17,
+    "aspect_ratio": "16:9",
+    "renderer": "Canvas 2D archival photographs, typeset records and explanatory graphics",
+    "timeline_fps": 30,
+    "fps_note": "Nominal timeline convention, not measured browser FPS",
+    "mp4_export": "NOT_REQUESTED_NOT_EXPORTED"
+  },
+  "media_package": {
+    "artifact": "S1E01-sites-r6.tar.gz",
+    "source_code_location": "Git PR #4: episodes/S1E01/full",
+    "runtime_source_commit": "8573b176bec71a6f81e9f6d8be3e6f0a6de02449",
+    "runtime_source_project_id": "appgprj_6afc273728b8819189da26e9c2cf0f56",
+    "site_index_sha256": "6e642c46013cca156c3e74a4d456325c6f570d0a76e430705c0a078d78f045b5",
+    "archive_content_hash": "sha256:3ff7c7a5acf9eb3d8f22f6a764af565299df162897c88aa4f4370dd3b95c64be",
+    "active_modules": 3,
+    "review_stills": "Sites source review/r6, outside deployed public asset directory",
+    "legacy_assets": "Earlier R5 resources remain in source history/retained package files; they are not imported by the R6 player",
+    "access": "Existing public access revision 2 preserved; raw media is not duplicated in GitHub"
+  },
+  "required_locales": [
+    "en",
+    "ko"
+  ],
+  "claims_review": {
+    "status": "PRIMARY_SOURCE_LEDGER_AND_SCOPED_REVIEW_NOT_FULL_RELEASE_APPROVAL",
+    "claims": 44,
+    "source_entries": 16,
+    "claims_sha256": "c3f441ac8ca8feaa91cb3132ff64966e41a2db5a0aa233771c3dc56039b27f83",
+    "sources_sha256": "21fdfc6a673808db3cdb3a0fd54e18c9e10fc25af1abe8e720aca3711a8c7286",
+    "evidence": [
+      "claims.json",
+      "sources.json",
+      "review-r6.md"
+    ]
+  },
+  "rights_review": {
+    "status": "PROVENANCE_AND_LICENSE_NOTICES_PRESENT",
+    "asset_manifest_sha256": "6e57ffbab529965f237f75303d3f881b432cdaa77378b33185c61f868319d560",
+    "evidence": [
+      "archive-manifest.json",
+      "THIRD_PARTY_NOTICES.txt"
+    ],
+    "limits": "Copyright licenses do not imply endorsement or remove personality/trademark rights; dated modern portraits and objects are not period event photographs"
+  },
+  "verification": {
+    "static_mock_and_actual_asset_contracts": {
+      "passed": 30,
+      "failed": 0,
+      "artifact": "qa-r6-runtime.json",
+      "actual_browser": false
+    },
+    "audio_artifact": "audio-r6-report.json",
+    "browser_artifact": "qa-browser-r6.json",
+    "verification_notes": "verification-r6.md"
+  },
+  "independent_release_qa": {
+    "result": "NOT_PERFORMED",
+    "actor": null,
+    "session": null
+  },
+  "director_exception": {
+    "duration": "Same full S1E01; source default does not force padding",
+    "treatment": "Latest user instruction: archive photographs/documents and Vox-like evidence-led editing replace repeated 3D worlds",
+    "sites_deployment": "Explicit user request; existing audience preserved",
+    "qa_waiver": false
+  },
+  "publication": {
+    "url": "https://chip-in-birdie-s1e01-261117.reliqbit.chatgpt.site",
+    "project_id": "appgprj_6afc273728b8819189da26e9c2cf0f56",
+    "version_id": "appgprj_6afc273728b8819189da26e9c2cf0f56~appgver_378234125194819180a940a354923be1",
+    "version_number": 3,
+    "deployment_id": "appgdep_6afc8c20981c8191b0d828409aa46154",
+    "source_commit": "8573b176bec71a6f81e9f6d8be3e6f0a6de02449",
+    "observed_at": "2026-11-17T17:17:46.718223+00:00",
+    "status": "SITES_DEPLOYMENT_SUCCEEDED",
+    "audience": "PUBLIC_PREEXISTING_REVISION_2_PRESERVED",
+    "youtube_status": "NOT_PUBLISHED"
+  },
+  "release_ready": false,
+  "finished_episode_count": 0,
+  "next_episodes_started_by_this_task": false
+}

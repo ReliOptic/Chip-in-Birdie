@@ -1,0 +1,142 @@
+{
+  "schema": "cib-s1e01-browser-observation-v1",
+  "revision": "S1E01-full-r4",
+  "observed_date": "2026-11-17",
+  "observer": "codex-root-s1e01-r4",
+  "independence": "Production browser QA, not independent audiovisual release approval",
+  "runtime_source_commit": "ed86b10c66c549ed283a7476d1a6ee4afe45fd0c",
+  "index_sha256": "d508ab4e59af4a2635aaae3ba1a8eccb07424cdb89f695a24055cc523c1babad",
+  "local_url": "http://127.0.0.1:4173/",
+  "production_url": "https://chip-in-birdie-s1e01-261117.reliqbit.chatgpt.site",
+  "production_access_observation": "Normal ChatGPT sign-in gate; not bypassed. Production playback behind the gate was not observed.",
+  "asset_integrity_reference": "qa-site-r4.json",
+  "browser": "Selected cloud Chrome; existing stale tab replaced by a fresh tab in the same selected browser",
+  "renderer": {
+    "backend": "cpu-3d",
+    "resolution": [
+      800,
+      450
+    ],
+    "label": "Compatibility picture · CPU 3D",
+    "webgl_error": "Error creating WebGL context",
+    "equivalence": "Not WebGL/PBR quality; actual source geometry with reduced-resolution CPU rasterization"
+  },
+  "natural_playback": {
+    "result": "OBSERVED",
+    "path": "UI Play from 00:00; no seeks, pause, reload or rate change until natural end",
+    "sampled_media_positions_seconds": [
+      0,
+      20.06,
+      113.8,
+      314.29,
+      436.63,
+      468.68,
+      518.69,
+      534.13
+    ],
+    "canonical_duration_seconds": 534.1393333333333,
+    "final_display": "08:54 / 08:54",
+    "final_status": "Finished · replay available",
+    "final_button": "Play",
+    "limitation": "Progress and selected pictures were observed; this is not attentive listening, every-frame visual inspection, or proof of zero dropped frames"
+  },
+  "interactions": [
+    {
+      "name": "Replay after natural end",
+      "result": "PASS",
+      "observed": "UI Play returned to chapter 1, time 0.11, status Playing"
+    },
+    {
+      "name": "Pause",
+      "result": "PASS",
+      "observed": "Paused at displayed seek 27.75 seconds; Play control restored"
+    },
+    {
+      "name": "Reload position restore",
+      "result": "PASS",
+      "observed": "After reload, seek 27.75 seconds and Restored · paused"
+    },
+    {
+      "name": "Chapter seek",
+      "result": "PASS",
+      "observed": "06:21 chapter selected at 381.44 seconds; growth framing and correct s45 Korean subtitle"
+    },
+    {
+      "name": "English/Korean caption selection",
+      "result": "PASS",
+      "observed": "English selection displayed the s45 English narration text; Korean selection restored Korean"
+    },
+    {
+      "name": "Passage-specific evidence",
+      "result": "PASS",
+      "observed": "Sources panel showed current s45, H08 retrospective-testimony type, CHM source with Printed p. 14 and causal-limit wording"
+    },
+    {
+      "name": "Transcript seek",
+      "result": "PASS",
+      "observed": "08:30 Chang question passage selected, seek 510.57 seconds, status Paused"
+    },
+    {
+      "name": "Focused keyboard seek",
+      "result": "PASS",
+      "observed": "ArrowLeft on film screen changed 510.57 to 505.57 seconds, remaining paused"
+    },
+    {
+      "name": "Restart",
+      "result": "PASS",
+      "observed": "UI Restart returned to 0 seconds and Paused"
+    },
+    {
+      "name": "Desktop horizontal bounds",
+      "result": "PASS_AT_OBSERVED_SIZE_ONLY",
+      "observed": {
+        "document_scroll_width": 1348,
+        "viewport_inner_width": 1363
+      }
+    },
+    {
+      "name": "Fullscreen",
+      "result": "UNAVAILABLE",
+      "observed": "UI request reported Full screen is unavailable in this browser; fullscreen layout/controls not verified"
+    }
+  ],
+  "diagnostics": {
+    "artifact": "qa-browser-r4-diagnostics.json",
+    "actual_browser": true,
+    "selected_frames": 11,
+    "reverse_order_pixels_equal": true,
+    "runtime_error_list": [],
+    "real_offline_audio_context_double_bake": {
+      "equal": true,
+      "fnv1a": "7cedc125",
+      "samples": 12819344,
+      "cues": 22,
+      "finite": true
+    },
+    "not_tested": "Does not establish sound output quality or final mix listening"
+  },
+  "visible_picture_observations": [
+    "Opening layout close-up, factory/demand question and Korean captions appeared",
+    "At 05:14 actual layer-transfer model, Korean text and source/disclosure were legible in the 1363-pixel viewport",
+    "At 08:44 package cutaway, repeated L motif, factory relationship and two-line Korean caption appeared"
+  ],
+  "screenshots": {
+    "ending": "S1E01-r4-browser-compatibility-ending.jpg",
+    "scope": "Actual browser compatibility mode at about 08:44, not WebGL or offline Blender"
+  },
+  "console": {
+    "expected": "WebGL initialization errors preceded the explicit fallback",
+    "outside_film": "Browser extension reported metadata transport errors",
+    "diagnostic_runtime_errors": []
+  },
+  "not_verified": [
+    "Primary WebGL picture and performance",
+    "Private production playback after login",
+    "Full listening/pronunciation and final mix",
+    "Actual network-stall recovery; only mock production-function test completed",
+    "iOS/Safari, touch and mobile layouts",
+    "Fullscreen appearance",
+    "Independent audiovisual editorial/release approval"
+  ],
+  "release_approval": false
+}

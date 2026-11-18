@@ -1,0 +1,249 @@
+{
+  "schema": "cib-s1e01-archive-runtime-qa-v1",
+  "generatedAtUTC": "2026-11-17T17:13:05.139Z",
+  "scope": "Actual R6 production control module with mock DOM, Image, media, Canvas renderer and OfflineAudioContext; optional actual delivery byte/import checks. No browser or network.",
+  "notTested": [
+    "Archive visual/cut quality",
+    "Real image decoding or Canvas pixels",
+    "Real browser playback and fullscreen layout",
+    "Actual OfflineAudioContext output or listening",
+    "Historical accuracy, rights clearance or release approval"
+  ],
+  "inputs": {
+    "sourceSHA256": {
+      "film.mjs": "69e567b0cc520376ba053ddfbbe366c965a03fda9bb59b4df5a67944587107f1",
+      "player.html": "cda95f6d9cf67d09b15e422a860eef88ff795e75d50a5d43c4ff9801b0df5bf0",
+      "build.mjs": "b98a4ab8aa0822ec0c26d26a344e6591280bd8fbd2411706cf03c85bb7645ab3",
+      "qa-archive-runtime.mjs": "e0f43abdb785ba51de070626872b4d73f2023c4d9dddbbde2588ef6d4d258c14",
+      "archive-cinema.mjs": "6ced470d242e38131b2eac7a1b7fc31b0943c4fd3c566df27bfa461834a45144",
+      "script.json": "50eae44fd3e123e87130d14b0fc2ace165d7d8d207b6a835c838b8b01b65e039",
+      "claims.json": "c3f441ac8ca8feaa91cb3132ff64966e41a2db5a0aa233771c3dc56039b27f83",
+      "sources.json": "21fdfc6a673808db3cdb3a0fd54e18c9e10fc25af1abe8e720aca3711a8c7286"
+    },
+    "artifacts": {
+      "bundle": "3a35e544211990f17cd3d49bf21135ca97963cc8431627ee0ea35fcb61ba1395",
+      "siteIndex": "6e642c46013cca156c3e74a4d456325c6f570d0a76e430705c0a078d78f045b5"
+    },
+    "arguments": {
+      "archive": "/workspace/scratch/204e2295d8fd/s1e01-full-media/assets-r6/archive",
+      "bundle": "/workspace/scratch/204e2295d8fd/s1e01-full-media/delivery-r6/S1E01-full-documentary.html",
+      "site": "/workspace/sites/chip-in-birdie-s1e01-r5/.sites-checkout/dist"
+    }
+  },
+  "summary": {
+    "passed": 30,
+    "failed": 0,
+    "total": 30,
+    "verdict": "NON_BROWSER_ARCHIVE_CONTRACTS_PASS_ONLY",
+    "releaseApproval": false
+  },
+  "tests": [
+    {
+      "name": "Archive-only entry and HTML controls are structurally connected",
+      "method": "REAL_JS_PARSE_AND_STATIC_HTML_CSS",
+      "result": "PASS"
+    },
+    {
+      "name": "Images and font readiness precede archive renderer startup",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CANVAS_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "An image load failure blocks playback, renders error and retries",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CANVAS_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Image decode failures and missing shot assets are explicit errors",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CANVAS_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "A draw failure stops media and can retry the same position",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CANVAS_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Reload restoration is not erased by initialization",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CANVAS_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Invalid storage and denied storage do not block the film",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CANVAS_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Seek cancels pending playback during prepare",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CANVAS_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Seek cancels pending playback during resume",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CANVAS_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Seek cancels pending playback during media",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CANVAS_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Visibility change cancels a pending audio start",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CANVAS_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Play is idempotent and pause captures the actual media clock",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CANVAS_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Preparation rejection preserves position and retry works",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CANVAS_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Media decode failure has an actionable reload/retry",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CANVAS_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Media clock drives picture, natural ending, persisted replay",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CANVAS_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Buffering holds SFX including mute toggles and resumes once",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CANVAS_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Mute state is shared by normal/fullscreen controls and persistence",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CANVAS_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "A stale async enable cannot override a newer mute",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CANVAS_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Captions follow recorded boundaries, locale and off state",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CANVAS_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Transcript/evidence/credits preserve dynamic content and attribution",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CANVAS_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Native fullscreen and cinema fallback preserve playback and restore the page",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CANVAS_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Missing fullscreen API falls back; a cancelled request cannot reopen a view",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CANVAS_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Keyboard transport ignores focused controls and editable content",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CANVAS_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Headless review starts paused and ignores saved playback position",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CANVAS_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Sparse seeded SFX repeat under independent identity offline mocks",
+      "method": "ACTUAL_SFX_CODE_IDENTITY_OFFLINE_MOCK_NOT_AUDIO_RENDERING",
+      "result": "PASS",
+      "detail": {
+        "samples": 288000,
+        "cues": 3,
+        "peak": 0.009976552799344063,
+        "independentContexts": 6,
+        "actualOfflineAudioContext": false
+      }
+    },
+    {
+      "name": "Build rejects stale audio/script, invalid PCM and mismatched passages",
+      "method": "ACTUAL_EXPORTED_BUILD_VALIDATOR_NO_WRITES",
+      "result": "PASS",
+      "detail": {
+        "rejectedVariants": [
+          "stale script",
+          "missing narration hash",
+          "smoke result",
+          "incorrect duration",
+          "changed text",
+          "changed identifier",
+          "noncanonical samples",
+          "overlap",
+          "missing chapter"
+        ]
+      }
+    },
+    {
+      "name": "Source archive manifest and every image hash are valid",
+      "method": "ACTUAL_ASSET_BYTES_METADATA_NO_IMAGE_DECODING",
+      "result": "PASS",
+      "detail": {
+        "images": 17,
+        "bytes": 13201855,
+        "ids": [
+          "chang",
+          "jensen",
+          "pc",
+          "pcboard",
+          "intel8088",
+          "taiwan",
+          "itri",
+          "factory1989",
+          "riva128",
+          "riva128zx",
+          "tntboard",
+          "tntdie",
+          "fab12b",
+          "fab18",
+          "chang2022",
+          "jensen2014",
+          "wafer2017"
+        ]
+      }
+    },
+    {
+      "name": "Standalone archive/audio/module graph matches current sources",
+      "method": "ACTUAL_BUNDLE_BYTES_REAL_JS_PARSE_NO_EVALUATION",
+      "result": "PASS",
+      "detail": {
+        "bytes": 26097838,
+        "sha256": "3a35e544211990f17cd3d49bf21135ca97963cc8431627ee0ea35fcb61ba1395",
+        "duration": 384.41133333333335,
+        "images": 17,
+        "modules": 3
+      }
+    },
+    {
+      "name": "Site asset graph, credits and downloadable HTML are complete",
+      "method": "ACTUAL_SITE_FILE_HASHES_REAL_JS_PARSE_NO_HTTP",
+      "result": "PASS",
+      "detail": {
+        "indexSHA256": "6e642c46013cca156c3e74a4d456325c6f570d0a76e430705c0a078d78f045b5",
+        "modules": 3,
+        "images": 17,
+        "downloadBytes": 26097838,
+        "downloadSHA256": "3a35e544211990f17cd3d49bf21135ca97963cc8431627ee0ea35fcb61ba1395"
+      }
+    },
+    {
+      "name": "Source snapshot stayed unchanged during this QA run",
+      "method": "STATIC_BYTE_RECHECK",
+      "result": "PASS"
+    }
+  ]
+}

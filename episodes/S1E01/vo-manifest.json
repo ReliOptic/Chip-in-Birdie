@@ -1,0 +1,13 @@
+{
+  "duration_seconds": 469.882,
+  "voice": "Kokoro bm_george",
+  "speed": 0.94,
+  "sample_rate": 24000,
+  "script_sha256": "2510a4e5ba2cf489f9340886b60f749f8a27443f713b215601ec862b739b5ed1",
+  "wav_sha256": "d553baa9a5eb96c228492db116079fe361726c6160f54f54a6c1c03a6aceb428",
+  "word_timing": "vo-words.asr.json; observed approximate ASR, not forced alignment",
+  "synthesis_status": "WAV_CREATED",
+  "encoding_status": "Original soundfile OGG encoder segfault; recovered via FFmpeg MP3. Reproduction source corrected.",
+  "listening_review": "NOT_PERFORMED",
+  "final_script_lock": false
+}

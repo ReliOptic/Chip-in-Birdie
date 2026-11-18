@@ -1,0 +1,181 @@
+{
+  "artifacts": [
+    {
+      "path": "episodes/S1E01/full/README.md",
+      "sha256": "e2536bacc867dedc46d4d9ee3251d31ab2420928e9fabca0119b6da03a91872a",
+      "size_bytes": 5201,
+      "snapshot_path": "work/deliveries/TASK-002-r0003/artifacts/episodes/S1E01/full/README.md"
+    },
+    {
+      "path": "episodes/S1E01/full/THIRD_PARTY_NOTICES.txt",
+      "sha256": "1179fbcbef6a614278544d4dfa2eb2e737c7b715d89131c7204dd65348734477",
+      "size_bytes": 1491,
+      "snapshot_path": "work/deliveries/TASK-002-r0003/artifacts/episodes/S1E01/full/THIRD_PARTY_NOTICES.txt"
+    },
+    {
+      "path": "episodes/S1E01/full/audio-env.md",
+      "sha256": "3527d2f7b7c897718d23abf729146d3da0f1a2dbb7d121f366b399f1fb871563",
+      "size_bytes": 13263,
+      "snapshot_path": "work/deliveries/TASK-002-r0003/artifacts/episodes/S1E01/full/audio-env.md"
+    },
+    {
+      "path": "episodes/S1E01/full/build.mjs",
+      "sha256": "683976d4c66fb3402d9c3ddc011a4d8b093e3f479cd729b87968caa614f0772b",
+      "size_bytes": 5746,
+      "snapshot_path": "work/deliveries/TASK-002-r0003/artifacts/episodes/S1E01/full/build.mjs"
+    },
+    {
+      "path": "episodes/S1E01/full/business-economics.mjs",
+      "sha256": "818072e4d09898b44e3e0613013be0247118cd94b9642660b4d7a2d4ca781cd7",
+      "size_bytes": 23181,
+      "snapshot_path": "work/deliveries/TASK-002-r0003/artifacts/episodes/S1E01/full/business-economics.mjs"
+    },
+    {
+      "path": "episodes/S1E01/full/business-institutions.mjs",
+      "sha256": "01b5831d15fce02796761fcfd217890bb245cdb985c934bd7035236521a311ba",
+      "size_bytes": 26632,
+      "snapshot_path": "work/deliveries/TASK-002-r0003/artifacts/episodes/S1E01/full/business-institutions.mjs"
+    },
+    {
+      "path": "episodes/S1E01/full/business-transactions.mjs",
+      "sha256": "ee033e38b8793d8de8600a0b55f6aea28ede4637b203723b49e4ceaa9a3a143d",
+      "size_bytes": 14609,
+      "snapshot_path": "work/deliveries/TASK-002-r0003/artifacts/episodes/S1E01/full/business-transactions.mjs"
+    },
+    {
+      "path": "episodes/S1E01/full/cinema.mjs",
+      "sha256": "7af8f439d70d4ac538bbb9543f4b89cde0db518691c97d371e162284d7e35b4f",
+      "size_bytes": 8280,
+      "snapshot_path": "work/deliveries/TASK-002-r0003/artifacts/episodes/S1E01/full/cinema.mjs"
+    },
+    {
+      "path": "episodes/S1E01/full/claims.json",
+      "sha256": "f3f933d52de5072d277aca850a147788ae58173e3b4985c6a0cbf074a6cd9d0e",
+      "size_bytes": 14288,
+      "snapshot_path": "work/deliveries/TASK-002-r0003/artifacts/episodes/S1E01/full/claims.json"
+    },
+    {
+      "path": "episodes/S1E01/full/direction-r5.md",
+      "sha256": "31357969de7f14505585abc6400b021fcbcaee131df3cf5ada494d882d59f597",
+      "size_bytes": 5679,
+      "snapshot_path": "work/deliveries/TASK-002-r0003/artifacts/episodes/S1E01/full/direction-r5.md"
+    },
+    {
+      "path": "episodes/S1E01/full/film.mjs",
+      "sha256": "a3ad88908589022609a79507e303bc7a7d727d8756540ce1331b0ee7f8b34afb",
+      "size_bytes": 27992,
+      "snapshot_path": "work/deliveries/TASK-002-r0003/artifacts/episodes/S1E01/full/film.mjs"
+    },
+    {
+      "path": "episodes/S1E01/full/inspect-picture.mjs",
+      "sha256": "83f27952f8699e6bcb77ceef0243bff303a67b65ad4bb02278cd7c2b0d5f605a",
+      "size_bytes": 2809,
+      "snapshot_path": "work/deliveries/TASK-002-r0003/artifacts/episodes/S1E01/full/inspect-picture.mjs"
+    },
+    {
+      "path": "episodes/S1E01/full/media-bundle.json",
+      "sha256": "6549617eb8e20860e2c6264ad5af90424974eec955126a1153dcee8d18d85185",
+      "size_bytes": 6584,
+      "snapshot_path": "work/deliveries/TASK-002-r0003/artifacts/episodes/S1E01/full/media-bundle.json"
+    },
+    {
+      "path": "episodes/S1E01/full/player.html",
+      "sha256": "30f94bd071658db5b0162d9a354e7c5b770542b3812d0d7fadff3d2be69294f2",
+      "size_bytes": 18497,
+      "snapshot_path": "work/deliveries/TASK-002-r0003/artifacts/episodes/S1E01/full/player.html"
+    },
+    {
+      "path": "episodes/S1E01/full/qa-browser-r5.json",
+      "sha256": "322ea51ebe29f81cc37568976139991584057658260cf60342193fd71448b1bf",
+      "size_bytes": 5432,
+      "snapshot_path": "work/deliveries/TASK-002-r0003/artifacts/episodes/S1E01/full/qa-browser-r5.json"
+    },
+    {
+      "path": "episodes/S1E01/full/qa-contract-r5.json",
+      "sha256": "346cdf4dfef68f2a2eaa2a8f893a3c62d88cbebb959c757e4471d65df12a2bb7",
+      "size_bytes": 10579,
+      "snapshot_path": "work/deliveries/TASK-002-r0003/artifacts/episodes/S1E01/full/qa-contract-r5.json"
+    },
+    {
+      "path": "episodes/S1E01/full/qa-contract.mjs",
+      "sha256": "7027c749d2b7b6c63ef56155d6626f9a42312155b7e249679e0943793fc87c9c",
+      "size_bytes": 32232,
+      "snapshot_path": "work/deliveries/TASK-002-r0003/artifacts/episodes/S1E01/full/qa-contract.mjs"
+    },
+    {
+      "path": "episodes/S1E01/full/qa-site-r5.json",
+      "sha256": "3da78d76cde84121f2eedfd301e5d92b2c280bc25173dabe6da10e4cd241e83f",
+      "size_bytes": 3576,
+      "snapshot_path": "work/deliveries/TASK-002-r0003/artifacts/episodes/S1E01/full/qa-site-r5.json"
+    },
+    {
+      "path": "episodes/S1E01/full/qa-site.mjs",
+      "sha256": "bc6ba2c92dff58e518ce4b324e0a07b0ee725a9ae28c7b1e61e42374dc83173d",
+      "size_bytes": 6211,
+      "snapshot_path": "work/deliveries/TASK-002-r0003/artifacts/episodes/S1E01/full/qa-site.mjs"
+    },
+    {
+      "path": "episodes/S1E01/full/qa-worlds-r5-results.json",
+      "sha256": "1f6e7136b1f7bdd6fa7197c29a67d8037c12fe8f7773a20898a43a9a2532448c",
+      "size_bytes": 272839,
+      "snapshot_path": "work/deliveries/TASK-002-r0003/artifacts/episodes/S1E01/full/qa-worlds-r5-results.json"
+    },
+    {
+      "path": "episodes/S1E01/full/qa-worlds-r5.mjs",
+      "sha256": "9d77a18cb630c5241904019d6c0d17feb08edc346194d61ec1fc50ca7b9cf307",
+      "size_bytes": 23235,
+      "snapshot_path": "work/deliveries/TASK-002-r0003/artifacts/episodes/S1E01/full/qa-worlds-r5.mjs"
+    },
+    {
+      "path": "episodes/S1E01/full/review-r5.md",
+      "sha256": "3001bd33c93eb677d985cd073828d19106970bdde4b2e41221d44b7c892fec0f",
+      "size_bytes": 3214,
+      "snapshot_path": "work/deliveries/TASK-002-r0003/artifacts/episodes/S1E01/full/review-r5.md"
+    },
+    {
+      "path": "episodes/S1E01/full/rights.md",
+      "sha256": "3d403aa1b6e77a041c16987a5e022287414160be08fb2ec65542a0a0185c38a6",
+      "size_bytes": 6204,
+      "snapshot_path": "work/deliveries/TASK-002-r0003/artifacts/episodes/S1E01/full/rights.md"
+    },
+    {
+      "path": "episodes/S1E01/full/script.json",
+      "sha256": "8c26607be81fa33f1f3099adb65d52fe8672f21ab138259d0b6b0cc949733db9",
+      "size_bytes": 24487,
+      "snapshot_path": "work/deliveries/TASK-002-r0003/artifacts/episodes/S1E01/full/script.json"
+    },
+    {
+      "path": "episodes/S1E01/full/software-renderer.mjs",
+      "sha256": "d9100eff41ce04e27aebf4c0bd9f0c57935ce3d7c002db85c5922dfcbdac8690",
+      "size_bytes": 24707,
+      "snapshot_path": "work/deliveries/TASK-002-r0003/artifacts/episodes/S1E01/full/software-renderer.mjs"
+    },
+    {
+      "path": "episodes/S1E01/full/sources.json",
+      "sha256": "c4f1fd43c9925373420b2eb131e338aec4697a24b4e4f1d415e911869fadd1a6",
+      "size_bytes": 6405,
+      "snapshot_path": "work/deliveries/TASK-002-r0003/artifacts/episodes/S1E01/full/sources.json"
+    },
+    {
+      "path": "episodes/S1E01/full/verification-r5.md",
+      "sha256": "b67627e097d2444a8b7251bb8a06c74fca36fd97398299fa400dc75f64e6336c",
+      "size_bytes": 4222,
+      "snapshot_path": "work/deliveries/TASK-002-r0003/artifacts/episodes/S1E01/full/verification-r5.md"
+    }
+  ],
+  "bundle_sha256": "10a82524a6a8b88cfda0ff42e68e5fe49f1b296a66d69622ae09c8e87d9689db",
+  "delivery_id": "TASK-002-r0003",
+  "episode_id": "H039",
+  "manifest_sha256": "dbddb409d89f519aaa9bc11f134e8d7c4e19b9860ae1c6f3e54686e4e97f8518",
+  "previous_delivery_id": "TASK-002-r0002",
+  "producer": {
+    "actor": "codex-root-s1e01-r5",
+    "model": "GPT-6",
+    "session_id": "chat-20261117-s1e01-r5-business"
+  },
+  "revision": 3,
+  "schema_version": "1.0",
+  "scope": "episode",
+  "submitted_at": "2026-11-17T13:27:36.768321Z",
+  "task_id": "TASK-002"
+}

@@ -1,0 +1,333 @@
+{
+  "schema": "cib-s1e01-nonbrowser-contract-qa-v1",
+  "generatedAtUTC": "2026-11-17T10:36:50.204Z",
+  "scope": "Static bytes/import parsing plus isolated production-function tests with mock DOM, media, and offline-audio objects. No browser or renderer was started.",
+  "producerIndependence": {
+    "playerAndBuildReview": "Production regression harness; this run is not independent approval",
+    "audioApproval": "EXCLUDED: generated PCM and ASR are not listening approval"
+  },
+  "notTested": [
+    "WebGL image correctness or frame order independence",
+    "Real browser playback or decoding",
+    "Real OfflineAudioContext output",
+    "Fullscreen appearance and interaction",
+    "Mobile layout and accessibility behavior",
+    "Human listening, pronunciation, translation or editorial release approval",
+    "External source URL availability"
+  ],
+  "inputs": {
+    "bundlePath": "/workspace/scratch/204e2295d8fd/s1e01-full-media/delivery-r4/S1E01-full-documentary.html",
+    "bundleSHA256": "9387f1081487248b355e4009be9a02b02afc914875a3b9d59aeb12e3f0458329",
+    "bundleBytes": 16145305,
+    "sourceSHA256": {
+      "player.html": "d8ee70796b532bfcd32897efe45fdfab812bfdaa7872279e8474ffba026c576b",
+      "film.mjs": "384e4822ac768822d7ff24b264b4dcca7a5be3ae7e552d97af85cbbeda366077",
+      "build.mjs": "814a4e7025c4522bc775cd35522405351e9f42c9f01daa134c73c9ca829611fe",
+      "cinema.mjs": "40ce293b168a3e77e9fd50479a8d43660775895986449a551d2b5a0041679db0",
+      "software-renderer.mjs": "d9100eff41ce04e27aebf4c0bd9f0c57935ce3d7c002db85c5922dfcbdac8690"
+    },
+    "qaScriptSHA256": "4d1a57a1a5e30c9b8ebe0b33e8c0ff892f7d5a63225dc583cd76e8f4ef37c932"
+  },
+  "summary": {
+    "passed": 24,
+    "failed": 0,
+    "total": 24,
+    "verdict": "NON_BROWSER_CONTRACTS_PASS_ONLY",
+    "releaseApproval": false
+  },
+  "warnings": [],
+  "tests": [
+    {
+      "name": "Bundle placeholders and source freshness",
+      "method": "STATIC_BYTES",
+      "result": "PASS",
+      "detail": {
+        "bundleBytes": 16145305,
+        "sourceMatches": true
+      }
+    },
+    {
+      "name": "Embedded module graph syntax and resolution",
+      "method": "REAL_JS_PARSE_NO_EVALUATION",
+      "result": "PASS",
+      "detail": {
+        "uniqueModules": 9,
+        "unresolvedImports": 0,
+        "modules": [
+          {
+            "label": "entry",
+            "bytes": 409367,
+            "sha256": "db5cecfbc8499cff5c6bf42578ff56af75ef679167d6ac932d14ffa61a374738",
+            "imports": 8
+          },
+          {
+            "label": "entry/0",
+            "bytes": 1314681,
+            "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+            "imports": 0
+          },
+          {
+            "label": "entry/1",
+            "bytes": 3606,
+            "sha256": "85869bdd22f7cf0b22e68dcefe6cb710480af0f5c901a76f7a7764fd07fc8014",
+            "imports": 1
+          },
+          {
+            "label": "entry/2",
+            "bytes": 152630,
+            "sha256": "c28102bebd55e827f5e9626bbad2d2406e60dc5d6b913aa7a89a09384f38e791",
+            "imports": 2
+          },
+          {
+            "label": "entry/2/1",
+            "bytes": 31768,
+            "sha256": "c25b7930e570e9ec56173cd3b866ec8d2e10016630db3937efb439daf1cedbf6",
+            "imports": 1
+          },
+          {
+            "label": "entry/4",
+            "bytes": 31603,
+            "sha256": "3c25b7393428189f95181cb00bdcd14c789f11b3b650bee568c847db1219454f",
+            "imports": 0
+          },
+          {
+            "label": "entry/5",
+            "bytes": 34133,
+            "sha256": "26d23ae65e0f6cef9ac17793fd2c8e8d802c68e676f1c43ebfdae6326185817d",
+            "imports": 0
+          },
+          {
+            "label": "entry/6",
+            "bytes": 24707,
+            "sha256": "d9100eff41ce04e27aebf4c0bd9f0c57935ce3d7c002db85c5922dfcbdac8690",
+            "imports": 0
+          },
+          {
+            "label": "entry/7",
+            "bytes": 8252,
+            "sha256": "40ce293b168a3e77e9fd50479a8d43660775895986449a551d2b5a0041679db0",
+            "imports": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Embedded assets and canonical PCM duration",
+      "method": "STATIC_BYTES_AND_JSON",
+      "result": "PASS",
+      "detail": {
+        "duration": 534.1393333333333,
+        "totalSamples": 12819344,
+        "narrationSHA256": "7b6751377802e88a529cf0035084ec47775ff8b2900880302371a4e9b28daa9b",
+        "sceneSHA256": "b7acf29ebead45e17ad6b70496ed7bea8951f70ea883dccbe8f1ec6aee551cd0",
+        "glbCameras": 1,
+        "glbAnimations": 4,
+        "externalGLBResources": 0
+      }
+    },
+    {
+      "name": "Utterances, claims, and source references",
+      "method": "STATIC_DATA_CONTRACT",
+      "result": "PASS",
+      "detail": {
+        "utterances": 61,
+        "chapters": 10,
+        "claims": 24,
+        "sources": 11,
+        "thirdPartyNoticesBytes": 1491
+      }
+    },
+    {
+      "name": "Phase-aware shot grouping and time boundaries",
+      "method": "ACTUAL_GROUPING_CODE_WITH_JSON",
+      "result": "PASS",
+      "detail": {
+        "namedShots": 41,
+        "phaseBeats": 44,
+        "splitNamedShots": {
+          "history-empty": [
+            {
+              "phase": "empty",
+              "start": 87.474,
+              "end": 94.828
+            },
+            {
+              "phase": "withdraw",
+              "start": 94.828,
+              "end": 103.18466666666667
+            }
+          ],
+          "rules-match": [
+            {
+              "phase": "assembled",
+              "start": 256.27733333333333,
+              "end": 265.31666666666666
+            },
+            {
+              "phase": "explode",
+              "start": 265.31666666666666,
+              "end": 272.6066666666667
+            }
+          ],
+          "market-early": [
+            {
+              "phase": "growth",
+              "start": 381.43533333333335,
+              "end": 392.88533333333334
+            },
+            {
+              "phase": "shared",
+              "start": 392.88533333333334,
+              "end": 401.9033333333333
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Seek cancels pending play during prepare",
+      "method": "ACTUAL_CONTROL_FUNCTIONS_MOCK_MEDIA_DOM",
+      "result": "PASS",
+      "detail": {
+        "stage": "prepare",
+        "mediaPlayCalls": 0,
+        "staysPaused": true
+      }
+    },
+    {
+      "name": "Seek cancels pending play during resume",
+      "method": "ACTUAL_CONTROL_FUNCTIONS_MOCK_MEDIA_DOM",
+      "result": "PASS",
+      "detail": {
+        "stage": "resume",
+        "mediaPlayCalls": 0,
+        "staysPaused": true
+      }
+    },
+    {
+      "name": "Seek cancels pending play during media",
+      "method": "ACTUAL_CONTROL_FUNCTIONS_MOCK_MEDIA_DOM",
+      "result": "PASS",
+      "detail": {
+        "stage": "media",
+        "mediaPlayCalls": 1,
+        "staysPaused": true
+      }
+    },
+    {
+      "name": "Visibility change cancels pending play",
+      "method": "ACTUAL_EVENT_HANDLER_MOCK_DOCUMENT",
+      "result": "PASS"
+    },
+    {
+      "name": "Duplicate play is bounded and pause updates status",
+      "method": "ACTUAL_CONTROL_FUNCTIONS_MOCK_MEDIA_DOM",
+      "result": "PASS"
+    },
+    {
+      "name": "Audio failure preserves position and retry works",
+      "method": "ACTUAL_CONTROL_FUNCTIONS_MOCK_REJECTION",
+      "result": "PASS"
+    },
+    {
+      "name": "Media time drives frames; natural end and replay",
+      "method": "ACTUAL_LOOP_AND_EVENTS_MOCK_MEDIA",
+      "result": "PASS"
+    },
+    {
+      "name": "UI/API mute stops SFX and updates accessibility",
+      "method": "ACTUAL_MUTE_AND_API_MOCK_MEDIA",
+      "result": "PASS"
+    },
+    {
+      "name": "Streaming wait holds SFX and resumes from the media clock",
+      "method": "ACTUAL_BUFFERING_FUNCTIONS_MOCK_MEDIA",
+      "result": "PASS"
+    },
+    {
+      "name": "Common SFX guard also blocks unmute during buffering",
+      "method": "ACTUAL_START_SFX_MOCK_AUDIO_NODE",
+      "result": "PASS"
+    },
+    {
+      "name": "Latest audio enabled request wins while preparing",
+      "method": "ACTUAL_AUDIO_API_MOCK_ASYNC_PREPARATION",
+      "result": "PASS"
+    },
+    {
+      "name": "Restore validates time and restores mute ARIA",
+      "method": "ACTUAL_START_FUNCTION_MOCK_INITIALIZATION",
+      "result": "PASS"
+    },
+    {
+      "name": "Captions obey utterance boundaries and locale",
+      "method": "ACTUAL_CAPTION_FUNCTION_MOCK_DOM",
+      "result": "PASS"
+    },
+    {
+      "name": "Current-passage evidence renders claim/source links",
+      "method": "ACTUAL_EVIDENCE_FUNCTION_MOCK_DOM",
+      "result": "PASS",
+      "detail": {
+        "passage": "s01",
+        "claims": [
+          "H03",
+          "H04"
+        ],
+        "renderedSourceLinks": 2
+      }
+    },
+    {
+      "name": "Initialization rejection is surfaced with retry",
+      "method": "REAL_ENTRY_LOADER_MOCK_DYNAMIC_IMPORT_REJECTION",
+      "result": "PASS"
+    },
+    {
+      "name": "Fullscreen subtree contains transport and letterbox rules",
+      "method": "STATIC_HTML_CSS_CONTRACT_NOT_LAYOUT",
+      "result": "PASS",
+      "detail": {
+        "fullscreenTransportPresent": true,
+        "letterboxRulePresent": true,
+        "renderedLayoutTested": false
+      }
+    },
+    {
+      "name": "Build guards reject missing/stale hashes and invalid timing",
+      "method": "ACTUAL_GUARD_CODE_IN_MEMORY_NO_BUILD_WRITES",
+      "result": "PASS",
+      "detail": {
+        "validInputAccepted": true,
+        "rejectedVariants": [
+          "missing script SHA",
+          "stale script SHA",
+          "missing MP3 SHA",
+          "mismatched MP3 SHA",
+          "invalid duration",
+          "smoke test",
+          "script text mismatch"
+        ]
+      }
+    },
+    {
+      "name": "SFX cue ordering and repeatability under identity offline mock",
+      "method": "ACTUAL_SFX_CODE_MOCK_OFFLINE_AUDIO_CONTEXT_NOT_AUDIO_RENDERING",
+      "result": "PASS",
+      "detail": {
+        "sampleRate": 24000,
+        "samples": 12819344,
+        "canonicalNarrationSamples": 12819344,
+        "cues": 22,
+        "mockContexts": 44,
+        "independentContextPerCue": true,
+        "repeatedMockOutputEqual": true,
+        "actualOfflineAudioContextTested": false
+      }
+    },
+    {
+      "name": "Snapshot remained unchanged during this run",
+      "method": "STATIC_BYTE_RECHECK",
+      "result": "PASS"
+    }
+  ]
+}

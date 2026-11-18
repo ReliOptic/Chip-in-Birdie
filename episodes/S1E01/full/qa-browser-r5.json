@@ -1,0 +1,184 @@
+{
+  "schema": "cib-s1e01-actual-browser-observations-v1",
+  "revision": "S1E01-full-r5",
+  "observed_date": "2026-11-17",
+  "actor": "codex-root-s1e01-r5",
+  "session": "chat-20261117-s1e01-r5-business",
+  "artifact_html_sha256": "ee2e69c917802e0c240d9c42e121d91cce609706ebed7107feaa9bfaf9b78d36",
+  "scope": "Actual managed preview of final Site dist. Runtime source/asset equality is recorded in qa-site-r5.json. CPU compatibility picture, not WebGL approval.",
+  "preview_url": "http://127.0.0.1:4173/?qa",
+  "duration": 397.54,
+  "full_playback": {
+    "method": "Clicked Restart from beginning, then Play; no subsequent pause, seek, reload, or tab switch until natural ending was observed. Read-only state/screenshot observations did not alter playback.",
+    "observed_checkpoints_seconds": [
+      0.01,
+      334.57,
+      367.61,
+      385.04,
+      397.54
+    ],
+    "terminal_time": "06:37 / 06:37",
+    "terminal_status": "Finished · replay available",
+    "natural_end": true,
+    "replay_observed_seconds": 0.1,
+    "pause_after_replay_seconds": 5.41
+  },
+  "interactions": [
+    {
+      "action": "Reload paused film",
+      "result": "Restored 171.82 seconds, paused",
+      "scope": "Observed before the uninterrupted final playback"
+    },
+    {
+      "action": "Transcript seek to cost passage",
+      "result": "Paused at 261.40 seconds"
+    },
+    {
+      "action": "Transcript seek to resale passage",
+      "result": "Paused at 324.16 seconds"
+    },
+    {
+      "action": "Transcript seek to penalty passage",
+      "result": "Paused at 333.73 seconds; bought 7 and resold 2 stay separated"
+    },
+    {
+      "action": "Captions English, then Korean",
+      "result": "Corresponding complete cost sentence shown at 261.40 seconds"
+    },
+    {
+      "action": "Mute then unmute",
+      "result": "Control aria-pressed false → true → false and accessible label updated; does not prove audible output"
+    },
+    {
+      "action": "Sources on cost passage",
+      "result": "I07 exact arithmetic and invented-model disclaimer with H/I/J references visible"
+    },
+    {
+      "action": "Sources and Transcript collapse",
+      "result": "Both closed correctly"
+    },
+    {
+      "action": "Fullscreen",
+      "result": "Full screen is unavailable in this browser; not validated"
+    }
+  ],
+  "layout": {
+    "viewport": [
+      1363,
+      936
+    ],
+    "documentWidth": 1348,
+    "horizontalOverflow": false,
+    "scope": "Desktop only; no mobile/Safari/touch claim"
+  },
+  "diagnostics": {
+    "scope": "Actual current browser CPU 3D Canvas rasterization frame readback, not full listening or release approval",
+    "backend": "cpu-3d",
+    "webglUnavailable": "Error: Error creating WebGL context.",
+    "duration": 397.54,
+    "shots": 40,
+    "utterances": 40,
+    "resolution": [
+      800,
+      450
+    ],
+    "samples": [
+      {
+        "t": 3.752,
+        "pixelFNV": "5bf7293"
+      },
+      {
+        "t": 33.973866666666666,
+        "pixelFNV": "7fbda783"
+      },
+      {
+        "t": 71.1024,
+        "pixelFNV": "3be59bf1"
+      },
+      {
+        "t": 115.66346666666666,
+        "pixelFNV": "a62b147c"
+      },
+      {
+        "t": 156.08586666666667,
+        "pixelFNV": "1ac2e798"
+      },
+      {
+        "t": 200.1904,
+        "pixelFNV": "ec31c3d7"
+      },
+      {
+        "t": 240.8688,
+        "pixelFNV": "ca389bf0"
+      },
+      {
+        "t": 276.72159999999997,
+        "pixelFNV": "46822c4d"
+      },
+      {
+        "t": 319.6272,
+        "pixelFNV": "2c9d0d7a"
+      },
+      {
+        "t": 360.4805333333333,
+        "pixelFNV": "4c4cfe32"
+      }
+    ],
+    "orderIndependent": true,
+    "meanMs": 65.97000000104308,
+    "p95Ms": 237.5,
+    "sfx": {
+      "fnv1a": "ced34f27",
+      "peak": 0.035709261894226074,
+      "finite": true,
+      "samples": 9540960,
+      "sampleRate": 24000,
+      "equal": true,
+      "cues": 26,
+      "types": [
+        "paper",
+        "contact",
+        "servo",
+        "air",
+        "resolve"
+      ],
+      "method": "Seeded cue buffers independently rendered by OfflineAudioContext, then ordered Float32 summation"
+    },
+    "renderer": "S1E01 CPU 3D / Canvas 2D (not WebGL)",
+    "errors": [],
+    "triangles": 775,
+    "drawCalls": 89
+  },
+  "screenshots": [
+    {
+      "path": "review/r5/natural-end.jpg",
+      "note": "Actual browser natural end before scrolling to the top; not a separate render"
+    },
+    {
+      "path": "review/r5/cost-comparison.jpg",
+      "note": "Actual paused 04:21 browser picture, English UI and Korean subtitles; exact source is private Sites checkout"
+    },
+    {
+      "path": "review/r5/contract-allocation.jpg",
+      "note": "Actual paused 05:33 browser picture after tile-overlap repair"
+    }
+  ],
+  "not_tested": [
+    "WebGL/PBR quality and GPU performance",
+    "Actual mobile/Safari/touch",
+    "Fullscreen",
+    "Human full listening and pronunciation approval",
+    "Independent full audiovisual release approval",
+    "Actual network outage injection"
+  ],
+  "releaseApproval": false,
+  "production": {
+    "url": "https://chip-in-birdie-s1e01-261117.reliqbit.chatgpt.site/",
+    "nativeDeploymentStatus": "succeeded",
+    "siteSourceCommit": "4cd8b0e77a7093e56691ee195614d66d923a75ef",
+    "observedPageTitle": "Sign in required",
+    "observedContent": "Log in to access · Continue with ChatGPT",
+    "authenticatedPlayback": false,
+    "securityBypassUsed": false
+  }
+}

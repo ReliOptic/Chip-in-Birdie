@@ -1,6 +1,6 @@
 # Four-season production slate
 
-Canonical selection: 2026-11-14 user directive. [Machine-readable slate](seasons.json) owns episode data and status. 4 × 8 = 32 episodes. All start NOT_STARTED; editorial inclusion is not factual verification or video readiness. PR #1 is selectively recovered, not merged.
+Canonical selection: 2026-11-14 user directive. [Machine-readable slate](seasons.json) owns episode data and status. 4 × 8 = 32 episodes. Initial slate commit: all NOT_STARTED; current status is in seasons.json; editorial inclusion is not factual verification or video readiness. PR #1 is selectively recovered, not merged.
 
 Main P001–P100 remain unchanged. P101/P109/P120/P137/P147 exist in PR #1; their main_p_id is null. Original IDs and titles are namespaced, not renumbered. [Recovered records](provenance/pr1-selected.json) preserve exact source fields. The earlier main-only 24-candidate proposal is not the current slate.
 
@@ -20,7 +20,7 @@ How did design and manufacturing become separate businesses?
 - Payoff: The product is also a trusted manufacturing relationship
 - Next: S1E02 — A factory can separate ownership from design; eight engineers leaving an employer show how the people and knowledge behind such companies first became mobile.
 - Selection: RECOVERED_PR1_CORE — Preserves user-recovered six-episode sequence; titles remain factual review drafts.
-- Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: TSMC 창업 당시 인터뷰·초기 고객 계약·연차보고서.
+- Evidence: PARTIAL_PRIMARY_SOURCE_VERIFIED. Production: IN_PRODUCTION. Production record: [S1E01](../episodes/S1E01/production.md). Source hunt: TSMC 창업 당시 인터뷰·초기 고객 계약·연차보고서.
 ### S1E02 · Silicon Valley Started With Eight People Quitting
 
 - Source: PR #1 P061 → main P061; H: H023. Original title: Silicon Valley Started With Eight People Quitting.

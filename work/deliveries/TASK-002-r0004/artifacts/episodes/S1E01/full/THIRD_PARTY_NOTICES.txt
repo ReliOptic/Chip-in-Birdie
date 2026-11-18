@@ -1,0 +1,313 @@
+Three.js r170 and bundled examples (RoomEnvironment, GLTFLoader, BufferGeometryUtils)
+Source: https://github.com/mrdoob/three.js/blob/r170/LICENSE
+Retrieved from official tag r170 on 2026-11-17.
+
+The MIT License
+
+Copyright © 2010-2024 three.js authors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+The standalone does not redistribute the Kokoro model, voices database,
+ONNX runtime, or Python packages. It contains a locally generated synthetic
+narration recording; no human narrator impersonation is claimed.
+
+
+R6 ACTIVE RENDERER AND ARCHIVE COLLECTION — 2026-11-17
+====================================================
+Revision: S1E01-full-r6
+Locked script SHA-256: 50eae44fd3e123e87130d14b0fc2ace165d7d8d207b6a835c838b8b01b65e039
+
+R6 uses a Canvas photographic/documentary compositor (archive-cinema.mjs).
+The Three.js notice above is retained for historical/bundled earlier code;
+it does not license any photograph and is not a claim that Three.js is the
+active R6 renderer. Synthetic narration is separately produced; no image
+subject is represented as having spoken the narration.
+
+This inventory follows the current 17-asset archive/manifest.json snapshot,
+SHA-256 6e57ffbab529965f237f75303d3f881b432cdaa77378b33185c61f868319d560.
+The manifest's asset researcher checked file-page provenance and capture
+dates. This notice preserves that attribution; it is not a new independent
+copyright review or proof that every asset appears in the final edit.
+Source URLs and license URLs below must remain available with distributed
+HTML, images and derived audiovisual versions.
+
+PHOTOGRAPHIC TREATMENTS / ADAPTATIONS
+R6 display treatments may crop, scale, pan, mask, fade and overlay captions
+or explanatory graphics. They do not turn later photographs into period
+records. These changes are credited to Chip in Birdie, S1E01 R6.
+For each CC BY-SA photograph below, any adapted photographic material
+distributed in this project is offered under that same listed CC BY-SA
+license, with the original creator, source and license preserved. The
+applicable ShareAlike conditions are not replaced by the Three.js MIT
+license or a blanket all-rights-reserved claim. CC BY material retains
+attribution and change notices. PD/CC0 credits are retained for provenance.
+Distinct code, text, voice and other works retain their respective rights;
+this notice does not purport to relicense third-party material wholesale.
+
+The original downloaded-file modification status below is separate from
+these in-film display adaptations. A crop is not evidence that an image
+shows the narrated event. Logos and people are identified editorially;
+no endorsement, affiliation, general model release or trademark license
+is implied. Keep photograph dates, object eras and geographic cautions
+visible wherever the image could otherwise mislead.
+
+[01] chang — Morris Chang speaking in 2018
+File: morris-chang-portrait-2018.jpg
+Credit: Morris Chang speaking in 2018 — Mori / Office of the President, Republic of China (中華民國總統府) — CC BY 2.0
+Creator: Mori / Office of the President, Republic of China (中華民國總統府)
+Source: https://commons.wikimedia.org/wiki/File:Morris_Chang_2018-11-12.jpg
+License: CC BY 2.0
+License URL: https://creativecommons.org/licenses/by/2.0/
+Photo date: 2018-11-12
+Original-file changes: None. Where download_url differs from direct_url, this is a Wikimedia server-side resized JPEG.
+R6 display adaptation credit: Chip in Birdie, S1E01 R6 (cropping/scaling/panning, layout and caption overlays where applied).
+Attribution and change notice retained under CC BY 2.0.
+Context: A modern portrait, not a photograph of the 1985–1987 founding. Do not animate his mouth or imply that the narration is his recorded speech.
+
+[02] jensen — Jensen Huang at SC18
+File: jensen-huang-sc18-2018.jpg
+Credit: Jensen Huang at SC18 — Raysonho @ Open Grid Scheduler / Scalable Grid Engine — CC0 1.0
+Creator: Raysonho @ Open Grid Scheduler / Scalable Grid Engine
+Source: https://commons.wikimedia.org/wiki/File:JensenHuangSC18.jpg
+License: CC0 1.0
+License URL: https://creativecommons.org/publicdomain/zero/1.0/
+Photo date: 2018-11-12
+Original-file changes: None. Where download_url differs from direct_url, this is a Wikimedia server-side resized JPEG.
+R6 display adaptation credit: Chip in Birdie, S1E01 R6 (cropping/scaling/panning, layout and caption overlays where applied).
+CC0 source dedication retained; no new restriction claimed on source imagery.
+Context: Not a 1993 or 1997 photograph. A background presentation contains a 2025 projection; that chart is not documentary evidence for this film.
+
+[03] pc — IBM PC 5150 with monitor and keyboard
+File: ibm-pc5150-object-photo2010.jpg
+Credit: IBM PC 5150 with monitor and keyboard — Ruben de Rijcke — CC BY-SA 3.0 Unported
+Creator: Ruben de Rijcke
+Source: https://commons.wikimedia.org/wiki/File:Ibm_pc_5150.jpg
+License: CC BY-SA 3.0 Unported
+License URL: https://creativecommons.org/licenses/by-sa/3.0/
+Photo date: 2010-02-24
+Original-file changes: None. Where download_url differs from direct_url, this is a Wikimedia server-side resized JPEG.
+R6 display adaptation credit: Chip in Birdie, S1E01 R6 (cropping/scaling/panning, layout and caption overlays where applied).
+Adapted photographic material: CC BY-SA 3.0 Unported; https://creativecommons.org/licenses/by-sa/3.0/
+Context: An object photograph taken in 2010, not an archival photograph taken in 1981. Do not call it the first personal computer.
+
+[04] pcboard — IBM PC motherboard, 1981 model
+File: ibm-pc5150-board-object-photo2012.jpg
+Credit: IBM PC motherboard, 1981 model — German (Wikimedia Commons contributor) — CC BY-SA 3.0 Unported
+Creator: German (Wikimedia Commons contributor)
+Source: https://commons.wikimedia.org/wiki/File:IBM_PC_Motherboard_(1981).jpg
+License: CC BY-SA 3.0 Unported
+License URL: https://creativecommons.org/licenses/by-sa/3.0/
+Photo date: 2012-03-09
+Original-file changes: None. Where download_url differs from direct_url, this is a Wikimedia server-side resized JPEG.
+R6 display adaptation credit: Chip in Birdie, S1E01 R6 (cropping/scaling/panning, layout and caption overlays where applied).
+Adapted photographic material: CC BY-SA 3.0 Unported; https://creativecommons.org/licenses/by-sa/3.0/
+Context: This is a separate preserved board, not demonstrably the interior of the preceding photographed PC. The filename's 1981 is the object era, not the photo date.
+
+[05] intel8088 — Intel P8088 processor
+File: intel8088-object-photo2019.jpg
+Credit: Intel P8088 processor — Thomas Nguyen (also credited as Stelo.xyz / Pttn) — CC BY-SA 4.0
+Creator: Thomas Nguyen (also credited as Stelo.xyz / Pttn)
+Source: https://commons.wikimedia.org/wiki/File:Intel_P8088.jpg
+License: CC BY-SA 4.0
+License URL: https://creativecommons.org/licenses/by-sa/4.0/
+Photo date: 2019-03-17
+Original-file changes: None. Where download_url differs from direct_url, this is a Wikimedia server-side resized JPEG.
+R6 display adaptation credit: Chip in Birdie, S1E01 R6 (cropping/scaling/panning, layout and caption overlays where applied).
+Adapted photographic material: CC BY-SA 4.0; https://creativecommons.org/licenses/by-sa/4.0/
+Context: Not a 1979/1981 photograph and not a TSMC product. Separate brand/design/manufacture labels; do not infer a wafer factory from the package's country marking.
+
+[06] taiwan — Taiwan island, Terra MODIS satellite image
+File: taiwan-modis-2022.jpg
+Credit: Taiwan island, Terra MODIS satellite image — NASA Earth Observatory / Terra / MODIS; reprojected by Tiouraren (Y.-C. Tsai) — Public domain — NASA (Commons PD-USGov-NASA)
+Creator: NASA Earth Observatory / Terra / MODIS; reprojected by Tiouraren (Y.-C. Tsai)
+Source: https://commons.wikimedia.org/wiki/File:Taiwan_NASA_Terra_MODIS_2022-07-21.jpg
+License: Public domain — NASA (Commons PD-USGov-NASA)
+License URL: https://www.nasa.gov/nasa-brand-center/images-and-media/
+Photo date: 2022-07-21T01:40:00Z
+Original-file changes: None. Where download_url differs from direct_url, this is a Wikimedia server-side resized JPEG.
+R6 display adaptation credit: Chip in Birdie, S1E01 R6 (cropping/scaling/panning, layout and caption overlays where applied).
+Public-domain source status retained; no new restriction claimed on source imagery.
+Context: Geographic establishing image, not 1980s land-use evidence. The supplied image was reprojected to an orthographic view; use verified map coordinates for any location marker. No NASA endorsement is implied.
+
+[07] itri — ITRI campus exterior
+File: itri-campus-2008.jpg
+Credit: ITRI campus exterior — Ysh1005 — CC BY-SA 4.0
+Creator: Ysh1005
+Source: https://commons.wikimedia.org/wiki/File:ITRI_campus_front.jpg
+License: CC BY-SA 4.0
+License URL: https://creativecommons.org/licenses/by-sa/4.0/
+Photo date: 2008-12-20
+Original-file changes: None. Where download_url differs from direct_url, this is a Wikimedia server-side resized JPEG.
+R6 display adaptation credit: Chip in Birdie, S1E01 R6 (cropping/scaling/panning, layout and caption overlays where applied).
+Adapted photographic material: CC BY-SA 4.0; https://creativecommons.org/licenses/by-sa/4.0/
+Context: Not the 1985 office, 1987 transferred facilities, or a reconstruction of either. Use only as a later institutional exterior.
+
+[08] factory1989 — VEB Mikroelektronik workers in Erfurt, 1989
+File: erfurt-microelectronics-workers-1989.jpg
+Credit: Bundesarchiv, Bild 183-1989-0523-018 / Heinz Hirndorf / CC BY-SA 3.0 DE
+Creator: Heinz Hirndorf / Bundesarchiv
+Source: https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-1989-0523-018,_Erfurt,_VEB_Mikroelektronik.jpg
+License: CC BY-SA 3.0 Germany
+License URL: https://creativecommons.org/licenses/by-sa/3.0/de/
+Photo date: 1989-05
+Original-file changes: None. Where download_url differs from direct_url, this is a Wikimedia server-side resized JPEG.
+R6 display adaptation credit: Chip in Birdie, S1E01 R6 (cropping/scaling/panning, layout and caption overlays where applied).
+Adapted photographic material: CC BY-SA 3.0 Germany; https://creativecommons.org/licenses/by-sa/3.0/de/
+Context: Actual period manufacturing, but in East Germany, not Taiwan or TSMC. Mandatory visible location label. Only 800×512; avoid a deep zoom. Archive captions may be politically biased and do not substantiate this film's economic claims.
+
+[09] riva128 — NVIDIA RIVA 128 chip with ST and NVIDIA marks
+File: riva128-1997-object-photo2010.jpg
+Credit: NVIDIA RIVA 128 chip with ST and NVIDIA marks — Hyins — Public domain — PD-self
+Creator: Hyins
+Source: https://commons.wikimedia.org/wiki/File:RIVA_128_GPU.jpg
+License: Public domain — PD-self
+License URL: https://commons.wikimedia.org/wiki/Template:PD-self
+Photo date: 2010-08-16
+Original-file changes: None. Where download_url differs from direct_url, this is a Wikimedia server-side resized JPEG.
+R6 display adaptation credit: Chip in Birdie, S1E01 R6 (cropping/scaling/panning, layout and caption overlays where applied).
+Public-domain source status retained; no new restriction claimed on source imagery.
+Context: The physical package visibly carries ST and NVIDIA marks and MALTA. Appropriate for the ST manufacturing relationship, not proof of the wafer fabrication location. Do not call this a TSMC-made 1997 RIVA 128.
+
+[10] riva128zx — RIVA 128ZX chip with ST and NVIDIA marks
+File: riva128zx-1998-object-photo2010.jpg
+Credit: RIVA 128ZX chip with ST and NVIDIA marks — Hyins — Public domain — PD-self
+Creator: Hyins
+Source: https://commons.wikimedia.org/wiki/File:RIVA_128ZX_GPU.jpg
+License: Public domain — PD-self
+License URL: https://commons.wikimedia.org/wiki/Template:PD-self
+Photo date: 2010-08-16
+Original-file changes: None. Where download_url differs from direct_url, this is a Wikimedia server-side resized JPEG.
+R6 display adaptation credit: Chip in Birdie, S1E01 R6 (cropping/scaling/panning, layout and caption overlays where applied).
+Public-domain source status retained; no new restriction claimed on source imagery.
+Context: Visually inspected: ST and NVIDIA logos, MALTA, and J835XST-A6 are present. It must NOT be labeled as a proven TSMC-manufactured unit. The 1998 S-1 gives ST manufacturing/sales rights for 128ZX too.
+
+[11] tntboard — Creative Labs Graphics Blaster Riva TNT board
+File: creative-riva-tnt-board-object-photo2010.jpg
+Credit: Creative Labs Graphics Blaster Riva TNT board — Tors — Public domain — PD-self
+Creator: Tors
+Source: https://commons.wikimedia.org/wiki/File:Creative_Labs_Graphics_Blaster_Riva_TNT.jpg
+License: Public domain — PD-self
+License URL: https://commons.wikimedia.org/wiki/Template:PD-self
+Photo date: 2010-08-20
+Original-file changes: None. Where download_url differs from direct_url, this is a Wikimedia server-side resized JPEG.
+R6 display adaptation credit: Chip in Birdie, S1E01 R6 (cropping/scaling/panning, layout and caption overlays where applied).
+Public-domain source status retained; no new restriction claimed on source imagery.
+Context: Creative is the board brand, NVIDIA designed the graphics processor, and a foundry makes the chip—not necessarily the finished graphics card. The photograph alone does not prove the manufacturing provenance of this particular unit.
+
+[12] tntdie — Exposed NVIDIA NV4 / RIVA TNT die and package
+File: nvidia-nv4-tnt-die-object-photo2016.jpg
+Credit: Exposed NVIDIA NV4 / RIVA TNT die and package — Fritzchens Fritz — CC0 1.0
+Creator: Fritzchens Fritz
+Source: https://commons.wikimedia.org/wiki/File:NVIDIA@350nm@Fixed-pipeline@NV4@Riva_TNT@T5A5037059849_DSC06250_(28720666380).jpg
+License: CC0 1.0
+License URL: https://creativecommons.org/publicdomain/zero/1.0/
+Photo date: 2016-08-13
+Original-file changes: None. Where download_url differs from direct_url, this is a Wikimedia server-side resized JPEG.
+R6 display adaptation credit: Chip in Birdie, S1E01 R6 (cropping/scaling/panning, layout and caption overlays where applied).
+CC0 source dedication retained; no new restriction claimed on source imagery.
+Context: A later destructive-analysis/object photograph, not a 1998 production-line image. The manufacturer relationship is documented by NVIDIA/TSMC primary records; do not infer this specific sample's wafer provenance only from the picture.
+
+[13] fab12b — TSMC Fab 12B at night
+File: tsmc-fab12b-night-2015.jpg
+Credit: TSMC Fab 12B at night — 曾 成訓 (Tseng Photos) — CC BY 2.0
+Creator: 曾 成訓 (Tseng Photos)
+Source: https://commons.wikimedia.org/wiki/File:Building_of_Taiwan_Semiconductor_Manufacturing_Fab_12B_at_night.jpg
+License: CC BY 2.0
+License URL: https://creativecommons.org/licenses/by/2.0/
+Photo date: 2015-07-02
+Original-file changes: None. Where download_url differs from direct_url, this is a Wikimedia server-side resized JPEG.
+R6 display adaptation credit: Chip in Birdie, S1E01 R6 (cropping/scaling/panning, layout and caption overlays where applied).
+Attribution and change notice retained under CC BY 2.0.
+Context: Modern TSMC factory, not its original 1987 fab and not an illustration of initial founding capital expenditure.
+
+[14] fab18 — TSMC Fab 18, Southern Taiwan Science Park
+File: tsmc-fab18-day-2025.jpg
+Credit: TSMC Fab 18, Southern Taiwan Science Park — 4300streetcar — CC BY 4.0
+Creator: 4300streetcar
+Source: https://commons.wikimedia.org/wiki/File:TSMC_Fab_18_May_2025.jpg
+License: CC BY 4.0
+License URL: https://creativecommons.org/licenses/by/4.0/
+Photo date: 2025-05-27
+Original-file changes: None. Where download_url differs from direct_url, this is a Wikimedia server-side resized JPEG.
+R6 display adaptation credit: Chip in Birdie, S1E01 R6 (cropping/scaling/panning, layout and caption overlays where applied).
+Attribution and change notice retained under CC BY 4.0.
+Context: Modern Tainan/Southern Taiwan site, not Hsinchu and not the 1987 founding facility. Do not imply this building existed when the foundry model was invented.
+
+[15] chang2022 — Morris Chang at the Taiwan Presidential Office, 2022
+File: morris-chang-official-2022.jpg
+Credit: Morris Chang, 2022 — Wang Yu Ching / Office of the President — CC BY 2.0
+Creator: Wang Yu Ching / Office of the President
+Source: https://commons.wikimedia.org/wiki/File:20221020_Morris_Chang_at_the_Office_of_the_President,_ROC_(Taiwan).jpg
+License: CC BY 2.0
+License URL: https://creativecommons.org/licenses/by/2.0/
+Photo date: 2022-10-20
+Original-file changes: None; downloaded the original Commons JPEG.
+R6 display adaptation credit: Chip in Birdie, S1E01 R6 (cropping/scaling/panning, layout and caption overlays where applied).
+Attribution and change notice retained under CC BY 2.0.
+Context: A later official photograph at a lectern, not the 2007 oral-history discussion or a customer visit. Do not imply that the pictured speech contains the film's narration. Keep the 2022 photograph date visible.
+
+[16] jensen2014 — Jen-Hsun Huang official headshot, 2014
+File: jensen-huang-official-2014.jpg
+Credit: Jen-Hsun Huang Headshot — nvidia.corporation — CC BY-SA 2.0
+Creator: nvidia.corporation
+Source: https://commons.wikimedia.org/wiki/File:Jen-Hsun_Huang_Headshot_(15313247387).jpg
+License: CC BY-SA 2.0
+License URL: https://creativecommons.org/licenses/by-sa/2.0/
+Photo date: 2014-10-10
+Original-file changes: Wikimedia server-side resize to 1920 pixels wide; no local crop or color edit.
+R6 display adaptation credit: Chip in Birdie, S1E01 R6 (cropping/scaling/panning, layout and caption overlays where applied).
+Adapted photographic material: CC BY-SA 2.0; https://creativecommons.org/licenses/by-sa/2.0/
+Context: Not a 1997 or 2007 photograph, and not a frame from the Morris Chang oral history. Commons also flags personality rights: editorial identification does not imply endorsement or a general model release.
+
+[17] wafer2017 — 12-inch wafer of microelectronic testbeds
+File: wafer-microelectronic-testbed-2017.jpg
+Credit: Semiconductor Wafer of Microelectronics — DrHughManning — CC BY-SA 4.0
+Creator: DrHughManning
+Source: https://commons.wikimedia.org/wiki/File:Semiconductor_Wafer_of_Microelectronics.jpg
+License: CC BY-SA 4.0
+License URL: https://creativecommons.org/licenses/by-sa/4.0/
+Photo date: 2017-01-26
+Original-file changes: Wikimedia server-side resize to 1920 pixels wide; no local crop or color edit.
+R6 display adaptation credit: Chip in Birdie, S1E01 R6 (cropping/scaling/panning, layout and caption overlays where applied).
+Adapted photographic material: CC BY-SA 4.0; https://creativecommons.org/licenses/by-sa/4.0/
+Context: Not identified as a TSMC or NVIDIA wafer. Do not label it as 1987 equipment, an actual 1998 NVIDIA production wafer, or a measured yield map. The visible pattern is an illustrative modern research wafer.
+
+PRIMARY DOCUMENTS AND QUOTATION CONTEXT
+Narrative citations are in sources.json and linked by claims.json to the
+locked script. Access to a public corporate filing, transcript, report,
+website or image is not by itself a redistribution license.
+The NVIDIA S-1 quotation plan uses two brief excerpts (eight English words
+total); do not add full readable pages or lengthy duplicated excerpts.
+Do not redistribute complete CHM transcripts, corporate reports or Vox
+videos under the photograph licenses. No Vox footage, music, branding or
+verbatim narration is licensed by this notice.
+
+PERIOD / IDENTITY CAUTIONS
+The RIVA 128 and 128ZX samples both carry ST markings; neither photograph
+is a certificate of TSMC wafer provenance. The 1989 factory image is Erfurt,
+East Germany, not TSMC. The 2017 wafer is a research testbed, not identified
+as NVIDIA or TSMC. Modern portraits, campuses and fabs keep their actual
+capture dates. No fabricated historical photo, lip-synced testimony or
+unverified first-factory reconstruction is authorized here.
+
+This record is not a release approval. Final crop readability, persistent
+credits and dates, excerpt limits, accessible license links and the scope
+of any distributed adaptations still require checks against the actual
+rendered and packaged R6 artifact.

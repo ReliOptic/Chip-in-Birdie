@@ -1,0 +1,11 @@
+{
+  "video": {
+    "duration": 6,
+    "currentTime": 6,
+    "ended": true,
+    "error": null
+  },
+  "audioDuration": 469.882,
+  "ready": true,
+  "external_network_requests": []
+}

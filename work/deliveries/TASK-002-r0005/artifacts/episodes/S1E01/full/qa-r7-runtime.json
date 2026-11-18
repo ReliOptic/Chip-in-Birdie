@@ -1,0 +1,323 @@
+{
+  "schema": "cib-s1e01-cinematic-runtime-qa-v1",
+  "generatedAtUTC": "2026-11-17T19:51:31.523Z",
+  "scope": "Actual R7 production film.mjs with mock DOM, Image, fetch, media, cinematic renderer and identity OfflineAudioContext; real WebCrypto hashes and optional exact delivery-byte/module-graph checks. No browser, network, WebGL, real media decoding or listening.",
+  "notTested": [
+    "Cinematic visual quality, 3D action/camera perception or full-film viewing",
+    "Real image/MP3 decoding, Canvas pixels or WebGL",
+    "Real browser playback, Blob media seeking, import-map support and fullscreen layout",
+    "Actual OfflineAudioContext output, speaker output or listening",
+    "Historical accuracy, rights clearance or release approval"
+  ],
+  "inputs": {
+    "sourceSHA256": {
+      "film.mjs": "f5e5edb7e8643f17e11be56944e557a780c170cd67e16652f63fa5275ea2d421",
+      "player.html": "d78a423f5203054db06679c133a772e00abdf366c071664439197161d80aa93a",
+      "build.mjs": "bebbd5ed27ba50131cefb272c95b2718a3d5ac1d7ef0becdc57463bcf4df4dfe",
+      "qa-cinematic-runtime.mjs": "d5d1927004b8007dbbdf7bba63495027848e24cb8a679cd87726d1e639f3625a",
+      "cinematic-director.mjs": "85f0ac02bb9987a14c29e64eebf5bef8b33ba9868f2427e141fdbbf44f10bd51",
+      "cinematic-shotplan.mjs": "be6f6953866bed69d341d865dadcbe7ccb26f0ff10150d5a959a4c24aab26372",
+      "story-kit.mjs": "f1e73361726439a93e9e9beac32fbd5fd4da2e53f09580ce12d067bfc089e77f",
+      "story-pc.mjs": "80ea459be786f8d72671c308b3633ea93be0748ff7f5b91f5b7eef36ac544d87",
+      "story-factory.mjs": "47f1999685b8d3392430ede204b087d2d949b7f7ce15d11b0f675beec62e1224",
+      "story-lab.mjs": "41902411fb3e60d8132eabbe8b8cbd4f115a69d9f7b3ffb7ff58aecdbffa8c98",
+      "story-desk.mjs": "882157859d9987809d2574e726f4123e04723dce7120333f940217b3e02ad302",
+      "software-renderer.mjs": "d9100eff41ce04e27aebf4c0bd9f0c57935ce3d7c002db85c5922dfcbdac8690",
+      "archive-cinema.mjs": "3a5f309713221fa0ca7aaff0e85fa01bc9371af7b6e207eaa20cb43e06dfb544",
+      "archive-shotplan.mjs": "b28c85a9f3474dc616d2f4f855c7860f68b11ad34db5097094e284e5d464fb9b",
+      "script.json": "50eae44fd3e123e87130d14b0fc2ace165d7d8d207b6a835c838b8b01b65e039",
+      "claims.json": "c3f441ac8ca8feaa91cb3132ff64966e41a2db5a0aa233771c3dc56039b27f83",
+      "sources.json": "21fdfc6a673808db3cdb3a0fd54e18c9e10fc25af1abe8e720aca3711a8c7286",
+      "THIRD_PARTY_NOTICES.txt": "ad922f24df0f619f13742a7466d93d7b72bebaaffc8f5bac99979c54996a7f4f"
+    },
+    "artifacts": {
+      "bundle": "e47164cbda0ee80dd045e61e1b0c15e6908e3c0b2d370d6763815a498a95190f",
+      "pinnedThree": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "siteIndex": "616d04ddb05124b769798208ecfa06c24107f80eeef4d59252c73eb0e45bcabb",
+      "siteThree": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    },
+    "arguments": {
+      "archive": "/workspace/scratch/204e2295d8fd/s1e01-full-media/assets-r7/archive",
+      "bundle": "/workspace/scratch/204e2295d8fd/s1e01-full-media/S1E01-full-r7-media/S1E01-full-documentary.html",
+      "site": "/workspace/sites/chip-in-birdie-s1e01-r5/.sites-checkout/dist"
+    }
+  },
+  "summary": {
+    "passed": 38,
+    "failed": 0,
+    "total": 38,
+    "verdict": "NON_BROWSER_CINEMATIC_CONTRACTS_PASS_ONLY",
+    "releaseApproval": false
+  },
+  "tests": [
+    {
+      "name": "Cinematic entry and HTML controls are structurally connected",
+      "method": "REAL_JS_PARSE_AND_STATIC_HTML_CSS",
+      "result": "PASS"
+    },
+    {
+      "name": "Images, verified narration and fonts precede cinematic startup",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CINEMATIC_RENDERER_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Narration fetch verifies all bytes before attaching one audio/mpeg Blob",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CINEMATIC_RENDERER_AND_AUDIO",
+      "result": "PASS",
+      "detail": {
+        "syntheticBytes": 4096,
+        "syntheticSHA256": "12f51875c1545afac5b3bd4b3fd5131a9ed9f50ff248b84b01986d0934716f68",
+        "actualMP3Decoding": false
+      }
+    },
+    {
+      "name": "Pending narration and fonts keep controls blocked with no premature play",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CINEMATIC_RENDERER_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Narration HTTP failure cannot play or initialize pictures; explicit retry recovers",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CINEMATIC_RENDERER_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Narration network rejection cannot play or initialize pictures; explicit retry recovers",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CINEMATIC_RENDERER_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Narration truncated body cannot play or initialize pictures; explicit retry recovers",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CINEMATIC_RENDERER_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Narration SHA mismatch cannot play or initialize pictures; explicit retry recovers",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CINEMATIC_RENDERER_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Absent subtle crypto is reported as unverified rather than claiming SHA verification",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CINEMATIC_RENDERER_AND_AUDIO",
+      "result": "PASS",
+      "detail": {
+        "fallbackPolicy": "Production permits full-length unchecked audio when subtle crypto is absent; this is not a hash-verification pass."
+      }
+    },
+    {
+      "name": "An image load failure blocks playback, renders error and retries",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CINEMATIC_RENDERER_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Image decode failures and missing shot assets are explicit errors",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CINEMATIC_RENDERER_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "A draw failure stops media and can retry the same position",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CINEMATIC_RENDERER_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Reload restoration is not erased by initialization",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CINEMATIC_RENDERER_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Invalid storage and denied storage do not block the film",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CINEMATIC_RENDERER_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Seek cancels pending playback during prepare",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CINEMATIC_RENDERER_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Seek cancels pending playback during resume",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CINEMATIC_RENDERER_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Seek cancels pending playback during media",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CINEMATIC_RENDERER_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Visibility change cancels a pending audio start",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CINEMATIC_RENDERER_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Play is idempotent and pause captures the actual media clock",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CINEMATIC_RENDERER_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Preparation rejection preserves position and retry works",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CINEMATIC_RENDERER_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Media decode failure has an actionable reload/retry",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CINEMATIC_RENDERER_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Media clock drives picture, natural ending, persisted replay",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CINEMATIC_RENDERER_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Buffering holds SFX including mute toggles and resumes once",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CINEMATIC_RENDERER_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Mute state is shared by normal/fullscreen controls and persistence",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CINEMATIC_RENDERER_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "A stale async enable cannot override a newer mute",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CINEMATIC_RENDERER_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Captions follow recorded boundaries, locale and off state",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CINEMATIC_RENDERER_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Transcript/evidence/credits preserve dynamic content and attribution",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CINEMATIC_RENDERER_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Native fullscreen and cinema fallback preserve playback and restore the page",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CINEMATIC_RENDERER_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Missing fullscreen API falls back; a cancelled request cannot reopen a view",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CINEMATIC_RENDERER_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Keyboard transport ignores focused controls and editable content",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CINEMATIC_RENDERER_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Headless review starts paused and ignores saved playback position",
+      "method": "ACTUAL_PRODUCTION_MODULE_WITH_MOCK_DOM_IMAGE_MEDIA_CINEMATIC_RENDERER_AND_AUDIO",
+      "result": "PASS"
+    },
+    {
+      "name": "Seeded archive/action SFX repeat under independent identity offline mocks",
+      "method": "ACTUAL_SFX_CODE_IDENTITY_OFFLINE_MOCK_NOT_AUDIO_RENDERING",
+      "result": "PASS",
+      "detail": {
+        "samples": 288000,
+        "cues": 8,
+        "peak": 0.01272768434137106,
+        "independentContexts": 16,
+        "actualOfflineAudioContext": false
+      }
+    },
+    {
+      "name": "Build rejects stale audio/script, invalid PCM and mismatched passages",
+      "method": "ACTUAL_EXPORTED_BUILD_VALIDATOR_NO_WRITES",
+      "result": "PASS",
+      "detail": {
+        "rejectedVariants": [
+          "stale script",
+          "missing narration hash",
+          "smoke result",
+          "incorrect duration",
+          "changed text",
+          "changed identifier",
+          "noncanonical samples",
+          "overlap",
+          "missing chapter"
+        ]
+      }
+    },
+    {
+      "name": "Source archive manifest and every image hash are valid",
+      "method": "ACTUAL_ASSET_BYTES_METADATA_NO_IMAGE_DECODING",
+      "result": "PASS",
+      "detail": {
+        "images": 17,
+        "bytes": 7409938,
+        "ids": [
+          "chang",
+          "jensen",
+          "pc",
+          "pcboard",
+          "intel8088",
+          "taiwan",
+          "itri",
+          "factory1989",
+          "riva128",
+          "riva128zx",
+          "tntboard",
+          "tntdie",
+          "fab12b",
+          "fab18",
+          "chang2022",
+          "jensen2014",
+          "wafer2017"
+        ]
+      }
+    },
+    {
+      "name": "Standalone archive/audio/import-map graph equals current R7 sources",
+      "method": "ACTUAL_BUNDLE_BYTES_REAL_JS_PARSE_NO_EVALUATION",
+      "result": "PASS",
+      "detail": {
+        "bytes": 20258871,
+        "sha256": "e47164cbda0ee80dd045e61e1b0c15e6908e3c0b2d370d6763815a498a95190f",
+        "duration": 384.41133333333335,
+        "rows": 44,
+        "images": 17,
+        "modules": 11,
+        "importMapEntries": 12,
+        "pinnedThreeSHA256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+      }
+    },
+    {
+      "name": "Final build manifest, caption text/timings and every listed output hash agree",
+      "method": "ACTUAL_BUILD_OUTPUT_BYTES_NO_RENDERING",
+      "result": "PASS",
+      "detail": {
+        "listedOutputs": 9,
+        "captions": [
+          "en",
+          "ko"
+        ],
+        "rowsPerCaptionFile": 44,
+        "releaseApproval": false
+      }
+    },
+    {
+      "name": "Site module graph, local media, credits and download match final sources",
+      "method": "ACTUAL_SITE_FILE_HASHES_REAL_JS_PARSE_NO_HTTP",
+      "result": "PASS",
+      "detail": {
+        "indexSHA256": "616d04ddb05124b769798208ecfa06c24107f80eeef4d59252c73eb0e45bcabb",
+        "runtimeModules": 11,
+        "moduleGraphFiles": 12,
+        "images": 17,
+        "downloadBytes": 20258871,
+        "downloadSHA256": "e47164cbda0ee80dd045e61e1b0c15e6908e3c0b2d370d6763815a498a95190f",
+        "pinnedThreeSHA256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+      }
+    },
+    {
+      "name": "Source snapshot stayed unchanged during this QA run",
+      "method": "STATIC_BYTE_RECHECK",
+      "result": "PASS"
+    }
+  ]
+}

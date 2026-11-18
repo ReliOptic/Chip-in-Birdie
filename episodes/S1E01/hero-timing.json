@@ -1,0 +1,54 @@
+{
+  "source_start": 221.55,
+  "source_end": 225.85,
+  "duration": 6,
+  "pad_silence": 1.7,
+  "timing_method": "Observed tiny.en ASR word timestamps; approximate boundaries, listening review pending",
+  "words": [
+    {
+      "word": " Now",
+      "start": 0.05,
+      "end": 0.35
+    },
+    {
+      "word": " follow",
+      "start": 0.35,
+      "end": 0.65
+    },
+    {
+      "word": " one",
+      "start": 0.65,
+      "end": 1.07
+    },
+    {
+      "word": " wafer",
+      "start": 1.07,
+      "end": 1.45
+    },
+    {
+      "word": " through",
+      "start": 1.45,
+      "end": 2.21
+    },
+    {
+      "word": " our",
+      "start": 2.21,
+      "end": 2.51
+    },
+    {
+      "word": " illustrative",
+      "start": 2.51,
+      "end": 3.05
+    },
+    {
+      "word": " production",
+      "start": 3.05,
+      "end": 3.49
+    },
+    {
+      "word": " space.",
+      "start": 3.49,
+      "end": 4.17
+    }
+  ]
+}

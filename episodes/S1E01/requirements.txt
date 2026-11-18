@@ -1,0 +1,5 @@
+# Free local production dependencies; install in a project venv.
+kokoro-onnx==0.6.1
+soundfile==0.14.0
+faster-whisper # ASR timings only; exact installed version recorded in QA
+# System tools: Blender 4.3.2, FFmpeg, Chromium; Python Playwright for observed browser QA.

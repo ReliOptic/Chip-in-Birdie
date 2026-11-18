@@ -1,0 +1,250 @@
+{
+  "scope": "Actual Node @napi-rs/canvas pixels from the CPU 3D renderer. NOT browser/WebGL/audio/player/release verification.",
+  "resolution": [
+    960,
+    540
+  ],
+  "orderIndependent": true,
+  "readbackMatch": true,
+  "semantics": {
+    "depthOcclusion": true,
+    "actualTransform": true,
+    "inheritedVisibility": true,
+    "instancing": true,
+    "textureOrientation": true,
+    "nearClip": true,
+    "explicitSoftwareLabel": true
+  },
+  "sourceHashes": {
+    "software-renderer.mjs": "d9100eff41ce04e27aebf4c0bd9f0c57935ce3d7c002db85c5922dfcbdac8690",
+    "worlds.mjs": "3c25b7393428189f95181cb00bdcd14c789f11b3b650bee568c847db1219454f",
+    "mechanisms.mjs": "26d23ae65e0f6cef9ac17793fd2c8e8d802c68e676f1c43ebfdae6326185817d"
+  },
+  "backend": "S1E01 CPU 3D / Canvas 2D (not WebGL)",
+  "samples": [
+    {
+      "name": "design",
+      "phase": "drawing",
+      "u": 0.5,
+      "sha": "2a1ee84a69af66228d0bb688c440073aa72d037f93bf2ac795f5b9f2b487dc06",
+      "renderMs": 182.47100999999998,
+      "triangles": 4267,
+      "drawCalls": 214,
+      "submittedTriangles": 16912,
+      "shadowTriangles": 16722
+    },
+    {
+      "name": "archive",
+      "phase": "partners",
+      "u": 0.5,
+      "sha": "bb6d992e0991b0a79446bfd62078797df872c63633379bc887c5d39eb9997644",
+      "renderMs": 63.98184500000002,
+      "triangles": 2574,
+      "drawCalls": 66,
+      "submittedTriangles": 5756,
+      "shadowTriangles": 5750
+    },
+    {
+      "name": "boundary",
+      "phase": "close",
+      "u": 0.8,
+      "sha": "b8ede389875085f4b90c2dbd481f3fa35ab0756a87a2077e0af76a6f22d00b8e",
+      "renderMs": 77.2889160000002,
+      "triangles": 3331,
+      "drawCalls": 168,
+      "submittedTriangles": 12446,
+      "shadowTriangles": 12428
+    },
+    {
+      "name": "layers",
+      "phase": "etch",
+      "u": 0.8,
+      "sha": "4182efef0adfb6176067ca31d766bb4898e9f3ade206dff9ff04537dede91912",
+      "renderMs": 36.373276999999916,
+      "triangles": 614,
+      "drawCalls": 31,
+      "submittedTriangles": 1530,
+      "shadowTriangles": 1528
+    },
+    {
+      "name": "testing",
+      "phase": "probe",
+      "u": 0.65,
+      "sha": "f85045fa09717c66e5865bf0790a523548bb27a8710fa527f1e7c34348bc290e",
+      "renderMs": 100.98281199999997,
+      "triangles": 3983,
+      "drawCalls": 809,
+      "submittedTriangles": 13210,
+      "shadowTriangles": 12092
+    },
+    {
+      "name": "capacity",
+      "phase": "growth",
+      "u": 0.8,
+      "sha": "b1fd5b2d4ca94f4eba0da2f06890da2cc70f2420e94164584ff8240c97e9f1c6",
+      "renderMs": 50.28577499999983,
+      "triangles": 14198,
+      "drawCalls": 188,
+      "submittedTriangles": 28902,
+      "shadowTriangles": 28900
+    },
+    {
+      "name": "capacity",
+      "phase": "queue",
+      "u": 0.65,
+      "sha": "e8ab24cffe291c8ad622a9bdb6d338c906217b465ae1ebc2b54548016da6b021",
+      "renderMs": 50.64881799999989,
+      "triangles": 19572,
+      "drawCalls": 293,
+      "submittedTriangles": 40074,
+      "shadowTriangles": 40072
+    },
+    {
+      "name": "return",
+      "phase": "final",
+      "u": 0.5,
+      "sha": "48d3b034ff60fc9f78d81d8699737e0b5c8261396d91e30c326436724ff7622d",
+      "renderMs": 53.276227999999946,
+      "triangles": 10603,
+      "drawCalls": 297,
+      "submittedTriangles": 24318,
+      "shadowTriangles": 24286
+    },
+    {
+      "name": "fab",
+      "phase": "handoff",
+      "u": 0.5,
+      "sha": "ecdc7cc3aaf7923edfcb33741b98293477888e504b2242ff521d032f66ac403e",
+      "renderMs": 195.93595200000004,
+      "triangles": 13848,
+      "drawCalls": 312,
+      "submittedTriangles": 33644,
+      "shadowTriangles": 33416
+    }
+  ],
+  "warm": [
+    {
+      "name": "fab",
+      "phase": "handoff",
+      "renderMs": 118.49502600000005
+    },
+    {
+      "name": "return",
+      "phase": "final",
+      "renderMs": 49.86978199999976
+    },
+    {
+      "name": "capacity",
+      "phase": "queue",
+      "renderMs": 52.35953800000016
+    },
+    {
+      "name": "capacity",
+      "phase": "growth",
+      "renderMs": 62.075916000000234
+    },
+    {
+      "name": "testing",
+      "phase": "probe",
+      "renderMs": 84.41771000000017
+    },
+    {
+      "name": "layers",
+      "phase": "etch",
+      "renderMs": 30.52576799999997
+    },
+    {
+      "name": "boundary",
+      "phase": "close",
+      "renderMs": 43.97872000000007
+    },
+    {
+      "name": "archive",
+      "phase": "partners",
+      "renderMs": 40.46013600000015
+    },
+    {
+      "name": "design",
+      "phase": "drawing",
+      "renderMs": 96.8207980000002
+    },
+    {
+      "name": "fab",
+      "phase": "handoff",
+      "renderMs": 116.22423099999969
+    },
+    {
+      "name": "fab",
+      "phase": "handoff",
+      "renderMs": 137.27870100000018
+    },
+    {
+      "name": "fab",
+      "phase": "handoff",
+      "renderMs": 113.30030800000031
+    },
+    {
+      "name": "fab",
+      "phase": "handoff",
+      "renderMs": 151.68009699999993
+    }
+  ],
+  "playbackSize": {
+    "resolution": [
+      800,
+      450
+    ],
+    "samples": [
+      {
+        "name": "design",
+        "phase": "drawing",
+        "renderMs": 54.066429999999855
+      },
+      {
+        "name": "archive",
+        "phase": "partners",
+        "renderMs": 42.5476749999998
+      },
+      {
+        "name": "boundary",
+        "phase": "close",
+        "renderMs": 31.57895099999996
+      },
+      {
+        "name": "layers",
+        "phase": "etch",
+        "renderMs": 17.044984999999997
+      },
+      {
+        "name": "testing",
+        "phase": "probe",
+        "renderMs": 38.18938100000014
+      },
+      {
+        "name": "capacity",
+        "phase": "growth",
+        "renderMs": 32.99695699999984
+      },
+      {
+        "name": "capacity",
+        "phase": "queue",
+        "renderMs": 55.06957900000043
+      },
+      {
+        "name": "return",
+        "phase": "final",
+        "renderMs": 46.33280999999988
+      },
+      {
+        "name": "fab",
+        "phase": "handoff",
+        "renderMs": 103.93204999999989
+      }
+    ]
+  },
+  "knownLimits": [
+    "Approximate lighting instead of full PBR",
+    "No PMREM/transmission/skinning/custom shaders",
+    "Node timings are not browser or GPU performance"
+  ]
+}

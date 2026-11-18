@@ -1,0 +1,85 @@
+{
+  "scope": "Actual current browser CPU 3D Canvas rasterization frame readback, not full listening or release approval",
+  "backend": "cpu-3d",
+  "webglUnavailable": "Error: Error creating WebGL context.",
+  "duration": 534.1393333333333,
+  "shots": 44,
+  "utterances": 61,
+  "resolution": [
+    800,
+    450
+  ],
+  "samples": [
+    {
+      "t": 12.042799999999998,
+      "pixelFNV": "2c945aec"
+    },
+    {
+      "t": 80.746,
+      "pixelFNV": "2874043c"
+    },
+    {
+      "t": 127.58786666666667,
+      "pixelFNV": "d43c2901"
+    },
+    {
+      "t": 191.24226666666667,
+      "pixelFNV": "6cc23632"
+    },
+    {
+      "t": 231.68586666666667,
+      "pixelFNV": "a01cdf93"
+    },
+    {
+      "t": 277.3006666666667,
+      "pixelFNV": "4a8c0ed8"
+    },
+    {
+      "t": 308.37213333333335,
+      "pixelFNV": "2405238e"
+    },
+    {
+      "t": 341.4190666666667,
+      "pixelFNV": "29da4c44"
+    },
+    {
+      "t": 388.30533333333335,
+      "pixelFNV": "35fe840d"
+    },
+    {
+      "t": 448.94986666666665,
+      "pixelFNV": "ab50e097"
+    },
+    {
+      "t": 499.4653333333333,
+      "pixelFNV": "4dbbe344"
+    }
+  ],
+  "orderIndependent": true,
+  "meanMs": 77.78181818161498,
+  "p95Ms": 212.19999999925494,
+  "sfx": {
+    "fnv1a": "7cedc125",
+    "peak": 0.033519044518470764,
+    "finite": true,
+    "samples": 12819344,
+    "sampleRate": 24000,
+    "equal": true,
+    "cues": 22,
+    "types": [
+      "paper",
+      "contact",
+      "air",
+      "servo",
+      "relay",
+      "grain",
+      "measure",
+      "resolve"
+    ],
+    "method": "Seeded cue buffers independently rendered by OfflineAudioContext, then ordered Float32 summation"
+  },
+  "renderer": "S1E01 CPU 3D / Canvas 2D (not WebGL)",
+  "errors": [],
+  "triangles": 4663,
+  "drawCalls": 214
+}

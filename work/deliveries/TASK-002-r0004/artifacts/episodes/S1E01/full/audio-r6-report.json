@@ -1,0 +1,377 @@
+{
+  "schema": "chip-in-birdie.audio-production-report.v1",
+  "revision": "S1E01-full-r6",
+  "status": "SYNTHESIS_DECODE_AND_ASR_PROXY_COMPLETE",
+  "scope": {
+    "author_role": "audio producer",
+    "completed": [
+      "offline English voice synthesis",
+      "actual PCM utterance timeline",
+      "full WAV and MP3 decode checks",
+      "source, utterance and output hashes",
+      "unprompted local ASR proxy"
+    ],
+    "human_listening": false,
+    "browser_playback_or_mix_validation": false,
+    "forced_word_alignment": false,
+    "independent_release_approval": false,
+    "limitation": "This is an audio-production report, not listening QA or release approval. ASR disagreements identify review locations; ASR agreement does not certify pronunciation, naturalness or mix quality."
+  },
+  "source": {
+    "path": "episodes/S1E01/full/script.json",
+    "expected_sha256": "50eae44fd3e123e87130d14b0fc2ace165d7d8d207b6a835c838b8b01b65e039",
+    "before_synthesis_sha256": "50eae44fd3e123e87130d14b0fc2ace165d7d8d207b6a835c838b8b01b65e039",
+    "after_synthesis_sha256": "50eae44fd3e123e87130d14b0fc2ace165d7d8d207b6a835c838b8b01b65e039",
+    "lock_matched_before_and_after": true,
+    "utterances": 44,
+    "source_english_words_whitespace_count": 905,
+    "all_script_row_fields_preserved_in_timeline": true,
+    "pronunciation": {
+      "path": "episodes/S1E01/full/pronunciation-r6.json",
+      "bytes": 207,
+      "sha256": "f24537944dce51955ef9bb52a865f47e2e55ef3349cfb647b4233b0e639c384f",
+      "replacements": {
+        "TSMC": "T S M C",
+        "NVIDIA": "Nvidia",
+        "ITRI": "I T R I",
+        "DRAM": "D RAM",
+        "ST,": "S T,",
+        "ST.": "S T.",
+        "ST ": "S T ",
+        "RIVA": "Reeva",
+        "K. T. Li": "K T Lee",
+        "Hsinchu": "Shin choo"
+      },
+      "all_44_rendered_narration_strings_match_replacement_map": true,
+      "note": "Original English and Korean text are preserved. Pronunciation replacements affect the separate narration field only; unused dictionary entries are retained."
+    },
+    "builder": {
+      "path": "episodes/S1E01/full/audio-build.py",
+      "bytes": 16092,
+      "sha256": "aafdf873a5fd650aee1bb6591a272c7b263b7aab9d4e94f68242c9a6ad479a29"
+    }
+  },
+  "reproduction": {
+    "working_directory": "/workspace/scratch/204e2295d8fd/Chip-in-Birdie-r6",
+    "command": "ORT_DISABLE_TELEMETRY=1 /workspace/scratch/204e2295d8fd/s1e01-full-media/audio/venv/bin/python episodes/S1E01/full/audio-build.py --script episodes/S1E01/full/script.json --models /workspace/scratch/204e2295d8fd/s1e01-full-media/audio/models --out /workspace/scratch/204e2295d8fd/s1e01-full-media/audio/full-r6 --pronunciation /workspace/scratch/204e2295d8fd/Chip-in-Birdie-r6/episodes/S1E01/full/pronunciation-r6.json --voice bm_george --speed 1.10 --lang en-us --pause 0.13 --head 0.10 --tail 1.0 --asr",
+    "process_exit_code": 0,
+    "existing_local_models_only": true,
+    "new_model_downloads": false,
+    "paid_services": false,
+    "environment": {
+      "kokoro_onnx": "0.6.1",
+      "numpy": "2.5.5",
+      "onnxruntime": "1.32.0",
+      "ort_disable_telemetry_before_import": true,
+      "provider": "CPUExecutionProvider",
+      "python": "3.12.14",
+      "soundfile": "0.14.0",
+      "telemetry_api_disabled_before_session": true,
+      "threads": 4
+    },
+    "model_sha256": "7d5df8ecf7d4b1878015a32686053fd0eebe2bc377234608764cc0ef3636a6c5",
+    "voices_sha256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+    "voice": "bm_george",
+    "speed": 1.1,
+    "language": "en-us",
+    "default_inter_utterance_pause_seconds": 0.13,
+    "chapter_break_pause_seconds": 0.38,
+    "chapter_break_after_utterances": [
+      "r06",
+      "r12",
+      "r21",
+      "r27",
+      "r34"
+    ],
+    "nonfatal_diagnostic": {
+      "observed": "UCX ERROR failed to create VFS socket: Operation not permitted",
+      "outcome": "The local ASR operation completed with exit code 0 and wrote its report. No permission change or bypass was attempted."
+    }
+  },
+  "output": {
+    "directory": "/workspace/scratch/204e2295d8fd/s1e01-full-media/audio/full-r6",
+    "files": {
+      "narration.wav": {
+        "bytes": 18451788,
+        "sha256": "e119e5c8bc26af3de5f4ba0de939d67558a34d47ea5c4a0da1be830fc9d33d22"
+      },
+      "narration.mp3": {
+        "bytes": 6152108,
+        "sha256": "826a65a960334fc0f01af24e98dfbd038acf1ba3fcf9115a559241443640843f"
+      },
+      "timeline.json": {
+        "bytes": 61895,
+        "sha256": "ecb1cf7ab05e5a9c2a952df42d1da00bbdc0441e5e70464fb9cec2a03a3ce43d"
+      },
+      "asr-proxy.json": {
+        "bytes": 147048,
+        "sha256": "3ece591d387dcbd4ef34ed4c17940804372d272ff1771aa098b929cc98e1a9a7"
+      }
+    },
+    "canonical_duration_seconds": 384.41133333333335,
+    "canonical_duration_display": "06:24.411",
+    "total_pcm_samples": 9225872,
+    "sample_rate": 24000,
+    "channels": 1,
+    "mp3_container_duration_seconds": 384.48,
+    "container_duration_note": "The MP3 container has frame padding. Full gapless decode returned exactly the canonical 9,225,872 samples, matching the WAV and timeline.",
+    "initial_silence_samples": 2400,
+    "final_silence_samples": 24000,
+    "explicit_row_pause_samples": 167280,
+    "explicit_added_silence_total_seconds": 8.07,
+    "normalization_gain": 1,
+    "source_float_peak": 0.6729773879051208,
+    "wav_pcm": {
+      "samples": 9225872,
+      "finite": true,
+      "peak": 0.673004150390625,
+      "rms": 0.08582654161094318,
+      "clipped_samples": 0
+    },
+    "decoded_mp3_pcm": {
+      "samples": 9225872,
+      "finite": true,
+      "peak": 0.6388249397277832,
+      "rms": 0.08153745858986855,
+      "clipped_samples": 0
+    },
+    "timeline_method": "Utterance-level start/end offsets measured from generated PCM sample counts, including measured pauses. This is not estimated reading time or forced word alignment.",
+    "chapter_timings": [
+      {
+        "id": "hit",
+        "title": "A hit. Not enough chips.",
+        "start": 0.1,
+        "last_speech_end": 42.00866666666667,
+        "section_end": 42.388666666666666
+      },
+      {
+        "id": "rewind",
+        "title": "1985: a dangerous business",
+        "start": 42.388666666666666,
+        "last_speech_end": 103.94533333333334,
+        "section_end": 104.32533333333333
+      },
+      {
+        "id": "bet",
+        "title": "Customers that barely existed",
+        "start": 104.32533333333333,
+        "last_speech_end": 174.95466666666667,
+        "section_end": 175.33466666666666
+      },
+      {
+        "id": "ecosystem",
+        "title": "A place inside the PC",
+        "start": 175.33466666666666,
+        "last_speech_end": 240.41133333333335,
+        "section_end": 240.79133333333334
+      },
+      {
+        "id": "risk",
+        "title": "What the contract could not fix",
+        "start": 240.79133333333334,
+        "last_speech_end": 311.54466666666667,
+        "section_end": 311.92466666666667
+      },
+      {
+        "id": "payoff",
+        "title": "Whose future fills the factory?",
+        "start": 311.92466666666667,
+        "last_speech_end": 383.28133333333335,
+        "section_end": 384.41133333333335
+      }
+    ]
+  },
+  "checks": [
+    {
+      "name": "locked source SHA before and after synthesis",
+      "status": "PASS"
+    },
+    {
+      "name": "44 source utterances and 905 source English words",
+      "status": "PASS"
+    },
+    {
+      "name": "all source row fields and separate pronunciation strings preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "all 44 utterance WAV SHA-256 values match timeline entries",
+      "status": "PASS"
+    },
+    {
+      "name": "ordered sample boundaries and sample-to-second conversion",
+      "status": "PASS"
+    },
+    {
+      "name": "full WAV decode: finite PCM, no clipped samples",
+      "status": "PASS"
+    },
+    {
+      "name": "full MP3 decode: finite PCM, no clipped samples",
+      "status": "PASS"
+    },
+    {
+      "name": "WAV, decoded MP3 and timeline contain exactly 9,225,872 samples",
+      "status": "PASS"
+    },
+    {
+      "name": "commissioned six-to-twelve-minute duration range without runtime padding",
+      "status": "PASS"
+    },
+    {
+      "name": "existing R5 MP3 bytes and SHA-256 unchanged",
+      "status": "PASS",
+      "bytes": 6362156,
+      "sha256": "62694e8cb093d8dd6312ca0dbfcc846eae196d02c36b4300fb02fd6249ab713d"
+    }
+  ],
+  "asr_proxy": {
+    "status": "COMPLETED_PROXY_NOT_LISTENING",
+    "path": "asr-proxy.json",
+    "sha256": "3ece591d387dcbd4ef34ed4c17940804372d272ff1771aa098b929cc98e1a9a7",
+    "model": "tiny.en",
+    "engine": "faster-whisper",
+    "engine_version": "1.2.1",
+    "compute_type": "int8",
+    "device": "cpu",
+    "method": "Free ASR of actual audio, no script prompt",
+    "human_listening": false,
+    "forced_alignment": false,
+    "comparison": {
+      "asr_words": 904,
+      "note": "Raw lowercased alphanumeric-token comparison. Names, numerals, and spelled abbreviations count as disagreements; these are not necessarily audible errors.",
+      "raw_wer": 0.10844629822732013,
+      "reference_words": 959,
+      "token_edit_distance": 104
+    },
+    "comparison_note": "The 959 comparison tokens are lowercased alphanumeric tokens of the pronunciation-rendered text; this differs from the original script's 905 whitespace-counted words. Acronyms, numerals and names contribute mismatches. Raw WER is not a listening-quality score.",
+    "targeted_review_flags": [
+      {
+        "utterances": [
+          "r35"
+        ],
+        "audio_start": 311.92466666666667,
+        "audio_end": 320.33,
+        "reference": "They discussed how business was going and how many wafers NVIDIA would need.",
+        "asr_start": 315.92,
+        "asr_end": 320.28,
+        "asr_excerpt": "how many wafers and video would need",
+        "disposition": "PRIORITY_HUMAN_LISTENING_PROMPT",
+        "note": "ASR split Nvidia into 'and video'. This may be a recognizer error or pronunciation ambiguity; it does not establish an audible defect."
+      },
+      {
+        "utterances": [
+          "r28",
+          "r29",
+          "r30"
+        ],
+        "audio_start": 240.79133333333334,
+        "audio_end": 275.0353333333333,
+        "expected_name": "NVIDIA",
+        "asr_variants": [
+          "Envidia"
+        ],
+        "disposition": "HUMAN_LISTENING_PROMPT",
+        "note": "Nvidia is recovered in earlier and later sections but spelled Envidia at several uses here. No source or pronunciation edits were made after lock."
+      },
+      {
+        "utterances": [
+          "r18"
+        ],
+        "audio_start": 138.91666666666666,
+        "audio_end": 147.258,
+        "reference": "I T R I transferred",
+        "asr_excerpt": "ITR, I transferred",
+        "disposition": "ACRONYM_SEGMENTATION_NOTE",
+        "note": "All four letters are represented across ASR punctuation. Actual pronunciation still requires listening."
+      },
+      {
+        "utterances": [
+          "r16"
+        ],
+        "audio_start": 126.47533333333334,
+        "audio_end": 130.59266666666667,
+        "reference": "Philips",
+        "asr_excerpt": "Phillips",
+        "disposition": "ORTHOGRAPHIC_NAME_VARIANT",
+        "note": "The spelling differs but these names are homophonous in normal English. This alone is not evidence of a synthesis error."
+      }
+    ],
+    "targeted_numeric_and_name_recoveries": [
+      {
+        "items": [
+          "ST",
+          "TSMC"
+        ],
+        "utterance": "r05",
+        "asr_excerpt": "That partner was ST in France, TSMC was only just becoming Nvidia's second manufacturer."
+      },
+      {
+        "items": [
+          "DRAM"
+        ],
+        "utterance": "r07",
+        "asr_excerpt": "Intel was abandoning DRAM"
+      },
+      {
+        "items": [
+          "220 million",
+          "nearly half"
+        ],
+        "utterance": "r17",
+        "asr_excerpt": "an initial investment of about $220 million, with the government providing nearly half"
+      },
+      {
+        "items": [
+          "98 professionals"
+        ],
+        "utterance": "r18",
+        "asr_excerpt": "98 professionals"
+      },
+      {
+        "items": [
+          "1987"
+        ],
+        "utterance": "r19",
+        "asr_excerpt": "TSMC began in 1987"
+      },
+      {
+        "items": [
+          "1997",
+          "RIVA 128",
+          "Dell",
+          "Gateway"
+        ],
+        "utterance": "r25",
+        "asr_excerpt": "By 1997, Nvidia was supplying the Riva 128"
+      },
+      {
+        "items": [
+          "1998",
+          "RIVA 128 ZX"
+        ],
+        "utterance": "r28",
+        "asr_excerpt": "Riva 128 ZX"
+      },
+      {
+        "items": [
+          "2006",
+          "500 million",
+          "1998"
+        ],
+        "utterance": "r39",
+        "asr_excerpt": "In 2006, the partners announced 500 million processors manufactured together"
+      }
+    ],
+    "recovery_limit": "These are text recoveries in an unprompted ASR transcript of actual audio, not human verification of numeric pronunciation, pacing or comprehension."
+  },
+  "handoff": {
+    "picture_and_subtitle_clock": "Use timeline.json and canonical PCM duration 384.41133333333335 seconds; do not use MP3 container duration for editorial timing.",
+    "required_followup": [
+      "Human listening at the flagged names and full programme",
+      "Real browser playback, seek and final picture/audio synchronization",
+      "Independent release review"
+    ],
+    "original_r5_preserved": true
+  }
+}

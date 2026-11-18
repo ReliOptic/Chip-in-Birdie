@@ -1,0 +1,246 @@
+[
+  {
+    "id": "R8S01",
+    "title": "ASML — How microchips are made",
+    "url": "https://www.asml.com/en/technology/all-about-microchips/how-microchips-are-made",
+    "kind": "primary_manufacturer_source",
+    "locator": "Controlled cleanroom environment, filtered recirculated air and protective clothing; interconnected layers, repeated process steps; foundry/fabless roles. Do not use the page's broad cleanliness or duration comparisons as universal specifications.",
+    "note": "Controlled cleanroom environment, filtered recirculated air and protective clothing; interconnected layers, repeated process steps; foundry/fabless roles. Do not use the page's broad cleanliness or duration comparisons as universal specifications.",
+    "verification": {
+      "status": "retrieved official page text",
+      "checked_on": "2026-11-18",
+      "scope": "Evidence text only. Film geometry and operational durations are explanatory, not plant footage."
+    }
+  },
+  {
+    "id": "R8S02",
+    "title": "Murata Machinery — Transport System",
+    "url": "https://www.muratec.com/cfa/products/trans.php",
+    "kind": "primary_manufacturer_source",
+    "locator": "OHT overhead track and belt-driven hoist; transport of carriers between process-tool, stocker and buffer loadports. Not evidence of a particular fab's route, scheduling policy or cycle time.",
+    "note": "OHT overhead track and belt-driven hoist; transport of carriers between process-tool, stocker and buffer loadports. Not evidence of a particular fab's route, scheduling policy or cycle time.",
+    "verification": {
+      "status": "retrieved manufacturer page text",
+      "checked_on": "2026-11-18",
+      "scope": "Evidence text only. Film geometry and operational durations are explanatory, not plant footage."
+    }
+  },
+  {
+    "id": "R8S03",
+    "title": "TDK — TAS300 Type J1 FOUP Load Port",
+    "url": "https://product.tdk.com/en/system/files/dam/doc/product/fa/fa/foup/catalog/fa_foup_tas300-j1_en.pdf",
+    "kind": "primary_manufacturer_source",
+    "locator": "FOUP placement detection, clamp, docking, automated door open/close and robot access enable. The film's joined OHT/loadport sequence is a reconstruction, not a recorded factory event.",
+    "note": "FOUP placement detection, clamp, docking, automated door open/close and robot access enable. The film's joined OHT/loadport sequence is a reconstruction, not a recorded factory event.",
+    "verification": {
+      "status": "retrieved manufacturer PDF text; separate fab-research worker inspected drawing",
+      "checked_on": "2026-11-18",
+      "scope": "Evidence text only. Film geometry and operational durations are explanatory, not plant footage."
+    }
+  },
+  {
+    "id": "R8S04",
+    "title": "ASML — Six crucial steps in semiconductor manufacturing",
+    "url": "https://www.asml.com/en/company/stories/2021/semiconductor-manufacturing-process-steps",
+    "kind": "primary_manufacturer_source",
+    "locator": "Deposition, photoresist, lithography and etch; pattern transfer rather than instant chip printing; testing and packaging. The film shows selected mechanisms, not a complete universal process recipe.",
+    "note": "Deposition, photoresist, lithography and etch; pattern transfer rather than instant chip printing; testing and packaging. The film shows selected mechanisms, not a complete universal process recipe.",
+    "verification": {
+      "status": "retrieved official page text",
+      "checked_on": "2026-11-18",
+      "scope": "Evidence text only. Film geometry and operational durations are explanatory, not plant footage."
+    }
+  },
+  {
+    "id": "R8S05",
+    "title": "INFICON — Commonly Reported Wafer Fab Cycle Time Contributors",
+    "url": "https://www.inficon.com/en/news/commonly-reported-wafer-fab-cycle-time-contributors",
+    "kind": "primary_manufacturer_source",
+    "locator": "Long re-entrant flows; tool and product mix, variability, downtime and qualification restrictions. Its open-response survey is not presented as representative industry statistics.",
+    "note": "Long re-entrant flows; tool and product mix, variability, downtime and qualification restrictions. Its open-response survey is not presented as representative industry statistics.",
+    "verification": {
+      "status": "retrieved manufacturer/practitioner article",
+      "checked_on": "2026-11-18",
+      "scope": "Evidence text only. Film geometry and operational durations are explanatory, not plant footage."
+    }
+  },
+  {
+    "id": "R8S06",
+    "title": "INFICON — The Impact of Tool Qualification on Cycle Time",
+    "url": "https://www.inficon.com/en/news/the-impact-of-tool-qualification-on-cycle-time",
+    "kind": "primary_manufacturer_source",
+    "locator": "Qualification is recipe/operation-specific; single-path operations and cross-qualification affect waiting. No percentage improvement is generalized in this script.",
+    "note": "Qualification is recipe/operation-specific; single-path operations and cross-qualification affect waiting. No percentage improvement is generalized in this script.",
+    "verification": {
+      "status": "retrieved manufacturer/practitioner article",
+      "checked_on": "2026-11-18",
+      "scope": "Evidence text only. Film geometry and operational durations are explanatory, not plant footage."
+    }
+  },
+  {
+    "id": "R8S07",
+    "title": "INFICON — The Three Fundamental Drivers of Fab Cycle Time",
+    "url": "https://www.inficon.com/en/news/the-three-fundamental-drivers-of-fab-cycle-time",
+    "kind": "primary_manufacturer_source",
+    "locator": "Utilization, variability and qualified-tool count; maintenance and setup effects; increasing loading without recovery room can increase queueing. Distinguish individual-lot elapsed time from output per period.",
+    "note": "Utilization, variability and qualified-tool count; maintenance and setup effects; increasing loading without recovery room can increase queueing. Distinguish individual-lot elapsed time from output per period.",
+    "verification": {
+      "status": "retrieved manufacturer/practitioner article",
+      "checked_on": "2026-11-18",
+      "scope": "Evidence text only. Film geometry and operational durations are explanatory, not plant footage."
+    }
+  },
+  {
+    "id": "R8S08",
+    "title": "TSMC — Engineering Performance Optimization",
+    "url": "https://www.tsmc.com/english/dedicatedFoundry/manufacturing/engineering",
+    "kind": "primary_manufacturer_source",
+    "locator": "Process control, tool matching, process stability and yield improvement across manufacturing stages. No actual confidential measurement or yield map is reproduced.",
+    "note": "Process control, tool matching, process stability and yield improvement across manufacturing stages. No actual confidential measurement or yield map is reproduced.",
+    "verification": {
+      "status": "retrieved operator page text",
+      "checked_on": "2026-11-18",
+      "scope": "Evidence text only. Film geometry and operational durations are explanatory, not plant footage."
+    }
+  },
+  {
+    "id": "R8S09",
+    "title": "TSMC — What is DTCO?",
+    "url": "https://www.tsmc.com/english/news-events/blog-article-20220615",
+    "kind": "primary_manufacturer_source",
+    "locator": "Iterative design/process-window work and design rules that enable volume manufacture at high yield. A modern explanation, not evidence that a named modern DTCO workflow was used in 1997.",
+    "note": "Iterative design/process-window work and design rules that enable volume manufacture at high yield. A modern explanation, not evidence that a named modern DTCO workflow was used in 1997.",
+    "verification": {
+      "status": "retrieved official article text, particularly process-window paragraphs",
+      "checked_on": "2026-11-18",
+      "scope": "Evidence text only. Film geometry and operational durations are explanatory, not plant footage."
+    }
+  },
+  {
+    "id": "R8S10",
+    "title": "TSMC — eFoundry",
+    "url": "https://www.tsmc.com/english/dedicatedFoundry/services/eFoundry",
+    "kind": "primary_manufacturer_source",
+    "locator": "Design collaboration; pilot lots, wafer yields, WAT and reliability data; logistics status through fabrication, assembly, test and shipping. Any interface in the film is a labeled diagram, not a replica of a private customer portal.",
+    "note": "Design collaboration; pilot lots, wafer yields, WAT and reliability data; logistics status through fabrication, assembly, test and shipping. Any interface in the film is a labeled diagram, not a replica of a private customer portal.",
+    "verification": {
+      "status": "retrieved operator page text",
+      "checked_on": "2026-11-18",
+      "scope": "Evidence text only. Film geometry and operational durations are explanatory, not plant footage."
+    }
+  },
+  {
+    "id": "R8S11",
+    "title": "TSMC Annual Report 1997 — Company Profile",
+    "url": "https://investor.tsmc.com/static/annualReports/1997/company1.html",
+    "kind": "period_company_record",
+    "locator": "1987 founding, pure foundry/no own-brand IC competition; Virtual Fab goal, manufacturing access without the associated expense and organizational burden of an in-house fab. Historical company account, not proof of today's customer terms.",
+    "note": "1987 founding, pure foundry/no own-brand IC competition; Virtual Fab goal, manufacturing access without the associated expense and organizational burden of an in-house fab. Historical company account, not proof of today's customer terms.",
+    "verification": {
+      "status": "retrieved contemporaneous company record",
+      "checked_on": "2026-11-18",
+      "scope": "Evidence text only. Film geometry and operational durations are explanatory, not plant footage."
+    }
+  },
+  {
+    "id": "R8S12",
+    "title": "TSMC Annual Report 1997 — Marketing and Sales",
+    "url": "https://investor.tsmc.com/static/annualReports/1997/business2.html",
+    "kind": "period_company_record",
+    "locator": "TSMC reports that capacity-option agreements signed in 1996 contributed stable orders in 1997. Does not establish every contract's commitments, pricing, or allocation mechanism.",
+    "note": "TSMC reports that capacity-option agreements signed in 1996 contributed stable orders in 1997. Does not establish every contract's commitments, pricing, or allocation mechanism.",
+    "verification": {
+      "status": "retrieved contemporaneous company record",
+      "checked_on": "2026-11-18",
+      "scope": "Evidence text only. Film geometry and operational durations are explanatory, not plant footage."
+    }
+  },
+  {
+    "id": "R8S13",
+    "title": "NVIDIA S-1 — filed 6 March 1998",
+    "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001045810/e198721c-58f6-4772-8633-cb95ca474654.pdf",
+    "kind": "period_customer_filing",
+    "locator": "Printed pp.11–13 and 25/38: December 1997 low yields at ST and capacity constraint; recently established TSMC relationship; initial wafer payment regardless of yield until stabilized; yield problems require designer/manufacturer cooperation. Specific historical disclosure, never generalized to current contracts.",
+    "note": "Printed pp.11–13 and 25/38: December 1997 low yields at ST and capacity constraint; recently established TSMC relationship; initial wafer payment regardless of yield until stabilized; yield problems require designer/manufacturer cooperation. Specific historical disclosure, never generalized to current contracts.",
+    "verification": {
+      "status": "retrieved PDF text and located relevant passages",
+      "checked_on": "2026-11-18",
+      "scope": "Evidence text only. Film geometry and operational durations are explanatory, not plant footage."
+    }
+  },
+  {
+    "id": "R8S14",
+    "title": "TSMC — Quality Policy",
+    "url": "https://www.tsmc.com/english/aboutTSMC/quality_and_reliability",
+    "kind": "primary_manufacturer_source",
+    "locator": "New-technology qualification before transfer to manufacturing, process-release criteria, MES-linked manufacturing controls and action on abnormal signals.",
+    "note": "New-technology qualification before transfer to manufacturing, process-release criteria, MES-linked manufacturing controls and action on abnormal signals.",
+    "verification": {
+      "status": "retrieved operator page text",
+      "checked_on": "2026-11-18",
+      "scope": "Evidence text only. Film geometry and operational durations are explanatory, not plant footage."
+    }
+  },
+  {
+    "id": "R8S15",
+    "title": "TSMC — GIGAFAB Facilities",
+    "url": "https://www.tsmc.com/english/dedicatedFoundry/manufacturing/gigafab",
+    "kind": "primary_manufacturer_source",
+    "locator": "Coordinated manufacturing platform, consistent quality, demand flexibility, yield learning and product requalification. Avoid claiming all customers' designs or confidential learning are shared.",
+    "note": "Coordinated manufacturing platform, consistent quality, demand flexibility, yield learning and product requalification. Avoid claiming all customers' designs or confidential learning are shared.",
+    "verification": {
+      "status": "retrieved official indexed text",
+      "checked_on": "2026-11-18",
+      "scope": "Evidence text only. Film geometry and operational durations are explanatory, not plant footage."
+    }
+  },
+  {
+    "id": "R8S16",
+    "title": "TSMC — Open Innovation Platform",
+    "url": "https://www.tsmc.com/english/dedicatedFoundry/oip",
+    "kind": "primary_manufacturer_source",
+    "locator": "Production-proven design building blocks, design-tool certification and partner collaboration aimed at shorter design/time-to-volume cycles; not a guarantee of successful product sales.",
+    "note": "Production-proven design building blocks, design-tool certification and partner collaboration aimed at shorter design/time-to-volume cycles; not a guarantee of successful product sales.",
+    "verification": {
+      "status": "retrieved operator page text",
+      "checked_on": "2026-11-18",
+      "scope": "Evidence text only. Film geometry and operational durations are explanatory, not plant footage."
+    }
+  },
+  {
+    "id": "R8S17",
+    "title": "Intel — Explore a Fab: Airflow and Cleanroom",
+    "url": "https://virtualmuseum.intel.com/fabtour/airflow.html",
+    "kind": "operator_facility_explanation",
+    "locator": "Airflow paragraphs 1–3; companion https://virtualmuseum.intel.com/fabtour/cleanroom.html",
+    "note": "Ceiling filtration, perforated raised floor, subfab and lateral return. The film's dimensions and airflow arrows are explanatory, not a surveyed facility or CFD.",
+    "verification": {
+      "status": "retrieved_official_text",
+      "checked_on": "2026-11-18"
+    }
+  },
+  {
+    "id": "R8S18",
+    "title": "TSMC — Corporate video (2026)",
+    "url": "https://pr.tsmc.com/english/gallery-videos",
+    "kind": "operator_video_visual_reference",
+    "locator": "Official MP4 2026_tsmc_corporate_video_en.mp4; decoded PTS 64.031,147.014,151.018,156.023,159.026 seconds.",
+    "note": "Selected real frames directly inspected: long equipment aisle, layered OHT rails and level supported wafers. No uninterrupted transfer cycle verified. Research only; no footage is redistributed.",
+    "verification": {
+      "status": "selected_video_frames_directly_inspected",
+      "checked_on": "2026-11-18"
+    }
+  },
+  {
+    "id": "R8S19",
+    "title": "Entegris — A300 FOUP",
+    "url": "https://www.entegris.com/shop/en/USD/products/wafer-handling/wafer-processing/300-mm-front-opening-unified-pods-%28foups%29/A300-FOUPs/p/A300FOUPs",
+    "kind": "manufacturer_dimensions",
+    "locator": "25-slot model: 426 × 355 × 338 mm; 10 mm slot pitch.",
+    "note": "Chosen dimensional reference only, not a universal FOUP or manufacturer CAD. Exterior detail is derived.",
+    "verification": {
+      "status": "manufacturer_dimensions_checked",
+      "checked_on": "2026-11-18"
+    }
+  }
+]

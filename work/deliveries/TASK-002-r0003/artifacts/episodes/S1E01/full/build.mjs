@@ -1,0 +1,32 @@
+import fs from 'node:fs';import path from 'node:path';import crypto from 'node:crypto';import {fileURLToPath} from 'node:url';
+const root=path.dirname(fileURLToPath(import.meta.url));const args=Object.fromEntries(process.argv.slice(2).reduce((a,v,i,arr)=>{if(v.startsWith('--'))a.push([v.slice(2),arr[i+1]]);return a},[]));
+if(!args.assets||!args.audio||!args.out)throw new Error('Usage: node build.mjs --assets recovered-assets --audio generated-audio --out output-dir');
+const out=path.resolve(args.out);fs.mkdirSync(out,{recursive:true});const read=p=>fs.readFileSync(p,'utf8');const json=p=>JSON.parse(read(p));const hash=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+const script=json(path.join(root,'script.json')),timeline=json(path.join(args.audio,'timeline.json'));
+if(timeline.partial_smoke_test)throw new Error('Refusing a smoke test as full film');
+if(!timeline.source_script_sha256||timeline.source_script_sha256!==hash(path.join(root,'script.json')))throw new Error('Missing or stale voice/script hash');
+if(!timeline.outputs?.mp3?.sha256||timeline.outputs.mp3.sha256!==hash(path.join(args.audio,'narration.mp3')))throw new Error('Missing or mismatched narration/recorded timeline hash');
+if(!Number.isFinite(timeline.duration)||timeline.total_samples/timeline.sample_rate!==timeline.duration)throw new Error('Invalid canonical PCM duration');
+if(timeline.sentences.length!==script.sentences.length||timeline.sentences.some((s,i)=>s.en!==script.sentences[i].en||s.ko!==script.sentences[i].ko))throw new Error('Voice/script text mismatch');
+const dataURI=(p,type)=>'data:'+type+';base64,'+fs.readFileSync(p).toString('base64');
+const memo=new Map();function moduleUri(p){p=path.resolve(p);if(memo.has(p))return memo.get(p);let code=read(p);code=code.replace(/(from\s*|import\s*)(['"])(\.{1,2}\/[^'"]+)\2/g,(all,lead,q,rel)=>{let child=path.resolve(path.dirname(p),rel);if(rel.startsWith('./vendor/'))child=path.resolve(args.assets,rel.slice(2));return lead+q+moduleUri(child)+q});const uri='data:text/javascript;base64,'+Buffer.from(code).toString('base64');memo.set(p,uri);return uri;}
+const data={script,timeline,claims:json(path.join(root,'claims.json')).claims,sources:json(path.join(root,'sources.json')),notices:read(path.join(root,'THIRD_PARTY_NOTICES.txt')),audio_sha256:hash(path.join(args.audio,'narration.mp3')),assets:{scene:dataURI(path.join(args.assets,'scene.glb'),'model/gltf-binary'),narration:dataURI(path.join(args.audio,'narration.mp3'),'audio/mpeg')}};
+const imports={imports:{three:dataURI(path.join(args.assets,'vendor','three.module.js'),'text/javascript')}};
+const html=read(path.join(root,'player.html')).replace('__FILM_DATA__',JSON.stringify(data).replaceAll('<','\\u003c')).replace('__IMPORT_MAP__',JSON.stringify(imports)).replace('__ENTRY_MODULE__',moduleUri(path.join(root,'film.mjs')));
+const output=path.join(out,'S1E01-full-documentary.html');fs.writeFileSync(output,html);
+// Sites uses ordinary cacheable files: the document stays small and the voice
+// can stream. The archival single-file output above remains independently usable.
+if(args.site){
+  const site=path.resolve(args.site);fs.mkdirSync(path.join(site,'vendor'),{recursive:true});
+  for(const name of ['film.mjs','business-transactions.mjs','business-economics.mjs','business-institutions.mjs','software-renderer.mjs','cinema.mjs'])fs.copyFileSync(path.join(root,name),path.join(site,name));
+  for(const name of ['three.module.js','RoomEnvironment.js','GLTFLoader.js','BufferGeometryUtils.js'])fs.copyFileSync(path.join(args.assets,'vendor',name),path.join(site,'vendor',name));
+  fs.copyFileSync(path.join(args.assets,'scene.glb'),path.join(site,'scene.glb'));fs.copyFileSync(path.join(args.audio,'narration.mp3'),path.join(site,'narration.mp3'));
+  const siteData={...data,assets:{scene:'./scene.glb',narration:'./narration.mp3'}};
+  const siteHTML=read(path.join(root,'player.html')).replace('__FILM_DATA__',JSON.stringify(siteData).replaceAll('<','\\u003c')).replace('__IMPORT_MAP__',JSON.stringify({imports:{three:'./vendor/three.module.js'}})).replace('__ENTRY_MODULE__','./film.mjs');
+  fs.writeFileSync(path.join(site,'index.html'),siteHTML);fs.copyFileSync(path.join(root,'THIRD_PARTY_NOTICES.txt'),path.join(site,'THIRD_PARTY_NOTICES.txt'));
+}
+fs.copyFileSync(path.join(args.audio,'timeline.json'),path.join(out,'timeline.json'));fs.copyFileSync(path.join(root,'script.json'),path.join(out,'script.json'));
+for(const name of ['claims.json','sources.json','THIRD_PARTY_NOTICES.txt'])fs.copyFileSync(path.join(root,name),path.join(out,name));
+function vtt(locale){const stamp=t=>{const ms=Math.round(t*1000);return `${Math.floor(ms/3600000).toString().padStart(2,'0')}:${Math.floor(ms/60000%60).toString().padStart(2,'0')}:${Math.floor(ms/1000%60).toString().padStart(2,'0')}.${(ms%1000).toString().padStart(3,'0')}`};return 'WEBVTT\n\n'+timeline.sentences.map(s=>`${s.id}\n${stamp(s.start)} --> ${stamp(s.end)}\n${s[locale]}\n`).join('\n')};
+for(const locale of ['en','ko'])fs.writeFileSync(path.join(out,`captions.${locale}.vtt`),vtt(locale));
+const manifest={episode:'S1E01',revision:script.revision,duration:timeline.duration,utterances:timeline.sentences.length,fullPictureEdit:true,releaseApproval:false,script_sha256:hash(path.join(root,'script.json')),narration_sha256:data.audio_sha256,files:fs.readdirSync(out).filter(f=>f!=='manifest.json'&&fs.statSync(path.join(out,f)).isFile()).map(f=>({path:f,bytes:fs.statSync(path.join(out,f)).size,sha256:hash(path.join(out,f))}))};fs.writeFileSync(path.join(out,'manifest.json'),JSON.stringify(manifest,null,2));console.log(JSON.stringify({output,bytes:fs.statSync(output).size,sha256:hash(output),duration:timeline.duration,modules:memo.size}));

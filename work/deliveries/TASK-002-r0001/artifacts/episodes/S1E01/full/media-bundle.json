@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "episode_id": "S1E01",
+  "catalog_id": "H039",
+  "revision": "S1E01-full-r3",
+  "status": "IN_PRODUCTION_REVIEW_BUILD_NOT_READY",
+  "source_pr": "https://github.com/ReliOptic/Chip-in-Birdie/pull/4",
+  "continued_from_commit": "eb46445ebf277312a3cace0a3e897dc810e00a30",
+  "accepted_claim_commit": "98c6d010dd7ebf95765a718660ca849e43e62869",
+  "script_sha256": "de62b3087c7406a888a77b1f11af709167e3c2ca32a9739865bcc0944019f61b",
+  "performance": {
+    "required_language": "en",
+    "authorization": "Existing explicit direction for English VO; no human Korean performance recovered",
+    "status": "GENERATED_AND_DECODE_CHECKED_NOT_LISTENING_APPROVED",
+    "artifact": "audio/narration.mp3 in the media ZIP",
+    "sha256": "36129585924f1df3739509b13b337306cf3ab81d7f61433b00ace2885be261fe",
+    "wav_sha256": "50453967e1c5104f8da29bdf59e1f23ce7af75e184f563ce9dd9ad6e5d857128",
+    "duration_seconds": 540.1766666666666,
+    "sample_rate": 24000,
+    "total_samples": 12964240,
+    "utterances": 61,
+    "words": 1121,
+    "voice": "Local Kokoro ONNX v1.0 bm_george, synthetic",
+    "human_listening_review": "NOT_PERFORMED"
+  },
+  "video": {
+    "status": "FULL_DURATION_HTML_BUILT_BROWSER_QA_BLOCKED",
+    "artifact": "S1E01-full-documentary.html",
+    "sha256": "e116142bca3ac27b53270ccbe7d48b55e017f63f97a7a60b3441bb5cbcaff7f3",
+    "bytes": 16155426,
+    "duration_seconds": 540.1766666666666,
+    "chapters": 10,
+    "world_families": 8,
+    "named_shots": 41,
+    "phase_beats": 44,
+    "aspect_ratio": "16:9",
+    "timeline_fps": 30,
+    "fps_note": "Nominal deterministic timeline convention, not measured browser frame rate",
+    "mp4_export": "NOT_REQUESTED_AFTER_PICTURE_REVIEW_NOT_EXPORTED",
+    "library_file_id": "libfile_fde3_f-4500374c116c819196c6ddb7d7e0aecb_e77f83582894819182e4b14edfd776d1",
+    "url": "https://chatgpt.com/library?file_id=libfile_fde3_f-4500374c116c819196c6ddb7d7e0aecb_e77f83582894819182e4b14edfd776d1&account_id=personal"
+  },
+  "media_package": {
+    "artifact": "S1E01-full-r3-media.zip",
+    "bytes": 51362671,
+    "sha256": "d01581779e0b4b8ba2fee307a2204cb65aecd33967036f4eca1df151e2ff354b",
+    "file_count": 38,
+    "integrity": "ZIP CRC test passed; per-file SHA-256 in media-manifest.json",
+    "contents": ["standalone HTML", "full narration WAV/MP3", "sample timeline", "EN/KO VTT", "original GLB and Three.js vendor assets", "claims and source metadata", "bounded QA records", "13 explicitly labeled CPU model-inspection PNGs"],
+    "source_code_location": "Git PR #4, episodes/S1E01/full/; this ZIP is not a duplicated repository",
+    "library_file_id": "libfile_fde3_f-06d20a807fac8191982e83a194beca6d_e77f83582894819182e4b14edfd776d1",
+    "url": "https://chatgpt.com/library?file_id=libfile_fde3_f-06d20a807fac8191982e83a194beca6d_e77f83582894819182e4b14edfd776d1&account_id=personal",
+    "access": "Account-scoped review delivery, not a public hosted video URL"
+  },
+  "required_locales": ["en", "ko"],
+  "locale_qa": {
+    "en": "Script and actual audio timing connected; pronunciation/full listening pending",
+    "ko": "61 translated subtitle rows connected to actual utterance bounds; browser readability and independent translation review pending"
+  },
+  "claims_review": {
+    "status": "BOUNDED_PRIMARY_SOURCE_SCRIPT_CHECK_NO_FINAL_MEDIA_APPROVAL",
+    "claims": 24,
+    "source_entries": 11,
+    "claims_sha256": "e6dd1eb02e4dc645f4e10896d6ce0c6a846eff9787e6cefe1763dc34633adb63",
+    "sources_sha256": "658b9cec86501f5b60a22c704c26f6b930842aca02853d61823ed5c117bdd8a0",
+    "evidence": ["claims.json", "sources.json", "verification.md"]
+  },
+  "rights_review": {
+    "status": "PROVENANCE_REGISTER_AND_FULL_MIT_NOTICE_PRESENT_NOT_RELEASE_CLEARANCE",
+    "evidence": ["rights.md", "THIRD_PARTY_NOTICES.txt", "audio-env.md"]
+  },
+  "verification": {
+    "static_mock_contracts": {"passed": 22, "failed": 0, "artifact": "qa-contract-results.json", "sha256": "f269ac2a9d6cc82874f61949c93270ab608c15d88d43aaecc7d5a83d75fb562d", "actual_browser": false},
+    "cpu_model_state": {"baseline_cases": 220, "exact_comparisons_passed": 440, "worlds": 8, "artifact": "results.json", "sha256": "1c553d57a8ca98d716e77572363306974444f1c28222dca55d653d1741d9c308", "gpu_pixels": false},
+    "fresh_viewer": {"artifact": "review-fresh-viewer.md", "sha256": "e27d73334a0b62e191e30e2229886504cb7a8b602e38cddf69cfc88a7ad21257", "scope": "Script-only r3 follow-up in separate reviewer context; not audiovisual viewing or a new first-exposure audience test"},
+    "cpu_stills": {"count": 13, "method": "Exported geometry/cameras rendered separately in Blender CPU Cycles", "webgl_movie_frames": false},
+    "actual_offline_audio_context": "NOT_PERFORMED",
+    "browser_layout_and_controls": "NOT_PERFORMED"
+  },
+  "full_playback_review": {
+    "status": "BLOCKED",
+    "reason": "Connected browser unavailable from originating mobile context; local cloud browser route failed and subsequent policy prohibited a workaround",
+    "evidence": "verification.md",
+    "required_action": "Run exact-hash full playback, real WebGL pixel/seek checks, real audio bake/listening and UI tests in an authorized connected browser"
+  },
+  "independent_release_qa": {
+    "actor": null,
+    "session": null,
+    "result": "NOT_PERFORMED",
+    "evidence": "verification.md"
+  },
+  "director_exception": {
+    "duration": "User-authorized 6–12-minute range; actual 9:00.177",
+    "qa_waiver": false
+  },
+  "publication": {"url": null, "observed_at": null, "status": "NOT_PUBLISHED"},
+  "release_ready": false,
+  "finished_episode_count": 0,
+  "next_episodes_started_by_this_task": false
+}

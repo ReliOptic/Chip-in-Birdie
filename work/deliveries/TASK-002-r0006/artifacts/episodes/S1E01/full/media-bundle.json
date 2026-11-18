@@ -1,0 +1,224 @@
+{
+  "schema_version": "1.0",
+  "episode_id": "S1E01",
+  "catalog_id": "H039",
+  "revision": "S1E01-full-r8",
+  "status": "SITES_REVIEW_DEPLOYED_CPU_PLAYBACK_VERIFIED",
+  "source_pr": "https://github.com/ReliOptic/Chip-in-Birdie/pull/4",
+  "continued_from_revision": "S1E01-full-r7",
+  "runtime_source_commit": "63c4445af5faf07e8100fe45731cfad1a8a0c370",
+  "identity_note": "Final source is frozen, byte-verified and deployed as Sites version 5. Full release approval remains independent of deployment.",
+  "script_sha256": "7b87d7d8c0f485291a5caad044ea2befe3b0d070447008c4a0f774370bbc3939",
+  "viewer_takeaway": "Read a fab-expansion headline by asking which products can be made, at what quality, and when they can be delivered. Factory ownership, installed tools and qualified production are different; specialization still requires continuing engineering and delivery coordination.",
+  "performance": {
+    "required_language": "en",
+    "status": "GENERATED_PCM_AND_ASR_PROXY_CHECKED_NOT_LISTENING_APPROVED",
+    "artifact": "narration.mp3 in the R8 delivery source",
+    "sha256": "206332f7712f1be83591eb9e80391ebcbd5298c8eb2def9ea8538bca40e0f5dc",
+    "bytes": 7638956,
+    "wav_sha256": "438030feec4a60651c67675cefb375fde2b28f9ee82cd5d2a6a631f3d83d28d4",
+    "duration_seconds": 477.3573333333333,
+    "mp3_container_duration_seconds": 477.408,
+    "duration_note": "PCM sample clock is canonical; MP3 container includes codec padding.",
+    "sample_rate": 24000,
+    "total_samples": 11456576,
+    "finite_samples": true,
+    "clipped_samples": 0,
+    "utterances": 45,
+    "display_words": 1141,
+    "voice": "Local Kokoro ONNX 1.0 bm_george, synthetic",
+    "speed": 1.1,
+    "timing_method": "actual_generated_utterance_sample_boundaries",
+    "timeline_sha256": "73fc3d225a4fe2cb6c6ace9d9b5de9ffc4cc36ae1d2f21b469f7c33fc96c20a8",
+    "asr_sha256": "651d97173020e2c7bd1ab8c444bc2e8c27fc1d3befd541a6213df2a0860f5864",
+    "asr_status": "COMPLETED_PROXY_NOT_LISTENING",
+    "word_alignment": "NOT_PERFORMED",
+    "human_listening_review": "NOT_PERFORMED"
+  },
+  "video": {
+    "artifact": "S1E01-full-documentary.html",
+    "sha256": "2da3d20c010d89eaf15944731ca4c3184ddb4d57d28a1b3fb3a09129d63c83be",
+    "bytes": 20043866,
+    "identity_status": "FINAL_SOURCE_BYTE_VERIFIED",
+    "duration_seconds": 477.3573333333333,
+    "chapters": 6,
+    "narration_rows": 45,
+    "named_shots": 65,
+    "spatial_shots": 36,
+    "reporting_shots": 27,
+    "photographs_used": 2,
+    "photographs_packaged": 2,
+    "aspect_ratio": "16:9",
+    "renderer": "Three.js r170 WebGL2 or CPU 3D compatibility, composited with new explanatory reporting graphics and two attributed photographs",
+    "timeline_fps": 30,
+    "fps_note": "Nominal timeline convention, not measured browser FPS",
+    "mp4_export": "NOT_EXPORTED",
+    "prior_shot_imports": "No R1-R7 scene modules or prior archive compositions in the active R8 edit; event continuity is not a repeated action replay.",
+    "illustration_limit": "Modern fab and mechanisms are evidence-grounded explanatory reconstructions, not a surveyed or OEM-certified TSMC factory, actual operating status, historical incident reenactment or complete process recipe."
+  },
+  "media_package": {
+    "build_manifest": "manifest.json in the R8 delivery package",
+    "source_code_location": "PR #4 continuation: episodes/S1E01/full",
+    "runtime_source_commit": "63c4445af5faf07e8100fe45731cfad1a8a0c370",
+    "runtime_source_project_id": "appgprj_6afc273728b8819189da26e9c2cf0f56",
+    "site_index_sha256": "f3d8f5913d10b5da8746a45b44acd7ce487736b12159aac393453a0495073a7e",
+    "archive_content_hash": "sha256:ff306a37cfc3b3f1fbfd90ae357d9f99d9ea840156308d7dd784e32a9a9dd7be",
+    "delivery_identity_status": "EXACT_PUSHED_SOURCE_SAVED_AND_DEPLOYED",
+    "pinned_three_sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+    "standalone_embeds_dependencies": true,
+    "raw_research_video_frames_distributed": false,
+    "runtime_source_hashes_snapshot": {
+      "fab-hardware-r8.mjs": "5387c57fb8a32a1f561ea2b32fb0182ae2e2a86d4fe19e8d7313067f580a0808",
+      "fab-hall-r8.mjs": "b02fee313b64ae70bef6fe25f4525bc49e7e5c11b0fa6a0a2d8b518725e20a5f",
+      "fab-process-r8.mjs": "2ba654b0d388c470be1c5f9b625d7e7b192e0aeb1d164e196bb19906af735105",
+      "fab-facility-r8.mjs": "a3ec89b6286ee8d64fb2c23eaddf10ed19d29187cea80bfed9328e043eb6b0c1",
+      "software-renderer.mjs": "d9100eff41ce04e27aebf4c0bd9f0c57935ce3d7c002db85c5922dfcbdac8690",
+      "fab-editorial-r8.mjs": "0de3d460c70cbaf9720e0c22e90cccc3233ce1c520335b89d10fcc708763d71b",
+      "fab-shotplan-r8.mjs": "a41202806d93cf97b8e8be08219dbfb3e4d276197f27a8afa63c02e9a6d26bf6",
+      "fab-director-r8.mjs": "25472d516560380f80dcca6764c47b59848d1a7a1dfa3225f762d6f9068ea97f",
+      "film.mjs": "20c29d3da3948daeb5fa6dd781696634c3aa798c9e171b137d125fb566bfca61"
+    },
+    "artifact": "S1E01-sites-r8.tar.gz",
+    "review_stills": "Sites source review/r8 holds initial final-source preview captures; verification/S1E01-r8 holds actual full-run end and production cleanroom screenshots.",
+    "access": "Existing public access revision 2 preserved; raw media not duplicated in GitHub"
+  },
+  "required_locales": [
+    "en",
+    "ko"
+  ],
+  "locale_scope": "English synthetic narration with English and Korean captions. Korean narration is not included.",
+  "claims_review": {
+    "status": "PRIMARY_SOURCE_LEDGER_AND_SCOPED_REVIEW_NOT_RELEASE_APPROVAL",
+    "claims": 45,
+    "source_entries": 19,
+    "claims_sha256": "26dedd0bb96c302a22a34ad8be592a6b741cc9a0aa38ba0ea33f90e42d387126",
+    "sources_sha256": "61132db3036b83e10e48a93fc36c8d998d24f72960e251ffab80e90d70e661e4",
+    "evidence": [
+      "claims.json",
+      "sources.json",
+      "verification-r8.md"
+    ],
+    "distinctions": [
+      "Operator/manufacturer descriptions support process mechanisms, not measured performance of the illustrated factory.",
+      "Sampled TSMC 2026 operator-film observations inform spatial details; a complete carrier-to-wafer handoff was not observed in those samples.",
+      "The inspected Daifuku transport video is manufacturer CG, not factory footage.",
+      "NVIDIA December 1997 low yields, filing-time capacity constraint and initial wafer-payment obligation are separately dated and conditioned.",
+      "Schematic eligibility, routes, measurement patterns and customer information are not actual factory/customer data."
+    ]
+  },
+  "rights_review": {
+    "status": "PROVENANCE_LICENSE_AND_MODIFICATION_NOTICES_PRESENT_NOT_RELEASE_APPROVAL",
+    "asset_manifest_sha256": "ad0f7d0f0edf14bd82e954c0feceb8ceceabb4ebf26eaf7068665fdc9735ad17",
+    "evidence": [
+      "archive-manifest-r8.json",
+      "delivered archive-manifest.json",
+      "THIRD_PARTY_NOTICES.txt"
+    ],
+    "photographs": [
+      {
+        "id": "lcn_lab_2013",
+        "context": "UCL research lithography cleanroom, 2013; not TSMC production",
+        "license": "CC BY 2.0"
+      },
+      {
+        "id": "intel_d1x_cranes_2011",
+        "context": "Intel D1X construction, 2011; not an operating cleanroom",
+        "license": "CC BY 2.0"
+      }
+    ],
+    "limits": "Each image is used once with its date and context. Original JPEG bytes are preserved; display crop/scale/zoom and overlays are disclosed. Research-only manufacturer video frames are excluded. Licensing does not imply endorsement or remove personality/trademark rights.",
+    "source_manifest_sha256": "5d9e651224bcfc5704fad15477def4fe7e51d7ae0d26f3028758802a9c764341"
+  },
+  "verification": {
+    "geometry_and_edit_contracts": {
+      "artifact": "qa-fab-edit-r8.json",
+      "recorded_passed": 2191,
+      "recorded_failed": 0,
+      "status": "FINAL_SOURCE_CONTRACTS_PASS_ONLY",
+      "actual_browser": false
+    },
+    "player_contracts": {
+      "artifact": "qa-player-r8-results.json",
+      "recorded_passed": 40,
+      "recorded_failed": 0,
+      "status": "FINAL_EXACT_DELIVERY_CONTRACTS_PASS_ONLY",
+      "changedSources": [],
+      "actual_browser": false,
+      "real_media_decode": false
+    },
+    "reporting_graphics": {
+      "formerly_static_shots_checked": 13,
+      "still_pixel_identical_at_015_and_085": 0,
+      "fresh_vs_cross_scene_seek_comparisons": 81,
+      "seek_pixel_mismatches": 0,
+      "bounded_cpu_frames_inspected": 3,
+      "source_sha256": "0de3d460c70cbaf9720e0c22e90cccc3233ce1c520335b89d10fcc708763d71b",
+      "scope": "Node/NAPI Canvas and source inspection; no browser, GPU, complete-film or audience-quality approval."
+    },
+    "browser": {
+      "status": "FINAL_CPU_CONTINUOUS_RUN_AND_PRODUCTION_SMOKE_OBSERVED",
+      "artifact": "qa-browser-r8.json",
+      "backend_observed": "CPU fallback; WebGL2 unavailable in managed browser",
+      "scope": "Actual UI, selected final frames, audio decode/transport and continuous playback; not GPU or human listening approval",
+      "observed": [
+        "Final preview played from zero to natural 07:57 end without seeking, with sampled progression checkpoints.",
+        "Production R8 page opened, played forward, paused and reverse-seeked, with Korean captions and Cinema view.",
+        "Selected final wafer support/robot and long cleanroom frames inspected."
+      ]
+    },
+    "audio_artifact": "timeline.json / asr-proxy.json",
+    "verification_notes": "verification-r8.md",
+    "final_repository_tests": {
+      "schema": "PASS",
+      "catalog_lineage_and_links": "PASS",
+      "unit_tests_passed": 33,
+      "unit_tests_failed": 0
+    },
+    "full_final_playback": "CONTINUOUS_CPU_PREVIEW_TRANSPORT_TO_NATURAL_END_OBSERVED_NOT_HUMAN_LISTENING_APPROVAL",
+    "gpu_appearance": "NOT_VERIFIED",
+    "ipad_safari_touch": "NOT_VERIFIED",
+    "human_listening": "NOT_PERFORMED",
+    "physical_contact_contracts": {
+      "artifact": "r8-contact-evidence/fab-r8-geometry.json",
+      "checks": 5749,
+      "status": "PASS_CONTRACT_ONLY",
+      "wafer_support_pairs": 100,
+      "maximum_vertical_gap_m": 2.934e-12,
+      "minimum_contact_area_m2": 0.0010104088,
+      "rail_housing_pairs": 100,
+      "mesh_probe_locations": 900,
+      "mesh_raycasts": 1800,
+      "minimum_wall_embed_m": 0.0019717,
+      "limits": "Scoped geometry/contact and sampled transport tests, not complete physics or vendor certification"
+    }
+  },
+  "independent_release_qa": {
+    "result": "NOT_PERFORMED",
+    "actor": null,
+    "session": null
+  },
+  "director_exception": {
+    "duration": "Full S1E01 at the generated narration duration; no padding to satisfy an inherited format default.",
+    "treatment": "Latest direction requires new evidence-grounded expansive factory spaces, physical action matching the story and reporting-led explanations; no reuse of prior shots and no QA waiver.",
+    "sites_deployment": "Explicitly requested by the user; existing public Site updated without changing access policy.",
+    "qa_waiver": false
+  },
+  "publication": {
+    "url": "https://chip-in-birdie-s1e01-261117.reliqbit.chatgpt.site",
+    "project_id": "appgprj_6afc273728b8819189da26e9c2cf0f56",
+    "version_id": "appgprj_6afc273728b8819189da26e9c2cf0f56~appgver_97dc8894d8a08191a38f8d7f69c405f7",
+    "version_number": 5,
+    "deployment_id": "appgdep_6afd791fb52c8191acac56555e88a4b5",
+    "source_commit": "63c4445af5faf07e8100fe45731cfad1a8a0c370",
+    "observed_at": "2026-11-18T10:08:56.040207+00:00",
+    "status": "SITES_DEPLOYMENT_SUCCEEDED",
+    "audience": "PUBLIC_PREEXISTING_REVISION_2_PRESERVED",
+    "youtube_status": "NOT_PUBLISHED",
+    "visible_check_at": "2026-11-18T10:16:23.855Z"
+  },
+  "release_ready": false,
+  "finished_episode_count": 0,
+  "next_episodes_started_by_this_task": false,
+  "accepted_claim_commit": "3679c3c15933396aa80584378f2c798568adb38b",
+  "continued_from_commit": "731913aea15089e0dc9ecc9530782a59ca88b1c7"
+}

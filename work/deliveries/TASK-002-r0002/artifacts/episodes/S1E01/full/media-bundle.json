@@ -1,0 +1,154 @@
+{
+  "schema_version": "1.0",
+  "episode_id": "S1E01",
+  "catalog_id": "H039",
+  "revision": "S1E01-full-r4",
+  "status": "PRIVATE_REVIEW_DEPLOYED_NOT_RELEASE_READY",
+  "source_pr": "https://github.com/ReliOptic/Chip-in-Birdie/pull/4",
+  "continued_from_commit": "5cecbd8498c21baab62de547bfadc425f9f65bee",
+  "accepted_claim_commit": "be36f76e257557221bb916cbf9bf8bb8dedf0ff9",
+  "script_sha256": "277e2e129bb4e3f3752a0acdb2829b91e9918fe38e15586110f51cf9d231c42e",
+  "performance": {
+    "required_language": "en",
+    "authorization": "Existing explicit direction for English VO; Korean is a subtitle track",
+    "status": "GENERATED_DECODE_CHECKED_NOT_LISTENING_APPROVED",
+    "artifact": "narration.mp3 in the private Sites source",
+    "sha256": "7b6751377802e88a529cf0035084ec47775ff8b2900880302371a4e9b28daa9b",
+    "wav_sha256": "91a2216839b223ac3608898d379848841a194a905e5a0cc06af45cbf5dbf044b",
+    "duration_seconds": 534.1393333333333,
+    "sample_rate": 24000,
+    "total_samples": 12819344,
+    "utterances": 61,
+    "display_words": 1112,
+    "voice": "Local Kokoro ONNX v1.0 bm_george, synthetic",
+    "human_listening_review": "NOT_PERFORMED"
+  },
+  "video": {
+    "status": "FULL_DURATION_SITE_DEPLOYED_LOCAL_BROWSER_REVIEW",
+    "artifact": "S1E01-full-documentary.html",
+    "sha256": "9387f1081487248b355e4009be9a02b02afc914875a3b9d59aeb12e3f0458329",
+    "bytes": 16145305,
+    "duration_seconds": 534.1393333333333,
+    "chapters": 10,
+    "world_families": 8,
+    "named_shots": 41,
+    "phase_beats": 44,
+    "aspect_ratio": "16:9",
+    "timeline_fps": 30,
+    "fps_note": "Nominal deterministic timeline convention, not measured browser FPS",
+    "primary_renderer": "WebGL / Three.js r170",
+    "compatibility_renderer": "Explicitly labeled CPU triangle rasterizer; approximate material/light treatment, not equivalent PBR quality",
+    "mp4_export": "NOT_REQUESTED_NOT_EXPORTED"
+  },
+  "media_package": {
+    "artifact": "S1E01-sites-r4.tar.gz",
+    "contents": [
+      "Relative-asset HTML player",
+      "English MP3",
+      "Original PR #4 GLB",
+      "Local Three.js r170 modules and notices",
+      "Authored scene and compatibility-renderer modules",
+      "Embedded timing, EN/KO subtitles, sources and claims"
+    ],
+    "source_code_location": "Git PR #4: episodes/S1E01/full",
+    "runtime_source_commit": "ed86b10c66c549ed283a7476d1a6ee4afe45fd0c",
+    "runtime_source_project_id": "appgprj_6afc273728b8819189da26e9c2cf0f56",
+    "access": "Owner-only private Site; raw unpublished media is not added to public GitHub"
+  },
+  "required_locales": [
+    "en",
+    "ko"
+  ],
+  "locale_qa": {
+    "en": "Actual generated PCM timing connected; full pronunciation and listening pending",
+    "ko": "61 translated rows connected to actual sentence bounds; scoped script reader follow-up completed, comprehensive translation/subtitle viewing approval pending"
+  },
+  "claims_review": {
+    "status": "BOUNDED_PRIMARY_SOURCE_SCRIPT_CHECK_NO_FINAL_MEDIA_APPROVAL",
+    "claims": 24,
+    "source_entries": 11,
+    "claims_sha256": "e27b6cb3ba4db688ca3a452bdef0b11982ddcfe991e8bf17525a07257dc647c5",
+    "sources_sha256": "658b9cec86501f5b60a22c704c26f6b930842aca02853d61823ed5c117bdd8a0",
+    "evidence": [
+      "claims.json",
+      "sources.json",
+      "review-r4.md",
+      "verification-r4.md"
+    ]
+  },
+  "rights_review": {
+    "status": "PROVENANCE_REGISTER_AND_MIT_NOTICES_PRESENT_NOT_RELEASE_CLEARANCE",
+    "evidence": [
+      "rights.md",
+      "THIRD_PARTY_NOTICES.txt",
+      "audio-env.md"
+    ]
+  },
+  "verification": {
+    "static_mock_contracts": {
+      "passed": 24,
+      "failed": 0,
+      "artifact": "qa-contract-r4.json",
+      "actual_browser": false
+    },
+    "site_asset_integrity": {
+      "status": "PASS",
+      "modules": 9,
+      "files": 13,
+      "artifact": "qa-site-r4.json",
+      "actual_browser": false
+    },
+    "cpu_model_state": {
+      "baseline_cases": 220,
+      "exact_comparisons_passed": 440,
+      "artifact": "qa-worlds-r4-results.json",
+      "gpu_pixels": false
+    },
+    "cpu_raster_pixels": {
+      "cases": 9,
+      "order_independent": true,
+      "readback_match": true,
+      "artifact": "qa-software-r4-results.json",
+      "actual_browser": false
+    },
+    "scoped_reviews": {
+      "artifact": "review-r4.md",
+      "script_followup": "Three reader findings resolved; not audiovisual approval",
+      "code_followup": "Three runtime findings rechecked with production functions and scene state; not real network/audio output"
+    },
+    "actual_browser": {
+      "artifact": "qa-browser-r4.json",
+      "scope": "Managed preview of the exact deployed asset build; cloud browser uses CPU compatibility mode; private production URL reaches login gate",
+      "full_playback": "NATURAL_END_AND_REPLAY_OBSERVED_CPU_COMPATIBILITY_MODE",
+      "selected_reverse_order_frames": 11,
+      "actual_offline_audio_context_double_bake": "PASS_EQUAL_12819344_SAMPLES_22_CUES",
+      "fullscreen": "UNAVAILABLE_IN_THIS_BROWSER_NOT_VERIFIED",
+      "webgl_picture": "UNAVAILABLE_IN_THIS_BROWSER"
+    }
+  },
+  "independent_release_qa": {
+    "actor": null,
+    "session": null,
+    "result": "NOT_PERFORMED",
+    "evidence": "verification-r4.md"
+  },
+  "director_exception": {
+    "duration": "User-authorized 6–12-minute range; actual 8:54.139",
+    "private_sites_deployment": "Explicitly authorized by director on 2026-11-17",
+    "qa_waiver": false
+  },
+  "publication": {
+    "url": "https://chip-in-birdie-s1e01-261117.reliqbit.chatgpt.site",
+    "project_id": "appgprj_6afc273728b8819189da26e9c2cf0f56",
+    "version_id": "appgprj_6afc273728b8819189da26e9c2cf0f56~appgver_e42dd0302ec08191a037deb01f16f9d0",
+    "deployment_id": "appgdep_6afc2ecdf91c819183446d8bdbe58f5d",
+    "source_commit": "ed86b10c66c549ed283a7476d1a6ee4afe45fd0c",
+    "observed_at": "2026-11-17T10:39:29.627799+00:00",
+    "status": "PRIVATE_SITES_DEPLOYMENT_SUCCEEDED",
+    "audience": "OWNER_ONLY",
+    "youtube_status": "NOT_PUBLISHED"
+  },
+  "release_ready": false,
+  "finished_episode_count": 0,
+  "next_episodes_started_by_this_task": false
+}

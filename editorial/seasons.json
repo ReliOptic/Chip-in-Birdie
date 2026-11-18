@@ -101,12 +101,13 @@
       "selection": "RECOVERED_PR1_CORE",
       "selection_reason": "Preserves user-recovered six-episode sequence; titles remain factual review drafts.",
       "audience_ref": "channel/audience.json",
-      "evidence_status": "UNVERIFIED_RESEARCH_LEADS",
+      "evidence_status": "PARTIAL_PRIMARY_SOURCE_VERIFIED",
       "evidence_leads": "TSMC 창업 당시 인터뷰·초기 고객 계약·연차보고서",
-      "production_status": "NOT_STARTED",
+      "production_status": "IN_PRODUCTION",
       "media_status": "NOT_READY",
       "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
-      "duplicate_boundary": "Pure-play foundry/customer rivalry and manufacturing trust; RCA/ITRI transfer is S1E04 and later process independence is S1E05."
+      "duplicate_boundary": "Pure-play foundry/customer rivalry and manufacturing trust; RCA/ITRI transfer is S1E04 and later process independence is S1E05.",
+      "production_record": "episodes/S1E01/production.md"
     },
     {
       "episode_id": "S1E02",
