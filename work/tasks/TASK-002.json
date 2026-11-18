@@ -7,15 +7,15 @@
     "독립 전체 시청·청취 검수가 남으면 READY 또는 완성 편수로 올리지 않는 인계",
     "동일 최종 소스의 기존 Sites 배포 성공, 현재 공개 범위 보존, 실제 검수 관찰 및 남은 출시 관문 기록"
   ],
-  "attempt": 5,
+  "attempt": 6,
   "audience_ref": "channel/audience.json",
   "blocked_reason": null,
   "claim": {
-    "actor": "codex-root-s1e01-r7",
-    "claimed_at": "2026-11-17T19:10:07.973841Z",
-    "lease_expires_at": "2026-11-18T03:10:07.973855Z",
+    "actor": "codex-root-s1e01-r8",
+    "claimed_at": "2026-11-18T09:17:24.395630Z",
+    "lease_expires_at": "2026-11-18T17:17:24.395645Z",
     "model": "GPT-6",
-    "session_id": "chat-20261117-s1e01-r7-film",
+    "session_id": "chat-20261118-s1e01-r8-fab",
     "session_id_source": "explicit"
   },
   "current_delivery_id": "TASK-002-r0005",
@@ -255,6 +255,37 @@
       "delivery_id": "TASK-002-r0005",
       "event": "SUBMITTED",
       "revision": 5
+    },
+    {
+      "actor": "codex-root-s1e01-r8",
+      "at": "2026-11-18T09:17:24.245425Z",
+      "event": "BLOCK",
+      "preserved_delivery_id": "TASK-002-r0005",
+      "previous_state": "IN_REVIEW",
+      "reason": "Director requests full Vox/BBC-style reporting overhaul, detailed expansive evidence-grounded fab/OHT, a concrete viewer payoff and no reused shots.",
+      "revision": 5
+    },
+    {
+      "actor": "codex-root-s1e01-r8",
+      "at": "2026-11-18T09:17:24.314786Z",
+      "event": "RETRY",
+      "preserved_delivery_id": "TASK-002-r0005",
+      "previous_state": "BLOCKED",
+      "reason": "Continue same PR #4/S1E01 and existing Sites URL with researched fab operations, new narration and entirely new shot coverage.",
+      "revision": 5
+    },
+    {
+      "actor": "codex-root-s1e01-r8",
+      "at": "2026-11-18T09:17:24.395692Z",
+      "claim": {
+        "actor": "codex-root-s1e01-r8",
+        "claimed_at": "2026-11-18T09:17:24.395630Z",
+        "lease_expires_at": "2026-11-18T17:17:24.395645Z",
+        "model": "GPT-6",
+        "session_id": "chat-20261118-s1e01-r8-fab",
+        "session_id_source": "explicit"
+      },
+      "event": "CLAIMED"
     }
   ],
   "objective": "PR #4의 동일 S1E01 전체본과 기존 아카이브 근거를 보존하면서, 주문 회수 후 빈 공장·카드 장착 후 화면 작동·실패 시편 교체와 재검사·설비 투자 후 출하로 이어지는 3D 사건을 구현한다. 동일 사건의 동작은 카메라·문장 컷에서 재시작하지 않으며, 실제 역사와 설명용 공간을 구분한다. 실측 영어 음성·한국어/영어 자막·사진 권리와 근거 UI를 유지하고 현재 공개 범위를 바꾸지 않고 기존 Sites에 배포한다. 독립 시청·청취 승인과 유튜브 출시는 별개로 남긴다.",
@@ -266,8 +297,8 @@
   ],
   "revision": 5,
   "scope": "episode",
-  "status": "IN_REVIEW",
+  "status": "CLAIMED",
   "task_id": "TASK-002",
   "title": "S1E01 / H039 · PR #4 전체 3D·아카이브 다큐멘터리 R7",
-  "updated_at": "2026-11-17T19:55:22.468926Z"
+  "updated_at": "2026-11-18T09:17:24.395696Z"
 }
