@@ -1,0 +1,117 @@
+{
+  "schema": "cib-s1e01-r8-actual-browser-observations-v1",
+  "actor": "codex-root-s1e01-r8",
+  "session": "chat-20261118-s1e01-r8-fab",
+  "date_utc": "2026-11-18",
+  "status": "FINAL_CPU_CONTINUOUS_RUN_AND_PRODUCTION_SMOKE_OBSERVED",
+  "method": "Actual managed Chromium through visible UI controls, accessibility snapshots and screenshots. No mock renderer or direct test-hook seek.",
+  "renderer": "CPU 3D compatibility; WebGL2 unavailable in this managed browser",
+  "build_identity": {
+    "standalone_sha256": "2da3d20c010d89eaf15944731ca4c3184ddb4d57d28a1b3fb3a09129d63c83be",
+    "standalone_bytes": 20043866,
+    "site_index_sha256": "f3d8f5913d10b5da8746a45b44acd7ce487736b12159aac393453a0495073a7e",
+    "sites_source_commit": "63c4445af5faf07e8100fe45731cfad1a8a0c370",
+    "duration_seconds": 477.3573333333333
+  },
+  "pre_final_support_fix_observations": {
+    "revision_boundary": "Same edit and player, before the final FOUP support-rail correction and viewer-facing credits wording. These are not silently relabelled as final-source observations.",
+    "picture_seconds": [
+      32,
+      43,
+      65,
+      82.8,
+      103,
+      212,
+      279,
+      384,
+      410,
+      474
+    ],
+    "observed": [
+      "Long fab aisle, rail/FFU layers, building cutaway and subfab visibly render.",
+      "Initial EFEM occlusion and top-down pattern view were corrected; cutaway and oblique microsection visibly reveal the mechanism.",
+      "Reporting text at 279 and 384 is legible with citations/conditions, not private customer data.",
+      "Actual playback advanced from 99 to about 119.37 seconds, then paused and reverse-seeked.",
+      "Paused position 84 and later 103 restored after reload.",
+      "Cinema CSS fallback, English/Korean/off captions and passage-specific sources panel worked.",
+      "Playing from 474 seconds reached natural Finished / replay available at 477.35. This was an end-segment test, not a full run."
+    ]
+  },
+  "final_source_observations": {
+    "picture_seconds": [
+      32,
+      82.8,
+      86
+    ],
+    "observed": [
+      "After final reload, the selected-wafer view shows the enlarged supporting shelves at 82.8 seconds.",
+      "At 86 seconds, the wafer is visibly carried by the articulated robot; omitted enclosure is explicitly labelled as a cutaway.",
+      "At 32 seconds, the long cleanroom vista and separate Korean caption area are readable.",
+      "One immediate screenshot after reload lagged behind the accessibility state; a fresh combined state/screenshot confirmed the corrected frame. The stale image was not used as final evidence."
+    ]
+  },
+  "continuous_run": {
+    "start_action_utc": "2026-11-18T10:06:18.562Z",
+    "start_seconds": 0,
+    "observed_forward_seconds": [
+      51.01,
+      361.8,
+      448.02,
+      477.35
+    ],
+    "status": "NATURAL_END_OBSERVED_FROM_ZERO_WITHOUT_SEEKS",
+    "natural_end_observed": true,
+    "scope": "Transport/decoding/render progression, not human listening approval or every-frame quality review.",
+    "end_observed_utc": "2026-11-18T10:14:30.651Z",
+    "end_ui": "07:57 / 07:57; Finished · replay available; Play enabled",
+    "checkpoint_note": "Automatic playback remained uninterrupted between sampled checkpoints. This is not a claim that a human listened to or scrutinized every frame."
+  },
+  "screenshots": [
+    {
+      "path": "Sites source review/r8/cleanroom-preview.jpg",
+      "seconds": 32,
+      "sha256": "185987474cdb061359606025e076f77439d64db82c6a8d5b0b6bb690c8f7b158",
+      "kind": "actual managed browser CPU compositor"
+    },
+    {
+      "path": "Sites source review/r8/wafer-handoff-preview.jpg",
+      "seconds": 82.8,
+      "sha256": "4f9e73b28fd2d53554ac7a5dbbf815f3ec5582c98e9728695d53ec2141551bda",
+      "kind": "actual managed browser CPU compositor"
+    },
+    {
+      "path": "verification/S1E01-r8/natural-end-preview.jpg",
+      "seconds": 477.35,
+      "sha256": "8634205fdd871f7cf0cf46d48dfe4e8a2317ed94cae2a22339a31bd558fa00df",
+      "kind": "actual managed-browser full-run end"
+    },
+    {
+      "path": "verification/S1E01-r8/cleanroom-live.jpg",
+      "seconds": 32,
+      "sha256": "6b6f5e97614f433e0509667dc55e1e47eaefa78e9973981c5397f6b18b00be09",
+      "kind": "actual production URL in managed browser, CPU compositor",
+      "bytes": 130441
+    }
+  ],
+  "production": {
+    "status": "VISIBLE_R8_READY_PLAY_PAUSE_REVERSE_SEEK_AND_CINEMA_OBSERVED",
+    "url": "https://chip-in-birdie-s1e01-261117.reliqbit.chatgpt.site/",
+    "observed_at_utc": "2026-11-18T10:16:23.855Z",
+    "version_number": 5,
+    "observations": [
+      "Live page identifies R8 and 07:57.",
+      "Play from zero progressed to 28.81 seconds, then pause landed at 43.92 seconds.",
+      "Reverse seek to 32 seconds displayed the long cleanroom vista with Korean captions.",
+      "Cinema fallback rendered, screenshot captured, live tab marked for user review."
+    ],
+    "full_production_run": false
+  },
+  "not_verified": [
+    "GPU/PBR appearance and performance",
+    "Actual iPad/Safari/touch",
+    "Full human listening/pronunciation/translation approval",
+    "Independent audiovisual release QA"
+  ],
+  "release_approval": false,
+  "runtime_log_note": "Inspected logs included Chrome-extension metadata errors, not film errors. No claim of a pristine browser-wide console is made."
+}

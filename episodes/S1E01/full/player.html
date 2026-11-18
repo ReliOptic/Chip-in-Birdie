@@ -49,7 +49,7 @@ body:not(.headless) .screen:not(:fullscreen):not(.theater) #caption{display:none
 .options label{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted)}
 .options .spacer{flex:1}
 #status{font-size:12px;color:var(--muted);line-height:1.4}
-#renderer-status{display:none}
+#renderer-status{display:none;flex-basis:100%;color:#93442c;font-size:12px;line-height:1.5}
 .chapters{display:flex;overflow:auto;list-style:none;padding:0;margin:0;border-bottom:1px solid var(--line)}
 .chapters li{flex:0 0 168px}
 .chapters button{width:100%;height:76px;border:0;border-bottom:2px solid transparent;border-radius:0;background:none;text-align:left;padding:12px;font-size:13px;line-height:1.35}
@@ -136,18 +136,18 @@ body.theater-open{overflow:hidden}
 <header>
   <div class="masthead"><span class="brand">Chip in Birdie</span><span>Season 1 · Episode 01</span></div>
   <h1 id="film-title">__FILM_TITLE__</h1>
-  <div class="edition"><span>Documentary · 3D sequences & archive</span><span id="edition-time">English narration · 한국어 / English captions</span></div>
+  <div class="edition"><span>Inside a semiconductor fab · R8</span><span id="edition-time">English narration · 한국어 / English captions</span></div>
 </header>
 <main>
   <section class="screen" id="screen" tabindex="0" aria-label="S1E01 documentary. Space to play or pause; arrow keys seek five seconds.">
     <div id="picture">
       <canvas id="film" width="960" height="540" aria-label="Documentary: cinematic 3D events, attributed photographs and historical records"></canvas>
-      <div id="start"><button aria-label="Play documentary" id="big-play" disabled>▶</button></div>
+      <div id="start"><button aria-label="Play documentary" id="big-play" disabled><svg width="24" height="28" viewBox="0 0 24 28" aria-hidden="true"><path fill="currentColor" d="M5 3L23 14L5 25Z"/></svg></button></div>
       <div id="error" role="alert"></div>
     </div>
     <div id="caption"><span></span></div>
     <div id="fs-controls" aria-label="Full screen film controls">
-      <button id="fs-play" aria-label="Play" disabled>▶</button>
+      <button id="fs-play" aria-label="Play" disabled>Play</button>
       <input id="fs-seek" type="range" aria-label="Full screen film position" min="0" max="1" step="0.01" value="0">
       <output id="fs-time"></output>
       <button id="fs-mute" aria-label="Mute narration" aria-pressed="false">Sound on</button>
@@ -158,7 +158,7 @@ body.theater-open{overflow:hidden}
   <div id="read-caption"></div>
   <div class="film-strip"><span id="chapter-index"></span><span id="chapter-label"></span><span id="frame-kind"></span></div>
   <section class="controls" aria-label="Film controls">
-    <div class="transport"><button id="play" disabled aria-label="Play">▶</button><button id="restart" aria-label="Restart from beginning">↺</button></div>
+    <div class="transport"><button id="play" disabled aria-label="Play">Play</button><button id="restart" aria-label="Restart from beginning">↺</button></div>
     <input id="seek" type="range" aria-label="Film position" min="0" max="1" step="0.01" value="0">
     <output id="time">00:00 / —</output>
     <div class="options">
@@ -167,12 +167,12 @@ body.theater-open{overflow:hidden}
       <button id="transcript-toggle" aria-expanded="false" aria-controls="transcript">Transcript</button>
       <button id="sources-toggle" aria-expanded="false" aria-controls="sources">Sources & credits</button>
       <span class="spacer"></span><button id="fullscreen">Full screen</button>
-      <span id="status" role="status">Loading the archive</span><span id="renderer-status"></span>
+      <span id="status" role="status">Loading the documentary</span><span id="renderer-status" role="status"></span>
     </div>
   </section>
   <ol class="chapters" id="chapters" aria-label="Chapters"></ol>
   <div class="below">
-    <div><p>Period records and attributed photographs, connected by illustrative 3D events. The modelled rooms, equipment and circuit failure are not historical reconstructions. Image dates and limitations are identified in the credits.</p><p id="frame-credit"></p></div>
+    <div><p>공장 없는 회사는 제조를 어떻게 사업으로 연결할까. 실제 팹 영상·장비 공개 자료·기업 기록을 바탕으로, 운반에서 공정·검증·출하까지 따라갑니다. 3D는 설명용 재구성이며 특정 공장의 실사나 내부 CAD가 아닙니다. 사진은 촬영 장소·연도와 함께 표시합니다.</p><p id="frame-credit"></p></div>
     <nav aria-label="Film resources"><a href="#sources" id="evidence-link">Inspect the evidence</a><a id="download-film" href="./S1E01-full-documentary.html" download="S1E01-full-documentary.html">Download HTML</a></nav>
   </div>
   <aside id="transcript" hidden>

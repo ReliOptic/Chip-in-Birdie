@@ -34,3 +34,13 @@ CIB-048 USER_DIRECTIVE: Sequential production cycle S1E01 → S2E01 → S3E01 �
 CIB-049 IMPLEMENTED_POLICY: Target 8–9 minutes; 6–12 if the story needs it. English script and real VO lead animation timing. Documentary reconstructions and illustrative process models must be labeled. Historical 2022–23 export-control case requires dated rules; no statement of current legality. Original overclaiming titles retained only as provenance; reviewed working titles narrow them.
 
 CIB-050 USER_DIRECTIVE: Stay in Chat; no new payments or YouTube uploads. Source code, reproducible playback, real audio and QA required; independent review still applies. Production binary outputs remain outside Git.
+
+## 2026-11-18 · S1E01 R8 fab/documentary correction
+
+CIB-051 USER_DIRECTIVE: Continue PR #4 and the existing Sites film. The latest criticism calls for Vox/BBC-like factual storytelling, a clear viewer payoff, a large and detailed semiconductor cleanroom, video/OEM research, physical action matched to narration, and no recycled shots. The user identified R7 at about 01:42 and 03:20 as partial improvements, not approved reusable footage or an overall acceptance.
+
+CIB-052 IMPLEMENTED_EDITORIAL_JUDGMENT: Follow a wafer carrier through transport, processing, qualification, metrology and delivery. The intended takeaway is that fabless companies access a manufacturing organization, not merely avoid a building; qualified capacity, usable output and customer commitments still have to meet. This thesis and edit are production judgments, not observed audience performance.
+
+CIB-053 IMPLEMENTED_SCOPE: R8 replaces active R1–R7 sets/shots/archive compositions with newly authored material. Prior revisions remain in Git history and immutable delivery snapshots. Official TSMC video frames are research-only, not redistributed. Two separately licensed and explicitly dated photographs are used once each. 3D is a mechanism/architecture reconstruction, not a surveyed factory or certified digital twin.
+
+CIB-054 INHERITED: Preserve the same public Sites audience, English master/recorded narration, Korean/English/off captions, player recovery and evidence links. No new paid service, YouTube publication or access-policy change. Source, build, mechanical checks, actual browser observations and independent audiovisual approval remain separate; deploying an R8 review candidate is not marking the episode READY.

@@ -1,10 +1,10 @@
-import {createCinematicFilm} from './cinematic-director.mjs';
+import {createCinematicFilm} from './fab-director-r8.mjs';
 
 const DATA = JSON.parse(document.getElementById('film-data').textContent);
 const $ = id => document.getElementById(id);
 const clamp = (n, a = 0, b = 1) => Math.max(a, Math.min(b, n));
 const fmt = t => Math.floor(t / 60).toString().padStart(2, '0') + ':' + Math.floor(t % 60).toString().padStart(2, '0');
-const STORAGE_KEY = 'cib-s1e01-r7';
+const STORAGE_KEY = 'cib-s1e01-r8';
 const headless = location.hash === '#headless';
 const qa = new URLSearchParams(location.search).has('qa');
 document.body.classList.toggle('headless', headless);
@@ -113,7 +113,7 @@ function setupCues() {
   let lastChapter = null, lastCue = -10, lastKind = null;
   for (const shot of shots) {
     const chapter = rowById.get(shot.rowId).chapter;
-    const paper = /document|filing|quote|paper|record/.test(shot.kind || '');
+    const paper = /report|filing|commitments/.test(shot.view || '');
     const chapterChange = chapter !== lastChapter;
     if (cueSpecs.length < 15 && (chapterChange || (paper && !/document|filing|quote|paper|record/.test(lastKind || '') && shot.t0 - lastCue >= 10))) {
       const t = shot.t0 + Math.min(.12, (shot.t1 - shot.t0) * .05);
@@ -126,13 +126,13 @@ function setupCues() {
   if (ending && ending.t1 - ending.t0 > .7) cueSpecs.push({t: ending.t0 + .18, kind: 'reveal', length: .6, seed: 761});
   const eventMap=new Map(shots.filter(s=>s.eventClock).map(s=>[s.event,s.eventClock]));
   function action(event,p,kind,length){const e=eventMap.get(event);if(!e||e.p0===e.p1||p<e.p0||p>e.p1)return;const t=e.t0+(p-e.p0)/(e.p1-e.p0)*(e.t1-e.t0);cueSpecs.push({t,kind,length:Math.min(length,duration-t),seed:901+cueSpecs.length,event,p});}
-  action('overflow',.39,'wheels',4.8);action('overflow',.69,'latch',.19);
-  action('assembly',.01,'panel',1.1);action('assembly',.8,'contact',.19);action('assembly',.87,'power',.7);
-  action('repair',.20,'servo',2.8);action('repair',.86,'test-pass',.24);
-  for(let i=0;i<6;i++){action('test',(i+.30)/6,'probe',.12);action('repeat',(i+.70)/6,'test-pass',.12);}
-  action('forecast',.06,'paper',.5);
-  action('capacity',.18,'wheels',4.3);action('capacity',.72,'servo',1.7);
-  action('orders',.61,'wheels',2.5);action('delivery',.61,'wheels',2.4);
+  action('handoff',.005,'wheels',2.9);action('handoff',.23,'servo',4.7);
+  action('handoff',.53,'contact',.15);action('handoff',.61,'latch',.13);
+  action('handoff',.64,'servo',3.3);action('handoff',.87,'wheels',2.0);
+  action('load',.19,'servo',1.8);action('load',.44,'servo',1.6);action('load',.67,'contact',.1);action('load',.75,'servo',1.7);
+  action('process',.04,'pump',3.8);action('measure',.15,'servo',1.2);action('measure',.68,'servo',1.1);
+  action('package',.13,'contact',.1);action('package',.47,'contact',.12);action('package',.82,'contact',.10);
+  for(const shot of shots.filter(s=>s.kind==='spatial'))cueSpecs.push({t:shot.t0,kind:shot.set==='hall'?'air':'room',length:shot.t1-shot.t0,seed:2801+shot.ordinal});
   cueSpecs.sort((a,b)=>a.t-b.t);
 }
 function rng(seed) { return () => { seed = (Math.imul(1664525, seed) + 1013904223) >>> 0; return seed / 4294967296; }; }
@@ -148,6 +148,8 @@ function bakeCue(cue, sr) {
     else if (cue.kind === 'reveal') value = (Math.sin(2 * Math.PI * 196 * t) + .25 * Math.sin(2 * Math.PI * 294 * t)) * .005 * Math.sin(Math.PI * u) ** 2;
     else if(cue.kind==='wheels') value=(filtered*.021+Math.sin(t*45)*.002)*Math.sin(Math.PI*u)**2;
     else if(cue.kind==='servo') value=(Math.sin(2*Math.PI*(160*t+32*t*t))*.0028+filtered*.004)*Math.sin(Math.PI*u)**2;
+    else if(cue.kind==='air'||cue.kind==='room') value=(filtered*.010+Math.sin(2*Math.PI*53*t)*.00055)*(cue.kind==='room'?.45:1)*Math.min(1,t/.25,(cue.length-t)/.25);
+    else if(cue.kind==='pump') value=(Math.sin(2*Math.PI*76*t)*.002+filtered*.007)*Math.sin(Math.PI*u)**2;
     else if(cue.kind==='test-pass') value=Math.sin(2*Math.PI*780*t)*.003*Math.sin(Math.PI*u)**2;
     else if(cue.kind==='power') value=(Math.sin(2*Math.PI*61*t)*.004+filtered*.005)*Math.sin(Math.PI*u)**2;
     else if(cue.kind==='panel') value=(filtered*.024+noise*.002)*Math.sin(Math.PI*u)**2;
@@ -225,7 +227,7 @@ function paintFailure() {
   ctx.fillStyle = '#ece8df'; ctx.fillRect(0, 0, w, h);
   ctx.fillStyle = '#24231f'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
   ctx.font = Math.max(20, Math.round(w / 32)) + 'px Georgia, serif';
-  ctx.fillText('The archive picture is unavailable', w / 2, h * .33);
+  ctx.fillText('The documentary picture is unavailable', w / 2, h * .33);
 }
 function pictureFailed(error) {
   window.__ready = false; archiveState = 'error'; archiveError = String(error?.message || error);
@@ -237,7 +239,7 @@ function pictureFailed(error) {
 function resize() {
   const bounds = $('picture').getBoundingClientRect();
   const dpr = qa ? 1 : Math.min(Number(window.devicePixelRatio) || 1, 1.5);
-  const width = Math.max(2, Math.min(1440, Math.round((bounds.width || 960) * dpr)));
+  const width = Math.max(2, Math.min(1920, Math.round((bounds.width || 960) * dpr)));
   const height = Math.max(2, Math.round(width * 9 / 16));
   const canvas = $('film');
   if (canvas.width !== width || canvas.height !== height) { canvas.width = width; canvas.height = height; }
@@ -272,10 +274,11 @@ function draw(t) {
     $('chapter-index').textContent = String(chapters.indexOf(chapter) + 1).padStart(2, '0') + ' / ' + String(chapters.length).padStart(2, '0');
     const shot = currentShot(current), assetIDs = activeShot.assetIds || shot?.assetIds || [];
     $('frame-kind').textContent = state.kind || activeShot.kind || shot?.kind || 'Archive';
+    $('start').style.display = headless || playing || current > .2 || archiveState === 'error' ? 'none' : 'grid';
     $('frame-credit').textContent = assetIDs.map(id => {
       const asset = creditById.get(id);
       return asset ? asset.title + ' · ' + (asset.date_label || '') : '';
-    }).filter(Boolean).join(' / ') || state.detail || '';
+    }).filter(Boolean).join(' / ') || (typeof state.detail === 'string' ? state.detail : state.detail?.label) || '';
     if (qa && $('scene-diagnostics')) $('scene-diagnostics').textContent = JSON.stringify({...state,shot:undefined}, null, 2);
     setCaption(row, current);
     if (row !== lastRow) {
@@ -294,9 +297,9 @@ function pause(save = true) {
   if (playing && window.__ready && Number.isFinite(narration.currentTime) && !draw(Math.min(narration.currentTime, duration))) return;
   playRequest++; pendingPlay = false; playing = false; buffering = false;
   narration.pause(); stopSfx();
-  $('play').textContent = $('fs-play').textContent = '▶';
+  $('play').textContent = $('fs-play').textContent = 'Play';
   $('play').setAttribute('aria-label', 'Play'); $('fs-play').setAttribute('aria-label', 'Play');
-  $('start').style.display = headless || archiveState === 'error' ? 'none' : 'grid';
+  $('start').style.display = headless || current > .2 || archiveState === 'error' ? 'none' : 'grid';
   $('status').textContent = current >= duration - .02 ? 'Finished · replay available' : 'Paused';
   if (save) persist();
 }
@@ -319,7 +322,7 @@ async function play() {
     await narration.play();
     if (request !== playRequest) return;
     pendingPlay = false; playing = true; buffering = false; startSfx(narration.currentTime);
-    $('play').textContent = $('fs-play').textContent = 'Ⅱ';
+    $('play').textContent = $('fs-play').textContent = 'Pause';
     $('play').setAttribute('aria-label', 'Pause'); $('fs-play').setAttribute('aria-label', 'Pause');
     $('start').style.display = 'none'; $('status').textContent = 'Playing'; $('error').style.display = 'none';
   } catch (error) {
@@ -529,7 +532,7 @@ async function start() {
     await Promise.all([loadArchiveImages(request), loadNarrationFile(), document.fonts?.ready || Promise.resolve()]);
     if (request !== initRequest) return;
     renderer?.dispose?.();
-    renderer = createCinematicFilm({canvas: $('film'), images, script: DATA.script, timeline: DATA.timeline});
+    renderer = createCinematicFilm({canvas: $('film'), images, credits, script: DATA.script, timeline: DATA.timeline});
     if (!renderer || typeof renderer.draw !== 'function') throw new Error('The archive renderer could not initialize');
     validateShots(renderer.shots); shots.splice(0, shots.length, ...renderer.shots); setupCues();
     $('locale').value = $('fs-locale').value = locale; $('seek').max = $('fs-seek').max = duration;
@@ -539,7 +542,8 @@ async function start() {
     for (const id of ['play', 'fs-play', 'big-play']) $(id).disabled = false;
     $('start').style.display = headless ? 'none' : 'grid';
     $('status').textContent = current > 0 ? 'Restored · paused' : 'Ready';
-    $('renderer-status').textContent = renderer.backend;
+    $('renderer-status').textContent = renderer.backend.startsWith('CPU') ? 'Compatibility rendering: GPU unavailable; detail and playback speed are reduced.' : '';
+    $('renderer-status').style.display = renderer.backend.startsWith('CPU') ? 'block' : 'none';
     setMuted(muted);
     if (!loopStarted) { loopStarted = true; requestAnimationFrame(loop); }
   } catch (error) { if (request === initRequest) pictureFailed(error); }

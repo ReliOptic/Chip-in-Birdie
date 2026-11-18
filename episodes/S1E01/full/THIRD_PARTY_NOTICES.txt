@@ -29,7 +29,39 @@ ONNX runtime, or Python packages. It contains a locally generated synthetic
 narration recording; no human narrator impersonation is claimed.
 
 
-R7 CURRENT PICTURE / DELIVERY ADDENDUM — 2026-11-17
+R8 CURRENT PICTURE / DELIVERY ADDENDUM — 2026-11-18
+===================================================
+The active R8 film uses newly authored fab, process, facility and reporting
+scenes, a new local synthetic English recording and these two photographs.
+Earlier R6/R7 assets and notices below are retained as revision history;
+they are not used as R8 shots. Three.js r170 remains active.
+
+[R8-01] Photolithography lab in the LCN cleanroom
+Creator: O. Usher (UCL MAPS) / UCL Faculty of Mathematical and Physical Sciences
+Source: https://commons.wikimedia.org/wiki/File:Photolithography_lab_in_the_LCN_cleanroom.jpg
+License: CC BY 2.0 — https://creativecommons.org/licenses/by/2.0/
+Photographed: 26 June 2013. University research cleanroom, not TSMC.
+
+[R8-02] Takes Big Cranes to Build Cutting Edge Chip Fab
+Creator: Intel Free Press
+Source: https://commons.wikimedia.org/wiki/File:Takes_Big_Cranes_to_Build_Cutting_Edge_Chip_Fab.jpg
+License: CC BY 2.0 — https://creativecommons.org/licenses/by/2.0/
+Photographed: 17 October 2011. Intel D1X construction, Oregon.
+
+Both original JPEG byte streams are preserved. R8's in-film adaptations
+by Chip in Birdie are 16:9 crop, display scaling, slow crop zoom and title,
+date, source and credit overlays. No generative edits were applied.
+Complete source records, hashes, context and license links accompany the
+player in archive-manifest.json. Public licensing does not imply endorsement.
+
+TSMC and Daifuku reference videos were studied for geometry and motion.
+Their footage/frames are not redistributed. The film's 3D is an original
+explanatory reconstruction, not original OEM CAD, surveyed plant footage
+or a certified physical simulation. Internal views are labelled cutaways.
+Vox/BBC are editorial references requested by the director, not producers,
+affiliates or licensors of this original film.
+
+R7 HISTORICAL PICTURE / DELIVERY ADDENDUM — 2026-11-17
 ===================================================
 R7 integrates authored Three.js spatial sequences with the R6 photographic
 and document edit. Three.js r170 is active again. The R6 recording, script,

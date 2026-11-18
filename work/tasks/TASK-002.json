@@ -1,6 +1,6 @@
 {
   "acceptance_evidence": [
-    "PR #4 정본·이전 리비전·기존 사진과 문서를 보존하며 동작→결과가 이어지는 3D 시퀀스를 통합한 동일 S1E01 전체 소스와 자체 포함 HTML",
+    "PR #4 계보와 이전 리비전은 이력에 보존하되 기존 샷·사진을 재사용하지 않는 동일 S1E01 R8 전체 소스와 자체 포함 HTML",
     "실제 영어 음성 샘플에 맞춘 전체 타임라인과 한국어·영어 자막",
     "역사적 선택·고객 관계·제조 원리의 문장별 근거와 해석 한계",
     "정확한 산출물 SHA, 실행 가능한 검증 코드, 실제 검증과 미검증의 구분",
@@ -18,7 +18,7 @@
     "session_id": "chat-20261118-s1e01-r8-fab",
     "session_id_source": "explicit"
   },
-  "current_delivery_id": "TASK-002-r0005",
+  "current_delivery_id": "TASK-002-r0006",
   "episode_id": "H039",
   "history": [
     {
@@ -286,19 +286,27 @@
         "session_id_source": "explicit"
       },
       "event": "CLAIMED"
+    },
+    {
+      "actor": "codex-root-s1e01-r8",
+      "at": "2026-11-18T10:17:59.716693Z",
+      "bundle_sha256": "8e6f70cbe0e89ec06994ffd928988a23512edb731be89f96a8ffe93d6d5bba35",
+      "delivery_id": "TASK-002-r0006",
+      "event": "SUBMITTED",
+      "revision": 6
     }
   ],
-  "objective": "PR #4의 동일 S1E01 전체본과 기존 아카이브 근거를 보존하면서, 주문 회수 후 빈 공장·카드 장착 후 화면 작동·실패 시편 교체와 재검사·설비 투자 후 출하로 이어지는 3D 사건을 구현한다. 동일 사건의 동작은 카메라·문장 컷에서 재시작하지 않으며, 실제 역사와 설명용 공간을 구분한다. 실측 영어 음성·한국어/영어 자막·사진 권리와 근거 UI를 유지하고 현재 공개 범위를 바꾸지 않고 기존 Sites에 배포한다. 독립 시청·청취 승인과 유튜브 출시는 별개로 남긴다.",
+  "objective": "PR #4의 동일 S1E01을 Vox/BBC형 근거 중심 프리미엄 다큐멘터리로 개편한다. 실제 팹 영상과 장비 공개 치수를 연구해 넓은 클린룸, OHT·FOUP·로드포트, 내부 웨이퍼 취급, 선택 공정, 서브팹·계측·패키징을 서로 다른 신규 장면으로 구현한다. 이전 샷·이전 사진은 활성 편집에서 재사용하지 않는다. 팹리스가 얻는 제조 조직 접근과 남는 수율·납기·투자 협업의 의미를 시청자에게 돌려준다. 실측 영어 음성, 한국어/영어 자막, 출처·권리·실사/재구성 구분과 플레이어를 유지하고 같은 Sites URL·현재 공개 범위로 배포한다. 독립 시청·청취 승인, 실제 GPU 및 실기기 품질 검수와 유튜브 출시는 별개다.",
   "release_implication": "none: task completion is not video READY or publication",
   "required_review_roles": [
     "evidence",
     "editorial",
     "viewer"
   ],
-  "revision": 5,
+  "revision": 6,
   "scope": "episode",
-  "status": "CLAIMED",
+  "status": "IN_REVIEW",
   "task_id": "TASK-002",
-  "title": "S1E01 / H039 · PR #4 전체 3D·아카이브 다큐멘터리 R7",
-  "updated_at": "2026-11-18T09:17:24.395696Z"
+  "title": "S1E01 / H039 · PR #4 실제 팹 근거 기반 전체 다큐멘터리 R8",
+  "updated_at": "2026-11-18T10:17:59.716737Z"
 }

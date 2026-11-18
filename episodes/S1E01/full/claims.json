@@ -1,523 +1,539 @@
 {
-  "revision": "S1E01-full-r6",
+  "revision": "S1E01-full-r8",
   "script_file": "script.json",
-  "script_sha256": "50eae44fd3e123e87130d14b0fc2ace165d7d8d207b6a835c838b8b01b65e039",
+  "script_sha256": "7b87d7d8c0f485291a5caad044ea2befe3b0d070447008c4a0f774370bbc3939",
   "source_register": "sources.json",
   "status": "BOUND_TO_LOCKED_SCRIPT_NOT_RELEASE_APPROVED",
-  "maintainer_session": "/root/fresh_viewer",
-  "checked_on": "2026-11-17",
-  "binding": "One row per locked utterance. claim is a short evidence label; the complete EN/KO assertion remains in script.json at utterance_id. Interpretive language is not converted into source testimony.",
+  "checked_on": "2026-11-18",
   "claims": [
     {
-      "id": "R01",
-      "utterance_id": "r01",
-      "kind": "period_company_record",
-      "claim": "Demand for the graphics product",
+      "id": "R8C01",
+      "utterance_id": "f01",
+      "kind": "evidence_based_editorial_explanation",
+      "claim": "장비가 쉬고 있는데도 웨이퍼는 기다려야 할 수 있습니다. 빈 장비라고 해서 이 웨이퍼를 처리할 수 있는 것은 아니기 때문입니다.",
       "sources": [
-        "P02",
-        "P04",
-        "P05"
+        "R8S06"
       ],
-      "locator": "P02: April/August/November 1997; P04: January 1998; P05: 23 February 1998 release.",
-      "limitation": "Demand framing, not a consumer survey or present-day executive-title claim."
+      "locator": "INFICON — The Impact of Tool Qualification on Cycle Time",
+      "limitation": "Modern explanatory reconstruction; not a named plant, actual production status, measured factory cycle time or confidential design."
     },
     {
-      "id": "R02",
-      "utterance_id": "r02",
-      "kind": "period_customer_filing",
-      "claim": "Manufacturing supply constraint",
+      "id": "R8C02",
+      "utterance_id": "f02",
+      "kind": "source_grounded_statement",
+      "claim": "엔비디아 같은 회사에는 이 차이가 중요합니다. 잘 팔릴 칩을 설계하는 일과, 정상 작동하는 칩을 충분히 납품받는 일은 다릅니다.",
       "sources": [
-        "P01"
+        "R8S06",
+        "R8S13"
       ],
-      "locator": "P01: printed pp.11–12 (PDF pp.19–20), third-party manufacturing risk.",
-      "limitation": "No lost-sales amount or counterfactual bankruptcy outcome is established."
+      "locator": "INFICON — The Impact of Tool Qualification on Cycle Time; NVIDIA S-1 — filed 6 March 1998",
+      "limitation": "Modern explanatory reconstruction; not a named plant, actual production status, measured factory cycle time or confidential design."
     },
     {
-      "id": "R03",
-      "utterance_id": "r03",
-      "kind": "period_customer_filing",
-      "claim": "December yield and capacity disclosure",
+      "id": "R8C03",
+      "utterance_id": "f03",
+      "kind": "source_grounded_statement",
+      "claim": "팹리스는 칩을 설계하고, 파운드리는 생산합니다. 그림에서는 깔끔한 분업이지만, 그 사이에는 함께 해결해야 할 일이 많습니다.",
       "sources": [
-        "P01"
+        "R8S01"
       ],
-      "locator": "P01: printed p.12 (PDF p.20), December 1997 example and following capacity sentence.",
-      "limitation": "Yield is dated December; the capacity wording describes the filing's then-current condition."
+      "locator": "ASML — How microchips are made",
+      "limitation": "Modern explanatory reconstruction; not a named plant, actual production status, measured factory cycle time or confidential design."
     },
     {
-      "id": "R04",
-      "utterance_id": "r04",
-      "kind": "editorial_inference",
-      "claim": "Design alone does not assure shipments",
+      "id": "R8C04",
+      "utterance_id": "f04",
+      "kind": "source_grounded_statement",
+      "claim": "현대 반도체 공장에 들어가면 그 규모가 드러납니다. 길게 이어진 생산 구역, 다음 통로 너머의 장비들, 천장을 지나는 운반 레일입니다.",
       "sources": [
-        "P01",
-        "P02"
+        "R8S01",
+        "R8S15",
+        "R8S17",
+        "R8S18"
       ],
-      "locator": "P01: printed pp.11–12; P02: 1997 OEM relationships.",
-      "limitation": "Inference about the stated bottleneck, not proof design improvements have no value."
+      "locator": "ASML — How microchips are made; TSMC — GIGAFAB Facilities",
+      "limitation": "Modern explanatory reconstruction; not a named plant, actual production status, measured factory cycle time or confidential design."
     },
     {
-      "id": "R05",
-      "utterance_id": "r05",
-      "kind": "period_customer_filing",
-      "claim": "Manufacturing partner identity and sequence",
+      "id": "R8C05",
+      "utterance_id": "f05",
+      "kind": "source_grounded_statement",
+      "claim": "방진복, 천장 여과, 관통 바닥과 하부 공급설비",
       "sources": [
-        "P01"
+        "R8S01",
+        "R8S17"
       ],
-      "locator": "P01: printed p.11 (PDF p.19), third-party manufacturing risk.",
-      "limitation": "The disclosed wafer-fab location does not make a package's country marking wafer-provenance proof."
+      "locator": "ASML — How microchips are made",
+      "limitation": "Modern explanatory reconstruction; not a named plant, actual production status, measured factory cycle time or confidential design."
     },
     {
-      "id": "R06",
-      "utterance_id": "r06",
-      "kind": "editorial_bridge",
-      "claim": "Rewind from 1997 to 1985",
+      "id": "R8C06",
+      "utterance_id": "f06",
+      "kind": "source_grounded_statement",
+      "claim": "그렇게 깨끗한 공간에서도 웨이퍼를 노출한 채 운반하지는 않습니다. 보호 용기에 담아 옮깁니다. 이 용기의 이동을 따라가면 분업의 실체가 보입니다.",
       "sources": [
-        "P05",
-        "P08"
+        "R8S01",
+        "R8S02",
+        "R8S19"
       ],
-      "locator": "P05: dated partnership release; P08: printed pp.12–14.",
-      "limitation": "Narrative chronology; it does not establish inevitability or uninterrupted later supply."
+      "locator": "ASML — How microchips are made; Murata Machinery — Transport System",
+      "limitation": "Modern explanatory reconstruction; not a named plant, actual production status, measured factory cycle time or confidential design."
     },
     {
-      "id": "R07",
-      "utterance_id": "r07",
-      "kind": "institutional_history_with_editorial_framing",
-      "claim": "Intel's DRAM withdrawal",
+      "id": "R8C07",
+      "utterance_id": "f07",
+      "kind": "source_grounded_statement",
+      "claim": "천장의 운반차가 용기를 장비의 적재 위치로 가져옵니다. 목적지 위에서 멈춘 뒤, 승강장치로 용기를 내려놓습니다.",
       "sources": [
-        "P13"
+        "R8S02",
+        "R8S19"
       ],
-      "locator": "P13: 10 October 1985 entry and associated internal-publication caption.",
-      "limitation": "DRAM only, not Intel's exit from all memory or all semiconductors."
+      "locator": "Murata Machinery — Transport System",
+      "limitation": "Modern explanatory reconstruction; not a named plant, actual production status, measured factory cycle time or confidential design."
     },
     {
-      "id": "R08",
-      "utterance_id": "r08",
-      "kind": "period_records_with_editorial_inference",
-      "claim": "Competition and excess-capacity context",
+      "id": "R8C08",
+      "utterance_id": "f08",
+      "kind": "source_grounded_statement",
+      "claim": "적재 장치는 용기가 놓였는지 감지하고 고정한 다음, 장비 쪽으로 밀어 붙입니다. 앞문을 여는 동작도 별도로 제어합니다.",
       "sources": [
-        "P14",
-        "P15"
+        "R8S03",
+        "R8S19"
       ],
-      "locator": "P14: printed p.31, Results of Operations; P15: DRAM—Market Shares, April 1987, section p.2.",
-      "limitation": "Japanese leadership is DRAM-specific. The investment conclusion is editorial; PDFs checked through indexed primary text, not rendered scans."
+      "locator": "TDK — TAS300 Type J1 FOUP Load Port",
+      "limitation": "Modern explanatory reconstruction; not a named plant, actual production status, measured factory cycle time or confidential design."
     },
     {
-      "id": "R09",
-      "utterance_id": "r09",
-      "kind": "retrospective_testimony",
-      "claim": "Request for a semiconductor business plan",
+      "id": "R8C09",
+      "utterance_id": "f09",
+      "kind": "source_grounded_statement",
+      "claim": "그다음에야 내부 로봇이 웨이퍼에 접근할 수 있습니다. 운반 자체가 칩을 만드는 것은 아닙니다. 공정을 시작할 위치에 재료를 가져다주는 것입니다.",
       "sources": [
-        "P08"
+        "R8S03"
       ],
-      "locator": "P08: printed pp.9–12, career and K.T. Li's request.",
-      "limitation": "Participant recollection in 2007, not a recording of the 1985 meeting."
+      "locator": "TDK — TAS300 Type J1 FOUP Load Port",
+      "limitation": "Modern explanatory reconstruction; not a named plant, actual production status, measured factory cycle time or confidential design."
     },
     {
-      "id": "R10",
-      "utterance_id": "r10",
-      "kind": "retrospective_testimony",
-      "claim": "Chang's assessment of Taiwan's capabilities",
+      "id": "R8C10",
+      "utterance_id": "f10",
+      "kind": "source_grounded_statement",
+      "claim": "웨이퍼는 역할이 서로 다른 장비를 거치며 변합니다. 얇은 막을 쌓는 장비가 있고, 빛에 반응하는 물질을 표면에 바르는 장비가 있습니다.",
       "sources": [
-        "P08"
+        "R8S04"
       ],
-      "locator": "P08: printed pp.12–13, capabilities comparison.",
-      "limitation": "His historical assessment, not an independent survey or claim that Taiwan lacked an existing industry."
+      "locator": "ASML — Six crucial steps in semiconductor manufacturing",
+      "limitation": "Modern explanatory reconstruction; not a named plant, actual production status, measured factory cycle time or confidential design."
     },
     {
-      "id": "R11",
-      "utterance_id": "r11",
-      "kind": "retrospective_testimony_and_period_record",
-      "claim": "Manufacturing focus and own-brand boundary",
+      "id": "R8C11",
+      "utterance_id": "f11",
+      "kind": "source_grounded_statement",
+      "claim": "노광은 그 감광막에 패턴을 옮깁니다. 현상과 식각 등을 거치며 패턴이 실제 구조로 만들어집니다. 빛을 한 번 비춘다고 완성된 칩이 찍혀 나오지는 않습니다.",
       "sources": [
-        "P08",
-        "P12"
+        "R8S04"
       ],
-      "locator": "P08: printed pp.12–13; P12: Company Profile, charter paragraph.",
-      "limitation": "Potential strength is not proven superiority. The own-brand boundary does not remove every commercial conflict."
+      "locator": "ASML — Six crucial steps in semiconductor manufacturing",
+      "limitation": "Modern explanatory reconstruction; not a named plant, actual production status, measured factory cycle time or confidential design."
     },
     {
-      "id": "R12",
-      "utterance_id": "r12",
-      "kind": "editorial_inference",
-      "claim": "The initial customer problem",
+      "id": "R8C12",
+      "utterance_id": "f12",
+      "kind": "source_grounded_statement",
+      "claim": "처음부터 끝까지 한 번 지나가는 컨베이어벨트도 아닙니다. 다음 층을 만들면서, 웨이퍼는 앞서 거쳤던 종류의 장비를 다시 찾습니다.",
       "sources": [
-        "P08"
+        "R8S01",
+        "R8S05"
       ],
-      "locator": "P08: printed p.13, prospective incumbent customers.",
-      "limitation": "Refers to incumbents in Chang's account, not literally every chip company."
+      "locator": "ASML — How microchips are made; INFICON — Commonly Reported Wafer Fab Cycle Time Contributors",
+      "limitation": "Modern explanatory reconstruction; not a named plant, actual production status, measured factory cycle time or confidential design."
     },
     {
-      "id": "R13",
-      "utterance_id": "r13",
-      "kind": "retrospective_testimony",
-      "claim": "Conditional overflow demand",
+      "id": "R8C13",
+      "utterance_id": "f13",
+      "kind": "source_grounded_statement",
+      "claim": "똑같은 길을 되풀이하는 것처럼 보여도, 바뀐 표면에 새로운 작업을 하는 것입니다. 같은 공장에서도 제품에 따라 필요한 경로가 다릅니다.",
       "sources": [
-        "P08"
+        "R8S01",
+        "R8S05"
       ],
-      "locator": "P08: printed p.13, capacity-dependent orders.",
-      "limitation": "A perceived customer behavior, not a quantified order history."
+      "locator": "ASML — How microchips are made; INFICON — Commonly Reported Wafer Fab Cycle Time Contributors",
+      "limitation": "Modern explanatory reconstruction; not a named plant, actual production status, measured factory cycle time or confidential design."
     },
     {
-      "id": "R14",
-      "utterance_id": "r14",
-      "kind": "editorial_inference",
-      "claim": "Risk of an unstable customer base",
+      "id": "R8C14",
+      "utterance_id": "f14",
+      "kind": "source_grounded_statement",
+      "claim": "수많은 공정이 서로 맞물려야 합니다. 운반차가 빨라지면 장비 사이 이동은 줄일 수 있습니다. 하지만 장비 안에서 해야 할 작업을 건너뛰지는 못합니다.",
       "sources": [
-        "P08"
+        "R8S01",
+        "R8S05"
       ],
-      "locator": "P08: printed p.13.",
-      "limitation": "A conditional risk, not a claim all customers actually disappeared."
+      "locator": "ASML — How microchips are made; INFICON — Commonly Reported Wafer Fab Cycle Time Contributors",
+      "limitation": "Modern explanatory reconstruction; not a named plant, actual production status, measured factory cycle time or confidential design."
     },
     {
-      "id": "R15",
-      "utterance_id": "r15",
-      "kind": "retrospective_testimony",
-      "claim": "Engineers facing a factory-financing barrier",
+      "id": "R8C15",
+      "utterance_id": "f15",
+      "kind": "evidence_based_editorial_explanation",
+      "claim": "이제 비슷한 장비 두 대를 보겠습니다. 특정 작업에는 이 웨이퍼를 한 대에만 투입할 수 있습니다. 다른 한 대는 아직 그 작업에 쓸 수 있는지 검증되지 않은 것입니다.",
       "sources": [
-        "P08"
+        "R8S06"
       ],
-      "locator": "P08: printed p.13, designers seeking independence.",
-      "limitation": "An expectation, not evidence of a ready market or identification of particular photographed people."
+      "locator": "INFICON — The Impact of Tool Qualification on Cycle Time",
+      "limitation": "Modern explanatory reconstruction; not a named plant, actual production status, measured factory cycle time or confidential design."
     },
     {
-      "id": "R16",
-      "utterance_id": "r16",
-      "kind": "retrospective_testimony",
-      "claim": "Founding investor groups",
+      "id": "R8C16",
+      "utterance_id": "f16",
+      "kind": "evidence_based_editorial_explanation",
+      "claim": "여기서 검증이란 단순히 전원이 켜진다는 뜻이 아닙니다. 해당 작업에 사용할 수 있다는 뜻입니다. 어떤 제품을 처리하는 장비라도 다른 제품에는 쓸 수 없을 수 있습니다.",
       "sources": [
-        "P09"
+        "R8S06"
       ],
-      "locator": "P09: printed p.3, initial-capital discussion.",
-      "limitation": "Historical investor groups; not the current ownership structure."
+      "locator": "INFICON — The Impact of Tool Qualification on Cycle Time",
+      "limitation": "Modern explanatory reconstruction; not a named plant, actual production status, measured factory cycle time or confidential design."
     },
     {
-      "id": "R17",
-      "utterance_id": "r17",
-      "kind": "retrospective_testimony",
-      "claim": "Approximate initial capital",
+      "id": "R8C17",
+      "utterance_id": "f17",
+      "kind": "evidence_based_editorial_explanation",
+      "claim": "사용 가능한 장비가 정비에 들어가면, 용기를 빨리 옮겨도 대기는 해결되지 않습니다. 적합한 다른 장비를 검증하면 대체 경로가 생길 수 있습니다.",
       "sources": [
-        "P09"
+        "R8S06",
+        "R8S07"
       ],
-      "locator": "P09: printed p.3.",
-      "limitation": "Attributed approximate recollection, not a newly audited capitalization table or inflation-adjusted sum."
+      "locator": "INFICON — The Impact of Tool Qualification on Cycle Time; INFICON — The Three Fundamental Drivers of Fab Cycle Time",
+      "limitation": "Modern explanatory reconstruction; not a named plant, actual production status, measured factory cycle time or confidential design."
     },
     {
-      "id": "R18",
-      "utterance_id": "r18",
-      "kind": "institutional_retrospective",
-      "claim": "Transfer of a manufacturing foundation",
+      "id": "R8C18",
+      "utterance_id": "f18",
+      "kind": "evidence_based_editorial_explanation",
+      "claim": "그렇다고 모든 장비에 일을 최대한 밀어 넣으면 또 다른 문제가 생깁니다. 만회할 여유가 적을수록 입고·처리시간·고장의 변동이 대기로 쌓일 수 있습니다.",
       "sources": [
-        "P10"
+        "R8S07"
       ],
-      "locator": "P10: narrative paragraph beginning with the 1986 Philips collaboration, 1987 spin-off.",
-      "limitation": "Later institutional history, not contemporaneous transfer minutes."
+      "locator": "INFICON — The Three Fundamental Drivers of Fab Cycle Time",
+      "limitation": "Modern explanatory reconstruction; not a named plant, actual production status, measured factory cycle time or confidential design."
     },
     {
-      "id": "R19",
-      "utterance_id": "r19",
-      "kind": "institutional_record_with_editorial_inference",
-      "claim": "1987 start and the remaining business task",
+      "id": "R8C19",
+      "utterance_id": "f19",
+      "kind": "evidence_based_editorial_explanation",
+      "claim": "구분해야 할 지표가 둘 있습니다. 한 웨이퍼가 생산을 끝낼 때까지 걸리는 시간, 그리고 일정 기간 공장이 완성하는 물량입니다. 같은 지표가 아닙니다.",
       "sources": [
-        "P10",
-        "P12"
+        "R8S05",
+        "R8S07"
       ],
-      "locator": "P10: 1987 spin-off paragraph; P12: opening Company Profile paragraph.",
-      "limitation": "The date is recorded; dependable business is an editorial distinction, not a measured reliability score."
+      "locator": "INFICON — Commonly Reported Wafer Fab Cycle Time Contributors; INFICON — The Three Fundamental Drivers of Fab Cycle Time",
+      "limitation": "Modern explanatory reconstruction; not a named plant, actual production status, measured factory cycle time or confidential design."
     },
     {
-      "id": "R20",
-      "utterance_id": "r20",
-      "kind": "editorial_inference",
-      "claim": "Separating product investment from fab ownership",
+      "id": "R8C20",
+      "utterance_id": "f20",
+      "kind": "evidence_based_editorial_explanation",
+      "claim": "장비를 늘리면 분명 도움이 될 수 있습니다. 고장을 줄이고 일정을 개선하는 것도 중요합니다. 핵심은 그 투자가 실제로 어느 제약을 없애느냐입니다.",
       "sources": [
-        "P08",
-        "P10",
-        "P12"
+        "R8S06",
+        "R8S07"
       ],
-      "locator": "P08: printed p.13; P10: IC design-company commissioning paragraph; P12: foundry scope.",
-      "limitation": "Qualitative capital boundary; no numerical saving, zero-capital claim, or promise of lower wafer prices."
+      "locator": "INFICON — The Impact of Tool Qualification on Cycle Time; INFICON — The Three Fundamental Drivers of Fab Cycle Time",
+      "limitation": "Modern explanatory reconstruction; not a named plant, actual production status, measured factory cycle time or confidential design."
     },
     {
-      "id": "R21",
-      "utterance_id": "r21",
-      "kind": "editorial_synthesis",
-      "claim": "The demand-and-trust gamble",
+      "id": "R8C21",
+      "utterance_id": "f21",
+      "kind": "evidence_based_editorial_explanation",
+      "claim": "그래서 건물 완공, 장비 설치, 내 칩을 생산할 준비는 서로 다른 단계입니다. 공장을 짓는다는 발표 하나로 이 단계들이 동시에 끝나지는 않습니다.",
       "sources": [
-        "P08",
-        "P10"
+        "R8S06",
+        "R8S14"
       ],
-      "locator": "P08: printed pp.13–14; P10: spin-off and design-company account.",
-      "limitation": "Interpretation, not a verbatim investment thesis or prediction of NVIDIA."
+      "locator": "INFICON — The Impact of Tool Qualification on Cycle Time; TSMC — Quality Policy",
+      "limitation": "Modern explanatory reconstruction; not a named plant, actual production status, measured factory cycle time or confidential design."
     },
     {
-      "id": "R22",
-      "utterance_id": "r22",
-      "kind": "retrospective_testimony",
-      "claim": "Difficult first four years",
+      "id": "R8C22",
+      "utterance_id": "f22",
+      "kind": "source_grounded_statement",
+      "claim": "조건은 하나 더 있습니다. 나온 칩이 제대로 작동해야 합니다. 공정 관리는 웨이퍼가 이동하는 동안 제조 조건이 허용 범위 안에 있는지 확인합니다.",
       "sources": [
-        "P09"
+        "R8S08",
+        "R8S14"
       ],
-      "locator": "P09: printed p.4, 1987–1990 discussion.",
-      "limitation": "Retrospective characterization; no continuous four-year loss claim."
+      "locator": "TSMC — Engineering Performance Optimization; TSMC — Quality Policy",
+      "limitation": "Modern explanatory reconstruction; not a named plant, actual production status, measured factory cycle time or confidential design."
     },
     {
-      "id": "R23",
-      "utterance_id": "r23",
-      "kind": "editorial_bridge",
-      "claim": "Customer formation and the PC opportunity",
+      "id": "R8C23",
+      "utterance_id": "f23",
+      "kind": "source_grounded_statement",
+      "claim": "측정과 검사는 편차와 결함을 찾는 데 쓰입니다. 엔지니어는 그 증거로 원인을 조사하고 공정을 조정합니다. 무조건 속도부터 올리는 것이 아닙니다.",
       "sources": [
-        "P09",
-        "P16"
+        "R8S08"
       ],
-      "locator": "P09: printed p.4; P16: Architecture section.",
-      "limitation": "The queue is figurative; the PC transition spans years, not one simultaneous event."
+      "locator": "TSMC — Engineering Performance Optimization",
+      "limitation": "Modern explanatory reconstruction; not a named plant, actual production status, measured factory cycle time or confidential design."
     },
     {
-      "id": "R24",
-      "utterance_id": "r24",
-      "kind": "institutional_retrospective",
-      "claim": "IBM PC architecture and complementary products",
+      "id": "R8C24",
+      "utterance_id": "f24",
+      "kind": "source_grounded_statement",
+      "claim": "설계가 그 공정에서 구현되는 방식이 문제일 수도 있습니다. 화면에서 올바르게 보이는 패턴도 실제로 반복 생산할 수 있어야 합니다.",
       "sources": [
-        "P16"
+        "R8S09",
+        "R8S13"
       ],
-      "locator": "P16: Architecture section, technical-reference and peripheral-development paragraph.",
-      "limitation": "Not a claim IBM invented the first PC or alone caused TSMC's growth."
+      "locator": "TSMC — What is DTCO?; NVIDIA S-1 — filed 6 March 1998",
+      "limitation": "Modern explanatory reconstruction; not a named plant, actual production status, measured factory cycle time or confidential design."
     },
     {
-      "id": "R25",
-      "utterance_id": "r25",
-      "kind": "company_historical_record",
-      "claim": "RIVA 128 and PC relationships",
+      "id": "R8C25",
+      "utterance_id": "f25",
+      "kind": "source_grounded_statement",
+      "claim": "설계 규칙과 제조 조건은 함께 다듬어집니다. TSMC는 성능 목표를 만족하면서도 높은 수율로 생산할 조합을 찾기 위해 반복해서 조정한다고 설명합니다.",
       "sources": [
-        "P02"
+        "R8S09"
       ],
-      "locator": "P02: April, August and November 1997 entries.",
-      "limitation": "OEM relationships are not all direct chip purchasers; board makers remain part of the chain."
+      "locator": "TSMC — What is DTCO?",
+      "limitation": "Modern explanatory reconstruction; not a named plant, actual production status, measured factory cycle time or confidential design."
     },
     {
-      "id": "R26",
-      "utterance_id": "r26",
-      "kind": "editorial_inference",
-      "claim": "Design wins versus overflow-only business",
+      "id": "R8C26",
+      "utterance_id": "f26",
+      "kind": "source_grounded_statement",
+      "claim": "문제를 찾아냈다고 이미 영향을 받은 칩이 모두 복구되는 것은 아닙니다. 우선 확산을 막고 원인을 조사한 뒤, 이후 처리 조건을 바꿀 수 있습니다.",
       "sources": [
-        "P02",
-        "P08",
-        "P12"
+        "R8S08",
+        "R8S14"
       ],
-      "locator": "P02: August 1997; P08: printed p.13; P12: Company Profile.",
-      "limitation": "NVIDIA is not TSMC's first customer; no exact order volume or exclusive relationship is inferred."
+      "locator": "TSMC — Engineering Performance Optimization; TSMC — Quality Policy",
+      "limitation": "Modern explanatory reconstruction; not a named plant, actual production status, measured factory cycle time or confidential design."
     },
     {
-      "id": "R27",
-      "utterance_id": "r27",
-      "kind": "retrospective_testimony_with_editorial_synthesis",
-      "claim": "Early fabless growth preceded NVIDIA",
+      "id": "R8C27",
+      "utterance_id": "f27",
+      "kind": "source_grounded_statement",
+      "claim": "고객도 출하만 기다리는 것이 아니라 이 작업을 파악해야 합니다. TSMC가 공개한 eFoundry 설명에는 그 연결이 구체적으로 드러납니다.",
       "sources": [
-        "P09"
+        "R8S10"
       ],
-      "locator": "P09: printed p.4, early-1990s growth discussion.",
-      "limitation": "NVIDIA arrived later, not as the first customer. The final sentence is editorial synthesis."
+      "locator": "TSMC — eFoundry",
+      "limitation": "Modern explanatory reconstruction; not a named plant, actual production status, measured factory cycle time or confidential design."
     },
     {
-      "id": "R28",
-      "utterance_id": "r28",
-      "kind": "period_press_release",
-      "claim": "1998 partnership announcement",
+      "id": "R8C28",
+      "utterance_id": "f28",
+      "kind": "source_grounded_statement",
+      "claim": "설계 협업에는 기술 정보가, 엔지니어링 협업에는 시험 생산·수율·신뢰성 데이터가 들어갑니다. 물류 협업은 제조부터 조립·검사·출하까지의 진행 상태를 다룹니다.",
       "sources": [
-        "P05",
-        "P04"
+        "R8S10"
       ],
-      "locator": "P05: 23 February 1998, opening three release paragraphs; P04: March 1998 entry.",
-      "limitation": "Announcement dates differ by month; narration uses 1998. Not proof every 128ZX unit was TSMC-made."
+      "locator": "TSMC — eFoundry",
+      "limitation": "Modern explanatory reconstruction; not a named plant, actual production status, measured factory cycle time or confidential design."
     },
     {
-      "id": "R29",
-      "utterance_id": "r29",
-      "kind": "period_records_with_editorial_inference",
-      "claim": "Capacity expansion alongside ST",
+      "id": "R8C29",
+      "utterance_id": "f29",
+      "kind": "evidence_based_editorial_explanation",
+      "claim": "회사 경계에서 기술 업무가 끝나는 것은 아닙니다. 필요한 정보와 책임, 의사결정을 그 경계 너머로 어떻게 연결할지가 달라집니다.",
       "sources": [
-        "P05",
-        "P01"
+        "R8S09",
+        "R8S10"
       ],
-      "locator": "P05: expansion-beyond-SGS-THOMSON paragraph; P01: printed pp.11–12 and ST relationship section.",
-      "limitation": "No claim of instant ST replacement or that TSMC made the original 1997 RIVA 128."
+      "locator": "TSMC — What is DTCO?; TSMC — eFoundry",
+      "limitation": "Modern explanatory reconstruction; not a named plant, actual production status, measured factory cycle time or confidential design."
     },
     {
-      "id": "R30",
-      "utterance_id": "r30",
-      "kind": "period_customer_filing",
-      "claim": "Conditional wafer-payment exposure",
+      "id": "R8C30",
+      "utterance_id": "f30",
+      "kind": "evidence_based_editorial_explanation",
+      "claim": "설계자가 제조를 몰라도 된다는 것이 장점은 아닙니다. 전문 제조 조직과 그 설계 생태계를 직접 소유하지 않고도 활용할 수 있다는 것입니다.",
       "sources": [
-        "P01"
+        "R8S10",
+        "R8S16"
       ],
-      "locator": "P01: printed p.25 (PDF p.33), production-yield stabilization paragraph.",
-      "limitation": "Specific early terms, not a universal foundry pricing rule or measured loss."
+      "locator": "TSMC — eFoundry; TSMC — Open Innovation Platform",
+      "limitation": "Modern explanatory reconstruction; not a named plant, actual production status, measured factory cycle time or confidential design."
     },
     {
-      "id": "R31",
-      "utterance_id": "r31",
-      "kind": "technical_explanation_with_editorial_inference",
-      "claim": "Usable output matters financially",
+      "id": "R8C31",
+      "utterance_id": "f31",
+      "kind": "source_grounded_statement",
+      "claim": "1987년 TSMC가 출범하며 내건 사업은 그것이었습니다. 다른 회사의 칩을 생산하되, 자기 상표의 칩으로 그 고객과 경쟁하지 않는 것입니다.",
       "sources": [
-        "P01",
-        "P18"
+        "R8S11"
       ],
-      "locator": "P01: printed p.25; P18: E-beam metrology and inspection.",
-      "limitation": "General defect mechanism; no diagnosis, defect size or yield percentage for the 1997 incident."
+      "locator": "TSMC Annual Report 1997 — Company Profile",
+      "limitation": "Historical statements retain dates; no current contract term is implied."
     },
     {
-      "id": "R32",
-      "utterance_id": "r32",
-      "kind": "general_technical_explanation",
-      "claim": "Design–process interaction",
+      "id": "R8C32",
+      "utterance_id": "f32",
+      "kind": "source_grounded_statement",
+      "claim": "10년 뒤 연차보고서는 그 목표를 가상 팹이라고 불렀습니다. 자체 공장을 운영하는 비용과 조직 부담 없이 제조 역량을 이용하게 하겠다는 뜻입니다.",
       "sources": [
-        "P19"
+        "R8S11"
       ],
-      "locator": "P19: process-window and design-rule coordination paragraphs.",
-      "limitation": "Modern explanation of a general mechanism; not evidence 1997 used a named modern DTCO workflow."
+      "locator": "TSMC Annual Report 1997 — Company Profile",
+      "limitation": "Historical statements retain dates; no current contract term is implied."
     },
     {
-      "id": "R33",
-      "utterance_id": "r33",
-      "kind": "period_company_release",
-      "claim": "Customer pilot work before the partnership",
+      "id": "R8C33",
+      "utterance_id": "f33",
+      "kind": "source_grounded_statement",
+      "claim": "설계 회사는 제품과 고객에 집중할 수 있습니다. 파운드리는 한 제품에만 모든 것을 거는 대신, 여러 고객을 위한 제조 역량을 구축할 수 있습니다.",
       "sources": [
-        "P17"
+        "R8S11",
+        "R8S16"
       ],
-      "locator": "P17: 19 June 1996 release, Don Brooks paragraphs.",
-      "limitation": "SRAM case, not a NVIDIA graphics-chip yield or an identical manufacturing process."
+      "locator": "TSMC Annual Report 1997 — Company Profile; TSMC — Open Innovation Platform",
+      "limitation": "Historical statements retain dates; no current contract term is implied."
     },
     {
-      "id": "R34",
-      "utterance_id": "r34",
-      "kind": "editorial_inference",
-      "claim": "Repeatable production as the business benefit",
+      "id": "R8C34",
+      "utterance_id": "f34",
+      "kind": "source_grounded_statement",
+      "claim": "공장 비용이 사라진 것은 아닙니다. 공장을 소유한 쪽에는 주문이 필요했습니다. TSMC는 1996년에 맺은 생산능력 옵션 계약이 이듬해 주문 안정에 기여했다고 기록했습니다.",
       "sources": [
-        "P17",
-        "P19",
-        "P12"
+        "R8S11",
+        "R8S12"
       ],
-      "locator": "P17: customer pilot work; P19: process-window iteration; P12: manufacturing-service scope.",
-      "limitation": "Interpretation of service value, not a quoted customer motive, contract deliverable or guaranteed result."
+      "locator": "TSMC Annual Report 1997 — Company Profile; TSMC Annual Report 1997 — Marketing and Sales",
+      "limitation": "Historical statements retain dates; no current contract term is implied."
     },
     {
-      "id": "R35",
-      "utterance_id": "r35",
-      "kind": "retrospective_customer_testimony",
-      "claim": "A later customer visit",
+      "id": "R8C35",
+      "utterance_id": "f35",
+      "kind": "evidence_based_editorial_explanation",
+      "claim": "그때그때 비어 있는 기계만 빌리는 거래는 아니었습니다. 고객의 예상 물량과 제조사의 투자 판단이 납품일보다 앞서 맞물려야 했습니다.",
       "sources": [
-        "P09"
+        "R8S12"
       ],
-      "locator": "P09: printed p.6, Friday-afternoon visit recollection.",
-      "limitation": "A later visit recalled in 2007, separate from the 1997 meeting on p.5."
+      "locator": "TSMC Annual Report 1997 — Marketing and Sales",
+      "limitation": "Historical statements retain dates; no current contract term is implied."
     },
     {
-      "id": "R36",
-      "utterance_id": "r36",
-      "kind": "retrospective_testimony_with_editorial_inference",
-      "claim": "Demand notes and checked calculations",
+      "id": "R8C36",
+      "utterance_id": "f36",
+      "kind": "source_grounded_statement",
+      "claim": "고객 쪽의 위험은 엔비디아의 1998년 상장신고서에서 보입니다. 전년 12월 ST의 낮은 수율을 기록했고, 신고서 제출 당시에도 제조 파트너의 생산능력이 부족하다고 밝혔습니다.",
       "sources": [
-        "P09"
+        "R8S13"
       ],
-      "locator": "P09: printed p.6, black-book recollection.",
-      "limitation": "No notebook artifact or verbatim dialogue is reproduced; consequences is editorial framing."
+      "locator": "NVIDIA S-1 — filed 6 March 1998",
+      "limitation": "Historical statements retain dates; no current contract term is implied."
     },
     {
-      "id": "R37",
-      "utterance_id": "r37",
-      "kind": "retrospective_testimony",
-      "claim": "Reinvestment and flexible allocation",
+      "id": "R8C37",
+      "utterance_id": "f37",
+      "kind": "source_grounded_statement",
+      "claim": "TSMC는 엔비디아 제품 생산을 막 시작한 상태였습니다. 수율이 안정될 때까지는 수율과 무관하게 웨이퍼 값을 지불해야 한다고 밝혔습니다. 당시의 특정 조건이지, 모든 계약에 적용되는 조건은 아닙니다.",
       "sources": [
-        "P09"
+        "R8S13"
       ],
-      "locator": "P09: printed p.7, capacity-building and growing-customer discussion.",
-      "limitation": "Company founder's account, not a customer-level allocation dataset."
+      "locator": "NVIDIA S-1 — filed 6 March 1998",
+      "limitation": "Historical statements retain dates; no current contract term is implied."
     },
     {
-      "id": "R38",
-      "utterance_id": "r38",
-      "kind": "editorial_inference",
-      "claim": "Investment planning around customers",
+      "id": "R8C38",
+      "utterance_id": "f38",
+      "kind": "source_grounded_statement",
+      "claim": "같은 문서는 수율 문제가 설계나 공정에서 생길 수 있고, 해결에는 협력이 필요하다고 설명합니다. 공장이 없다고 제조 실패가 전부 남의 문제가 되지는 않았습니다.",
       "sources": [
-        "P09"
+        "R8S13"
       ],
-      "locator": "P09: printed pp.6–7.",
-      "limitation": "Interpretation, not a separate quotation or claim about an exact forecast."
+      "locator": "NVIDIA S-1 — filed 6 March 1998",
+      "limitation": "Historical statements retain dates; no current contract term is implied."
     },
     {
-      "id": "R39",
-      "utterance_id": "r39",
-      "kind": "period_joint_company_release",
-      "claim": "The 2006 production milestone",
+      "id": "R8C39",
+      "utterance_id": "f39",
+      "kind": "source_grounded_statement",
+      "claim": "웨이퍼가 완성돼도 아직 우리가 쓰는 제품은 아닙니다. 절단과 패키징, 검사를 거쳐야 그 회로를 사용할 수 있는 형태가 됩니다.",
       "sources": [
-        "P06"
+        "R8S04",
+        "R8S10"
       ],
-      "locator": "P06: 24 October 2006, opening and high-volume-production paragraphs.",
-      "limitation": "Company-reported count, not an independent audit. Processors include more than GPUs."
+      "locator": "ASML — Six crucial steps in semiconductor manufacturing; TSMC — eFoundry",
+      "limitation": "Modern explanatory reconstruction; not a named plant, actual production status, measured factory cycle time or confidential design."
     },
     {
-      "id": "R40",
-      "utterance_id": "r40",
-      "kind": "editorial_synthesis",
-      "claim": "A sustained, multi-product relationship",
+      "id": "R8C40",
+      "utterance_id": "f40",
+      "kind": "evidence_based_editorial_explanation",
+      "claim": "다음 단계로 넘길 때마다 물건과 정보가 함께 전달돼야 합니다. 출하한 것은 다음 회사가 받기로 한 조건과 맞아야 합니다.",
       "sources": [
-        "P05",
-        "P06"
+        "R8S10",
+        "R8S13"
       ],
-      "locator": "P05: 1998 partnership release; P06: 2006 milestone and product categories.",
-      "limitation": "No attribution of all NVIDIA growth to one supplier or proof success was inevitable."
+      "locator": "TSMC — eFoundry; NVIDIA S-1 — filed 6 March 1998",
+      "limitation": "Modern explanatory reconstruction; not a named plant, actual production status, measured factory cycle time or confidential design."
     },
     {
-      "id": "R41",
-      "utterance_id": "r41",
-      "kind": "editorial_synthesis",
-      "claim": "Product, design and delivery together",
+      "id": "R8C41",
+      "utterance_id": "f41",
+      "kind": "evidence_based_editorial_explanation",
+      "claim": "이제 처음 질문에 답할 수 있습니다. 주문이 늘었다고 검증된 생산 경로와 정상 칩, 실제 납품이 곧바로 늘어나는 것은 아닙니다.",
       "sources": [
-        "P02",
-        "P17",
-        "P06"
+        "R8S06",
+        "R8S10",
+        "R8S14"
       ],
-      "locator": "P02: product/OEM history; P17: production work; P06: manufactured-processor milestone.",
-      "limitation": "A chip foundry is not thereby the assembler of the finished graphics card."
+      "locator": "INFICON — The Impact of Tool Qualification on Cycle Time; TSMC — eFoundry; TSMC — Quality Policy",
+      "limitation": "Modern explanatory reconstruction; not a named plant, actual production status, measured factory cycle time or confidential design."
     },
     {
-      "id": "R42",
-      "utterance_id": "r42",
-      "kind": "editorial_synthesis",
-      "claim": "Interdependence and an emerging customer class",
+      "id": "R8C42",
+      "utterance_id": "f42",
+      "kind": "evidence_based_editorial_explanation",
+      "claim": "제조사는 필요한 생산능력을 늘리고 공정을 안정시키며 흐름을 맞춰야 합니다. 설계사는 생산 가능한 제품을 준비하고, 양산 과정에도 계속 참여해야 합니다.",
       "sources": [
-        "P08",
-        "P12",
-        "P06"
+        "R8S07",
+        "R8S08",
+        "R8S10"
       ],
-      "locator": "P08: printed pp.13–14; P12: service scope; P06: joint milestone.",
-      "limitation": "Not a claim no fabless firms existed, or that two firms alone supplied every card component."
+      "locator": "INFICON — The Three Fundamental Drivers of Fab Cycle Time; TSMC — Engineering Performance Optimization; TSMC — eFoundry",
+      "limitation": "Modern explanatory reconstruction; not a named plant, actual production status, measured factory cycle time or confidential design."
     },
     {
-      "id": "R43",
-      "utterance_id": "r43",
-      "kind": "editorial_conclusion",
-      "claim": "NVIDIA became one of the customers",
+      "id": "R8C43",
+      "utterance_id": "f43",
+      "kind": "evidence_based_editorial_explanation",
+      "claim": "설계와 제조를 한 회사 안에 두는 방식도 유효합니다. 파운드리 모델은 다른 길을 열었습니다. 이 거대한 체계를 먼저 짓지 않고도 칩 사업에 진입할 수 있는 길입니다.",
       "sources": [
-        "P05",
-        "P06",
-        "P09"
+        "R8S01",
+        "R8S11"
       ],
-      "locator": "P05: 1998 release; P06: 2006 milestone; P09: printed p.4.",
-      "limitation": "One later customer, not the first or the sole reason the model succeeded."
+      "locator": "ASML — How microchips are made; TSMC Annual Report 1997 — Company Profile",
+      "limitation": "Modern explanatory reconstruction; not a named plant, actual production status, measured factory cycle time or confidential design."
     },
     {
-      "id": "R44",
-      "utterance_id": "r44",
-      "kind": "editorial_conclusion",
-      "claim": "Shared production responsibility",
+      "id": "R8C44",
+      "utterance_id": "f44",
+      "kind": "evidence_based_editorial_explanation",
+      "claim": "다음에 새 반도체 공장 뉴스를 보면 건물 너머를 보십시오. 실제로 어떤 제품을, 어느 품질로, 언제부터 만들 수 있는지를 물어야 합니다.",
       "sources": [
-        "P17",
-        "P19",
-        "P09"
+        "R8S06",
+        "R8S08",
+        "R8S14"
       ],
-      "locator": "P17: pilot cooperation; P19: design–process coordination; P09: printed pp.6–7.",
-      "limitation": "General closing insight, not a claim the same 1997 fault persists or evidence of a current outage."
+      "locator": "INFICON — The Impact of Tool Qualification on Cycle Time; TSMC — Engineering Performance Optimization; TSMC — Quality Policy",
+      "limitation": "Modern explanatory reconstruction; not a named plant, actual production status, measured factory cycle time or confidential design."
+    },
+    {
+      "id": "R8C45",
+      "utterance_id": "f45",
+      "kind": "evidence_based_editorial_explanation",
+      "claim": "팹리스는 공장을 누가 소유하는지를 바꿨습니다. 공장 안의 일을 없앤 것이 아닙니다. 다른 회사가 그 제조 역량을 믿고 자기 사업을 키울 수 있게 만든 것입니다.",
+      "sources": [
+        "R8S10",
+        "R8S11",
+        "R8S13"
+      ],
+      "locator": "TSMC — eFoundry; TSMC Annual Report 1997 — Company Profile; NVIDIA S-1 — filed 6 March 1998",
+      "limitation": "Modern explanatory reconstruction; not a named plant, actual production status, measured factory cycle time or confidential design."
     }
   ]
 }

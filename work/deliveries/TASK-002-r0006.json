@@ -1,0 +1,205 @@
+{
+  "artifacts": [
+    {
+      "path": "episodes/S1E01/full/R8_FAB_EVIDENCE.md",
+      "sha256": "15ba0f9fba0299d8b8c666d79b36b52da5c95031b7cac7f71866474288930d6c",
+      "size_bytes": 10886,
+      "snapshot_path": "work/deliveries/TASK-002-r0006/artifacts/episodes/S1E01/full/R8_FAB_EVIDENCE.md"
+    },
+    {
+      "path": "episodes/S1E01/full/README.md",
+      "sha256": "9bb9006036c07b8f06b11589106c5e66a61a48e98e31252616163078962a5a3e",
+      "size_bytes": 6545,
+      "snapshot_path": "work/deliveries/TASK-002-r0006/artifacts/episodes/S1E01/full/README.md"
+    },
+    {
+      "path": "episodes/S1E01/full/THIRD_PARTY_NOTICES.txt",
+      "sha256": "d6c07dd7bb052711ada1ec19b494305efec48376bfe1b0b95a83409e0517eaf0",
+      "size_bytes": 24071,
+      "snapshot_path": "work/deliveries/TASK-002-r0006/artifacts/episodes/S1E01/full/THIRD_PARTY_NOTICES.txt"
+    },
+    {
+      "path": "episodes/S1E01/full/archive-manifest-r8.json",
+      "sha256": "5d9e651224bcfc5704fad15477def4fe7e51d7ae0d26f3028758802a9c764341",
+      "size_bytes": 6568,
+      "snapshot_path": "work/deliveries/TASK-002-r0006/artifacts/episodes/S1E01/full/archive-manifest-r8.json"
+    },
+    {
+      "path": "episodes/S1E01/full/build.mjs",
+      "sha256": "aeab75abba9632fec22f60a39b81b0b6e9e97ba91eb065bdef8686de129fcd4b",
+      "size_bytes": 13115,
+      "snapshot_path": "work/deliveries/TASK-002-r0006/artifacts/episodes/S1E01/full/build.mjs"
+    },
+    {
+      "path": "episodes/S1E01/full/claims.json",
+      "sha256": "26dedd0bb96c302a22a34ad8be592a6b741cc9a0aa38ba0ea33f90e42d387126",
+      "size_bytes": 27650,
+      "snapshot_path": "work/deliveries/TASK-002-r0006/artifacts/episodes/S1E01/full/claims.json"
+    },
+    {
+      "path": "episodes/S1E01/full/fab-director-r8.mjs",
+      "sha256": "25472d516560380f80dcca6764c47b59848d1a7a1dfa3225f762d6f9068ea97f",
+      "size_bytes": 10436,
+      "snapshot_path": "work/deliveries/TASK-002-r0006/artifacts/episodes/S1E01/full/fab-director-r8.mjs"
+    },
+    {
+      "path": "episodes/S1E01/full/fab-editorial-r8.mjs",
+      "sha256": "0de3d460c70cbaf9720e0c22e90cccc3233ce1c520335b89d10fcc708763d71b",
+      "size_bytes": 27775,
+      "snapshot_path": "work/deliveries/TASK-002-r0006/artifacts/episodes/S1E01/full/fab-editorial-r8.mjs"
+    },
+    {
+      "path": "episodes/S1E01/full/fab-facility-r8.mjs",
+      "sha256": "a3ec89b6286ee8d64fb2c23eaddf10ed19d29187cea80bfed9328e043eb6b0c1",
+      "size_bytes": 24164,
+      "snapshot_path": "work/deliveries/TASK-002-r0006/artifacts/episodes/S1E01/full/fab-facility-r8.mjs"
+    },
+    {
+      "path": "episodes/S1E01/full/fab-hall-r8.mjs",
+      "sha256": "b02fee313b64ae70bef6fe25f4525bc49e7e5c11b0fa6a0a2d8b518725e20a5f",
+      "size_bytes": 13903,
+      "snapshot_path": "work/deliveries/TASK-002-r0006/artifacts/episodes/S1E01/full/fab-hall-r8.mjs"
+    },
+    {
+      "path": "episodes/S1E01/full/fab-hardware-r8.mjs",
+      "sha256": "5387c57fb8a32a1f561ea2b32fb0182ae2e2a86d4fe19e8d7313067f580a0808",
+      "size_bytes": 21992,
+      "snapshot_path": "work/deliveries/TASK-002-r0006/artifacts/episodes/S1E01/full/fab-hardware-r8.mjs"
+    },
+    {
+      "path": "episodes/S1E01/full/fab-process-r8.mjs",
+      "sha256": "2ba654b0d388c470be1c5f9b625d7e7b192e0aeb1d164e196bb19906af735105",
+      "size_bytes": 21073,
+      "snapshot_path": "work/deliveries/TASK-002-r0006/artifacts/episodes/S1E01/full/fab-process-r8.mjs"
+    },
+    {
+      "path": "episodes/S1E01/full/fab-shotplan-r8.mjs",
+      "sha256": "a41202806d93cf97b8e8be08219dbfb3e4d276197f27a8afa63c02e9a6d26bf6",
+      "size_bytes": 7288,
+      "snapshot_path": "work/deliveries/TASK-002-r0006/artifacts/episodes/S1E01/full/fab-shotplan-r8.mjs"
+    },
+    {
+      "path": "episodes/S1E01/full/film.mjs",
+      "sha256": "20c29d3da3948daeb5fa6dd781696634c3aa798c9e171b137d125fb566bfca61",
+      "size_bytes": 38293,
+      "snapshot_path": "work/deliveries/TASK-002-r0006/artifacts/episodes/S1E01/full/film.mjs"
+    },
+    {
+      "path": "episodes/S1E01/full/media-bundle.json",
+      "sha256": "9242a4f973e9968a94c610d556d00e39a22b103a9ebe5203c9e625c05520c8d6",
+      "size_bytes": 11801,
+      "snapshot_path": "work/deliveries/TASK-002-r0006/artifacts/episodes/S1E01/full/media-bundle.json"
+    },
+    {
+      "path": "episodes/S1E01/full/player.html",
+      "sha256": "f1adf0fb7fb5a6b024ff492dd83fe1f6adbdb4688059759b6efb1212a52f626d",
+      "size_bytes": 16423,
+      "snapshot_path": "work/deliveries/TASK-002-r0006/artifacts/episodes/S1E01/full/player.html"
+    },
+    {
+      "path": "episodes/S1E01/full/qa-browser-r8.json",
+      "sha256": "c432d9748a4671d6d373638c83b0e73c6edf537cda40417a50f73a1dc92c8950",
+      "size_bytes": 5344,
+      "snapshot_path": "work/deliveries/TASK-002-r0006/artifacts/episodes/S1E01/full/qa-browser-r8.json"
+    },
+    {
+      "path": "episodes/S1E01/full/qa-editorial-r8-pre-fix.json",
+      "sha256": "fa0de45546482be3248caa2f3bebf537533fa3a26bfb4ea6803988abaff3e440",
+      "size_bytes": 6581,
+      "snapshot_path": "work/deliveries/TASK-002-r0006/artifacts/episodes/S1E01/full/qa-editorial-r8-pre-fix.json"
+    },
+    {
+      "path": "episodes/S1E01/full/qa-fab-contact-r8.mjs",
+      "sha256": "b97493f4301bea4d859f54263272ddede79bb0df538623c366e2a49443b95296",
+      "size_bytes": 3910,
+      "snapshot_path": "work/deliveries/TASK-002-r0006/artifacts/episodes/S1E01/full/qa-fab-contact-r8.mjs"
+    },
+    {
+      "path": "episodes/S1E01/full/qa-fab-edit-r8.json",
+      "sha256": "6b587f0c49af39cb4ead013f39b7ee55f1c30cbb77550c6e5c8fb11fcbdbe4de",
+      "size_bytes": 129691,
+      "snapshot_path": "work/deliveries/TASK-002-r0006/artifacts/episodes/S1E01/full/qa-fab-edit-r8.json"
+    },
+    {
+      "path": "episodes/S1E01/full/qa-fab-edit-r8.mjs",
+      "sha256": "e83860abdb1a99f3b03275f93ef46908a8f0091efd35a23552671a25d6b91a90",
+      "size_bytes": 23466,
+      "snapshot_path": "work/deliveries/TASK-002-r0006/artifacts/episodes/S1E01/full/qa-fab-edit-r8.mjs"
+    },
+    {
+      "path": "episodes/S1E01/full/qa-fab-r8.mjs",
+      "sha256": "713a6b1ce5e9b4eab32c821f7b75c1a039b4cac68c475fb8741bcb55596dbed1",
+      "size_bytes": 7957,
+      "snapshot_path": "work/deliveries/TASK-002-r0006/artifacts/episodes/S1E01/full/qa-fab-r8.mjs"
+    },
+    {
+      "path": "episodes/S1E01/full/qa-player-r8-results.json",
+      "sha256": "a2937748e95e2bf4dde89648e64f4dc05ba557c22fa4b4faef38ba7246a2c994",
+      "size_bytes": 14465,
+      "snapshot_path": "work/deliveries/TASK-002-r0006/artifacts/episodes/S1E01/full/qa-player-r8-results.json"
+    },
+    {
+      "path": "episodes/S1E01/full/qa-player-r8.mjs",
+      "sha256": "b89597bbaaa98ac5982f8bfcb44c7daae9717752cf0c842364ca5410308d0b4e",
+      "size_bytes": 57907,
+      "snapshot_path": "work/deliveries/TASK-002-r0006/artifacts/episodes/S1E01/full/qa-player-r8.mjs"
+    },
+    {
+      "path": "episodes/S1E01/full/r8-contact-evidence/fab-r8-geometry.json",
+      "sha256": "68d5064b2d7baf72bb9ab8f458ab1c9bbfbe0dfd44bf713322529406be9c21fc",
+      "size_bytes": 362468,
+      "snapshot_path": "work/deliveries/TASK-002-r0006/artifacts/episodes/S1E01/full/r8-contact-evidence/fab-r8-geometry.json"
+    },
+    {
+      "path": "episodes/S1E01/full/script-r8-candidate.json",
+      "sha256": "055e9a46e0f31ba0a861de65a4a408cc3c406edfa2eca74aa89b5e9b7eefcd08",
+      "size_bytes": 28597,
+      "snapshot_path": "work/deliveries/TASK-002-r0006/artifacts/episodes/S1E01/full/script-r8-candidate.json"
+    },
+    {
+      "path": "episodes/S1E01/full/script.json",
+      "sha256": "7b87d7d8c0f485291a5caad044ea2befe3b0d070447008c4a0f774370bbc3939",
+      "size_bytes": 28566,
+      "snapshot_path": "work/deliveries/TASK-002-r0006/artifacts/episodes/S1E01/full/script.json"
+    },
+    {
+      "path": "episodes/S1E01/full/sources.json",
+      "sha256": "61132db3036b83e10e48a93fc36c8d998d24f72960e251ffab80e90d70e661e4",
+      "size_bytes": 15958,
+      "snapshot_path": "work/deliveries/TASK-002-r0006/artifacts/episodes/S1E01/full/sources.json"
+    },
+    {
+      "path": "episodes/S1E01/full/verification-r8.md",
+      "sha256": "3363260368e2637a3257232d6986d27613c3b7fbdc6200e6dd5128878aad85e7",
+      "size_bytes": 6487,
+      "snapshot_path": "work/deliveries/TASK-002-r0006/artifacts/episodes/S1E01/full/verification-r8.md"
+    },
+    {
+      "path": "verification/S1E01-r8/cleanroom-live.jpg",
+      "sha256": "6b6f5e97614f433e0509667dc55e1e47eaefa78e9973981c5397f6b18b00be09",
+      "size_bytes": 130441,
+      "snapshot_path": "work/deliveries/TASK-002-r0006/artifacts/verification/S1E01-r8/cleanroom-live.jpg"
+    },
+    {
+      "path": "verification/S1E01-r8/natural-end-preview.jpg",
+      "sha256": "8634205fdd871f7cf0cf46d48dfe4e8a2317ed94cae2a22339a31bd558fa00df",
+      "size_bytes": 73071,
+      "snapshot_path": "work/deliveries/TASK-002-r0006/artifacts/verification/S1E01-r8/natural-end-preview.jpg"
+    }
+  ],
+  "bundle_sha256": "8e6f70cbe0e89ec06994ffd928988a23512edb731be89f96a8ffe93d6d5bba35",
+  "delivery_id": "TASK-002-r0006",
+  "episode_id": "H039",
+  "manifest_sha256": "45b037dca00b6aef0bcbc3d433db4a84d962aa74fed5f657da11de5db0e5f26e",
+  "previous_delivery_id": "TASK-002-r0005",
+  "producer": {
+    "actor": "codex-root-s1e01-r8",
+    "model": "GPT-6",
+    "session_id": "chat-20261118-s1e01-r8-fab"
+  },
+  "revision": 6,
+  "schema_version": "1.0",
+  "scope": "episode",
+  "submitted_at": "2026-11-18T10:17:59.604011Z",
+  "task_id": "TASK-002"
+}

@@ -1,68 +1,67 @@
-# 261117 · S1E01 — NVIDIA needed chips. TSMC needed customers.
+# 261118 · S1E01 — Inside the factory a chip designer doesn't own
 
-[Watch the existing Site](https://chip-in-birdie-s1e01-261117.reliqbit.chatgpt.site)
+[Watch the existing Site](https://chip-in-birdie-s1e01-261117.reliqbit.chatgpt.site) · [PR #4](https://github.com/ReliOptic/Chip-in-Birdie/pull/4)
 
-**R7 continues the same full S1E01 and [PR #4](https://github.com/ReliOptic/Chip-in-Birdie/pull/4).** Duration remains **6:24.411**, with measured English narration, Korean / English / off captions and six chapters. R6's archival evidence remains; R7 restores 3D as actions with consequences. This is a revised review candidate, not an assertion of cinematic quality or release approval.
+R8 continues the same full episode. Its measured English narration is **7:57.357**, with 45 passages, six chapters and Korean / English / off captions. The picture is newly authored: 36 spatial shots, 27 reporting shots and two dated photographs. R1–R7 scenes and photo compositions are not in the active R8 import graph. Earlier deliveries remain in history.
 
-## What now happens on screen
+The question is not “what is fabless?” It is: **what does a design company gain by accessing a specialist manufacturer, and why can neither company turn an order into working chips alone?**
 
-| Passage | Spatial event | Business meaning |
+## Picture and argument
+
+| Passage | New picture | What it establishes |
 | --- | --- | --- |
-| Opening and ending | An unpopulated PC slot / silent screen is later answered by a seated graphics card and operating display | A design becomes useful only when a manufacturable product reaches the customer |
-| 01:36–01:56 | External-work carts enter the factory, then leave when the customer takes its work back; equipment remains idle | Temporary overflow orders do not provide dependable factory demand |
-| 03:13–03:20 | A board enters the connector, the contacts seat, then the screen powers on | Component businesses obtain a place inside a larger product ecosystem |
-| 04:30–05:12 | A probe tests parts; a failed specimen is withdrawn; a separate specimen is inserted and tested; a later batch can proceed | Buying manufacturing capacity does not itself guarantee usable output |
-| 05:27–05:40 | Empty capacity gives way to installed equipment, arriving work and loaded carriers | Forecasts must become investment commitments before future orders can ship |
-| Final minute | A shipping cart exits, and the operating PC returns as the outcome, not another insertion replay | Design, manufacturing reliability and demand have to meet |
+| 00:00–01:00 | An idle tool, a long cleanroom hall, a dated research-lab photograph, cleanroom/subfab section and ceiling transport | Empty equipment is not automatically usable capacity; the room and services are part of production |
+| 01:00–02:15 | OHT stop/lower/support/release, loadport docking, EFEM cutaways, supported wafer handling and selected surface operations | Transportation supplies the process; it cannot replace processing or qualification |
+| 02:15–03:25 | Tool eligibility, queues, cycle time versus throughput, construction evidence and readiness milestones | Capacity depends on the product's usable routes, not simply a building or equipment count |
+| 03:25–05:06 | Metrology, design/printed-shape comparison, a qualitative process envelope, eFoundry's public collaboration categories | Product and process engineering continue across the company boundary |
+| 05:06–06:44 | Dated TSMC company/report summaries, customer commitments and NVIDIA's 1998 risk disclosure | Foundry access reduces the need to own a manufacturing organization; it does not remove yield, payment or delivery risk |
+| 06:44–07:57 | Supported package assembly, outgoing material, a different final hall view and a commissioned exterior | Ask what a new fab can make, at what quality, and when the output can actually ship |
 
-The timing table identifies sequences, not a claim that every moment contains action. Short office and notebook shots provide context. The same action clock continues across camera and narration cuts; seeking backward reconstructs the same state.
+The definition of foundry/fabless occupies one passage, roughly ten seconds. The historical document screens are attributed summaries, not fabricated scans. Their internal reveals follow the argument, not decorative movement.
 
-The film still starts from NVIDIA's manufacturing constraint, then rewinds to the commercial risk of TSMC's founding. The viewer follows who finances a fab, why a customer with its own factory may withdraw overflow work, why a design business can enter without owning a fab, why wafer purchasing is not a guarantee of good chips, and whose forecasts justify more capacity. A prolonged foundry/fabless definition is not the destination.
+## Sources, footage and rights
 
-## Evidence and reconstruction boundaries
+[Fab/video research](R8_FAB_EVIDENCE.md) · [45 passage claims](claims.json) · [19 primary-source entries](sources.json) · [New image rights](archive-manifest-r8.json)
 
-- Photographs, preserved objects and documentary excerpts remain distinct from original 3D illustrations. Seventeen photographic assets are packaged with creator, source, license, date and change notices.
-- The generic 1990s PC is not the photographed IBM 5150, an identified RIVA board or footage of a historical assembly. The date is also printed on PC shots.
-- Factory layouts, specimen exchange, inspection counts, desk and notebook are illustrative. They are not surveyed TSMC facilities, NVIDIA's diagnosed 1997 defect, historical yields or invented numerical forecasts.
-- The broken bridge remains on specimen A while a different specimen B replaces it. A wire does not magically heal while being measured.
-- Product era and photograph date remain separate. The Erfurt factory photograph is East Germany; modern portraits/buildings retain their dates.
-- Both photographed RIVA packages show ST marks. Neither is represented as a proven TSMC-made unit.
-- Typeset documentary pages are summaries or short excerpts, not facsimile contracts. The black-book story is a later visit recalled in 2007, not the first 1997 meeting.
-- The 2006 joint milestone is 500 million processors, including GeForce GPUs and nForce media and communications processors, not 500 million GPUs.
+- TSMC's official corporate video was sampled at five decoded timestamps to study cleanroom depth, overhead transport and supported wafer handling. The complete hoist transfer cycle was not observed in those samples.
+- FOUP/loadport dimensions and functional order use public manufacturer material. Intel's public fab tour supports the cleanroom-to-subfab airflow explanation.
+- Original 3D scenes are explanatory reconstructions. They are not footage or surveyed CAD of a named fab, confidential production status, a certified digital twin or a calibrated process simulation. Internal cutaways deliberately omit obscuring housings and identify that omission.
+- Both new photographs are CC BY 2.0 and appear once: UCL's research photolithography lab (2013), and Intel D1X under construction (2011). Neither is labelled as a current TSMC production fab.
+- TSMC/Daifuku reference video frames are research-only; they are not redistributed in the film.
+- The NVIDIA claim is dated to its S-1 filed 6 March 1998. Its initial wafer-payment terms are not presented as today's universal foundry contract.
+- Process layers are enlarged. A measurement does not heal a defective specimen, and a process change is not animated as automatic successful recovery.
 
-[Claims](claims.json) · [Primary sources](sources.json) · [Delivered image register](archive-manifest.json) · [Third-party notices](THIRD_PARTY_NOTICES.txt) · [Audio report](audio-r6-report.json) · [R7 verification](verification-r7.md) · [Exact bundle / deployment](media-bundle.json)
+## Implementation
+
+The active R8 modules are `fab-director-r8.mjs`, `fab-shotplan-r8.mjs`, `fab-hardware-r8.mjs`, `fab-hall-r8.mjs`, `fab-process-r8.mjs`, `fab-facility-r8.mjs`, `fab-editorial-r8.mjs`, the retained `software-renderer.mjs` and `film.mjs`.
+
+Shared event clocks carry the OHT/loadport/EFEM actions across cuts. Poses and reporting graphics are functions of time, so backward seeking restores state. Contact, aperture clearance and camera-framing tests are distinct: a mathematically valid camera can still show the wrong thing, so selected actual browser frames are reviewed separately.
+
+The player retains play/pause, arbitrary seek, restart, paused restoration, mute, transcript, passage-specific evidence, retry states and fullscreen/Cinema view. The centre play button no longer obscures a paused mid-film frame. Narration is fully fetched and hash-checked where WebCrypto is available before playback. No runtime CDN or paid service is required.
 
 ## Reproduce
 
-Use the exact R7 WebP derivatives and matching full-r6 narration. The build checks script/audio hashes, text, sample timing and asset integrity. It includes pinned Three.js r170; it does not fetch a runtime CDN.
+Use the two source JPEGs listed in `archive-manifest-r8.json`, matching full-r8 narration/timeline and the pinned Three.js r170 module. The exact media and standalone HTML are kept in the authorized Sites source, not duplicated in GitHub.
 
 ```bash
 node episodes/S1E01/full/build.mjs \
-  --archive /path/to/assets-r7/archive --audio /path/to/audio/full-r6 \
+  --archive /path/to/r8/archive --audio /path/to/r8/audio \
   --three /path/to/vendor/three.module.js \
   --out /path/to/output --site /path/to/site/dist
 
-node episodes/S1E01/full/qa-cinematic-r7.mjs \
+node episodes/S1E01/full/qa-fab-edit-r8.mjs \
   --three /path/to/vendor/three.module.js \
-  --timeline /path/to/audio/full-r6/timeline.json \
-  --out /path/to/qa-cinematic-r7-contract.json
+  --timeline /path/to/r8/audio/timeline.json \
+  --assets /path/to/r8/archive
 
-node --experimental-vm-modules episodes/S1E01/full/qa-cinematic-runtime.mjs \
-  --archive /path/to/assets-r7/archive \
+node --experimental-vm-modules episodes/S1E01/full/qa-player-r8.mjs \
+  --archive /path/to/r8/archive \
   --bundle /path/to/output/S1E01-full-documentary.html \
-  --site /path/to/site/dist
+  --site /path/to/site/dist --timeline /path/to/r8/audio/timeline.json
 ```
 
-WebGL2 is used when available. Otherwise the same scene geometry and cameras use the CPU compatibility renderer, whose resolution and material fidelity are lower. Selected browser observations in this revision used CPU mode, **not GPU/PBR validation**.
+## Verification and publication are different
 
-The player retains pause, seek, restart, paused restoration, mute, transcript, passage-specific evidence, loading recovery and CSS Cinema view when native fullscreen is unavailable. Captions have a separate area. Narration is fetched in full and its SHA-256 checked when WebCrypto is available before a local audio Blob is loaded. That final audio-loading correction has Node control tests, but was not replayed in the browser after the security block.
+See [R8 verification](verification-r8.md), [integration contract results](qa-fab-edit-r8.json), [player mock results](qa-player-r8-results.json), [actual browser observations](qa-browser-r8.json) and [exact media/deployment identifiers](media-bundle.json).
 
-Original media and the self-contained HTML remain in the authorized Sites source, not this GitHub repository. R7's smaller archive derivatives reduce transfer size without inventing period imagery.
-
-## Review and publication
-
-The latest request retains cinematic 3D storytelling **and** real archival evidence. It does not authorize removing one to avoid implementing the other. Existing public Site access (revision 2) is preserved; no sharing mutation or YouTube upload is part of this work.
-
-Selected browser shots revealed and led to corrections of an unseated card and an obstructing pen. An audio error then occurred during seeking. The complete-download/hash-verification correction was implemented, but the browser subsequently rejected reloading by security policy. No alternate browser or route was used to evade that block.
-
-Full R7 start-to-end playback, final audio listening, final browser audio retry, actual GPU appearance, iPad/iPhone/Safari/touch and independent audiovisual review remain open. R6's earlier full-playback pass is not carried forward as an R7 pass. Geometry counts, passing contracts, a build or a deployed URL do not establish that the film is enjoyable. **IN_REVIEW, not READY or DONE.**
+WebGL2 is the preferred renderer. The managed review browser exposed no WebGL2 context, so its observed frames and playback use the lower-detail CPU compatibility renderer; they are **not GPU/PBR, mobile Safari or touch-device certification**. Source/geometry tests and a successful deployment do not prove the film is enjoyable. Full independent viewing/listening and the user's artistic acceptance remain separate. Task status is **IN_REVIEW, not READY or DONE**. No YouTube upload or audience-permission change is part of R8.

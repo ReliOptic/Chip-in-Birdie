@@ -1,0 +1,6082 @@
+{
+  "schema_version": 1,
+  "project": "Chip in Birdie S1E01 R8",
+  "test": "source/timeline/edit/geometry integration contract",
+  "status": "PASS_CONTRACT_ONLY",
+  "scope": "Node + actual Three.js geometry + NAPI Canvas2D reporting; zero saved images",
+  "inputs": {
+    "timeline": "/workspace/scratch/204e2295d8fd/s1e01-r8-media/audio/timeline.json",
+    "timelineSha256": "73fc3d225a4fe2cb6c6ace9d9b5de9ffc4cc36ae1d2f21b469f7c33fc96c20a8",
+    "scriptSha256": "7b87d7d8c0f485291a5caad044ea2befe3b0d070447008c4a0f774370bbc3939",
+    "threeRevision": "170",
+    "threeSha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+    "sourceHashes": {
+      "fab-director-r8.mjs": "25472d516560380f80dcca6764c47b59848d1a7a1dfa3225f762d6f9068ea97f",
+      "fab-hall-r8.mjs": "b02fee313b64ae70bef6fe25f4525bc49e7e5c11b0fa6a0a2d8b518725e20a5f",
+      "fab-hardware-r8.mjs": "5387c57fb8a32a1f561ea2b32fb0182ae2e2a86d4fe19e8d7313067f580a0808",
+      "fab-process-r8.mjs": "2ba654b0d388c470be1c5f9b625d7e7b192e0aeb1d164e196bb19906af735105",
+      "fab-facility-r8.mjs": "a3ec89b6286ee8d64fb2c23eaddf10ed19d29187cea80bfed9328e043eb6b0c1",
+      "fab-editorial-r8.mjs": "0de3d460c70cbaf9720e0c22e90cccc3233ce1c520335b89d10fcc708763d71b",
+      "fab-shotplan-r8.mjs": "a41202806d93cf97b8e8be08219dbfb3e4d276197f27a8afa63c02e9a6d26bf6"
+    },
+    "sourceHashesAfter": {
+      "fab-director-r8.mjs": "25472d516560380f80dcca6764c47b59848d1a7a1dfa3225f762d6f9068ea97f",
+      "fab-hall-r8.mjs": "b02fee313b64ae70bef6fe25f4525bc49e7e5c11b0fa6a0a2d8b518725e20a5f",
+      "fab-hardware-r8.mjs": "5387c57fb8a32a1f561ea2b32fb0182ae2e2a86d4fe19e8d7313067f580a0808",
+      "fab-process-r8.mjs": "2ba654b0d388c470be1c5f9b625d7e7b192e0aeb1d164e196bb19906af735105",
+      "fab-facility-r8.mjs": "a3ec89b6286ee8d64fb2c23eaddf10ed19d29187cea80bfed9328e043eb6b0c1",
+      "fab-editorial-r8.mjs": "0de3d460c70cbaf9720e0c22e90cccc3233ce1c520335b89d10fcc708763d71b",
+      "fab-shotplan-r8.mjs": "a41202806d93cf97b8e8be08219dbfb3e4d276197f27a8afa63c02e9a6d26bf6"
+    }
+  },
+  "summary": {
+    "duration": 477.3573333333333,
+    "rows": 45,
+    "shots": 65,
+    "spatialShots": 36,
+    "reportingShots": 27,
+    "photographicShots": 2,
+    "cameras": 45,
+    "cameraCounts": {
+      "hall": 16,
+      "process": 16,
+      "facility": 13
+    },
+    "checks": 2191,
+    "passed": 2191,
+    "failed": 0,
+    "pngGenerated": 0
+  },
+  "rows": [
+    {
+      "id": "f01",
+      "speech": [
+        0.2,
+        8.989333333333333
+      ],
+      "edit": [
+        0,
+        9.149333333333333
+      ],
+      "shotIds": [
+        "r8-f01-1",
+        "r8-f01-2"
+      ]
+    },
+    {
+      "id": "f02",
+      "speech": [
+        9.149333333333333,
+        18.301333333333332
+      ],
+      "edit": [
+        9.149333333333333,
+        18.461333333333332
+      ],
+      "shotIds": [
+        "r8-f02-1"
+      ]
+    },
+    {
+      "id": "f03",
+      "speech": [
+        18.461333333333332,
+        28.104
+      ],
+      "edit": [
+        18.461333333333332,
+        28.264
+      ],
+      "shotIds": [
+        "r8-f03-1"
+      ]
+    },
+    {
+      "id": "f04",
+      "speech": [
+        28.264,
+        37.053333333333335
+      ],
+      "edit": [
+        28.264,
+        37.21333333333333
+      ],
+      "shotIds": [
+        "r8-f04-1",
+        "r8-f04-2"
+      ]
+    },
+    {
+      "id": "f05",
+      "speech": [
+        37.21333333333333,
+        51.05866666666667
+      ],
+      "edit": [
+        37.21333333333333,
+        51.218666666666664
+      ],
+      "shotIds": [
+        "r8-f05-1",
+        "r8-f05-2",
+        "r8-f05-3"
+      ]
+    },
+    {
+      "id": "f06",
+      "speech": [
+        51.218666666666664,
+        60.754666666666665
+      ],
+      "edit": [
+        51.218666666666664,
+        60.91466666666667
+      ],
+      "shotIds": [
+        "r8-f06-1",
+        "r8-f06-2"
+      ]
+    },
+    {
+      "id": "f07",
+      "speech": [
+        60.91466666666667,
+        69.29866666666666
+      ],
+      "edit": [
+        60.91466666666667,
+        69.45866666666667
+      ],
+      "shotIds": [
+        "r8-f07-1",
+        "r8-f07-2"
+      ]
+    },
+    {
+      "id": "f08",
+      "speech": [
+        69.45866666666667,
+        77.97066666666667
+      ],
+      "edit": [
+        69.45866666666667,
+        78.13066666666667
+      ],
+      "shotIds": [
+        "r8-f08-1",
+        "r8-f08-2"
+      ]
+    },
+    {
+      "id": "f09",
+      "speech": [
+        78.13066666666667,
+        87.73066666666666
+      ],
+      "edit": [
+        78.13066666666667,
+        87.89066666666666
+      ],
+      "shotIds": [
+        "r8-f09-1",
+        "r8-f09-2",
+        "r8-f09-3"
+      ]
+    },
+    {
+      "id": "f10",
+      "speech": [
+        87.89066666666666,
+        97.576
+      ],
+      "edit": [
+        87.89066666666666,
+        97.736
+      ],
+      "shotIds": [
+        "r8-f10-1",
+        "r8-f10-2"
+      ]
+    },
+    {
+      "id": "f11",
+      "speech": [
+        97.736,
+        108.616
+      ],
+      "edit": [
+        97.736,
+        108.776
+      ],
+      "shotIds": [
+        "r8-f11-1",
+        "r8-f11-2"
+      ]
+    },
+    {
+      "id": "f12",
+      "speech": [
+        108.776,
+        116.92533333333333
+      ],
+      "edit": [
+        108.776,
+        117.08533333333334
+      ],
+      "shotIds": [
+        "r8-f12-1"
+      ]
+    },
+    {
+      "id": "f13",
+      "speech": [
+        117.08533333333334,
+        125.53333333333333
+      ],
+      "edit": [
+        117.08533333333334,
+        125.69333333333333
+      ],
+      "shotIds": [
+        "r8-f13-1"
+      ]
+    },
+    {
+      "id": "f14",
+      "speech": [
+        125.69333333333333,
+        134.97333333333333
+      ],
+      "edit": [
+        125.69333333333333,
+        135.13333333333333
+      ],
+      "shotIds": [
+        "r8-f14-1",
+        "r8-f14-2"
+      ]
+    },
+    {
+      "id": "f15",
+      "speech": [
+        135.13333333333333,
+        145.032
+      ],
+      "edit": [
+        135.13333333333333,
+        145.192
+      ],
+      "shotIds": [
+        "r8-f15-1"
+      ]
+    },
+    {
+      "id": "f16",
+      "speech": [
+        145.192,
+        155.32533333333333
+      ],
+      "edit": [
+        145.192,
+        155.48533333333333
+      ],
+      "shotIds": [
+        "r8-f16-1"
+      ]
+    },
+    {
+      "id": "f17",
+      "speech": [
+        155.48533333333333,
+        165.46933333333334
+      ],
+      "edit": [
+        155.48533333333333,
+        165.62933333333334
+      ],
+      "shotIds": [
+        "r8-f17-1"
+      ]
+    },
+    {
+      "id": "f18",
+      "speech": [
+        165.62933333333334,
+        176.12533333333334
+      ],
+      "edit": [
+        165.62933333333334,
+        176.28533333333334
+      ],
+      "shotIds": [
+        "r8-f18-1"
+      ]
+    },
+    {
+      "id": "f19",
+      "speech": [
+        176.28533333333334,
+        185.30933333333334
+      ],
+      "edit": [
+        176.28533333333334,
+        185.46933333333334
+      ],
+      "shotIds": [
+        "r8-f19-1"
+      ]
+    },
+    {
+      "id": "f20",
+      "speech": [
+        185.46933333333334,
+        195.66666666666666
+      ],
+      "edit": [
+        185.46933333333334,
+        195.82666666666665
+      ],
+      "shotIds": [
+        "r8-f20-1",
+        "r8-f20-2"
+      ]
+    },
+    {
+      "id": "f21",
+      "speech": [
+        195.82666666666665,
+        205.81066666666666
+      ],
+      "edit": [
+        195.82666666666665,
+        205.97066666666666
+      ],
+      "shotIds": [
+        "r8-f21-1",
+        "r8-f21-2"
+      ]
+    },
+    {
+      "id": "f22",
+      "speech": [
+        205.97066666666666,
+        215.67733333333334
+      ],
+      "edit": [
+        205.97066666666666,
+        215.83733333333333
+      ],
+      "shotIds": [
+        "r8-f22-1",
+        "r8-f22-2"
+      ]
+    },
+    {
+      "id": "f23",
+      "speech": [
+        215.83733333333333,
+        227.05866666666665
+      ],
+      "edit": [
+        215.83733333333333,
+        227.21866666666668
+      ],
+      "shotIds": [
+        "r8-f23-1",
+        "r8-f23-2"
+      ]
+    },
+    {
+      "id": "f24",
+      "speech": [
+        227.21866666666668,
+        236.072
+      ],
+      "edit": [
+        227.21866666666668,
+        236.232
+      ],
+      "shotIds": [
+        "r8-f24-1"
+      ]
+    },
+    {
+      "id": "f25",
+      "speech": [
+        236.232,
+        249.05333333333334
+      ],
+      "edit": [
+        236.232,
+        249.21333333333334
+      ],
+      "shotIds": [
+        "r8-f25-1"
+      ]
+    },
+    {
+      "id": "f26",
+      "speech": [
+        249.21333333333334,
+        260.584
+      ],
+      "edit": [
+        249.21333333333334,
+        260.744
+      ],
+      "shotIds": [
+        "r8-f26-1"
+      ]
+    },
+    {
+      "id": "f27",
+      "speech": [
+        260.744,
+        270.728
+      ],
+      "edit": [
+        260.744,
+        270.888
+      ],
+      "shotIds": [
+        "r8-f27-1"
+      ]
+    },
+    {
+      "id": "f28",
+      "speech": [
+        270.888,
+        285.48
+      ],
+      "edit": [
+        270.888,
+        285.64
+      ],
+      "shotIds": [
+        "r8-f28-1"
+      ]
+    },
+    {
+      "id": "f29",
+      "speech": [
+        285.64,
+        295.1546666666667
+      ],
+      "edit": [
+        285.64,
+        295.31466666666665
+      ],
+      "shotIds": [
+        "r8-f29-1"
+      ]
+    },
+    {
+      "id": "f30",
+      "speech": [
+        295.31466666666665,
+        306.70666666666665
+      ],
+      "edit": [
+        295.31466666666665,
+        306.8666666666667
+      ],
+      "shotIds": [
+        "r8-f30-1"
+      ]
+    },
+    {
+      "id": "f31",
+      "speech": [
+        306.8666666666667,
+        317.832
+      ],
+      "edit": [
+        306.8666666666667,
+        317.992
+      ],
+      "shotIds": [
+        "r8-f31-1"
+      ]
+    },
+    {
+      "id": "f32",
+      "speech": [
+        317.992,
+        329.53333333333336
+      ],
+      "edit": [
+        317.992,
+        329.6933333333333
+      ],
+      "shotIds": [
+        "r8-f32-1"
+      ]
+    },
+    {
+      "id": "f33",
+      "speech": [
+        329.6933333333333,
+        341.8106666666667
+      ],
+      "edit": [
+        329.6933333333333,
+        341.97066666666666
+      ],
+      "shotIds": [
+        "r8-f33-1"
+      ]
+    },
+    {
+      "id": "f34",
+      "speech": [
+        341.97066666666666,
+        354.9413333333333
+      ],
+      "edit": [
+        341.97066666666666,
+        355.10133333333334
+      ],
+      "shotIds": [
+        "r8-f34-1"
+      ]
+    },
+    {
+      "id": "f35",
+      "speech": [
+        355.10133333333334,
+        365.34133333333335
+      ],
+      "edit": [
+        355.10133333333334,
+        365.5013333333333
+      ],
+      "shotIds": [
+        "r8-f35-1"
+      ]
+    },
+    {
+      "id": "f36",
+      "speech": [
+        365.5013333333333,
+        376.65866666666665
+      ],
+      "edit": [
+        365.5013333333333,
+        376.8186666666667
+      ],
+      "shotIds": [
+        "r8-f36-1"
+      ]
+    },
+    {
+      "id": "f37",
+      "speech": [
+        376.8186666666667,
+        390.3226666666667
+      ],
+      "edit": [
+        376.8186666666667,
+        390.48266666666666
+      ],
+      "shotIds": [
+        "r8-f37-1"
+      ]
+    },
+    {
+      "id": "f38",
+      "speech": [
+        390.48266666666666,
+        404.2
+      ],
+      "edit": [
+        390.48266666666666,
+        404.36
+      ],
+      "shotIds": [
+        "r8-f38-1"
+      ]
+    },
+    {
+      "id": "f39",
+      "speech": [
+        404.36,
+        413.896
+      ],
+      "edit": [
+        404.36,
+        414.056
+      ],
+      "shotIds": [
+        "r8-f39-1",
+        "r8-f39-2",
+        "r8-f39-3"
+      ]
+    },
+    {
+      "id": "f40",
+      "speech": [
+        414.056,
+        422.632
+      ],
+      "edit": [
+        414.056,
+        422.792
+      ],
+      "shotIds": [
+        "r8-f40-1",
+        "r8-f40-2"
+      ]
+    },
+    {
+      "id": "f41",
+      "speech": [
+        422.792,
+        433.05333333333334
+      ],
+      "edit": [
+        422.792,
+        433.2133333333333
+      ],
+      "shotIds": [
+        "r8-f41-1"
+      ]
+    },
+    {
+      "id": "f42",
+      "speech": [
+        433.2133333333333,
+        445.07466666666664
+      ],
+      "edit": [
+        433.2133333333333,
+        445.23466666666667
+      ],
+      "shotIds": [
+        "r8-f42-1",
+        "r8-f42-2"
+      ]
+    },
+    {
+      "id": "f43",
+      "speech": [
+        445.23466666666667,
+        456.776
+      ],
+      "edit": [
+        445.23466666666667,
+        456.936
+      ],
+      "shotIds": [
+        "r8-f43-1"
+      ]
+    },
+    {
+      "id": "f44",
+      "speech": [
+        456.936,
+        465.02133333333336
+      ],
+      "edit": [
+        456.936,
+        465.1813333333333
+      ],
+      "shotIds": [
+        "r8-f44-1"
+      ]
+    },
+    {
+      "id": "f45",
+      "speech": [
+        465.1813333333333,
+        475.3573333333333
+      ],
+      "edit": [
+        465.1813333333333,
+        477.3573333333333
+      ],
+      "shotIds": [
+        "r8-f45-1"
+      ]
+    }
+  ],
+  "imports": [
+    {
+      "module": "fab-director-r8.mjs",
+      "dependency": "three",
+      "approved": true
+    },
+    {
+      "module": "fab-director-r8.mjs",
+      "dependency": "./fab-hall-r8.mjs",
+      "approved": true
+    },
+    {
+      "module": "fab-director-r8.mjs",
+      "dependency": "./fab-process-r8.mjs",
+      "approved": true
+    },
+    {
+      "module": "fab-director-r8.mjs",
+      "dependency": "./fab-facility-r8.mjs",
+      "approved": true
+    },
+    {
+      "module": "fab-director-r8.mjs",
+      "dependency": "./software-renderer.mjs",
+      "approved": true
+    },
+    {
+      "module": "fab-director-r8.mjs",
+      "dependency": "./fab-editorial-r8.mjs",
+      "approved": true
+    },
+    {
+      "module": "fab-director-r8.mjs",
+      "dependency": "./fab-shotplan-r8.mjs",
+      "approved": true
+    },
+    {
+      "module": "fab-hall-r8.mjs",
+      "dependency": "./fab-hardware-r8.mjs",
+      "approved": true
+    },
+    {
+      "module": "fab-process-r8.mjs",
+      "dependency": "./fab-hardware-r8.mjs",
+      "approved": true
+    },
+    {
+      "module": "fab-facility-r8.mjs",
+      "dependency": "./fab-hardware-r8.mjs",
+      "approved": true
+    }
+  ],
+  "assets": [
+    {
+      "id": "lcn_lab_2013",
+      "file": "/workspace/scratch/204e2295d8fd/s1e01-r8-media/archive/lcn_lab_2013.jpg",
+      "sha256": "2c23a9785fbd16f4d342fc35a7508a329c606b95a26565b3fb17345142fc48dc",
+      "uses": 1,
+      "decoded": true
+    },
+    {
+      "id": "intel_d1x_cranes_2011",
+      "file": "/workspace/scratch/204e2295d8fd/s1e01-r8-media/archive/intel_d1x_cranes_2011.jpg",
+      "sha256": "09bfe880231fb750b006b84059c230d8ca5a9df2af105164322f8ccd1302bebc",
+      "uses": 1,
+      "decoded": true
+    }
+  ],
+  "geometryChecks": [
+    {
+      "set": "hall",
+      "uniqueGeometries": 169,
+      "attributeNumbers": 65768,
+      "finite": true
+    },
+    {
+      "set": "process",
+      "uniqueGeometries": 102,
+      "attributeNumbers": 73688,
+      "finite": true
+    },
+    {
+      "set": "facility",
+      "uniqueGeometries": 211,
+      "attributeNumbers": 79376,
+      "finite": true
+    }
+  ],
+  "cameraChecks": [
+    {
+      "set": "hall",
+      "view": "nave-low",
+      "act": "transport",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 5953
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 5685
+        },
+        {
+          "u": 1,
+          "clipIntersections": 5197
+        }
+      ]
+    },
+    {
+      "set": "hall",
+      "view": "bridge-high",
+      "act": "transport",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 6119
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 5854
+        },
+        {
+          "u": 1,
+          "clipIntersections": 5630
+        }
+      ]
+    },
+    {
+      "set": "hall",
+      "view": "rail-follow",
+      "act": "transport",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 2482
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 2506
+        },
+        {
+          "u": 1,
+          "clipIntersections": 2538
+        }
+      ]
+    },
+    {
+      "set": "hall",
+      "view": "hoist-side",
+      "act": "transfer",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 1378
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 1327
+        },
+        {
+          "u": 1,
+          "clipIntersections": 1280
+        }
+      ]
+    },
+    {
+      "set": "hall",
+      "view": "dock-macro",
+      "act": "transfer",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 854
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 860
+        },
+        {
+          "u": 1,
+          "clipIntersections": 869
+        }
+      ]
+    },
+    {
+      "set": "hall",
+      "view": "loadport",
+      "act": "transfer",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 760
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 758
+        },
+        {
+          "u": 1,
+          "clipIntersections": 751
+        }
+      ]
+    },
+    {
+      "set": "hall",
+      "view": "traverse",
+      "act": "transport",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 2836
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 2670
+        },
+        {
+          "u": 1,
+          "clipIntersections": 2465
+        }
+      ]
+    },
+    {
+      "set": "hall",
+      "view": "long-lens",
+      "act": "docked",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 4795
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 4627
+        },
+        {
+          "u": 1,
+          "clipIntersections": 4446
+        }
+      ]
+    },
+    {
+      "set": "hall",
+      "view": "buffer-level",
+      "act": "docked",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 507
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 489
+        },
+        {
+          "u": 1,
+          "clipIntersections": 474
+        }
+      ]
+    },
+    {
+      "set": "hall",
+      "view": "service",
+      "act": "docked",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 785
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 966
+        },
+        {
+          "u": 1,
+          "clipIntersections": 1194
+        }
+      ]
+    },
+    {
+      "set": "hall",
+      "view": "ceiling",
+      "act": "transport",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 4145
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 3835
+        },
+        {
+          "u": 1,
+          "clipIntersections": 3674
+        }
+      ]
+    },
+    {
+      "set": "hall",
+      "view": "floor",
+      "act": "transport",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 3359
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 3279
+        },
+        {
+          "u": 1,
+          "clipIntersections": 3186
+        }
+      ]
+    },
+    {
+      "set": "hall",
+      "view": "cross-aisle",
+      "act": "transport",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 2490
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 2261
+        },
+        {
+          "u": 1,
+          "clipIntersections": 1945
+        }
+      ]
+    },
+    {
+      "set": "hall",
+      "view": "quiet-operator",
+      "act": "docked",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 1275
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 1201
+        },
+        {
+          "u": 1,
+          "clipIntersections": 1128
+        }
+      ]
+    },
+    {
+      "set": "hall",
+      "view": "departure",
+      "act": "transport",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 2167
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 2277
+        },
+        {
+          "u": 1,
+          "clipIntersections": 2428
+        }
+      ]
+    },
+    {
+      "set": "hall",
+      "view": "deep-reveal",
+      "act": "transport",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 6403
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 6140
+        },
+        {
+          "u": 1,
+          "clipIntersections": 5988
+        }
+      ]
+    },
+    {
+      "set": "process",
+      "view": "port",
+      "act": "efem",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 172
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 172
+        },
+        {
+          "u": 1,
+          "clipIntersections": 172
+        }
+      ]
+    },
+    {
+      "set": "process",
+      "view": "interlock",
+      "act": "efem",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 141
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 141
+        },
+        {
+          "u": 1,
+          "clipIntersections": 143
+        }
+      ]
+    },
+    {
+      "set": "process",
+      "view": "blade",
+      "act": "efem",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 61
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 61
+        },
+        {
+          "u": 1,
+          "clipIntersections": 61
+        }
+      ]
+    },
+    {
+      "set": "process",
+      "view": "wafer",
+      "act": "efem",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 33
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 33
+        },
+        {
+          "u": 1,
+          "clipIntersections": 32
+        }
+      ]
+    },
+    {
+      "set": "process",
+      "view": "robot",
+      "act": "efem",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 72
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 72
+        },
+        {
+          "u": 1,
+          "clipIntersections": 72
+        }
+      ]
+    },
+    {
+      "set": "process",
+      "view": "chamber",
+      "act": "process",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 95
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 95
+        },
+        {
+          "u": 1,
+          "clipIntersections": 95
+        }
+      ]
+    },
+    {
+      "set": "process",
+      "view": "gate",
+      "act": "process",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 92
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 92
+        },
+        {
+          "u": 1,
+          "clipIntersections": 92
+        }
+      ]
+    },
+    {
+      "set": "process",
+      "view": "chuck",
+      "act": "process",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 25
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 25
+        },
+        {
+          "u": 1,
+          "clipIntersections": 25
+        }
+      ]
+    },
+    {
+      "set": "process",
+      "view": "layers",
+      "act": "process",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 36
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 36
+        },
+        {
+          "u": 1,
+          "clipIntersections": 36
+        }
+      ]
+    },
+    {
+      "set": "process",
+      "view": "pattern",
+      "act": "process",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 36
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 36
+        },
+        {
+          "u": 1,
+          "clipIntersections": 36
+        }
+      ]
+    },
+    {
+      "set": "process",
+      "view": "etch",
+      "act": "process",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 36
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 36
+        },
+        {
+          "u": 1,
+          "clipIntersections": 36
+        }
+      ]
+    },
+    {
+      "set": "process",
+      "view": "tray",
+      "act": "package",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 81
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 81
+        },
+        {
+          "u": 1,
+          "clipIntersections": 81
+        }
+      ]
+    },
+    {
+      "set": "process",
+      "view": "die",
+      "act": "package",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 72
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 72
+        },
+        {
+          "u": 1,
+          "clipIntersections": 72
+        }
+      ]
+    },
+    {
+      "set": "process",
+      "view": "substrate",
+      "act": "package",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 71
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 71
+        },
+        {
+          "u": 1,
+          "clipIntersections": 71
+        }
+      ]
+    },
+    {
+      "set": "process",
+      "view": "lid",
+      "act": "package",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 72
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 72
+        },
+        {
+          "u": 1,
+          "clipIntersections": 72
+        }
+      ]
+    },
+    {
+      "set": "process",
+      "view": "outgoing",
+      "act": "package",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 69
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 67
+        },
+        {
+          "u": 1,
+          "clipIntersections": 68
+        }
+      ]
+    },
+    {
+      "set": "facility",
+      "view": "section-wide",
+      "act": "airflow",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 1885
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 1885
+        },
+        {
+          "u": 1,
+          "clipIntersections": 1885
+        }
+      ]
+    },
+    {
+      "set": "facility",
+      "view": "filter-deck",
+      "act": "airflow",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 1287
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 1189
+        },
+        {
+          "u": 1,
+          "clipIntersections": 1074
+        }
+      ]
+    },
+    {
+      "set": "facility",
+      "view": "downflow-floor",
+      "act": "airflow",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 1225
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 1204
+        },
+        {
+          "u": 1,
+          "clipIntersections": 1183
+        }
+      ]
+    },
+    {
+      "set": "facility",
+      "view": "return-rise",
+      "act": "airflow",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 1282
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 1238
+        },
+        {
+          "u": 1,
+          "clipIntersections": 1204
+        }
+      ]
+    },
+    {
+      "set": "facility",
+      "view": "service-canyon",
+      "act": "subfab",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 1218
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 1170
+        },
+        {
+          "u": 1,
+          "clipIntersections": 1090
+        }
+      ]
+    },
+    {
+      "set": "facility",
+      "view": "pump-rack",
+      "act": "subfab",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 174
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 150
+        },
+        {
+          "u": 1,
+          "clipIntersections": 124
+        }
+      ]
+    },
+    {
+      "set": "facility",
+      "view": "utility-riser",
+      "act": "subfab",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 217
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 178
+        },
+        {
+          "u": 1,
+          "clipIntersections": 153
+        }
+      ]
+    },
+    {
+      "set": "facility",
+      "view": "bay-entry",
+      "act": "metrology",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 162
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 160
+        },
+        {
+          "u": 1,
+          "clipIntersections": 156
+        }
+      ]
+    },
+    {
+      "set": "facility",
+      "view": "wafer-stage",
+      "act": "metrology",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 106
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 103
+        },
+        {
+          "u": 1,
+          "clipIntersections": 101
+        }
+      ]
+    },
+    {
+      "set": "facility",
+      "view": "objective-close",
+      "act": "metrology",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 57
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 56
+        },
+        {
+          "u": 1,
+          "clipIntersections": 55
+        }
+      ]
+    },
+    {
+      "set": "facility",
+      "view": "structural-build",
+      "act": "exterior",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 522
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 522
+        },
+        {
+          "u": 1,
+          "clipIntersections": 522
+        }
+      ]
+    },
+    {
+      "set": "facility",
+      "view": "commissioned-dusk",
+      "act": "exterior",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 1021
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 1021
+        },
+        {
+          "u": 1,
+          "clipIntersections": 1021
+        }
+      ]
+    },
+    {
+      "set": "facility",
+      "view": "logistics-close",
+      "act": "exterior",
+      "tested": [
+        {
+          "u": 0,
+          "clipIntersections": 777
+        },
+        {
+          "u": 0.5,
+          "clipIntersections": 760
+        },
+        {
+          "u": 1,
+          "clipIntersections": 719
+        }
+      ]
+    }
+  ],
+  "shotChecks": [
+    {
+      "id": "r8-f01-1",
+      "kind": "spatial",
+      "set": "hall",
+      "view": "cross-aisle",
+      "samples": [
+        {
+          "u": 0,
+          "p": 0,
+          "clipIntersections": 2299
+        },
+        {
+          "u": 0.5,
+          "p": 0.5,
+          "clipIntersections": 2069
+        },
+        {
+          "u": 1,
+          "p": 1,
+          "clipIntersections": 1815
+        }
+      ],
+      "reverseSeekState": true,
+      "reverseSeekMesh": true
+    },
+    {
+      "id": "r8-f01-2",
+      "kind": "spatial",
+      "set": "hall",
+      "view": "buffer-level",
+      "samples": [
+        {
+          "u": 0,
+          "p": 0,
+          "clipIntersections": 502
+        },
+        {
+          "u": 0.5,
+          "p": 0.5000000000000001,
+          "clipIntersections": 488
+        },
+        {
+          "u": 1,
+          "p": 1,
+          "clipIntersections": 478
+        }
+      ],
+      "reverseSeekState": true,
+      "reverseSeekMesh": true
+    },
+    {
+      "id": "r8-f02-1",
+      "kind": "editorial",
+      "view": "order",
+      "reverseSeekPixels": true,
+      "crossSceneSeekPixels": true,
+      "pixelDigest": "7442d57a8c570d5a550105349b2c68681eb84cb71302caceefad7747c97129b1"
+    },
+    {
+      "id": "r8-f03-1",
+      "kind": "editorial",
+      "view": "roles",
+      "reverseSeekPixels": true,
+      "crossSceneSeekPixels": true,
+      "pixelDigest": "536ae6386972e8e71cfd71264940d490bb1d941065df865de040972e18b3881d"
+    },
+    {
+      "id": "r8-f04-1",
+      "kind": "spatial",
+      "set": "hall",
+      "view": "nave-low",
+      "samples": [
+        {
+          "u": 0,
+          "p": 0.05,
+          "clipIntersections": 5905
+        },
+        {
+          "u": 0.5,
+          "p": 0.10000000000000003,
+          "clipIntersections": 5659
+        },
+        {
+          "u": 1,
+          "p": 0.15,
+          "clipIntersections": 5133
+        }
+      ],
+      "reverseSeekState": true,
+      "reverseSeekMesh": true
+    },
+    {
+      "id": "r8-f04-2",
+      "kind": "spatial",
+      "set": "hall",
+      "view": "bridge-high",
+      "samples": [
+        {
+          "u": 0,
+          "p": 0.15,
+          "clipIntersections": 6018
+        },
+        {
+          "u": 0.5,
+          "p": 0.195,
+          "clipIntersections": 5790
+        },
+        {
+          "u": 1,
+          "p": 0.24,
+          "clipIntersections": 5566
+        }
+      ],
+      "reverseSeekState": true,
+      "reverseSeekMesh": true
+    },
+    {
+      "id": "r8-f05-1",
+      "kind": "photo",
+      "view": "lcn_lab_2013",
+      "reverseSeekPixels": true,
+      "crossSceneSeekPixels": true,
+      "pixelDigest": "fda722d32d8e70765462f981f214c492ef24b506d83f014d6e852020d223616d"
+    },
+    {
+      "id": "r8-f05-2",
+      "kind": "spatial",
+      "set": "facility",
+      "view": "section-wide",
+      "samples": [
+        {
+          "u": 0,
+          "p": 0,
+          "clipIntersections": 1885
+        },
+        {
+          "u": 0.5,
+          "p": 0.4999999999999992,
+          "clipIntersections": 1885
+        },
+        {
+          "u": 1,
+          "p": 1,
+          "clipIntersections": 1885
+        }
+      ],
+      "reverseSeekState": true,
+      "reverseSeekMesh": true
+    },
+    {
+      "id": "r8-f05-3",
+      "kind": "spatial",
+      "set": "facility",
+      "view": "service-canyon",
+      "samples": [
+        {
+          "u": 0,
+          "p": 0,
+          "clipIntersections": 1218
+        },
+        {
+          "u": 0.5,
+          "p": 0.5,
+          "clipIntersections": 1170
+        },
+        {
+          "u": 1,
+          "p": 1,
+          "clipIntersections": 1089
+        }
+      ],
+      "reverseSeekState": true,
+      "reverseSeekMesh": true
+    },
+    {
+      "id": "r8-f06-1",
+      "kind": "spatial",
+      "set": "hall",
+      "view": "ceiling",
+      "samples": [
+        {
+          "u": 0,
+          "p": 0,
+          "clipIntersections": 4081
+        },
+        {
+          "u": 0.5,
+          "p": 0.1,
+          "clipIntersections": 3747
+        },
+        {
+          "u": 1,
+          "p": 0.2,
+          "clipIntersections": 3546
+        }
+      ],
+      "reverseSeekState": true,
+      "reverseSeekMesh": true
+    },
+    {
+      "id": "r8-f06-2",
+      "kind": "spatial",
+      "set": "hall",
+      "view": "rail-follow",
+      "samples": [
+        {
+          "u": 0,
+          "p": 0.2,
+          "clipIntersections": 3479
+        },
+        {
+          "u": 0.5,
+          "p": 0.2770833333500001,
+          "clipIntersections": 3213
+        },
+        {
+          "u": 1,
+          "p": 0.3541666667,
+          "clipIntersections": 2902
+        }
+      ],
+      "reverseSeekState": true,
+      "reverseSeekMesh": true
+    },
+    {
+      "id": "r8-f07-1",
+      "kind": "spatial",
+      "set": "hall",
+      "view": "hoist-side",
+      "samples": [
+        {
+          "u": 0,
+          "p": 0,
+          "clipIntersections": 1839
+        },
+        {
+          "u": 0.5,
+          "p": 0.16583850931677038,
+          "clipIntersections": 1982
+        },
+        {
+          "u": 1,
+          "p": 0.3316770186335402,
+          "clipIntersections": 1982
+        }
+      ],
+      "reverseSeekState": true,
+      "reverseSeekMesh": true
+    },
+    {
+      "id": "r8-f07-2",
+      "kind": "spatial",
+      "set": "hall",
+      "view": "hoist-side",
+      "samples": [
+        {
+          "u": 0,
+          "p": 0.3316770186335402,
+          "clipIntersections": 1700
+        },
+        {
+          "u": 0.5,
+          "p": 0.49751552795031,
+          "clipIntersections": 1329
+        },
+        {
+          "u": 1,
+          "p": 0.663354037267081,
+          "clipIntersections": 1280
+        }
+      ],
+      "reverseSeekState": true,
+      "reverseSeekMesh": true
+    },
+    {
+      "id": "r8-f08-1",
+      "kind": "spatial",
+      "set": "hall",
+      "view": "dock-macro",
+      "samples": [
+        {
+          "u": 0,
+          "p": 0.663354037267081,
+          "clipIntersections": 844
+        },
+        {
+          "u": 0.5,
+          "p": 0.8316770186335399,
+          "clipIntersections": 836
+        },
+        {
+          "u": 1,
+          "p": 1,
+          "clipIntersections": 839
+        }
+      ],
+      "reverseSeekState": true,
+      "reverseSeekMesh": true
+    },
+    {
+      "id": "r8-f08-2",
+      "kind": "spatial",
+      "set": "process",
+      "view": "interlock",
+      "samples": [
+        {
+          "u": 0,
+          "p": 0.16,
+          "clipIntersections": 141
+        },
+        {
+          "u": 0.5,
+          "p": 0.2891940976163455,
+          "clipIntersections": 141
+        },
+        {
+          "u": 1,
+          "p": 0.4183881952326902,
+          "clipIntersections": 141
+        }
+      ],
+      "reverseSeekState": true,
+      "reverseSeekMesh": true
+    },
+    {
+      "id": "r8-f09-1",
+      "kind": "spatial",
+      "set": "process",
+      "view": "blade",
+      "samples": [
+        {
+          "u": 0,
+          "p": 0.4183881952326902,
+          "clipIntersections": 61
+        },
+        {
+          "u": 0.5,
+          "p": 0.5153234960272418,
+          "clipIntersections": 61
+        },
+        {
+          "u": 1,
+          "p": 0.6122587968217934,
+          "clipIntersections": 61
+        }
+      ],
+      "reverseSeekState": true,
+      "reverseSeekMesh": true
+    },
+    {
+      "id": "r8-f09-2",
+      "kind": "spatial",
+      "set": "process",
+      "view": "wafer",
+      "samples": [
+        {
+          "u": 0,
+          "p": 0.6122587968217934,
+          "clipIntersections": 35
+        },
+        {
+          "u": 0.5,
+          "p": 0.7091940976163451,
+          "clipIntersections": 35
+        },
+        {
+          "u": 1,
+          "p": 0.8061293984108967,
+          "clipIntersections": 34
+        }
+      ],
+      "reverseSeekState": true,
+      "reverseSeekMesh": true
+    },
+    {
+      "id": "r8-f09-3",
+      "kind": "spatial",
+      "set": "process",
+      "view": "robot",
+      "samples": [
+        {
+          "u": 0,
+          "p": 0.8061293984108967,
+          "clipIntersections": 72
+        },
+        {
+          "u": 0.5,
+          "p": 0.9030646992054484,
+          "clipIntersections": 72
+        },
+        {
+          "u": 1,
+          "p": 1,
+          "clipIntersections": 72
+        }
+      ],
+      "reverseSeekState": true,
+      "reverseSeekMesh": true
+    },
+    {
+      "id": "r8-f10-1",
+      "kind": "spatial",
+      "set": "process",
+      "view": "chamber",
+      "samples": [
+        {
+          "u": 0,
+          "p": 0.2,
+          "clipIntersections": 94
+        },
+        {
+          "u": 0.5,
+          "p": 0.4600000000000008,
+          "clipIntersections": 95
+        },
+        {
+          "u": 1,
+          "p": 0.72,
+          "clipIntersections": 95
+        }
+      ],
+      "reverseSeekState": true,
+      "reverseSeekMesh": true
+    },
+    {
+      "id": "r8-f10-2",
+      "kind": "spatial",
+      "set": "process",
+      "view": "layers",
+      "samples": [
+        {
+          "u": 0,
+          "p": 0,
+          "clipIntersections": 25
+        },
+        {
+          "u": 0.5,
+          "p": 0.15419311727363824,
+          "clipIntersections": 25
+        },
+        {
+          "u": 1,
+          "p": 0.30838623454727737,
+          "clipIntersections": 36
+        }
+      ],
+      "reverseSeekState": true,
+      "reverseSeekMesh": true
+    },
+    {
+      "id": "r8-f11-1",
+      "kind": "spatial",
+      "set": "process",
+      "view": "pattern",
+      "samples": [
+        {
+          "u": 0,
+          "p": 0.30838623454727737,
+          "clipIntersections": 36
+        },
+        {
+          "u": 0.5,
+          "p": 0.48128967591045846,
+          "clipIntersections": 36
+        },
+        {
+          "u": 1,
+          "p": 0.6541931172736387,
+          "clipIntersections": 36
+        }
+      ],
+      "reverseSeekState": true,
+      "reverseSeekMesh": true
+    },
+    {
+      "id": "r8-f11-2",
+      "kind": "spatial",
+      "set": "process",
+      "view": "etch",
+      "samples": [
+        {
+          "u": 0,
+          "p": 0.6541931172736387,
+          "clipIntersections": 36
+        },
+        {
+          "u": 0.5,
+          "p": 0.8270965586368189,
+          "clipIntersections": 31
+        },
+        {
+          "u": 1,
+          "p": 1,
+          "clipIntersections": 25
+        }
+      ],
+      "reverseSeekState": true,
+      "reverseSeekMesh": true
+    },
+    {
+      "id": "r8-f12-1",
+      "kind": "editorial",
+      "view": "route",
+      "reverseSeekPixels": true,
+      "crossSceneSeekPixels": true,
+      "pixelDigest": "c12c8cb08bfbac062942303939c48047a74d9f60924151c9eec1d458473b3fe4"
+    },
+    {
+      "id": "r8-f13-1",
+      "kind": "editorial",
+      "view": "routes",
+      "reverseSeekPixels": true,
+      "crossSceneSeekPixels": true,
+      "pixelDigest": "fd658d403eab7ae7cbcefeb786bdc2f459ddbacbf656ff151bc474c822ad67b8"
+    },
+    {
+      "id": "r8-f14-1",
+      "kind": "spatial",
+      "set": "hall",
+      "view": "traverse",
+      "samples": [
+        {
+          "u": 0,
+          "p": 0.55,
+          "clipIntersections": 2841
+        },
+        {
+          "u": 0.5,
+          "p": 0.6500000000000006,
+          "clipIntersections": 2734
+        },
+        {
+          "u": 1,
+          "p": 0.75,
+          "clipIntersections": 2529
+        }
+      ],
+      "reverseSeekState": true,
+      "reverseSeekMesh": true
+    },
+    {
+      "id": "r8-f14-2",
+      "kind": "spatial",
+      "set": "process",
+      "view": "gate",
+      "samples": [
+        {
+          "u": 0,
+          "p": 0.44,
+          "clipIntersections": 92
+        },
+        {
+          "u": 0.5,
+          "p": 0.5299999999999995,
+          "clipIntersections": 92
+        },
+        {
+          "u": 1,
+          "p": 0.62,
+          "clipIntersections": 92
+        }
+      ],
+      "reverseSeekState": true,
+      "reverseSeekMesh": true
+    },
+    {
+      "id": "r8-f15-1",
+      "kind": "editorial",
+      "view": "qualification",
+      "reverseSeekPixels": true,
+      "crossSceneSeekPixels": true,
+      "pixelDigest": "b57b3e3c0febda5860acc0e10787a65f81d47d1b6b8c43c94a360314d6f407ac"
+    },
+    {
+      "id": "r8-f16-1",
+      "kind": "editorial",
+      "view": "matrix",
+      "reverseSeekPixels": true,
+      "crossSceneSeekPixels": true,
+      "pixelDigest": "4734a5e90216e80a1acdc0e8c3a90c4b44ac6775cab51c4368ac7d58f266c8c0"
+    },
+    {
+      "id": "r8-f17-1",
+      "kind": "editorial",
+      "view": "alternative",
+      "reverseSeekPixels": true,
+      "crossSceneSeekPixels": true,
+      "pixelDigest": "d313709a4159c2b28ba9cd09e8da5a3e928a738a6b8f0d8c1e6fdd7b7cb62a3a"
+    },
+    {
+      "id": "r8-f18-1",
+      "kind": "editorial",
+      "view": "queue",
+      "reverseSeekPixels": true,
+      "crossSceneSeekPixels": true,
+      "pixelDigest": "af5aed5b295fdb76613274e5e142c33a34e010e7fc8baa3a83134764ca25102e"
+    },
+    {
+      "id": "r8-f19-1",
+      "kind": "editorial",
+      "view": "clocks",
+      "reverseSeekPixels": true,
+      "crossSceneSeekPixels": true,
+      "pixelDigest": "adc8d06792707c22897e0ac84167174452c793e7ccbb87ba30da4f7e3af1fc7d"
+    },
+    {
+      "id": "r8-f20-1",
+      "kind": "spatial",
+      "set": "facility",
+      "view": "utility-riser",
+      "samples": [
+        {
+          "u": 0,
+          "p": 0,
+          "clipIntersections": 217
+        },
+        {
+          "u": 0.5,
+          "p": 0.5000000000000028,
+          "clipIntersections": 178
+        },
+        {
+          "u": 1,
+          "p": 1,
+          "clipIntersections": 153
+        }
+      ],
+      "reverseSeekState": true,
+      "reverseSeekMesh": true
+    },
+    {
+      "id": "r8-f20-2",
+      "kind": "editorial",
+      "view": "levers",
+      "reverseSeekPixels": true,
+      "crossSceneSeekPixels": true,
+      "pixelDigest": "a40ecbaf0b01d870121facb5c3ef27a8a6bbd9cd9464fec445e3360ac4e17e2a"
+    },
+    {
+      "id": "r8-f21-1",
+      "kind": "photo",
+      "view": "intel_d1x_cranes_2011",
+      "reverseSeekPixels": true,
+      "crossSceneSeekPixels": true,
+      "pixelDigest": "f30fcf568a04e5d62e6c28f3c48c03d2349e6f517c3e3e779a975a9b868c5e1c"
+    },
+    {
+      "id": "r8-f21-2",
+      "kind": "editorial",
+      "view": "milestones",
+      "reverseSeekPixels": true,
+      "crossSceneSeekPixels": true,
+      "pixelDigest": "d0abe98ae7d45f5ea11f68c7a04e46c407bf62b2be8b6e457cfa58403e18c316"
+    },
+    {
+      "id": "r8-f22-1",
+      "kind": "spatial",
+      "set": "facility",
+      "view": "bay-entry",
+      "samples": [
+        {
+          "u": 0,
+          "p": 0,
+          "clipIntersections": 162
+        },
+        {
+          "u": 0.5,
+          "p": 0.11608935742971886,
+          "clipIntersections": 160
+        },
+        {
+          "u": 1,
+          "p": 0.23217871485943772,
+          "clipIntersections": 156
+        }
+      ],
+      "reverseSeekState": true,
+      "reverseSeekMesh": true
+    },
+    {
+      "id": "r8-f22-2",
+      "kind": "spatial",
+      "set": "facility",
+      "view": "wafer-stage",
+      "samples": [
+        {
+          "u": 0,
+          "p": 0.23217871485943772,
+          "clipIntersections": 106
+        },
+        {
+          "u": 0.5,
+          "p": 0.34826807228915657,
+          "clipIntersections": 103
+        },
+        {
+          "u": 1,
+          "p": 0.46435742971887545,
+          "clipIntersections": 101
+        }
+      ],
+      "reverseSeekState": true,
+      "reverseSeekMesh": true
+    },
+    {
+      "id": "r8-f23-1",
+      "kind": "spatial",
+      "set": "facility",
+      "view": "objective-close",
+      "samples": [
+        {
+          "u": 0,
+          "p": 0.46435742971887545,
+          "clipIntersections": 59
+        },
+        {
+          "u": 0.5,
+          "p": 0.5982680722891569,
+          "clipIntersections": 56
+        },
+        {
+          "u": 1,
+          "p": 0.7321787148594384,
+          "clipIntersections": 58
+        }
+      ],
+      "reverseSeekState": true,
+      "reverseSeekMesh": true
+    },
+    {
+      "id": "r8-f23-2",
+      "kind": "editorial",
+      "view": "measurement",
+      "reverseSeekPixels": true,
+      "crossSceneSeekPixels": true,
+      "pixelDigest": "c3c73e207132cd097c0d875d1831ad217da3f5939101da93560bc5a81f5eb097"
+    },
+    {
+      "id": "r8-f24-1",
+      "kind": "editorial",
+      "view": "design",
+      "reverseSeekPixels": true,
+      "crossSceneSeekPixels": true,
+      "pixelDigest": "0d177da9e90187471094fde458cb0fef04ab68f246ac2a49f250c885539298fb"
+    },
+    {
+      "id": "r8-f25-1",
+      "kind": "editorial",
+      "view": "window",
+      "reverseSeekPixels": true,
+      "crossSceneSeekPixels": true,
+      "pixelDigest": "5b0b63e59b45003eb66d5be91944940c4087caa2f9331411c6182f54ce77eb0c"
+    },
+    {
+      "id": "r8-f26-1",
+      "kind": "editorial",
+      "view": "containment",
+      "reverseSeekPixels": true,
+      "crossSceneSeekPixels": true,
+      "pixelDigest": "fb8e6a664a648b98194288d683ba01d9b968285280bc3b8d3f8e14844006a5ca"
+    },
+    {
+      "id": "r8-f27-1",
+      "kind": "editorial",
+      "view": "efoundry",
+      "reverseSeekPixels": true,
+      "crossSceneSeekPixels": true,
+      "pixelDigest": "6b6879280e3a01f809cf661c9fa9fecb26363527b2caf9acd38e0fd4b4735407"
+    },
+    {
+      "id": "r8-f28-1",
+      "kind": "editorial",
+      "view": "collaboration",
+      "reverseSeekPixels": true,
+      "crossSceneSeekPixels": true,
+      "pixelDigest": "90ce0771265eb3528521fbb8c329be16923297ec8cadfa46c1b1ea5d38f6d266"
+    },
+    {
+      "id": "r8-f29-1",
+      "kind": "editorial",
+      "view": "handoff-data",
+      "reverseSeekPixels": true,
+      "crossSceneSeekPixels": true,
+      "pixelDigest": "4512cf16b99169c6e0966e9a4207941b1ff0901e4f42f5b7b53836403dae9d92"
+    },
+    {
+      "id": "r8-f30-1",
+      "kind": "spatial",
+      "set": "hall",
+      "view": "quiet-operator",
+      "samples": [
+        {
+          "u": 0,
+          "p": 0,
+          "clipIntersections": 1221
+        },
+        {
+          "u": 0.5,
+          "p": 0.5,
+          "clipIntersections": 1160
+        },
+        {
+          "u": 1,
+          "p": 1,
+          "clipIntersections": 1117
+        }
+      ],
+      "reverseSeekState": true,
+      "reverseSeekMesh": true
+    },
+    {
+      "id": "r8-f31-1",
+      "kind": "editorial",
+      "view": "founding",
+      "reverseSeekPixels": true,
+      "crossSceneSeekPixels": true,
+      "pixelDigest": "53c7fdd0bf4e4361df16d6edf1028989242295c60a4360b2877b8a9172edc14f"
+    },
+    {
+      "id": "r8-f32-1",
+      "kind": "editorial",
+      "view": "report",
+      "reverseSeekPixels": true,
+      "crossSceneSeekPixels": true,
+      "pixelDigest": "17d20a9852e948e8e06393b8251c7924b49ae12292f05dd7e3364e412b3ce904"
+    },
+    {
+      "id": "r8-f33-1",
+      "kind": "editorial",
+      "view": "customers",
+      "reverseSeekPixels": true,
+      "crossSceneSeekPixels": true,
+      "pixelDigest": "83f01d97860bdc57cef85cb08a3fa944b5304d0b4eb873b8780624749ec619bc"
+    },
+    {
+      "id": "r8-f34-1",
+      "kind": "editorial",
+      "view": "commitments",
+      "reverseSeekPixels": true,
+      "crossSceneSeekPixels": true,
+      "pixelDigest": "62890c19a0ad1e12f356ed6ed50feff5b72282f131ec0dec60813362732bc268"
+    },
+    {
+      "id": "r8-f35-1",
+      "kind": "spatial",
+      "set": "facility",
+      "view": "structural-build",
+      "samples": [
+        {
+          "u": 0,
+          "p": 0,
+          "clipIntersections": 338
+        },
+        {
+          "u": 0.5,
+          "p": 0.5,
+          "clipIntersections": 510
+        },
+        {
+          "u": 1,
+          "p": 1,
+          "clipIntersections": 1015
+        }
+      ],
+      "reverseSeekState": true,
+      "reverseSeekMesh": true
+    },
+    {
+      "id": "r8-f36-1",
+      "kind": "editorial",
+      "view": "filing",
+      "reverseSeekPixels": true,
+      "crossSceneSeekPixels": true,
+      "pixelDigest": "6ad749529d47668d093e994c4d4a8016046a76851677a5a760c32dd4969e9724"
+    },
+    {
+      "id": "r8-f37-1",
+      "kind": "editorial",
+      "view": "wafer-risk",
+      "reverseSeekPixels": true,
+      "crossSceneSeekPixels": true,
+      "pixelDigest": "372795c2e061f52cc3eb3c88a45a2b3996fe9eda3b4f0a7aa07f9872c335fd78"
+    },
+    {
+      "id": "r8-f38-1",
+      "kind": "editorial",
+      "view": "joint-work",
+      "reverseSeekPixels": true,
+      "crossSceneSeekPixels": true,
+      "pixelDigest": "abca6569448ec8fa143a4c96061bec29deec4cbbe8cf565c3b8713df79b3878d"
+    },
+    {
+      "id": "r8-f39-1",
+      "kind": "spatial",
+      "set": "process",
+      "view": "tray",
+      "samples": [
+        {
+          "u": 0,
+          "p": 0,
+          "clipIntersections": 81
+        },
+        {
+          "u": 0.5,
+          "p": 0.16666666666666569,
+          "clipIntersections": 81
+        },
+        {
+          "u": 1,
+          "p": 0.33333333333333137,
+          "clipIntersections": 81
+        }
+      ],
+      "reverseSeekState": true,
+      "reverseSeekMesh": true
+    },
+    {
+      "id": "r8-f39-2",
+      "kind": "spatial",
+      "set": "process",
+      "view": "substrate",
+      "samples": [
+        {
+          "u": 0,
+          "p": 0.33333333333333137,
+          "clipIntersections": 71
+        },
+        {
+          "u": 0.5,
+          "p": 0.49999999999999706,
+          "clipIntersections": 71
+        },
+        {
+          "u": 1,
+          "p": 0.6666666666666686,
+          "clipIntersections": 73
+        }
+      ],
+      "reverseSeekState": true,
+      "reverseSeekMesh": true
+    },
+    {
+      "id": "r8-f39-3",
+      "kind": "spatial",
+      "set": "process",
+      "view": "lid",
+      "samples": [
+        {
+          "u": 0,
+          "p": 0.6666666666666686,
+          "clipIntersections": 74
+        },
+        {
+          "u": 0.5,
+          "p": 0.8333333333333343,
+          "clipIntersections": 73
+        },
+        {
+          "u": 1,
+          "p": 1,
+          "clipIntersections": 73
+        }
+      ],
+      "reverseSeekState": true,
+      "reverseSeekMesh": true
+    },
+    {
+      "id": "r8-f40-1",
+      "kind": "spatial",
+      "set": "process",
+      "view": "outgoing",
+      "samples": [
+        {
+          "u": 0,
+          "p": 0.98,
+          "clipIntersections": 70
+        },
+        {
+          "u": 0.5,
+          "p": 0.9900000000000001,
+          "clipIntersections": 69
+        },
+        {
+          "u": 1,
+          "p": 1,
+          "clipIntersections": 70
+        }
+      ],
+      "reverseSeekState": true,
+      "reverseSeekMesh": true
+    },
+    {
+      "id": "r8-f40-2",
+      "kind": "spatial",
+      "set": "facility",
+      "view": "logistics-close",
+      "samples": [
+        {
+          "u": 0,
+          "p": 0,
+          "clipIntersections": 777
+        },
+        {
+          "u": 0.5,
+          "p": 0.4999999999999935,
+          "clipIntersections": 760
+        },
+        {
+          "u": 1,
+          "p": 1,
+          "clipIntersections": 698
+        }
+      ],
+      "reverseSeekState": true,
+      "reverseSeekMesh": true
+    },
+    {
+      "id": "r8-f41-1",
+      "kind": "spatial",
+      "set": "hall",
+      "view": "long-lens",
+      "samples": [
+        {
+          "u": 0,
+          "p": 0,
+          "clipIntersections": 4731
+        },
+        {
+          "u": 0.5,
+          "p": 0.5,
+          "clipIntersections": 4563
+        },
+        {
+          "u": 1,
+          "p": 1,
+          "clipIntersections": 4382
+        }
+      ],
+      "reverseSeekState": true,
+      "reverseSeekMesh": true
+    },
+    {
+      "id": "r8-f42-1",
+      "kind": "spatial",
+      "set": "facility",
+      "view": "return-rise",
+      "samples": [
+        {
+          "u": 0,
+          "p": 0,
+          "clipIntersections": 1282
+        },
+        {
+          "u": 0.5,
+          "p": 0.5,
+          "clipIntersections": 1237
+        },
+        {
+          "u": 1,
+          "p": 1,
+          "clipIntersections": 1204
+        }
+      ],
+      "reverseSeekState": true,
+      "reverseSeekMesh": true
+    },
+    {
+      "id": "r8-f42-2",
+      "kind": "spatial",
+      "set": "hall",
+      "view": "service",
+      "samples": [
+        {
+          "u": 0,
+          "p": 0,
+          "clipIntersections": 849
+        },
+        {
+          "u": 0.5,
+          "p": 0.5,
+          "clipIntersections": 1030
+        },
+        {
+          "u": 1,
+          "p": 1,
+          "clipIntersections": 1258
+        }
+      ],
+      "reverseSeekState": true,
+      "reverseSeekMesh": true
+    },
+    {
+      "id": "r8-f43-1",
+      "kind": "editorial",
+      "view": "ownership",
+      "reverseSeekPixels": true,
+      "crossSceneSeekPixels": true,
+      "pixelDigest": "aee62c4eab516d94685f74cb84d7a8070aa8e720afb30a0e08881b1143986613"
+    },
+    {
+      "id": "r8-f44-1",
+      "kind": "editorial",
+      "view": "news",
+      "reverseSeekPixels": true,
+      "crossSceneSeekPixels": true,
+      "pixelDigest": "92bcbb3a70b4451eb5926f81b7951807322f878a73cadff40eda2df05f55ff6c"
+    },
+    {
+      "id": "r8-f45-1",
+      "kind": "spatial",
+      "set": "facility",
+      "view": "commissioned-dusk",
+      "samples": [
+        {
+          "u": 0,
+          "p": 0,
+          "clipIntersections": 1020
+        },
+        {
+          "u": 0.5,
+          "p": 0.49999999999999767,
+          "clipIntersections": 1021
+        },
+        {
+          "u": 1,
+          "p": 1,
+          "clipIntersections": 1021
+        }
+      ],
+      "reverseSeekState": true,
+      "reverseSeekMesh": true
+    }
+  ],
+  "continuity": [
+    {
+      "event": "handoff",
+      "before": "r8-f07-1",
+      "after": "r8-f07-2",
+      "time": 65.18666666666667,
+      "pBefore": 0.3316770186335402,
+      "pAfter": 0.3316770186335402,
+      "actorMatch": true
+    },
+    {
+      "event": "handoff",
+      "before": "r8-f07-2",
+      "after": "r8-f08-1",
+      "time": 69.45866666666667,
+      "pBefore": 0.663354037267081,
+      "pAfter": 0.663354037267081,
+      "actorMatch": true
+    },
+    {
+      "event": "load",
+      "before": "r8-f08-2",
+      "after": "r8-f09-1",
+      "time": 78.13066666666667,
+      "pBefore": 0.4183881952326902,
+      "pAfter": 0.4183881952326902
+    },
+    {
+      "event": "load",
+      "before": "r8-f09-1",
+      "after": "r8-f09-2",
+      "time": 81.384,
+      "pBefore": 0.6122587968217934,
+      "pAfter": 0.6122587968217934
+    },
+    {
+      "event": "load",
+      "before": "r8-f09-2",
+      "after": "r8-f09-3",
+      "time": 84.63733333333333,
+      "pBefore": 0.8061293984108967,
+      "pAfter": 0.8061293984108967
+    },
+    {
+      "event": "process",
+      "before": "r8-f10-2",
+      "after": "r8-f11-1",
+      "time": 97.736,
+      "pBefore": 0.30838623454727737,
+      "pAfter": 0.30838623454727737
+    },
+    {
+      "event": "process",
+      "before": "r8-f11-1",
+      "after": "r8-f11-2",
+      "time": 103.256,
+      "pBefore": 0.6541931172736387,
+      "pAfter": 0.6541931172736387
+    },
+    {
+      "event": "measure",
+      "before": "r8-f22-1",
+      "after": "r8-f22-2",
+      "time": 210.904,
+      "pBefore": 0.23217871485943772,
+      "pAfter": 0.23217871485943772
+    },
+    {
+      "event": "measure",
+      "before": "r8-f22-2",
+      "after": "r8-f23-1",
+      "time": 215.83733333333333,
+      "pBefore": 0.46435742971887545,
+      "pAfter": 0.46435742971887545
+    },
+    {
+      "event": "package",
+      "before": "r8-f39-1",
+      "after": "r8-f39-2",
+      "time": 407.592,
+      "pBefore": 0.33333333333333137,
+      "pAfter": 0.33333333333333137
+    },
+    {
+      "event": "package",
+      "before": "r8-f39-2",
+      "after": "r8-f39-3",
+      "time": 410.824,
+      "pBefore": 0.6666666666666686,
+      "pAfter": 0.6666666666666686
+    }
+  ],
+  "mechanismChecks": {
+    "dockedDoorGap": -7.301569349138504e-10,
+    "waferPathBlockers": [],
+    "openDoorTopY": 0.8509999932050705,
+    "waferBottomY": 1.0606,
+    "slotContacts": [
+      {
+        "p": 0,
+        "support": "FOUP-slot-rails",
+        "railId": 7909,
+        "waferBottomY": 1.0606000000101048,
+        "railTopY": 1.0606000000130384,
+        "verticalGap": -2.9336533202695136e-12,
+        "overlapArea": 0.0010534959344170054,
+        "diskCapVertices": 64,
+        "railCapVertices": 4,
+        "contact": true,
+        "intersection": [
+          [
+            0.1370000002831221,
+            0.01625277475783936
+          ],
+          [
+            0.13858193159103394,
+            0.01959748607873918
+          ],
+          [
+            0.14354105293750763,
+            0.033457298249006284
+          ],
+          [
+            0.14711779356002808,
+            0.04773645144701005
+          ],
+          [
+            0.1492777019739151,
+            0.06229742937535049
+          ],
+          [
+            0.15000000596046448,
+            0.07700000000000003
+          ],
+          [
+            0.1492777019739151,
+            0.09170257062464954
+          ],
+          [
+            0.14711779356002808,
+            0.10626354855298997
+          ],
+          [
+            0.14354105293750763,
+            0.12054270175099374
+          ],
+          [
+            0.13858193159103394,
+            0.13440251392126085
+          ],
+          [
+            0.13700000028312204,
+            0.13774722524216074
+          ]
+        ]
+      },
+      {
+        "p": 0,
+        "support": "FOUP-slot-rails",
+        "railId": 7934,
+        "waferBottomY": 1.0606000000101048,
+        "railTopY": 1.0606000000130384,
+        "verticalGap": -2.9336533202695136e-12,
+        "overlapArea": 0.0010534959344170062,
+        "diskCapVertices": 64,
+        "railCapVertices": 4,
+        "contact": true,
+        "intersection": [
+          [
+            -0.15000000596046448,
+            0.07699999999999999
+          ],
+          [
+            -0.1492777019739151,
+            0.06229742937535049
+          ],
+          [
+            -0.14711779356002808,
+            0.04773645144701005
+          ],
+          [
+            -0.14354105293750763,
+            0.033457298249006284
+          ],
+          [
+            -0.13858193159103394,
+            0.01959748607873918
+          ],
+          [
+            -0.13700000028312204,
+            0.016252774757839282
+          ],
+          [
+            -0.1370000002831221,
+            0.13774722524216068
+          ],
+          [
+            -0.13858193159103394,
+            0.13440251392126085
+          ],
+          [
+            -0.14354105293750763,
+            0.12054270175099374
+          ],
+          [
+            -0.14711779356002808,
+            0.10626354855298997
+          ],
+          [
+            -0.1492777019739151,
+            0.09170257062464954
+          ]
+        ]
+      },
+      {
+        "p": 0.08,
+        "support": "FOUP-slot-rails",
+        "railId": 7909,
+        "waferBottomY": 1.0606000000101048,
+        "railTopY": 1.0606000000130384,
+        "verticalGap": -2.9336533202695136e-12,
+        "overlapArea": 0.001053495934417007,
+        "diskCapVertices": 64,
+        "railCapVertices": 4,
+        "contact": true,
+        "intersection": [
+          [
+            0.1370000002831221,
+            -0.018747225242160652
+          ],
+          [
+            0.13858193159103394,
+            -0.015402513921260831
+          ],
+          [
+            0.14354105293750763,
+            -0.001542701750993726
+          ],
+          [
+            0.14711779356002808,
+            0.012736451447010043
+          ],
+          [
+            0.1492777019739151,
+            0.027297429375350478
+          ],
+          [
+            0.15000000596046448,
+            0.04200000000000001
+          ],
+          [
+            0.1492777019739151,
+            0.05670257062464953
+          ],
+          [
+            0.14711779356002808,
+            0.07126354855298997
+          ],
+          [
+            0.14354105293750763,
+            0.08554270175099374
+          ],
+          [
+            0.13858193159103394,
+            0.09940251392126084
+          ],
+          [
+            0.13700000028312204,
+            0.10274722524216073
+          ]
+        ]
+      },
+      {
+        "p": 0.08,
+        "support": "FOUP-slot-rails",
+        "railId": 7934,
+        "waferBottomY": 1.0606000000101048,
+        "railTopY": 1.0606000000130384,
+        "verticalGap": -2.9336533202695136e-12,
+        "overlapArea": 0.0010534959344170084,
+        "diskCapVertices": 64,
+        "railCapVertices": 4,
+        "contact": true,
+        "intersection": [
+          [
+            -0.15000000596046448,
+            0.041999999999999975
+          ],
+          [
+            -0.1492777019739151,
+            0.027297429375350478
+          ],
+          [
+            -0.14711779356002808,
+            0.012736451447010043
+          ],
+          [
+            -0.14354105293750763,
+            -0.001542701750993726
+          ],
+          [
+            -0.13858193159103394,
+            -0.015402513921260831
+          ],
+          [
+            -0.13700000028312204,
+            -0.01874722524216073
+          ],
+          [
+            -0.1370000002831221,
+            0.10274722524216068
+          ],
+          [
+            -0.13858193159103394,
+            0.09940251392126084
+          ],
+          [
+            -0.14354105293750763,
+            0.08554270175099374
+          ],
+          [
+            -0.14711779356002808,
+            0.07126354855298997
+          ],
+          [
+            -0.1492777019739151,
+            0.05670257062464953
+          ]
+        ]
+      },
+      {
+        "p": 0.16,
+        "support": "FOUP-slot-rails",
+        "railId": 7909,
+        "waferBottomY": 1.0606000000101048,
+        "railTopY": 1.0606000000130384,
+        "verticalGap": -2.9336533202695136e-12,
+        "overlapArea": 0.0010534959344170088,
+        "diskCapVertices": 64,
+        "railCapVertices": 4,
+        "contact": true,
+        "intersection": [
+          [
+            0.1370000002831221,
+            -0.053747225242160655
+          ],
+          [
+            0.13858193159103394,
+            -0.050402513921260834
+          ],
+          [
+            0.14354105293750763,
+            -0.03654270175099373
+          ],
+          [
+            0.14711779356002808,
+            -0.02226354855298996
+          ],
+          [
+            0.1492777019739151,
+            -0.0077025706246495245
+          ],
+          [
+            0.15000000596046448,
+            0.00700000000000001
+          ],
+          [
+            0.1492777019739151,
+            0.021702570624649524
+          ],
+          [
+            0.14711779356002808,
+            0.03626354855298996
+          ],
+          [
+            0.14354105293750763,
+            0.05054270175099373
+          ],
+          [
+            0.13858193159103394,
+            0.06440251392126084
+          ],
+          [
+            0.13700000028312204,
+            0.06774722524216073
+          ]
+        ]
+      },
+      {
+        "p": 0.16,
+        "support": "FOUP-slot-rails",
+        "railId": 7934,
+        "waferBottomY": 1.0606000000101048,
+        "railTopY": 1.0606000000130384,
+        "verticalGap": -2.9336533202695136e-12,
+        "overlapArea": 0.0010534959344170077,
+        "diskCapVertices": 64,
+        "railCapVertices": 4,
+        "contact": true,
+        "intersection": [
+          [
+            -0.15000000596046448,
+            0.006999999999999972
+          ],
+          [
+            -0.1492777019739151,
+            -0.0077025706246495245
+          ],
+          [
+            -0.14711779356002808,
+            -0.02226354855298996
+          ],
+          [
+            -0.14354105293750763,
+            -0.03654270175099373
+          ],
+          [
+            -0.13858193159103394,
+            -0.050402513921260834
+          ],
+          [
+            -0.13700000028312204,
+            -0.05374722524216073
+          ],
+          [
+            -0.1370000002831221,
+            0.06774722524216067
+          ],
+          [
+            -0.13858193159103394,
+            0.06440251392126084
+          ],
+          [
+            -0.14354105293750763,
+            0.05054270175099373
+          ],
+          [
+            -0.14711779356002808,
+            0.03626354855298996
+          ],
+          [
+            -0.1492777019739151,
+            0.021702570624649524
+          ]
+        ]
+      },
+      {
+        "p": 0.29,
+        "support": "FOUP-slot-rails",
+        "railId": 7909,
+        "waferBottomY": 1.0606000000101048,
+        "railTopY": 1.0606000000130384,
+        "verticalGap": -2.9336533202695136e-12,
+        "overlapArea": 0.0010534959344170088,
+        "diskCapVertices": 64,
+        "railCapVertices": 4,
+        "contact": true,
+        "intersection": [
+          [
+            0.1370000002831221,
+            -0.053747225242160655
+          ],
+          [
+            0.13858193159103394,
+            -0.050402513921260834
+          ],
+          [
+            0.14354105293750763,
+            -0.03654270175099373
+          ],
+          [
+            0.14711779356002808,
+            -0.02226354855298996
+          ],
+          [
+            0.1492777019739151,
+            -0.0077025706246495245
+          ],
+          [
+            0.15000000596046448,
+            0.00700000000000001
+          ],
+          [
+            0.1492777019739151,
+            0.021702570624649524
+          ],
+          [
+            0.14711779356002808,
+            0.03626354855298996
+          ],
+          [
+            0.14354105293750763,
+            0.05054270175099373
+          ],
+          [
+            0.13858193159103394,
+            0.06440251392126084
+          ],
+          [
+            0.13700000028312204,
+            0.06774722524216073
+          ]
+        ]
+      },
+      {
+        "p": 0.29,
+        "support": "FOUP-slot-rails",
+        "railId": 7934,
+        "waferBottomY": 1.0606000000101048,
+        "railTopY": 1.0606000000130384,
+        "verticalGap": -2.9336533202695136e-12,
+        "overlapArea": 0.0010534959344170077,
+        "diskCapVertices": 64,
+        "railCapVertices": 4,
+        "contact": true,
+        "intersection": [
+          [
+            -0.15000000596046448,
+            0.006999999999999972
+          ],
+          [
+            -0.1492777019739151,
+            -0.0077025706246495245
+          ],
+          [
+            -0.14711779356002808,
+            -0.02226354855298996
+          ],
+          [
+            -0.14354105293750763,
+            -0.03654270175099373
+          ],
+          [
+            -0.13858193159103394,
+            -0.050402513921260834
+          ],
+          [
+            -0.13700000028312204,
+            -0.05374722524216073
+          ],
+          [
+            -0.1370000002831221,
+            0.06774722524216067
+          ],
+          [
+            -0.13858193159103394,
+            0.06440251392126084
+          ],
+          [
+            -0.14354105293750763,
+            0.05054270175099373
+          ],
+          [
+            -0.14711779356002808,
+            0.03626354855298996
+          ],
+          [
+            -0.1492777019739151,
+            0.021702570624649524
+          ]
+        ]
+      },
+      {
+        "p": 0.41,
+        "support": "FOUP-slot-rails",
+        "railId": 7909,
+        "waferBottomY": 1.0606000000101048,
+        "railTopY": 1.0606000000130384,
+        "verticalGap": -2.9336533202695136e-12,
+        "overlapArea": 0.0010534959344170088,
+        "diskCapVertices": 64,
+        "railCapVertices": 4,
+        "contact": true,
+        "intersection": [
+          [
+            0.1370000002831221,
+            -0.053747225242160655
+          ],
+          [
+            0.13858193159103394,
+            -0.050402513921260834
+          ],
+          [
+            0.14354105293750763,
+            -0.03654270175099373
+          ],
+          [
+            0.14711779356002808,
+            -0.02226354855298996
+          ],
+          [
+            0.1492777019739151,
+            -0.0077025706246495245
+          ],
+          [
+            0.15000000596046448,
+            0.00700000000000001
+          ],
+          [
+            0.1492777019739151,
+            0.021702570624649524
+          ],
+          [
+            0.14711779356002808,
+            0.03626354855298996
+          ],
+          [
+            0.14354105293750763,
+            0.05054270175099373
+          ],
+          [
+            0.13858193159103394,
+            0.06440251392126084
+          ],
+          [
+            0.13700000028312204,
+            0.06774722524216073
+          ]
+        ]
+      },
+      {
+        "p": 0.41,
+        "support": "FOUP-slot-rails",
+        "railId": 7934,
+        "waferBottomY": 1.0606000000101048,
+        "railTopY": 1.0606000000130384,
+        "verticalGap": -2.9336533202695136e-12,
+        "overlapArea": 0.0010534959344170077,
+        "diskCapVertices": 64,
+        "railCapVertices": 4,
+        "contact": true,
+        "intersection": [
+          [
+            -0.15000000596046448,
+            0.006999999999999972
+          ],
+          [
+            -0.1492777019739151,
+            -0.0077025706246495245
+          ],
+          [
+            -0.14711779356002808,
+            -0.02226354855298996
+          ],
+          [
+            -0.14354105293750763,
+            -0.03654270175099373
+          ],
+          [
+            -0.13858193159103394,
+            -0.050402513921260834
+          ],
+          [
+            -0.13700000028312204,
+            -0.05374722524216073
+          ],
+          [
+            -0.1370000002831221,
+            0.06774722524216067
+          ],
+          [
+            -0.13858193159103394,
+            0.06440251392126084
+          ],
+          [
+            -0.14354105293750763,
+            0.05054270175099373
+          ],
+          [
+            -0.14711779356002808,
+            0.03626354855298996
+          ],
+          [
+            -0.1492777019739151,
+            0.021702570624649524
+          ]
+        ]
+      },
+      {
+        "p": 0.44,
+        "support": "FOUP-slot-rails",
+        "railId": 7909,
+        "waferBottomY": 1.0606000000101048,
+        "railTopY": 1.0606000000130384,
+        "verticalGap": -2.9336533202695136e-12,
+        "overlapArea": 0.0010534959344170088,
+        "diskCapVertices": 64,
+        "railCapVertices": 4,
+        "contact": true,
+        "intersection": [
+          [
+            0.1370000002831221,
+            -0.053747225242160655
+          ],
+          [
+            0.13858193159103394,
+            -0.050402513921260834
+          ],
+          [
+            0.14354105293750763,
+            -0.03654270175099373
+          ],
+          [
+            0.14711779356002808,
+            -0.02226354855298996
+          ],
+          [
+            0.1492777019739151,
+            -0.0077025706246495245
+          ],
+          [
+            0.15000000596046448,
+            0.00700000000000001
+          ],
+          [
+            0.1492777019739151,
+            0.021702570624649524
+          ],
+          [
+            0.14711779356002808,
+            0.03626354855298996
+          ],
+          [
+            0.14354105293750763,
+            0.05054270175099373
+          ],
+          [
+            0.13858193159103394,
+            0.06440251392126084
+          ],
+          [
+            0.13700000028312204,
+            0.06774722524216073
+          ]
+        ]
+      },
+      {
+        "p": 0.44,
+        "support": "FOUP-slot-rails",
+        "railId": 7934,
+        "waferBottomY": 1.0606000000101048,
+        "railTopY": 1.0606000000130384,
+        "verticalGap": -2.9336533202695136e-12,
+        "overlapArea": 0.0010534959344170077,
+        "diskCapVertices": 64,
+        "railCapVertices": 4,
+        "contact": true,
+        "intersection": [
+          [
+            -0.15000000596046448,
+            0.006999999999999972
+          ],
+          [
+            -0.1492777019739151,
+            -0.0077025706246495245
+          ],
+          [
+            -0.14711779356002808,
+            -0.02226354855298996
+          ],
+          [
+            -0.14354105293750763,
+            -0.03654270175099373
+          ],
+          [
+            -0.13858193159103394,
+            -0.050402513921260834
+          ],
+          [
+            -0.13700000028312204,
+            -0.05374722524216073
+          ],
+          [
+            -0.1370000002831221,
+            0.06774722524216067
+          ],
+          [
+            -0.13858193159103394,
+            0.06440251392126084
+          ],
+          [
+            -0.14354105293750763,
+            0.05054270175099373
+          ],
+          [
+            -0.14711779356002808,
+            0.03626354855298996
+          ],
+          [
+            -0.1492777019739151,
+            0.021702570624649524
+          ]
+        ]
+      },
+      {
+        "p": 0.62,
+        "support": "FOUP-slot-rails",
+        "railId": 7909,
+        "waferBottomY": 1.0606000000101048,
+        "railTopY": 1.0606000000130384,
+        "verticalGap": -2.9336533202695136e-12,
+        "overlapArea": 0.0010534959344170088,
+        "diskCapVertices": 64,
+        "railCapVertices": 4,
+        "contact": true,
+        "intersection": [
+          [
+            0.1370000002831221,
+            -0.053747225242160655
+          ],
+          [
+            0.13858193159103394,
+            -0.050402513921260834
+          ],
+          [
+            0.14354105293750763,
+            -0.03654270175099373
+          ],
+          [
+            0.14711779356002808,
+            -0.02226354855298996
+          ],
+          [
+            0.1492777019739151,
+            -0.0077025706246495245
+          ],
+          [
+            0.15000000596046448,
+            0.00700000000000001
+          ],
+          [
+            0.1492777019739151,
+            0.021702570624649524
+          ],
+          [
+            0.14711779356002808,
+            0.03626354855298996
+          ],
+          [
+            0.14354105293750763,
+            0.05054270175099373
+          ],
+          [
+            0.13858193159103394,
+            0.06440251392126084
+          ],
+          [
+            0.13700000028312204,
+            0.06774722524216073
+          ]
+        ]
+      },
+      {
+        "p": 0.62,
+        "support": "FOUP-slot-rails",
+        "railId": 7934,
+        "waferBottomY": 1.0606000000101048,
+        "railTopY": 1.0606000000130384,
+        "verticalGap": -2.9336533202695136e-12,
+        "overlapArea": 0.0010534959344170077,
+        "diskCapVertices": 64,
+        "railCapVertices": 4,
+        "contact": true,
+        "intersection": [
+          [
+            -0.15000000596046448,
+            0.006999999999999972
+          ],
+          [
+            -0.1492777019739151,
+            -0.0077025706246495245
+          ],
+          [
+            -0.14711779356002808,
+            -0.02226354855298996
+          ],
+          [
+            -0.14354105293750763,
+            -0.03654270175099373
+          ],
+          [
+            -0.13858193159103394,
+            -0.050402513921260834
+          ],
+          [
+            -0.13700000028312204,
+            -0.05374722524216073
+          ],
+          [
+            -0.1370000002831221,
+            0.06774722524216067
+          ],
+          [
+            -0.13858193159103394,
+            0.06440251392126084
+          ],
+          [
+            -0.14354105293750763,
+            0.05054270175099373
+          ],
+          [
+            -0.14711779356002808,
+            0.03626354855298996
+          ],
+          [
+            -0.1492777019739151,
+            0.021702570624649524
+          ]
+        ]
+      },
+      {
+        "p": 0.6699,
+        "support": "FOUP-slot-rails",
+        "railId": 7909,
+        "waferBottomY": 1.0606000000101048,
+        "railTopY": 1.0606000000130384,
+        "verticalGap": -2.9336533202695136e-12,
+        "overlapArea": 0.0010534959344170088,
+        "diskCapVertices": 64,
+        "railCapVertices": 4,
+        "contact": true,
+        "intersection": [
+          [
+            0.1370000002831221,
+            -0.053747225242160655
+          ],
+          [
+            0.13858193159103394,
+            -0.050402513921260834
+          ],
+          [
+            0.14354105293750763,
+            -0.03654270175099373
+          ],
+          [
+            0.14711779356002808,
+            -0.02226354855298996
+          ],
+          [
+            0.1492777019739151,
+            -0.0077025706246495245
+          ],
+          [
+            0.15000000596046448,
+            0.00700000000000001
+          ],
+          [
+            0.1492777019739151,
+            0.021702570624649524
+          ],
+          [
+            0.14711779356002808,
+            0.03626354855298996
+          ],
+          [
+            0.14354105293750763,
+            0.05054270175099373
+          ],
+          [
+            0.13858193159103394,
+            0.06440251392126084
+          ],
+          [
+            0.13700000028312204,
+            0.06774722524216073
+          ]
+        ]
+      },
+      {
+        "p": 0.6699,
+        "support": "FOUP-slot-rails",
+        "railId": 7934,
+        "waferBottomY": 1.0606000000101048,
+        "railTopY": 1.0606000000130384,
+        "verticalGap": -2.9336533202695136e-12,
+        "overlapArea": 0.0010534959344170077,
+        "diskCapVertices": 64,
+        "railCapVertices": 4,
+        "contact": true,
+        "intersection": [
+          [
+            -0.15000000596046448,
+            0.006999999999999972
+          ],
+          [
+            -0.1492777019739151,
+            -0.0077025706246495245
+          ],
+          [
+            -0.14711779356002808,
+            -0.02226354855298996
+          ],
+          [
+            -0.14354105293750763,
+            -0.03654270175099373
+          ],
+          [
+            -0.13858193159103394,
+            -0.050402513921260834
+          ],
+          [
+            -0.13700000028312204,
+            -0.05374722524216073
+          ],
+          [
+            -0.1370000002831221,
+            0.06774722524216067
+          ],
+          [
+            -0.13858193159103394,
+            0.06440251392126084
+          ],
+          [
+            -0.14354105293750763,
+            0.05054270175099373
+          ],
+          [
+            -0.14711779356002808,
+            0.03626354855298996
+          ],
+          [
+            -0.1492777019739151,
+            0.021702570624649524
+          ]
+        ]
+      },
+      {
+        "p": 0.67,
+        "support": "ceramic-blade-pads",
+        "railId": 7909,
+        "waferBottomY": 1.0606000000101048,
+        "railTopY": 1.0606000000130384,
+        "verticalGap": -2.9336533202695136e-12,
+        "overlapArea": 0.001053495934417007,
+        "diskCapVertices": 64,
+        "railCapVertices": 4,
+        "contact": true,
+        "intersection": [
+          [
+            0.1370000002831221,
+            -0.05374722524216065
+          ],
+          [
+            0.13858193159103394,
+            -0.05040251392126083
+          ],
+          [
+            0.14354105293750763,
+            -0.03654270175099372
+          ],
+          [
+            0.14711779356002808,
+            -0.022263548552989953
+          ],
+          [
+            0.1492777019739151,
+            -0.0077025706246495185
+          ],
+          [
+            0.15000000596046448,
+            0.007000000000000016
+          ],
+          [
+            0.1492777019739151,
+            0.02170257062464953
+          ],
+          [
+            0.14711779356002808,
+            0.036263548552989966
+          ],
+          [
+            0.14354105293750763,
+            0.050542701750993735
+          ],
+          [
+            0.13858193159103394,
+            0.06440251392126084
+          ],
+          [
+            0.13700000028312204,
+            0.06774722524216073
+          ]
+        ]
+      },
+      {
+        "p": 0.67,
+        "support": "ceramic-blade-pads",
+        "railId": 7934,
+        "waferBottomY": 1.0606000000101048,
+        "railTopY": 1.0606000000130384,
+        "verticalGap": -2.9336533202695136e-12,
+        "overlapArea": 0.0010534959344170073,
+        "diskCapVertices": 64,
+        "railCapVertices": 4,
+        "contact": true,
+        "intersection": [
+          [
+            -0.15000000596046448,
+            0.0069999999999999785
+          ],
+          [
+            -0.1492777019739151,
+            -0.0077025706246495185
+          ],
+          [
+            -0.14711779356002808,
+            -0.022263548552989953
+          ],
+          [
+            -0.14354105293750763,
+            -0.03654270175099372
+          ],
+          [
+            -0.13858193159103394,
+            -0.05040251392126083
+          ],
+          [
+            -0.13700000028312204,
+            -0.053747225242160725
+          ],
+          [
+            -0.1370000002831221,
+            0.06774722524216067
+          ],
+          [
+            -0.13858193159103394,
+            0.06440251392126084
+          ],
+          [
+            -0.14354105293750763,
+            0.050542701750993735
+          ],
+          [
+            -0.14711779356002808,
+            0.036263548552989966
+          ],
+          [
+            -0.1492777019739151,
+            0.02170257062464953
+          ]
+        ]
+      },
+      {
+        "p": 0.72,
+        "railId": 7909,
+        "waferBottomY": 1.0626000000101048,
+        "railTopY": 1.0606000000130384,
+        "verticalGap": 0.0019999999970663485,
+        "overlapArea": 0.001053495934417007,
+        "diskCapVertices": 64,
+        "railCapVertices": 4,
+        "contact": false,
+        "intersection": [
+          [
+            0.1370000002831221,
+            -0.05374722524216065
+          ],
+          [
+            0.13858193159103394,
+            -0.05040251392126083
+          ],
+          [
+            0.14354105293750763,
+            -0.03654270175099372
+          ],
+          [
+            0.14711779356002808,
+            -0.022263548552989953
+          ],
+          [
+            0.1492777019739151,
+            -0.0077025706246495185
+          ],
+          [
+            0.15000000596046448,
+            0.007000000000000016
+          ],
+          [
+            0.1492777019739151,
+            0.02170257062464953
+          ],
+          [
+            0.14711779356002808,
+            0.036263548552989966
+          ],
+          [
+            0.14354105293750763,
+            0.050542701750993735
+          ],
+          [
+            0.13858193159103394,
+            0.06440251392126084
+          ],
+          [
+            0.13700000028312204,
+            0.06774722524216073
+          ]
+        ]
+      },
+      {
+        "p": 0.72,
+        "railId": 7934,
+        "waferBottomY": 1.0626000000101048,
+        "railTopY": 1.0606000000130384,
+        "verticalGap": 0.0019999999970663485,
+        "overlapArea": 0.0010534959344170073,
+        "diskCapVertices": 64,
+        "railCapVertices": 4,
+        "contact": false,
+        "intersection": [
+          [
+            -0.15000000596046448,
+            0.0069999999999999785
+          ],
+          [
+            -0.1492777019739151,
+            -0.0077025706246495185
+          ],
+          [
+            -0.14711779356002808,
+            -0.022263548552989953
+          ],
+          [
+            -0.14354105293750763,
+            -0.03654270175099372
+          ],
+          [
+            -0.13858193159103394,
+            -0.05040251392126083
+          ],
+          [
+            -0.13700000028312204,
+            -0.053747225242160725
+          ],
+          [
+            -0.1370000002831221,
+            0.06774722524216067
+          ],
+          [
+            -0.13858193159103394,
+            0.06440251392126084
+          ],
+          [
+            -0.14354105293750763,
+            0.050542701750993735
+          ],
+          [
+            -0.14711779356002808,
+            0.036263548552989966
+          ],
+          [
+            -0.1492777019739151,
+            0.02170257062464953
+          ]
+        ]
+      },
+      {
+        "p": 0.8,
+        "railId": 7909,
+        "waferBottomY": 1.0626000000101048,
+        "railTopY": 1.0606000000130384,
+        "verticalGap": 0.0019999999970663485,
+        "overlapArea": 0.0010231212944502924,
+        "diskCapVertices": 64,
+        "railCapVertices": 4,
+        "contact": false,
+        "intersection": [
+          [
+            0.1370000002831221,
+            -0.09250000178813933
+          ],
+          [
+            0.1417271309655932,
+            -0.09250000178813933
+          ],
+          [
+            0.14354105293750763,
+            -0.08743043077630447
+          ],
+          [
+            0.14711779356002808,
+            -0.0731512775783007
+          ],
+          [
+            0.1492777019739151,
+            -0.05859029964996027
+          ],
+          [
+            0.15000000596046448,
+            -0.04388772902531074
+          ],
+          [
+            0.1492777019739151,
+            -0.029185158400661222
+          ],
+          [
+            0.14711779356002808,
+            -0.014624180472320787
+          ],
+          [
+            0.14354105293750763,
+            -0.00034502727431701824
+          ],
+          [
+            0.13858193159103394,
+            0.013514784895950087
+          ],
+          [
+            0.13700000028312206,
+            0.016859496216849946
+          ]
+        ]
+      },
+      {
+        "p": 0.8,
+        "railId": 7934,
+        "waferBottomY": 1.0626000000101048,
+        "railTopY": 1.0606000000130384,
+        "verticalGap": 0.0019999999970663485,
+        "overlapArea": 0.001023121294450297,
+        "diskCapVertices": 64,
+        "railCapVertices": 4,
+        "contact": false,
+        "intersection": [
+          [
+            -0.15000000596046448,
+            -0.043887729025310775
+          ],
+          [
+            -0.1492777019739151,
+            -0.05859029964996027
+          ],
+          [
+            -0.14711779356002808,
+            -0.0731512775783007
+          ],
+          [
+            -0.14354105293750763,
+            -0.08743043077630447
+          ],
+          [
+            -0.1417271309655932,
+            -0.09250000178813936
+          ],
+          [
+            -0.13700000028312204,
+            -0.09250000178813936
+          ],
+          [
+            -0.13700000028312206,
+            0.016859496216849942
+          ],
+          [
+            -0.13858193159103394,
+            0.013514784895950087
+          ],
+          [
+            -0.14354105293750763,
+            -0.00034502727431701824
+          ],
+          [
+            -0.14711779356002808,
+            -0.014624180472320787
+          ],
+          [
+            -0.1492777019739151,
+            -0.029185158400661222
+          ]
+        ]
+      },
+      {
+        "p": 0.96,
+        "railId": 7909,
+        "waferBottomY": 1.0626000000101048,
+        "railTopY": 1.0606000000130384,
+        "verticalGap": 0.0019999999970663485,
+        "overlapArea": 0,
+        "diskCapVertices": 64,
+        "railCapVertices": 4,
+        "contact": false,
+        "intersection": []
+      },
+      {
+        "p": 0.96,
+        "railId": 7934,
+        "waferBottomY": 1.0626000000101048,
+        "railTopY": 1.0606000000130384,
+        "verticalGap": 0.0019999999970663485,
+        "overlapArea": 0,
+        "diskCapVertices": 64,
+        "railCapVertices": 4,
+        "contact": false,
+        "intersection": []
+      },
+      {
+        "p": 1,
+        "railId": 7909,
+        "waferBottomY": 1.0626000000101048,
+        "railTopY": 1.0606000000130384,
+        "verticalGap": 0.0019999999970663485,
+        "overlapArea": 0,
+        "diskCapVertices": 64,
+        "railCapVertices": 4,
+        "contact": false,
+        "intersection": []
+      },
+      {
+        "p": 1,
+        "railId": 7934,
+        "waferBottomY": 1.0626000000101048,
+        "railTopY": 1.0606000000130384,
+        "verticalGap": 0.0019999999970663485,
+        "overlapArea": 0,
+        "diskCapVertices": 64,
+        "railCapVertices": 4,
+        "contact": false,
+        "intersection": []
+      }
+    ]
+  },
+  "clipStats": [
+    {
+      "shotId": "r8-f01-1",
+      "objects": 725,
+      "instances": 7041,
+      "clipIntersections": 2069,
+      "finite": true,
+      "atEyePlane": 0,
+      "samples": [
+        {
+          "meshId": 6205,
+          "instance": null,
+          "world": [
+            -2.671,
+            0.88,
+            -2.220446049250313e-19
+          ],
+          "ndc": [
+            0.3171049468093804,
+            -0.20571107068216912,
+            0.9995112003932561
+          ]
+        },
+        {
+          "meshId": 6206,
+          "instance": null,
+          "world": [
+            -2.77,
+            0.814,
+            -2.2204460492503132e-17
+          ],
+          "ndc": [
+            0.31451804884019,
+            -0.2164630152511487,
+            0.9995153511111811
+          ]
+        },
+        {
+          "meshId": 6207,
+          "instance": null,
+          "world": [
+            -2.57,
+            0.8965,
+            0.13000000000000003
+          ],
+          "ndc": [
+            0.30641746361275296,
+            -0.20390272905121182,
+            0.9995068285232793
+          ]
+        }
+      ]
+    },
+    {
+      "shotId": "r8-f01-2",
+      "objects": 725,
+      "instances": 7041,
+      "clipIntersections": 488,
+      "finite": true,
+      "atEyePlane": 0,
+      "samples": [
+        {
+          "meshId": 7039,
+          "instance": 0,
+          "world": [
+            0,
+            -0.05000000074505806,
+            0
+          ],
+          "ndc": [
+            -8.804371445083788,
+            -1.9616677525693345,
+            0.9975603704907074
+          ]
+        },
+        {
+          "meshId": 7040,
+          "instance": 0,
+          "world": [
+            0,
+            5.78000020980835,
+            0
+          ],
+          "ndc": [
+            -9.948546233913802,
+            5.400540989197103,
+            0.9972407285581985
+          ]
+        },
+        {
+          "meshId": 7041,
+          "instance": 0,
+          "world": [
+            -13,
+            2.8499999046325684,
+            0
+          ],
+          "ndc": [
+            4.4646629572967305,
+            -0.26195898180107313,
+            1.0007949425478406
+          ]
+        }
+      ]
+    },
+    {
+      "shotId": "r8-f04-1",
+      "objects": 725,
+      "instances": 7041,
+      "clipIntersections": 5659,
+      "finite": true,
+      "atEyePlane": 0,
+      "samples": [
+        {
+          "meshId": 6205,
+          "instance": null,
+          "world": [
+            -2.601,
+            0.88,
+            -2.220446049250313e-19
+          ],
+          "ndc": [
+            -0.13617173240925146,
+            -0.11863002187283649,
+            0.9997651103958819
+          ]
+        },
+        {
+          "meshId": 6206,
+          "instance": null,
+          "world": [
+            -2.7,
+            0.814,
+            -2.2204460492503132e-17
+          ],
+          "ndc": [
+            -0.1414793410585449,
+            -0.12492635488820361,
+            0.9997651185240494
+          ]
+        },
+        {
+          "meshId": 6207,
+          "instance": null,
+          "world": [
+            -2.5,
+            0.8965,
+            0.13000000000000003
+          ],
+          "ndc": [
+            -0.13164165208561887,
+            -0.11744407848905945,
+            0.9997636753199346
+          ]
+        }
+      ]
+    },
+    {
+      "shotId": "r8-f04-2",
+      "objects": 725,
+      "instances": 7041,
+      "clipIntersections": 5790,
+      "finite": true,
+      "atEyePlane": 0,
+      "samples": [
+        {
+          "meshId": 6205,
+          "instance": null,
+          "world": [
+            -2.601,
+            0.88,
+            -2.220446049250313e-19
+          ],
+          "ndc": [
+            -0.14988934931605338,
+            -0.12907962591913125,
+            0.9998072583047051
+          ]
+        },
+        {
+          "meshId": 6206,
+          "instance": null,
+          "world": [
+            -2.7,
+            0.814,
+            -2.2204460492503132e-17
+          ],
+          "ndc": [
+            -0.15377418968784962,
+            -0.13385381511195044,
+            0.9998075785214269
+          ]
+        },
+        {
+          "meshId": 6207,
+          "instance": null,
+          "world": [
+            -2.5,
+            0.8965,
+            0.13000000000000003
+          ],
+          "ndc": [
+            -0.14869408403431258,
+            -0.129616874996066,
+            0.9998060515577651
+          ]
+        }
+      ]
+    },
+    {
+      "shotId": "r8-f05-2",
+      "objects": 265,
+      "instances": 1885,
+      "clipIntersections": 1885,
+      "finite": true,
+      "atEyePlane": 0,
+      "samples": [
+        {
+          "meshId": 9213,
+          "instance": null,
+          "world": [
+            -7.2,
+            5.57,
+            -10.8
+          ],
+          "ndc": [
+            0.009804474845020096,
+            0.402753137552928,
+            0.9999044183875212
+          ]
+        },
+        {
+          "meshId": 9214,
+          "instance": null,
+          "world": [
+            -7.294705953616947,
+            5.57,
+            -10.635285755474808
+          ],
+          "ndc": [
+            0.0048784421651080975,
+            0.4022527685741202,
+            0.999904258829422
+          ]
+        },
+        {
+          "meshId": 9216,
+          "instance": null,
+          "world": [
+            -7.035285755474808,
+            5.57,
+            -10.705294046383054
+          ],
+          "ndc": [
+            0.011948524277674774,
+            0.40157867447124884,
+            0.9999040438737029
+          ]
+        }
+      ]
+    },
+    {
+      "shotId": "r8-f05-3",
+      "objects": 217,
+      "instances": 1837,
+      "clipIntersections": 1170,
+      "finite": true,
+      "atEyePlane": 0,
+      "samples": [
+        {
+          "meshId": 9213,
+          "instance": null,
+          "world": [
+            -7.2,
+            5.57,
+            -10.8
+          ],
+          "ndc": [
+            -0.3262262616831371,
+            0.7102558358313033,
+            0.9997502293799243
+          ]
+        },
+        {
+          "meshId": 9214,
+          "instance": null,
+          "world": [
+            -7.010071347408853,
+            5.57,
+            -10.805206431110765
+          ],
+          "ndc": [
+            -0.3171102426734565,
+            0.710904113946413,
+            0.9997500008765348
+          ]
+        },
+        {
+          "meshId": 9216,
+          "instance": null,
+          "world": [
+            -7.205206431110764,
+            5.57,
+            -10.989928652591148
+          ],
+          "ndc": [
+            -0.32255079788848556,
+            0.7038072065276864,
+            0.9997525023760659
+          ]
+        }
+      ]
+    },
+    {
+      "shotId": "r8-f06-1",
+      "objects": 725,
+      "instances": 7041,
+      "clipIntersections": 3747,
+      "finite": true,
+      "atEyePlane": 0,
+      "samples": [
+        {
+          "meshId": 6205,
+          "instance": null,
+          "world": [
+            -2.601,
+            0.88,
+            -2.220446049250313e-19
+          ],
+          "ndc": [
+            0.02044870873247965,
+            -0.7906757882384603,
+            0.9994263505336117
+          ]
+        },
+        {
+          "meshId": 6206,
+          "instance": null,
+          "world": [
+            -2.7,
+            0.814,
+            -2.2204460492503132e-17
+          ],
+          "ndc": [
+            0.01052993701927868,
+            -0.8034042338661356,
+            0.9994267966248136
+          ]
+        },
+        {
+          "meshId": 6207,
+          "instance": null,
+          "world": [
+            -2.5,
+            0.8965,
+            0.13000000000000003
+          ],
+          "ndc": [
+            0.026964892906895754,
+            -0.7901696973291882,
+            0.9994179129431705
+          ]
+        }
+      ]
+    },
+    {
+      "shotId": "r8-f06-2",
+      "objects": 725,
+      "instances": 7041,
+      "clipIntersections": 3213,
+      "finite": true,
+      "atEyePlane": 0,
+      "samples": [
+        {
+          "meshId": 6205,
+          "instance": null,
+          "world": [
+            -2.601,
+            0.88,
+            -2.220446049250313e-19
+          ],
+          "ndc": [
+            -0.31743083593188604,
+            -0.3808706714521101,
+            0.9995286766442308
+          ]
+        },
+        {
+          "meshId": 6206,
+          "instance": null,
+          "world": [
+            -2.7,
+            0.814,
+            -2.2204460492503132e-17
+          ],
+          "ndc": [
+            -0.305218175629879,
+            -0.3928359936723691,
+            0.9995302574676804
+          ]
+        },
+        {
+          "meshId": 6207,
+          "instance": null,
+          "world": [
+            -2.5,
+            0.8965,
+            0.13000000000000003
+          ],
+          "ndc": [
+            -0.3316054282713618,
+            -0.3725904336761905,
+            0.9995321721067214
+          ]
+        }
+      ]
+    },
+    {
+      "shotId": "r8-f07-1",
+      "objects": 725,
+      "instances": 7041,
+      "clipIntersections": 1982,
+      "finite": true,
+      "atEyePlane": 0,
+      "samples": [
+        {
+          "meshId": 6205,
+          "instance": null,
+          "world": [
+            -2.601,
+            0.88,
+            -2.220446049250313e-19
+          ],
+          "ndc": [
+            0.00022501887573274514,
+            -0.9874331365151785,
+            0.9986638883718414
+          ]
+        },
+        {
+          "meshId": 6206,
+          "instance": null,
+          "world": [
+            -2.7,
+            0.814,
+            -2.2204460492503132e-17
+          ],
+          "ndc": [
+            0.022148399338919992,
+            -0.9996713129691507,
+            0.9986851918991185
+          ]
+        },
+        {
+          "meshId": 6207,
+          "instance": null,
+          "world": [
+            -2.5,
+            0.8965,
+            0.13000000000000003
+          ],
+          "ndc": [
+            -0.044977720401147066,
+            -0.9678058200821592,
+            0.9986751798956791
+          ]
+        }
+      ]
+    },
+    {
+      "shotId": "r8-f07-2",
+      "objects": 725,
+      "instances": 7041,
+      "clipIntersections": 1329,
+      "finite": true,
+      "atEyePlane": 0,
+      "samples": [
+        {
+          "meshId": 6205,
+          "instance": null,
+          "world": [
+            -2.601,
+            0.88,
+            -2.220446049250313e-19
+          ],
+          "ndc": [
+            -0.00024318844321664893,
+            -0.1580981813202919,
+            0.9985882491332133
+          ]
+        },
+        {
+          "meshId": 6206,
+          "instance": null,
+          "world": [
+            -2.7,
+            0.814,
+            -2.2204460492503132e-17
+          ],
+          "ndc": [
+            -0.023812578469137445,
+            -0.1755825162926881,
+            0.9986180551003392
+          ]
+        },
+        {
+          "meshId": 6207,
+          "instance": null,
+          "world": [
+            -2.5,
+            0.8965,
+            0.13000000000000003
+          ],
+          "ndc": [
+            -0.006972584522980476,
+            -0.19342394035372326,
+            0.9985322642354619
+          ]
+        }
+      ]
+    },
+    {
+      "shotId": "r8-f08-1",
+      "objects": 725,
+      "instances": 7041,
+      "clipIntersections": 836,
+      "finite": true,
+      "atEyePlane": 0,
+      "samples": [
+        {
+          "meshId": 6205,
+          "instance": null,
+          "world": [
+            -2.601,
+            0.88,
+            -2.220446049250313e-19
+          ],
+          "ndc": [
+            0.01204412104864633,
+            -0.3702765480446505,
+            0.9957106085430151
+          ]
+        },
+        {
+          "meshId": 6206,
+          "instance": null,
+          "world": [
+            -2.7,
+            0.814,
+            -2.2204460492503132e-17
+          ],
+          "ndc": [
+            -0.05920638173716845,
+            -0.4389214600977256,
+            0.9959644484079665
+          ]
+        },
+        {
+          "meshId": 6207,
+          "instance": null,
+          "world": [
+            -2.5,
+            0.8965,
+            0.13000000000000003
+          ],
+          "ndc": [
+            -0.025369091978425573,
+            -0.46653299784475316,
+            0.9951458339555598
+          ]
+        }
+      ]
+    },
+    {
+      "shotId": "r8-f08-2",
+      "objects": 172,
+      "instances": 172,
+      "clipIntersections": 141,
+      "finite": true,
+      "atEyePlane": 0,
+      "samples": [
+        {
+          "meshId": 7806,
+          "instance": null,
+          "world": [
+            0,
+            1.062,
+            -0.26049961216791045
+          ],
+          "ndc": [
+            0.13333990650091135,
+            0.1060268192646363,
+            0.9929866912059201
+          ]
+        },
+        {
+          "meshId": 7808,
+          "instance": null,
+          "world": [
+            0,
+            0.88,
+            -0.001
+          ],
+          "ndc": [
+            -0.22331917940180834,
+            -0.2901666118930129,
+            0.9942796130139092
+          ]
+        },
+        {
+          "meshId": 7809,
+          "instance": null,
+          "world": [
+            0,
+            0.814,
+            -0.1
+          ],
+          "ndc": [
+            -0.10015939677540257,
+            -0.5278052478827772,
+            0.9940683316673575
+          ]
+        }
+      ]
+    },
+    {
+      "shotId": "r8-f09-1",
+      "objects": 72,
+      "instances": 72,
+      "clipIntersections": 61,
+      "finite": true,
+      "atEyePlane": 0,
+      "samples": [
+        {
+          "meshId": 7806,
+          "instance": null,
+          "world": [
+            0,
+            0.722,
+            -0.2605
+          ],
+          "ndc": [
+            0.07967254654585437,
+            -0.563368085013708,
+            0.9955317007064435
+          ]
+        },
+        {
+          "meshId": 7808,
+          "instance": null,
+          "world": [
+            0,
+            0.88,
+            -0.001
+          ],
+          "ndc": [
+            0.26687056727486547,
+            -0.16641810458654327,
+            0.995839460253989
+          ]
+        },
+        {
+          "meshId": 7809,
+          "instance": null,
+          "world": [
+            0,
+            0.814,
+            -0.1
+          ],
+          "ndc": [
+            0.1982699660082965,
+            -0.32023065946958235,
+            0.9957335215041382
+          ]
+        }
+      ]
+    },
+    {
+      "shotId": "r8-f09-2",
+      "objects": 72,
+      "instances": 72,
+      "clipIntersections": 35,
+      "finite": true,
+      "atEyePlane": 0,
+      "samples": [
+        {
+          "meshId": 7806,
+          "instance": null,
+          "world": [
+            0,
+            0.722,
+            -0.2605
+          ],
+          "ndc": [
+            -0.4608710097866924,
+            -1.719883443849488,
+            0.9905692032564866
+          ]
+        },
+        {
+          "meshId": 7808,
+          "instance": null,
+          "world": [
+            0,
+            0.88,
+            -0.001
+          ],
+          "ndc": [
+            -0.0015522912628672186,
+            -0.6297127062483047,
+            0.9917277961136725
+          ]
+        },
+        {
+          "meshId": 7809,
+          "instance": null,
+          "world": [
+            0,
+            0.814,
+            -0.1
+          ],
+          "ndc": [
+            -0.1622179924132377,
+            -1.0292824489115457,
+            0.9913544570011
+          ]
+        }
+      ]
+    },
+    {
+      "shotId": "r8-f09-3",
+      "objects": 72,
+      "instances": 72,
+      "clipIntersections": 72,
+      "finite": true,
+      "atEyePlane": 0,
+      "samples": [
+        {
+          "meshId": 7806,
+          "instance": null,
+          "world": [
+            0,
+            0.722,
+            -0.2605
+          ],
+          "ndc": [
+            -0.10361984117600001,
+            -0.02008207421996338,
+            0.9973865682517532
+          ]
+        },
+        {
+          "meshId": 7808,
+          "instance": null,
+          "world": [
+            0,
+            0.88,
+            -0.001
+          ],
+          "ndc": [
+            -0.2135660106007845,
+            0.22527801008105136,
+            0.9974254219015357
+          ]
+        },
+        {
+          "meshId": 7809,
+          "instance": null,
+          "world": [
+            0,
+            0.814,
+            -0.1
+          ],
+          "ndc": [
+            -0.17173164765691762,
+            0.12772256016304115,
+            0.9974148993136049
+          ]
+        }
+      ]
+    },
+    {
+      "shotId": "r8-f10-1",
+      "objects": 95,
+      "instances": 95,
+      "clipIntersections": 95,
+      "finite": true,
+      "atEyePlane": 0,
+      "samples": [
+        {
+          "meshId": 8003,
+          "instance": null,
+          "world": [
+            0,
+            0.6,
+            0
+          ],
+          "ndc": [
+            -0.04131553574209015,
+            -0.5204430131483352,
+            0.9969673034132411
+          ]
+        },
+        {
+          "meshId": 8004,
+          "instance": null,
+          "world": [
+            0,
+            0.72,
+            0
+          ],
+          "ndc": [
+            -0.04191143289221645,
+            -0.35786207816526916,
+            0.9969232741326629
+          ]
+        },
+        {
+          "meshId": 8005,
+          "instance": null,
+          "world": [
+            0,
+            1,
+            -0.1850000023841858
+          ],
+          "ndc": [
+            0.035852888179163996,
+            0.0884862170218202,
+            0.997057939597714
+          ]
+        }
+      ]
+    },
+    {
+      "shotId": "r8-f10-2",
+      "objects": 25,
+      "instances": 25,
+      "clipIntersections": 25,
+      "finite": true,
+      "atEyePlane": 0,
+      "samples": [
+        {
+          "meshId": 8099,
+          "instance": null,
+          "world": [
+            0,
+            0.75,
+            0
+          ],
+          "ndc": [
+            -7.810433492961709e-18,
+            -0.07517301492797751,
+            0.99576826055212
+          ]
+        },
+        {
+          "meshId": 8100,
+          "instance": null,
+          "world": [
+            -0.418,
+            0.7922062974125269,
+            0
+          ],
+          "ndc": [
+            -0.30643358234265383,
+            0.16259433794525718,
+            0.996385694432692
+          ]
+        },
+        {
+          "meshId": 8102,
+          "instance": null,
+          "world": [
+            -0.3344,
+            0.7922062974125269,
+            0
+          ],
+          "ndc": [
+            -0.25293734236684,
+            0.1349404849422394,
+            0.996270200508074
+          ]
+        }
+      ]
+    },
+    {
+      "shotId": "r8-f11-1",
+      "objects": 36,
+      "instances": 36,
+      "clipIntersections": 36,
+      "finite": true,
+      "atEyePlane": 0,
+      "samples": [
+        {
+          "meshId": 8099,
+          "instance": null,
+          "world": [
+            0,
+            0.75,
+            0
+          ],
+          "ndc": [
+            1.919582408571125e-17,
+            -0.04469022783484514,
+            0.996145409278352
+          ]
+        },
+        {
+          "meshId": 8100,
+          "instance": null,
+          "world": [
+            -0.418,
+            0.7925,
+            0
+          ],
+          "ndc": [
+            -0.3511933691093551,
+            -0.09896940628435832,
+            0.9952874188500391
+          ]
+        },
+        {
+          "meshId": 8101,
+          "instance": null,
+          "world": [
+            -0.418,
+            0.8165,
+            0
+          ],
+          "ndc": [
+            -0.35271738530773883,
+            -0.05240746749559264,
+            0.9952668816438391
+          ]
+        }
+      ]
+    },
+    {
+      "shotId": "r8-f11-2",
+      "objects": 31,
+      "instances": 31,
+      "clipIntersections": 31,
+      "finite": true,
+      "atEyePlane": 0,
+      "samples": [
+        {
+          "meshId": 8099,
+          "instance": null,
+          "world": [
+            0,
+            0.75,
+            0
+          ],
+          "ndc": [
+            3.7541694892824095e-16,
+            -0.1303372711173741,
+            0.9948826417453563
+          ]
+        },
+        {
+          "meshId": 8100,
+          "instance": null,
+          "world": [
+            -0.418,
+            0.7925,
+            0
+          ],
+          "ndc": [
+            -0.40569371711069624,
+            0.06511345160650939,
+            0.9957761124052144
+          ]
+        },
+        {
+          "meshId": 8101,
+          "instance": null,
+          "world": [
+            -0.418,
+            0.8165,
+            0
+          ],
+          "ndc": [
+            -0.40670498019850604,
+            0.11708593744765818,
+            0.9957655337669594
+          ]
+        }
+      ]
+    },
+    {
+      "shotId": "r8-f14-1",
+      "objects": 725,
+      "instances": 7041,
+      "clipIntersections": 2734,
+      "finite": true,
+      "atEyePlane": 0,
+      "samples": [
+        {
+          "meshId": 6205,
+          "instance": null,
+          "world": [
+            -2.601,
+            0.88,
+            -2.220446049250313e-19
+          ],
+          "ndc": [
+            -0.6657301521840976,
+            -0.06690345350259916,
+            0.9995427070631961
+          ]
+        },
+        {
+          "meshId": 6206,
+          "instance": null,
+          "world": [
+            -2.7,
+            0.814,
+            -2.2204460492503132e-17
+          ],
+          "ndc": [
+            -0.6550334354655533,
+            -0.07758424989606756,
+            0.99954537681565
+          ]
+        },
+        {
+          "meshId": 6207,
+          "instance": null,
+          "world": [
+            -2.5,
+            0.8965,
+            0.13000000000000003
+          ],
+          "ndc": [
+            -0.6804637142764693,
+            -0.06376888020493551,
+            0.9995435891025589
+          ]
+        }
+      ]
+    },
+    {
+      "shotId": "r8-f14-2",
+      "objects": 95,
+      "instances": 95,
+      "clipIntersections": 92,
+      "finite": true,
+      "atEyePlane": 0,
+      "samples": [
+        {
+          "meshId": 8003,
+          "instance": null,
+          "world": [
+            0,
+            0.6,
+            0
+          ],
+          "ndc": [
+            0.2419095131095775,
+            -1.16269285216402,
+            0.9942006048331397
+          ]
+        },
+        {
+          "meshId": 8004,
+          "instance": null,
+          "world": [
+            0,
+            0.72,
+            0
+          ],
+          "ndc": [
+            0.24204357213596134,
+            -0.7702088305026769,
+            0.9941973798980516
+          ]
+        },
+        {
+          "meshId": 8005,
+          "instance": null,
+          "world": [
+            0,
+            1,
+            -0.1850000023841858
+          ],
+          "ndc": [
+            0.3810643256062268,
+            0.1304081094387988,
+            0.9949395412527178
+          ]
+        }
+      ]
+    },
+    {
+      "shotId": "r8-f20-1",
+      "objects": 217,
+      "instances": 1837,
+      "clipIntersections": 178,
+      "finite": true,
+      "atEyePlane": 0,
+      "samples": [
+        {
+          "meshId": 10204,
+          "instance": 0,
+          "world": [
+            0,
+            -4.539999961853027,
+            0
+          ],
+          "ndc": [
+            5.025971917508535,
+            2.48069282148812,
+            1.0024557995928518
+          ]
+        },
+        {
+          "meshId": 10205,
+          "instance": 0,
+          "world": [
+            0,
+            -0.03999999910593033,
+            0
+          ],
+          "ndc": [
+            6.071113943501642,
+            -2.4409644413830813,
+            1.002962319795141
+          ]
+        },
+        {
+          "meshId": 10206,
+          "instance": 0,
+          "world": [
+            0,
+            4.900000095367432,
+            0
+          ],
+          "ndc": [
+            7.867000388155877,
+            -10.897937124330925,
+            1.0038326826191506
+          ]
+        }
+      ]
+    },
+    {
+      "shotId": "r8-f22-1",
+      "objects": 94,
+      "instances": 179,
+      "clipIntersections": 160,
+      "finite": true,
+      "atEyePlane": 0,
+      "samples": [
+        {
+          "meshId": 10508,
+          "instance": null,
+          "world": [
+            -0.09195358204992948,
+            1.141,
+            -0.19
+          ],
+          "ndc": [
+            0.01727506119991045,
+            0.01626507328772143,
+            0.998775797227041
+          ]
+        },
+        {
+          "meshId": 10509,
+          "instance": null,
+          "world": [
+            -0.09195358204992948,
+            1.141,
+            0.03
+          ],
+          "ndc": [
+            -0.027108612524117233,
+            -0.0006439144132438336,
+            0.9987329192240035
+          ]
+        },
+        {
+          "meshId": 10510,
+          "instance": null,
+          "world": [
+            0.24804641795007054,
+            1.141,
+            -0.19
+          ],
+          "ndc": [
+            0.09671000461803488,
+            -0.0074721012643593826,
+            0.9987156042302425
+          ]
+        }
+      ]
+    },
+    {
+      "shotId": "r8-f22-2",
+      "objects": 94,
+      "instances": 179,
+      "clipIntersections": 103,
+      "finite": true,
+      "atEyePlane": 0,
+      "samples": [
+        {
+          "meshId": 10508,
+          "instance": null,
+          "world": [
+            -0.26977423291877056,
+            1.141,
+            -0.15
+          ],
+          "ndc": [
+            -0.13680868866899215,
+            0.09938938613777344,
+            0.9960918952745876
+          ]
+        },
+        {
+          "meshId": 10509,
+          "instance": null,
+          "world": [
+            -0.26977423291877056,
+            1.141,
+            0.07
+          ],
+          "ndc": [
+            -0.31581266628546323,
+            -0.05439270806823561,
+            0.9956384063434784
+          ]
+        },
+        {
+          "meshId": 10510,
+          "instance": null,
+          "world": [
+            0.07022576708122943,
+            1.141,
+            -0.15
+          ],
+          "ndc": [
+            0.18361997012464448,
+            -0.0845150268920154,
+            0.9955495784585647
+          ]
+        }
+      ]
+    },
+    {
+      "shotId": "r8-f23-1",
+      "objects": 94,
+      "instances": 179,
+      "clipIntersections": 56,
+      "finite": true,
+      "atEyePlane": 0,
+      "samples": [
+        {
+          "meshId": 10508,
+          "instance": null,
+          "world": [
+            -0.07,
+            1.141,
+            -0.07002297728419846
+          ],
+          "ndc": [
+            -0.007688913743495315,
+            -0.5940146656440726,
+            0.990882576638985
+          ]
+        },
+        {
+          "meshId": 10509,
+          "instance": null,
+          "world": [
+            -0.07,
+            1.141,
+            0.14997702271580154
+          ],
+          "ndc": [
+            -0.5848738362918717,
+            -0.9865886723744604,
+            0.9880171354154811
+          ]
+        },
+        {
+          "meshId": 10510,
+          "instance": null,
+          "world": [
+            0.27,
+            1.141,
+            -0.07002297728419846
+          ],
+          "ndc": [
+            1.085527412300475,
+            -1.2666919898535607,
+            0.9859726302292371
+          ]
+        }
+      ]
+    },
+    {
+      "shotId": "r8-f30-1",
+      "objects": 725,
+      "instances": 7041,
+      "clipIntersections": 1160,
+      "finite": true,
+      "atEyePlane": 0,
+      "samples": [
+        {
+          "meshId": 7039,
+          "instance": 0,
+          "world": [
+            0,
+            -0.05000000074505806,
+            0
+          ],
+          "ndc": [
+            1.5229148468928992,
+            1.5460515581349652,
+            1.0012165514720315
+          ]
+        },
+        {
+          "meshId": 7040,
+          "instance": 0,
+          "world": [
+            0,
+            5.78000020980835,
+            0
+          ],
+          "ndc": [
+            1.2938126878596001,
+            -1.6041178618729421,
+            1.0010365463454314
+          ]
+        },
+        {
+          "meshId": 7041,
+          "instance": 0,
+          "world": [
+            -13,
+            2.8499999046325684,
+            0
+          ],
+          "ndc": [
+            188.29544534332274,
+            -22.2842167250214,
+            1.0410468445157786
+          ]
+        }
+      ]
+    },
+    {
+      "shotId": "r8-f35-1",
+      "objects": 207,
+      "instances": 510,
+      "clipIntersections": 510,
+      "finite": true,
+      "atEyePlane": 0,
+      "samples": [
+        {
+          "meshId": 10946,
+          "instance": null,
+          "world": [
+            -28.5,
+            5.98,
+            -16
+          ],
+          "ndc": [
+            -0.12734934902302358,
+            0.1920970603746891,
+            0.9999640818247474
+          ]
+        },
+        {
+          "meshId": 10947,
+          "instance": null,
+          "world": [
+            -28.5,
+            1.5,
+            -16.1
+          ],
+          "ndc": [
+            -0.12512076520225832,
+            0.0962313488677254,
+            0.9999646994542969
+          ]
+        },
+        {
+          "meshId": 10948,
+          "instance": null,
+          "world": [
+            -28.5,
+            3.55,
+            -16.1
+          ],
+          "ndc": [
+            -0.12571820991580168,
+            0.1399776273339416,
+            0.9999644353963036
+          ]
+        }
+      ]
+    },
+    {
+      "shotId": "r8-f39-1",
+      "objects": 82,
+      "instances": 82,
+      "clipIntersections": 81,
+      "finite": true,
+      "atEyePlane": 0,
+      "samples": [
+        {
+          "meshId": 8135,
+          "instance": null,
+          "world": [
+            0,
+            0.743,
+            -0.025
+          ],
+          "ndc": [
+            0.04865033220839488,
+            -0.3985675655851689,
+            0.9863728154453048
+          ]
+        },
+        {
+          "meshId": 8136,
+          "instance": null,
+          "world": [
+            0,
+            0.768,
+            -0.025
+          ],
+          "ndc": [
+            0.050073414166037604,
+            -0.263006469636724,
+            0.9859736185330651
+          ]
+        },
+        {
+          "meshId": 8137,
+          "instance": null,
+          "world": [
+            -0.064,
+            0.7875,
+            0.012
+          ],
+          "ndc": [
+            -0.06201810189988743,
+            -0.45673043313368217,
+            0.9832458770569278
+          ]
+        }
+      ]
+    },
+    {
+      "shotId": "r8-f39-2",
+      "objects": 82,
+      "instances": 82,
+      "clipIntersections": 71,
+      "finite": true,
+      "atEyePlane": 0,
+      "samples": [
+        {
+          "meshId": 8135,
+          "instance": null,
+          "world": [
+            0,
+            0.743,
+            -0.025
+          ],
+          "ndc": [
+            -0.1269994865212214,
+            -0.5021696750730315,
+            0.9722637201863965
+          ]
+        },
+        {
+          "meshId": 8136,
+          "instance": null,
+          "world": [
+            0,
+            0.768,
+            -0.025
+          ],
+          "ndc": [
+            -0.13479046214074056,
+            -0.1622116303649472,
+            0.9705609692005612
+          ]
+        },
+        {
+          "meshId": 8137,
+          "instance": null,
+          "world": [
+            -0.064,
+            0.7875,
+            0.012
+          ],
+          "ndc": [
+            -0.8008117298916123,
+            0.27511999300040224,
+            0.9714146607273003
+          ]
+        }
+      ]
+    },
+    {
+      "shotId": "r8-f39-3",
+      "objects": 82,
+      "instances": 82,
+      "clipIntersections": 73,
+      "finite": true,
+      "atEyePlane": 0,
+      "samples": [
+        {
+          "meshId": 8135,
+          "instance": null,
+          "world": [
+            0,
+            0.743,
+            -0.025
+          ],
+          "ndc": [
+            0.2912121424750241,
+            -1.0233784696960684,
+            0.9654355464182376
+          ]
+        },
+        {
+          "meshId": 8136,
+          "instance": null,
+          "world": [
+            0,
+            0.768,
+            -0.025
+          ],
+          "ndc": [
+            0.29996864670901296,
+            -0.5472344439615486,
+            0.9643956209762683
+          ]
+        },
+        {
+          "meshId": 8137,
+          "instance": null,
+          "world": [
+            -0.064,
+            0.7875,
+            0.012
+          ],
+          "ndc": [
+            -0.0873024098901236,
+            0.08817988267110967,
+            0.9736766536601863
+          ]
+        }
+      ]
+    },
+    {
+      "shotId": "r8-f40-1",
+      "objects": 82,
+      "instances": 82,
+      "clipIntersections": 69,
+      "finite": true,
+      "atEyePlane": 0,
+      "samples": [
+        {
+          "meshId": 8135,
+          "instance": null,
+          "world": [
+            0,
+            0.743,
+            -0.025
+          ],
+          "ndc": [
+            -0.3368149313636274,
+            0.3687762116319136,
+            0.9736191964352829
+          ]
+        },
+        {
+          "meshId": 8136,
+          "instance": null,
+          "world": [
+            0,
+            0.768,
+            -0.025
+          ],
+          "ndc": [
+            -0.3782445201017959,
+            0.4526889592647068,
+            0.9703717915833036
+          ]
+        },
+        {
+          "meshId": 8137,
+          "instance": null,
+          "world": [
+            -0.064,
+            0.7875,
+            0.012
+          ],
+          "ndc": [
+            -1.1438922253046948,
+            0.015788902843689435,
+            0.9667510617861073
+          ]
+        }
+      ]
+    },
+    {
+      "shotId": "r8-f40-2",
+      "objects": 718,
+      "instances": 1021,
+      "clipIntersections": 760,
+      "finite": true,
+      "atEyePlane": 0,
+      "samples": [
+        {
+          "meshId": 10946,
+          "instance": null,
+          "world": [
+            -28.5,
+            5.98,
+            -16
+          ],
+          "ndc": [
+            0.3141358333204224,
+            0.24539358420443172,
+            0.9999410546221686
+          ]
+        },
+        {
+          "meshId": 10947,
+          "instance": null,
+          "world": [
+            -28.5,
+            1.5,
+            -16.1
+          ],
+          "ndc": [
+            0.3139928601067553,
+            0.0958545101105494,
+            0.9999414801560846
+          ]
+        },
+        {
+          "meshId": 10948,
+          "instance": null,
+          "world": [
+            -28.5,
+            3.55,
+            -16.1
+          ],
+          "ndc": [
+            0.3146640998619238,
+            0.1640942650118432,
+            0.9999413122994809
+          ]
+        }
+      ]
+    },
+    {
+      "shotId": "r8-f41-1",
+      "objects": 725,
+      "instances": 7041,
+      "clipIntersections": 4563,
+      "finite": true,
+      "atEyePlane": 0,
+      "samples": [
+        {
+          "meshId": 6205,
+          "instance": null,
+          "world": [
+            -2.671,
+            0.88,
+            -2.220446049250313e-19
+          ],
+          "ndc": [
+            -0.2583757854425433,
+            -0.19981821305410047,
+            0.9997869693075584
+          ]
+        },
+        {
+          "meshId": 6206,
+          "instance": null,
+          "world": [
+            -2.77,
+            0.814,
+            -2.2204460492503132e-17
+          ],
+          "ndc": [
+            -0.2690097047726165,
+            -0.21241997453122566,
+            0.9997869663022046
+          ]
+        },
+        {
+          "meshId": 6207,
+          "instance": null,
+          "world": [
+            -2.57,
+            0.8965,
+            0.13000000000000003
+          ],
+          "ndc": [
+            -0.24882299042858885,
+            -0.19744733055140543,
+            0.9997857858302882
+          ]
+        }
+      ]
+    },
+    {
+      "shotId": "r8-f42-1",
+      "objects": 265,
+      "instances": 1885,
+      "clipIntersections": 1237,
+      "finite": true,
+      "atEyePlane": 0,
+      "samples": [
+        {
+          "meshId": 9213,
+          "instance": null,
+          "world": [
+            -7.2,
+            5.57,
+            -10.8
+          ],
+          "ndc": [
+            -0.42059646289490443,
+            0.37670839665387473,
+            0.9998209626691347
+          ]
+        },
+        {
+          "meshId": 9214,
+          "instance": null,
+          "world": [
+            -7.01396154386284,
+            5.57,
+            -10.761403460801494
+          ],
+          "ndc": [
+            -0.41578388110076064,
+            0.37738964687543186,
+            0.9998201274836375
+          ]
+        },
+        {
+          "meshId": 9216,
+          "instance": null,
+          "world": [
+            -7.161403460801493,
+            5.57,
+            -10.98603845613716
+          ],
+          "ndc": [
+            -0.41282216904079705,
+            0.37595098562625406,
+            0.9998218912247313
+          ]
+        }
+      ]
+    },
+    {
+      "shotId": "r8-f42-2",
+      "objects": 725,
+      "instances": 7041,
+      "clipIntersections": 1030,
+      "finite": true,
+      "atEyePlane": 0,
+      "samples": [
+        {
+          "meshId": 7039,
+          "instance": 0,
+          "world": [
+            0,
+            -0.05000000074505806,
+            0
+          ],
+          "ndc": [
+            -1.227711759555589,
+            0.16144145601924142,
+            1.0005729464434987
+          ]
+        },
+        {
+          "meshId": 7040,
+          "instance": 0,
+          "world": [
+            0,
+            5.78000020980835,
+            0
+          ],
+          "ndc": [
+            -1.2765066499815236,
+            -1.0836611451432605,
+            1.0005949230606916
+          ]
+        },
+        {
+          "meshId": 7041,
+          "instance": 0,
+          "world": [
+            -13,
+            2.8499999046325684,
+            0
+          ],
+          "ndc": [
+            0.15682660293523315,
+            -0.36766479712287536,
+            1.000429485598717
+          ]
+        }
+      ]
+    },
+    {
+      "shotId": "r8-f45-1",
+      "objects": 718,
+      "instances": 1021,
+      "clipIntersections": 1021,
+      "finite": true,
+      "atEyePlane": 0,
+      "samples": [
+        {
+          "meshId": 10946,
+          "instance": null,
+          "world": [
+            -28.5,
+            5.98,
+            -16
+          ],
+          "ndc": [
+            -0.6747239586231419,
+            -0.015003392019044009,
+            0.9999185399462062
+          ]
+        },
+        {
+          "meshId": 10947,
+          "instance": null,
+          "world": [
+            -28.5,
+            1.5,
+            -16.1
+          ],
+          "ndc": [
+            -0.6693054216905008,
+            -0.18171019862219565,
+            0.9999195773041586
+          ]
+        },
+        {
+          "meshId": 10948,
+          "instance": null,
+          "world": [
+            -28.5,
+            3.55,
+            -16.1
+          ],
+          "ndc": [
+            -0.6720848398307765,
+            -0.10564557547745375,
+            0.9999191602789721
+          ]
+        }
+      ]
+    }
+  ],
+  "failures": [],
+  "issues": [],
+  "warnings": [
+    "No PNG or 3D raster frame was generated. Canvas2D reporting frames were painted in memory only for deterministic-pixel tests.",
+    "Finite projections and frustum overlap do not prove a shot is unobstructed, well framed, physically collision-free or visually good.",
+    "This is not a browser/WebGL/player/audio-listening test. Root owns final rendered-shot and deployed-player verification."
+  ]
+}

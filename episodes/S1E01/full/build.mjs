@@ -95,7 +95,7 @@ export function build(args) {
     script, timeline, claims: Array.isArray(rawClaims) ? rawClaims : rawClaims.claims, sources: json(path.join(root, 'sources.json')),
     notices: read(path.join(root, 'THIRD_PARTY_NOTICES.txt')), audio_sha256: narrationHash,
     archiveCredits: archive.assets.map(asset => asset.credit), archiveRights: archive.publicMetadata,
-    deliveryMode: 'standalone', pictureRevision: 'R7-cinematic-events',
+    deliveryMode: 'standalone', pictureRevision: 'R8-fab-reportage',
     assets: {narration: dataURI(narrationFile, 'audio/mpeg'), archive: Object.fromEntries(archive.assets.map(asset => [asset.credit.id, dataURI(asset.file, asset.mime)]))}
   };
   const template = read(path.join(root, 'player.html')), html = makeHTML(template, data, runtime.entry, runtime.imports);
@@ -126,8 +126,8 @@ export function build(args) {
     fs.writeFileSync(path.join(site, 'archive-manifest.json'), JSON.stringify(archive.manifest, null, 2));
   }
   const manifest = {
-    episode: 'S1E01', revision: 'R7-cinematic-events', narrationRevision: script.revision, duration: timeline.duration, utterances: timeline.sentences.length,
-    picture: 'Causal 3D sequences with archival evidence; WebGL2 and CPU compatibility backends', archiveImages: archive.assets.length, releaseApproval: false, three_sha256: hash(args.three),
+    episode: 'S1E01', revision: 'R8-fab-reportage', narrationRevision: script.revision, duration: timeline.duration, utterances: timeline.sentences.length,
+    picture: 'New expansive fab, supported OHT/wafer handling, architectural cutaway, process studies and reporting graphics; no R1–R7 shot imports', archiveImages: archive.assets.length, releaseApproval: false, three_sha256: hash(args.three),
     script_sha256: scriptHash, narration_sha256: narrationHash,
     runtimeSources: Object.fromEntries([...runtime.modules].map(([file, value]) => [path.relative(root, file), value.sourceHash])),
     files: fs.readdirSync(out).filter(name => name !== 'manifest.json' && fs.statSync(path.join(out, name)).isFile()).map(name => ({path: name, bytes: fs.statSync(path.join(out, name)).size, sha256: hash(path.join(out, name))}))
