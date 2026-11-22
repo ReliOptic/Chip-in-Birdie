@@ -34,7 +34,7 @@ CIB-048 USER_DIRECTIVE: Sequential production cycle S1E01 → S2E01 → S3E01 �
 CIB-049 IMPLEMENTED_POLICY: Target 8–9 minutes; 6–12 if the story needs it. English script and real VO lead animation timing. Documentary reconstructions and illustrative process models must be labeled. Historical 2022–23 export-control case requires dated rules; no statement of current legality. Original overclaiming titles retained only as provenance; reviewed working titles narrow them.
 
 CIB-050 USER_DIRECTIVE: Stay in Chat; no new payments or YouTube uploads. Source code, reproducible playback, real audio and QA required; independent review still applies. Production binary outputs remain outside Git.
- 
+
 ## 2026-11-22 · Canonical reconciliation (documentation only)
 
 아래는 기존 지시와 확인된 GitHub 증거의 **적용 범위·시점**을 정렬한 결과다. 새로운 시즌 선택, 제목 승인, 제작 완료 또는 게시 승인이 아니다.
