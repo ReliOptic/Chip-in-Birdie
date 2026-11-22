@@ -57,7 +57,12 @@
   "episodes": [
     {
       "episode_id": "S1E01",
-      "source_p_id": "P004",
+      "source_original_id": "P004",
+      "source_namespace": "PR1@3c66e4b",
+      "main_p_id": "P004",
+      "source_h_ids": [
+        "H039"
+      ],
       "candidate_title": "The Factory That Doesn't Promise a Chip",
       "narrative_tension": "Idle tool versus a wafer still waiting: who can actually deliver a working chip?",
       "picture_concept": "One carrier enters a qualified-route gate; the manufacturer/designer obligations diverge over the same physical wafer.",
@@ -71,7 +76,12 @@
     },
     {
       "episode_id": "S1E02",
-      "source_p_id": "P061",
+      "source_original_id": "P061",
+      "source_namespace": "PR1@3c66e4b",
+      "main_p_id": "P061",
+      "source_h_ids": [
+        "H023"
+      ],
       "candidate_title": "What Eight Resignations Changed",
       "narrative_tension": "Leaving an employer is a decision; turning expertise into a repeatable industry is the harder act.",
       "picture_concept": "Eight workstations go dark; a dated corporate/organizational map emerges from independently sourced founder records.",
@@ -85,7 +95,12 @@
     },
     {
       "episode_id": "S1E03",
-      "source_p_id": "P073",
+      "source_original_id": "P073",
+      "source_namespace": "PR1@3c66e4b",
+      "main_p_id": "P073",
+      "source_h_ids": [
+        "H067"
+      ],
       "candidate_title": "Why AMD Let Go of Its Fabs",
       "narrative_tension": "What capital burden and manufacturing dependency remain when a chip business changes its ownership boundary?",
       "picture_concept": "A single fab shown as two contractual ledgers: asset ownership leaves, wafer commitments remain.",
@@ -99,7 +114,12 @@
     },
     {
       "episode_id": "S1E04",
-      "source_p_id": "P066",
+      "source_original_id": "P066",
+      "source_namespace": "PR1@3c66e4b",
+      "main_p_id": "P066",
+      "source_h_ids": [
+        "H035"
+      ],
       "candidate_title": "How Taiwan Learned to Repeat a Process",
       "narrative_tension": "Technology transfer delivers knowledge, not instant production capability.",
       "picture_concept": "Training map leads into successive illustrative qualification lots, with unknown yield values left blank.",
@@ -113,7 +133,10 @@
     },
     {
       "episode_id": "S1E05",
-      "source_p_id": "P137",
+      "source_original_id": "P137",
+      "source_namespace": "PR1@3c66e4b",
+      "main_p_id": null,
+      "source_h_ids": [],
       "candidate_title": "Independence Has a Process Cost",
       "narrative_tension": "What would it cost to own the recipe instead of following someone else's?",
       "picture_concept": "Two copper-integration routes enter a reliability-testing fork; a documented/no-evidence ledger stays visible.",
@@ -127,7 +150,10 @@
     },
     {
       "episode_id": "S1E06",
-      "source_p_id": "P070",
+      "source_original_id": "P070",
+      "source_namespace": "PR1@3c66e4b",
+      "main_p_id": "P070",
+      "source_h_ids": [],
       "candidate_title": "The Factory Behind a Phone Chip",
       "narrative_tension": "Why does a fabless vendor still need a manufacturing network to make a product real?",
       "picture_concept": "An illustrative phone circuit separates IC specification, fabrication, package, testing and delivery.",
@@ -141,7 +167,10 @@
     },
     {
       "episode_id": "S1E07",
-      "source_p_id": "P109",
+      "source_original_id": "P109",
+      "source_namespace": "PR1@3c66e4b",
+      "main_p_id": null,
+      "source_h_ids": [],
       "candidate_title": "When Chip Designs Could Travel",
       "narrative_tension": "How did common design rules create an interface between people who draw chips and people who print them?",
       "picture_concept": "Several independently authored layouts converge onto an illustrative shared-wafer run and split into different designs.",
@@ -155,7 +184,12 @@
     },
     {
       "episode_id": "S1E08",
-      "source_p_id": "P078",
+      "source_original_id": "P078",
+      "source_namespace": "PR1@3c66e4b",
+      "main_p_id": "P078",
+      "source_h_ids": [
+        "H086"
+      ],
       "candidate_title": "What Apple Designs—and What It Buys",
       "narrative_tension": "What can a system company control with its own silicon without owning a fabrication plant?",
       "picture_concept": "One product system opens into design choices, outsourced wafer processing and assembly; two types of control are outlined.",
@@ -169,7 +203,12 @@
     },
     {
       "episode_id": "S2E01",
-      "source_p_id": "P055",
+      "source_original_id": "P055",
+      "source_namespace": "PR1@3c66e4b",
+      "main_p_id": "P055",
+      "source_h_ids": [
+        "H081"
+      ],
       "candidate_title": "The GPU Had Another Job",
       "narrative_tension": "A chip sold to draw game scenes becomes useful for a different class of parallel computation—what made that possible?",
       "picture_concept": "The same conceptual execution lanes shift from shading pixels to processing arrays, with architecture changes flagged.",
@@ -183,7 +222,12 @@
     },
     {
       "episode_id": "S2E02",
-      "source_p_id": "P011",
+      "source_original_id": "P011",
+      "source_namespace": "PR1@3c66e4b",
+      "main_p_id": "P011",
+      "source_h_ids": [
+        "H012"
+      ],
       "candidate_title": "A Working Transistor Wasn't Enough",
       "narrative_tension": "Can an impressive laboratory device become a reliable industrial component?",
       "picture_concept": "Point-contact amplification succeeds once, then an illustrative repeatability/ruggedness comparison changes the question.",
@@ -197,7 +241,12 @@
     },
     {
       "episode_id": "S2E03",
-      "source_p_id": "P058",
+      "source_original_id": "P058",
+      "source_namespace": "PR1@3c66e4b",
+      "main_p_id": "P058",
+      "source_h_ids": [
+        "H087"
+      ],
       "candidate_title": "The Instruction That Left a Trace",
       "narrative_tension": "If a CPU discards speculative work, why can traces of that work remain observable?",
       "picture_concept": "Two parallel timelines separate architectural results from cache effects; a rejected path leaves a timed trace.",
@@ -210,7 +259,12 @@
     },
     {
       "episode_id": "S2E04",
-      "source_p_id": "P091",
+      "source_original_id": "P091",
+      "source_namespace": "PR1@3c66e4b",
+      "main_p_id": "P091",
+      "source_h_ids": [
+        "H028"
+      ],
       "candidate_title": "When Speed Wasn't the Only Measure",
       "narrative_tension": "How could lower switching power change which chip technology became valuable?",
       "picture_concept": "Complementary switching and rest current are compared under stated conditions; power flows instead of magic zero-power claims.",
@@ -224,7 +278,10 @@
     },
     {
       "episode_id": "S2E05",
-      "source_p_id": "P060",
+      "source_original_id": "P060",
+      "source_namespace": "PR1@3c66e4b",
+      "main_p_id": "P060",
+      "source_h_ids": [],
       "candidate_title": "Free Instructions, Expensive Chips",
       "narrative_tension": "What is genuinely open in an ISA—and what still costs years of engineering?",
       "picture_concept": "One instruction splits into different cores; verification and physical implementation budgets remain separate.",
@@ -238,7 +295,12 @@
     },
     {
       "episode_id": "S2E06",
-      "source_p_id": "P057",
+      "source_original_id": "P057",
+      "source_namespace": "PR1@3c66e4b",
+      "main_p_id": "P057",
+      "source_h_ids": [
+        "H083"
+      ],
       "candidate_title": "Two GPUs, One Research Breakthrough",
       "narrative_tension": "Why did a particular multi-GPU and software setup matter in an ImageNet benchmark?",
       "picture_concept": "A dated experiment's training batches split between two boards; speed/memory assumptions and score labels appear only from original paper.",
@@ -252,7 +314,12 @@
     },
     {
       "episode_id": "S2E07",
-      "source_p_id": "P010",
+      "source_original_id": "P010",
+      "source_namespace": "PR1@3c66e4b",
+      "main_p_id": "P010",
+      "source_h_ids": [
+        "H030"
+      ],
       "candidate_title": "When a Forecast Became a Deadline",
       "narrative_tension": "How can an expectation about future density synchronize firms that compete?",
       "picture_concept": "One date-stamped forecast becomes independently dated equipment/process/roadmap commitments; a late tool reveals tradeoffs.",
@@ -266,7 +333,10 @@
     },
     {
       "episode_id": "S2E08",
-      "source_p_id": "P099",
+      "source_original_id": "P099",
+      "source_namespace": "PR1@3c66e4b",
+      "main_p_id": "P099",
+      "source_h_ids": [],
       "candidate_title": "The Heat at the End of Faster",
       "narrative_tension": "When more switching ceases to be an affordable route, where does performance go?",
       "picture_concept": "Temperature and power envelopes constrain a CPU path; work migrates to parallelism, memory and software.",
@@ -280,7 +350,12 @@
     },
     {
       "episode_id": "S3E01",
-      "source_p_id": "P046",
+      "source_original_id": "P046",
+      "source_namespace": "PR1@3c66e4b",
+      "main_p_id": "P046",
+      "source_h_ids": [
+        "H061"
+      ],
       "candidate_title": "Why Intel Left DRAM",
       "narrative_tension": "A manufacturer cannot spend the same capacity twice: which business gets the next wafer start?",
       "picture_concept": "One factory allocation board has two products and a constrained capacity slot; historical accounts are overlaid separately.",
@@ -294,7 +369,12 @@
     },
     {
       "episode_id": "S3E02",
-      "source_p_id": "P041",
+      "source_original_id": "P041",
+      "source_namespace": "PR1@3c66e4b",
+      "main_p_id": "P041",
+      "source_h_ids": [
+        "H043"
+      ],
       "candidate_title": "When a Bit Was Woven by Hand",
       "narrative_tension": "What did storing one bit demand from a human hand, a machine and a budget?",
       "picture_concept": "A thread passes through ferrite rings; a read pulse reveals the physical work of memory, without posing as archival footage.",
@@ -308,7 +388,10 @@
     },
     {
       "episode_id": "S3E03",
-      "source_p_id": "P120",
+      "source_original_id": "P120",
+      "source_namespace": "PR1@3c66e4b",
+      "main_p_id": null,
+      "source_h_ids": [],
       "candidate_title": "Japan's Memory Bet Met a New Customer",
       "narrative_tension": "Why can superior qualification in one market fail to guarantee sales in a changing market?",
       "picture_concept": "Two dated customer requirement sheets flank a changing price/product-mix ledger; no single-cause verdict.",
@@ -322,7 +405,12 @@
     },
     {
       "episode_id": "S3E04",
-      "source_p_id": "P025",
+      "source_original_id": "P025",
+      "source_namespace": "PR1@3c66e4b",
+      "main_p_id": "P025",
+      "source_h_ids": [
+        "H045"
+      ],
       "candidate_title": "The Gate That Defined Its Own Edges",
       "narrative_tension": "How does self-alignment change what a production process can repeat?",
       "picture_concept": "A single gate defines the subsequent boundary; overlay error in two schematic routes is contrasted without invented yield.",
@@ -335,7 +423,12 @@
     },
     {
       "episode_id": "S3E05",
-      "source_p_id": "P045",
+      "source_original_id": "P045",
+      "source_namespace": "PR1@3c66e4b",
+      "main_p_id": "P045",
+      "source_h_ids": [
+        "H037"
+      ],
       "candidate_title": "Samsung's Cost of Learning DRAM",
       "narrative_tension": "Why would a late entrant keep spending before the next wafer becomes reliable?",
       "picture_concept": "An illustrative yield-improvement process is shown against a dated investment/learning timeline, with measured values only if sourced.",
@@ -349,7 +442,10 @@
     },
     {
       "episode_id": "S3E06",
-      "source_p_id": "P147",
+      "source_original_id": "P147",
+      "source_namespace": "PR1@3c66e4b",
+      "main_p_id": null,
+      "source_h_ids": [],
       "candidate_title": "The Memory Chip With a Window",
       "narrative_tension": "Why would opening a package to light make software and hardware development easier?",
       "picture_concept": "UV reaches an illustrated EPROM die through quartz, then erase/program cycles make iteration visible.",
@@ -363,7 +459,12 @@
     },
     {
       "episode_id": "S3E07",
-      "source_p_id": "P042",
+      "source_original_id": "P042",
+      "source_namespace": "PR1@3c66e4b",
+      "main_p_id": "P042",
+      "source_h_ids": [
+        "H044"
+      ],
       "candidate_title": "The Bit That Keeps Forgetting",
       "narrative_tension": "How does a tiny capacitor hold a bit only by being continually cared for?",
       "picture_concept": "Charge leaks, a sense amplifier reads and restores, refresh repeats; die-area comparison is labeled illustrative.",
@@ -377,7 +478,13 @@
     },
     {
       "episode_id": "S3E08",
-      "source_p_id": "P044",
+      "source_original_id": "P044",
+      "source_namespace": "PR1@3c66e4b",
+      "main_p_id": "P044",
+      "source_h_ids": [
+        "H047",
+        "H048"
+      ],
       "candidate_title": "Inventing Flash Was Only the Beginning",
       "narrative_tension": "Why do a patent, a stable manufacturing process and a profitable market award value to different players?",
       "picture_concept": "An erase block is tested across reliability gates; product and customer pathways fork from invention.",
@@ -391,7 +498,12 @@
     },
     {
       "episode_id": "S4E01",
-      "source_p_id": "P089",
+      "source_original_id": "P089",
+      "source_namespace": "PR1@3c66e4b",
+      "main_p_id": "P089",
+      "source_h_ids": [
+        "H099"
+      ],
       "candidate_title": "The Rules Written Into an AI Chip",
       "narrative_tension": "How can a dated export-control threshold alter a product's configuration before shipment?",
       "picture_concept": "A historical rule sheet overlays an illustrative product-parameter card; classification changes across explicit dated versions.",
@@ -405,7 +517,12 @@
     },
     {
       "episode_id": "S4E02",
-      "source_p_id": "P022",
+      "source_original_id": "P022",
+      "source_namespace": "PR1@3c66e4b",
+      "main_p_id": "P022",
+      "source_h_ids": [
+        "H010"
+      ],
       "candidate_title": "The Crystal Behind Wartime Radar",
       "narrative_tension": "What did a defense buyer need from material purity and reliable detection?",
       "picture_concept": "A radar pulse weakens at a detector; one physical crystal/metal contact is studied as a labeled mechanism.",
@@ -419,7 +536,12 @@
     },
     {
       "episode_id": "S4E03",
-      "source_p_id": "P083",
+      "source_original_id": "P083",
+      "source_namespace": "PR1@3c66e4b",
+      "main_p_id": "P083",
+      "source_h_ids": [
+        "H093"
+      ],
       "candidate_title": "When a Material Exists but Isn't Qualified",
       "narrative_tension": "What is the time lag between getting a substitute chemical and running it safely in a process?",
       "picture_concept": "Material flows across a dated licensing line, then waits at a technical qualification gate before illustrative fab use.",
@@ -433,7 +555,10 @@
     },
     {
       "episode_id": "S4E04",
-      "source_p_id": "P101",
+      "source_original_id": "P101",
+      "source_namespace": "PR1@3c66e4b",
+      "main_p_id": null,
+      "source_h_ids": [],
       "candidate_title": "Copying the Chip Doesn't Copy the System",
       "narrative_tension": "What could replicating a specific device do—and what supporting capability remained difficult?",
       "picture_concept": "Two dated device photos/spec sheets meet a traced schematic; production capability is shown as a distinct chain.",
@@ -447,7 +572,12 @@
     },
     {
       "episode_id": "S4E05",
-      "source_p_id": "P068",
+      "source_original_id": "P068",
+      "source_namespace": "PR1@3c66e4b",
+      "main_p_id": "P068",
+      "source_h_ids": [
+        "H038"
+      ],
       "candidate_title": "The Manufacturing Problem Rivals Shared",
       "narrative_tension": "What problem can competing chipmakers cooperate on without abandoning competition?",
       "picture_concept": "Separate fab samples arrive at one generic precompetitive test setup, then leave in different product lines.",
@@ -461,7 +591,12 @@
     },
     {
       "episode_id": "S4E06",
-      "source_p_id": "P067",
+      "source_original_id": "P067",
+      "source_namespace": "PR1@3c66e4b",
+      "main_p_id": "P067",
+      "source_h_ids": [
+        "H036"
+      ],
       "candidate_title": "Japan's Shared Research, Separate Companies",
       "narrative_tension": "Why does a shared R&D program not create one unified chipmaker?",
       "picture_concept": "An archival program map splits common research from proprietary manufacturing lines; compare precisely with SEMATECH.",
@@ -475,7 +610,12 @@
     },
     {
       "episode_id": "S4E07",
-      "source_p_id": "P074",
+      "source_original_id": "P074",
+      "source_namespace": "PR1@3c66e4b",
+      "main_p_id": "P074",
+      "source_h_ids": [
+        "H031"
+      ],
       "candidate_title": "A Government That Bought Reliability",
       "narrative_tension": "How could the requirements of a demanding public customer reshape component adoption?",
       "picture_concept": "An illustrative purchased IC passes a documented test sequence before entering a system integration drawing.",
@@ -489,7 +629,12 @@
     },
     {
       "episode_id": "S4E08",
-      "source_p_id": "P076",
+      "source_original_id": "P076",
+      "source_namespace": "PR1@3c66e4b",
+      "main_p_id": "P076",
+      "source_h_ids": [
+        "H063"
+      ],
       "candidate_title": "How a Memory Price Became a Trade Case",
       "narrative_tension": "When did the price of a DRAM become evidence in an international dispute?",
       "picture_concept": "Dated price comparators enter an agreement and enforcement timeline; transaction, legal test and consequence split.",
@@ -501,5 +646,6 @@
       "evidence_gate": "Use original US–Japan agreement and trade case records; avoid treating contested price formulas as objective universal cost.",
       "status": "UNAPPROVED_PROPOSAL"
     }
-  ]
+  ],
+  "canonical_lineage_note": "main P001–P100 remains unchanged; 5 original P IDs are PR #1-only and must not be treated as main P records."
 }
