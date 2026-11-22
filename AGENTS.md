@@ -16,6 +16,7 @@ Read `README.md`, `channel/AUDIENCE.md`, `channel/CHARTER.md`, `DECISIONS.md`, t
 ## Editorial and evidence
 
 - Preserve H001–H100 and proposal lineage. A working title, proposed release order, source URL or completed task is not a publication approval.
+- `editorial/seasons.json` is canonical for four-season selection and the initial slate; its 2026-11-14 episode statuses are **historical snapshots**, not a live task ledger. Compare exact current production branches/PRs and immutable deliveries before reporting progress. Unmerged PRs never silently replace approved channel or season policy, and a deployed Site is not independent film QA or YouTube publication.
 - Establish a concrete situation and stakes, explain only the mechanism needed for this story, show the actual choices and consequences, and return useful context to the viewer. Vary the form when the story calls for it.
 - English remains the content master. Korean performance supplies meaning, emphasis and pauses. The inherited 8–9-minute format is a production default, not an algorithmic optimum; scoped exceptions remain scoped.
 - Keep factual conditions, counterevidence and uncertainty. Economics and sociology must explain decisions and institutions in the event, rather than being vocabulary appended to a technology lecture.
