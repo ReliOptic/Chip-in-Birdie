@@ -1,6 +1,8 @@
 {
   "schema_version": 1,
   "authority": "2026-11-14 explicit user directive in Chat; canonical editorial selection, not publication approval",
+  "episode_status_snapshot_date": "2026-11-14",
+  "episode_status_semantics": "Per-episode evidence/production/media statuses are initial slate-save snapshots, not live progress. Current status requires exact production-branch task/delivery evidence and independent release QA.",
   "provenance": {
     "pr": 1,
     "head": "3c66e4b97f8c4bafefd80f8b099ad297bfd7610b",

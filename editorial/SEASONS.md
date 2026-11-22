@@ -1,6 +1,8 @@
 # Four-season production slate
 
-Canonical selection: 2026-11-14 user directive. [Machine-readable slate](seasons.json) owns episode data and status. 4 × 8 = 32 episodes. All start NOT_STARTED; editorial inclusion is not factual verification or video readiness. PR #1 is selectively recovered, not merged.
+Canonical selection: 2026-11-14 user directive. [Machine-readable slate](seasons.json) owns **episode selection and initial slate metadata**. 4 × 8 = 32 episodes. Per-episode `NOT_STARTED` and `UNVERIFIED_RESEARCH_LEADS` below describe the **2026-11-14 slate-save snapshot**, not live production/verification status. Editorial inclusion is not factual verification, final-title approval or video readiness. PR #1 is selectively recovered, not merged.
+
+**Later production crosswalk (checked 2026-11-22):** [S1E01 PR #4](https://github.com/ReliOptic/Chip-in-Birdie/pull/4) contains the 2026-11-18 R8 full-film candidate and Sites v5 deployment. Its exact production task is `IN_REVIEW` (not `READY`, `DONE` or YouTube `PUBLISHED`). The live treatment examines *qualified manufacturing capacity* as well as foundry customer trust; the slate title/question below remain the original **working pitch**, not an approved final film title or frozen narration. The branch's evidence and independent QA are assessed separately from this selection snapshot.
 
 Main P001–P100 remain unchanged. P101/P109/P120/P137/P147 exist in PR #1; their main_p_id is null. Original IDs and titles are namespaced, not renumbered. [Recovered records](provenance/pr1-selected.json) preserve exact source fields. The earlier main-only 24-candidate proposal is not the current slate.
 
@@ -13,6 +15,7 @@ How did design and manufacturing become separate businesses?
 ### S1E01 · TSMC's No-Competition Promise
 
 - Source: PR #1 P004 → main P004; H: H039. Original title: The Company That Makes Everyone's Chips Sells None of Its Own.
+- Current production treatment: PR #4 R8 uses the same S1E01 lineage but develops the fabless/foundry story through qualified capacity, process and delivery commitments. This is a later director-led treatment, not an additional episode or final-title approval.
 - Question: Why would a chip factory promise never to compete with its customers?
 - Protagonist / conflict: Morris Chang and designers who need manufacturing but fear a rival
 - Choice: Build a dedicated foundry rather than sell competing chip designs
