@@ -21,6 +21,8 @@
 
 The seasons share **one channel audience**, not separate target personas. Each film stands on its own; cross-episode returns are rewards, not prerequisites.
 
+**Provenance note:** Five original P IDs are recovered only from PR #1 (`P137`, `P109`, `P120`, `P147`, `P101`); their `main_p_id` remains `null`. The companion JSON retains `source_namespace`, `main_p_id`, and source H IDs, rather than pretending the records are in main's P001–P100 catalogue.
+
 ## Style system without a rigid formula
 
 - **Visual grammar:** independent Chip wordmark, charcoal/neutral editorial field, a functional *original* single accent per frame, accessible captions/type, generous space for evidence. Avoid reproducing Bloomberg's yellow brand package, title lockups or top-right mark.
