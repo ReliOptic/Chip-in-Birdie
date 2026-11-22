@@ -18,6 +18,14 @@
 | [측정 계획](analytics/MEASUREMENT.md) | 실제 관객의 유입·재방문과 영상 반응으로 편집을 수정하는 법 |
 | [결정 기록](DECISIONS.md) | 사용자 결정, 운영 제안, 기존 기준의 변경 이유 |
 
+## 정본의 우선순위와 상태 시점
+
+최신 명시적 사용자 지시와 [결정 이력](DECISIONS.md)이 과거 제안을 대체합니다. 채널 정의는 `channel/audience.json`·`channel/charter.json`, **4시즌 × 8편의 선택·제작 순서**는 `editorial/seasons.json`을 기준으로 합니다. 편집 문서는 실행 해석이고, 미병합 PR은 승인된 정책이 아닙니다.
+
+**서로 다른 단계:** 첫 제작 이정표는 각 시즌 E01의 완성본 **4편**, 개국 완충 목표는 약 **10편의 READY 영상**입니다. 8–9분은 기본 길이이고 6–12분은 작품별 사유가 있는 예외입니다. 3D 다큐멘터리 제작 방향이 모든 장면에 동일한 3D 연출을 강제하지는 않습니다.
+
+**진행 상태(2026-11-22 확인):** 시즌 데이터의 `NOT_STARTED`는 **2026-11-14 편성 저장 당시의 스냅샷**입니다. [S1E01 PR #4](https://github.com/ReliOptic/Chip-in-Birdie/pull/4)는 R8 영상·Sites v5 배포가 기록된 **IN_REVIEW** 초안이며 `READY`나 YouTube `PUBLISHED`가 아닙니다. `main`의 초기 `TASK-002: OPEN`을 해당 작업 브랜치의 최신 상태라고 읽지 않습니다. 이전 [PR #1](https://github.com/ReliOptic/Chip-in-Birdie/pull/1)의 6편·개국조건·주간 업로드 제안과 [PR #2](https://github.com/ReliOptic/Chip-in-Birdie/pull/2)의 4×6 편성은 현재 승인된 정본을 대체하지 않습니다.
+
 ## 이번 기준의 핵심 변경
 
 **타깃 오디언스는 채널 단위로 한 곳에서 관리합니다.** 각 영상은 같은 관객에게 줄 사건과 이해를 설계합니다. 기존 S1–S5는 과거 주제 관심 분류로만 보존하며 영상별 타깃으로 사용하지 않습니다.
