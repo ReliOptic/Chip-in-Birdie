@@ -1,0 +1,1 @@
+A high average power (>20kW) pulsed CO2 laser is used to create a Sn plasma by irradiating 30μm Sn droplets at a repetition rate of approximately 50kHz. The EUV light emitted by the Sn plasma is collected using a 5sr multi-layer mirror (MLM) collector and refocused at the intermediate focus (IF).

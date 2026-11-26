@@ -1,0 +1,1 @@
+the target delivery system 145 generates targets at a repetition rate of 50 kHz

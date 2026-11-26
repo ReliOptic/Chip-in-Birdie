@@ -1,0 +1,1 @@
+The latest generation of NXE:3400C sources has improved performance and availability by implementing a modular vessel concept and an automated tin supply system.

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LPP EUV Source</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #1b1c1f; color: #e8e8e6; overflow: hidden; }
+  #stage { position: relative; width: 100vw; height: 100vh; }
+  #stage canvas { display: block; width: 100%; height: 100%; outline: none; touch-action: none; }
+  #stage canvas:focus-visible { box-shadow: inset 0 0 0 2px #1d1d1b; }
+  .dta-label a { color: inherit; }
+  #nowebgl { position: absolute; inset: 0; display: none; place-items: center; font: 500 14px system-ui, sans-serif; }
+</style>
+<script type="importmap">
+{ "imports": { "three": "./vendor/three/three.module.js", "three/addons/": "./vendor/three/addons/" } }
+</script>
+</head>
+<body>
+<div id="stage">
+  <canvas id="twin" tabindex="0" aria-label="Laser-produced-plasma EUV source twin. Drag the droplet generator to shift laser timing."></canvas>
+  <div id="nowebgl" role="status">WebGL unavailable on this device.</div>
+</div>
+<noscript>This twin needs JavaScript.</noscript>
+<script type="module">
+import { WebGLRenderer, Scene, PerspectiveCamera, Color, ACESFilmicToneMapping, PMREMGenerator,
+         HemisphereLight, DirectionalLight, MeshPhysicalMaterial, Vector3, Box3 } from "three";
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
+import { RoomEnvironment } from "three/addons/environments/RoomEnvironment.js";
+import * as THREE from "three";
+import { applyEvidenceGrade, tick, completeness } from "./adapters/evidence-layer.mjs";
+import { createInteraction } from "./adapters/scene-interaction.mjs";
+import { createExplode } from "./adapters/explode.mjs";
+import { toCreasedNormals } from "three/addons/utils/BufferGeometryUtils.js";
+import { createPhysics } from "./physics.mjs";
+
+const canvas = document.getElementById("twin");
+let renderer;
+try {
+  renderer = new WebGLRenderer({ canvas, antialias: true, alpha: false, powerPreference: "high-performance" });
+  if (!renderer.getContext()) throw new Error("no WebGL context");
+} catch (err) {
+  // Honest, labelled fallback: never a Canvas2D stand-in pretending to be the twin.
+  document.getElementById("nowebgl").style.display = "grid";
+  window.dtaRuntime = { renderer: "none", error: String(err) };
+  throw err;
+}
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.toneMapping = ACESFilmicToneMapping;
+renderer.localClippingEnabled = true;
+window.dtaRuntime = { renderer: "threejs-webgl", context: renderer.getContext().constructor.name };
+
+const scene = new Scene();
+scene.background = new Color(0x1b1c1f);
+scene.environment = new PMREMGenerator(renderer).fromScene(new RoomEnvironment(), 0.04).texture;
+scene.add(new HemisphereLight(0xffffff, 0x8c8a84, 0.6));
+const key = new DirectionalLight(0xffffff, 1.4); key.position.set(3, 5, 4); scene.add(key);
+
+const camera = new PerspectiveCamera(42, innerWidth / innerHeight, 0.01, 200);
+const controls = new OrbitControls(camera, canvas);
+controls.enableDamping = true; controls.dampingFactor = 0.08;
+
+const [gltf, cards, assembly] = await Promise.all([
+  new GLTFLoader().loadAsync("./model.glb"),
+  fetch("./data/part-rationale.json").then((r) => r.json()),
+  fetch("./data/assembly.json").then((r) => r.json()),
+]);
+scene.add(gltf.scene);
+gltf.scene.traverse((o) => { if (o.isMesh) o.geometry = toCreasedNormals(o.geometry, Math.PI / 5); });
+const physicsData = await fetch("./data/physics.json").then((r) => r.json());
+window.dtaPhysics = createPhysics(THREE, scene, gltf.scene, physicsData);
+const unit = { mm: 0.001, m: 1, in: 0.0254 }[assembly.units] ?? 0.001;
+camera.position.set(...assembly.default_pose.position.map((v) => v * unit));
+controls.target.set(...assembly.default_pose.target.map((v) => v * unit));
+controls.update();
+
+// Evidence grammar: every picked mesh carries its card; PBR from the part's material decision.
+const handles = [];
+for (const card of cards) {
+  const mesh = gltf.scene.getObjectByName(card.mesh_object_id);
+  if (!mesh?.isMesh) { console.warn("card without mesh", card.part_id); continue; }
+  if (card.pbr) mesh.material = new MeshPhysicalMaterial({ color: new Color(...card.pbr.color.slice(0, 3)),
+    metalness: card.pbr.metallic ?? 0.2, roughness: card.pbr.roughness ?? 0.6, clearcoat: card.pbr.clearcoat ?? 0 });
+  handles.push(applyEvidenceGrade(THREE, mesh, card, { exaggeration: assembly.sigma_exaggeration ?? 1 }));
+}
+const ui = createInteraction({ THREE, scene, camera, renderer, controls, handles,
+  defaultPose: { position: camera.position.toArray(), target: controls.target.toArray() },
+  bibliographyHref: (id) => `./research.html#${encodeURIComponent(id)}`,
+  onDragPart: window.dtaPhysics.onDragPart, onLabelValue: window.dtaPhysics.labelValue }).attach();
+const explode = createExplode({ THREE, assembly, ui, canvas, controls }).attach();
+window.dtaScene = { scene, camera, renderer, controls, handles, ui, explode, cards, tick, completeness };
+
+addEventListener("resize", () => {
+  camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix();
+  renderer.setSize(innerWidth, innerHeight, false);
+});
+renderer.setSize(innerWidth, innerHeight, false);
+renderer.setAnimationLoop((ms) => {
+  tick(handles, ms / 1000, { reducedMotion: matchMedia("(prefers-reduced-motion: reduce)").matches });
+  explode.update(1 / 60);
+  window.dtaPhysics?.step?.(ms / 1000, handles, ui);  // project solver: writes computed state into meshes/offsets
+  ui.update(1 / 60);
+  controls.update();
+  renderer.render(scene, camera);
+});
+</script>
+</body>
+</html>

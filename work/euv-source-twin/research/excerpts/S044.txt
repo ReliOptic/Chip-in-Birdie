@@ -1,0 +1,1 @@
+a suitable pre-pulse may be, for example a 1-10 mJ pulse from a Nd-YAG laser having a pulsewidth >10 nsec

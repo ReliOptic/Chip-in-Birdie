@@ -1,0 +1,126 @@
+{
+  "schema": "dta.cad-build/v1",
+  "parts": [
+    {
+      "id": "p-collector",
+      "volume_m3": 0.005859851907775427,
+      "step_reimport_volume_relative_error": 1.8483882721346608e-13,
+      "bbox_m": [
+        0.1448452018264878,
+        0.5468054604481826,
+        0.5466974547975683
+      ],
+      "triangles": 35708,
+      "worst_param_grade": "E3_inferred",
+      "max_sigma_m": 0.25,
+      "unknown_params": []
+    },
+    {
+      "id": "p-droplet-catcher",
+      "volume_m3": 0.0002251893614093165,
+      "step_reimport_volume_relative_error": 2.1971069799570187e-14,
+      "bbox_m": [
+        0.06001186041379608,
+        0.06000000020000002,
+        0.3200118604137961
+      ],
+      "triangles": 1264,
+      "worst_param_grade": "E3_inferred",
+      "max_sigma_m": 0.06,
+      "unknown_params": []
+    },
+    {
+      "id": "p-droplet-generator",
+      "volume_m3": 0.001581100750698671,
+      "step_reimport_volume_relative_error": 1.4136823210598374e-14,
+      "bbox_m": [
+        0.09001779052069413,
+        0.09000000020000001,
+        0.5100104767221865
+      ],
+      "triangles": 1260,
+      "worst_param_grade": "E3_inferred",
+      "max_sigma_m": 0.06,
+      "unknown_params": []
+    },
+    {
+      "id": "p-final-focus-optics",
+      "volume_m3": 0.0052331079627172,
+      "step_reimport_volume_relative_error": 2.38476304879587e-14,
+      "bbox_m": [
+        0.31014500977577575,
+        0.15026036881706129,
+        0.15023071828257112
+      ],
+      "triangles": 1576,
+      "worst_param_grade": "E3_inferred",
+      "max_sigma_m": 0.06,
+      "unknown_params": []
+    },
+    {
+      "id": "p-intermediate-focus",
+      "volume_m3": 0.0003028997972885135,
+      "step_reimport_volume_relative_error": 1.594994747129533e-14,
+      "bbox_m": [
+        0.01203558084138831,
+        0.18003558084138827,
+        0.18000000020000004
+      ],
+      "triangles": 2212,
+      "worst_param_grade": "E3_inferred",
+      "max_sigma_m": 0.25,
+      "unknown_params": []
+    },
+    {
+      "id": "p-obscuration",
+      "volume_m3": 2.8510637368249104e-05,
+      "step_reimport_volume_relative_error": 4.006663655646469e-14,
+      "bbox_m": [
+        0.0060111867280093064,
+        0.342005593464005,
+        0.056007348029673075
+      ],
+      "triangles": 608,
+      "worst_param_grade": "E3_inferred",
+      "max_sigma_m": 0.06,
+      "unknown_params": []
+    },
+    {
+      "id": "p-vessel-rear",
+      "volume_m3": 0.009047786842338605,
+      "step_reimport_volume_relative_error": 1.3793121696290699e-14,
+      "bbox_m": [
+        0.020154182979349004,
+        0.780154182979349,
+        0.7800000002000002
+      ],
+      "triangles": 1264,
+      "worst_param_grade": "E3_inferred",
+      "max_sigma_m": 0.06,
+      "unknown_params": []
+    },
+    {
+      "id": "p-vessel",
+      "volume_m3": 0.021639290197926493,
+      "step_reimport_volume_relative_error": 1.8768917362105954e-11,
+      "bbox_m": [
+        1.6408320169218678,
+        0.7208320169218679,
+        0.7206896943563151
+      ],
+      "triangles": 6636,
+      "worst_param_grade": "E3_inferred",
+      "max_sigma_m": 0.25,
+      "unknown_params": []
+    }
+  ],
+  "errors": [],
+  "dist_exporter": "dta_glb.write_glb",
+  "exchange_glb": {
+    "path": "cad/assembly.glb",
+    "sha256": "e39e48d8d310c04310d7c4a7b3e5645cea0dfa0d40e34ab069b953e667cb01e3",
+    "units": "mm",
+    "exporter": "cadquery.Assembly.export (OCCT)"
+  },
+  "dist_model_glb_sha256": "f18a9670a65704c12006d027433c1c39cfcf55fefe620e49db58ba1ec312a16e"
+}

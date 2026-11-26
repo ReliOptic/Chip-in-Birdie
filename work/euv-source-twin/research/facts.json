@@ -1,0 +1,516 @@
+{
+  "euv_power_at_if": {
+    "value": 250,
+    "unit": "W",
+    "source_id": "S001",
+    "locator": "slide 51 'Operation Parameters' (also slides 44-45, 59)",
+    "grade_hint": "exact",
+    "note": "Dose-controlled power at the source/scanner interface (IF) for NXE:3400B.",
+    "alternates": [
+      {
+        "value": 250,
+        "unit": "W",
+        "source_id": "S003",
+        "locator": "slides 21, 64"
+      },
+      {
+        "value": 250,
+        "unit": "W",
+        "source_id": "S007",
+        "locator": "abstract (NXE:3400C)"
+      }
+    ]
+  },
+  "euv_pulse_energy_at_if": {
+    "value": 5,
+    "unit": "mJ",
+    "source_id": "S015",
+    "locator": "p.197 text with Fig. 11",
+    "grade_hint": "exact",
+    "note": "5 mJ x 50 kHz = 250 W."
+  },
+  "conversion_efficiency": {
+    "value": 6.0,
+    "unit": "%",
+    "source_id": "S001",
+    "locator": "slide 51",
+    "grade_hint": "exact",
+    "note": "CO2-to-EUV, 2% bandwidth into 2pi sr per slide 22 definition.",
+    "alternates": [
+      {
+        "value": ">5",
+        "unit": "%",
+        "source_id": "S004",
+        "locator": "§3 (mean CE in excess of 5% on NXE:3400 development)"
+      },
+      {
+        "value": 6,
+        "unit": "%",
+        "source_id": "S015",
+        "locator": "p.196"
+      }
+    ]
+  },
+  "droplet_diameter": {
+    "value": 27,
+    "unit": "um",
+    "source_id": "S002",
+    "locator": "slide 49 (third-generation droplet generator, field)",
+    "grade_hint": "family",
+    "note": "S003 slide 42 also shows '27' with the micro sign rendered as 'm'.",
+    "alternates": [
+      {
+        "value": 30,
+        "unit": "um",
+        "source_id": "S001",
+        "locator": "slide 21 ('30 micron diameter tin droplet')",
+        "grade": "family"
+      },
+      {
+        "value": "<30",
+        "unit": "um",
+        "source_id": "S001",
+        "locator": "slide 33",
+        "grade": "family"
+      },
+      {
+        "value": 25,
+        "unit": "um",
+        "source_id": "S028",
+        "locator": "EUV paragraph ('around 25 microns')",
+        "grade": "family"
+      },
+      {
+        "value": "20-30",
+        "unit": "um",
+        "source_id": "S004",
+        "locator": "Table 1",
+        "grade": "family"
+      }
+    ]
+  },
+  "droplet_frequency": {
+    "value": 50,
+    "unit": "kHz",
+    "source_id": "S001",
+    "locator": "slide 51 'Repetition Rate 50kHz'",
+    "grade_hint": "exact",
+    "alternates": [
+      {
+        "value": 50000,
+        "unit": "per s",
+        "source_id": "S028",
+        "locator": "EUV paragraph"
+      }
+    ]
+  },
+  "droplet_velocity": {
+    "value": 80,
+    "unit": "m/s",
+    "source_id": "S003",
+    "locator": "slide 42 (MOPA + pre-pulse operation, spatial view)",
+    "grade_hint": "family",
+    "note": "S001 slide 33 shows '~80 m/s' in a shadowgram from a 3300 MOPA+PP source.",
+    "alternates": [
+      {
+        "value": 70,
+        "unit": "m/s",
+        "source_id": "S028",
+        "locator": "EUV paragraph",
+        "grade": "family"
+      },
+      {
+        "value": 70,
+        "unit": "m/s",
+        "source_id": "S053",
+        "locator": "description example",
+        "grade": "patent_proposal"
+      },
+      {
+        "value": "60-120",
+        "unit": "m/s",
+        "source_id": "S004",
+        "locator": "Table 1",
+        "grade": "family"
+      }
+    ]
+  },
+  "droplet_spacing_at_50khz": {
+    "value": 1.4,
+    "unit": "mm",
+    "source_id": "S053",
+    "locator": "description example (70 m/s, 50 kHz)",
+    "grade_hint": "patent_proposal",
+    "alternates": [
+      {
+        "value": 1.5,
+        "unit": "mm",
+        "source_id": "S004",
+        "locator": "§5 Fig. 10 (5 MHz breakup to 50 kHz droplets)",
+        "grade": "family"
+      }
+    ]
+  },
+  "prepulse_wavelength": {
+    "value": 10.26,
+    "unit": "um",
+    "source_id": "S042",
+    "locator": "description FIG. 3 ('approximately 10.26')",
+    "grade_hint": "patent_proposal",
+    "note": "No ASML product document read states the pre-pulse wavelength; decks only show a CO2 MOPA + pre-pulse architecture."
+  },
+  "mainpulse_wavelength": {
+    "value": 10.59,
+    "unit": "um",
+    "source_id": "S003",
+    "locator": "slide 42 temporal view label '10.59 µm'",
+    "grade_hint": "family",
+    "note": "Same value in patent S042 ('approximately 10.59'); slide does not state whether the label applies to PP, MP or both.",
+    "alternates": [
+      {
+        "value": 10.59,
+        "unit": "um",
+        "source_id": "S042",
+        "locator": "description FIG. 3",
+        "grade": "patent_proposal"
+      }
+    ]
+  },
+  "prepulse_power_on_target": {
+    "value": "3-5",
+    "unit": "kW",
+    "source_id": "S042",
+    "locator": "description FIG. 3",
+    "grade_hint": "patent_proposal"
+  },
+  "prepulse_energy": {
+    "value": "6-12",
+    "unit": "mJ",
+    "source_id": "S041",
+    "locator": "description (pre-pulse energy at target for 10-100 um droplet)",
+    "grade_hint": "patent_proposal",
+    "note": "6 mJ x 50 kHz = 0.3 kW, which does not match the 3-5 kW in S042: different embodiments/eras."
+  },
+  "mainpulse_power_on_droplet": {
+    "value": 21.5,
+    "unit": "kW",
+    "source_id": "S001",
+    "locator": "slide 51 'MP power on droplet 21.5kW'",
+    "grade_hint": "exact",
+    "alternates": [
+      {
+        "value": 25,
+        "unit": "kW",
+        "source_id": "S042",
+        "locator": "description FIG. 3",
+        "grade": "patent_proposal"
+      }
+    ]
+  },
+  "prepulse_beam_diameter": {
+    "value": 100,
+    "unit": "um",
+    "source_id": "S003",
+    "locator": "slide 42 'Beam Diameter 100mm' (micro sign rendered as m)",
+    "grade_hint": "family",
+    "note": "Unit inferred from context; verify against original slide graphic."
+  },
+  "mainpulse_beam_and_target_diameter": {
+    "value": 400,
+    "unit": "um",
+    "source_id": "S003",
+    "locator": "slide 42 'Beam Diameter 400mm' / 'Target Diameter 400mm'",
+    "grade_hint": "family",
+    "note": "Unit inferred; S036 independently states 'the target diameter has already been increased to 400 µm'."
+  },
+  "co2_laser_average_power": {
+    "value": "20-40",
+    "unit": "kW",
+    "source_id": "S001",
+    "locator": "slide 14 ('Drive laser power from 20 to 40 kW' roadmap)",
+    "grade_hint": "family",
+    "note": "Range, not a single NXE:3400 value.",
+    "alternates": [
+      {
+        "value": 40,
+        "unit": "kW",
+        "source_id": "S031",
+        "locator": "'From just a few watts to 40 kilowatts'",
+        "grade": "family"
+      },
+      {
+        "value": 30,
+        "unit": "kW",
+        "source_id": "S032",
+        "locator": "'its full 30 kilowatts of power'",
+        "grade": "family"
+      },
+      {
+        "value": ">20",
+        "unit": "kW",
+        "source_id": "S004",
+        "locator": "§4 drive laser",
+        "grade": "family"
+      }
+    ]
+  },
+  "co2_amplifier_stages": {
+    "value": 4,
+    "unit": "power-amplification stages after seed + pre-amplification",
+    "source_id": "S002",
+    "locator": "slide 44 '4-stage power amplification'",
+    "grade_hint": "family",
+    "note": "CONFLICT: TRUMPF S032/S033 say five amplifier stages; LFW S036 says 3-stage power amplification after a pre-amplifier; TRUMPF S031 says four resonators in the High Power Amplification Chain."
+  },
+  "collector_type": {
+    "value": "ellipsoidal normal-incidence graded Mo/Si multilayer; plasma at first focus, IF at second focus",
+    "unit": null,
+    "source_id": "S001",
+    "locator": "slide 40",
+    "grade_hint": "exact"
+  },
+  "collector_diameter": {
+    "value": null,
+    "unit": "mm",
+    "source_id": null,
+    "locator": "not verified",
+    "grade_hint": "principle",
+    "note": "No ASML/Cymer source read gives the NXE:3400 collector diameter. A search-engine snippet attributed '650 mm' to a WikiChip article, but the page returned HTTP 503 and was not read. Third-party patent S054 describes the incumbent NI collector as '~600 mm diameter'.",
+    "alternates": [
+      {
+        "value": 600,
+        "unit": "mm",
+        "source_id": "S054",
+        "locator": "background",
+        "grade": "principle"
+      }
+    ]
+  },
+  "collector_collection_solid_angle": {
+    "value": 5.5,
+    "unit": "sr",
+    "source_id": "S004",
+    "locator": "§7 Fig. 16 (NXE 3100 collector)",
+    "grade_hint": "family",
+    "alternates": [
+      {
+        "value": 5,
+        "unit": "sr",
+        "source_id": "S012",
+        "locator": "abstract"
+      },
+      {
+        "value": 5,
+        "unit": "sr",
+        "source_id": "S005",
+        "locator": "§4"
+      }
+    ]
+  },
+  "collector_na": {
+    "value": null,
+    "unit": null,
+    "source_id": null,
+    "locator": "not found",
+    "grade_hint": "principle",
+    "note": "No NA value found in any source read."
+  },
+  "collector_first_focus_distance": {
+    "value": 15,
+    "unit": "cm (plasma to collector mirror, typical)",
+    "source_id": "S037",
+    "locator": "description background",
+    "grade_hint": "patent_proposal",
+    "alternates": [
+      {
+        "value": "10-50",
+        "unit": "cm",
+        "source_id": "S046",
+        "locator": "description"
+      }
+    ]
+  },
+  "collector_second_focus_distance": {
+    "value": "1-2",
+    "unit": "m (EUV path plasma -> intermediate location)",
+    "source_id": "S037",
+    "locator": "description",
+    "grade_hint": "patent_proposal",
+    "note": "Also in S038. No NXE:3400-specific plasma-to-IF distance found; S054's 2400 mm is a third-party GIC design."
+  },
+  "collector_reflectivity": {
+    "value": 41,
+    "unit": "%",
+    "source_id": "S001",
+    "locator": "slide 51",
+    "grade_hint": "exact",
+    "alternates": [
+      {
+        "value": "~60 max / >50 avg",
+        "unit": "%",
+        "source_id": "S005",
+        "locator": "§4",
+        "grade": "family"
+      }
+    ]
+  },
+  "collector_degradation_rate": {
+    "value": 0.15,
+    "unit": "%/Gp",
+    "source_id": "S003",
+    "locator": "slide 61 (NXE:3400B at 250 W)",
+    "grade_hint": "exact",
+    "alternates": [
+      {
+        "value": "<0.3",
+        "unit": "%/Gp",
+        "source_id": "S001",
+        "locator": "slide 49"
+      }
+    ]
+  },
+  "collector_swap_time": {
+    "value": 28,
+    "unit": "h",
+    "source_id": "S003",
+    "locator": "slide 61 (NXE:3400B)",
+    "grade_hint": "exact"
+  },
+  "collector_lifetime": {
+    "value": ">100",
+    "unit": "Gpulses",
+    "source_id": "S003",
+    "locator": "slide 67",
+    "grade_hint": "exact",
+    "alternates": [
+      {
+        "value": "~150",
+        "unit": "Gpulses",
+        "source_id": "S001",
+        "locator": "slide 59 (field)"
+      }
+    ]
+  },
+  "hydrogen_pressure_vessel": {
+    "value": 100,
+    "unit": "Pa (approx.)",
+    "source_id": "S001",
+    "locator": "slide 39 'Hydrogen buffer gas (pressure ~100Pa)'",
+    "grade_hint": "exact",
+    "note": "Patents give >=100 mTorr (13 Pa), 400-500 mTorr (53-67 Pa) and 1.3 Torr during cleaning: S037, S038, S050.",
+    "alternates": [
+      {
+        "value": ">=100",
+        "unit": "mTorr",
+        "source_id": "S037",
+        "locator": "background",
+        "grade": "patent_proposal"
+      },
+      {
+        "value": 500,
+        "unit": "mTorr",
+        "source_id": "S038",
+        "locator": "description",
+        "grade": "patent_proposal"
+      }
+    ]
+  },
+  "hydrogen_flow": {
+    "value": {
+      "showerhead": "15-50",
+      "perimeter": "50-130"
+    },
+    "unit": "slm",
+    "source_id": "S048",
+    "locator": "description FIG. 6A",
+    "grade_hint": "patent_proposal"
+  },
+  "if_position": {
+    "value": "second focus of the ellipsoidal collector = source/scanner interface (entry aperture to scanner)",
+    "unit": null,
+    "source_id": "S001",
+    "locator": "slide 40; S005 §2",
+    "grade_hint": "exact",
+    "note": "No coordinates or distance for the NXE:3400 IF found."
+  },
+  "dose_stability": {
+    "value": 99.9,
+    "unit": "% of fields meeting dose spec at 250 W",
+    "source_id": "S001",
+    "locator": "slide 44",
+    "grade_hint": "exact",
+    "alternates": [
+      {
+        "value": ">99.99",
+        "unit": "% average dose performance",
+        "source_id": "S001",
+        "locator": "slide 45"
+      },
+      {
+        "value": "<0.5",
+        "unit": "% dose error (50 kHz)",
+        "source_id": "S004",
+        "locator": "§2.4",
+        "grade": "family"
+      }
+    ]
+  },
+  "dose_margin": {
+    "value": 10,
+    "unit": "%",
+    "source_id": "S001",
+    "locator": "slide 51",
+    "grade_hint": "exact"
+  },
+  "source_availability": {
+    "value": ">85",
+    "unit": "% over 13 weeks at customers",
+    "source_id": "S003",
+    "locator": "slide 21 (NXE:3400B)",
+    "grade_hint": "exact",
+    "alternates": [
+      {
+        "value": ">90",
+        "unit": "% (NXE:3400C supporting)",
+        "source_id": "S003",
+        "locator": "slide 67"
+      },
+      {
+        "value": "70-80",
+        "unit": "% worldwide 4-week avg (NXE:3400B system, 2018)",
+        "source_id": "S001",
+        "locator": "slide 48"
+      }
+    ]
+  },
+  "droplet_generator_runtime": {
+    "value": ">700",
+    "unit": "h average in field",
+    "source_id": "S001",
+    "locator": "slide 59",
+    "grade_hint": "exact"
+  },
+  "vessel_size": {
+    "value": null,
+    "unit": null,
+    "source_id": null,
+    "locator": "not found",
+    "grade_hint": "principle",
+    "note": "No vessel dimension found. Only related size: collector flow ring example 1.2 m x 1.0 m x 90 mm (S048, patent_proposal)."
+  },
+  "scanner_throughput": {
+    "value": 125,
+    "unit": "wph at 20 mJ/cm2 (NXE:3400B)",
+    "source_id": "S029",
+    "locator": "product page",
+    "grade_hint": "exact",
+    "alternates": [
+      {
+        "value": 170,
+        "unit": "wph at 20 mJ/cm2 (NXE:3400C)",
+        "source_id": "S030",
+        "locator": "product page"
+      }
+    ]
+  }
+}

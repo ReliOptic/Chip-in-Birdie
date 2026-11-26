@@ -1,0 +1,1 @@
+In this paper we discuss the most recent results from high power testing on our development systems targeted at the 250W configuration

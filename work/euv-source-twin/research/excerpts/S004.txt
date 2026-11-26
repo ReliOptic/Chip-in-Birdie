@@ -1,0 +1,1 @@
+Droplet diameter Droplet frequency Transverse stability (3σ) Longitudinal stability (3σ) Droplet velocity 20–30 μm 40–100 kHz <2 μm <2 μm 60–120 m/s

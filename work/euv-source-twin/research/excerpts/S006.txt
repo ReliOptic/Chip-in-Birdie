@@ -1,0 +1,1 @@
+We will show improvements to source architecture that facilitated the increase of EUV power to 250W, and the technical challenges for power scaling of key source parameters and subsystems. The performance of critical subsystems such as the Droplet Generator and Collector protection will be shown, with emphasis on stability and lifetime.

@@ -1,0 +1,1 @@
+For example, some high-volume EUV light sources may call for the irradiation of droplets having a diameter of about 20-50 μm and moving at a velocity of about 50-100 m/s.

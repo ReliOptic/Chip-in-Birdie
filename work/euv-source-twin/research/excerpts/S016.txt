@@ -1,0 +1,1 @@
+Molten tin droplets with a diameter of roughly 25 μm are generated at the same rate. They are first hit by a low-intensity laser pulse that heats and flattens them out. Subsequently, they are hit by a more powerful laser pulse that vaporizes them and creates an EUV-emitting plasma.

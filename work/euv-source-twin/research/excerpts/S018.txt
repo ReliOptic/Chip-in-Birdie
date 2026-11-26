@@ -1,0 +1,1 @@
+It was found early on that the pre-expansion of droplet targets is indispensable for resolving the initial mismatch between the optimal laser spot (∼500 μm) and source etendue on the one hand, and the droplet diameter (∼30 μm) on the other

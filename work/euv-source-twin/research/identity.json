@@ -1,0 +1,56 @@
+{
+  "schema": "dta.identity/v1",
+  "id": "cymer-asml-lpp-euv-source-nxe3400",
+  "maker": "ASML (Cymer); drive laser TRUMPF",
+  "model": "LPP EUV source for NXE:3400B/C",
+  "variant": "250 W-class, MOPA + pre-pulse, 50 kHz",
+  "technology_family": "CO2-laser-produced tin plasma EUV source",
+  "build_years": "2017– (NXE:3400B introduction era)",
+  "subsystem_boundary": "source vessel from drive-laser final focus to intermediate focus; CO2 laser amplifiers, beam transport, scanner, H2 pumping skids excluded",
+  "operating_mode": "nominal 250 W exposure (research reconstruction, no live data)",
+  "excluded_families": [
+    "Gigaphoton LPP (solid-state pre-pulse, magnetic debris mitigation)",
+    "discharge-produced plasma (DPP/LDP) sources",
+    "grazing-incidence collector sources",
+    "High-NA EXE source upgrades"
+  ],
+  "forbidden_component_types": [
+    "grazing_incidence_collector",
+    "magnetic_debris_mitigation",
+    "xenon_gas_target",
+    "discharge_electrodes"
+  ],
+  "applicability_table": [
+    {
+      "claim": "250 W at IF, CE 6 %, R 41 %, 50 kHz",
+      "status": "installed",
+      "source_id": "S001"
+    },
+    {
+      "claim": "ellipsoidal normal-incidence collector",
+      "status": "installed",
+      "source_id": "S001"
+    },
+    {
+      "claim": "5.5 sr collection",
+      "status": "compatible_family",
+      "source_id": "S004"
+    },
+    {
+      "claim": "plasma→collector 15 cm, F1→IF 1–2 m",
+      "status": "patent_proposal",
+      "source_id": "S037"
+    },
+    {
+      "claim": "pre-pulse 10.26 µm",
+      "status": "patent_proposal",
+      "source_id": "S042"
+    }
+  ],
+  "open_identity_questions": [
+    "collector diameter (not read; derived ≈ 0.50 m)",
+    "vessel size and IF coordinates",
+    "exact pre-pulse wavelength/energy in product"
+  ],
+  "frozen_on": "2026-11-26"
+}

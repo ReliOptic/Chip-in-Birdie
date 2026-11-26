@@ -1,0 +1,268 @@
+[
+  {
+    "structural_claim": "Ellipsoidal normal-incidence collector with plasma at first focus and intermediate focus at second focus; laser through central aperture",
+    "patents": [
+      "US7671349B2",
+      "US8198615B2",
+      "US10295916B2"
+    ],
+    "part_ids": [
+      "p-collector",
+      "p-intermediate-focus"
+    ],
+    "product_evidence": [
+      {
+        "source_id": "S001",
+        "locator": "slide 40"
+      },
+      {
+        "source_id": "S015",
+        "locator": "p.196"
+      },
+      {
+        "source_id": "S004",
+        "locator": "§4"
+      }
+    ],
+    "status": "linked_exact",
+    "note": "ASML NXE:3400-era slides state ellipsoidal design, plasma at first focus, IF at second focus; central-aperture laser entry stated in S004 §4."
+  },
+  {
+    "structural_claim": "Hydrogen buffer gas flowing away from the collector to stop ions before the mirror",
+    "patents": [
+      "US7671349B2",
+      "US10295916B2"
+    ],
+    "part_ids": [
+      "p-hydrogen-flow",
+      "p-collector"
+    ],
+    "product_evidence": [
+      {
+        "source_id": "S001",
+        "locator": "slide 39"
+      },
+      {
+        "source_id": "S004",
+        "locator": "§7"
+      }
+    ],
+    "status": "linked_exact",
+    "note": "Slide 39: H2 ~100 Pa decelerates ions; flow away from collector reduces Sn deposition. Patent pressure values (100-500 mTorr) are not confirmed."
+  },
+  {
+    "structural_claim": "Closed-loop gas recirculation with heat exchangers and filters (US8198615B2 claim 1)",
+    "patents": [
+      "US8198615B2"
+    ],
+    "part_ids": [
+      "p-vessel",
+      "p-hydrogen-flow"
+    ],
+    "product_evidence": [
+      {
+        "source_id": "S001",
+        "locator": "slide 39 ('Vessel with vacuum pumping to remove hot gas and tin vapor')"
+      }
+    ],
+    "status": "patent_proposal",
+    "note": "Pumping confirmed; closed-loop recirculation/heat exchanger not confirmed by any product source."
+  },
+  {
+    "structural_claim": "Concentric conical vanes (multi-channel structure) between plasma and IF",
+    "patents": [
+      "US8198615B2",
+      "US7671349B2"
+    ],
+    "part_ids": [
+      "p-vanes-debris",
+      "p-if-cone"
+    ],
+    "product_evidence": [
+      {
+        "source_id": "S004",
+        "locator": "§7: 'small obscuration in direct line of sight from the plasma to the intermediate focus'"
+      }
+    ],
+    "status": "patent_proposal",
+    "note": "Product evidence supports only an on-axis obscuration, not conical vanes."
+  },
+  {
+    "structural_claim": "Heated vanes on vessel wall deflecting tin to a sump",
+    "patents": [
+      "US8901523B1"
+    ],
+    "part_ids": [
+      "p-vanes-debris",
+      "p-vessel"
+    ],
+    "product_evidence": [
+      {
+        "source_id": "S001",
+        "locator": "slide 39 ('Internal hardware to collect micro particles')"
+      },
+      {
+        "source_id": "S004",
+        "locator": "§7 secondary debris / internal hardware"
+      }
+    ],
+    "status": "patent_proposal",
+    "note": "Internal tin-collecting hardware exists; vane geometry, heating and mesh not confirmed."
+  },
+  {
+    "structural_claim": "CO2 pre-pulse and main pulse at different lines (~10.26 / ~10.59 um) sharing an amplifier chain with polarization isolation",
+    "patents": [
+      "US10222702B2",
+      "US8958143B2",
+      "US8461560B2"
+    ],
+    "part_ids": [
+      "p-prepulse",
+      "p-drive-laser-beam-path"
+    ],
+    "product_evidence": [
+      {
+        "source_id": "S003",
+        "locator": "slide 42 ('10.59 µm' in temporal view)"
+      },
+      {
+        "source_id": "S002",
+        "locator": "slide 44 (MOPA + pre-pulse, enhanced isolation)"
+      },
+      {
+        "source_id": "S031",
+        "locator": "pre-pulse separated from main pulse in optics platform"
+      }
+    ],
+    "status": "linked_family",
+    "note": "MOPA + CO2 pre-pulse with enhanced isolation confirmed; 10.26 um pre-pulse wavelength and polarization scheme not confirmed in product sources."
+  },
+  {
+    "structural_claim": "All-reflective (Cassegrain-type) final focus with reflectors inside the vessel",
+    "patents": [
+      "US8283643B2"
+    ],
+    "part_ids": [
+      "p-final-focus-optics"
+    ],
+    "product_evidence": [
+      {
+        "source_id": "S004",
+        "locator": "§3: NXE:3300 focusing optics 'changed to an all-reflective design'"
+      },
+      {
+        "source_id": "S002",
+        "locator": "slide 44 ('Final Focus')"
+      }
+    ],
+    "status": "linked_family",
+    "note": "Reflective final focus confirmed from NXE:3300 onward; exact Cassegrain layout of FIG. 5 not confirmed."
+  },
+  {
+    "structural_claim": "Droplet generator using modulated disturbance so droplets coalesce to wider spacing",
+    "patents": [
+      "US8319201B2"
+    ],
+    "part_ids": [
+      "p-droplet-generator"
+    ],
+    "product_evidence": [
+      {
+        "source_id": "S001",
+        "locator": "slides 35-37 ('Large separation between the droplets by special modulation'; small droplets coalesce)"
+      },
+      {
+        "source_id": "S004",
+        "locator": "§5 Fig. 10"
+      }
+    ],
+    "status": "linked_exact",
+    "note": "Coalescence by modulation described by ASML for the production droplet generator."
+  },
+  {
+    "structural_claim": "Droplet catcher aligned with the droplet path opposite the generator",
+    "patents": [
+      "US8138487B2",
+      "US10295916B2"
+    ],
+    "part_ids": [
+      "p-droplet-catcher"
+    ],
+    "product_evidence": [
+      {
+        "source_id": "S001",
+        "locator": "slide 32 (main modules: Droplet Catcher)"
+      },
+      {
+        "source_id": "S003",
+        "locator": "slide 59"
+      }
+    ],
+    "status": "linked_family",
+    "note": "Catcher module exists; backsplash geometry/temperatures of the patent not confirmed."
+  },
+  {
+    "structural_claim": "Collector flow ring with showerhead and perimeter H2 flow and metrology ports",
+    "patents": [
+      "US11740565B2"
+    ],
+    "part_ids": [
+      "p-collector",
+      "p-hydrogen-flow",
+      "p-metrology-cameras"
+    ],
+    "product_evidence": [
+      {
+        "source_id": "S025",
+        "locator": "slide 6 ('New collector mounting technology')"
+      },
+      {
+        "source_id": "S003",
+        "locator": "slide 59 (collector swap door)"
+      }
+    ],
+    "status": "patent_proposal",
+    "note": "Priority 2019 (after NXE:3400B); no source links CFR to NXE:3400."
+  },
+  {
+    "structural_claim": "Laser-curtain / imager droplet trajectory metrology in the vessel",
+    "patents": [
+      "US10149375B2",
+      "US12078934B2"
+    ],
+    "part_ids": [
+      "p-metrology-cameras"
+    ],
+    "product_evidence": [
+      {
+        "source_id": "S003",
+        "locator": "slide 59 ('Metrology directly on vessel')"
+      },
+      {
+        "source_id": "S035",
+        "locator": "3D droplet and focus position control at ~50 kHz"
+      }
+    ],
+    "status": "linked_family",
+    "note": "Vessel-mounted metrology confirmed for NXE:3400C; specific laser-curtain implementation not confirmed."
+  },
+  {
+    "structural_claim": "In-situ hydrogen radical cleaning of tin from collector",
+    "patents": [
+      "US10477662B2",
+      "US9000404B2"
+    ],
+    "part_ids": [
+      "p-collector",
+      "p-hydrogen-flow"
+    ],
+    "product_evidence": [
+      {
+        "source_id": "S004",
+        "locator": "§7 ('A tin cleaning technique using hydrogen radicals was developed')"
+      }
+    ],
+    "status": "linked_family",
+    "note": "Radical cleaning technique confirmed; radical-source placement at collector rim not confirmed."
+  }
+]

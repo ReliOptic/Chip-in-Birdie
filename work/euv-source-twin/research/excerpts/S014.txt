@@ -1,0 +1,1 @@
+The system uses a low-pressure hydrogen background gas, which is excited into a low-density hydrogen plasma by the energetic EUV radiation.

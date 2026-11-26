@@ -1,0 +1,1 @@
+A device comprising: a system generating a plasma at a plasma site, the plasma producing EUV radiation and ions exiting the plasma; a near-normal incidence EUV mirror distanced from the site by a distance, d; and a flowing gas disposed between the plasma and the mirror

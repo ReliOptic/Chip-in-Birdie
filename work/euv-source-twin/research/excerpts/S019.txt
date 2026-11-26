@@ -1,0 +1,1 @@
+Producing the currently required 250 W of EUV light at the so-called intermediate focus (IF), where the source is connected to the scanner, has been a daunting, and continuing challenge.

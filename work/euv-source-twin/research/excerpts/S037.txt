@@ -1,0 +1,1 @@
+gas such as hydrogen at pressures at or above about 100 mTorr is used in the chamber to slow ions in the plasma to below about 30 eV before the ions reach the collector mirror, which is typically located about 15 cm from the plasma.

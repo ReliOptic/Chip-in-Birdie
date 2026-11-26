@@ -1,0 +1,79 @@
+{
+ "P_mainpulse_W": {
+  "value": 21500,
+  "sigma": 1000,
+  "grade": "E1_measured",
+  "source_id": "S001",
+  "locator": "slide 51: MP power on droplet 21.5 kW"
+ },
+ "CE_2pi": {
+  "value": 0.06,
+  "sigma": 0.003,
+  "grade": "E1_measured",
+  "source_id": "S001",
+  "locator": "slide 51: conversion efficiency 6.0 % (in-band into 2\u03c0 sr)"
+ },
+ "R_collector": {
+  "value": 0.41,
+  "sigma": 0.02,
+  "grade": "E1_measured",
+  "source_id": "S001",
+  "locator": "slide 51: collector reflectivity 41 %"
+ },
+ "solid_angle_sr": {
+  "value": 5.5,
+  "sigma": 0.3,
+  "grade": "E2_photomatched",
+  "source_id": "S004",
+  "locator": "\u00a77 Fig.16: 5.5 sr (NXE:3100 collector, family)"
+ },
+ "f_Hz": {
+  "value": 50000,
+  "sigma": 0,
+  "grade": "E1_measured",
+  "source_id": "S001",
+  "locator": "slide 51: repetition rate 50 kHz"
+ },
+ "v_droplet_m_s": {
+  "value": 80,
+  "sigma": 10,
+  "grade": "E2_photomatched",
+  "source_id": "S003",
+  "locator": "slide 42: ~80 m/s (ASML web: 70 m/s)"
+ },
+ "d_droplet_m": {
+  "value": 2.7e-05,
+  "sigma": 3e-06,
+  "grade": "E2_photomatched",
+  "source_id": "S002",
+  "locator": "slide 49: 27 \u00b5m (alternates 25\u201330 \u00b5m)"
+ },
+ "D_mainpulse_m": {
+  "value": 0.0004,
+  "sigma": 5e-05,
+  "grade": "E2_photomatched",
+  "source_id": "S003",
+  "locator": "slide 42: main-pulse beam/target diameter 400 \u00b5m (\u00b5 rendered as m)"
+ },
+ "rho_tin_kg_m3": {
+  "value": 6990,
+  "sigma": 30,
+  "grade": "E3_inferred",
+  "source_id": "INFERRED-NO-SOURCE",
+  "locator": "liquid tin density near melting point (handbook value, not in corpus)"
+ },
+ "P_IF_measured_W": {
+  "value": 250,
+  "sigma": 0,
+  "grade": "E1_measured",
+  "source_id": "S001",
+  "locator": "slide 51 \u2014 HELD OUT: used only by tests, never by the solver"
+ },
+ "display_time_scale": {
+  "value": 0.0001,
+  "sigma": 0,
+  "grade": "E1_measured",
+  "source_id": "DECLARED",
+  "locator": "visual slow motion \u00d710\u207b\u2074 (80 m/s shown as 8 mm/s)"
+ }
+}

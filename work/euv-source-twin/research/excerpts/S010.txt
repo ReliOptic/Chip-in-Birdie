@@ -1,0 +1,1 @@
+The latest generation of the scanners NXE:3400C has an improved performance and availability also due to availability improvement of the EUV sources by implementing modularity concept.

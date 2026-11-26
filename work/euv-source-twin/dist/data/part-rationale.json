@@ -1,0 +1,419 @@
+[
+  {
+    "part_id": "p-collector",
+    "mesh_object_id": "collector",
+    "label": "Ellipsoidal Mo/Si collector",
+    "evidence_grade": "E3_inferred",
+    "confidence": 0.45,
+    "sigma_m": 0.25,
+    "missing": [
+      {
+        "what": "f1_f2 (1500 ±250)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "f1_vertex (150 ±30)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "hole_half_angle (6 ±2)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "thickness (25 ±8)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      }
+    ],
+    "geometry_decision": "Ellipsoid with plasma at F1, IF at F2; rim from sourced 5.5 sr, foci spacing from patent range.",
+    "material_decision": "graded Mo/Si multilayer on polished substrate (E3_inferred)",
+    "physics_rationale": "collects Ω/2π of in-band EUV; reflects R = 41 %",
+    "uncertainty": "worst parameter grade E3_inferred; max σ 250 mm",
+    "cad_parameters": "see cad/parts/p-collector.py PARAMS",
+    "source_ids": [
+      "INFERRED-NO-SOURCE",
+      "S001",
+      "S004",
+      "S037"
+    ],
+    "assembly_axis": [
+      -1,
+      0,
+      0
+    ],
+    "exterior": false,
+    "manipulable": false,
+    "pbr": {
+      "color": [
+        0.55,
+        0.6,
+        0.72,
+        1
+      ],
+      "metallic": 1.0,
+      "roughness": 0.08
+    }
+  },
+  {
+    "part_id": "p-vessel",
+    "mesh_object_id": "source_vessel",
+    "label": "Source vessel",
+    "evidence_grade": "E3_inferred",
+    "confidence": 0.45,
+    "sigma_m": 0.25,
+    "missing": [
+      {
+        "what": "r0 (360 ±60)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "r1 (70 ±20)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "wall (10 ±4)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "x0 (-140 ±40)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      }
+    ],
+    "geometry_decision": "Conical vacuum envelope collector→IF; size not found in any source.",
+    "material_decision": "stainless steel vacuum vessel (E3_inferred)",
+    "physics_rationale": "holds ~100 Pa H2 buffer gas (S001 slide 39)",
+    "uncertainty": "worst parameter grade E3_inferred; max σ 250 mm",
+    "cad_parameters": "see cad/parts/p-vessel.py PARAMS",
+    "source_ids": [
+      "INFERRED-NO-SOURCE",
+      "S001",
+      "S037"
+    ],
+    "assembly_axis": [
+      0,
+      1,
+      0
+    ],
+    "exterior": true,
+    "manipulable": false,
+    "pbr": {
+      "color": [
+        0.7,
+        0.71,
+        0.72,
+        1
+      ],
+      "metallic": 1.0,
+      "roughness": 0.35
+    }
+  },
+  {
+    "part_id": "p-vessel-rear",
+    "mesh_object_id": "vessel_rear_flange",
+    "label": "Rear flange, laser port",
+    "evidence_grade": "E3_inferred",
+    "confidence": 0.45,
+    "sigma_m": 0.06,
+    "missing": [
+      {
+        "what": "r0 (360 ±60)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "r_port (90 ±20)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "t (20 ±6)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "x0 (-140 ±40)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      }
+    ],
+    "geometry_decision": "Flange with central port for the drive beam.",
+    "material_decision": "stainless steel vacuum vessel (E3_inferred)",
+    "physics_rationale": "static",
+    "uncertainty": "worst parameter grade E3_inferred; max σ 60 mm",
+    "cad_parameters": "see cad/parts/p-vessel-rear.py PARAMS",
+    "source_ids": [
+      "INFERRED-NO-SOURCE",
+      "S001",
+      "S004"
+    ],
+    "assembly_axis": [
+      -1,
+      0,
+      0
+    ],
+    "exterior": true,
+    "manipulable": false,
+    "pbr": {
+      "color": [
+        0.7,
+        0.71,
+        0.72,
+        1
+      ],
+      "metallic": 1.0,
+      "roughness": 0.35
+    }
+  },
+  {
+    "part_id": "p-intermediate-focus",
+    "mesh_object_id": "if_aperture",
+    "label": "Intermediate focus aperture",
+    "evidence_grade": "E3_inferred",
+    "confidence": 0.45,
+    "sigma_m": 0.25,
+    "missing": [
+      {
+        "what": "r_ap (6 ±3)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "r_out (90 ±20)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "t (12 ±4)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "x_if (1500 ±250)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      }
+    ],
+    "geometry_decision": "Aperture ring at F2, the source–scanner interface.",
+    "material_decision": "anodised/steel housing (E3_inferred)",
+    "physics_rationale": "EUV power delivered here (≤ upper bound)",
+    "uncertainty": "worst parameter grade E3_inferred; max σ 250 mm",
+    "cad_parameters": "see cad/parts/p-intermediate-focus.py PARAMS",
+    "source_ids": [
+      "INFERRED-NO-SOURCE",
+      "S001",
+      "S037"
+    ],
+    "assembly_axis": [
+      1,
+      0,
+      0
+    ],
+    "exterior": false,
+    "manipulable": false,
+    "pbr": {
+      "color": [
+        0.3,
+        0.31,
+        0.33,
+        1
+      ],
+      "metallic": 0.6,
+      "roughness": 0.5
+    }
+  },
+  {
+    "part_id": "p-final-focus-optics",
+    "mesh_object_id": "final_focus_module",
+    "label": "Drive-laser final focus",
+    "evidence_grade": "E3_inferred",
+    "confidence": 0.45,
+    "sigma_m": 0.06,
+    "missing": [
+      {
+        "what": "r (75 ±20)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "x0 (-480 ±60)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "x1 (-170 ±40)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      }
+    ],
+    "geometry_decision": "Housing behind collector; beam enters through central aperture (S004 §4).",
+    "material_decision": "anodised/steel housing (E3_inferred)",
+    "physics_rationale": "21.5 kW main pulse on droplet",
+    "uncertainty": "worst parameter grade E3_inferred; max σ 60 mm",
+    "cad_parameters": "see cad/parts/p-final-focus-optics.py PARAMS",
+    "source_ids": [
+      "INFERRED-NO-SOURCE",
+      "S004"
+    ],
+    "assembly_axis": [
+      -1,
+      0,
+      0
+    ],
+    "exterior": false,
+    "manipulable": false,
+    "pbr": {
+      "color": [
+        0.3,
+        0.31,
+        0.33,
+        1
+      ],
+      "metallic": 0.6,
+      "roughness": 0.5
+    }
+  },
+  {
+    "part_id": "p-droplet-generator",
+    "mesh_object_id": "droplet_generator",
+    "label": "Tin droplet generator",
+    "evidence_grade": "E3_inferred",
+    "confidence": 0.45,
+    "sigma_m": 0.06,
+    "missing": [
+      {
+        "what": "body_len (240 ±60)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "r_body (45 ±15)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "r_nozzle (8 ±3)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "z_body (330 ±60)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      }
+    ],
+    "geometry_decision": "Nozzle tube + body across the focus; positions inferred.",
+    "material_decision": "anodised/steel housing (E3_inferred)",
+    "physics_rationale": "27 µm droplets, 80 m/s, 50 kHz → 1.6 mm pitch",
+    "uncertainty": "worst parameter grade E3_inferred; max σ 60 mm",
+    "cad_parameters": "see cad/parts/p-droplet-generator.py PARAMS",
+    "source_ids": [
+      "INFERRED-NO-SOURCE",
+      "S001"
+    ],
+    "assembly_axis": [
+      0,
+      0,
+      1
+    ],
+    "exterior": false,
+    "manipulable": true,
+    "pbr": {
+      "color": [
+        0.3,
+        0.31,
+        0.33,
+        1
+      ],
+      "metallic": 0.6,
+      "roughness": 0.5
+    }
+  },
+  {
+    "part_id": "p-droplet-catcher",
+    "mesh_object_id": "droplet_catcher",
+    "label": "Tin catcher",
+    "evidence_grade": "E3_inferred",
+    "confidence": 0.45,
+    "sigma_m": 0.06,
+    "missing": [
+      {
+        "what": "length (320 ±60)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "r (30 ±10)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "wall (4 ±2)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "z_mouth (-90 ±30)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      }
+    ],
+    "geometry_decision": "Tube opposite the nozzle; dimensions inferred.",
+    "material_decision": "anodised/steel housing (E3_inferred)",
+    "physics_rationale": "collects unused tin ≈ 13 g/h total flow",
+    "uncertainty": "worst parameter grade E3_inferred; max σ 60 mm",
+    "cad_parameters": "see cad/parts/p-droplet-catcher.py PARAMS",
+    "source_ids": [
+      "INFERRED-NO-SOURCE",
+      "S001"
+    ],
+    "assembly_axis": [
+      0,
+      0,
+      -1
+    ],
+    "exterior": false,
+    "manipulable": false,
+    "pbr": {
+      "color": [
+        0.3,
+        0.31,
+        0.33,
+        1
+      ],
+      "metallic": 0.6,
+      "roughness": 0.5
+    }
+  },
+  {
+    "part_id": "p-obscuration",
+    "mesh_object_id": "central_obscuration",
+    "label": "On-axis obscuration",
+    "evidence_grade": "E3_inferred",
+    "confidence": 0.45,
+    "sigma_m": 0.06,
+    "missing": [
+      {
+        "what": "r (28 ±10)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "strut_w (8 ±3)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "t (6 ±2)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "x (140 ±60)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      }
+    ],
+    "geometry_decision": "Disk + strut on axis; existence from S005, place/size inferred.",
+    "material_decision": "anodised/steel housing (E3_inferred)",
+    "physics_rationale": "blocks direct laser light toward IF",
+    "uncertainty": "worst parameter grade E3_inferred; max σ 60 mm",
+    "cad_parameters": "see cad/parts/p-obscuration.py PARAMS",
+    "source_ids": [
+      "INFERRED-NO-SOURCE",
+      "S005"
+    ],
+    "assembly_axis": [
+      0,
+      1,
+      0
+    ],
+    "exterior": false,
+    "manipulable": false,
+    "pbr": {
+      "color": [
+        0.3,
+        0.31,
+        0.33,
+        1
+      ],
+      "metallic": 0.6,
+      "roughness": 0.5
+    }
+  }
+]

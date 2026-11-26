@@ -1,0 +1,78 @@
+{
+  "schema": "dta.capture/v1",
+  "dist": "/home/user/Chip-in-Birdie/work/euv-source-twin/dist",
+  "captures": [
+    "01-first-frame-desktop.png",
+    "02-lift-out.png",
+    "03-blocker-map.png",
+    "04-exploded.png",
+    "05-first-frame-mobile.png"
+  ],
+  "runtime": {
+    "renderer": "threejs-webgl",
+    "context": "WebGL2RenderingContext"
+  },
+  "layout": {
+    "real_3d_canvas_primary": true,
+    "canvas_viewport_fraction": 1,
+    "min_visible_hero_fraction": 0.2639166666666667,
+    "persistent_chrome_elements": [],
+    "no_persistent_text_or_widget_chrome": true,
+    "mobile_subject_fraction": 0.3582421922469316,
+    "mobile_canvas_viewport_fraction": 1,
+    "desktop_and_mobile_captured": true
+  },
+  "interaction": {
+    "pointer_hover_opened": true,
+    "touch_tap_opened": true,
+    "keyboard_select_opened": true,
+    "rationale_matches_selected_part": true,
+    "max_label_words": 3,
+    "max_pick_response_ms": 4.7999999998137355,
+    "probed_part": "p-collector"
+  },
+  "evidence": {
+    "rendered_grade_matches_cards": true,
+    "unknown_parts_render_envelope_only": true,
+    "blocker_map_lights_only_missing_parts": false,
+    "shell_sigma_relative_error": 0,
+    "evidenced_volume_share": 0,
+    "volume_share_by_grade": {
+      "E1_measured": 0,
+      "E2_photomatched": 0,
+      "E3_inferred": 1,
+      "E4_unknown": 0
+    },
+    "blocker_parts": [
+      "p-collector",
+      "p-vessel",
+      "p-vessel-rear",
+      "p-intermediate-focus",
+      "p-final-focus-optics",
+      "p-droplet-generator",
+      "p-droplet-catcher",
+      "p-obscuration"
+    ]
+  },
+  "explode": {
+    "factor_reached": 1,
+    "moved_parts": [
+      "p-collector",
+      "p-vessel",
+      "p-vessel-rear",
+      "p-intermediate-focus",
+      "p-final-focus-optics",
+      "p-droplet-generator",
+      "p-droplet-catcher",
+      "p-obscuration"
+    ]
+  },
+  "errors": [],
+  "glb_validation": {
+    "skipped": "gltf-validator not installed"
+  },
+  "failed_truths": [
+    "evidence.blocker_map_lights_only_missing_parts"
+  ],
+  "captured_at": "2026-11-26T20:06:52.178Z"
+}

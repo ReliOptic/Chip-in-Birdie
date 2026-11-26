@@ -1,0 +1,49 @@
+{
+  "schema": "AP242DIS",
+  "parts": [
+    {
+      "id": "p-collector",
+      "path": "cad/step-ap242/p-collector.step",
+      "reimport_volume_error": 1.8483882721346608e-13
+    },
+    {
+      "id": "p-droplet-catcher",
+      "path": "cad/step-ap242/p-droplet-catcher.step",
+      "reimport_volume_error": 2.1971069799570187e-14
+    },
+    {
+      "id": "p-droplet-generator",
+      "path": "cad/step-ap242/p-droplet-generator.step",
+      "reimport_volume_error": 1.4136823210598374e-14
+    },
+    {
+      "id": "p-final-focus-optics",
+      "path": "cad/step-ap242/p-final-focus-optics.step",
+      "reimport_volume_error": 2.38476304879587e-14
+    },
+    {
+      "id": "p-intermediate-focus",
+      "path": "cad/step-ap242/p-intermediate-focus.step",
+      "reimport_volume_error": 1.594994747129533e-14
+    },
+    {
+      "id": "p-obscuration",
+      "path": "cad/step-ap242/p-obscuration.step",
+      "reimport_volume_error": 4.006663655646469e-14
+    },
+    {
+      "id": "p-vessel-rear",
+      "path": "cad/step-ap242/p-vessel-rear.step",
+      "reimport_volume_error": 1.3793121696290699e-14
+    },
+    {
+      "id": "p-vessel",
+      "path": "cad/step-ap242/p-vessel.step",
+      "reimport_volume_error": 1.8768917362105954e-11
+    }
+  ],
+  "assembly": {
+    "path": "cad/euv-source-twin-assembly-ap242.step",
+    "schema_ok": true
+  }
+}

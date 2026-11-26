@@ -1,0 +1,43 @@
+{
+ "p-collector": {
+  "label": "Ellipsoidal Mo/Si collector",
+  "geometry": "Ellipsoid with plasma at F1, IF at F2; rim from sourced 5.5 sr, foci spacing from patent range.",
+  "physics": "collects Ω/2π of in-band EUV; reflects R = 41 %"
+ },
+ "p-vessel": {
+  "label": "Source vessel",
+  "geometry": "Conical vacuum envelope collector→IF; size not found in any source.",
+  "physics": "holds ~100 Pa H2 buffer gas (S001 slide 39)"
+ },
+ "p-vessel-rear": {
+  "label": "Rear flange, laser port",
+  "geometry": "Flange with central port for the drive beam.",
+  "physics": "static"
+ },
+ "p-intermediate-focus": {
+  "label": "Intermediate focus aperture",
+  "geometry": "Aperture ring at F2, the source–scanner interface.",
+  "physics": "EUV power delivered here (≤ upper bound)"
+ },
+ "p-final-focus-optics": {
+  "label": "Drive-laser final focus",
+  "geometry": "Housing behind collector; beam enters through central aperture (S004 §4).",
+  "physics": "21.5 kW main pulse on droplet"
+ },
+ "p-droplet-generator": {
+  "label": "Tin droplet generator",
+  "geometry": "Nozzle tube + body across the focus; positions inferred.",
+  "physics": "27 µm droplets, 80 m/s, 50 kHz → 1.6 mm pitch",
+  "manipulable": true
+ },
+ "p-droplet-catcher": {
+  "label": "Tin catcher",
+  "geometry": "Tube opposite the nozzle; dimensions inferred.",
+  "physics": "collects unused tin ≈ 13 g/h total flow"
+ },
+ "p-obscuration": {
+  "label": "On-axis obscuration",
+  "geometry": "Disk + strut on axis; existence from S005, place/size inferred.",
+  "physics": "blocks direct laser light toward IF"
+ }
+}

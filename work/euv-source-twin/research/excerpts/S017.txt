@@ -1,0 +1,1 @@
+The first pre-pulse deforms the droplet into a thin disk shape to reduce the self-absorption and the second main pulse, with a fluence in the 500 J/cm2 range corresponding to few 10s of kW power, ionizes and produces a strongly EUV emitting plasma

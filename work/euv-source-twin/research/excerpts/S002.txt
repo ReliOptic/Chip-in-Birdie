@@ -1,0 +1,1 @@
+From NXE:3300 to NXE:3400, enhanced isolation gives stable >2x increase laser gain

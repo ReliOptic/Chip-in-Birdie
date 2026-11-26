@@ -1,0 +1,477 @@
+[
+  {
+    "id": "p-collector",
+    "feature_id": "f-collector",
+    "critical": true,
+    "applies_to": "cymer-asml-lpp-euv-source-nxe3400",
+    "technology_family": "CO2-laser-produced tin plasma EUV source",
+    "component_type": "ellipsoidal_normal_incidence_collector",
+    "units": "mm",
+    "cad_tool": "CadQuery 2.8 (OCCT) \u2014 STEP AP242 for CATIA",
+    "mesh_object_id": "collector",
+    "source_ids": [
+      "INFERRED-NO-SOURCE",
+      "S001",
+      "S004",
+      "S037"
+    ],
+    "cad": {
+      "path": "cad/parts/p-collector.py",
+      "sha256": "4440f2b37ec4c4e79e3ef00da08416108c072de619fa85b76c86ef4602c1898f"
+    },
+    "step": {
+      "path": "cad/step/p-collector.step",
+      "sha256": "78f83d15ccc39efde6edc83705055346040d458e6203df03147f64d9f60dba41"
+    },
+    "glb": {
+      "path": "cad/glb/p-collector.glb",
+      "sha256": "0ed5613a93c7fafa4f2a491c2c4dc1e4ec36c5898f0651d59f5a0763ae9676eb"
+    },
+    "parameters": {
+      "f1_f2": {
+        "grade": "E3_inferred",
+        "locator": "patent description: plasma\u2192intermediate location 1\u20132 m (patent_proposal) \u2014 mid of 1\u20132 m",
+        "sigma": 250,
+        "source_id": "S037",
+        "value": 1500
+      },
+      "f1_vertex": {
+        "grade": "E3_inferred",
+        "locator": "patent description background: plasma\u2192collector ~15 cm (patent_proposal)",
+        "sigma": 30,
+        "source_id": "S037",
+        "value": 150
+      },
+      "hole_half_angle": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read \u2014 laser aperture half-angle",
+        "sigma": 2,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 6
+      },
+      "solid_angle_sr": {
+        "grade": "E2_photomatched",
+        "locator": "\u00a77 Fig.16: collector collection solid angle 5.5 sr (NXE:3100, family)",
+        "sigma": 0.3,
+        "source_id": "S004",
+        "value": 5.5
+      },
+      "thickness": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 8,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 25
+      }
+    }
+  },
+  {
+    "id": "p-droplet-catcher",
+    "feature_id": "f-droplet-catcher",
+    "critical": false,
+    "applies_to": "cymer-asml-lpp-euv-source-nxe3400",
+    "technology_family": "CO2-laser-produced tin plasma EUV source",
+    "component_type": "tin_catcher",
+    "units": "mm",
+    "cad_tool": "CadQuery 2.8 (OCCT) \u2014 STEP AP242 for CATIA",
+    "mesh_object_id": "droplet_catcher",
+    "source_ids": [
+      "INFERRED-NO-SOURCE",
+      "S001"
+    ],
+    "cad": {
+      "path": "cad/parts/p-droplet-catcher.py",
+      "sha256": "2f10ff102a8155ed6a1c0937dfaca9eb9f56fde669450089ad10e3a426d058b6"
+    },
+    "step": {
+      "path": "cad/step/p-droplet-catcher.step",
+      "sha256": "3f50a856e97ae9d83a5b4f5df02a62c119f79d54e0fc50360351ad69f91b5e73"
+    },
+    "glb": {
+      "path": "cad/glb/p-droplet-catcher.glb",
+      "sha256": "517d510b74b05062d31d13b3e7e660daf61ab988b66d6f5901fcdc4c1e009bf3"
+    },
+    "parameters": {
+      "length": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 60,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 320
+      },
+      "r": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 10,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 30
+      },
+      "wall": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 2,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 4
+      },
+      "z_mouth": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 30,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": -90
+      }
+    }
+  },
+  {
+    "id": "p-droplet-generator",
+    "feature_id": "f-droplet-generator",
+    "critical": true,
+    "applies_to": "cymer-asml-lpp-euv-source-nxe3400",
+    "technology_family": "CO2-laser-produced tin plasma EUV source",
+    "component_type": "tin_droplet_generator",
+    "units": "mm",
+    "cad_tool": "CadQuery 2.8 (OCCT) \u2014 STEP AP242 for CATIA",
+    "mesh_object_id": "droplet_generator",
+    "source_ids": [
+      "INFERRED-NO-SOURCE",
+      "S001"
+    ],
+    "cad": {
+      "path": "cad/parts/p-droplet-generator.py",
+      "sha256": "d20e7f2ce0661c93c25d1eeb2a6ec71a088d9f88d77c461353b8c33dfaf95628"
+    },
+    "step": {
+      "path": "cad/step/p-droplet-generator.step",
+      "sha256": "9978d864db96606495a68445ffc5872385dae6e1e109413879b86931ee9facb4"
+    },
+    "glb": {
+      "path": "cad/glb/p-droplet-generator.glb",
+      "sha256": "29d3107fb31723265cb26a350d7c8568fa2125e21bae5a31045cd25282d1cd0a"
+    },
+    "parameters": {
+      "body_len": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 60,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 240
+      },
+      "r_body": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 15,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 45
+      },
+      "r_nozzle": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 3,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 8
+      },
+      "z_body": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 60,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 330
+      },
+      "z_tip": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 20,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 60
+      }
+    }
+  },
+  {
+    "id": "p-final-focus-optics",
+    "feature_id": "f-final-focus-optics",
+    "critical": true,
+    "applies_to": "cymer-asml-lpp-euv-source-nxe3400",
+    "technology_family": "CO2-laser-produced tin plasma EUV source",
+    "component_type": "drive_laser_final_focus",
+    "units": "mm",
+    "cad_tool": "CadQuery 2.8 (OCCT) \u2014 STEP AP242 for CATIA",
+    "mesh_object_id": "final_focus_module",
+    "source_ids": [
+      "INFERRED-NO-SOURCE",
+      "S004"
+    ],
+    "cad": {
+      "path": "cad/parts/p-final-focus-optics.py",
+      "sha256": "b05699bc49c89110d72658221023c69ec64ba2ac3fdc0f1a6c6e27e5fd870db9"
+    },
+    "step": {
+      "path": "cad/step/p-final-focus-optics.step",
+      "sha256": "13b981124c80777092fdbfba370a94661fba1c12bdad41f4dd5a92b2e367da55"
+    },
+    "glb": {
+      "path": "cad/glb/p-final-focus-optics.glb",
+      "sha256": "52b5fcb6d10aad85786af23b38cd1e255543f4a123ef7c0d2c8b4717ce5fec6f"
+    },
+    "parameters": {
+      "r": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 20,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 75
+      },
+      "x0": {
+        "grade": "E3_inferred",
+        "locator": "\u00a74: drive laser enters through the collector's central aperture",
+        "sigma": 60,
+        "source_id": "S004",
+        "value": -480
+      },
+      "x1": {
+        "grade": "E3_inferred",
+        "locator": "\u00a74: drive laser enters through the collector's central aperture",
+        "sigma": 40,
+        "source_id": "S004",
+        "value": -170
+      }
+    }
+  },
+  {
+    "id": "p-intermediate-focus",
+    "feature_id": "f-intermediate-focus",
+    "critical": true,
+    "applies_to": "cymer-asml-lpp-euv-source-nxe3400",
+    "technology_family": "CO2-laser-produced tin plasma EUV source",
+    "component_type": "intermediate_focus_aperture",
+    "units": "mm",
+    "cad_tool": "CadQuery 2.8 (OCCT) \u2014 STEP AP242 for CATIA",
+    "mesh_object_id": "if_aperture",
+    "source_ids": [
+      "INFERRED-NO-SOURCE",
+      "S001",
+      "S037"
+    ],
+    "cad": {
+      "path": "cad/parts/p-intermediate-focus.py",
+      "sha256": "7e907a1ee729e49b4b20f11073d162123d494a3ce157269087184b26bb1e6a3c"
+    },
+    "step": {
+      "path": "cad/step/p-intermediate-focus.step",
+      "sha256": "33c64ad7464a0659edd310e1871cca663d892ab49fa418f2ffc29fc376dc8b03"
+    },
+    "glb": {
+      "path": "cad/glb/p-intermediate-focus.glb",
+      "sha256": "bed224c4c5ad243db423e4fb4bc369c337b166d55efdfbd591a52234b9aaa2d0"
+    },
+    "parameters": {
+      "r_ap": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 3,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 6
+      },
+      "r_out": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 20,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 90
+      },
+      "t": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 4,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 12
+      },
+      "x_if": {
+        "grade": "E3_inferred",
+        "locator": "patent description: plasma\u2192intermediate location 1\u20132 m (patent_proposal) \u2014 IF = second focus (S001 slide 40)",
+        "sigma": 250,
+        "source_id": "S037",
+        "value": 1500
+      }
+    }
+  },
+  {
+    "id": "p-obscuration",
+    "feature_id": "f-obscuration",
+    "critical": false,
+    "applies_to": "cymer-asml-lpp-euv-source-nxe3400",
+    "technology_family": "CO2-laser-produced tin plasma EUV source",
+    "component_type": "on_axis_obscuration",
+    "units": "mm",
+    "cad_tool": "CadQuery 2.8 (OCCT) \u2014 STEP AP242 for CATIA",
+    "mesh_object_id": "central_obscuration",
+    "source_ids": [
+      "INFERRED-NO-SOURCE",
+      "S005"
+    ],
+    "cad": {
+      "path": "cad/parts/p-obscuration.py",
+      "sha256": "21636d5c0e3a78f571a9355bcdbebe257b15039146ae48ec8b19403e17406fe7"
+    },
+    "step": {
+      "path": "cad/step/p-obscuration.step",
+      "sha256": "6357ce4865ecdd91f6b7e126d7f7d0396e0d3bb8e7a11b4e5cdacfc0725c93f1"
+    },
+    "glb": {
+      "path": "cad/glb/p-obscuration.glb",
+      "sha256": "8b99bdcccfbe5319baed626ef256ad89d2eb31ae243b13cf98235cceb992109e"
+    },
+    "parameters": {
+      "r": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 10,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 28
+      },
+      "strut_w": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 3,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 8
+      },
+      "t": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 2,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 6
+      },
+      "x": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 60,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 140
+      }
+    }
+  },
+  {
+    "id": "p-vessel-rear",
+    "feature_id": "f-vessel-rear",
+    "critical": false,
+    "applies_to": "cymer-asml-lpp-euv-source-nxe3400",
+    "technology_family": "CO2-laser-produced tin plasma EUV source",
+    "component_type": "vacuum_flange",
+    "units": "mm",
+    "cad_tool": "CadQuery 2.8 (OCCT) \u2014 STEP AP242 for CATIA",
+    "mesh_object_id": "vessel_rear_flange",
+    "source_ids": [
+      "INFERRED-NO-SOURCE",
+      "S001",
+      "S004"
+    ],
+    "cad": {
+      "path": "cad/parts/p-vessel-rear.py",
+      "sha256": "72af5cc3a309e9cf7057078b0f26c90376e8d450e2d241b3ffbe9a456da4b86f"
+    },
+    "step": {
+      "path": "cad/step/p-vessel-rear.step",
+      "sha256": "736a18eaa7e171b1d2d7c3e413907cfcc9a148b3107e7c4925dd003c3480b7a1"
+    },
+    "glb": {
+      "path": "cad/glb/p-vessel-rear.glb",
+      "sha256": "66e1792a989a022fc1897b6c29176d9eb6e9d2215e938ab69664ca462bd95b5c"
+    },
+    "parameters": {
+      "r0": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 60,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 360
+      },
+      "r_port": {
+        "grade": "E3_inferred",
+        "locator": "\u00a74: drive laser enters through the collector's central aperture \u2014 laser port",
+        "sigma": 20,
+        "source_id": "S004",
+        "value": 90
+      },
+      "t": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 6,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 20
+      },
+      "x0": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 40,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": -140
+      }
+    }
+  },
+  {
+    "id": "p-vessel",
+    "feature_id": "f-vessel",
+    "critical": false,
+    "applies_to": "cymer-asml-lpp-euv-source-nxe3400",
+    "technology_family": "CO2-laser-produced tin plasma EUV source",
+    "component_type": "vacuum_vessel",
+    "units": "mm",
+    "cad_tool": "CadQuery 2.8 (OCCT) \u2014 STEP AP242 for CATIA",
+    "mesh_object_id": "source_vessel",
+    "source_ids": [
+      "INFERRED-NO-SOURCE",
+      "S001",
+      "S037"
+    ],
+    "cad": {
+      "path": "cad/parts/p-vessel.py",
+      "sha256": "54ff92bb375ce13d4e6f4ee9f68f9fb85acba0a2ce47d12cb61c9da5e0013c0f"
+    },
+    "step": {
+      "path": "cad/step/p-vessel.step",
+      "sha256": "6a6d9e369d3e5e3327eef0c2af1fe9744ca65b95c0ec62b0c6cef21008e3d954"
+    },
+    "glb": {
+      "path": "cad/glb/p-vessel.glb",
+      "sha256": "9b72b0ad7933525bbb9625c6a338942660b75341c83a8f7e597163ab7fd0a5b4"
+    },
+    "parameters": {
+      "r0": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 60,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 360
+      },
+      "r1": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 20,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 70
+      },
+      "wall": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 4,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 10
+      },
+      "x0": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 40,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": -140
+      },
+      "x1": {
+        "grade": "E3_inferred",
+        "locator": "patent description: plasma\u2192intermediate location 1\u20132 m (patent_proposal) \u2014 ends at IF",
+        "sigma": 250,
+        "source_id": "S037",
+        "value": 1500
+      }
+    }
+  }
+]

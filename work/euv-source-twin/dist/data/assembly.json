@@ -1,0 +1,237 @@
+{
+  "schema": "dta.assembly/v1",
+  "units": "mm",
+  "up_axis": "Y",
+  "default_pose": {
+    "position": [
+      -760,
+      480,
+      1350
+    ],
+    "target": [
+      560,
+      -20,
+      0
+    ]
+  },
+  "parts": [
+    {
+      "part_id": "p-vessel",
+      "parent": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode": {
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "distance": 900,
+        "order": 0
+      },
+      "joint": {
+        "type": "fixed",
+        "source_id": "INFERRED-NO-SOURCE"
+      }
+    },
+    {
+      "part_id": "p-vessel-rear",
+      "parent": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode": {
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "distance": 300,
+        "order": 0
+      },
+      "joint": {
+        "type": "fixed",
+        "source_id": "INFERRED-NO-SOURCE"
+      }
+    },
+    {
+      "part_id": "p-droplet-generator",
+      "parent": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode": {
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "distance": 350,
+        "order": 1
+      },
+      "joint": {
+        "type": "fixed",
+        "source_id": "INFERRED-NO-SOURCE"
+      }
+    },
+    {
+      "part_id": "p-droplet-catcher",
+      "parent": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode": {
+        "axis": [
+          0,
+          0,
+          -1
+        ],
+        "distance": 350,
+        "order": 1
+      },
+      "joint": {
+        "type": "fixed",
+        "source_id": "INFERRED-NO-SOURCE"
+      }
+    },
+    {
+      "part_id": "p-obscuration",
+      "parent": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode": {
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "distance": 300,
+        "order": 1
+      },
+      "joint": {
+        "type": "fixed",
+        "source_id": "INFERRED-NO-SOURCE"
+      }
+    },
+    {
+      "part_id": "p-final-focus-optics",
+      "parent": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode": {
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "distance": 400,
+        "order": 2
+      },
+      "joint": {
+        "type": "fixed",
+        "source_id": "INFERRED-NO-SOURCE"
+      }
+    },
+    {
+      "part_id": "p-intermediate-focus",
+      "parent": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode": {
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "distance": 300,
+        "order": 2
+      },
+      "joint": {
+        "type": "fixed",
+        "source_id": "INFERRED-NO-SOURCE"
+      }
+    },
+    {
+      "part_id": "p-collector",
+      "parent": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode": {
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "distance": 250,
+        "order": 3
+      },
+      "joint": {
+        "type": "fixed",
+        "source_id": "INFERRED-NO-SOURCE"
+      }
+    }
+  ],
+  "disassembly_sequence_source_id": "S003",
+  "notes": "S003 slide 61: collector swap 28 h (collector is a field-replaceable unit). Order otherwise inferred. x: plasma F1 at origin \u2192 IF at +x."
+}

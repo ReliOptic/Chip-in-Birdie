@@ -1,0 +1,1 @@
+Operation Parameters Repetition Rate 50kHz MP power on droplet 21.5kW Conversion Efficiency 6.0% Collector Reflectivity 41% Dose Margin 10% EUV Power 250 W

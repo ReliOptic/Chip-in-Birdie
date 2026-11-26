@@ -1,0 +1,14 @@
+{
+  "solver": "physics/solver.py",
+  "solver_version": "1.0.0",
+  "solver_sha256": "dcb98fca729e7594d085381e24c8da594bf79a0f9db0ecf38073c9e6c54bd59f",
+  "units": "SI",
+  "seed": 0,
+  "P_inband_2pi_W": 1290.0,
+  "P_collected_W": 1129.2043212369974,
+  "P_IF_max_W": 462.9737717071689,
+  "E_pulse_IF_max_J": 0.009259475434143379,
+  "droplet_spacing_m": 0.0016,
+  "tin_mass_flow_kg_s": 3.6019451476854095e-06,
+  "heat_not_collected_W": 21037.02622829283
+}

@@ -1,0 +1,1 @@
+A high-power and high-frequency (50–100 kHz) CO2 laser zaps the Sn droplets to produce a plasma that emits EUV light. The EUV light is then reflected by an ellipsoidal mirror, the “collector”, and is re-focused onto the other focal point of the mirror, the “intermediate focus”

@@ -1,0 +1,706 @@
+[
+  {
+    "patent": "US8198615B2",
+    "source_id": "S037",
+    "figure": "FIG. 1; FIGS. 5A-5C; FIG. 10",
+    "numerals": [
+      {
+        "numeral": "26",
+        "name": "chamber",
+        "description_locator": "FIG. 1 description ('chamber 26')"
+      },
+      {
+        "numeral": "28",
+        "name": "irradiation region",
+        "description_locator": "FIG. 1 description"
+      },
+      {
+        "numeral": "30",
+        "name": "optic (ellipsoidal collector mirror with through-hole)",
+        "description_locator": "FIG. 1 / FIG. 10 description"
+      },
+      {
+        "numeral": "40",
+        "name": "intermediate region",
+        "description_locator": "FIG. 1 description"
+      },
+      {
+        "numeral": "100",
+        "name": "regulated gas source",
+        "description_locator": "FIG. 1 gas management paragraph"
+      },
+      {
+        "numeral": "102",
+        "name": "adjustable pump",
+        "description_locator": "FIG. 1 gas management paragraph"
+      },
+      {
+        "numeral": "104",
+        "name": "external guideway",
+        "description_locator": "FIG. 1 gas management paragraph"
+      },
+      {
+        "numeral": "106",
+        "name": "pump",
+        "description_locator": "FIG. 1 gas management paragraph"
+      },
+      {
+        "numeral": "108",
+        "name": "heat exchanger",
+        "description_locator": "FIG. 1 gas management paragraph"
+      },
+      {
+        "numeral": "110",
+        "name": "filter",
+        "description_locator": "FIG. 1 gas management paragraph"
+      },
+      {
+        "numeral": "210",
+        "name": "multi-channel structure",
+        "description_locator": "FIGS. 5 and 5B paragraph"
+      },
+      {
+        "numeral": "211",
+        "name": "flange",
+        "description_locator": "FIGS. 5 and 5B paragraph"
+      },
+      {
+        "numeral": "212",
+        "name": "concentric, conical shaped vanes",
+        "description_locator": "FIGS. 5 and 5B paragraph"
+      },
+      {
+        "numeral": "213",
+        "name": "radial members",
+        "description_locator": "FIGS. 5 and 5B paragraph"
+      },
+      {
+        "numeral": "280",
+        "name": "gas flow restriction member",
+        "description_locator": "FIG. 10 paragraph"
+      },
+      {
+        "numeral": "300",
+        "name": "shroud",
+        "description_locator": "FIG. 10 paragraph"
+      },
+      {
+        "numeral": "304",
+        "name": "laser input window",
+        "description_locator": "FIG. 10 paragraph"
+      }
+    ],
+    "dimensions_or_ranges": [
+      {
+        "what": "hydrogen pressure to slow ions below ~30 eV",
+        "value": ">=100",
+        "unit": "mTorr",
+        "locator": "background"
+      },
+      {
+        "what": "collector distance from plasma (typical)",
+        "value": 15,
+        "unit": "cm",
+        "locator": "background"
+      },
+      {
+        "what": "EUV path plasma -> collector -> intermediate region",
+        "value": "1-2",
+        "unit": "m",
+        "locator": "description"
+      },
+      {
+        "what": "EUV transmission over 2 m path at 120 / 210 / 290 mTorr H2",
+        "value": "96 / 93 / 90",
+        "unit": "%",
+        "locator": "FIG. 3 description"
+      },
+      {
+        "what": "ion stopping distance in H2 at 400 mTorr",
+        "value": 170,
+        "unit": "mm",
+        "locator": "FIG. 2B description"
+      }
+    ],
+    "claim_constraints": [
+      {
+        "claim": "1",
+        "constraint": "Enclosing structure defining a closed loop flow path with inlet and outlet; plasma site in fluid communication with the flow path; gas source connected to inlet; conditioner connected to outlet."
+      },
+      {
+        "claim": "2",
+        "constraint": "Plasma comprises tin and the filter removes tin hydrides, tin oxides or tin bromides."
+      },
+      {
+        "claim": "4",
+        "constraint": "Enclosing structure comprises a vessel in fluid communication with an external guideway."
+      }
+    ]
+  },
+  {
+    "patent": "US10222702B2",
+    "source_id": "S042",
+    "figure": "FIG. 3",
+    "numerals": [
+      {
+        "numeral": "101",
+        "name": "laser radiation source",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 3"
+      },
+      {
+        "numeral": "103",
+        "name": "laser module",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 3"
+      },
+      {
+        "numeral": "105",
+        "name": "pre-pulse seed laser",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 3"
+      },
+      {
+        "numeral": "107",
+        "name": "main-pulse seed laser",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 3"
+      },
+      {
+        "numeral": "109",
+        "name": "pre-pulse laser beam",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 3"
+      },
+      {
+        "numeral": "111",
+        "name": "main-pulse laser beam",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 3"
+      },
+      {
+        "numeral": "113",
+        "name": "beam combiner",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 3"
+      },
+      {
+        "numeral": "117",
+        "name": "common optical path",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 3"
+      },
+      {
+        "numeral": "119",
+        "name": "pre-amplifier",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 3"
+      },
+      {
+        "numeral": "121",
+        "name": "optical isolator",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 3"
+      },
+      {
+        "numeral": "123",
+        "name": "amplification stage",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 3"
+      },
+      {
+        "numeral": "125",
+        "name": "beam-separation apparatus",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 3"
+      },
+      {
+        "numeral": "127",
+        "name": "beam delivery system",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 3"
+      },
+      {
+        "numeral": "129",
+        "name": "fuel target",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 3"
+      },
+      {
+        "numeral": "131",
+        "name": "polarizer",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 3"
+      },
+      {
+        "numeral": "133",
+        "name": "phase retarder",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 3"
+      },
+      {
+        "numeral": "135a, 135b",
+        "name": "dichroic mirrors",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 3"
+      },
+      {
+        "numeral": "139",
+        "name": "first polarization adjuster",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 3"
+      },
+      {
+        "numeral": "141",
+        "name": "second polarization adjuster",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 3"
+      }
+    ],
+    "dimensions_or_ranges": [
+      {
+        "what": "pre-pulse wavelength",
+        "value": 10.26,
+        "unit": "um (approx.)",
+        "locator": "description FIG. 3"
+      },
+      {
+        "what": "main-pulse wavelength",
+        "value": 10.59,
+        "unit": "um (approx.)",
+        "locator": "description FIG. 3"
+      },
+      {
+        "what": "pre-pulse power on fuel target",
+        "value": "3-5",
+        "unit": "kW",
+        "locator": "description"
+      },
+      {
+        "what": "main-pulse power on fuel target",
+        "value": 25,
+        "unit": "kW",
+        "locator": "description"
+      },
+      {
+        "what": "repetition rate (PP and MP)",
+        "value": 50,
+        "unit": "kHz",
+        "locator": "description"
+      }
+    ],
+    "claim_constraints": [
+      {
+        "claim": "1",
+        "constraint": "(paraphrase, verbatim claim not captured) Laser module emits first and second beams of different wavelengths; beam separation device separates then recombines paths; beam delivery directs both onto fuel target; optical isolation sets polarization so target reflections are blocked from returning to the laser module."
+      }
+    ]
+  },
+  {
+    "patent": "US8901523B1",
+    "source_id": "S047",
+    "figure": "FIG. 2; FIG. 4",
+    "numerals": [
+      {
+        "numeral": "26",
+        "name": "vessel",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 2"
+      },
+      {
+        "numeral": "28",
+        "name": "irradiation region",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 2"
+      },
+      {
+        "numeral": "30",
+        "name": "collector",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 2"
+      },
+      {
+        "numeral": "35",
+        "name": "optical axis",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 2"
+      },
+      {
+        "numeral": "40",
+        "name": "intermediate point / intermediate focus",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 1"
+      },
+      {
+        "numeral": "100",
+        "name": "wall",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 2"
+      },
+      {
+        "numeral": "110",
+        "name": "array",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 2"
+      },
+      {
+        "numeral": "120",
+        "name": "vanes",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 2"
+      },
+      {
+        "numeral": "150",
+        "name": "heating elements",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 4"
+      },
+      {
+        "numeral": "160",
+        "name": "feedthrough",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 4"
+      },
+      {
+        "numeral": "170",
+        "name": "mesh / wire mesh",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 2, FIG. 4"
+      },
+      {
+        "numeral": "180",
+        "name": "attachment members",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 2"
+      },
+      {
+        "numeral": "190",
+        "name": "source material collection sump",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 2"
+      }
+    ],
+    "dimensions_or_ranges": [
+      {
+        "what": "vane thickness",
+        "value": "3-50 (preferred 6-25)",
+        "unit": "mm",
+        "locator": "description FIG. 4"
+      },
+      {
+        "what": "vane heating",
+        "value": ">=231.9",
+        "unit": "degC (tin melting point)",
+        "locator": "description"
+      },
+      {
+        "what": "mesh wire diameter",
+        "value": "0.1-1",
+        "unit": "mm",
+        "locator": "description"
+      },
+      {
+        "what": "mesh opening",
+        "value": "0.1-2",
+        "unit": "mm",
+        "locator": "description"
+      },
+      {
+        "what": "mesh open fraction",
+        "value": ">=50",
+        "unit": "%",
+        "locator": "description"
+      }
+    ],
+    "claim_constraints": [
+      {
+        "claim": "1",
+        "constraint": "(paraphrase) Chamber with interior wall and a region from which contaminating material emanates; plurality of vanes on part of the wall, each with a first surface toward the region and a second surface deflecting material away, sized/positioned to substantially prevent material reaching the wall."
+      }
+    ]
+  },
+  {
+    "patent": "US8319201B2",
+    "source_id": "S045",
+    "figure": "FIG. 1; FIG. 2; FIG. 4; FIG. 5",
+    "numerals": [
+      {
+        "numeral": "24",
+        "name": "target material delivery system",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 1"
+      },
+      {
+        "numeral": "62",
+        "name": "droplet position detection feedback system",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 1"
+      },
+      {
+        "numeral": "70",
+        "name": "droplet imagers",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 1"
+      },
+      {
+        "numeral": "90",
+        "name": "droplet control system",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 1"
+      },
+      {
+        "numeral": "92",
+        "name": "droplet source",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 1/2"
+      },
+      {
+        "numeral": "94",
+        "name": "reservoir",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 2"
+      },
+      {
+        "numeral": "98",
+        "name": "orifice",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 2"
+      },
+      {
+        "numeral": "100",
+        "name": "continuous stream",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 2"
+      },
+      {
+        "numeral": "104",
+        "name": "electro-actuatable element",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 2"
+      },
+      {
+        "numeral": "106",
+        "name": "signal generator",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 2"
+      },
+      {
+        "numeral": "302",
+        "name": "amplitude modulated disturbance waveform",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 4"
+      },
+      {
+        "numeral": "402",
+        "name": "frequency modulated disturbance waveform",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 5"
+      }
+    ],
+    "dimensions_or_ranges": [
+      {
+        "what": "orifice diameter",
+        "value": "5-30",
+        "unit": "um",
+        "locator": "description"
+      },
+      {
+        "what": "droplet diameter contemplated",
+        "value": "10-50",
+        "unit": "um",
+        "locator": "description"
+      },
+      {
+        "what": "droplet repetition rate / velocity",
+        "value": "40-100 kHz / 30-50 m/s",
+        "unit": null,
+        "locator": "description"
+      },
+      {
+        "what": "capillary tube inside diameter",
+        "value": "0.5-0.8",
+        "unit": "mm",
+        "locator": "description"
+      }
+    ],
+    "claim_constraints": [
+      {
+        "claim": "1",
+        "constraint": "(paraphrase) Droplet source forcing fluid through an orifice; disturbance subsystem produces droplets with controlled initial velocities so that some adjacent pairs coalesce before the irradiation region, using at least two electro-actuatable elements at different frequencies."
+      }
+    ]
+  },
+  {
+    "patent": "US8283643B2",
+    "source_id": "S039",
+    "figure": "FIG. 4; FIG. 5",
+    "numerals": [
+      {
+        "numeral": "22 ′",
+        "name": "beam focusing subsystem",
+        "description_locator": "FIG. 4 / FIG. 5 description"
+      },
+      {
+        "numeral": "210 ′",
+        "name": "steering mirror",
+        "description_locator": "FIG. 4 description"
+      },
+      {
+        "numeral": "216 ′",
+        "name": "tip- tilt actuator",
+        "description_locator": "FIG. 4 description"
+      },
+      {
+        "numeral": "300 a - c",
+        "name": "amplifier chambers",
+        "description_locator": "FIG. 4 description"
+      },
+      {
+        "numeral": "398, 400",
+        "name": "positive lenses (beam shaping subsystem 18 a)",
+        "description_locator": "FIG. 4 description"
+      },
+      {
+        "numeral": "402",
+        "name": "reflector",
+        "description_locator": "FIG. 4 / FIG. 5 description"
+      },
+      {
+        "numeral": "404",
+        "name": "turning mirror",
+        "description_locator": "FIG. 4 description"
+      },
+      {
+        "numeral": "406",
+        "name": "reflector",
+        "description_locator": "FIG. 5 description"
+      },
+      {
+        "numeral": "408",
+        "name": "linear axis",
+        "description_locator": "FIG. 4 / FIG. 5 description"
+      },
+      {
+        "numeral": "410",
+        "name": "focal point",
+        "description_locator": "FIG. 5 description"
+      },
+      {
+        "numeral": "412",
+        "name": "flat or curved surface (of reflector 402)",
+        "description_locator": "FIG. 5 description"
+      },
+      {
+        "numeral": "416",
+        "name": "single window",
+        "description_locator": "FIG. 4 description"
+      },
+      {
+        "numeral": "28 ′",
+        "name": "EUV reflective mirror",
+        "description_locator": "FIG. 5 description"
+      }
+    ],
+    "dimensions_or_ranges": [
+      {
+        "what": "amplifier combined one-pass gain",
+        "value": "1,000-10,000",
+        "unit": null,
+        "locator": "FIG. 4 description"
+      },
+      {
+        "what": "alignment laser wavelength",
+        "value": "300-900",
+        "unit": "nm",
+        "locator": "FIG. 4 description"
+      },
+      {
+        "what": "drive laser",
+        "value": "10 kW or higher, 50 kHz or more",
+        "unit": null,
+        "locator": "FIG. 1 description"
+      }
+    ],
+    "claim_constraints": [
+      {
+        "claim": "1",
+        "constraint": "Beam path portion aligned along a linear axis; first reflector with focal point on the linear axis receives the laser light; second reflector directs it to the irradiation site; adaptive optic adjusts beam width and divergence at the first reflector."
+      },
+      {
+        "claim": "2",
+        "constraint": "Irradiation site in a vessel; first reflector positioned in the vessel in fluid communication with it."
+      }
+    ]
+  },
+  {
+    "patent": "US11740565B2",
+    "source_id": "S048",
+    "figure": "FIG. 5; FIG. 6A",
+    "numerals": [
+      {
+        "numeral": "405",
+        "name": "collector",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 4"
+      },
+      {
+        "numeral": "406",
+        "name": "intermediate focus",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 4"
+      },
+      {
+        "numeral": "410",
+        "name": "camera",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 4"
+      },
+      {
+        "numeral": "500",
+        "name": "CFR",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 5"
+      },
+      {
+        "numeral": "502",
+        "name": "CFR housing",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 5"
+      },
+      {
+        "numeral": "510",
+        "name": "tin phobic sheet",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 5"
+      },
+      {
+        "numeral": "528",
+        "name": "optical metrology tubes",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 5"
+      },
+      {
+        "numeral": "542",
+        "name": "collector guide rails",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 5"
+      },
+      {
+        "numeral": "602a",
+        "name": "plasma-facing surface",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 6A"
+      },
+      {
+        "numeral": "604",
+        "name": "showerhead flow channel outlets",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 6A"
+      },
+      {
+        "numeral": "606",
+        "name": "gutter purge flow channel outlet",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 6A"
+      },
+      {
+        "numeral": "616",
+        "name": "optical metrology ports",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 6A"
+      },
+      {
+        "numeral": "620",
+        "name": "perimeter flow channel outlet",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 6A"
+      },
+      {
+        "numeral": "622",
+        "name": "perimeter flow ring",
+        "description_locator": "Google Patents description via WebFetch rendering, FIG. 6A"
+      }
+    ],
+    "dimensions_or_ranges": [
+      {
+        "what": "CFR overall size (example)",
+        "value": "1.2 x 1.0 x 0.09",
+        "unit": "m",
+        "locator": "description FIG. 5"
+      },
+      {
+        "what": "CFR weight",
+        "value": "<200 (or <150)",
+        "unit": "kg",
+        "locator": "description"
+      },
+      {
+        "what": "showerhead flow",
+        "value": "15-50",
+        "unit": "slm",
+        "locator": "description FIG. 6A"
+      },
+      {
+        "what": "perimeter flow",
+        "value": "50-130",
+        "unit": "slm",
+        "locator": "description FIG. 6A"
+      },
+      {
+        "what": "H2 supply pressure",
+        "value": 0.5,
+        "unit": "bar",
+        "locator": "description"
+      }
+    ],
+    "claim_constraints": [
+      {
+        "claim": "n/a",
+        "constraint": "Claims not read (rendered page truncated before claims)."
+      }
+    ]
+  }
+]
