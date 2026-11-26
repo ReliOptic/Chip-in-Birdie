@@ -1,0 +1,89 @@
+{
+  "schema": "AP242DIS",
+  "parts": [
+    {
+      "id": "p-booster",
+      "path": "cad/step-ap242/p-booster.step",
+      "reimport_volume_error": 2.7555140706903942e-15
+    },
+    {
+      "id": "p-combustor",
+      "path": "cad/step-ap242/p-combustor.step",
+      "reimport_volume_error": 1.469114392096314e-15
+    },
+    {
+      "id": "p-core-cowl",
+      "path": "cad/step-ap242/p-core-cowl.step",
+      "reimport_volume_error": 4.554711238174401e-14
+    },
+    {
+      "id": "p-exhaust-nozzle",
+      "path": "cad/step-ap242/p-exhaust-nozzle.step",
+      "reimport_volume_error": 1.6840433777348012e-12
+    },
+    {
+      "id": "p-exhaust-plug",
+      "path": "cad/step-ap242/p-exhaust-plug.step",
+      "reimport_volume_error": 2.9222490673827223e-13
+    },
+    {
+      "id": "p-fan-case",
+      "path": "cad/step-ap242/p-fan-case.step",
+      "reimport_volume_error": 1.4791018592234503e-14
+    },
+    {
+      "id": "p-fan",
+      "path": "cad/step-ap242/p-fan.step",
+      "reimport_volume_error": 6.453343985671693e-13
+    },
+    {
+      "id": "p-gearbox",
+      "path": "cad/step-ap242/p-gearbox.step",
+      "reimport_volume_error": 3.711767303921619e-15
+    },
+    {
+      "id": "p-hp-shaft",
+      "path": "cad/step-ap242/p-hp-shaft.step",
+      "reimport_volume_error": 3.199076514531972e-13
+    },
+    {
+      "id": "p-hpc",
+      "path": "cad/step-ap242/p-hpc.step",
+      "reimport_volume_error": 3.4076717024180213e-15
+    },
+    {
+      "id": "p-hpt",
+      "path": "cad/step-ap242/p-hpt.step",
+      "reimport_volume_error": 3.992581585538694e-15
+    },
+    {
+      "id": "p-lp-shaft",
+      "path": "cad/step-ap242/p-lp-shaft.step",
+      "reimport_volume_error": 4.8082784707791725e-15
+    },
+    {
+      "id": "p-lpt",
+      "path": "cad/step-ap242/p-lpt.step",
+      "reimport_volume_error": 1.8608538433316922e-14
+    },
+    {
+      "id": "p-nacelle-inlet",
+      "path": "cad/step-ap242/p-nacelle-inlet.step",
+      "reimport_volume_error": 2.593704497307459e-15
+    },
+    {
+      "id": "p-spinner",
+      "path": "cad/step-ap242/p-spinner.step",
+      "reimport_volume_error": 8.831027547733154e-14
+    },
+    {
+      "id": "p-thrust-reverser",
+      "path": "cad/step-ap242/p-thrust-reverser.step",
+      "reimport_volume_error": 7.281233573934747e-13
+    }
+  ],
+  "assembly": {
+    "path": "cad/jet-engine-twin-assembly-ap242.step",
+    "schema_ok": true
+  }
+}
