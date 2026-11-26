@@ -1,0 +1,238 @@
+{
+  "schema": "dta.cad-build/v1",
+  "parts": [
+    {
+      "id": "p-booster",
+      "volume_m3": 0.01622328263790811,
+      "step_reimport_volume_relative_error": 2.7555140706903942e-15,
+      "bbox_m": [
+        0.2051334276052059,
+        0.6901363926586549,
+        0.6900000002000002
+      ],
+      "triangles": 3792,
+      "worst_param_grade": "E3_inferred",
+      "max_sigma_m": 0.03,
+      "unknown_params": []
+    },
+    {
+      "id": "p-combustor",
+      "volume_m3": 0.010142955016991454,
+      "step_reimport_volume_relative_error": 1.469114392096314e-15,
+      "bbox_m": [
+        0.2605455619505508,
+        0.6705360262203403,
+        0.6704035871662842
+      ],
+      "triangles": 7268,
+      "worst_param_grade": "E3_inferred",
+      "max_sigma_m": 0.04,
+      "unknown_params": []
+    },
+    {
+      "id": "p-core-cowl",
+      "volume_m3": 0.395208428830779,
+      "step_reimport_volume_relative_error": 4.554711238174401e-14,
+      "bbox_m": [
+        1.771024099337411,
+        1.0409126515782519,
+        1.0407070745391203
+      ],
+      "triangles": 7268,
+      "worst_param_grade": "E3_inferred",
+      "max_sigma_m": 0.06,
+      "unknown_params": []
+    },
+    {
+      "id": "p-exhaust-nozzle",
+      "volume_m3": 0.01632842781703298,
+      "step_reimport_volume_relative_error": 5.537596585382569e-12,
+      "bbox_m": [
+        0.33106132818209266,
+        1.0010613281820928,
+        1.0008636579521584
+      ],
+      "triangles": 2686,
+      "worst_param_grade": "E3_inferred",
+      "max_sigma_m": 0.06,
+      "unknown_params": []
+    },
+    {
+      "id": "p-exhaust-plug",
+      "volume_m3": 0.08709450403516374,
+      "step_reimport_volume_relative_error": 2.9222490673827223e-13,
+      "bbox_m": [
+        0.6208020271935794,
+        0.6006009475236942,
+        0.6004823453857336
+      ],
+      "triangles": 2998,
+      "worst_param_grade": "E3_inferred",
+      "max_sigma_m": 0.06,
+      "unknown_params": []
+    },
+    {
+      "id": "p-fan-case",
+      "volume_m3": 0.1934297446371157,
+      "step_reimport_volume_relative_error": 1.4791018592234503e-14,
+      "bbox_m": [
+        0.7812242478143175,
+        1.6297220840726556,
+        1.6294000002000006
+      ],
+      "triangles": 2054,
+      "worst_param_grade": "E3_inferred",
+      "max_sigma_m": 0.05,
+      "unknown_params": []
+    },
+    {
+      "id": "p-fan",
+      "volume_m3": 0.0893037312407725,
+      "step_reimport_volume_relative_error": 2.5646279765393746e-13,
+      "bbox_m": [
+        0.2504131078183245,
+        1.5613848477471224,
+        1.5613848477471226
+      ],
+      "triangles": 13514,
+      "worst_param_grade": "E3_inferred",
+      "max_sigma_m": 0.04,
+      "unknown_params": []
+    },
+    {
+      "id": "p-gearbox",
+      "volume_m3": 0.021076508806208344,
+      "step_reimport_volume_relative_error": 3.535016479925351e-15,
+      "bbox_m": [
+        0.480009638175897,
+        0.17000963817589695,
+        0.26000963817589695
+      ],
+      "triangles": 652,
+      "worst_param_grade": "E3_inferred",
+      "max_sigma_m": 0.08,
+      "unknown_params": []
+    },
+    {
+      "id": "p-hp-shaft",
+      "volume_m3": 0.10424508010465645,
+      "step_reimport_volume_relative_error": 3.199076514531972e-13,
+      "bbox_m": [
+        0.9003713806707604,
+        0.45539672360361233,
+        0.4553067836489922
+      ],
+      "triangles": 5056,
+      "worst_param_grade": "E3_inferred",
+      "max_sigma_m": 0.04,
+      "unknown_params": []
+    },
+    {
+      "id": "p-hpc",
+      "volume_m3": 0.030609793860986806,
+      "step_reimport_volume_relative_error": 3.4076717024180213e-15,
+      "bbox_m": [
+        0.49611069552876336,
+        0.5801146489333621,
+        0.5800000002000002
+      ],
+      "triangles": 11376,
+      "worst_param_grade": "E3_inferred",
+      "max_sigma_m": 0.04,
+      "unknown_params": []
+    },
+    {
+      "id": "p-hpt",
+      "volume_m3": 0.009330530181161681,
+      "step_reimport_volume_relative_error": 3.992581585538694e-15,
+      "bbox_m": [
+        0.05513639265865504,
+        0.6901363926586549,
+        0.6900000002000002
+      ],
+      "triangles": 1264,
+      "worst_param_grade": "E3_inferred",
+      "max_sigma_m": 0.03,
+      "unknown_params": []
+    },
+    {
+      "id": "p-lp-shaft",
+      "volume_m3": 0.008909808092992945,
+      "step_reimport_volume_relative_error": 4.8082784707791725e-15,
+      "bbox_m": [
+        2.0200189765420737,
+        0.09601897654207374,
+        0.09600000020000003
+      ],
+      "triangles": 1264,
+      "worst_param_grade": "E3_inferred",
+      "max_sigma_m": 0.06,
+      "unknown_params": []
+    },
+    {
+      "id": "p-lpt",
+      "volume_m3": 0.06966699875491866,
+      "step_reimport_volume_relative_error": 1.8608538433316922e-14,
+      "bbox_m": [
+        0.3401709849488934,
+        0.9401858102161386,
+        0.9400000002000002
+      ],
+      "triangles": 5056,
+      "worst_param_grade": "E3_inferred",
+      "max_sigma_m": 0.04,
+      "unknown_params": []
+    },
+    {
+      "id": "p-nacelle-inlet",
+      "volume_m3": 0.6434542005241786,
+      "step_reimport_volume_relative_error": 2.593704497307459e-15,
+      "bbox_m": [
+        0.7911587078103298,
+        1.86146796044795,
+        1.8611002938202719
+      ],
+      "triangles": 3950,
+      "worst_param_grade": "E3_inferred",
+      "max_sigma_m": 0.06,
+      "unknown_params": []
+    },
+    {
+      "id": "p-spinner",
+      "volume_m3": 0.02434023097079207,
+      "step_reimport_volume_relative_error": 8.831027547733154e-14,
+      "bbox_m": [
+        0.33071423136625966,
+        0.47068059279051266,
+        0.4705876877824435
+      ],
+      "triangles": 2527,
+      "worst_param_grade": "E3_inferred",
+      "max_sigma_m": 0.04,
+      "unknown_params": []
+    },
+    {
+      "id": "p-thrust-reverser",
+      "volume_m3": 0.8958828552856983,
+      "step_reimport_volume_relative_error": 7.281233573934747e-13,
+      "bbox_m": [
+        2.0115242068451,
+        1.8614700021793416,
+        1.8611023355516634
+      ],
+      "triangles": 4898,
+      "worst_param_grade": "E3_inferred",
+      "max_sigma_m": 0.08,
+      "unknown_params": []
+    }
+  ],
+  "errors": [],
+  "dist_exporter": "dta_glb.write_glb",
+  "exchange_glb": {
+    "path": "cad/assembly.glb",
+    "sha256": "8db13a7405ae9b937e1b4d95b1ae776c1fcf78cbf1314f81ee2adb6035e00035",
+    "units": "mm",
+    "exporter": "cadquery.Assembly.export (OCCT)"
+  },
+  "dist_model_glb_sha256": "9695dba1e0aae0a7f07172de84dbfceb0ff2b14f3e1018eaf2f3bf2121692815"
+}

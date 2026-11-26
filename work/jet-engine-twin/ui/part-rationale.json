@@ -1,0 +1,806 @@
+[
+  {
+    "part_id": "p-spinner",
+    "mesh_object_id": "spinner",
+    "label": "Spinner",
+    "evidence_grade": "E3_inferred",
+    "confidence": 0.45,
+    "sigma_m": 0.04,
+    "missing": [
+      {
+        "what": "length (330 mm ±40)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "r_base (235 mm ±25)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "x_base (-40 mm ±20)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      }
+    ],
+    "geometry_decision": "Ogive cone ahead of the fan hub; length from cutaway proportion.",
+    "material_decision": "spinner (composite/aluminium) (grade E3_inferred)",
+    "physics_rationale": "static aerodynamic fairing; rotates with N1",
+    "uncertainty": "worst parameter grade E3_inferred; max σ 40 mm",
+    "cad_parameters": "see cad/parts/p-spinner.py PARAMS",
+    "source_ids": [
+      "S-INFER"
+    ],
+    "assembly_axis": [
+      -1,
+      0,
+      0
+    ],
+    "exterior": false,
+    "manipulable": false,
+    "pbr": {
+      "color": [
+        0.92,
+        0.92,
+        0.9,
+        1
+      ],
+      "metallic": 0.1,
+      "roughness": 0.35
+    }
+  },
+  {
+    "part_id": "p-fan",
+    "mesh_object_id": "fan_rotor",
+    "label": "Fan, 24 wide-chord blades",
+    "evidence_grade": "E3_inferred",
+    "confidence": 0.45,
+    "sigma_m": 0.04,
+    "missing": [
+      {
+        "what": "chord_root (190 mm ±30)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "chord_tip (300 mm ±40)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "r_hub (235 mm ±25)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "stagger_root (25 mm ±8)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      }
+    ],
+    "geometry_decision": "24 lofted blades, twist root→tip; count and diameter sourced, airfoil inferred.",
+    "material_decision": "solid titanium wide-chord blades (grade E3_inferred)",
+    "physics_rationale": "fan stage of cycle: FPR, η_fan; N1 spool",
+    "uncertainty": "worst parameter grade E3_inferred; max σ 40 mm",
+    "cad_parameters": "see cad/parts/p-fan.py PARAMS",
+    "source_ids": [
+      "S-INFER"
+    ],
+    "assembly_axis": [
+      -1,
+      0,
+      0
+    ],
+    "exterior": false,
+    "manipulable": true,
+    "pbr": {
+      "color": [
+        0.62,
+        0.63,
+        0.65,
+        1.0
+      ],
+      "metallic": 1.0,
+      "roughness": 0.32
+    }
+  },
+  {
+    "part_id": "p-fan-case",
+    "mesh_object_id": "fan_case",
+    "label": "Fan containment case",
+    "evidence_grade": "E3_inferred",
+    "confidence": 0.45,
+    "sigma_m": 0.05,
+    "missing": [
+      {
+        "what": "wall (40 mm ±15)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "x0 (-160 mm ±30)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "x1 (620 mm ±50)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      }
+    ],
+    "geometry_decision": "Annular case at fan tip radius; wall thickness inferred.",
+    "material_decision": "aluminium fan case (containment) (grade E3_inferred)",
+    "physics_rationale": "static; reference frame of assembly",
+    "uncertainty": "worst parameter grade E3_inferred; max σ 50 mm",
+    "cad_parameters": "see cad/parts/p-fan-case.py PARAMS",
+    "source_ids": [
+      "S-INFER"
+    ],
+    "assembly_axis": [
+      0,
+      1,
+      0
+    ],
+    "exterior": false,
+    "manipulable": false,
+    "pbr": {
+      "color": [
+        0.66,
+        0.67,
+        0.68,
+        1
+      ],
+      "metallic": 0.85,
+      "roughness": 0.4
+    }
+  },
+  {
+    "part_id": "p-nacelle-inlet",
+    "mesh_object_id": "inlet_cowl",
+    "label": "Inlet cowl",
+    "evidence_grade": "E3_inferred",
+    "confidence": 0.45,
+    "sigma_m": 0.06,
+    "missing": [
+      {
+        "what": "r_hl (735 mm ±30)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "r_out (930 mm ±40)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "r_throat (720 mm ±25)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "x_aft (-160 mm ±30)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      }
+    ],
+    "geometry_decision": "Revolved lip; 737NG flattened lower lip not yet modelled.",
+    "material_decision": "aluminium/composite nacelle skin, painted (grade E3_inferred)",
+    "physics_rationale": "inlet total-pressure recovery π_d",
+    "uncertainty": "worst parameter grade E3_inferred; max σ 60 mm",
+    "cad_parameters": "see cad/parts/p-nacelle-inlet.py PARAMS",
+    "source_ids": [
+      "S-INFER"
+    ],
+    "assembly_axis": [
+      -1,
+      0,
+      0
+    ],
+    "exterior": true,
+    "manipulable": false,
+    "pbr": {
+      "color": [
+        0.86,
+        0.87,
+        0.88,
+        1.0
+      ],
+      "metallic": 0.15,
+      "roughness": 0.42
+    }
+  },
+  {
+    "part_id": "p-thrust-reverser",
+    "mesh_object_id": "fan_cowl_reverser",
+    "label": "Fan cowl / thrust reverser",
+    "evidence_grade": "E3_inferred",
+    "confidence": 0.45,
+    "sigma_m": 0.08,
+    "missing": [
+      {
+        "what": "r_in0 (819.7 mm ±10)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "r_in1 (760 mm ±40)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "r_out0 (930 mm ±40)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "r_out1 (790 mm ±40)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      }
+    ],
+    "geometry_decision": "Revolved outer cowl to fan nozzle exit; cascades not modelled.",
+    "material_decision": "aluminium/composite nacelle skin, painted (grade E3_inferred)",
+    "physics_rationale": "bypass nozzle: convergent, choke check",
+    "uncertainty": "worst parameter grade E3_inferred; max σ 80 mm",
+    "cad_parameters": "see cad/parts/p-thrust-reverser.py PARAMS",
+    "source_ids": [
+      "S-INFER"
+    ],
+    "assembly_axis": [
+      1,
+      0,
+      0
+    ],
+    "exterior": true,
+    "manipulable": false,
+    "pbr": {
+      "color": [
+        0.86,
+        0.87,
+        0.88,
+        1.0
+      ],
+      "metallic": 0.15,
+      "roughness": 0.42
+    }
+  },
+  {
+    "part_id": "p-booster",
+    "mesh_object_id": "booster_lpc",
+    "label": "Booster, 3 stages",
+    "evidence_grade": "E3_inferred",
+    "confidence": 0.45,
+    "sigma_m": 0.03,
+    "missing": [
+      {
+        "what": "hub0 (265 mm ±25)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "hub1 (285 mm ±25)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "pitch (80 mm ±15)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "tip0 (345 mm ±25)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      }
+    ],
+    "geometry_decision": "3 annular row envelopes; per-row blade counts unknown.",
+    "material_decision": "titanium alloy (grade E3_inferred)",
+    "physics_rationale": "core compression on N1 spool",
+    "uncertainty": "worst parameter grade E3_inferred; max σ 30 mm",
+    "cad_parameters": "see cad/parts/p-booster.py PARAMS",
+    "source_ids": [
+      "S-INFER"
+    ],
+    "assembly_axis": [
+      -1,
+      0,
+      0
+    ],
+    "exterior": false,
+    "manipulable": false,
+    "pbr": {
+      "color": [
+        0.62,
+        0.63,
+        0.65,
+        1.0
+      ],
+      "metallic": 1.0,
+      "roughness": 0.32
+    }
+  },
+  {
+    "part_id": "p-hpc",
+    "mesh_object_id": "hp_compressor",
+    "label": "HP compressor, 9 stages",
+    "evidence_grade": "E3_inferred",
+    "confidence": 0.45,
+    "sigma_m": 0.04,
+    "missing": [
+      {
+        "what": "hub0 (175 mm ±20)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "hub1 (245 mm ±20)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "pitch (58 mm ±10)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "tip0 (290 mm ±20)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      }
+    ],
+    "geometry_decision": "9 annular row envelopes tapering to exit; blade counts unknown.",
+    "material_decision": "titanium alloy (grade E3_inferred)",
+    "physics_rationale": "OPR, η_comp; driven by HPT on N2",
+    "uncertainty": "worst parameter grade E3_inferred; max σ 40 mm",
+    "cad_parameters": "see cad/parts/p-hpc.py PARAMS",
+    "source_ids": [
+      "S-INFER"
+    ],
+    "assembly_axis": [
+      0,
+      1,
+      0
+    ],
+    "exterior": false,
+    "manipulable": false,
+    "pbr": {
+      "color": [
+        0.62,
+        0.63,
+        0.65,
+        1.0
+      ],
+      "metallic": 1.0,
+      "roughness": 0.32
+    }
+  },
+  {
+    "part_id": "p-combustor",
+    "mesh_object_id": "combustor",
+    "label": "Annular combustor",
+    "evidence_grade": "E3_inferred",
+    "confidence": 0.45,
+    "sigma_m": 0.04,
+    "missing": [
+      {
+        "what": "r_in (230 mm ±20)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "r_out (335 mm ±20)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "wall (8 mm ±3)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "x0 (1190 mm ±40)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      }
+    ],
+    "geometry_decision": "Hollow annular liner envelope; dome/nozzle details unknown.",
+    "material_decision": "nickel superalloy, heat-tinted (grade E3_inferred)",
+    "physics_rationale": "energy balance: fuel-air ratio from Tt4",
+    "uncertainty": "worst parameter grade E3_inferred; max σ 40 mm",
+    "cad_parameters": "see cad/parts/p-combustor.py PARAMS",
+    "source_ids": [
+      "S-INFER"
+    ],
+    "assembly_axis": [
+      1,
+      0,
+      0
+    ],
+    "exterior": false,
+    "manipulable": false,
+    "pbr": {
+      "color": [
+        0.42,
+        0.34,
+        0.28,
+        1.0
+      ],
+      "metallic": 1.0,
+      "roughness": 0.5
+    }
+  },
+  {
+    "part_id": "p-hpt",
+    "mesh_object_id": "hp_turbine",
+    "label": "HP turbine, 1 stage",
+    "evidence_grade": "E3_inferred",
+    "confidence": 0.45,
+    "sigma_m": 0.03,
+    "missing": [
+      {
+        "what": "hub (255 mm ±20)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "tip (345 mm ±20)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "width (55 mm ±10)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "x0 (1470 mm ±30)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      }
+    ],
+    "geometry_decision": "Single row envelope; cooled blade geometry unknown.",
+    "material_decision": "nickel superalloy, heat-tinted (grade E3_inferred)",
+    "physics_rationale": "work = HPC work / η_mech",
+    "uncertainty": "worst parameter grade E3_inferred; max σ 30 mm",
+    "cad_parameters": "see cad/parts/p-hpt.py PARAMS",
+    "source_ids": [
+      "S-INFER"
+    ],
+    "assembly_axis": [
+      1,
+      0,
+      0
+    ],
+    "exterior": false,
+    "manipulable": false,
+    "pbr": {
+      "color": [
+        0.42,
+        0.34,
+        0.28,
+        1.0
+      ],
+      "metallic": 1.0,
+      "roughness": 0.5
+    }
+  },
+  {
+    "part_id": "p-lpt",
+    "mesh_object_id": "lp_turbine",
+    "label": "LP turbine, 4 stages",
+    "evidence_grade": "E3_inferred",
+    "confidence": 0.45,
+    "sigma_m": 0.04,
+    "missing": [
+      {
+        "what": "hub0 (290 mm ±20)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "hub1 (300 mm ±20)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "pitch (95 mm ±15)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "tip0 (395 mm ±25)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      }
+    ],
+    "geometry_decision": "4 row envelopes growing in radius aft.",
+    "material_decision": "nickel superalloy (grade E3_inferred)",
+    "physics_rationale": "work = fan + booster work / η_mech",
+    "uncertainty": "worst parameter grade E3_inferred; max σ 40 mm",
+    "cad_parameters": "see cad/parts/p-lpt.py PARAMS",
+    "source_ids": [
+      "S-INFER"
+    ],
+    "assembly_axis": [
+      1,
+      0,
+      0
+    ],
+    "exterior": false,
+    "manipulable": false,
+    "pbr": {
+      "color": [
+        0.55,
+        0.5,
+        0.46,
+        1.0
+      ],
+      "metallic": 1.0,
+      "roughness": 0.38
+    }
+  },
+  {
+    "part_id": "p-core-cowl",
+    "mesh_object_id": "core_cowl",
+    "label": "Core cowl",
+    "evidence_grade": "E3_inferred",
+    "confidence": 0.45,
+    "sigma_m": 0.06,
+    "missing": [
+      {
+        "what": "r_end (500 mm ±30)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "r_max (520 mm ±30)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "r_split (350 mm ±20)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "x1 (2000 mm ±60)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      }
+    ],
+    "geometry_decision": "Revolved inner bypass wall from splitter to core exhaust.",
+    "material_decision": "aluminium/composite nacelle skin, painted (grade E3_inferred)",
+    "physics_rationale": "bypass duct inner boundary",
+    "uncertainty": "worst parameter grade E3_inferred; max σ 60 mm",
+    "cad_parameters": "see cad/parts/p-core-cowl.py PARAMS",
+    "source_ids": [
+      "S-INFER"
+    ],
+    "assembly_axis": [
+      0,
+      1,
+      0
+    ],
+    "exterior": true,
+    "manipulable": false,
+    "pbr": {
+      "color": [
+        0.74,
+        0.75,
+        0.76,
+        1
+      ],
+      "metallic": 0.6,
+      "roughness": 0.4
+    }
+  },
+  {
+    "part_id": "p-exhaust-nozzle",
+    "mesh_object_id": "core_nozzle",
+    "label": "Core exhaust nozzle",
+    "evidence_grade": "E3_inferred",
+    "confidence": 0.45,
+    "sigma_m": 0.06,
+    "missing": [
+      {
+        "what": "r0 (500 mm ±30)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "r1 (405 mm ±30)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "wall (10 mm ±4)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "x0 (2000 mm ±60)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      }
+    ],
+    "geometry_decision": "Conical primary nozzle shell.",
+    "material_decision": "nickel superalloy, heat-tinted (grade E3_inferred)",
+    "physics_rationale": "core nozzle: convergent, choke check",
+    "uncertainty": "worst parameter grade E3_inferred; max σ 60 mm",
+    "cad_parameters": "see cad/parts/p-exhaust-nozzle.py PARAMS",
+    "source_ids": [
+      "S-INFER"
+    ],
+    "assembly_axis": [
+      1,
+      0,
+      0
+    ],
+    "exterior": true,
+    "manipulable": false,
+    "pbr": {
+      "color": [
+        0.42,
+        0.34,
+        0.28,
+        1.0
+      ],
+      "metallic": 1.0,
+      "roughness": 0.5
+    }
+  },
+  {
+    "part_id": "p-exhaust-plug",
+    "mesh_object_id": "exhaust_plug",
+    "label": "Exhaust plug",
+    "evidence_grade": "E3_inferred",
+    "confidence": 0.45,
+    "sigma_m": 0.06,
+    "missing": [
+      {
+        "what": "length (620 mm ±60)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "r0 (300 mm ±25)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "x0 (1990 mm ±40)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      }
+    ],
+    "geometry_decision": "Revolved centerbody aft of LPT.",
+    "material_decision": "nickel superalloy, heat-tinted (grade E3_inferred)",
+    "physics_rationale": "static fairing",
+    "uncertainty": "worst parameter grade E3_inferred; max σ 60 mm",
+    "cad_parameters": "see cad/parts/p-exhaust-plug.py PARAMS",
+    "source_ids": [
+      "S-INFER"
+    ],
+    "assembly_axis": [
+      1,
+      0,
+      0
+    ],
+    "exterior": false,
+    "manipulable": false,
+    "pbr": {
+      "color": [
+        0.42,
+        0.34,
+        0.28,
+        1.0
+      ],
+      "metallic": 1.0,
+      "roughness": 0.5
+    }
+  },
+  {
+    "part_id": "p-lp-shaft",
+    "mesh_object_id": "lp_shaft",
+    "label": "LP shaft",
+    "evidence_grade": "E3_inferred",
+    "confidence": 0.45,
+    "sigma_m": 0.06,
+    "missing": [
+      {
+        "what": "r (48 mm ±10)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "r_bore (30 mm ±8)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "x0 (-20 mm ±20)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "x1 (2000 mm ±60)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      }
+    ],
+    "geometry_decision": "Hollow tube fan→LPT; diameter inferred.",
+    "material_decision": "steel (grade E3_inferred)",
+    "physics_rationale": "transmits LPT work to fan; N1",
+    "uncertainty": "worst parameter grade E3_inferred; max σ 60 mm",
+    "cad_parameters": "see cad/parts/p-lp-shaft.py PARAMS",
+    "source_ids": [
+      "S-INFER"
+    ],
+    "assembly_axis": [
+      1,
+      0,
+      0
+    ],
+    "exterior": false,
+    "manipulable": false,
+    "pbr": {
+      "color": [
+        0.48,
+        0.49,
+        0.5,
+        1.0
+      ],
+      "metallic": 1.0,
+      "roughness": 0.45
+    }
+  },
+  {
+    "part_id": "p-hp-shaft",
+    "mesh_object_id": "hp_spool",
+    "label": "HP spool drum",
+    "evidence_grade": "E3_inferred",
+    "confidence": 0.45,
+    "sigma_m": 0.04,
+    "missing": [
+      {
+        "what": "r_in (80 mm ±15)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "r_out (175 mm ±20)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "x0 (630 mm ±40)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "x1 (1530 mm ±40)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      }
+    ],
+    "geometry_decision": "Drum linking HPC and HPT; geometry inferred.",
+    "material_decision": "titanium alloy (grade E3_inferred)",
+    "physics_rationale": "transmits HPT work to HPC; N2",
+    "uncertainty": "worst parameter grade E3_inferred; max σ 40 mm",
+    "cad_parameters": "see cad/parts/p-hp-shaft.py PARAMS",
+    "source_ids": [
+      "S-INFER"
+    ],
+    "assembly_axis": [
+      0,
+      -1,
+      0
+    ],
+    "exterior": false,
+    "manipulable": false,
+    "pbr": {
+      "color": [
+        0.62,
+        0.63,
+        0.65,
+        1.0
+      ],
+      "metallic": 1.0,
+      "roughness": 0.32
+    }
+  },
+  {
+    "part_id": "p-gearbox",
+    "mesh_object_id": "accessory_gearbox",
+    "label": "Accessory gearbox",
+    "evidence_grade": "E3_inferred",
+    "confidence": 0.45,
+    "sigma_m": 0.08,
+    "missing": [
+      {
+        "what": "depth (260 mm ±50)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "height (170 mm ±40)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "length (480 mm ±80)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "x_c (260 mm ±60)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      }
+    ],
+    "geometry_decision": "Rounded box on lower fan case; position/size inferred.",
+    "material_decision": "aluminium/magnesium casting (grade E3_inferred)",
+    "physics_rationale": "static; driven off N2 (not modelled)",
+    "uncertainty": "worst parameter grade E3_inferred; max σ 80 mm",
+    "cad_parameters": "see cad/parts/p-gearbox.py PARAMS",
+    "source_ids": [
+      "S-INFER"
+    ],
+    "assembly_axis": [
+      0,
+      -1,
+      0
+    ],
+    "exterior": false,
+    "manipulable": false,
+    "pbr": {
+      "color": [
+        0.5,
+        0.52,
+        0.5,
+        1
+      ],
+      "metallic": 0.7,
+      "roughness": 0.55
+    }
+  }
+]

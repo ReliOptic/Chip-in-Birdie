@@ -1,0 +1,28 @@
+{
+  "schema": "dta.identity/v1",
+  "id": "cfm-cfm56-7b-1997-7b27",
+  "maker": "TODO",
+  "model": "TODO",
+  "variant": "TODO",
+  "technology_family": "TODO",
+  "build_years": "TODO",
+  "subsystem_boundary": "TODO: what is inside/outside this twin",
+  "operating_mode": "TODO",
+  "excluded_families": [
+    "TODO incompatible technology family"
+  ],
+  "forbidden_component_types": [
+    "TODO component class this variant never has"
+  ],
+  "applicability_table": [
+    {
+      "claim": "TODO",
+      "status": "installed|compatible_family|principle_only|patent_proposal|unverified",
+      "source_id": "S-TODO"
+    }
+  ],
+  "open_identity_questions": [
+    "TODO"
+  ],
+  "frozen_on": null
+}

@@ -1,0 +1,533 @@
+{
+  "schema": "dta.assembly/v1",
+  "units": "mm",
+  "up_axis": "Y",
+  "default_pose": {
+    "position": [
+      -3300,
+      1100,
+      2900
+    ],
+    "target": [
+      700,
+      0,
+      0
+    ]
+  },
+  "parts": [
+    {
+      "part_id": "p-nacelle-inlet",
+      "parent": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode": {
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "distance": 700,
+        "order": 0
+      },
+      "joint": {
+        "type": "fixed",
+        "source_id": "S-INFER"
+      }
+    },
+    {
+      "part_id": "p-thrust-reverser",
+      "parent": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode": {
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "distance": 1300,
+        "order": 0
+      },
+      "joint": {
+        "type": "fixed",
+        "source_id": "S-INFER"
+      }
+    },
+    {
+      "part_id": "p-exhaust-plug",
+      "parent": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode": {
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "distance": 900,
+        "order": 1
+      },
+      "joint": {
+        "type": "fixed",
+        "source_id": "S-INFER"
+      }
+    },
+    {
+      "part_id": "p-exhaust-nozzle",
+      "parent": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode": {
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "distance": 650,
+        "order": 1
+      },
+      "joint": {
+        "type": "fixed",
+        "source_id": "S-INFER"
+      }
+    },
+    {
+      "part_id": "p-gearbox",
+      "parent": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode": {
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "distance": 350,
+        "order": 1
+      },
+      "joint": {
+        "type": "fixed",
+        "source_id": "S-INFER"
+      }
+    },
+    {
+      "part_id": "p-core-cowl",
+      "parent": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode": {
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "distance": 700,
+        "order": 2
+      },
+      "joint": {
+        "type": "fixed",
+        "source_id": "S-INFER"
+      }
+    },
+    {
+      "part_id": "p-spinner",
+      "parent": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode": {
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "distance": 900,
+        "order": 3
+      },
+      "joint": {
+        "type": "revolute",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limits": [
+          -1000000000.0,
+          1000000000.0
+        ],
+        "spool": "N1",
+        "source_id": "S-INFER"
+      }
+    },
+    {
+      "part_id": "p-fan",
+      "parent": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode": {
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "distance": 600,
+        "order": 3
+      },
+      "joint": {
+        "type": "revolute",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limits": [
+          -1000000000.0,
+          1000000000.0
+        ],
+        "spool": "N1",
+        "source_id": "S-INFER"
+      }
+    },
+    {
+      "part_id": "p-fan-case",
+      "parent": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode": {
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "distance": 1,
+        "order": 9
+      },
+      "joint": {
+        "type": "fixed",
+        "source_id": "S-INFER"
+      }
+    },
+    {
+      "part_id": "p-lpt",
+      "parent": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode": {
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "distance": 800,
+        "order": 4
+      },
+      "joint": {
+        "type": "revolute",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limits": [
+          -1000000000.0,
+          1000000000.0
+        ],
+        "spool": "N1",
+        "source_id": "S-INFER"
+      }
+    },
+    {
+      "part_id": "p-lp-shaft",
+      "parent": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode": {
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "distance": 1400,
+        "order": 5
+      },
+      "joint": {
+        "type": "revolute",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limits": [
+          -1000000000.0,
+          1000000000.0
+        ],
+        "spool": "N1",
+        "source_id": "S-INFER"
+      }
+    },
+    {
+      "part_id": "p-booster",
+      "parent": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode": {
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "distance": 350,
+        "order": 5
+      },
+      "joint": {
+        "type": "revolute",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limits": [
+          -1000000000.0,
+          1000000000.0
+        ],
+        "spool": "N1",
+        "source_id": "S-INFER"
+      }
+    },
+    {
+      "part_id": "p-hpt",
+      "parent": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode": {
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "distance": 450,
+        "order": 6
+      },
+      "joint": {
+        "type": "revolute",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limits": [
+          -1000000000.0,
+          1000000000.0
+        ],
+        "spool": "N2",
+        "source_id": "S-INFER"
+      }
+    },
+    {
+      "part_id": "p-combustor",
+      "parent": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode": {
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "distance": 300,
+        "order": 7
+      },
+      "joint": {
+        "type": "fixed",
+        "source_id": "S-INFER"
+      }
+    },
+    {
+      "part_id": "p-hp-shaft",
+      "parent": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode": {
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "distance": 500,
+        "order": 8
+      },
+      "joint": {
+        "type": "revolute",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limits": [
+          -1000000000.0,
+          1000000000.0
+        ],
+        "spool": "N2",
+        "source_id": "S-INFER"
+      }
+    },
+    {
+      "part_id": "p-hpc",
+      "parent": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode": {
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "distance": 650,
+        "order": 8
+      },
+      "joint": {
+        "type": "revolute",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limits": [
+          -1000000000.0,
+          1000000000.0
+        ],
+        "spool": "N2",
+        "source_id": "S-INFER"
+      }
+    }
+  ],
+  "disassembly_sequence_source_id": "S-INFER",
+  "notes": "Engine axis +X (aft). Order mirrors modular split: nacelle/reverser off, exhaust, core cowl, fan module forward, LPT module aft, then core. Fan case stays as the reference frame. Rotor joints are revolute about X and driven by the spool solver (N1/N2)."
+}

@@ -1,0 +1,1059 @@
+[
+  {
+    "id": "p-booster",
+    "feature_id": "f-booster",
+    "critical": true,
+    "applies_to": "cfm-cfm56-7b-1997-7b27",
+    "technology_family": "two-spool high-bypass separate-flow turbofan",
+    "component_type": "axial_compressor_rows",
+    "units": "mm",
+    "cad_tool": "CadQuery 2.8 (OCCT) \u2014 STEP AP214 for CATIA import",
+    "mesh_object_id": "booster_lpc",
+    "source_ids": [
+      "S-INFER"
+    ],
+    "cad": {
+      "path": "cad/parts/p-booster.py",
+      "sha256": "e875dbd53e98fbc893042bb56e0ef26374049f13f3c0667a5bcfef19beaea485"
+    },
+    "step": {
+      "path": "cad/step/p-booster.step",
+      "sha256": "6d581fe2645df94b9ffb0c302869f591cd303b3f0af50b3fc5cf25861d95b5d2"
+    },
+    "glb": {
+      "path": "cad/glb/p-booster.glb",
+      "sha256": "f38ce5b09601cea57507ef87af9705de2120e2c41d05d860d6c515cc865d9f53"
+    },
+    "parameters": {
+      "hub0": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 25,
+        "source_id": "S-INFER",
+        "value": 265
+      },
+      "hub1": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 25,
+        "source_id": "S-INFER",
+        "value": 285
+      },
+      "n_stages": {
+        "grade": "E1_measured",
+        "locator": "proportion from public cutaway",
+        "sigma": 0,
+        "source_id": "S-INFER",
+        "value": 3
+      },
+      "pitch": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 15,
+        "source_id": "S-INFER",
+        "value": 80
+      },
+      "tip0": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 25,
+        "source_id": "S-INFER",
+        "value": 345
+      },
+      "tip1": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 25,
+        "source_id": "S-INFER",
+        "value": 330
+      },
+      "width": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 10,
+        "source_id": "S-INFER",
+        "value": 45
+      },
+      "x0": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 30,
+        "source_id": "S-INFER",
+        "value": 260
+      }
+    }
+  },
+  {
+    "id": "p-combustor",
+    "feature_id": "f-combustor",
+    "critical": true,
+    "applies_to": "cfm-cfm56-7b-1997-7b27",
+    "technology_family": "two-spool high-bypass separate-flow turbofan",
+    "component_type": "annular_combustor",
+    "units": "mm",
+    "cad_tool": "CadQuery 2.8 (OCCT) \u2014 STEP AP214 for CATIA import",
+    "mesh_object_id": "combustor",
+    "source_ids": [
+      "S-INFER"
+    ],
+    "cad": {
+      "path": "cad/parts/p-combustor.py",
+      "sha256": "29a651b564f0e8d137e51d3535c7701dfd6481005d62d105e9e1e8b8fd991e12"
+    },
+    "step": {
+      "path": "cad/step/p-combustor.step",
+      "sha256": "4caafe27c49995109c12eef8fc95798f938c57cc98076d0c1d26262114496d18"
+    },
+    "glb": {
+      "path": "cad/glb/p-combustor.glb",
+      "sha256": "bd879dc9f9c6f53108df54636de1c26d500261050cdb8e4772a88522f87218ea"
+    },
+    "parameters": {
+      "r_in": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 20,
+        "source_id": "S-INFER",
+        "value": 230
+      },
+      "r_out": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 20,
+        "source_id": "S-INFER",
+        "value": 335
+      },
+      "wall": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 3,
+        "source_id": "S-INFER",
+        "value": 8
+      },
+      "x0": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 40,
+        "source_id": "S-INFER",
+        "value": 1190
+      },
+      "x1": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 40,
+        "source_id": "S-INFER",
+        "value": 1450
+      }
+    }
+  },
+  {
+    "id": "p-core-cowl",
+    "feature_id": "f-core-cowl",
+    "critical": false,
+    "applies_to": "cfm-cfm56-7b-1997-7b27",
+    "technology_family": "two-spool high-bypass separate-flow turbofan",
+    "component_type": "core_cowl",
+    "units": "mm",
+    "cad_tool": "CadQuery 2.8 (OCCT) \u2014 STEP AP214 for CATIA import",
+    "mesh_object_id": "core_cowl",
+    "source_ids": [
+      "S-INFER"
+    ],
+    "cad": {
+      "path": "cad/parts/p-core-cowl.py",
+      "sha256": "c310899e3b683cc351990d19d759705f747d75b0d355b572474dacc90c1a3c56"
+    },
+    "step": {
+      "path": "cad/step/p-core-cowl.step",
+      "sha256": "20822c817bccce4a57d9237fbe8bad1ef713fcf794ffe46cbe3d5d749f62c07d"
+    },
+    "glb": {
+      "path": "cad/glb/p-core-cowl.glb",
+      "sha256": "9a21d740b3dd54c13ba7c11dadb495ea0351d364dbf34d1514ad3c143c423dee"
+    },
+    "parameters": {
+      "r_end": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 30,
+        "source_id": "S-INFER",
+        "value": 500
+      },
+      "r_max": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 30,
+        "source_id": "S-INFER",
+        "value": 520
+      },
+      "r_split": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 20,
+        "source_id": "S-INFER",
+        "value": 350
+      },
+      "x1": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 60,
+        "source_id": "S-INFER",
+        "value": 2000
+      },
+      "x_split": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway \u2014 splitter",
+        "sigma": 30,
+        "source_id": "S-INFER",
+        "value": 230
+      }
+    }
+  },
+  {
+    "id": "p-exhaust-nozzle",
+    "feature_id": "f-exhaust-nozzle",
+    "critical": false,
+    "applies_to": "cfm-cfm56-7b-1997-7b27",
+    "technology_family": "two-spool high-bypass separate-flow turbofan",
+    "component_type": "primary_exhaust_nozzle",
+    "units": "mm",
+    "cad_tool": "CadQuery 2.8 (OCCT) \u2014 STEP AP214 for CATIA import",
+    "mesh_object_id": "core_nozzle",
+    "source_ids": [
+      "S-INFER"
+    ],
+    "cad": {
+      "path": "cad/parts/p-exhaust-nozzle.py",
+      "sha256": "d469fd32821c225b70f312ced636f9746f3c59e96e06da025b76da321bc6b69f"
+    },
+    "step": {
+      "path": "cad/step/p-exhaust-nozzle.step",
+      "sha256": "968b05f4bc2334b7e6a1804f6909a3c2d9cedab052ad88b8b6f69cc296856954"
+    },
+    "glb": {
+      "path": "cad/glb/p-exhaust-nozzle.glb",
+      "sha256": "4854a8b05a75e9fe4b87509f21511268fe849766f9bda51911a1da4cec5a61ef"
+    },
+    "parameters": {
+      "r0": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 30,
+        "source_id": "S-INFER",
+        "value": 500
+      },
+      "r1": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 30,
+        "source_id": "S-INFER",
+        "value": 405
+      },
+      "wall": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 4,
+        "source_id": "S-INFER",
+        "value": 10
+      },
+      "x0": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 60,
+        "source_id": "S-INFER",
+        "value": 2000
+      },
+      "x1": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 60,
+        "source_id": "S-INFER",
+        "value": 2330
+      }
+    }
+  },
+  {
+    "id": "p-exhaust-plug",
+    "feature_id": "f-exhaust-plug",
+    "critical": false,
+    "applies_to": "cfm-cfm56-7b-1997-7b27",
+    "technology_family": "two-spool high-bypass separate-flow turbofan",
+    "component_type": "exhaust_centerbody",
+    "units": "mm",
+    "cad_tool": "CadQuery 2.8 (OCCT) \u2014 STEP AP214 for CATIA import",
+    "mesh_object_id": "exhaust_plug",
+    "source_ids": [
+      "S-INFER"
+    ],
+    "cad": {
+      "path": "cad/parts/p-exhaust-plug.py",
+      "sha256": "6a8909f896ccce7f41a5c448f2348ca64e342dc77df5ccd64fe679af7447695a"
+    },
+    "step": {
+      "path": "cad/step/p-exhaust-plug.step",
+      "sha256": "2ffed05c77e17398bef73b4d218e184ec9a5184513611b49f8cee8ff59bbd597"
+    },
+    "glb": {
+      "path": "cad/glb/p-exhaust-plug.glb",
+      "sha256": "eb3ec3dde53cc02dd85c574a09b3f76e3f235218690de6e0c4d6c2def3516682"
+    },
+    "parameters": {
+      "length": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 60,
+        "source_id": "S-INFER",
+        "value": 620
+      },
+      "r0": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 25,
+        "source_id": "S-INFER",
+        "value": 300
+      },
+      "x0": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 40,
+        "source_id": "S-INFER",
+        "value": 1990
+      }
+    }
+  },
+  {
+    "id": "p-fan-case",
+    "feature_id": "f-fan-case",
+    "critical": true,
+    "applies_to": "cfm-cfm56-7b-1997-7b27",
+    "technology_family": "two-spool high-bypass separate-flow turbofan",
+    "component_type": "fan_containment_case",
+    "units": "mm",
+    "cad_tool": "CadQuery 2.8 (OCCT) \u2014 STEP AP214 for CATIA import",
+    "mesh_object_id": "fan_case",
+    "source_ids": [
+      "S-INFER"
+    ],
+    "cad": {
+      "path": "cad/parts/p-fan-case.py",
+      "sha256": "708c3e2ae448e282d6bc43a6d69bdf57260637f2f4ab57b39ab5a2f2bac67e6c"
+    },
+    "step": {
+      "path": "cad/step/p-fan-case.step",
+      "sha256": "ad0eb51f9c09c2c75f1e516f85b52b5da11952296b1fee8b8b4dd5ea97ebdcba"
+    },
+    "glb": {
+      "path": "cad/glb/p-fan-case.glb",
+      "sha256": "81c063eeb0f0cc596eb9c6bb1d2c4dc65ef5c07fdad2750b04659acb85b31a29"
+    },
+    "parameters": {
+      "r_in": {
+        "grade": "E1_measured",
+        "locator": "proportion from public cutaway",
+        "sigma": 2,
+        "source_id": "S-INFER",
+        "value": 774.7
+      },
+      "wall": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 15,
+        "source_id": "S-INFER",
+        "value": 40
+      },
+      "x0": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 30,
+        "source_id": "S-INFER",
+        "value": -160
+      },
+      "x1": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 50,
+        "source_id": "S-INFER",
+        "value": 620
+      }
+    }
+  },
+  {
+    "id": "p-fan",
+    "feature_id": "f-fan",
+    "critical": true,
+    "applies_to": "cfm-cfm56-7b-1997-7b27",
+    "technology_family": "two-spool high-bypass separate-flow turbofan",
+    "component_type": "fan_rotor_wide_chord",
+    "units": "mm",
+    "cad_tool": "CadQuery 2.8 (OCCT) \u2014 STEP AP214 for CATIA import",
+    "mesh_object_id": "fan_rotor",
+    "source_ids": [
+      "S-INFER"
+    ],
+    "cad": {
+      "path": "cad/parts/p-fan.py",
+      "sha256": "5d90bbd5e759d0e9559e6e884bb1a2c4e5ba9915ff50b1d28b4e56caf9f2fd19"
+    },
+    "step": {
+      "path": "cad/step/p-fan.step",
+      "sha256": "534a440a8ddfe6a797e4351df8428506d8e68c1298584700fcce4b6ec9fa8c70"
+    },
+    "glb": {
+      "path": "cad/glb/p-fan.glb",
+      "sha256": "4b056bcb9a6c3a0433637fd65d63e7d1ba27abd1658714b8832777f1a0e2c70c"
+    },
+    "parameters": {
+      "chord_root": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 30,
+        "source_id": "S-INFER",
+        "value": 190
+      },
+      "chord_tip": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway \u2014 wide-chord",
+        "sigma": 40,
+        "source_id": "S-INFER",
+        "value": 300
+      },
+      "n_blades": {
+        "grade": "E1_measured",
+        "locator": "proportion from public cutaway",
+        "sigma": 0,
+        "source_id": "S-INFER",
+        "value": 24
+      },
+      "r_hub": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 25,
+        "source_id": "S-INFER",
+        "value": 235
+      },
+      "r_tip": {
+        "grade": "E1_measured",
+        "locator": "proportion from public cutaway \u2014 61.0 in diameter minus tip gap",
+        "sigma": 2,
+        "source_id": "S-INFER",
+        "value": 770.7
+      },
+      "stagger_root": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway \u2014 deg from axial",
+        "sigma": 8,
+        "source_id": "S-INFER",
+        "value": 25
+      },
+      "stagger_tip": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway \u2014 deg from axial",
+        "sigma": 8,
+        "source_id": "S-INFER",
+        "value": 62
+      },
+      "t_root": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 6,
+        "source_id": "S-INFER",
+        "value": 22
+      },
+      "t_tip": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 2,
+        "source_id": "S-INFER",
+        "value": 6
+      },
+      "x_le": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 10,
+        "source_id": "S-INFER",
+        "value": 0
+      }
+    }
+  },
+  {
+    "id": "p-gearbox",
+    "feature_id": "f-gearbox",
+    "critical": false,
+    "applies_to": "cfm-cfm56-7b-1997-7b27",
+    "technology_family": "two-spool high-bypass separate-flow turbofan",
+    "component_type": "accessory_gearbox",
+    "units": "mm",
+    "cad_tool": "CadQuery 2.8 (OCCT) \u2014 STEP AP214 for CATIA import",
+    "mesh_object_id": "accessory_gearbox",
+    "source_ids": [
+      "S-INFER"
+    ],
+    "cad": {
+      "path": "cad/parts/p-gearbox.py",
+      "sha256": "1e390a129604496117bd1016055f56bc35659d9c0c41b77e90cbe556a0ed1745"
+    },
+    "step": {
+      "path": "cad/step/p-gearbox.step",
+      "sha256": "92d7ddfef4cc4b4867da454a5f5b94dd7b57cb9da2fc3680dc8e02d957c197c6"
+    },
+    "glb": {
+      "path": "cad/glb/p-gearbox.glb",
+      "sha256": "5da52bcda77ad8022575ee8b3209fe6c6e374d3431e3ac8cb6eecd20b46b4094"
+    },
+    "parameters": {
+      "depth": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 50,
+        "source_id": "S-INFER",
+        "value": 260
+      },
+      "height": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 40,
+        "source_id": "S-INFER",
+        "value": 170
+      },
+      "length": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 80,
+        "source_id": "S-INFER",
+        "value": 480
+      },
+      "x_c": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 60,
+        "source_id": "S-INFER",
+        "value": 260
+      }
+    }
+  },
+  {
+    "id": "p-hp-shaft",
+    "feature_id": "f-hp-shaft",
+    "critical": true,
+    "applies_to": "cfm-cfm56-7b-1997-7b27",
+    "technology_family": "two-spool high-bypass separate-flow turbofan",
+    "component_type": "high_pressure_spool_drum",
+    "units": "mm",
+    "cad_tool": "CadQuery 2.8 (OCCT) \u2014 STEP AP214 for CATIA import",
+    "mesh_object_id": "hp_spool",
+    "source_ids": [
+      "S-INFER"
+    ],
+    "cad": {
+      "path": "cad/parts/p-hp-shaft.py",
+      "sha256": "427def4a9d58802b5acd69074ce0f741d5f1fba85c36917b1c6541a4de21746d"
+    },
+    "step": {
+      "path": "cad/step/p-hp-shaft.step",
+      "sha256": "f59080b37432da0ed14a0cb006f5ff6ddf741f2230ed001fe8f6f1162a241277"
+    },
+    "glb": {
+      "path": "cad/glb/p-hp-shaft.glb",
+      "sha256": "2a0dc551de4f8e2ce3a616158ed47db6698bbc228b43f29161bceab27b4781b0"
+    },
+    "parameters": {
+      "r_in": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 15,
+        "source_id": "S-INFER",
+        "value": 80
+      },
+      "r_out": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 20,
+        "source_id": "S-INFER",
+        "value": 175
+      },
+      "x0": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 40,
+        "source_id": "S-INFER",
+        "value": 630
+      },
+      "x1": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 40,
+        "source_id": "S-INFER",
+        "value": 1530
+      }
+    }
+  },
+  {
+    "id": "p-hpc",
+    "feature_id": "f-hpc",
+    "critical": true,
+    "applies_to": "cfm-cfm56-7b-1997-7b27",
+    "technology_family": "two-spool high-bypass separate-flow turbofan",
+    "component_type": "axial_compressor_rows",
+    "units": "mm",
+    "cad_tool": "CadQuery 2.8 (OCCT) \u2014 STEP AP214 for CATIA import",
+    "mesh_object_id": "hp_compressor",
+    "source_ids": [
+      "S-INFER"
+    ],
+    "cad": {
+      "path": "cad/parts/p-hpc.py",
+      "sha256": "f52c9eeeb57c3328b239220e301f9338df716a99b97b6fd1906871e47cf4f3ea"
+    },
+    "step": {
+      "path": "cad/step/p-hpc.step",
+      "sha256": "e0a600ec5ea4050841f2e15a42a894a59cd4c86b302c5025eb28d8ec6a1d6ed1"
+    },
+    "glb": {
+      "path": "cad/glb/p-hpc.glb",
+      "sha256": "1e4efac0325f8af09be8cae78d1164cb2b998e44560712426738a6ec888a3293"
+    },
+    "parameters": {
+      "hub0": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 20,
+        "source_id": "S-INFER",
+        "value": 175
+      },
+      "hub1": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 20,
+        "source_id": "S-INFER",
+        "value": 245
+      },
+      "n_stages": {
+        "grade": "E1_measured",
+        "locator": "proportion from public cutaway",
+        "sigma": 0,
+        "source_id": "S-INFER",
+        "value": 9
+      },
+      "pitch": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 10,
+        "source_id": "S-INFER",
+        "value": 58
+      },
+      "tip0": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 20,
+        "source_id": "S-INFER",
+        "value": 290
+      },
+      "tip1": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 20,
+        "source_id": "S-INFER",
+        "value": 270
+      },
+      "width": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 8,
+        "source_id": "S-INFER",
+        "value": 32
+      },
+      "x0": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 40,
+        "source_id": "S-INFER",
+        "value": 640
+      }
+    }
+  },
+  {
+    "id": "p-hpt",
+    "feature_id": "f-hpt",
+    "critical": true,
+    "applies_to": "cfm-cfm56-7b-1997-7b27",
+    "technology_family": "two-spool high-bypass separate-flow turbofan",
+    "component_type": "axial_turbine_rows",
+    "units": "mm",
+    "cad_tool": "CadQuery 2.8 (OCCT) \u2014 STEP AP214 for CATIA import",
+    "mesh_object_id": "hp_turbine",
+    "source_ids": [
+      "S-INFER"
+    ],
+    "cad": {
+      "path": "cad/parts/p-hpt.py",
+      "sha256": "2dfd3fc721019a4d06d4ada09517687813f486dc46254ab301c063831ab7f34b"
+    },
+    "step": {
+      "path": "cad/step/p-hpt.step",
+      "sha256": "5267780dee29fc2c345eec45860ea70cea119952e000cf74b6c4322db9abd4a9"
+    },
+    "glb": {
+      "path": "cad/glb/p-hpt.glb",
+      "sha256": "e97b6570d6858e8f458f2336179eb10c2f28cd7dbe7192e2f6427fd6d5f6a5e3"
+    },
+    "parameters": {
+      "hub": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 20,
+        "source_id": "S-INFER",
+        "value": 255
+      },
+      "n_stages": {
+        "grade": "E1_measured",
+        "locator": "proportion from public cutaway",
+        "sigma": 0,
+        "source_id": "S-INFER",
+        "value": 1
+      },
+      "tip": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 20,
+        "source_id": "S-INFER",
+        "value": 345
+      },
+      "width": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 10,
+        "source_id": "S-INFER",
+        "value": 55
+      },
+      "x0": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 30,
+        "source_id": "S-INFER",
+        "value": 1470
+      }
+    }
+  },
+  {
+    "id": "p-lp-shaft",
+    "feature_id": "f-lp-shaft",
+    "critical": true,
+    "applies_to": "cfm-cfm56-7b-1997-7b27",
+    "technology_family": "two-spool high-bypass separate-flow turbofan",
+    "component_type": "low_pressure_shaft",
+    "units": "mm",
+    "cad_tool": "CadQuery 2.8 (OCCT) \u2014 STEP AP214 for CATIA import",
+    "mesh_object_id": "lp_shaft",
+    "source_ids": [
+      "S-INFER"
+    ],
+    "cad": {
+      "path": "cad/parts/p-lp-shaft.py",
+      "sha256": "6d50a9c15a2cb08c93cc219eda55ad12d00612fd667451c7440cd2de98acf1fe"
+    },
+    "step": {
+      "path": "cad/step/p-lp-shaft.step",
+      "sha256": "654529c708dc3667945cfa78ee008966f0f937456ba6a53ecf5cd149f4f243b4"
+    },
+    "glb": {
+      "path": "cad/glb/p-lp-shaft.glb",
+      "sha256": "46c5ca97c6ebb2c753e335b7691b31d64b6c255f324d9de52d77c81fefde21cd"
+    },
+    "parameters": {
+      "r": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 10,
+        "source_id": "S-INFER",
+        "value": 48
+      },
+      "r_bore": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 8,
+        "source_id": "S-INFER",
+        "value": 30
+      },
+      "x0": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 20,
+        "source_id": "S-INFER",
+        "value": -20
+      },
+      "x1": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 60,
+        "source_id": "S-INFER",
+        "value": 2000
+      }
+    }
+  },
+  {
+    "id": "p-lpt",
+    "feature_id": "f-lpt",
+    "critical": true,
+    "applies_to": "cfm-cfm56-7b-1997-7b27",
+    "technology_family": "two-spool high-bypass separate-flow turbofan",
+    "component_type": "axial_turbine_rows",
+    "units": "mm",
+    "cad_tool": "CadQuery 2.8 (OCCT) \u2014 STEP AP214 for CATIA import",
+    "mesh_object_id": "lp_turbine",
+    "source_ids": [
+      "S-INFER"
+    ],
+    "cad": {
+      "path": "cad/parts/p-lpt.py",
+      "sha256": "14e5cbc9220d96445481a2275134cf4a9106215453ee3559896bd93c8d8b048c"
+    },
+    "step": {
+      "path": "cad/step/p-lpt.step",
+      "sha256": "49915b6d55a5742ea5f6c20b9d1ba6d17b2daa498b3be79775272bab198a5dcc"
+    },
+    "glb": {
+      "path": "cad/glb/p-lpt.glb",
+      "sha256": "0bea2a7246e8c32111af51b6c52f1fd141f80d19504dc7365a87e71bd01021b8"
+    },
+    "parameters": {
+      "hub0": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 20,
+        "source_id": "S-INFER",
+        "value": 290
+      },
+      "hub1": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 20,
+        "source_id": "S-INFER",
+        "value": 300
+      },
+      "n_stages": {
+        "grade": "E1_measured",
+        "locator": "proportion from public cutaway",
+        "sigma": 0,
+        "source_id": "S-INFER",
+        "value": 4
+      },
+      "pitch": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 15,
+        "source_id": "S-INFER",
+        "value": 95
+      },
+      "tip0": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 25,
+        "source_id": "S-INFER",
+        "value": 395
+      },
+      "tip1": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 25,
+        "source_id": "S-INFER",
+        "value": 470
+      },
+      "width": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 10,
+        "source_id": "S-INFER",
+        "value": 55
+      },
+      "x0": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 40,
+        "source_id": "S-INFER",
+        "value": 1580
+      }
+    }
+  },
+  {
+    "id": "p-nacelle-inlet",
+    "feature_id": "f-nacelle-inlet",
+    "critical": false,
+    "applies_to": "cfm-cfm56-7b-1997-7b27",
+    "technology_family": "two-spool high-bypass separate-flow turbofan",
+    "component_type": "nacelle_inlet",
+    "units": "mm",
+    "cad_tool": "CadQuery 2.8 (OCCT) \u2014 STEP AP214 for CATIA import",
+    "mesh_object_id": "inlet_cowl",
+    "source_ids": [
+      "S-INFER"
+    ],
+    "cad": {
+      "path": "cad/parts/p-nacelle-inlet.py",
+      "sha256": "20662dda655c05be083809c2aba50534cced3ca85088e75233610fe73ab4415b"
+    },
+    "step": {
+      "path": "cad/step/p-nacelle-inlet.step",
+      "sha256": "ec2031b69de7039013121d8cec5e656862c3835fa151d852688f798753c69ba9"
+    },
+    "glb": {
+      "path": "cad/glb/p-nacelle-inlet.glb",
+      "sha256": "bbb7ea17e17ce844e49ad3f33b1a2d04e275bc2a15e47ee2254d229320d1cb35"
+    },
+    "parameters": {
+      "r_hl": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway \u2014 highlight radius",
+        "sigma": 30,
+        "source_id": "S-INFER",
+        "value": 735
+      },
+      "r_out": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 40,
+        "source_id": "S-INFER",
+        "value": 930
+      },
+      "r_throat": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 25,
+        "source_id": "S-INFER",
+        "value": 720
+      },
+      "x_aft": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 30,
+        "source_id": "S-INFER",
+        "value": -160
+      },
+      "x_hl": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 60,
+        "source_id": "S-INFER",
+        "value": -950
+      }
+    }
+  },
+  {
+    "id": "p-spinner",
+    "feature_id": "f-spinner",
+    "critical": false,
+    "applies_to": "cfm-cfm56-7b-1997-7b27",
+    "technology_family": "two-spool high-bypass separate-flow turbofan",
+    "component_type": "spinner_cone",
+    "units": "mm",
+    "cad_tool": "CadQuery 2.8 (OCCT) \u2014 STEP AP214 for CATIA import",
+    "mesh_object_id": "spinner",
+    "source_ids": [
+      "S-INFER"
+    ],
+    "cad": {
+      "path": "cad/parts/p-spinner.py",
+      "sha256": "be96acb0eae2d1c94e3bb700c42ac423b0d6b167557032db3ad00f6649df6611"
+    },
+    "step": {
+      "path": "cad/step/p-spinner.step",
+      "sha256": "b6dcf0ba39b09d0e576a95b5bacaccc1aeb5b82aa100b156bc0d25352ed25902"
+    },
+    "glb": {
+      "path": "cad/glb/p-spinner.glb",
+      "sha256": "2ebb8a35e72c2b735c58e702bf6231648f3635abe138f5a61de47c7b12896d69"
+    },
+    "parameters": {
+      "length": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 40,
+        "source_id": "S-INFER",
+        "value": 330
+      },
+      "r_base": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway \u2014 hub/tip ~0.3 of fan radius",
+        "sigma": 25,
+        "source_id": "S-INFER",
+        "value": 235
+      },
+      "x_base": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 20,
+        "source_id": "S-INFER",
+        "value": -40
+      }
+    }
+  },
+  {
+    "id": "p-thrust-reverser",
+    "feature_id": "f-thrust-reverser",
+    "critical": false,
+    "applies_to": "cfm-cfm56-7b-1997-7b27",
+    "technology_family": "two-spool high-bypass separate-flow turbofan",
+    "component_type": "cascade_thrust_reverser_sleeve",
+    "units": "mm",
+    "cad_tool": "CadQuery 2.8 (OCCT) \u2014 STEP AP214 for CATIA import",
+    "mesh_object_id": "fan_cowl_reverser",
+    "source_ids": [
+      "S-INFER"
+    ],
+    "cad": {
+      "path": "cad/parts/p-thrust-reverser.py",
+      "sha256": "3702542fc28f1c9326f05de31679493fcdf575fa88eeb6ecd86da4fa6f227b88"
+    },
+    "step": {
+      "path": "cad/step/p-thrust-reverser.step",
+      "sha256": "ffdb967b4fe90908df7524911c3b6599507cca655342d9fb1f34eb5891b77519"
+    },
+    "glb": {
+      "path": "cad/glb/p-thrust-reverser.glb",
+      "sha256": "acc1b9baa6be4ccbbe5a8f3caa6f46bd31a5af3c329e06f518980ce9c55a7ea3"
+    },
+    "parameters": {
+      "r_in0": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 10,
+        "source_id": "S-INFER",
+        "value": 819.7
+      },
+      "r_in1": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 40,
+        "source_id": "S-INFER",
+        "value": 760
+      },
+      "r_out0": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 40,
+        "source_id": "S-INFER",
+        "value": 930
+      },
+      "r_out1": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 40,
+        "source_id": "S-INFER",
+        "value": 790
+      },
+      "x0": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway",
+        "sigma": 30,
+        "source_id": "S-INFER",
+        "value": -160
+      },
+      "x1": {
+        "grade": "E3_inferred",
+        "locator": "proportion from public cutaway \u2014 fan nozzle exit",
+        "sigma": 80,
+        "source_id": "S-INFER",
+        "value": 1850
+      }
+    }
+  }
+]

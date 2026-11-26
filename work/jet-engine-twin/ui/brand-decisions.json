@@ -1,0 +1,8 @@
+{
+  "brand_reasoning": "TODO which official brand/product-photography sources informed light, material and type",
+  "restraint_rule": "background supports the object; no logo-colour fill; no overlays",
+  "hero_scene_rule": "canvas fills the viewport; the model is the only interface",
+  "references": [
+    "S-TODO brand_guide"
+  ]
+}
