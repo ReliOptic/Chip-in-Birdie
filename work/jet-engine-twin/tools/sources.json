@@ -1,1 +1,62 @@
-{}
+{
+ "fan_diameter": {
+  "source_id": "S018",
+  "locator": "CFM56-7B Characteristics panel: fan diameter 61 in"
+ },
+ "fan_blades": {
+  "source_id": "S006",
+  "locator": "AAR-19/03 \u00a71.3.1 p.11: fan disk has 24 fan blade slots"
+ },
+ "chord": {
+  "source_id": "S006",
+  "locator": "AAR-19/03 \u00a71.3.1 p.11: blade chord ~11 in"
+ },
+ "booster_stages": {
+  "source_id": "S001",
+  "locator": "EASA TCDS E.004 \u00a7III.2 p.13: 3-stage LPC"
+ },
+ "hpc_stages": {
+  "source_id": "S001",
+  "locator": "EASA TCDS E.004 \u00a7III.2 p.13: 9-stage HPC"
+ },
+ "hpt_stages": {
+  "source_id": "S001",
+  "locator": "EASA TCDS E.004 \u00a7III.2 p.13: 1-stage HPT"
+ },
+ "lpt_stages": {
+  "source_id": "S001",
+  "locator": "EASA TCDS E.004 \u00a7III.2 p.13: 4-stage LPT"
+ },
+ "length": {
+  "source_id": "S001",
+  "locator": "EASA TCDS E.004 \u00a7III.4 p.13: length 2508 mm (datum assumed = fan-case front flange)"
+ },
+ "height": {
+  "source_id": "S001",
+  "locator": "EASA TCDS E.004 \u00a7III.4 p.13: height 1829 mm (assumed fan-case top to gearbox bottom)"
+ },
+ "gearbox": {
+  "source_id": "S013",
+  "locator": "EASA AD on accessory gearbox: gearbox exists; position/size not stated"
+ },
+ "nacelle": {
+  "source_id": "S006",
+  "locator": "AAR-19/03 \u00a71.3.2 p.14: inlet construction (Al lip, Ti bulkhead); no dimensions"
+ },
+ "reverser": {
+  "source_id": "S015",
+  "locator": "EASA 737 TCDS p.21: thrust reverser cascades; no dimensions"
+ },
+ "material:p-fan": {
+  "source_id": "S006",
+  "locator": "AAR-19/03 \u00a71.3.1 p.11: Ti-6Al-4V blades"
+ },
+ "material:p-fan-case": {
+  "source_id": "S006",
+  "locator": "AAR-19/03 \u00a71.3.1 p.12: aluminium fan case"
+ },
+ "material:p-nacelle-inlet": {
+  "source_id": "S006",
+  "locator": "AAR-19/03 \u00a71.3.2 p.14: aluminium inlet lip"
+ }
+}

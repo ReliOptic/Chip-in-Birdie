@@ -1,0 +1,1 @@
+The ICAO Engine Emissions Databank contains information on exhaust emissions of only those engines that have entered production, irrespective of the numbers actually produced. It has been compiled mainly from information supplied for newly certified engines.

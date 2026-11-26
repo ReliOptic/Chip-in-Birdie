@@ -1,0 +1,2 @@
+{"part_id": "p-combustor-dac", "component_type": "dual_annular_combustor", "applies_to": "cfm-cfm56-7b-1997-7b27",
+ "claim": "DAC combustor injected into -7B27 BOM", "why_invalid": "DAC is the -7B27/2 configuration; -7B27 uses SAC (S001 §I.1, §III.2)"}

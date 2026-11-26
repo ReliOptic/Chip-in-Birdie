@@ -1,0 +1,1 @@
+CFM has published CFM International Service Bulletin (SB) CFM56-7B S/B 72-1033, Revision 3, dated November 6, 2018, to reduce the initial inspection requirement from 20,000 cycles since new (CSN) to 17,000 CSN.

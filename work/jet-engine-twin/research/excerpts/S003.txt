@@ -1,0 +1,1 @@
+The xx number in the variant designation CFM56-7Bxx indicates the engine thrust rating in 1000 pounds. The variants are physically identical, the thrust rating is determined (or changed) by the ID plug.

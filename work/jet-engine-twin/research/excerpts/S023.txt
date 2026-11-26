@@ -1,0 +1,1 @@
+-7B18 | 737-600/700/800 | Max thrust 18,500 | Bypass Ratio 5.6 | Pressure Ratio 32.3 | Length 98.7 | Dia (fan) 61.0 | Weight 5216 lb

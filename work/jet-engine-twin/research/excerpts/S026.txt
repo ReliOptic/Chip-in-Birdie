@@ -1,0 +1,1 @@
+The variants built for the Boeing 737, the CFM56-3 and the CFM56-7, use a cascade type of thrust reverser. This type of thrust reverse consists of sleeves that slide back to expose mesh-like cascades and blocker doors that block the bypass air flow.

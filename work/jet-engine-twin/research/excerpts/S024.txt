@@ -1,0 +1,1 @@
+Engine Model 7B20 | Thrust 20600+ lb | Bypass ratio 5.40 | Pressure ratio 29.40 | Mass flow (lb/s) 781 | Length (m) 2.499 | Fan diameter (m) 1.651 | Basic eng.wt. (lb) 5234

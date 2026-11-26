@@ -26,7 +26,7 @@
     "uncertainty": "worst parameter grade E3_inferred; max σ 40 mm",
     "cad_parameters": "see cad/parts/p-spinner.py PARAMS",
     "source_ids": [
-      "S-INFER"
+      "INFERRED-NO-SOURCE"
     ],
     "assembly_axis": [
       -1,
@@ -52,14 +52,10 @@
     "label": "Fan, 24 wide-chord blades",
     "evidence_grade": "E3_inferred",
     "confidence": 0.45,
-    "sigma_m": 0.04,
+    "sigma_m": 0.03,
     "missing": [
       {
         "what": "chord_root (190 mm ±30)",
-        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
-      },
-      {
-        "what": "chord_tip (300 mm ±40)",
         "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
       },
       {
@@ -69,15 +65,21 @@
       {
         "what": "stagger_root (25 mm ±8)",
         "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
+      },
+      {
+        "what": "stagger_tip (62 mm ±8)",
+        "resolves_with": "exact-variant drawing, measured section, or service-manual figure"
       }
     ],
     "geometry_decision": "24 lofted blades, twist root→tip; count and diameter sourced, airfoil inferred.",
-    "material_decision": "solid titanium wide-chord blades (grade E3_inferred)",
+    "material_decision": "solid titanium wide-chord blades (grade E2_photomatched)",
     "physics_rationale": "fan stage of cycle: FPR, η_fan; N1 spool",
-    "uncertainty": "worst parameter grade E3_inferred; max σ 40 mm",
+    "uncertainty": "worst parameter grade E3_inferred; max σ 30 mm",
     "cad_parameters": "see cad/parts/p-fan.py PARAMS",
     "source_ids": [
-      "S-INFER"
+      "INFERRED-NO-SOURCE",
+      "S006",
+      "S018"
     ],
     "assembly_axis": [
       -1,
@@ -119,12 +121,14 @@
       }
     ],
     "geometry_decision": "Annular case at fan tip radius; wall thickness inferred.",
-    "material_decision": "aluminium fan case (containment) (grade E3_inferred)",
+    "material_decision": "aluminium fan case (containment) (grade E2_photomatched)",
     "physics_rationale": "static; reference frame of assembly",
     "uncertainty": "worst parameter grade E3_inferred; max σ 50 mm",
     "cad_parameters": "see cad/parts/p-fan-case.py PARAMS",
     "source_ids": [
-      "S-INFER"
+      "INFERRED-NO-SOURCE",
+      "S006",
+      "S018"
     ],
     "assembly_axis": [
       0,
@@ -170,12 +174,13 @@
       }
     ],
     "geometry_decision": "Revolved lip; 737NG flattened lower lip not yet modelled.",
-    "material_decision": "aluminium/composite nacelle skin, painted (grade E3_inferred)",
+    "material_decision": "aluminium/composite nacelle skin, painted (grade E2_photomatched)",
     "physics_rationale": "inlet total-pressure recovery π_d",
     "uncertainty": "worst parameter grade E3_inferred; max σ 60 mm",
     "cad_parameters": "see cad/parts/p-nacelle-inlet.py PARAMS",
     "source_ids": [
-      "S-INFER"
+      "INFERRED-NO-SOURCE",
+      "S006"
     ],
     "assembly_axis": [
       -1,
@@ -226,7 +231,8 @@
     "uncertainty": "worst parameter grade E3_inferred; max σ 80 mm",
     "cad_parameters": "see cad/parts/p-thrust-reverser.py PARAMS",
     "source_ids": [
-      "S-INFER"
+      "INFERRED-NO-SOURCE",
+      "S006"
     ],
     "assembly_axis": [
       1,
@@ -277,7 +283,8 @@
     "uncertainty": "worst parameter grade E3_inferred; max σ 30 mm",
     "cad_parameters": "see cad/parts/p-booster.py PARAMS",
     "source_ids": [
-      "S-INFER"
+      "INFERRED-NO-SOURCE",
+      "S001"
     ],
     "assembly_axis": [
       -1,
@@ -328,7 +335,8 @@
     "uncertainty": "worst parameter grade E3_inferred; max σ 40 mm",
     "cad_parameters": "see cad/parts/p-hpc.py PARAMS",
     "source_ids": [
-      "S-INFER"
+      "INFERRED-NO-SOURCE",
+      "S001"
     ],
     "assembly_axis": [
       0,
@@ -379,7 +387,7 @@
     "uncertainty": "worst parameter grade E3_inferred; max σ 40 mm",
     "cad_parameters": "see cad/parts/p-combustor.py PARAMS",
     "source_ids": [
-      "S-INFER"
+      "INFERRED-NO-SOURCE"
     ],
     "assembly_axis": [
       1,
@@ -430,7 +438,8 @@
     "uncertainty": "worst parameter grade E3_inferred; max σ 30 mm",
     "cad_parameters": "see cad/parts/p-hpt.py PARAMS",
     "source_ids": [
-      "S-INFER"
+      "INFERRED-NO-SOURCE",
+      "S001"
     ],
     "assembly_axis": [
       1,
@@ -481,7 +490,8 @@
     "uncertainty": "worst parameter grade E3_inferred; max σ 40 mm",
     "cad_parameters": "see cad/parts/p-lpt.py PARAMS",
     "source_ids": [
-      "S-INFER"
+      "INFERRED-NO-SOURCE",
+      "S001"
     ],
     "assembly_axis": [
       1,
@@ -532,7 +542,7 @@
     "uncertainty": "worst parameter grade E3_inferred; max σ 60 mm",
     "cad_parameters": "see cad/parts/p-core-cowl.py PARAMS",
     "source_ids": [
-      "S-INFER"
+      "INFERRED-NO-SOURCE"
     ],
     "assembly_axis": [
       0,
@@ -583,7 +593,8 @@
     "uncertainty": "worst parameter grade E3_inferred; max σ 60 mm",
     "cad_parameters": "see cad/parts/p-exhaust-nozzle.py PARAMS",
     "source_ids": [
-      "S-INFER"
+      "INFERRED-NO-SOURCE",
+      "S001"
     ],
     "assembly_axis": [
       1,
@@ -630,7 +641,7 @@
     "uncertainty": "worst parameter grade E3_inferred; max σ 60 mm",
     "cad_parameters": "see cad/parts/p-exhaust-plug.py PARAMS",
     "source_ids": [
-      "S-INFER"
+      "INFERRED-NO-SOURCE"
     ],
     "assembly_axis": [
       1,
@@ -681,7 +692,7 @@
     "uncertainty": "worst parameter grade E3_inferred; max σ 60 mm",
     "cad_parameters": "see cad/parts/p-lp-shaft.py PARAMS",
     "source_ids": [
-      "S-INFER"
+      "INFERRED-NO-SOURCE"
     ],
     "assembly_axis": [
       1,
@@ -732,7 +743,7 @@
     "uncertainty": "worst parameter grade E3_inferred; max σ 40 mm",
     "cad_parameters": "see cad/parts/p-hp-shaft.py PARAMS",
     "source_ids": [
-      "S-INFER"
+      "INFERRED-NO-SOURCE"
     ],
     "assembly_axis": [
       0,
@@ -783,7 +794,9 @@
     "uncertainty": "worst parameter grade E3_inferred; max σ 80 mm",
     "cad_parameters": "see cad/parts/p-gearbox.py PARAMS",
     "source_ids": [
-      "S-INFER"
+      "INFERRED-NO-SOURCE",
+      "S001",
+      "S013"
     ],
     "assembly_axis": [
       0,

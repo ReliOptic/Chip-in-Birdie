@@ -1,0 +1,1 @@
+3CM034 | CFM56-7B27 | TF | B/P 5 | PR 28.63 | Rated Thrust 121.44 kN | Fuel Flow T/O 1.284 kg/s | C/O 1.043 | App 0.349 | Idle 0.116 | Fuel LTO Cycle 456 kg | NOx EI T/O 30.9 g/kg | Test: Peebles Test Operation, Ohio | Remark: FAA Certification Report CR-997, Dec 96

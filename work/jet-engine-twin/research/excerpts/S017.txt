@@ -1,0 +1,1 @@
+The referenced Part List for each CFM engine model will reflect identical engine configurations on the FAA and on the EASA TCDSs

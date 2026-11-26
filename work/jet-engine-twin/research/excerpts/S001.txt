@@ -1,0 +1,1 @@
+Dual rotor, axial flow, high bypass ratio turbofan engine: single stage fan, 3-stage low pressure compressor (LPC), 9-stage high pressure compressor (HPC); annular combustion chamber; single stage high pressure turbine (HPT), 4-stage low pressure turbine (LPT). [...] Low pressure rotor (N1) 5382 (104 %) High pressure rotor (N2) 15183 (105 %)

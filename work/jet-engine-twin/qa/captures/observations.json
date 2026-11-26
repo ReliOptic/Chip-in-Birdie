@@ -1,0 +1,94 @@
+{
+  "schema": "dta.capture/v1",
+  "dist": "/home/user/Chip-in-Birdie/work/jet-engine-twin/dist",
+  "captures": [
+    "01-first-frame-desktop.png",
+    "02-lift-out.png",
+    "03-blocker-map.png",
+    "04-exploded.png",
+    "05-first-frame-mobile.png"
+  ],
+  "runtime": {
+    "renderer": "threejs-webgl",
+    "context": "WebGL2RenderingContext"
+  },
+  "layout": {
+    "real_3d_canvas_primary": true,
+    "canvas_viewport_fraction": 1,
+    "min_visible_hero_fraction": 0.41760416666666667,
+    "persistent_chrome_elements": [],
+    "no_persistent_text_or_widget_chrome": true,
+    "mobile_subject_fraction": 0.6456343419613562,
+    "mobile_canvas_viewport_fraction": 1,
+    "desktop_and_mobile_captured": true
+  },
+  "interaction": {
+    "pointer_hover_opened": true,
+    "touch_tap_opened": true,
+    "keyboard_select_opened": true,
+    "rationale_matches_selected_part": true,
+    "max_label_words": 1,
+    "max_pick_response_ms": 13.5,
+    "probed_part": "p-spinner"
+  },
+  "evidence": {
+    "rendered_grade_matches_cards": true,
+    "unknown_parts_render_envelope_only": true,
+    "blocker_map_lights_only_missing_parts": false,
+    "shell_sigma_relative_error": 0,
+    "evidenced_volume_share": 0,
+    "volume_share_by_grade": {
+      "E1_measured": 0,
+      "E2_photomatched": 0,
+      "E3_inferred": 1,
+      "E4_unknown": 0
+    },
+    "blocker_parts": [
+      "p-spinner",
+      "p-fan",
+      "p-fan-case",
+      "p-nacelle-inlet",
+      "p-thrust-reverser",
+      "p-booster",
+      "p-hpc",
+      "p-combustor",
+      "p-hpt",
+      "p-lpt",
+      "p-core-cowl",
+      "p-exhaust-nozzle",
+      "p-exhaust-plug",
+      "p-lp-shaft",
+      "p-hp-shaft",
+      "p-gearbox"
+    ]
+  },
+  "explode": {
+    "factor_reached": 1,
+    "moved_parts": [
+      "p-spinner",
+      "p-fan",
+      "p-fan-case",
+      "p-nacelle-inlet",
+      "p-thrust-reverser",
+      "p-booster",
+      "p-hpc",
+      "p-combustor",
+      "p-hpt",
+      "p-lpt",
+      "p-core-cowl",
+      "p-exhaust-nozzle",
+      "p-exhaust-plug",
+      "p-lp-shaft",
+      "p-hp-shaft",
+      "p-gearbox"
+    ]
+  },
+  "errors": [],
+  "glb_validation": {
+    "skipped": "gltf-validator not installed"
+  },
+  "failed_truths": [
+    "evidence.blocker_map_lights_only_missing_parts"
+  ],
+  "captured_at": "2026-11-26T18:47:13.494Z"
+}

@@ -30,14 +30,15 @@ export function createPhysics(THREE, root, data) {
   return {
     state,
     step(t) {
-      const dt = state.last == null ? 0 : Math.min(0.05, t - state.last); state.last = t;
+      // wall-clock dt (slow renderers must not slow the engine); explicit Euler in ≤20 ms substeps, same as solver.transient
+      const dt = state.last == null ? 0 : Math.min(1, t - state.last); state.last = t;
       const demand = lo + (hi - lo) * state.throttle;
-      state.n2 += (demand - state.n2) * dt / tau;
+      for (let k = Math.ceil(dt / 0.02), h = dt / Math.max(k, 1); k > 0; k--) state.n2 += (demand - state.n2) * h / tau;
       const r = (state.row = lerpRow(state.n2));
       state.phase1 += 2 * Math.PI * (r.N1_rpm / 60) * dt * timeScale;
       state.phase2 += 2 * Math.PI * (r.N2_rpm / 60) * dt * timeScale;
-      for (const m of n1Parts) m.rotation.x = state.phase1;
-      for (const m of n2Parts) m.rotation.x = state.phase2;
+      for (const m of n1Parts) m.rotation.x = data.rotation_sign * state.phase1;
+      for (const m of n2Parts) m.rotation.x = data.rotation_sign * state.phase2;
       for (const [m, k] of hot) {
         const g = glow(r[k]);
         if (m.material.emissive) { m.material.emissive.setRGB(1.0 * g, 0.38 * g * g, 0.08 * g * g * g); m.material.emissiveIntensity = 1.6 * g; }

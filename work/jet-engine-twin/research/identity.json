@@ -1,28 +1,62 @@
 {
   "schema": "dta.identity/v1",
   "id": "cfm-cfm56-7b-1997-7b27",
-  "maker": "TODO",
-  "model": "TODO",
-  "variant": "TODO",
-  "technology_family": "TODO",
-  "build_years": "TODO",
-  "subsystem_boundary": "TODO: what is inside/outside this twin",
-  "operating_mode": "TODO",
+  "maker": "CFM International (GE / Safran Aircraft Engines)",
+  "model": "CFM56-7B",
+  "variant": "CFM56-7B27 (single annular combustor, SAC)",
+  "technology_family": "two-spool high-bypass separate-flow turbofan",
+  "build_years": "1997– (type certificated; exact production span not pinned)",
+  "subsystem_boundary": "bare engine + Boeing 737NG inlet, fan cowl/thrust reverser, exhaust; pylon, aircraft systems, FADEC internals excluded",
+  "operating_mode": "sea-level static ISA, idle → takeoff (research simulation, not live data)",
   "excluded_families": [
-    "TODO incompatible technology family"
+    "CFM56-7B27/2 DAC",
+    "CFM56-3 (737 Classic)",
+    "CFM56-5B (A320)",
+    "LEAP-1B"
   ],
   "forbidden_component_types": [
-    "TODO component class this variant never has"
+    "dual_annular_combustor",
+    "geared_fan_reduction",
+    "mixed_flow_long_duct_nozzle",
+    "composite_3d_woven_fan_blade"
   ],
   "applicability_table": [
     {
-      "claim": "TODO",
-      "status": "installed|compatible_family|principle_only|patent_proposal|unverified",
-      "source_id": "S-TODO"
+      "claim": "rated takeoff thrust 12143 daN",
+      "status": "installed",
+      "source_id": "S001"
+    },
+    {
+      "claim": "1+3 LPC, 9 HPC, 1 HPT, 4 LPT",
+      "status": "installed",
+      "source_id": "S001"
+    },
+    {
+      "claim": "24 Ti-6Al-4V fan blades",
+      "status": "installed",
+      "source_id": "S006"
+    },
+    {
+      "claim": "mass flow 781 lb/s",
+      "status": "compatible_family",
+      "source_id": "S024"
+    },
+    {
+      "claim": "fan diameter 61 in",
+      "status": "installed",
+      "source_id": "S018"
+    },
+    {
+      "claim": "22 fan blades (CFM web text, unread)",
+      "status": "unverified",
+      "source_id": "S026"
     }
   ],
   "open_identity_questions": [
-    "TODO"
+    "fan blade count 24 (NTSB/AD) vs 22 (Wikipedia fan section, unread CFM text) — 24 used",
+    "TCDS length datum (flange to flange?) assumed fan-case front flange",
+    "airflow of -7B27 specifically",
+    "accessory gearbox clock position"
   ],
-  "frozen_on": null
+  "frozen_on": "2026-11-26"
 }

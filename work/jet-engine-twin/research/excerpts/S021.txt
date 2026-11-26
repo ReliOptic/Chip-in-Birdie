@@ -1,0 +1,1 @@
+The CFM56-7B series uses a standard two-shaft design with a 61-inch diameter fan. Behind the fan is a three-stage low pressure compressor (LPC), a nine-stage high pressure compressor (HPC), a one-stage high pressure turbine (HPT), and a four-stage low pressure turbine (LPT)

@@ -45,14 +45,14 @@
     },
     {
       "id": "p-exhaust-nozzle",
-      "volume_m3": 0.01632842781703298,
-      "step_reimport_volume_relative_error": 5.537596585382569e-12,
+      "volume_m3": 0.01721906933432567,
+      "step_reimport_volume_relative_error": 1.6840433777348012e-12,
       "bbox_m": [
-        0.33106132818209266,
-        1.0010613281820928,
-        1.0008636579521584
+        0.3489814917981603,
+        1.0009814917981603,
+        1.0007838215682259
       ],
-      "triangles": 2686,
+      "triangles": 2844,
       "worst_param_grade": "E3_inferred",
       "max_sigma_m": 0.06,
       "unknown_params": []
@@ -87,22 +87,22 @@
     },
     {
       "id": "p-fan",
-      "volume_m3": 0.0893037312407725,
-      "step_reimport_volume_relative_error": 2.5646279765393746e-13,
+      "volume_m3": 0.07165014492822916,
+      "step_reimport_volume_relative_error": 6.453343985671693e-13,
       "bbox_m": [
         0.2504131078183245,
-        1.5613848477471224,
-        1.5613848477471226
+        1.5575252652173281,
+        1.5575252652173284
       ],
-      "triangles": 13514,
+      "triangles": 12238,
       "worst_param_grade": "E3_inferred",
-      "max_sigma_m": 0.04,
+      "max_sigma_m": 0.03,
       "unknown_params": []
     },
     {
       "id": "p-gearbox",
       "volume_m3": 0.021076508806208344,
-      "step_reimport_volume_relative_error": 3.535016479925351e-15,
+      "step_reimport_volume_relative_error": 3.711767303921619e-15,
       "bbox_m": [
         0.480009638175897,
         0.17000963817589695,
@@ -230,9 +230,9 @@
   "dist_exporter": "dta_glb.write_glb",
   "exchange_glb": {
     "path": "cad/assembly.glb",
-    "sha256": "8db13a7405ae9b937e1b4d95b1ae776c1fcf78cbf1314f81ee2adb6035e00035",
+    "sha256": "4afb9c86f12bf1a9bad580518117f917cd3f6c0310bd5d011bb17b9c7874e56d",
     "units": "mm",
     "exporter": "cadquery.Assembly.export (OCCT)"
   },
-  "dist_model_glb_sha256": "9695dba1e0aae0a7f07172de84dbfceb0ff2b14f3e1018eaf2f3bf2121692815"
+  "dist_model_glb_sha256": "4aa249d15c305ba5a72a00293ddd4ed6014a1bf1594d78c221e7d0fda9194e0d"
 }

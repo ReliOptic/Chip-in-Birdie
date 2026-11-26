@@ -30,7 +30,9 @@ def nozzle(m, Tt, Pt, P0, cp, g):
         Te = Tt * 2 / (g + 1); Pe = Pt / crit
     else:
         Pe = P0; Te = Tt * (P0 / Pt) ** ((g - 1) / g)
-    Ve = math.sqrt(2 * cp * (Tt - Te))
+    Ve = math.sqrt(max(2 * cp * (Tt - Te), 0.0))
+    if Ve < 1e-6:
+        return 0.0, 0.0, Te
     rho = Pe / (R * Te); A = m / (rho * Ve)
     return m * Ve + A * (Pe - P0), Ve, Te
 
@@ -50,7 +52,8 @@ def cycle(inp, n1=1.0):
     Pt2, Tt2 = P0 * pi_d, T0
     Tt13 = compress(Tt2, fpr, eta_f); Pt13 = Pt2 * fpr
     Tt3 = compress(Tt2, opr, eta_c); Pt3 = Pt2 * opr
-    f = (CP_H * T4 - CP_C * Tt3) / (eta_b * lhv - CP_H * T4)
+    # heat addition with one enthalpy reference (298.15 K): products' cp over T3→T4; fuel enters at reference
+    f = CP_H * (T4 - Tt3) / (eta_b * lhv - CP_H * (T4 - 298.15))
     Pt4 = Pt3 * pi_b
     mh = mc * (1 + f)
     # HPT drives core compression above the fan root (Tt25 ≈ Tt13 on the core streamline)

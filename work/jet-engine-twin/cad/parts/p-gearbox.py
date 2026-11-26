@@ -14,33 +14,39 @@ PART = {'applies_to': 'cfm-cfm56-7b-1997-7b27',
  'material': {'grade': 'E3_inferred',
               'name': 'aluminium/magnesium casting',
               'pbr': {'color': [0.5, 0.52, 0.5, 1], 'metallic': 0.7, 'roughness': 0.55},
-              'source_id': 'S-INFER'},
+              'source_id': 'INFERRED-NO-SOURCE'},
  'mesh_object_id': 'accessory_gearbox',
  'technology_family': 'two-spool high-bypass separate-flow turbofan',
  'units': 'mm'}
 
 PARAMS = {'depth': {'grade': 'E3_inferred',
-           'locator': 'proportion from public cutaway',
+           'locator': 'EASA AD on accessory gearbox: gearbox exists; position/size not stated',
            'sigma': 50,
-           'source_id': 'S-INFER',
+           'source_id': 'S013',
            'value': 260},
  'height': {'grade': 'E3_inferred',
-            'locator': 'proportion from public cutaway',
+            'locator': 'EASA AD on accessory gearbox: gearbox exists; position/size not stated',
             'sigma': 40,
-            'source_id': 'S-INFER',
+            'source_id': 'S013',
             'value': 170},
  'length': {'grade': 'E3_inferred',
-            'locator': 'proportion from public cutaway',
+            'locator': 'EASA AD on accessory gearbox: gearbox exists; position/size not stated',
             'sigma': 80,
-            'source_id': 'S-INFER',
+            'source_id': 'S013',
             'value': 480},
  'x_c': {'grade': 'E3_inferred',
-         'locator': 'proportion from public cutaway',
+         'locator': 'EASA AD on accessory gearbox: gearbox exists; position/size not stated',
          'sigma': 60,
-         'source_id': 'S-INFER',
-         'value': 260}}
+         'source_id': 'S013',
+         'value': 260},
+ 'y_bottom': {'grade': 'E2_photomatched',
+              'locator': 'EASA TCDS E.004 §III.4 p.13: height 1829 mm (assumed fan-case top to gearbox '
+                         'bottom) — bottom = case top - 1829',
+              'sigma': 40,
+              'source_id': 'S001',
+              'value': -1014.3}}
 
 
 def build(p):
     import cadquery as cq
-    return cq.Workplane("XY").box(p['length'], p['height'], p['depth']).edges("|Z").fillet(25).translate((p['x_c'], -(774.7 + 40 + p['height']/2), 0))
+    return cq.Workplane("XY").box(p['length'], p['height'], p['depth']).edges("|Z").fillet(25).translate((p['x_c'], p['y_bottom'] + p['height']/2, 0))

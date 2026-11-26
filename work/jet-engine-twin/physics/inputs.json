@@ -1,0 +1,156 @@
+{
+ "T0": {
+  "value": 288.15,
+  "sigma": 0,
+  "grade": "E1_measured",
+  "source_id": "S005",
+  "locator": "ICAO EEDB reference: ISA sea-level static"
+ },
+ "P0": {
+  "value": 101325,
+  "sigma": 0,
+  "grade": "E1_measured",
+  "source_id": "S005",
+  "locator": "ICAO EEDB reference: ISA sea-level static"
+ },
+ "mass_flow": {
+  "value": 354.3,
+  "sigma": 30,
+  "grade": "E3_inferred",
+  "source_id": "S024",
+  "locator": "Data B Table 1: 781 lb/s for -7B20 (family value, not -7B27)"
+ },
+ "bpr": {
+  "value": 5.0,
+  "sigma": 0.2,
+  "grade": "E1_measured",
+  "source_id": "S004",
+  "locator": "EDB v32B UID 3CM034 'B/P Ratio'"
+ },
+ "opr": {
+  "value": 28.63,
+  "sigma": 0.5,
+  "grade": "E1_measured",
+  "source_id": "S004",
+  "locator": "EDB v32B UID 3CM034 'Pressure Ratio'"
+ },
+ "fpr": {
+  "value": 1.65,
+  "sigma": 0.1,
+  "grade": "E3_inferred",
+  "source_id": "INFERRED-NO-SOURCE",
+  "locator": "typical BPR-5 fan pressure ratio; no -7B27 source read"
+ },
+ "T4": {
+  "value": 1590,
+  "sigma": 80,
+  "grade": "E3_inferred",
+  "source_id": "INFERRED-NO-SOURCE",
+  "locator": "assumed turbine entry temperature; no -7B27 source read"
+ },
+ "eta_fan": {
+  "value": 0.89,
+  "sigma": 0.02,
+  "grade": "E3_inferred",
+  "source_id": "INFERRED-NO-SOURCE",
+  "locator": "component efficiency assumption"
+ },
+ "eta_comp": {
+  "value": 0.85,
+  "sigma": 0.02,
+  "grade": "E3_inferred",
+  "source_id": "INFERRED-NO-SOURCE",
+  "locator": "overall core compression isentropic efficiency assumption"
+ },
+ "eta_turb": {
+  "value": 0.9,
+  "sigma": 0.02,
+  "grade": "E3_inferred",
+  "source_id": "INFERRED-NO-SOURCE",
+  "locator": "turbine isentropic efficiency assumption"
+ },
+ "eta_mech": {
+  "value": 0.99,
+  "sigma": 0.005,
+  "grade": "E3_inferred",
+  "source_id": "INFERRED-NO-SOURCE",
+  "locator": "shaft mechanical efficiency assumption"
+ },
+ "pi_inlet": {
+  "value": 0.995,
+  "sigma": 0.003,
+  "grade": "E3_inferred",
+  "source_id": "INFERRED-NO-SOURCE",
+  "locator": "static intake recovery assumption"
+ },
+ "pi_burner": {
+  "value": 0.95,
+  "sigma": 0.01,
+  "grade": "E3_inferred",
+  "source_id": "INFERRED-NO-SOURCE",
+  "locator": "combustor pressure loss assumption"
+ },
+ "pi_nozzle": {
+  "value": 0.98,
+  "sigma": 0.01,
+  "grade": "E3_inferred",
+  "source_id": "INFERRED-NO-SOURCE",
+  "locator": "nozzle total-pressure loss assumption"
+ },
+ "lhv": {
+  "value": 43200000.0,
+  "sigma": 300000.0,
+  "grade": "E3_inferred",
+  "source_id": "INFERRED-NO-SOURCE",
+  "locator": "typical Jet A lower heating value"
+ },
+ "eta_burner": {
+  "value": 0.995,
+  "sigma": 0.003,
+  "grade": "E3_inferred",
+  "source_id": "INFERRED-NO-SOURCE",
+  "locator": "combustion efficiency assumption"
+ },
+ "N1_100pct_rpm": {
+  "value": 5175,
+  "sigma": 3,
+  "grade": "E1_measured",
+  "source_id": "S001",
+  "locator": "TCDS E.004 \u00a7IV.2 p.19: 5382 rpm = 104 % \u2192 100 % = 5175"
+ },
+ "N2_100pct_rpm": {
+  "value": 14460,
+  "sigma": 3,
+  "grade": "E1_measured",
+  "source_id": "S001",
+  "locator": "TCDS E.004 \u00a7IV.2 p.19: 15183 rpm = 105 % \u2192 100 % = 14460"
+ },
+ "n1_idle_frac": {
+  "value": 0.22,
+  "sigma": 0.03,
+  "grade": "E3_inferred",
+  "source_id": "INFERRED-NO-SOURCE",
+  "locator": "chosen so idle thrust \u2248 7 % rated (ICAO idle mode); check in tests"
+ },
+ "n2_idle_frac": {
+  "value": 0.6,
+  "sigma": 0.05,
+  "grade": "E3_inferred",
+  "source_id": "INFERRED-NO-SOURCE",
+  "locator": "ground-idle N2 assumption"
+ },
+ "tau_n2_s": {
+  "value": 1.0,
+  "sigma": 0.3,
+  "grade": "E3_inferred",
+  "source_id": "S030",
+  "locator": "chosen; must satisfy \u00a733.73(b) \u22645 s to 95 % thrust (checked)"
+ },
+ "display_time_scale": {
+  "value": 0.006666666666666667,
+  "sigma": 0,
+  "grade": "E1_measured",
+  "source_id": "DECLARED",
+  "locator": "visual slow-motion factor for rotation only (declared exaggeration)"
+ }
+}

@@ -1,0 +1,1 @@
+Tstatic Value: 121430 (N) Static thrust of one engine at sea level | TSFC Value: 1.54e-05 (kg/(N s)) | altEngDes 11000 | machEngDes 0.82 | mEngDry Value: 2370 (kg) Engine dry mass
