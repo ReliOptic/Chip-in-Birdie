@@ -23,7 +23,7 @@ R_TIP = 1549.4 / 2  # 61.0 in fan diameter
 PARTS = {
  "p-spinner": dict(mesh="spinner", ctype="spinner_cone", crit=False, mat={**AL, "name": "spinner (composite/aluminium)", "pbr": {"color": [0.92, 0.92, 0.9, 1], "metallic": 0.1, "roughness": 0.35}},
    ext=False, axis=[-1, 0, 0],
-   params=dict(r_base=P(235, 25, E3, "hub_tip", "hub/tip ~0.3 of fan radius"), length=P(330, 40, E3, "cutaway"), x_base=P(-40, 20, E3, "cutaway")),
+   params=dict(r_base=P(235, 25, E3, "hub_tip", "hub/tip ~0.3 of fan radius"), length=P(330, 40, E3, "spinner", "length inferred"), x_base=P(-40, 20, E3, "cutaway")),
    body="return revolve([(p['x_base']-p['length'], 0), (p['x_base']-p['length']*0.55, p['r_base']*0.62), (p['x_base'], p['r_base']), (p['x_base'], 0)])"),
  "p-fan": dict(mesh="fan_rotor", ctype="fan_rotor_wide_chord", crit=True, mat={**TI, "name": "solid titanium wide-chord blades"}, ext=False, axis=[-1, 0, 0],
    params=dict(n_blades=P(24, 0, E1, "fan_blades"), r_tip=P(R_TIP - 4, 2, E1, "fan_diameter", "61.0 in diameter minus 4 mm tip gap (gap inferred)"),

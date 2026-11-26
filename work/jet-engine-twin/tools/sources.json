@@ -58,5 +58,9 @@
  "material:p-nacelle-inlet": {
   "source_id": "S006",
   "locator": "AAR-19/03 \u00a71.3.2 p.14: aluminium inlet lip"
+ },
+ "spinner": {
+  "source_id": "S033",
+  "locator": "GE/CFM 1997 release, FAN paragraph: conelliptical spinner (shape type only)"
  }
 }

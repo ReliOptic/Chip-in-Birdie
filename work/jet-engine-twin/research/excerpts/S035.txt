@@ -1,0 +1,1 @@
+A turbine stage includes a row of airfoils joined to corresponding platforms to define flow passages therebetween.

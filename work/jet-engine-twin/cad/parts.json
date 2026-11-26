@@ -19,7 +19,7 @@
     },
     "step": {
       "path": "cad/step/p-booster.step",
-      "sha256": "632210eb417dfd60a7b4c6452ff886934701f390d5e36bbf3959ed290a0e432d"
+      "sha256": "63c095f736d1f1114ba88b07c8af50a31f52f2354c4a397de54bf2952cbc3ae3"
     },
     "glb": {
       "path": "cad/glb/p-booster.glb",
@@ -103,7 +103,7 @@
     },
     "step": {
       "path": "cad/step/p-combustor.step",
-      "sha256": "3f09cbd25b9a831e8a72d539dbae25ea2e0912a6444d763018bea83cbf11ba91"
+      "sha256": "c14a1bb0da0b179dbf614f8d7d0ec87e545b746927dba083dab47f6ec238b22d"
     },
     "glb": {
       "path": "cad/glb/p-combustor.glb",
@@ -166,7 +166,7 @@
     },
     "step": {
       "path": "cad/step/p-core-cowl.step",
-      "sha256": "dcbbf07b40128f58a5e9b55a12ac5ab0cb32c2f1f721b7819fe4763e6efefc14"
+      "sha256": "3f3118e170d760420b65ade2068fc9c3b5ae7cfb62633af2d29b6787aaf9d249"
     },
     "glb": {
       "path": "cad/glb/p-core-cowl.glb",
@@ -230,7 +230,7 @@
     },
     "step": {
       "path": "cad/step/p-exhaust-nozzle.step",
-      "sha256": "561970ed0efa5ed30face08335a40f1c652e372b6a81255c8084541052027634"
+      "sha256": "9420f12e27a87bcac9a07e98d8ce11ad59475152b6617839203b69665796b6fc"
     },
     "glb": {
       "path": "cad/glb/p-exhaust-nozzle.glb",
@@ -293,7 +293,7 @@
     },
     "step": {
       "path": "cad/step/p-exhaust-plug.step",
-      "sha256": "54c003945bfba788368ae19d99672b7643094147db3002a5d3091b0db7660afd"
+      "sha256": "d83cf242b0ef318b9a7e5b07c99b863a7ec54ee56be7d86e17d4ade3de1d42c0"
     },
     "glb": {
       "path": "cad/glb/p-exhaust-plug.glb",
@@ -344,7 +344,7 @@
     },
     "step": {
       "path": "cad/step/p-fan-case.step",
-      "sha256": "87884192d02bea9e00239dcc62bd83daecde6100d8034c59cf67ddb99cc3b549"
+      "sha256": "c0526685b3ee6b5910d5e5f0271149d4be322c217401ea41284e69c2f8877865"
     },
     "glb": {
       "path": "cad/glb/p-fan-case.glb",
@@ -402,7 +402,7 @@
     },
     "step": {
       "path": "cad/step/p-fan.step",
-      "sha256": "7f469d098831d101f659036b60d9acb7a58bb62878dac37cf17052bc0af895e9"
+      "sha256": "a3a3f458224261045879cbf27d94983a56e325648dd35e6edf78e0cc444458c0"
     },
     "glb": {
       "path": "cad/glb/p-fan.glb",
@@ -502,7 +502,7 @@
     },
     "step": {
       "path": "cad/step/p-gearbox.step",
-      "sha256": "10c56f3315ef37e74eae99d004c00f5b9fbf9a15c491a38ce3854cf6a902a5de"
+      "sha256": "36305eb61ace8731baa49c91b6371c88e3b844647aad8c8c30088eef0dd324c6"
     },
     "glb": {
       "path": "cad/glb/p-gearbox.glb",
@@ -565,7 +565,7 @@
     },
     "step": {
       "path": "cad/step/p-hp-shaft.step",
-      "sha256": "1059f7d7843b3241ed4c22b3d124f0dddc2f80cc638ef1cb8fb15f679d3bd5f7"
+      "sha256": "2ca4bd5f5a924899924c4fb49f763cd52b78f66a439007b8d810354329771f23"
     },
     "glb": {
       "path": "cad/glb/p-hp-shaft.glb",
@@ -622,7 +622,7 @@
     },
     "step": {
       "path": "cad/step/p-hpc.step",
-      "sha256": "f1ee581bae65bb091f102f09f1191fb7f9577546718102e458e82974850ed824"
+      "sha256": "24bbb42b6f9857a78853748e1d679b6958fadfdff05a963c0fead970d5d06f26"
     },
     "glb": {
       "path": "cad/glb/p-hpc.glb",
@@ -707,7 +707,7 @@
     },
     "step": {
       "path": "cad/step/p-hpt.step",
-      "sha256": "af2dec78a2d2ca48102c0979197d80389c7f0493ffcb8bffec9b3745cb137fe5"
+      "sha256": "f17d36a8c1d80effbc3c830e728f528faa6494a8f0451e597259a8a99a564aee"
     },
     "glb": {
       "path": "cad/glb/p-hpt.glb",
@@ -770,7 +770,7 @@
     },
     "step": {
       "path": "cad/step/p-lp-shaft.step",
-      "sha256": "2ef9890de18397a1d4742da2566d08af20130e4f4980e73124c1f9c9ba400a83"
+      "sha256": "0f042f19469f9cd0027f0dbed65ea19cb6b972495cda61f9455c0cec9f32ad72"
     },
     "glb": {
       "path": "cad/glb/p-lp-shaft.glb",
@@ -827,7 +827,7 @@
     },
     "step": {
       "path": "cad/step/p-lpt.step",
-      "sha256": "6215127f9c5f1c4844bcfb63a3e4ca23796f4adbf5882de67858f96d5e0f1884"
+      "sha256": "7d12337ee42b9ec417afe71def8bb502bf89fe2e3b392f8ccc066f503870f650"
     },
     "glb": {
       "path": "cad/glb/p-lpt.glb",
@@ -912,7 +912,7 @@
     },
     "step": {
       "path": "cad/step/p-nacelle-inlet.step",
-      "sha256": "46ffe2aecd9319affabe226e1acdd61752619e993117b119c0f5dd7fb30e44bb"
+      "sha256": "3ee3ce6ca0f6ec496f9d10cb69b50ac9808aa077c2b964a1dca595ce7d2922eb"
     },
     "glb": {
       "path": "cad/glb/p-nacelle-inlet.glb",
@@ -967,15 +967,16 @@
     "cad_tool": "CadQuery 2.8 (OCCT) \u2014 STEP AP214 for CATIA import",
     "mesh_object_id": "spinner",
     "source_ids": [
-      "INFERRED-NO-SOURCE"
+      "INFERRED-NO-SOURCE",
+      "S033"
     ],
     "cad": {
       "path": "cad/parts/p-spinner.py",
-      "sha256": "f31e93af11fb69f674ef6cab2f66fa87b65255a2a54e86d10413f2ac066beac6"
+      "sha256": "36bf44b240436d48335f420929808dcf2de51d28ba07d1ca5eb4c797c5e2c06c"
     },
     "step": {
       "path": "cad/step/p-spinner.step",
-      "sha256": "fb78bc4ad4216f7486d364ec1ea8c2ec61898a10185e3f0288bd3c7bdef78155"
+      "sha256": "40d5c4af024b8de77c5a741fa744819eca44a69b41e5f09c4e2fcf263fdff250"
     },
     "glb": {
       "path": "cad/glb/p-spinner.glb",
@@ -984,9 +985,9 @@
     "parameters": {
       "length": {
         "grade": "E3_inferred",
-        "locator": "engineering proportion; no dimensioned source read",
+        "locator": "GE/CFM 1997 release, FAN paragraph: conelliptical spinner (shape type only) \u2014 length inferred",
         "sigma": 40,
-        "source_id": "INFERRED-NO-SOURCE",
+        "source_id": "S033",
         "value": 330
       },
       "r_base": {
@@ -1025,7 +1026,7 @@
     },
     "step": {
       "path": "cad/step/p-thrust-reverser.step",
-      "sha256": "97fb3a29e7113e15e26593703b36c2fad5689d0f171e0a1a13cabd7ec76b66cb"
+      "sha256": "14405e92272b2141a978a2a1e41733a03a0ad70f4aafcc5e7bdc458a3da7d6d9"
     },
     "glb": {
       "path": "cad/glb/p-thrust-reverser.glb",

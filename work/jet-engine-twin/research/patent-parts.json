@@ -1,0 +1,1047 @@
+{
+ "schema": "dta.patent-parts/v1",
+ "target_id": "cfm-cfm56-7b-1997-7b27",
+ "note": "Numerals/dimensions are as stated in each patent; they are embodiment values, not CFM56-7B27 drawing values unless patent-product-links.json says linked.",
+ "patents": [
+  {
+   "source_id": "S035",
+   "patent": "US7134842B2",
+   "figure": "FIG. 1-5",
+   "numerals": [
+    {
+     "numeral": "10",
+     "name": "first stage turbine rotor blades",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "14",
+     "name": "airfoil",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "16",
+     "name": "platform (radially inner endwall)",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "18",
+     "name": "axial-entry dovetail",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "20",
+     "name": "pressure side",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "22",
+     "name": "suction side",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "24",
+     "name": "leading edge",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "26",
+     "name": "trailing edge",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "28",
+     "name": "internal cooling circuit",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "32",
+     "name": "film cooling holes",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "34",
+     "name": "trailing edge cooling holes",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "36",
+     "name": "flow passage",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "38",
+     "name": "bulge",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "40",
+     "name": "bowl",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "42",
+     "name": "axial splitline",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    }
+   ],
+   "dimensions_or_ranges": [
+    "platform-to-airfoil fillet up to about 50 mils (1.3 mm)",
+    "bulge maximum height about 40 mils (1 mm) to about 450 mils (11.4 mm)",
+    "for turbine airfoils ranging in height from 5 cm to about 7.5 cm",
+    "about two percent to about 15 percent of the radial height or span of the airfoil",
+    "bulge isocline about +6, bowl about -5 (normalized, unitless)"
+   ],
+   "claim_constraints": [
+    "claim 1: row of airfoils integral with platforms; scalloped flow surface with bulge on pressure side near leading edge and bowl on suction side aft of leading edge; bulge and bowl begin forward of leading edges forming an axial arcuate channel",
+    "claim 9: bowl maximum depth less than about the maximum height of bulge"
+   ]
+  },
+  {
+   "source_id": "S036",
+   "patent": "US8186965B2",
+   "figure": "FIG. 1 (engine schematic), FIG. 2 (tip plan), FIG. 3 (casting method), FIG. 4-5 (alternate tips)",
+   "numerals": [
+    {
+     "numeral": "10",
+     "name": "gas turbine engine",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "12",
+     "name": "fan",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "14",
+     "name": "compressor",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "16",
+     "name": "combustor",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "18",
+     "name": "nozzle",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "20",
+     "name": "turbine rotor blades",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "22",
+     "name": "rotor disk",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "24",
+     "name": "turbine shroud",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "26",
+     "name": "LPT",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "32",
+     "name": "airfoil",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "34",
+     "name": "platform",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "36",
+     "name": "dovetail",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "42",
+     "name": "leading edge",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "44",
+     "name": "trailing edge",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "48",
+     "name": "tip",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "50",
+     "name": "internal cooling circuit",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "52",
+     "name": "first (pressure side) rib",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "54",
+     "name": "second (suction side) rib",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "56",
+     "name": "tip floor",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "58",
+     "name": "tip baffle",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "60",
+     "name": "first pocket",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "62",
+     "name": "second pocket",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "64",
+     "name": "aft outlet",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "70",
+     "name": "hump",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "72",
+     "name": "aft flow channel",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "76",
+     "name": "tip shelf",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "80",
+     "name": "tip holes",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    }
+   ],
+   "dimensions_or_ranges": [
+    "tip ribs and baffle about 25 mils (0.6 mm) wide",
+    "rib/pocket height about 56 mils (1.4 mm)",
+    "pocket minimum width about 44 mils (1.1 mm)",
+    "single-stage HPT row reduced to seventy-six (76) blades from a parent row of eighty (embodiment; not verified for CFM56-7B27)",
+    "six tip holes 80 (FIG. 2)"
+   ],
+   "claim_constraints": [
+    "claim 1: airfoil widens aft to maximum at suction-side hump then converges; pressure/suction ribs joined at leading edge, spaced at trailing edge forming aft outlet; chordal tip baffle forms aft-open first pocket and closed second pocket; baffle starts between LE and hump and ends between hump and TE; first pocket converges to aft flow channel"
+   ]
+  },
+  {
+   "source_id": "S037",
+   "patent": "US8439643B2",
+   "figure": "FIG. 1-4",
+   "numerals": [
+    {
+     "numeral": "20",
+     "name": "turbine rotor blades",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "22",
+     "name": "rotor disk",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "24",
+     "name": "turbine shroud",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "32",
+     "name": "airfoil",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "34",
+     "name": "platform",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "36",
+     "name": "dovetail",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "52",
+     "name": "first splitline edge",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "54",
+     "name": "second splitline edge",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "56",
+     "name": "forward ridge",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "58",
+     "name": "aft ridge",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "60",
+     "name": "forward trough",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "62",
+     "name": "aft trough",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "64",
+     "name": "hump",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "70",
+     "name": "saddle",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "72",
+     "name": "middle peak",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "80",
+     "name": "tip baffle",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    }
+   ],
+   "dimensions_or_ranges": [
+    "aft ridge max height +4.5, forward ridge +2.8, forward trough -5.58, aft trough -5.47 (normalized to reference elevation N, unitless)"
+   ],
+   "claim_constraints": [
+    "claim 1: biformal platform with forward ridge/trough forward of midchord and aft ridge/trough aft of midchord on opposite sides, complementary across splitlines; aft trough meets first splitline edge in a depressed saddle"
+   ]
+  },
+  {
+   "source_id": "S038",
+   "patent": "US7857587B2",
+   "figure": "FIG. 1-3",
+   "numerals": [
+    {
+     "numeral": "10",
+     "name": "HPT rotor blade stage",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "14",
+     "name": "annular stator shroud",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "16",
+     "name": "turbine rotor blades",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "22",
+     "name": "airfoil",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "26",
+     "name": "root",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "28",
+     "name": "axial-entry dovetail",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "30",
+     "name": "platform",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "40",
+     "name": "internal cooling circuit",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "50",
+     "name": "tip cap",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "52",
+     "name": "tip wall",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "54",
+     "name": "recessed tip wall portion",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "60",
+     "name": "tip shelf",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "64",
+     "name": "tip shelf holes",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "70",
+     "name": "tip wall openings",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "102",
+     "name": "leading edge shower head cooling holes",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "108",
+     "name": "tip cap supply holes",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    }
+   ],
+   "dimensions_or_ranges": [
+    "between 18 and 23 tip shelf holes",
+    "shelf hole diameter about 14-18 mils (0.36-0.46 mm); claim 8: between about 0.36 and 0.46 mm",
+    "tip wall openings about 20-30 mils (0.51-0.76 mm) radially from top",
+    "angle A between about 15 to about 30 degrees",
+    "exemplary: 18 tip shelf holes and 17 tip wall openings"
+   ],
+   "claim_constraints": [
+    "claim 1: tip cap; tip wall with recessed portion forming pressure-side tip shelf; at least one tip shelf hole and at least one tip wall opening radially outward of shelf, both fed by internal cooling circuit"
+   ]
+  },
+  {
+   "source_id": "S039",
+   "patent": "US8876989B2",
+   "figure": "FIG. 9 (turbine blade schematic); FIG. 1-8 property plots",
+   "numerals": [],
+   "dimensions_or_ranges": [
+    "wt%: Cr 5-8; Co 6.5-9; Mo 1.5-2.0; W 6.0-6.5; Ta 6.0-7.0; Al 6.0-6.4; Re 1-1.5; Hf 0.6-0.7; C 0.03-1.5; B 0.004-0.015; rare earth (Y, La, Ce) up to 0.03; description allows Ti up to 0.5"
+   ],
+   "claim_constraints": [
+    "claim 1 composition ranges as listed; balance Ni"
+   ]
+  },
+  {
+   "source_id": "S040",
+   "patent": "US7765809B2",
+   "figure": "FIG. 1-7",
+   "numerals": [
+    {
+     "numeral": "10",
+     "name": "gas turbine engine (CFM56 or CF34-10)",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "12",
+     "name": "low pressure compressor",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "14",
+     "name": "high pressure compressor",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "16",
+     "name": "combustor (single annular)",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "18",
+     "name": "high pressure turbine",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "20",
+     "name": "low pressure turbine",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "52",
+     "name": "outer liner",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "54",
+     "name": "inner liner",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "56",
+     "name": "outer combustor casing",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "58",
+     "name": "inner combustor casing",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "60",
+     "name": "combustion chamber",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "66",
+     "name": "cowl assembly",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "72",
+     "name": "swirler assembly",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "74",
+     "name": "fuel injector",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "100",
+     "name": "annular dome assembly",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "110",
+     "name": "dome assembly ring",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "130",
+     "name": "inner liner portion",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "150",
+     "name": "outer liner portion",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "162",
+     "name": "swirlers",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "170",
+     "name": "inner cowl",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "186",
+     "name": "slots (inner cowl)",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "190",
+     "name": "outer cowl",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "210",
+     "name": "slots (outer cowl)",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "226",
+     "name": "bolts",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    }
+   ],
+   "dimensions_or_ranges": [
+    "no dimensions; counts only: three slots 186 per inner cowl edge; claims recite at least three slots / three inner liner coupling locations"
+   ],
+   "claim_constraints": [
+    "claim 1 (method): dome ring + inner/outer liner portions coupled; elongated rings (swirlers) positioned on ring; slotted inner/outer cowls coupled so rings and cowls are removable without uncoupling ring from liners"
+   ]
+  },
+  {
+   "source_id": "S041",
+   "patent": "US6457942B1",
+   "figure": "FIG. 1-29",
+   "numerals": [
+    {
+     "numeral": "12",
+     "name": "fan assembly",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "16",
+     "name": "fan rotor disk",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "20",
+     "name": "fan blades",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "22",
+     "name": "booster vanes",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "24",
+     "name": "booster blades",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "28",
+     "name": "booster spool",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "32",
+     "name": "platforms",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "50",
+     "name": "disk posts",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "52",
+     "name": "circular arc dovetail slots",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "58",
+     "name": "circular arc dovetail root",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "104",
+     "name": "spinner",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "290",
+     "name": "spacer",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "350",
+     "name": "retainer",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "368",
+     "name": "retainer slot",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "410",
+     "name": "forward seal",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "430",
+     "name": "aft seal",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    }
+   ],
+   "dimensions_or_ranges": [
+    "about 30 mils (0.03 inches) from the chamfer 39",
+    "about a 50 mil second clearance C2",
+    "interference on the order of 1.5-2.5 mils on diameter",
+    "undercut angle about 30 degrees",
+    "spacer undercut about 6 degrees; up to 6 degrees controlled blade rotation",
+    "about 30-70 percent of the channel length LC"
+   ],
+   "claim_constraints": [
+    "claims not read"
+   ]
+  },
+  {
+   "source_id": "S042",
+   "patent": "US8042341B2",
+   "figure": "FIG. 1 (engine section), FIG. 2 (radial arm section), FIG. 3-6 (assembly)",
+   "numerals": [
+    {
+     "numeral": "3",
+     "name": "LP shaft",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "5",
+     "name": "fan rotor",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "11",
+     "name": "HP shaft",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "13",
+     "name": "HP compressor stages",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "15",
+     "name": "HP turbine",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "17",
+     "name": "combustion chamber",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "19",
+     "name": "intermediate casing",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "19c",
+     "name": "radial arms",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "23",
+     "name": "accessory gear box (AGB)",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "25",
+     "name": "radial driveshaft",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "125",
+     "name": "radial transmission shaft (3 elements 125a/b/c)",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "126",
+     "name": "bevel gear pair driven by HP spool",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "128",
+     "name": "additional accessory",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "130",
+     "name": "module",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "131",
+     "name": "case",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    }
+   ],
+   "dimensions_or_ranges": [
+    "transmission shaft made in three cylindrical parts (no dimensions)"
+   ],
+   "claim_constraints": [
+    "claim 1: AGB driveshaft in intermediate-casing radial arm with central/inner/outer elements; bevel gear on central element drives additional accessory; accessory+support case+central element form a module with sealed oil circuit"
+   ]
+  },
+  {
+   "source_id": "S043",
+   "patent": "US5622473A",
+   "figure": "FIG. 1 (prior art), FIG. 2",
+   "numerals": [
+    {
+     "numeral": "100",
+     "name": "variable stator vane assembly",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "102",
+     "name": "compressor case",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "104",
+     "name": "air foil assembly",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "106",
+     "name": "air foil",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "108",
+     "name": "platform",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "112",
+     "name": "spindle",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "116",
+     "name": "metal jacket",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "118",
+     "name": "trunnion bushing",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "120",
+     "name": "spacer",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "38",
+     "name": "lever arm (prior art)",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    }
+   ],
+   "dimensions_or_ranges": [],
+   "claim_constraints": [
+    "claim 1: metal jacket in casing opening, bushing inside jacket, rotatable vane spindle, spacer with flange forming annulus with bushing end, U-shaped spring-loaded seal in annulus"
+   ]
+  },
+  {
+   "source_id": "S044",
+   "patent": "US9233757B2",
+   "figure": "FIG. 13-21 (flattened top cowling), FIG. 9-12D (reverse thrust)",
+   "numerals": [
+    {
+     "numeral": "16",
+     "name": "nacelle",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "19",
+     "name": "inlet",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "224",
+     "name": "inlet lip",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "226",
+     "name": "inlet cowling",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "228",
+     "name": "top cowling",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "230",
+     "name": "outlet cowling",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "284",
+     "name": "blocker doors",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "482",
+     "name": "cascade",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "441",
+     "name": "exhaust nozzle",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "599",
+     "name": "flattened surface",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    }
+   ],
+   "dimensions_or_ranges": [
+    "top cowling can span between 10 deg and 180 deg of nacelle circumference",
+    "top cowling spans between about 20 deg and about 90 deg of the inlet lip"
+   ],
+   "claim_constraints": [
+    "claims not read"
+   ]
+  },
+  {
+   "source_id": "S045",
+   "patent": "US8720183B2",
+   "figure": "FIG. 1-8",
+   "numerals": [
+    {
+     "numeral": "10",
+     "name": "engine",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "12",
+     "name": "nacelle",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "14",
+     "name": "support beams",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "16",
+     "name": "thrust reverser",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "26",
+     "name": "cascade elements",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "28",
+     "name": "outer cowl shroud",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "30",
+     "name": "actuating units",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "32",
+     "name": "translating sleeve assembly",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "34",
+     "name": "slider track",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "36",
+     "name": "lifting bolt",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "38",
+     "name": "hinge",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "40",
+     "name": "arcuate vanes",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "50",
+     "name": "actuator arm",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    },
+    {
+     "numeral": "62",
+     "name": "guide channel",
+     "description_locator": "Google Patents description (WebFetch), detailed description"
+    }
+   ],
+   "dimensions_or_ranges": [
+    "at least four actuating units around circumference",
+    "guide channel pivots approximately ninety degrees forward-to-aft"
+   ],
+   "claim_constraints": [
+    "claim 1: slider track with curved guide channel, sliding lifting bolt, hinge on outer cowl shroud riding in channel; aft translation lifts shroud away from centerline"
+   ]
+  },
+  {
+   "source_id": "S046",
+   "patent": "US5141400A",
+   "figure": "FIG. 1-4",
+   "numerals": [
+    {
+     "numeral": "10",
+     "name": "wide chord fan blade",
+     "description_locator": "Google Patents description (WebFetch), background and description"
+    },
+    {
+     "numeral": "14",
+     "name": "dovetail root section",
+     "description_locator": "Google Patents description (WebFetch), background and description"
+    },
+    {
+     "numeral": "16",
+     "name": "leading edge",
+     "description_locator": "Google Patents description (WebFetch), background and description"
+    },
+    {
+     "numeral": "18",
+     "name": "trailing edge",
+     "description_locator": "Google Patents description (WebFetch), background and description"
+    },
+    {
+     "numeral": "20",
+     "name": "metal sheath",
+     "description_locator": "Google Patents description (WebFetch), background and description"
+    },
+    {
+     "numeral": "22",
+     "name": "root section apertures",
+     "description_locator": "Google Patents description (WebFetch), background and description"
+    },
+    {
+     "numeral": "28",
+     "name": "metallic foil",
+     "description_locator": "Google Patents description (WebFetch), background and description"
+    },
+    {
+     "numeral": "30",
+     "name": "elastomeric layer",
+     "description_locator": "Google Patents description (WebFetch), background and description"
+    }
+   ],
+   "dimensions_or_ranges": [
+    "fan diameters from 106 inches to 124 inches (large engines, not CFM56)",
+    "current tip chords about 8 to 12 inches; wide chord tip chords about 20 to 28 inches",
+    "metallic foil about 0.005 to about 0.015 inches"
+   ],
+   "claim_constraints": [
+    "claim 1: laminated alternating metal foil / elastomer airfoil with dovetail root apertures, metal members through apertures, LE sheath"
+   ]
+  },
+  {
+   "source_id": "S047",
+   "patent": "EP0724119A3",
+   "figure": "abstract figure (not viewed)",
+   "numerals": [],
+   "dimensions_or_ranges": [],
+   "claim_constraints": [
+    "abstract only: first dome wall with cooling passages, baffle, second dome wall, venturi with flange, flare cone, swirler in radial passage"
+   ]
+  }
+ ]
+}

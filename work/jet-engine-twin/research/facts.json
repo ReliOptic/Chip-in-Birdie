@@ -304,5 +304,178 @@
     "unit": "parts",
     "source_id": "S022",
     "locator": "Issue 58 maintenance guide, 'LLPs' section"
+  },
+  "fan_blade_count_ge_1997_claim": {
+    "value": 22,
+    "unit": "blades (CONFLICT: superseded by 24 in S006/S032)",
+    "source_id": "S033",
+    "locator": "1997 press release, 'FAN' paragraph"
+  },
+  "fan_blade_count_ntsb_paper": {
+    "value": 24,
+    "unit": "blades (CFM56-7B24)",
+    "source_id": "S032",
+    "locator": "p.1439 'About the Engine'"
+  },
+  "fan_adiabatic_efficiency_design_claim": {
+    "value": 92,
+    "unit": "% (1997 design claim)",
+    "source_id": "S033",
+    "locator": "'FAN' paragraph"
+  },
+  "fan_disk_material": {
+    "value": "Ti-6Al-4V",
+    "unit": "material",
+    "source_id": "S032",
+    "locator": "p.1439 'About the Engine'"
+  },
+  "fan_dovetail_shim_material": {
+    "value": "Alloy 718 (shims in disks made after 2004)",
+    "unit": "material",
+    "source_id": "S032",
+    "locator": "p.1439-1440"
+  },
+  "fan_slot_spacer": {
+    "value": "elastomer-coated Ti-6Al-4V spacer per slot (radial constraint)",
+    "unit": "material/function",
+    "source_id": "S032",
+    "locator": "p.1439"
+  },
+  "fan_platform_material": {
+    "value": "aluminium alloy platforms with elastomer seals between blades",
+    "unit": "material",
+    "source_id": "S032",
+    "locator": "p.1439"
+  },
+  "fan_dovetail_dry_film_lubricant": {
+    "value": "MoS2 dry film over plasma-sprayed Cu-Ni-In",
+    "unit": "coating",
+    "source_id": "S032",
+    "locator": "p.1439"
+  },
+  "fan_blade_relube_interval_amm": {
+    "value": "5000 h or 3000 cycles, whichever first (AMM at time of accidents)",
+    "unit": "interval",
+    "source_id": "S032",
+    "locator": "p.1440 service histories"
+  },
+  "fan_blade_part_numbers": {
+    "value": [
+      "340-001-022",
+      "340-001-026-0",
+      "340-001-027",
+      "340-001-038-0"
+    ],
+    "unit": "P/N",
+    "source_id": "S032",
+    "locator": "p.1440"
+  },
+  "spinner_type": {
+    "value": "conelliptical",
+    "unit": "shape",
+    "source_id": "S033",
+    "locator": "'FAN' paragraph"
+  },
+  "hpt_blade_nozzle_material_1997": {
+    "value": "single crystal N5 (blade and nozzle)",
+    "unit": "material",
+    "source_id": "S033",
+    "locator": "'CORE' paragraph"
+  },
+  "dry_weight_sugar_model": {
+    "value": 5216,
+    "unit": "lbm (Boeing model; TCDS 2386 kg = 5260 lb)",
+    "source_id": "S034",
+    "locator": "Table 5.10 p.63"
+  },
+  "length_sugar_model": {
+    "value": 98.7,
+    "unit": "in (=2507 mm)",
+    "source_id": "S034",
+    "locator": "Table 5.10 p.63"
+  },
+  "thrust_top_of_climb_sugar": {
+    "value": 5962,
+    "unit": "lbf (conditions not stated)",
+    "source_id": "S034",
+    "locator": "Table 5.10 p.63"
+  },
+  "thrust_cruise_sugar": {
+    "value": 5480,
+    "unit": "lbf (conditions not stated)",
+    "source_id": "S034",
+    "locator": "Table 5.10 p.63"
+  },
+  "hpt_blade_count_patent_embodiment": {
+    "value": "80 (parent, in commercial use) / 76 (modified) - UNVERIFIED for -7B27",
+    "unit": "blades",
+    "source_id": "S036",
+    "locator": "US8186965B2 detailed description; link via S031"
+  },
+  "hpt_tip_rib_width_patent": {
+    "value": 0.6,
+    "unit": "mm (about 25 mils, embodiment)",
+    "source_id": "S036",
+    "locator": "detailed description"
+  },
+  "hpt_tip_rib_height_patent": {
+    "value": 1.4,
+    "unit": "mm (about 56 mils, embodiment)",
+    "source_id": "S036",
+    "locator": "detailed description"
+  },
+  "hpt_tip_shelf_hole_dia_patent": {
+    "value": "0.36-0.46",
+    "unit": "mm (embodiment; claim 8)",
+    "source_id": "S038",
+    "locator": "description; claim 8"
+  },
+  "hpt_low_re_alloy_re_wt_pct": {
+    "value": "1-1.5",
+    "unit": "wt% Re (claim 1)",
+    "source_id": "S039",
+    "locator": "claim 1"
+  },
+  "hpt_inner_stationary_seal_pn": {
+    "value": "1808M56G01",
+    "unit": "P/N",
+    "source_id": "S052",
+    "locator": "paragraph (c)"
+  },
+  "hpt_rotating_air_front_seal_pn": {
+    "value": [
+      "1795M36P01",
+      "1795M36P02"
+    ],
+    "unit": "P/N",
+    "source_id": "S053",
+    "locator": "paragraph (c)"
+  },
+  "hpt_bearing_no3": {
+    "value": "No. 3 ball bearing (HPT-adjacent)",
+    "unit": "component",
+    "source_id": "S052",
+    "locator": "SUMMARY"
+  },
+  "lpt_rear_frame_eci_initial": {
+    "value": 25000,
+    "unit": "cycles since new",
+    "source_id": "S055",
+    "locator": "paragraph (f)(1)"
+  },
+  "agb_gearshaft_teeth": {
+    "value": [
+      73,
+      41
+    ],
+    "unit": "teeth",
+    "source_id": "S056",
+    "locator": "SUMMARY; paragraph (c)"
+  },
+  "combustor_cfm56_dome_patent": {
+    "value": "removable swirler/slotted cowl dome on single annular combustor (proposal)",
+    "unit": "arrangement",
+    "source_id": "S040",
+    "locator": "description"
   }
 }

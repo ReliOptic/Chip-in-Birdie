@@ -1,0 +1,190 @@
+{
+ "schema": "dta.patent-product-links/v1",
+ "target_id": "cfm-cfm56-7b-1997-7b27",
+ "statuses": {
+  "linked_family": "manufacturer marking or text ties the patent to CFM56-7B (family level)",
+  "patent_proposal": "no evidence the arrangement is in CFM56-7"
+ },
+ "links": [
+  {
+   "patent": "US7134842B2",
+   "source_id": "S035",
+   "part_ids": [
+    "p-hpt"
+   ],
+   "product_part": "HPT blade platform contour",
+   "link_status": "linked_family",
+   "evidence": [
+    {
+     "source_id": "S031",
+     "locator": "GE Aerospace Patents page, CFM56 table row 7134842",
+     "says": "associated with CFM56 '-5B & -7B', PART 'HPT Blade'"
+    }
+   ],
+   "caveat": "Model listed as -5B & -7B, not -7B27 specifically; introduction date/production standard and which embodiment is fielded are not stated; embodiment numbers (e.g. 76/80 blades, hole sizes) unverified for -7B27."
+  },
+  {
+   "patent": "US8186965B2",
+   "source_id": "S036",
+   "part_ids": [
+    "p-hpt"
+   ],
+   "product_part": "HPT blade tip (squealer/baffle)",
+   "link_status": "linked_family",
+   "evidence": [
+    {
+     "source_id": "S031",
+     "locator": "GE Aerospace Patents page, CFM56 table row 8186965",
+     "says": "associated with CFM56 '-5B & -7B', PART 'HPT Blade'"
+    }
+   ],
+   "caveat": "Model listed as -5B & -7B, not -7B27 specifically; introduction date/production standard and which embodiment is fielded are not stated; embodiment numbers (e.g. 76/80 blades, hole sizes) unverified for -7B27."
+  },
+  {
+   "patent": "US8439643B2",
+   "source_id": "S037",
+   "part_ids": [
+    "p-hpt"
+   ],
+   "product_part": "HPT blade platform contour",
+   "link_status": "linked_family",
+   "evidence": [
+    {
+     "source_id": "S031",
+     "locator": "GE Aerospace Patents page, CFM56 table row 8439643",
+     "says": "associated with CFM56 '-5B & -7B', PART 'HPT Blade'"
+    }
+   ],
+   "caveat": "Model listed as -5B & -7B, not -7B27 specifically; introduction date/production standard and which embodiment is fielded are not stated; embodiment numbers (e.g. 76/80 blades, hole sizes) unverified for -7B27."
+  },
+  {
+   "patent": "US7857587B2",
+   "source_id": "S038",
+   "part_ids": [
+    "p-hpt"
+   ],
+   "product_part": "HPT blade tip cooling",
+   "link_status": "linked_family",
+   "evidence": [
+    {
+     "source_id": "S031",
+     "locator": "GE Aerospace Patents page, CFM56 table row 7857587",
+     "says": "associated with CFM56 '-5B & -7B', PART 'HPT Blade'"
+    }
+   ],
+   "caveat": "Model listed as -5B & -7B, not -7B27 specifically; introduction date/production standard and which embodiment is fielded are not stated; embodiment numbers (e.g. 76/80 blades, hole sizes) unverified for -7B27."
+  },
+  {
+   "patent": "US8876989B2",
+   "source_id": "S039",
+   "part_ids": [
+    "p-hpt"
+   ],
+   "product_part": "HPT blade/vane alloy (part not named)",
+   "link_status": "linked_family",
+   "evidence": [
+    {
+     "source_id": "S031",
+     "locator": "GE Aerospace Patents page, CFM56 table row 8876989",
+     "says": "associated with CFM56 '-5B & -7B'"
+    }
+   ],
+   "caveat": "Model listed as -5B & -7B, not -7B27 specifically; introduction date/production standard and which embodiment is fielded are not stated; embodiment numbers (e.g. 76/80 blades, hole sizes) unverified for -7B27."
+  },
+  {
+   "patent": "US7765809B2",
+   "source_id": "S040",
+   "part_ids": [
+    "p-combustor"
+   ],
+   "product_part": "SAC dome assembly",
+   "link_status": "patent_proposal",
+   "evidence": [
+    {
+     "source_id": "S040",
+     "locator": "detailed description",
+     "says": "exemplary engine 'is a CFM56 gas turbine engine or CF34-10'"
+    }
+   ],
+   "caveat": "Mentions CFM56 generically (no -7 variant, no statement of production use); treated as proposal until a CFM56-7 manual/AD shows the slotted removable cowl dome."
+  },
+  {
+   "patent": "US6457942B1",
+   "source_id": "S041",
+   "part_ids": [
+    "p-fan"
+   ],
+   "product_part": null,
+   "link_status": "patent_proposal",
+   "evidence": [],
+   "caveat": "no engine named; circular-arc dovetail not shown for CFM56-7"
+  },
+  {
+   "patent": "US8042341B2",
+   "source_id": "S042",
+   "part_ids": [
+    "p-gearbox"
+   ],
+   "product_part": null,
+   "link_status": "patent_proposal",
+   "evidence": [],
+   "caveat": "Snecma, no engine named; fan-case AGB/TGB on CFM56-7B is supported by S013/S056 but not this radial-arm shaft module"
+  },
+  {
+   "patent": "US5622473A",
+   "source_id": "S043",
+   "part_ids": [
+    "p-hpc"
+   ],
+   "product_part": null,
+   "link_status": "patent_proposal",
+   "evidence": [],
+   "caveat": "no engine or stage named"
+  },
+  {
+   "patent": "US9233757B2",
+   "source_id": "S044",
+   "part_ids": [
+    "p-nacelle-inlet",
+    "p-thrust-reverser"
+   ],
+   "product_part": null,
+   "link_status": "patent_proposal",
+   "evidence": [],
+   "caveat": "Rohr, no aircraft named; flattens top cowling, not 737NG lower lip"
+  },
+  {
+   "patent": "US8720183B2",
+   "source_id": "S045",
+   "part_ids": [
+    "p-thrust-reverser"
+   ],
+   "product_part": null,
+   "link_status": "patent_proposal",
+   "evidence": [],
+   "caveat": "Spirit, no aircraft named"
+  },
+  {
+   "patent": "US5141400A",
+   "source_id": "S046",
+   "part_ids": [
+    "p-fan"
+   ],
+   "product_part": null,
+   "link_status": "patent_proposal",
+   "evidence": [],
+   "caveat": "composite blade for 106-124 in fans; CFM56-7 uses solid Ti"
+  },
+  {
+   "patent": "EP0724119A3",
+   "source_id": "S047",
+   "part_ids": [
+    "p-combustor"
+   ],
+   "product_part": null,
+   "link_status": "patent_proposal",
+   "evidence": [],
+   "caveat": "no engine named; abstract only"
+  }
+ ]
+}

@@ -1,0 +1,1 @@
+X 2 can be less than X 1 while still maintaining a required clearance

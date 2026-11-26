@@ -26,7 +26,8 @@
     "uncertainty": "worst parameter grade E3_inferred; max σ 40 mm",
     "cad_parameters": "see cad/parts/p-spinner.py PARAMS",
     "source_ids": [
-      "INFERRED-NO-SOURCE"
+      "INFERRED-NO-SOURCE",
+      "S033"
     ],
     "assembly_axis": [
       -1,

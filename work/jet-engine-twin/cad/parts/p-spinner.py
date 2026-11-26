@@ -20,9 +20,10 @@ PART = {'applies_to': 'cfm-cfm56-7b-1997-7b27',
  'units': 'mm'}
 
 PARAMS = {'length': {'grade': 'E3_inferred',
-            'locator': 'engineering proportion; no dimensioned source read',
+            'locator': 'GE/CFM 1997 release, FAN paragraph: conelliptical spinner (shape type only) — length '
+                       'inferred',
             'sigma': 40,
-            'source_id': 'INFERRED-NO-SOURCE',
+            'source_id': 'S033',
             'value': 330},
  'r_base': {'grade': 'E3_inferred',
             'locator': 'engineering proportion; no dimensioned source read — hub/tip ~0.3 of fan radius',
