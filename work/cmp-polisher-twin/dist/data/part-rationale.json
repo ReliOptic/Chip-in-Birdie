@@ -1,0 +1,571 @@
+[
+  {
+    "part_id": "p-base",
+    "mesh_object_id": "polish_base",
+    "label": "Polisher base",
+    "evidence_grade": "E3_inferred",
+    "confidence": 0.45,
+    "sigma_m": 0.1,
+    "missing": [
+      {
+        "what": "R_station (600 ±60)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "e_head (190 ±40)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "height (700 ±100)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "margin (120 ±40)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      }
+    ],
+    "geometry_decision": "Envelope around three stations; size inferred.",
+    "material_decision": "anodised aluminium / stainless frame (E3_inferred)",
+    "physics_rationale": "static frame",
+    "uncertainty": "worst parameter grade E3_inferred; max σ 100 mm",
+    "cad_parameters": "see cad/parts/p-base.py PARAMS",
+    "source_ids": [
+      "INFERRED-NO-SOURCE",
+      "S002"
+    ],
+    "assembly_axis": [
+      0,
+      -1,
+      0
+    ],
+    "exterior": true,
+    "manipulable": false,
+    "pbr": {
+      "color": [
+        0.8,
+        0.81,
+        0.82,
+        1
+      ],
+      "metallic": 0.7,
+      "roughness": 0.4
+    }
+  },
+  {
+    "part_id": "p-platen",
+    "mesh_object_id": "platens",
+    "label": "Three platens, 762 mm",
+    "evidence_grade": "E3_inferred",
+    "confidence": 0.45,
+    "sigma_m": 0.06,
+    "missing": [
+      {
+        "what": "R_station (600 ±60)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "e_head (190 ±40)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "t (50 ±15)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      }
+    ],
+    "geometry_decision": "30 in platens at 0/90/180° stations (Mirra-family layout).",
+    "material_decision": "anodised aluminium / stainless frame (E3_inferred)",
+    "physics_rationale": "rotate at 97 rpm (LK recipe)",
+    "uncertainty": "worst parameter grade E3_inferred; max σ 60 mm",
+    "cad_parameters": "see cad/parts/p-platen.py PARAMS",
+    "source_ids": [
+      "INFERRED-NO-SOURCE",
+      "S002",
+      "S033"
+    ],
+    "assembly_axis": [
+      0,
+      -1,
+      0
+    ],
+    "exterior": false,
+    "manipulable": false,
+    "pbr": {
+      "color": [
+        0.8,
+        0.81,
+        0.82,
+        1
+      ],
+      "metallic": 0.7,
+      "roughness": 0.4
+    }
+  },
+  {
+    "part_id": "p-pad",
+    "mesh_object_id": "pads",
+    "label": "Polishing pads",
+    "evidence_grade": "E3_inferred",
+    "confidence": 0.45,
+    "sigma_m": 0.06,
+    "missing": [
+      {
+        "what": "R_station (600 ±60)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "e_head (190 ±40)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      }
+    ],
+    "geometry_decision": "0.1 in pad on each platen; grooves not modelled.",
+    "material_decision": "polyurethane pad (IC1010-type) (E3_inferred)",
+    "physics_rationale": "pad velocity field drives removal",
+    "uncertainty": "worst parameter grade E3_inferred; max σ 60 mm",
+    "cad_parameters": "see cad/parts/p-pad.py PARAMS",
+    "source_ids": [
+      "INFERRED-NO-SOURCE",
+      "S002",
+      "S019",
+      "S033",
+      "S035"
+    ],
+    "assembly_axis": [
+      0,
+      1,
+      0
+    ],
+    "exterior": false,
+    "manipulable": false,
+    "pbr": {
+      "color": [
+        0.86,
+        0.8,
+        0.62,
+        1
+      ],
+      "metallic": 0.0,
+      "roughness": 0.85
+    }
+  },
+  {
+    "part_id": "p-carousel",
+    "mesh_object_id": "carousel",
+    "label": "Head carousel",
+    "evidence_grade": "E3_inferred",
+    "confidence": 0.45,
+    "sigma_m": 0.06,
+    "missing": [
+      {
+        "what": "R_station (600 ±60)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "arm_w (220 ±50)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "e_head (190 ±40)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "t (60 ±20)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      }
+    ],
+    "geometry_decision": "Four-arm cross over stations (Mirra family).",
+    "material_decision": "anodised aluminium / stainless frame (E3_inferred)",
+    "physics_rationale": "indexes heads between stations",
+    "uncertainty": "worst parameter grade E3_inferred; max σ 60 mm",
+    "cad_parameters": "see cad/parts/p-carousel.py PARAMS",
+    "source_ids": [
+      "INFERRED-NO-SOURCE",
+      "S002"
+    ],
+    "assembly_axis": [
+      0,
+      1,
+      0
+    ],
+    "exterior": true,
+    "manipulable": false,
+    "pbr": {
+      "color": [
+        0.8,
+        0.81,
+        0.82,
+        1
+      ],
+      "metallic": 0.7,
+      "roughness": 0.4
+    }
+  },
+  {
+    "part_id": "p-carrier-head",
+    "mesh_object_id": "carrier_heads",
+    "label": "Carrier heads",
+    "evidence_grade": "E3_inferred",
+    "confidence": 0.45,
+    "sigma_m": 0.06,
+    "missing": [
+      {
+        "what": "R_station (600 ±60)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "e_head (190 ±40)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "h (140 ±40)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "shaft_d (80 ±20)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      }
+    ],
+    "geometry_decision": "Housing around 305 mm retaining ring; height inferred.",
+    "material_decision": "carrier head housing (E3_inferred)",
+    "physics_rationale": "down-force 0.5–3 psi; 103 rpm",
+    "uncertainty": "worst parameter grade E3_inferred; max σ 60 mm",
+    "cad_parameters": "see cad/parts/p-carrier-head.py PARAMS",
+    "source_ids": [
+      "INFERRED-NO-SOURCE",
+      "S002",
+      "S007",
+      "S010"
+    ],
+    "assembly_axis": [
+      0,
+      1,
+      0
+    ],
+    "exterior": false,
+    "manipulable": true,
+    "pbr": {
+      "color": [
+        0.34,
+        0.36,
+        0.4,
+        1
+      ],
+      "metallic": 0.6,
+      "roughness": 0.45
+    }
+  },
+  {
+    "part_id": "p-retaining-ring",
+    "mesh_object_id": "retaining_rings",
+    "label": "Retaining rings",
+    "evidence_grade": "E3_inferred",
+    "confidence": 0.45,
+    "sigma_m": 0.06,
+    "missing": [
+      {
+        "what": "R_station (600 ±60)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "e_head (190 ±40)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "ring_h (25 ±8)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      }
+    ],
+    "geometry_decision": "305 mm ID, 12.7 mm wide (patents).",
+    "material_decision": "PPS/PEEK retaining ring (E3_inferred)",
+    "physics_rationale": "keeps wafer under head; edge effects not modelled",
+    "uncertainty": "worst parameter grade E3_inferred; max σ 60 mm",
+    "cad_parameters": "see cad/parts/p-retaining-ring.py PARAMS",
+    "source_ids": [
+      "INFERRED-NO-SOURCE",
+      "S002",
+      "S007",
+      "S010",
+      "S011"
+    ],
+    "assembly_axis": [
+      0,
+      1,
+      0
+    ],
+    "exterior": false,
+    "manipulable": false,
+    "pbr": {
+      "color": [
+        0.16,
+        0.16,
+        0.17,
+        1
+      ],
+      "metallic": 0.0,
+      "roughness": 0.6
+    }
+  },
+  {
+    "part_id": "p-membrane-zones",
+    "mesh_object_id": "membrane_zones",
+    "label": "Five pressure zones",
+    "evidence_grade": "E3_inferred",
+    "confidence": 0.45,
+    "sigma_m": 0.06,
+    "missing": [
+      {
+        "what": "R_station (600 ±60)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "e_head (190 ±40)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "gap (3 ±1)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "r_wafer (150 ±0.2)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      }
+    ],
+    "geometry_decision": "Equal-area annuli (assumed split) under station-1 head.",
+    "material_decision": "EPDM/silicone membrane zones (E3_inferred)",
+    "physics_rationale": "zone pressure sets local removal",
+    "uncertainty": "worst parameter grade E3_inferred; max σ 60 mm",
+    "cad_parameters": "see cad/parts/p-membrane-zones.py PARAMS",
+    "source_ids": [
+      "INFERRED-NO-SOURCE",
+      "S002",
+      "S035"
+    ],
+    "assembly_axis": [
+      0,
+      1,
+      0
+    ],
+    "exterior": false,
+    "manipulable": false,
+    "pbr": {
+      "color": [
+        0.25,
+        0.45,
+        0.6,
+        1
+      ],
+      "metallic": 0.0,
+      "roughness": 0.7
+    }
+  },
+  {
+    "part_id": "p-wafer",
+    "mesh_object_id": "wafer",
+    "label": "300 mm copper wafer",
+    "evidence_grade": "E3_inferred",
+    "confidence": 0.45,
+    "sigma_m": 0.06,
+    "missing": [
+      {
+        "what": "R_station (600 ±60)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "e_head (190 ±40)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "r (150 ±0.2)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "t (0.775 ±0.02)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      }
+    ],
+    "geometry_decision": "Standard 300 mm wafer at station 1.",
+    "material_decision": "silicon wafer, Cu blanket (E3_inferred)",
+    "physics_rationale": "removal profile from kinematics + saturating law",
+    "uncertainty": "worst parameter grade E3_inferred; max σ 60 mm",
+    "cad_parameters": "see cad/parts/p-wafer.py PARAMS",
+    "source_ids": [
+      "INFERRED-NO-SOURCE",
+      "S002",
+      "S035"
+    ],
+    "assembly_axis": [
+      0,
+      1,
+      0
+    ],
+    "exterior": false,
+    "manipulable": false,
+    "pbr": {
+      "color": [
+        0.78,
+        0.52,
+        0.38,
+        1
+      ],
+      "metallic": 1.0,
+      "roughness": 0.12
+    }
+  },
+  {
+    "part_id": "p-conditioner-arm",
+    "mesh_object_id": "conditioner_arm",
+    "label": "Pad conditioner arm",
+    "evidence_grade": "E3_inferred",
+    "confidence": 0.45,
+    "sigma_m": 0.08,
+    "missing": [
+      {
+        "what": "R_station (600 ±60)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "arm_len (420 ±60)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "e_head (190 ±40)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "pivot_r (520 ±80)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      }
+    ],
+    "geometry_decision": "Pivot outside pad; reach per 1.7–14.7 in sweep.",
+    "material_decision": "carrier head housing (E3_inferred)",
+    "physics_rationale": "sweeps 19 per min (S014)",
+    "uncertainty": "worst parameter grade E3_inferred; max σ 80 mm",
+    "cad_parameters": "see cad/parts/p-conditioner-arm.py PARAMS",
+    "source_ids": [
+      "INFERRED-NO-SOURCE",
+      "S002",
+      "S014"
+    ],
+    "assembly_axis": [
+      0,
+      1,
+      0
+    ],
+    "exterior": false,
+    "manipulable": false,
+    "pbr": {
+      "color": [
+        0.34,
+        0.36,
+        0.4,
+        1
+      ],
+      "metallic": 0.6,
+      "roughness": 0.45
+    }
+  },
+  {
+    "part_id": "p-conditioner-disk",
+    "mesh_object_id": "conditioner_disk",
+    "label": "Diamond conditioner disk",
+    "evidence_grade": "E3_inferred",
+    "confidence": 0.45,
+    "sigma_m": 0.08,
+    "missing": [
+      {
+        "what": "R_station (600 ±60)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "arm_len (420 ±60)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "d (108 ±25)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "e_head (190 ±40)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      }
+    ],
+    "geometry_decision": "Disk diameter not found; inferred.",
+    "material_decision": "PPS/PEEK retaining ring (E3_inferred)",
+    "physics_rationale": "restores pad asperities (not modelled)",
+    "uncertainty": "worst parameter grade E3_inferred; max σ 80 mm",
+    "cad_parameters": "see cad/parts/p-conditioner-disk.py PARAMS",
+    "source_ids": [
+      "INFERRED-NO-SOURCE",
+      "S002",
+      "S014"
+    ],
+    "assembly_axis": [
+      0,
+      1,
+      0
+    ],
+    "exterior": false,
+    "manipulable": false,
+    "pbr": {
+      "color": [
+        0.16,
+        0.16,
+        0.17,
+        1
+      ],
+      "metallic": 0.0,
+      "roughness": 0.6
+    }
+  },
+  {
+    "part_id": "p-slurry-arm",
+    "mesh_object_id": "slurry_arm",
+    "label": "Slurry arm",
+    "evidence_grade": "E3_inferred",
+    "confidence": 0.45,
+    "sigma_m": 0.06,
+    "missing": [
+      {
+        "what": "R_station (600 ±60)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "e_head (190 ±40)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "len (360 ±60)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      },
+      {
+        "what": "y (60 ±20)",
+        "resolves_with": "dimensioned drawing, product teardown or maker figure"
+      }
+    ],
+    "geometry_decision": "Arm over pad; position inferred.",
+    "material_decision": "carrier head housing (E3_inferred)",
+    "physics_rationale": "300 ml/min slurry (S035)",
+    "uncertainty": "worst parameter grade E3_inferred; max σ 60 mm",
+    "cad_parameters": "see cad/parts/p-slurry-arm.py PARAMS",
+    "source_ids": [
+      "INFERRED-NO-SOURCE",
+      "S002"
+    ],
+    "assembly_axis": [
+      0,
+      1,
+      0
+    ],
+    "exterior": false,
+    "manipulable": false,
+    "pbr": {
+      "color": [
+        0.34,
+        0.36,
+        0.4,
+        1
+      ],
+      "metallic": 0.6,
+      "roughness": 0.45
+    }
+  }
+]

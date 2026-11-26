@@ -1,0 +1,177 @@
+[
+  {
+    "arrangement": "Multi-zone membrane carrier head (concentric pressurized chambers)",
+    "patents": [
+      "US6857945B1",
+      "US7001257B2",
+      "US7255771B2",
+      "US9610672B2"
+    ],
+    "status": "installed",
+    "evidence": [
+      {
+        "source_id": "S035",
+        "what": "Reflexion LK 'equipped with 5-zone Contour heads' (user paper)"
+      },
+      {
+        "source_id": "S008",
+        "what": "AMAT patent names TITAN CONTOUR / TITAN PROFILER as AMAT heads"
+      },
+      {
+        "source_id": "S045",
+        "what": "refurbisher rebuilds Contour/Profiler/Titan heads for Reflexion family"
+      }
+    ],
+    "caveat": "Exact flap geometry and chamber count of the shipped Contour head not proven; specific five-flap design of US6857945 is 'patent_proposal' at the geometry level."
+  },
+  {
+    "arrangement": "Five-flap membrane geometry (flaps 150-158, T1 ~1 mm, T2 ~0.5 mm)",
+    "patents": [
+      "US6857945B1"
+    ],
+    "status": "patent_proposal",
+    "evidence": [],
+    "caveat": "Zone count of 5 matches S035/S047 but no source ties this flap geometry to a product."
+  },
+  {
+    "arrangement": "Carousel with four heads over three platens + transfer station",
+    "patents": [
+      "US6183354B1",
+      "US5738574A",
+      "US5681215A"
+    ],
+    "status": "compatible_family",
+    "evidence": [
+      {
+        "source_id": "S041",
+        "what": "Mirra with Titan heads used in production study"
+      },
+      {
+        "source_id": "S044",
+        "what": "Reflexion LK Ecmp 'three platen approach'"
+      },
+      {
+        "source_id": "S032",
+        "what": "REFLEXION polisher with carousel 134 and arms 150 carrying heads"
+      }
+    ],
+    "caveat": "Four-head count on Reflexion LK not stated by any opened source."
+  },
+  {
+    "arrangement": "Six-head carousel over four platens with two load cups",
+    "patents": [
+      "US7166016B1"
+    ],
+    "status": "unverified",
+    "evidence": [],
+    "caveat": "Matches Reflexion LK Prime description seen only in search snippets of AMAT pages (HTTP 403); not the base LK."
+  },
+  {
+    "arrangement": "Sweeping pad conditioner (base, arm, head, diamond disk, rinse cup)",
+    "patents": [
+      "US6036583A",
+      "US20140113533A1",
+      "US9138860B2"
+    ],
+    "status": "compatible_family",
+    "evidence": [
+      {
+        "source_id": "S031",
+        "what": "Reflexion LK run with 3M A122 disk, in-situ 30%, 6 lb, 115 rpm"
+      },
+      {
+        "source_id": "S014",
+        "what": "lists REFLEXION LK among applicable systems"
+      }
+    ],
+    "caveat": "Closed-loop dwell-time control with arm-mounted inductive sensor (US9138860 claim 1) is patent_proposal; damper (US20140113533) abandoned application."
+  },
+  {
+    "arrangement": "Combined slurry/rinse delivery arm",
+    "patents": [
+      "US6280299B1",
+      "WO2010051284A2"
+    ],
+    "status": "compatible_family",
+    "evidence": [
+      {
+        "source_id": "S020",
+        "what": "MIRRA named as the three-pad system"
+      },
+      {
+        "source_id": "S021",
+        "what": "MIRRA family named"
+      }
+    ],
+    "caveat": "No opened source shows the LK arm design."
+  },
+  {
+    "arrangement": "Through-pad optical window endpoint (laser / broadband spectrometer)",
+    "patents": [
+      "US5893796A",
+      "US7764377B2"
+    ],
+    "status": "unverified",
+    "evidence": [],
+    "caveat": "FullVision broadband endpoint on LK only in search snippets of AMAT pages (not opened)."
+  },
+  {
+    "arrangement": "Eddy-current core in platen recess (ISRM/RTPC)",
+    "patents": [
+      "US6924641B1",
+      "US7112960B2",
+      "US9023667B2"
+    ],
+    "status": "compatible_family",
+    "evidence": [
+      {
+        "source_id": "S041",
+        "what": "ISRM endpoint used on Mirra"
+      },
+      {
+        "source_id": "S026",
+        "what": "patent names RTPC"
+      }
+    ],
+    "caveat": "RTPC on LK only in search snippets."
+  },
+  {
+    "arrangement": "Two-piece retaining ring with 18 slurry channels",
+    "patents": [
+      "US7094139B2",
+      "US7934979B2",
+      "US10399202B2"
+    ],
+    "status": "patent_proposal",
+    "evidence": [],
+    "caveat": "No product evidence opened."
+  },
+  {
+    "arrangement": "Retaining ring plus outer carrier ring, six-chamber head",
+    "patents": [
+      "US7654888B2",
+      "EP1925398B1"
+    ],
+    "status": "patent_proposal",
+    "evidence": [],
+    "caveat": "Could correspond to later heads; unverified."
+  },
+  {
+    "arrangement": "Grooved two-layer pad (concentric grooves)",
+    "patents": [
+      "US6273806B1"
+    ],
+    "status": "compatible_family",
+    "evidence": [
+      {
+        "source_id": "S035",
+        "what": "IC1010 pad used on LK"
+      },
+      {
+        "source_id": "S014",
+        "what": "groove depth 30 mil, IC1010 named"
+      }
+    ],
+    "caveat": "IC1010 groove geometry not opened."
+  }
+]

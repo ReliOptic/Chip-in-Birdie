@@ -1,0 +1,84 @@
+{
+  "schema": "dta.capture/v1",
+  "dist": "/home/user/Chip-in-Birdie/work/cmp-polisher-twin/dist",
+  "captures": [
+    "01-first-frame-desktop.png",
+    "02-lift-out.png",
+    "03-blocker-map.png",
+    "04-exploded.png",
+    "05-first-frame-mobile.png"
+  ],
+  "runtime": {
+    "renderer": "threejs-webgl",
+    "context": "WebGL2RenderingContext"
+  },
+  "layout": {
+    "real_3d_canvas_primary": true,
+    "canvas_viewport_fraction": 1,
+    "min_visible_hero_fraction": 0.5222222222222223,
+    "persistent_chrome_elements": [],
+    "no_persistent_text_or_widget_chrome": true,
+    "mobile_subject_fraction": 0.7397435897435898,
+    "mobile_canvas_viewport_fraction": 1,
+    "desktop_and_mobile_captured": true
+  },
+  "interaction": {
+    "pointer_hover_opened": true,
+    "touch_tap_opened": true,
+    "keyboard_select_opened": true,
+    "rationale_matches_selected_part": true,
+    "max_label_words": 2,
+    "max_pick_response_ms": 2.699999999953434,
+    "probed_part": "p-base"
+  },
+  "evidence": {
+    "rendered_grade_matches_cards": true,
+    "unknown_parts_render_envelope_only": true,
+    "blocker_map_lights_only_missing_parts": false,
+    "shell_sigma_relative_error": 0,
+    "evidenced_volume_share": 0,
+    "volume_share_by_grade": {
+      "E1_measured": 0,
+      "E2_photomatched": 0,
+      "E3_inferred": 1,
+      "E4_unknown": 0
+    },
+    "blocker_parts": [
+      "p-base",
+      "p-platen",
+      "p-pad",
+      "p-carousel",
+      "p-carrier-head",
+      "p-retaining-ring",
+      "p-membrane-zones",
+      "p-wafer",
+      "p-conditioner-arm",
+      "p-conditioner-disk",
+      "p-slurry-arm"
+    ]
+  },
+  "explode": {
+    "factor_reached": 1,
+    "moved_parts": [
+      "p-base",
+      "p-platen",
+      "p-pad",
+      "p-carousel",
+      "p-carrier-head",
+      "p-retaining-ring",
+      "p-membrane-zones",
+      "p-wafer",
+      "p-conditioner-arm",
+      "p-conditioner-disk",
+      "p-slurry-arm"
+    ]
+  },
+  "errors": [],
+  "glb_validation": {
+    "skipped": "gltf-validator not installed"
+  },
+  "failed_truths": [
+    "evidence.blocker_map_lights_only_missing_parts"
+  ],
+  "captured_at": "2026-11-26T20:10:31.000Z"
+}

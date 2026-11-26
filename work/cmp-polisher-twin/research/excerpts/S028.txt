@@ -1,0 +1,1 @@
+The CMP tool that was used in the examples is a 300 mm LK® polisher, or a Mirra® polisher, manufactured by Applied Materials

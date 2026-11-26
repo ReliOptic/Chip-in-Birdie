@@ -1,0 +1,21 @@
+{
+  "source_id": "S001",
+  "canonical_id": "doi:10.xxxx/... | patent:US1234567B2 | isbn | url-hash",
+  "title": "",
+  "kind": "official_manual|patent|paper|standard|datasheet|brand_guide|official_photo|technical_article",
+  "publisher": "",
+  "publication_date": "YYYY-MM-DD",
+  "public_url": "https://",
+  "access_or_license": "open|paywalled-read|manufacturer-public|CC-BY",
+  "read_status": "full|relevant_sections",
+  "read_locator": "p.12 fig.4 / claim 3 / §2.1 / 00:04:12",
+  "applicability": "exact|family|principle",
+  "applies_to": "amat-reflexion-lk-cmp-300mm",
+  "supports_part_ids": [
+    "p-..."
+  ],
+  "claim": "what this source establishes for those parts, in one sentence",
+  "limitations": "what it does not establish / conditions",
+  "excerpt_file": "research/excerpts/S001.txt",
+  "local_file": "research/sources/S001.pdf"
+}

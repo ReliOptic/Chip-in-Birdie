@@ -1,0 +1,168 @@
+{
+  "schema": "dta.cad-build/v1",
+  "parts": [
+    {
+      "id": "p-base",
+      "volume_m3": 3.3932013837720207,
+      "step_reimport_volume_relative_error": 1.2647449822319362e-15,
+      "bbox_m": [
+        2.2020154209614353,
+        0.7000154209614354,
+        2.2020154209614353
+      ],
+      "triangles": 652,
+      "worst_param_grade": "E3_inferred",
+      "max_sigma_m": 0.1,
+      "unknown_params": []
+    },
+    {
+      "id": "p-carousel",
+      "volume_m3": 0.03551730184547735,
+      "step_reimport_volume_relative_error": 4.5311026607176605e-14,
+      "bbox_m": [
+        1.4400000002000073,
+        0.060076346694307975,
+        1.4400000002000073
+      ],
+      "triangles": 204,
+      "worst_param_grade": "E3_inferred",
+      "max_sigma_m": 0.06,
+      "unknown_params": []
+    },
+    {
+      "id": "p-carrier-head",
+      "volume_m3": 0.024545703225468566,
+      "step_reimport_volume_relative_error": 1.062386840160926e-14,
+      "bbox_m": [
+        1.190473217253168,
+        0.43504451553578144,
+        1.1904000002000004
+      ],
+      "triangles": 10080,
+      "worst_param_grade": "E3_inferred",
+      "max_sigma_m": 0.06,
+      "unknown_params": []
+    },
+    {
+      "id": "p-conditioner-arm",
+      "volume_m3": 0.0017077897635871268,
+      "step_reimport_volume_relative_error": 2.4403873417359568e-14,
+      "bbox_m": [
+        0.2809896540493152,
+        0.15000889193578187,
+        0.42373093824681746
+      ],
+      "triangles": 646,
+      "worst_param_grade": "E3_inferred",
+      "max_sigma_m": 0.08,
+      "unknown_params": []
+    },
+    {
+      "id": "p-conditioner-disk",
+      "volume_m3": 0.00015268140296446388,
+      "step_reimport_volume_relative_error": 1.9061804444846194e-16,
+      "bbox_m": [
+        0.10802134858483305,
+        0.12001423245655553,
+        0.10800000020000022
+      ],
+      "triangles": 1256,
+      "worst_param_grade": "E3_inferred",
+      "max_sigma_m": 0.08,
+      "unknown_params": []
+    },
+    {
+      "id": "p-membrane-zones",
+      "volume_m3": 0.0003690446416049671,
+      "step_reimport_volume_relative_error": 1.4668448893906416e-14,
+      "bbox_m": [
+        0.2970587082582908,
+        0.006058708258290771,
+        0.2970000002000003
+      ],
+      "triangles": 5684,
+      "worst_param_grade": "E3_inferred",
+      "max_sigma_m": 0.06,
+      "unknown_params": []
+    },
+    {
+      "id": "p-pad",
+      "volume_m3": 0.0034202754839081106,
+      "step_reimport_volume_relative_error": 0.0,
+      "bbox_m": [
+        1.9621506249152103,
+        0.0026506249152103453,
+        1.3620000002000003
+      ],
+      "triangles": 1884,
+      "worst_param_grade": "E3_inferred",
+      "max_sigma_m": 0.06,
+      "unknown_params": []
+    },
+    {
+      "id": "p-platen",
+      "volume_m3": 0.0684055096781622,
+      "step_reimport_volume_relative_error": 0.0,
+      "bbox_m": [
+        1.9621506249152103,
+        0.05015062491521034,
+        1.3620000002000003
+      ],
+      "triangles": 1884,
+      "worst_param_grade": "E3_inferred",
+      "max_sigma_m": 0.06,
+      "unknown_params": []
+    },
+    {
+      "id": "p-retaining-ring",
+      "volume_m3": 0.0012675666622777551,
+      "step_reimport_volume_relative_error": 2.185829544066948e-14,
+      "bbox_m": [
+        1.1504653104439706,
+        0.025065310443970618,
+        1.1504000002000003
+      ],
+      "triangles": 5056,
+      "worst_param_grade": "E3_inferred",
+      "max_sigma_m": 0.06,
+      "unknown_params": []
+    },
+    {
+      "id": "p-slurry-arm",
+      "volume_m3": 0.0003251697245096173,
+      "step_reimport_volume_relative_error": 7.231883301714124e-14,
+      "bbox_m": [
+        0.2153972468011617,
+        0.0840049419557488,
+        0.34277108483112306
+      ],
+      "triangles": 646,
+      "worst_param_grade": "E3_inferred",
+      "max_sigma_m": 0.06,
+      "unknown_params": []
+    },
+    {
+      "id": "p-wafer",
+      "volume_m3": 5.4781521896972026e-05,
+      "step_reimport_volume_relative_error": 2.656354683926952e-16,
+      "bbox_m": [
+        0.30005930126898056,
+        0.0008343012689805194,
+        0.30000000020000017
+      ],
+      "triangles": 628,
+      "worst_param_grade": "E3_inferred",
+      "max_sigma_m": 0.06,
+      "unknown_params": []
+    }
+  ],
+  "errors": [],
+  "dist_exporter": "dta_glb.write_glb",
+  "exchange_glb": {
+    "path": "cad/assembly.glb",
+    "sha256": "f273bfe46165896e751b596a316ccf4c771baae092b0f021ec21f641fffafd85",
+    "units": "mm",
+    "exporter": "cadquery.Assembly.export (OCCT)"
+  },
+  "dist_model_glb_sha256": "54da9d1f7f966ff831401d654c0b090cf35444f731e05cba9e241cc9e66316a8"
+}

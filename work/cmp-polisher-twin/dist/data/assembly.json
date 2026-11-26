@@ -1,0 +1,336 @@
+{
+  "schema": "dta.assembly/v1",
+  "units": "mm",
+  "up_axis": "Y",
+  "default_pose": {
+    "position": [
+      1900,
+      1500,
+      1700
+    ],
+    "target": [
+      150,
+      0,
+      -200
+    ]
+  },
+  "parts": [
+    {
+      "part_id": "p-carousel",
+      "parent": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode": {
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "distance": 600,
+        "order": 0
+      },
+      "joint": {
+        "type": "fixed",
+        "source_id": "INFERRED-NO-SOURCE"
+      }
+    },
+    {
+      "part_id": "p-slurry-arm",
+      "parent": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode": {
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "distance": 300,
+        "order": 1
+      },
+      "joint": {
+        "type": "fixed",
+        "source_id": "INFERRED-NO-SOURCE"
+      }
+    },
+    {
+      "part_id": "p-conditioner-arm",
+      "parent": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode": {
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "distance": 300,
+        "order": 1
+      },
+      "joint": {
+        "type": "fixed",
+        "source_id": "INFERRED-NO-SOURCE"
+      }
+    },
+    {
+      "part_id": "p-conditioner-disk",
+      "parent": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode": {
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "distance": 320,
+        "order": 1
+      },
+      "joint": {
+        "type": "fixed",
+        "source_id": "INFERRED-NO-SOURCE"
+      }
+    },
+    {
+      "part_id": "p-carrier-head",
+      "parent": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode": {
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "distance": 420,
+        "order": 2
+      },
+      "joint": {
+        "type": "fixed",
+        "source_id": "INFERRED-NO-SOURCE"
+      }
+    },
+    {
+      "part_id": "p-retaining-ring",
+      "parent": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode": {
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "distance": 260,
+        "order": 3
+      },
+      "joint": {
+        "type": "fixed",
+        "source_id": "INFERRED-NO-SOURCE"
+      }
+    },
+    {
+      "part_id": "p-membrane-zones",
+      "parent": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode": {
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "distance": 180,
+        "order": 3
+      },
+      "joint": {
+        "type": "fixed",
+        "source_id": "INFERRED-NO-SOURCE"
+      }
+    },
+    {
+      "part_id": "p-wafer",
+      "parent": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode": {
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "distance": 90,
+        "order": 4
+      },
+      "joint": {
+        "type": "fixed",
+        "source_id": "INFERRED-NO-SOURCE"
+      }
+    },
+    {
+      "part_id": "p-pad",
+      "parent": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode": {
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "distance": 60,
+        "order": 5
+      },
+      "joint": {
+        "type": "revolute",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "limits": [
+          -1000000000.0,
+          1000000000.0
+        ],
+        "source_id": "S002"
+      }
+    },
+    {
+      "part_id": "p-platen",
+      "parent": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode": {
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "distance": 120,
+        "order": 6
+      },
+      "joint": {
+        "type": "revolute",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "limits": [
+          -1000000000.0,
+          1000000000.0
+        ],
+        "source_id": "S002"
+      }
+    },
+    {
+      "part_id": "p-base",
+      "parent": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode": {
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "distance": 300,
+        "order": 6
+      },
+      "joint": {
+        "type": "fixed",
+        "source_id": "INFERRED-NO-SOURCE"
+      }
+    }
+  ],
+  "disassembly_sequence_source_id": "INFERRED-NO-SOURCE",
+  "notes": "Platens and pads rotate about their own vertical axes in the runtime (per-station pivots); CAD placement is identity, each sub-solid is already at its station."
+}

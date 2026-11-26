@@ -1,0 +1,76 @@
+{
+  "schema": "dta.quality-gate/v3",
+  "_note": "DRAFT — fill every field from real artifacts; see references/v3-manifest-contract.md. Remove this key before running the gate.",
+  "twin": {
+    "id": "amat-reflexion-lk-cmp-300mm",
+    "revision": "r1",
+    "scope": "asset",
+    "stage": "reconstruct",
+    "target_stage": "simulate",
+    "visual_target": "photoreal_3d",
+    "visual_achieved": "none",
+    "motion_target": "none",
+    "visual_source_dir": "dist",
+    "target_identity": {
+      "id": "amat-reflexion-lk-cmp-300mm",
+      "maker": "TODO",
+      "model": "TODO",
+      "variant": "TODO",
+      "technology_family": "TODO"
+    }
+  },
+  "research": {
+    "corpus": {
+      "path": "research/corpus.json",
+      "sha256": "TODO"
+    },
+    "bibliography": {
+      "path": "dist/research.html",
+      "sha256": "TODO"
+    }
+  },
+  "assembly": {
+    "parts": {
+      "path": "cad/parts.json",
+      "sha256": "TODO"
+    },
+    "placement": {
+      "path": "cad/assembly.json",
+      "sha256": "TODO"
+    },
+    "interfaces": [],
+    "excluded_families": [],
+    "forbidden_component_types": [],
+    "negative_substitution": {
+      "path": "tests/invalid-part.json",
+      "sha256": "TODO"
+    }
+  },
+  "experience": {
+    "part_rationale": {
+      "path": "ui/part-rationale.json",
+      "sha256": "TODO"
+    },
+    "brand_source_ids": [],
+    "brand_decisions": {
+      "path": "ui/brand-decisions.json",
+      "sha256": "TODO"
+    },
+    "exterior_evidence": {
+      "path": "qa/exterior-evidence.json",
+      "sha256": "TODO"
+    }
+  },
+  "physics_review": {
+    "critique_ledger": {
+      "path": "physics/counterhypotheses.json",
+      "sha256": "TODO"
+    },
+    "models": []
+  },
+  "pipeline": [],
+  "sources": [],
+  "code": [],
+  "features": [],
+  "checks": []
+}

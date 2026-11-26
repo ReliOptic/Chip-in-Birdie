@@ -1,0 +1,1 @@
+The CMP tool that was used is a 200 mm Mirra, or 300 mm Reflexion manufactured by Applied Materials, the tool baseline conditions were: table speed; 87 rpm, head speed: 93 rpm, membrane pressure; 3.0 psi DF, composition flow; 200 ml/min.

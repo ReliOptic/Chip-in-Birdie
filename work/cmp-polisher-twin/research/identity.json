@@ -1,0 +1,51 @@
+{
+  "schema": "dta.identity/v1",
+  "id": "amat-reflexion-lk-cmp-300mm",
+  "maker": "Applied Materials",
+  "model": "Reflexion LK (closest documented: Mirra/Reflexion family layout)",
+  "variant": "300 mm, 3 platens, 5-zone Contour heads (as used in S035)",
+  "technology_family": "rotary multi-platen CMP polisher",
+  "build_years": "2000s– (not pinned)",
+  "subsystem_boundary": "polishing module: platens, pads, carousel, carrier heads, conditioner, slurry arm; factory interface, cleaner, robots, endpoint optics internals excluded",
+  "operating_mode": "blanket Cu polish, 97/103 rpm, 300 ml/min (research reconstruction)",
+  "excluded_families": [
+    "linear/belt CMP (Lam Teres)",
+    "orbital CMP",
+    "Ebara rotary tools",
+    "single-zone Titan heads for LK recipe"
+  ],
+  "forbidden_component_types": [
+    "linear_belt_pad",
+    "orbital_platen",
+    "fixed_abrasive_web"
+  ],
+  "applicability_table": [
+    {
+      "claim": "5-zone Contour head, 97/103 rpm, Cu RR vs P",
+      "status": "installed",
+      "source_id": "S035"
+    },
+    {
+      "claim": "762 mm platen",
+      "status": "compatible_family",
+      "source_id": "S033"
+    },
+    {
+      "claim": "4-head carousel",
+      "status": "compatible_family",
+      "source_id": "S002"
+    },
+    {
+      "claim": "3 platens",
+      "status": "installed",
+      "source_id": "S044"
+    }
+  ],
+  "open_identity_questions": [
+    "LK head count",
+    "carrier–platen centre distance",
+    "conditioner disk diameter",
+    "zone radii of Contour membrane"
+  ],
+  "frozen_on": "2026-11-26"
+}

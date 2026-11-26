@@ -1,0 +1,1 @@
+The wafer carrier and the pad were rotated at 75 rpm to maintain a constant relative velocity of 0.7 m/s across the wafer.

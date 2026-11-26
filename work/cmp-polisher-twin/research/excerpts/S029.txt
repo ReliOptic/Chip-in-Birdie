@@ -1,0 +1,1 @@
+The tool baseline conditions were: table speed: 87 rpm, head speed: 93 rpm, membrane pressure; 3.0 psi DF or 4.0 psi DF

@@ -1,0 +1,740 @@
+[
+  {
+    "id": "p-base",
+    "feature_id": "f-base",
+    "critical": false,
+    "applies_to": "amat-reflexion-lk-cmp-300mm",
+    "technology_family": "rotary multi-platen CMP polisher",
+    "component_type": "machine_base",
+    "units": "mm",
+    "cad_tool": "CadQuery 2.8 (OCCT) \u2014 STEP AP242 for CATIA",
+    "mesh_object_id": "polish_base",
+    "source_ids": [
+      "INFERRED-NO-SOURCE",
+      "S002"
+    ],
+    "cad": {
+      "path": "cad/parts/p-base.py",
+      "sha256": "cba8ce01d0a8e5b78ab2c0d1808bdfcf24f51bf8734e8da203de97a7e9b800c4"
+    },
+    "step": {
+      "path": "cad/step/p-base.step",
+      "sha256": "a31e3c2b3d7d6e45e739d68a7dbd220a819924ddede7735d0d4f417fe878573e"
+    },
+    "glb": {
+      "path": "cad/glb/p-base.glb",
+      "sha256": "73511f765c2bfef460cc0d6c15ca3b21b484177dbb257120e30644791deda05b"
+    },
+    "parameters": {
+      "R_station": {
+        "grade": "E3_inferred",
+        "locator": "US6183354: three polishing stations + transfer station, 4-head carousel (Mirra family) \u2014 station radius inferred so 762 mm platens do not overlap",
+        "sigma": 60,
+        "source_id": "S002",
+        "value": 600
+      },
+      "e_head": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read \u2014 carrier-to-platen centre offset; must keep wafer on pad (\u2264231 mm)",
+        "sigma": 40,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 190
+      },
+      "height": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 100,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 700
+      },
+      "margin": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 40,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 120
+      }
+    }
+  },
+  {
+    "id": "p-carousel",
+    "feature_id": "f-carousel",
+    "critical": false,
+    "applies_to": "amat-reflexion-lk-cmp-300mm",
+    "technology_family": "rotary multi-platen CMP polisher",
+    "component_type": "head_carousel",
+    "units": "mm",
+    "cad_tool": "CadQuery 2.8 (OCCT) \u2014 STEP AP242 for CATIA",
+    "mesh_object_id": "carousel",
+    "source_ids": [
+      "INFERRED-NO-SOURCE",
+      "S002"
+    ],
+    "cad": {
+      "path": "cad/parts/p-carousel.py",
+      "sha256": "4861073df2d4ab53b7cdab358b9c3cf9907cb0d5ccddf2a8d87204bc8d8bff44"
+    },
+    "step": {
+      "path": "cad/step/p-carousel.step",
+      "sha256": "e6388aebd1311ad14b731b241042807f0e9ae4628a36f8c9a3aa8442305db6ab"
+    },
+    "glb": {
+      "path": "cad/glb/p-carousel.glb",
+      "sha256": "c08e64bcde51b0d0a81623950c8bece1b1982ca936742eab92a01f94c62a2341"
+    },
+    "parameters": {
+      "R_station": {
+        "grade": "E3_inferred",
+        "locator": "US6183354: three polishing stations + transfer station, 4-head carousel (Mirra family) \u2014 station radius inferred so 762 mm platens do not overlap",
+        "sigma": 60,
+        "source_id": "S002",
+        "value": 600
+      },
+      "arm_w": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 50,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 220
+      },
+      "e_head": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read \u2014 carrier-to-platen centre offset; must keep wafer on pad (\u2264231 mm)",
+        "sigma": 40,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 190
+      },
+      "t": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 20,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 60
+      },
+      "y": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 60,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 420
+      }
+    }
+  },
+  {
+    "id": "p-carrier-head",
+    "feature_id": "f-carrier-head",
+    "critical": true,
+    "applies_to": "amat-reflexion-lk-cmp-300mm",
+    "technology_family": "rotary multi-platen CMP polisher",
+    "component_type": "multi_zone_carrier_head",
+    "units": "mm",
+    "cad_tool": "CadQuery 2.8 (OCCT) \u2014 STEP AP242 for CATIA",
+    "mesh_object_id": "carrier_heads",
+    "source_ids": [
+      "INFERRED-NO-SOURCE",
+      "S002",
+      "S007",
+      "S010"
+    ],
+    "cad": {
+      "path": "cad/parts/p-carrier-head.py",
+      "sha256": "9c42b1489994296b3a58dc25014d7e7f5a1c786527019194f4e6332895dbce7d"
+    },
+    "step": {
+      "path": "cad/step/p-carrier-head.step",
+      "sha256": "f9fe329d4d2c46b97e588019433582a7b89921a07b480fcfec487e410f8a2028"
+    },
+    "glb": {
+      "path": "cad/glb/p-carrier-head.glb",
+      "sha256": "941d2088f637055aa7cf3318031fa56beff50b4b28441fdb1a3c2f726c0706f2"
+    },
+    "parameters": {
+      "R_station": {
+        "grade": "E3_inferred",
+        "locator": "US6183354: three polishing stations + transfer station, 4-head carousel (Mirra family) \u2014 station radius inferred so 762 mm platens do not overlap",
+        "sigma": 60,
+        "source_id": "S002",
+        "value": 600
+      },
+      "e_head": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read \u2014 carrier-to-platen centre offset; must keep wafer on pad (\u2264231 mm)",
+        "sigma": 40,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 190
+      },
+      "h": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 40,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 140
+      },
+      "ring_id": {
+        "grade": "E2_photomatched",
+        "locator": "retaining ring inner diameter ~305 mm",
+        "sigma": 2,
+        "source_id": "S010",
+        "value": 305
+      },
+      "ring_w": {
+        "grade": "E2_photomatched",
+        "locator": "retaining ring radial width ~0.5 in",
+        "sigma": 2,
+        "source_id": "S007",
+        "value": 12.7
+      },
+      "shaft_d": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 20,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 80
+      },
+      "y0": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 5,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 20
+      },
+      "y_top": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 60,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 390
+      }
+    }
+  },
+  {
+    "id": "p-conditioner-arm",
+    "feature_id": "f-conditioner-arm",
+    "critical": false,
+    "applies_to": "amat-reflexion-lk-cmp-300mm",
+    "technology_family": "rotary multi-platen CMP polisher",
+    "component_type": "pad_conditioner_arm",
+    "units": "mm",
+    "cad_tool": "CadQuery 2.8 (OCCT) \u2014 STEP AP242 for CATIA",
+    "mesh_object_id": "conditioner_arm",
+    "source_ids": [
+      "INFERRED-NO-SOURCE",
+      "S002",
+      "S014"
+    ],
+    "cad": {
+      "path": "cad/parts/p-conditioner-arm.py",
+      "sha256": "8719dac2bba6005d209d32ed5ff54e398019599976b71031c03eaad0ef6bb69e"
+    },
+    "step": {
+      "path": "cad/step/p-conditioner-arm.step",
+      "sha256": "7ebabeda78e3e463d145fb02651fafeec890bcf515d912f7546105cf0f1064e1"
+    },
+    "glb": {
+      "path": "cad/glb/p-conditioner-arm.glb",
+      "sha256": "d43bc3bc07e1ca6a5955437ad420495f4d73484bec724c9e1859bdcba920727a"
+    },
+    "parameters": {
+      "R_station": {
+        "grade": "E3_inferred",
+        "locator": "US6183354: three polishing stations + transfer station, 4-head carousel (Mirra family) \u2014 station radius inferred so 762 mm platens do not overlap",
+        "sigma": 60,
+        "source_id": "S002",
+        "value": 600
+      },
+      "arm_len": {
+        "grade": "E3_inferred",
+        "locator": "conditioner sweep 1.7\u201314.7 in from platen centre \u2014 reach 1.7\u201314.7 in",
+        "sigma": 60,
+        "source_id": "S014",
+        "value": 420
+      },
+      "e_head": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read \u2014 carrier-to-platen centre offset; must keep wafer on pad (\u2264231 mm)",
+        "sigma": 40,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 190
+      },
+      "pivot_r": {
+        "grade": "E3_inferred",
+        "locator": "conditioner sweep 1.7\u201314.7 in from platen centre \u2014 pivot outside pad",
+        "sigma": 80,
+        "source_id": "S014",
+        "value": 520
+      },
+      "w": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 15,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 60
+      },
+      "y": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 30,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 110
+      }
+    }
+  },
+  {
+    "id": "p-conditioner-disk",
+    "feature_id": "f-conditioner-disk",
+    "critical": false,
+    "applies_to": "amat-reflexion-lk-cmp-300mm",
+    "technology_family": "rotary multi-platen CMP polisher",
+    "component_type": "diamond_conditioner_disk",
+    "units": "mm",
+    "cad_tool": "CadQuery 2.8 (OCCT) \u2014 STEP AP242 for CATIA",
+    "mesh_object_id": "conditioner_disk",
+    "source_ids": [
+      "INFERRED-NO-SOURCE",
+      "S002",
+      "S014"
+    ],
+    "cad": {
+      "path": "cad/parts/p-conditioner-disk.py",
+      "sha256": "5e6ed16059b0d4eb716b6769f2d1e0afa9c97c890fc132d03fef5f2082c00ff6"
+    },
+    "step": {
+      "path": "cad/step/p-conditioner-disk.step",
+      "sha256": "b0016ad388ddefea4b813ff67c55dbc2fa3e7b32f63e5a3ab62b7b1ad3d69330"
+    },
+    "glb": {
+      "path": "cad/glb/p-conditioner-disk.glb",
+      "sha256": "a32ffbea9a32ad0d0f4062d320a51b808aac9324c9383821152a054bbdcfce9a"
+    },
+    "parameters": {
+      "R_station": {
+        "grade": "E3_inferred",
+        "locator": "US6183354: three polishing stations + transfer station, 4-head carousel (Mirra family) \u2014 station radius inferred so 762 mm platens do not overlap",
+        "sigma": 60,
+        "source_id": "S002",
+        "value": 600
+      },
+      "arm_len": {
+        "grade": "E3_inferred",
+        "locator": "conditioner sweep 1.7\u201314.7 in from platen centre",
+        "sigma": 60,
+        "source_id": "S014",
+        "value": 420
+      },
+      "d": {
+        "grade": "E3_inferred",
+        "locator": "disk diameter not found; 3M A165/A122 class",
+        "sigma": 25,
+        "source_id": "S014",
+        "value": 108
+      },
+      "e_head": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read \u2014 carrier-to-platen centre offset; must keep wafer on pad (\u2264231 mm)",
+        "sigma": 40,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 190
+      },
+      "pivot_r": {
+        "grade": "E3_inferred",
+        "locator": "conditioner sweep 1.7\u201314.7 in from platen centre",
+        "sigma": 80,
+        "source_id": "S014",
+        "value": 520
+      },
+      "t": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 3,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 10
+      },
+      "y": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 30,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 110
+      }
+    }
+  },
+  {
+    "id": "p-membrane-zones",
+    "feature_id": "f-membrane-zones",
+    "critical": true,
+    "applies_to": "amat-reflexion-lk-cmp-300mm",
+    "technology_family": "rotary multi-platen CMP polisher",
+    "component_type": "multi_zone_membrane",
+    "units": "mm",
+    "cad_tool": "CadQuery 2.8 (OCCT) \u2014 STEP AP242 for CATIA",
+    "mesh_object_id": "membrane_zones",
+    "source_ids": [
+      "INFERRED-NO-SOURCE",
+      "S002",
+      "S035"
+    ],
+    "cad": {
+      "path": "cad/parts/p-membrane-zones.py",
+      "sha256": "4704e2ebc6e939c14be64415b291bbf7d88719c63d11fc01077e62f1b58e164e"
+    },
+    "step": {
+      "path": "cad/step/p-membrane-zones.step",
+      "sha256": "e0892ba00ceb87076adbaec39d913912181c8e28a3677a8267a91181b4f642f1"
+    },
+    "glb": {
+      "path": "cad/glb/p-membrane-zones.glb",
+      "sha256": "a7e326b1e5bcb62ab0653cfc6a0bfc420e2adba2905b20aceb069d0a2216e55f"
+    },
+    "parameters": {
+      "R_station": {
+        "grade": "E3_inferred",
+        "locator": "US6183354: three polishing stations + transfer station, 4-head carousel (Mirra family) \u2014 station radius inferred so 762 mm platens do not overlap",
+        "sigma": 60,
+        "source_id": "S002",
+        "value": 600
+      },
+      "e_head": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read \u2014 carrier-to-platen centre offset; must keep wafer on pad (\u2264231 mm)",
+        "sigma": 40,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 190
+      },
+      "gap": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 1,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 3
+      },
+      "n_zones": {
+        "grade": "E1_measured",
+        "locator": "\u00a73: 5-zone Contour heads on Reflexion LK",
+        "sigma": 0,
+        "source_id": "S035",
+        "value": 5
+      },
+      "r_wafer": {
+        "grade": "E3_inferred",
+        "locator": "SEMI M1 300 mm wafer, 775 \u00b5m \u2014 standard not in corpus",
+        "sigma": 0.2,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 150
+      },
+      "t": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 2,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 6
+      },
+      "y": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 0.3,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 1.2
+      }
+    }
+  },
+  {
+    "id": "p-pad",
+    "feature_id": "f-pad",
+    "critical": true,
+    "applies_to": "amat-reflexion-lk-cmp-300mm",
+    "technology_family": "rotary multi-platen CMP polisher",
+    "component_type": "polishing_pad",
+    "units": "mm",
+    "cad_tool": "CadQuery 2.8 (OCCT) \u2014 STEP AP242 for CATIA",
+    "mesh_object_id": "pads",
+    "source_ids": [
+      "INFERRED-NO-SOURCE",
+      "S002",
+      "S019",
+      "S033",
+      "S035"
+    ],
+    "cad": {
+      "path": "cad/parts/p-pad.py",
+      "sha256": "bb11b879de7f60ec1d7d12b0a66dba7acd57dd1c2f5aa4b4540e1d6b629c0847"
+    },
+    "step": {
+      "path": "cad/step/p-pad.step",
+      "sha256": "d400589df19243ef8a17349421fc6df0d756d2c025d2327855be369c66d77de6"
+    },
+    "glb": {
+      "path": "cad/glb/p-pad.glb",
+      "sha256": "92b366918cc16ecacc844a79fb67298409eedff8f62a13ddc24e9ba963579407"
+    },
+    "parameters": {
+      "D": {
+        "grade": "E2_photomatched",
+        "locator": "detailed description: platen ~30 in (762 mm) for 300 mm wafers",
+        "sigma": 10,
+        "source_id": "S033",
+        "value": 762
+      },
+      "R_station": {
+        "grade": "E3_inferred",
+        "locator": "US6183354: three polishing stations + transfer station, 4-head carousel (Mirra family) \u2014 station radius inferred so 762 mm platens do not overlap",
+        "sigma": 60,
+        "source_id": "S002",
+        "value": 600
+      },
+      "e_head": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read \u2014 carrier-to-platen centre offset; must keep wafer on pad (\u2264231 mm)",
+        "sigma": 40,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 190
+      },
+      "t": {
+        "grade": "E2_photomatched",
+        "locator": "pad upper layer 0.06\u20130.12 in \u2014 0.1 in",
+        "sigma": 0.8,
+        "source_id": "S019",
+        "value": 2.5
+      }
+    }
+  },
+  {
+    "id": "p-platen",
+    "feature_id": "f-platen",
+    "critical": true,
+    "applies_to": "amat-reflexion-lk-cmp-300mm",
+    "technology_family": "rotary multi-platen CMP polisher",
+    "component_type": "rotating_platen",
+    "units": "mm",
+    "cad_tool": "CadQuery 2.8 (OCCT) \u2014 STEP AP242 for CATIA",
+    "mesh_object_id": "platens",
+    "source_ids": [
+      "INFERRED-NO-SOURCE",
+      "S002",
+      "S033"
+    ],
+    "cad": {
+      "path": "cad/parts/p-platen.py",
+      "sha256": "2830a70e07c31b7a7e40b6a49e8b7f2cb08cfa5e26cd28cd158d4e873cb9a324"
+    },
+    "step": {
+      "path": "cad/step/p-platen.step",
+      "sha256": "28450b2caecac7c2481dc1da77f7b216fc9b73596526a5e0b94775bed2520e3d"
+    },
+    "glb": {
+      "path": "cad/glb/p-platen.glb",
+      "sha256": "c232475e5e1c7a6b3699087d25833a0d1771506ff0275232467fd06fe84b1f5b"
+    },
+    "parameters": {
+      "D": {
+        "grade": "E2_photomatched",
+        "locator": "detailed description: platen ~30 in (762 mm) for 300 mm wafers",
+        "sigma": 10,
+        "source_id": "S033",
+        "value": 762
+      },
+      "R_station": {
+        "grade": "E3_inferred",
+        "locator": "US6183354: three polishing stations + transfer station, 4-head carousel (Mirra family) \u2014 station radius inferred so 762 mm platens do not overlap",
+        "sigma": 60,
+        "source_id": "S002",
+        "value": 600
+      },
+      "e_head": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read \u2014 carrier-to-platen centre offset; must keep wafer on pad (\u2264231 mm)",
+        "sigma": 40,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 190
+      },
+      "t": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 15,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 50
+      }
+    }
+  },
+  {
+    "id": "p-retaining-ring",
+    "feature_id": "f-retaining-ring",
+    "critical": true,
+    "applies_to": "amat-reflexion-lk-cmp-300mm",
+    "technology_family": "rotary multi-platen CMP polisher",
+    "component_type": "retaining_ring",
+    "units": "mm",
+    "cad_tool": "CadQuery 2.8 (OCCT) \u2014 STEP AP242 for CATIA",
+    "mesh_object_id": "retaining_rings",
+    "source_ids": [
+      "INFERRED-NO-SOURCE",
+      "S002",
+      "S007",
+      "S010",
+      "S011"
+    ],
+    "cad": {
+      "path": "cad/parts/p-retaining-ring.py",
+      "sha256": "71c33a4528af422c23a6593fd8cbfe000e657909b4de31133393b4f959a05f5b"
+    },
+    "step": {
+      "path": "cad/step/p-retaining-ring.step",
+      "sha256": "d833a36a46913d622e9ca2ef76eeb608b89bb380658897bd8ba38b5513d37b5d"
+    },
+    "glb": {
+      "path": "cad/glb/p-retaining-ring.glb",
+      "sha256": "f70bf9de52eabe87e3d6c5a19c60534a809746cc3289e7b96ff2c9898fcb848b"
+    },
+    "parameters": {
+      "R_station": {
+        "grade": "E3_inferred",
+        "locator": "US6183354: three polishing stations + transfer station, 4-head carousel (Mirra family) \u2014 station radius inferred so 762 mm platens do not overlap",
+        "sigma": 60,
+        "source_id": "S002",
+        "value": 600
+      },
+      "e_head": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read \u2014 carrier-to-platen centre offset; must keep wafer on pad (\u2264231 mm)",
+        "sigma": 40,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 190
+      },
+      "ring_h": {
+        "grade": "E3_inferred",
+        "locator": "ring height not stated in any opened source",
+        "sigma": 8,
+        "source_id": "S011",
+        "value": 25
+      },
+      "ring_id": {
+        "grade": "E2_photomatched",
+        "locator": "retaining ring inner diameter ~305 mm",
+        "sigma": 2,
+        "source_id": "S010",
+        "value": 305
+      },
+      "ring_w": {
+        "grade": "E2_photomatched",
+        "locator": "retaining ring radial width ~0.5 in",
+        "sigma": 2,
+        "source_id": "S007",
+        "value": 12.7
+      }
+    }
+  },
+  {
+    "id": "p-slurry-arm",
+    "feature_id": "f-slurry-arm",
+    "critical": false,
+    "applies_to": "amat-reflexion-lk-cmp-300mm",
+    "technology_family": "rotary multi-platen CMP polisher",
+    "component_type": "slurry_delivery_arm",
+    "units": "mm",
+    "cad_tool": "CadQuery 2.8 (OCCT) \u2014 STEP AP242 for CATIA",
+    "mesh_object_id": "slurry_arm",
+    "source_ids": [
+      "INFERRED-NO-SOURCE",
+      "S002"
+    ],
+    "cad": {
+      "path": "cad/parts/p-slurry-arm.py",
+      "sha256": "3b003cec00b8d61f4978f130e05a9bef700566f55a42513d20d080775225ed8c"
+    },
+    "step": {
+      "path": "cad/step/p-slurry-arm.step",
+      "sha256": "039d1e091205823060d24451bd638bf32d27808db630015add6e7cca85655c23"
+    },
+    "glb": {
+      "path": "cad/glb/p-slurry-arm.glb",
+      "sha256": "15e610e65d48413dba015534a25b50d92a01ed92aaca37a134632c3a6c3b4f7e"
+    },
+    "parameters": {
+      "R_station": {
+        "grade": "E3_inferred",
+        "locator": "US6183354: three polishing stations + transfer station, 4-head carousel (Mirra family) \u2014 station radius inferred so 762 mm platens do not overlap",
+        "sigma": 60,
+        "source_id": "S002",
+        "value": 600
+      },
+      "e_head": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read \u2014 carrier-to-platen centre offset; must keep wafer on pad (\u2264231 mm)",
+        "sigma": 40,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 190
+      },
+      "len": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 60,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 360
+      },
+      "y": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read",
+        "sigma": 20,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 60
+      }
+    }
+  },
+  {
+    "id": "p-wafer",
+    "feature_id": "f-wafer",
+    "critical": false,
+    "applies_to": "amat-reflexion-lk-cmp-300mm",
+    "technology_family": "rotary multi-platen CMP polisher",
+    "component_type": "silicon_wafer_300mm",
+    "units": "mm",
+    "cad_tool": "CadQuery 2.8 (OCCT) \u2014 STEP AP242 for CATIA",
+    "mesh_object_id": "wafer",
+    "source_ids": [
+      "INFERRED-NO-SOURCE",
+      "S002",
+      "S035"
+    ],
+    "cad": {
+      "path": "cad/parts/p-wafer.py",
+      "sha256": "96deb149d690fc35e83978112f8050950d6d21fe935229946669151b9d3c17fc"
+    },
+    "step": {
+      "path": "cad/step/p-wafer.step",
+      "sha256": "12ca710be803f08d9dc1289fb0fe58181e5470ec767b52b09559b14e4a6d20cc"
+    },
+    "glb": {
+      "path": "cad/glb/p-wafer.glb",
+      "sha256": "109a141ec9b0a998c47afaabb586757d2eaf8a6c8e1da4a8188b848c2efec79e"
+    },
+    "parameters": {
+      "R_station": {
+        "grade": "E3_inferred",
+        "locator": "US6183354: three polishing stations + transfer station, 4-head carousel (Mirra family) \u2014 station radius inferred so 762 mm platens do not overlap",
+        "sigma": 60,
+        "source_id": "S002",
+        "value": 600
+      },
+      "e_head": {
+        "grade": "E3_inferred",
+        "locator": "engineering envelope; no dimensioned source read \u2014 carrier-to-platen centre offset; must keep wafer on pad (\u2264231 mm)",
+        "sigma": 40,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 190
+      },
+      "r": {
+        "grade": "E3_inferred",
+        "locator": "SEMI M1 300 mm wafer, 775 \u00b5m \u2014 standard not in corpus",
+        "sigma": 0.2,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 150
+      },
+      "t": {
+        "grade": "E3_inferred",
+        "locator": "SEMI M1 300 mm wafer, 775 \u00b5m \u2014 standard not in corpus",
+        "sigma": 0.02,
+        "source_id": "INFERRED-NO-SOURCE",
+        "value": 0.775
+      }
+    }
+  }
+]

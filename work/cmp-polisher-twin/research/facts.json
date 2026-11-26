@@ -1,0 +1,529 @@
+{
+  "platen_diameter_300mm": {
+    "value": 30,
+    "unit": "in (about 762 mm)",
+    "source_id": "S033",
+    "locator": "detailed description: 'platen 30 and polishing pad 32 may be about thirty inches in diameter'",
+    "grade_hint": "E2_family_patent_or_doc",
+    "corroboration": [
+      {
+        "source_id": "S013",
+        "value": "about 762 mm (30 inches) polishing station diameter for 300 mm substrates"
+      },
+      {
+        "source_id": "S014",
+        "value": "conditioner sweep to 14.7 in radius on a 300 mm system (consistent with ~15 in pad radius)"
+      }
+    ],
+    "note": "Reflexion LK platen diameter not published in any opened source; AMAT product pages blocked (HTTP 403)."
+  },
+  "platen_count": {
+    "value": 3,
+    "unit": "platens",
+    "source_id": "S044",
+    "locator": "article: 'takes full advantage of Applied's three platen approach' (Reflexion LK Ecmp)",
+    "grade_hint": "E2_family_patent_or_doc",
+    "corroboration": [
+      {
+        "source_id": "S002",
+        "value": "three polishing stations 25a-25c + transfer station 27 (Mirra)"
+      }
+    ],
+    "note": "LK base 'three-platen sequential' wording seen only in search snippets of AMAT pages (not opened)."
+  },
+  "head_count": {
+    "value": 4,
+    "unit": "carrier heads on carousel",
+    "source_id": "S002",
+    "locator": "'Multi-head carousel 60 includes four carrier head systems'",
+    "grade_hint": "E2_family_patent_or_doc",
+    "corroboration": [
+      {
+        "source_id": "S024",
+        "value": "four carrier heads 70"
+      },
+      {
+        "source_id": "S033",
+        "value": "four carrier head systems 70"
+      },
+      {
+        "source_id": "S026",
+        "value": "four carrier heads 70, stations 22a-22c"
+      }
+    ],
+    "note": "Four heads is documented for the Mirra-family architecture; no opened source states the LK head count. LK Prime (six heads, four pads) only in search snippets."
+  },
+  "platen_rpm_range_patent": {
+    "value": [
+      30,
+      200
+    ],
+    "unit": "rpm",
+    "source_id": "S002",
+    "locator": "'rotates platen 30 at about thirty to two-hundred revolutions per minute'",
+    "grade_hint": "E2_family_patent_or_doc",
+    "corroboration": [
+      {
+        "source_id": "S015",
+        "value": "30-200 rpm"
+      },
+      {
+        "source_id": "S033",
+        "value": "30-200 rpm"
+      },
+      {
+        "source_id": "S014",
+        "value": "10-150 rpm general, 50-110 preferred (fetch summary)"
+      }
+    ]
+  },
+  "platen_rpm_reflexion_lk_recipes": {
+    "value": [
+      97,
+      126
+    ],
+    "unit": "rpm",
+    "source_id": "S035",
+    "locator": "§2: platen/carrier 97/103 rpm",
+    "grade_hint": "E1_exact_variant_measured",
+    "points": [
+      {
+        "source_id": "S035",
+        "platen": 97,
+        "head": 103
+      },
+      {
+        "source_id": "S031",
+        "platen": 126,
+        "head": 125
+      },
+      {
+        "source_id": "S014",
+        "platen": 93,
+        "head": 87,
+        "note": "300 mm system, tool not named per run"
+      },
+      {
+        "source_id": "S027",
+        "platen": 87,
+        "head": 93,
+        "note": "Mirra or Reflexion"
+      }
+    ]
+  },
+  "head_rpm_range_patent": {
+    "value": [
+      30,
+      200
+    ],
+    "unit": "rpm",
+    "source_id": "S002",
+    "locator": "'Carrier motor 76 rotates carrier head 100 at about thirty to two-hundred revolutions per minute'",
+    "grade_hint": "E2_family_patent_or_doc",
+    "corroboration": [
+      {
+        "source_id": "S015",
+        "value": "30-200 rpm"
+      }
+    ]
+  },
+  "downforce_range_patent_old": {
+    "value": [
+      4,
+      10
+    ],
+    "unit": "psi",
+    "source_id": "S002",
+    "locator": "'approximately four to ten pounds per square inch (psi)' (final step about three psi)",
+    "grade_hint": "E2_family_patent_or_doc",
+    "corroboration": [
+      {
+        "source_id": "S050",
+        "value": "4-10 psi, about 3 psi final"
+      }
+    ]
+  },
+  "downforce_range_patent_recent": {
+    "value": [
+      0.5,
+      8
+    ],
+    "unit": "psi",
+    "source_id": "S032",
+    "locator": "'down-force of between about 0.5 psi to about 8 psi'",
+    "grade_hint": "E2_family_patent_or_doc"
+  },
+  "downforce_reflexion_lk_used": {
+    "value": [
+      1.0,
+      2.5
+    ],
+    "unit": "psi (about 6.9-17.2 kPa)",
+    "source_id": "S035",
+    "locator": "§2: 'pressure ... changed from 1.0 to 2.5 psi'",
+    "grade_hint": "E1_exact_variant_measured",
+    "points": [
+      {
+        "source_id": "S031",
+        "value": 4.0,
+        "unit": "psi"
+      },
+      {
+        "source_id": "S044",
+        "value": "<1.0 psi residual Cu (Ecmp variant)"
+      }
+    ]
+  },
+  "retaining_ring_vs_membrane_pressure_titan": {
+    "value": {
+      "retaining_ring": 5.2,
+      "membrane": 4.5
+    },
+    "unit": "psi",
+    "source_id": "S009",
+    "locator": "Titan head process example",
+    "grade_hint": "E3_principle_or_thirdparty"
+  },
+  "pressure_zone_count_lk_head": {
+    "value": 5,
+    "unit": "zones (membrane)",
+    "source_id": "S035",
+    "locator": "§3: 'equipped with 5-zone Contour heads'",
+    "grade_hint": "E1_exact_variant_measured",
+    "conflicts": [
+      {
+        "source_id": "S045",
+        "value": "6 zone Contour, 4 zone Profiler, 3 zone Titan (refurbisher; convention unstated, may include retaining ring)"
+      },
+      {
+        "source_id": "S047",
+        "value": "300 mm Titan Profiler 5-zone membrane (resale listings)"
+      }
+    ],
+    "patent_values": [
+      {
+        "source_id": "S003",
+        "value": "five pressurizable chambers"
+      },
+      {
+        "source_id": "S007",
+        "value": "six pressurizable chambers"
+      },
+      {
+        "source_id": "S005",
+        "value": "three chambers, two to four or more possible"
+      }
+    ]
+  },
+  "retaining_ring_inner_diameter": {
+    "value": 305,
+    "unit": "mm",
+    "source_id": "S010",
+    "locator": "'inner ring diameter 134 may have a diameter of about 305 mm to accept a 300 mm substrate'",
+    "grade_hint": "E2_family_patent_or_doc",
+    "corroboration": [
+      {
+        "source_id": "S007",
+        "value": "1-2 mm larger than substrate"
+      }
+    ],
+    "conflicts": [
+      {
+        "source_id": "S011",
+        "value": "'radius of about 300 mm' (likely drafting error for diameter)"
+      }
+    ]
+  },
+  "retaining_ring_radial_width": {
+    "value": 0.5,
+    "unit": "in (about 12.7 mm)",
+    "source_id": "S007",
+    "locator": "'the retaining ring can have a radial width of about half an inch'",
+    "grade_hint": "E2_family_patent_or_doc"
+  },
+  "retaining_ring_grooves": {
+    "value": {
+      "count": 18,
+      "width_in": 0.125,
+      "angle_deg": 45
+    },
+    "unit": "count / in / deg",
+    "source_id": "S011",
+    "locator": "'eighteen channels 210 ... oriented at 45°'; width from S007 'about 0.125 inches'",
+    "grade_hint": "E2_family_patent_or_doc",
+    "corroboration": [
+      {
+        "source_id": "S010",
+        "value": "18 equally spaced grooves"
+      },
+      {
+        "source_id": "S007",
+        "value": "channels about 0.125 in wide, 45°"
+      }
+    ]
+  },
+  "retaining_ring_height": {
+    "value": null,
+    "unit": "mm",
+    "source_id": "S011",
+    "locator": "not stated in any opened source",
+    "grade_hint": "E4_unknown"
+  },
+  "pad_upper_layer_thickness": {
+    "value": [
+      0.06,
+      0.12
+    ],
+    "unit": "in",
+    "source_id": "S019",
+    "locator": "'Upper layer 36 may have a thickness T between about 0.06 and 0.12 inches'",
+    "grade_hint": "E2_family_patent_or_doc",
+    "corroboration": [
+      {
+        "source_id": "S002",
+        "value": "fifty mil hard upper layer + fifty mil softer lower layer"
+      },
+      {
+        "source_id": "S022",
+        "value": "covering layer about fifty mils"
+      }
+    ]
+  },
+  "pad_groove_geometry": {
+    "value": {
+      "depth_in": 0.03,
+      "width_in": 0.02,
+      "pitch_in": 0.12
+    },
+    "unit": "in",
+    "source_id": "S019",
+    "locator": "'depth Dg ... approximately 0.03 inches', 'width Wg of approximately 0.020 inches', 'pitch may be approximately 0.12 inches'",
+    "grade_hint": "E2_family_patent_or_doc",
+    "corroboration": [
+      {
+        "source_id": "S014",
+        "value": "initial groove depth 30 mils, end of life at 5 mils remaining"
+      }
+    ],
+    "note": "IC1010 pad (used on LK in S035, S027) product spec not opened."
+  },
+  "conditioner_disk_diameter": {
+    "value": null,
+    "unit": "in",
+    "source_id": "—",
+    "locator": "not found in any opened source; 3M A165/A122 datasheets (4.25 in per search snippet) blocked (HTTP 403)",
+    "grade_hint": "E4_unknown",
+    "context": [
+      {
+        "source_id": "S018",
+        "value": "prior-art conditioners 'on a four to six inch diameter disk' (Intel patent)"
+      }
+    ]
+  },
+  "conditioner_sweep": {
+    "value": {
+      "range_in": [
+        1.7,
+        14.7
+      ],
+      "sweeps_per_min": 19,
+      "zones": 13
+    },
+    "unit": "in / sweeps per min / zones",
+    "source_id": "S014",
+    "locator": "example conditioning conditions",
+    "grade_hint": "E2_family_patent_or_doc"
+  },
+  "conditioner_head_rpm_and_load": {
+    "value": {
+      "rpm": 95,
+      "load_lb": 9
+    },
+    "unit": "rpm / lb",
+    "source_id": "S014",
+    "locator": "example conditioning conditions",
+    "grade_hint": "E2_family_patent_or_doc",
+    "points": [
+      {
+        "source_id": "S031",
+        "rpm": 115,
+        "load_lb": 6,
+        "disk": "3M A122",
+        "note": "on Reflexion LK, 30% in-situ"
+      },
+      {
+        "source_id": "S014",
+        "downforce_range_lbf": [
+          0.5,
+          14
+        ]
+      }
+    ]
+  },
+  "conditioner_diamond_size": {
+    "value": [
+      30,
+      100
+    ],
+    "unit": "µm",
+    "source_id": "S014",
+    "locator": "'diamond particles may range in size between about 30 microns to about 100 microns'",
+    "grade_hint": "E2_family_patent_or_doc",
+    "corroboration": [
+      {
+        "source_id": "S017",
+        "value": "125-250 µm (newer multi-disk conditioner)"
+      }
+    ]
+  },
+  "slurry_flow": {
+    "value": 300,
+    "unit": "ml/min",
+    "source_id": "S035",
+    "locator": "§3 optimum 300 ml/min (DOE 250-400 ml/min)",
+    "grade_hint": "E1_exact_variant_measured",
+    "points": [
+      {
+        "source_id": "S031",
+        "value": 150
+      },
+      {
+        "source_id": "S027",
+        "value": 200,
+        "note": "Mirra or Reflexion"
+      },
+      {
+        "source_id": "S041",
+        "value": 200,
+        "note": "Mirra"
+      }
+    ]
+  },
+  "copper_removal_vs_pressure_lk": {
+    "value": {
+      "1.0psi": 4640,
+      "1.5psi": ">6452",
+      "2.0psi": 8553,
+      "2.5psi": 9425
+    },
+    "unit": "Å/min",
+    "source_id": "S035",
+    "locator": "§3 text; conditions 97/103 rpm, 300 ml/min, alkaline FA/O slurry",
+    "grade_hint": "E1_exact_variant_measured",
+    "note": "See preston-data.json; values are text-reported means, Fig. 1 not digitised."
+  },
+  "oxide_removal_lk": {
+    "value": [
+      11000,
+      12000
+    ],
+    "unit": "Å/min",
+    "source_id": "S031",
+    "locator": "TEOS at 4 psi, 126/125 rpm, 150 ml/min (ceria slurry, no MOPS)",
+    "grade_hint": "E1_exact_variant_measured"
+  },
+  "oxide_removal_vs_pressure_family": {
+    "value": {
+      "3.0psi": 6296,
+      "4.0psi": 7359
+    },
+    "unit": "Å/min",
+    "source_id": "S029",
+    "locator": "Examples 2-3, 87/93 rpm, 0 ppm gelatin",
+    "grade_hint": "E2_family_patent_or_doc",
+    "note": "Tool 'Mirra or Reflexion'; headers garbled in read text."
+  },
+  "preston_constant_measured": {
+    "value": {
+      "Cu_IC1400": [
+        4.752e-08,
+        5.76e-08
+      ],
+      "SiO2_PECVD_IC1400": [
+        4.63e-09,
+        5.99e-09
+      ],
+      "SiO2_TEOS_IC1400": [
+        5.2e-09,
+        6.96e-09
+      ]
+    },
+    "unit": "MPa^-1 (as tabulated)",
+    "source_id": "S037",
+    "locator": "Table 3.4 (48 kPa, 0.70 m/s, alumina slurry, 100 mm bench)",
+    "grade_hint": "E3_principle_or_thirdparty",
+    "corroboration": [
+      {
+        "source_id": "S042",
+        "value": "4.14 Å per psi per revolution (ILD, table-top)"
+      },
+      {
+        "source_id": "S041",
+        "value": "Cu: RR = Kp P^2.375 V on Mirra (non-Preston pressure exponent)"
+      }
+    ]
+  },
+  "wiwnu": {
+    "value": "<4",
+    "unit": "%",
+    "source_id": "S035",
+    "locator": "abstract and §3, blanket Cu at 1.5 psi, 300 ml/min",
+    "grade_hint": "E1_exact_variant_measured",
+    "points": [
+      {
+        "source_id": "S038",
+        "value": "16.9% uniform pressure vs 1.7% zoned (research carrier)"
+      },
+      {
+        "source_id": "S038",
+        "value": "process requirement <5% WIWNU"
+      }
+    ],
+    "conflicts": [
+      {
+        "source_id": "S035",
+        "value": "abstract says non-uniformity improves with pressure; body says WIWNU increased with pressure"
+      }
+    ]
+  },
+  "throughput": {
+    "value": null,
+    "unit": "wafers/h",
+    "source_id": "—",
+    "locator": "no absolute WPH in any opened source",
+    "grade_hint": "E4_unknown",
+    "context": [
+      {
+        "source_id": "S044",
+        "value": "up to 25% throughput improvement (Ecmp vs conventional Cu)"
+      },
+      {
+        "source_id": "S013",
+        "value": "six-head carousel 'may produce up to 2x throughput' vs three stations + one load cup"
+      }
+    ]
+  },
+  "endpoint_optical": {
+    "value": {
+      "wavelength_nm": [
+        200,
+        800
+      ],
+      "window_transmittance": "~80%"
+    },
+    "unit": "nm / %",
+    "source_id": "S023",
+    "locator": "detailed description",
+    "grade_hint": "E2_family_patent_or_doc"
+  },
+  "endpoint_eddy_current": {
+    "value": {
+      "freq": "50 kHz-10 MHz (2 MHz example); later >12 MHz (14-16 MHz)",
+      "spatial_resolution_mm": 1
+    },
+    "unit": "Hz / mm",
+    "source_id": "S025",
+    "locator": "detailed description; S026; S024",
+    "grade_hint": "E2_family_patent_or_doc"
+  }
+}

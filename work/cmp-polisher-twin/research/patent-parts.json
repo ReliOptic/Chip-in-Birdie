@@ -1,0 +1,912 @@
+[
+  {
+    "patent": "US6183354B1",
+    "source_id": "S002",
+    "figure": "FIG. 1 (exploded CMP apparatus), FIG. 2 (carousel top view), FIG. 4A-6B (carrier head)",
+    "numerals": [
+      {
+        "numeral": "22",
+        "name": "lower machine base",
+        "description_locator": "FIG. 1 description"
+      },
+      {
+        "numeral": "23",
+        "name": "table top",
+        "description_locator": "FIG. 1"
+      },
+      {
+        "numeral": "25a, 25b, 25c",
+        "name": "polishing stations",
+        "description_locator": "FIG. 1"
+      },
+      {
+        "numeral": "27",
+        "name": "transfer station",
+        "description_locator": "FIG. 1"
+      },
+      {
+        "numeral": "30",
+        "name": "platen",
+        "description_locator": "FIG. 1"
+      },
+      {
+        "numeral": "32",
+        "name": "polishing pad",
+        "description_locator": "FIG. 1"
+      },
+      {
+        "numeral": "40",
+        "name": "pad conditioner apparatus",
+        "description_locator": "FIG. 1"
+      },
+      {
+        "numeral": "52",
+        "name": "slurry supply tube",
+        "description_locator": "FIG. 1"
+      },
+      {
+        "numeral": "60",
+        "name": "multi-head carousel",
+        "description_locator": "FIG. 1-2"
+      },
+      {
+        "numeral": "74",
+        "name": "drive shaft",
+        "description_locator": "FIG. 4A"
+      },
+      {
+        "numeral": "76",
+        "name": "carrier motor",
+        "description_locator": "FIG. 1"
+      },
+      {
+        "numeral": "100",
+        "name": "carrier head",
+        "description_locator": "FIG. 4A"
+      },
+      {
+        "numeral": "102",
+        "name": "housing",
+        "description_locator": "FIG. 4A"
+      },
+      {
+        "numeral": "104",
+        "name": "base",
+        "description_locator": "FIG. 4A"
+      },
+      {
+        "numeral": "106",
+        "name": "gimbal mechanism",
+        "description_locator": "FIG. 4A"
+      },
+      {
+        "numeral": "107",
+        "name": "axis of rotation",
+        "description_locator": "FIG. 4A"
+      },
+      {
+        "numeral": "108",
+        "name": "loading mechanism",
+        "description_locator": "FIG. 4A"
+      },
+      {
+        "numeral": "110",
+        "name": "retaining ring",
+        "description_locator": "FIG. 4A"
+      },
+      {
+        "numeral": "112",
+        "name": "substrate backing assembly",
+        "description_locator": "FIG. 5"
+      },
+      {
+        "numeral": "114",
+        "name": "support structure",
+        "description_locator": "FIG. 5"
+      },
+      {
+        "numeral": "116",
+        "name": "flexure",
+        "description_locator": "FIG. 5"
+      },
+      {
+        "numeral": "118",
+        "name": "flexible membrane",
+        "description_locator": "FIG. 5"
+      },
+      {
+        "numeral": "200",
+        "name": "chamber (loading)",
+        "description_locator": "FIG. 4A"
+      },
+      {
+        "numeral": "202",
+        "name": "diaphragm",
+        "description_locator": "FIG. 4A"
+      },
+      {
+        "numeral": "230",
+        "name": "flat bottom surface (retaining ring)",
+        "description_locator": "FIG. 4A"
+      }
+    ],
+    "dimensions_or_ranges": [
+      {
+        "what": "platen and pad diameter (200 mm wafer)",
+        "value": "about twenty",
+        "unit": "in",
+        "locator": "description"
+      },
+      {
+        "what": "pad layers",
+        "value": "fifty mil hard upper + fifty mil softer lower",
+        "unit": "mil",
+        "locator": "description"
+      },
+      {
+        "what": "platen speed",
+        "value": "30-200",
+        "unit": "rpm",
+        "locator": "description"
+      },
+      {
+        "what": "head speed",
+        "value": "30-200",
+        "unit": "rpm",
+        "locator": "description"
+      },
+      {
+        "what": "head load",
+        "value": "4-10 (about 3 alternative)",
+        "unit": "psi",
+        "locator": "description"
+      },
+      {
+        "what": "diaphragm 202 thickness",
+        "value": "sixty",
+        "unit": "mil",
+        "locator": "description"
+      },
+      {
+        "what": "flexure vertical travel",
+        "value": "about one-tenth",
+        "unit": "in",
+        "locator": "description"
+      },
+      {
+        "what": "carousel heads",
+        "value": "4 (3 polishing)",
+        "unit": "count",
+        "locator": "description"
+      }
+    ],
+    "claim_constraints": [
+      {
+        "claim": "not read",
+        "constraint": "claims section truncated in fetched text"
+      }
+    ]
+  },
+  {
+    "patent": "US6857945B1",
+    "source_id": "S003",
+    "figure": "FIG. 1 (carrier head cross-section), FIG. 2-4B (flap details)",
+    "numerals": [
+      {
+        "numeral": "100",
+        "name": "carrier head",
+        "description_locator": "FIG. 1"
+      },
+      {
+        "numeral": "102",
+        "name": "housing",
+        "description_locator": "FIG. 1"
+      },
+      {
+        "numeral": "104",
+        "name": "base assembly",
+        "description_locator": "FIG. 1"
+      },
+      {
+        "numeral": "106",
+        "name": "gimbal mechanism",
+        "description_locator": "FIG. 1"
+      },
+      {
+        "numeral": "108",
+        "name": "loading chamber",
+        "description_locator": "FIG. 1"
+      },
+      {
+        "numeral": "110",
+        "name": "retaining ring",
+        "description_locator": "FIG. 1"
+      },
+      {
+        "numeral": "112",
+        "name": "substrate backing assembly",
+        "description_locator": "FIG. 1"
+      },
+      {
+        "numeral": "120",
+        "name": "bore",
+        "description_locator": "FIG. 1"
+      },
+      {
+        "numeral": "126",
+        "name": "rolling diaphragm",
+        "description_locator": "FIG. 1"
+      },
+      {
+        "numeral": "130",
+        "name": "rigid annular body",
+        "description_locator": "FIG. 1"
+      },
+      {
+        "numeral": "136",
+        "name": "gimbal rod",
+        "description_locator": "FIG. 1"
+      },
+      {
+        "numeral": "138",
+        "name": "flexure ring",
+        "description_locator": "FIG. 1"
+      },
+      {
+        "numeral": "140",
+        "name": "flexible membrane",
+        "description_locator": "FIG. 1"
+      },
+      {
+        "numeral": "142",
+        "name": "main portion",
+        "description_locator": "FIG. 1"
+      },
+      {
+        "numeral": "144",
+        "name": "lower surface (mounting surface)",
+        "description_locator": "FIG. 1"
+      },
+      {
+        "numeral": "150, 152, 154, 156, 158",
+        "name": "concentric annular flaps",
+        "description_locator": "FIG. 1"
+      },
+      {
+        "numeral": "160",
+        "name": "first circular pressurizable chamber",
+        "description_locator": "FIG. 1"
+      },
+      {
+        "numeral": "164",
+        "name": "third pressurizable chamber",
+        "description_locator": "FIG. 1"
+      },
+      {
+        "numeral": "166c, 168c",
+        "name": "two outer chambers",
+        "description_locator": "FIG. 4A-4B"
+      },
+      {
+        "numeral": "200",
+        "name": "notch or indentation",
+        "description_locator": "FIG. 2"
+      },
+      {
+        "numeral": "202",
+        "name": "connection",
+        "description_locator": "FIG. 2"
+      },
+      {
+        "numeral": "204",
+        "name": "vertically extending portion",
+        "description_locator": "FIG. 2"
+      }
+    ],
+    "dimensions_or_ranges": [
+      {
+        "what": "flap vertical portion thickness T1",
+        "value": "about 1",
+        "unit": "mm",
+        "locator": "FIG. 2 description"
+      },
+      {
+        "what": "flap thickness at connection T2",
+        "value": "about 0.5",
+        "unit": "mm",
+        "locator": "FIG. 2 description"
+      }
+    ],
+    "claim_constraints": [
+      {
+        "claim": "1",
+        "constraint": "housing to drive shaft; base assembly; loading chamber; flexible membrane with circular main portion and plurality of concentric annular flaps forming pressurizable chambers; retaining ring joined to base assembly; carrier head includes five pressurizable chambers"
+      }
+    ]
+  },
+  {
+    "patent": "US9138860B2",
+    "source_id": "S014",
+    "figure": "FIG. 1 (top plan CMP system), FIG. 2 (polishing station with conditioning module)",
+    "numerals": [
+      {
+        "numeral": "100",
+        "name": "CMP system",
+        "description_locator": "FIG. 1"
+      },
+      {
+        "numeral": "122",
+        "name": "load cup",
+        "description_locator": "FIG. 1"
+      },
+      {
+        "numeral": "124",
+        "name": "polishing station",
+        "description_locator": "FIG. 1"
+      },
+      {
+        "numeral": "126A, 126B",
+        "name": "carrier heads",
+        "description_locator": "FIG. 1"
+      },
+      {
+        "numeral": "128",
+        "name": "overhead track",
+        "description_locator": "FIG. 1"
+      },
+      {
+        "numeral": "130",
+        "name": "polishing surface",
+        "description_locator": "FIG. 2"
+      },
+      {
+        "numeral": "132",
+        "name": "conditioning module",
+        "description_locator": "FIG. 1"
+      },
+      {
+        "numeral": "134",
+        "name": "fluid delivery module",
+        "description_locator": "FIG. 1"
+      },
+      {
+        "numeral": "140",
+        "name": "pad conditioning assembly",
+        "description_locator": "FIG. 2"
+      },
+      {
+        "numeral": "190",
+        "name": "controller",
+        "description_locator": "FIG. 1"
+      },
+      {
+        "numeral": "200",
+        "name": "polishing pad",
+        "description_locator": "FIG. 2"
+      },
+      {
+        "numeral": "240",
+        "name": "platen assembly",
+        "description_locator": "FIG. 2"
+      },
+      {
+        "numeral": "242",
+        "name": "conditioning head",
+        "description_locator": "FIG. 2"
+      },
+      {
+        "numeral": "244",
+        "name": "conditioning arm",
+        "description_locator": "FIG. 2"
+      },
+      {
+        "numeral": "246",
+        "name": "support assembly",
+        "description_locator": "FIG. 2"
+      },
+      {
+        "numeral": "247",
+        "name": "base",
+        "description_locator": "FIG. 2"
+      },
+      {
+        "numeral": "248",
+        "name": "conditioning disk",
+        "description_locator": "FIG. 2"
+      },
+      {
+        "numeral": "260",
+        "name": "displacement sensor",
+        "description_locator": "FIG. 2"
+      }
+    ],
+    "dimensions_or_ranges": [
+      {
+        "what": "conditioner downforce",
+        "value": "0.5-14 (22.2-62.3 N)",
+        "unit": "lbf",
+        "locator": "description"
+      },
+      {
+        "what": "diamond size",
+        "value": "30-100",
+        "unit": "µm",
+        "locator": "description"
+      },
+      {
+        "what": "sweep range",
+        "value": "1.7-14.7 (4.32-37.3 cm)",
+        "unit": "in",
+        "locator": "example"
+      },
+      {
+        "what": "sweep rate",
+        "value": "19",
+        "unit": "sweeps/min",
+        "locator": "example"
+      },
+      {
+        "what": "conditioning zones",
+        "value": "13 equidistant",
+        "unit": "count",
+        "locator": "example"
+      },
+      {
+        "what": "conditioner head speed / load",
+        "value": "95 rpm / 9 lb (4.08 kg)",
+        "unit": "rpm / lb",
+        "locator": "example"
+      },
+      {
+        "what": "platen / carrier speed, membrane pressure",
+        "value": "93 rpm / 87 rpm / 4.5 psi",
+        "unit": "rpm / psi",
+        "locator": "example"
+      },
+      {
+        "what": "initial groove depth / end-of-life remaining",
+        "value": "30 / 5",
+        "unit": "mil",
+        "locator": "description"
+      }
+    ],
+    "claim_constraints": [
+      {
+        "claim": "1",
+        "constraint": "pad on a metallic platen assembly; conditioning disk in conditioning head swept across zones; wear profile measured during sweep with an inductive sensor coupled to the conditioning arm; compared to a non-planar target wear profile; dwell time in the zone adjusted"
+      }
+    ]
+  },
+  {
+    "patent": "US7112960B2",
+    "source_id": "S024",
+    "figure": "FIG. 5 (top view CMP apparatus with eddy current system), FIG. 6-7 (E- and U-shaped cores), FIG. 11-13",
+    "numerals": [
+      {
+        "numeral": "24",
+        "name": "platen",
+        "description_locator": "description"
+      },
+      {
+        "numeral": "26",
+        "name": "recess",
+        "description_locator": "description"
+      },
+      {
+        "numeral": "30",
+        "name": "polishing pad",
+        "description_locator": "description"
+      },
+      {
+        "numeral": "36",
+        "name": "thin section",
+        "description_locator": "description"
+      },
+      {
+        "numeral": "42",
+        "name": "core",
+        "description_locator": "description"
+      },
+      {
+        "numeral": "44",
+        "name": "coil",
+        "description_locator": "description"
+      },
+      {
+        "numeral": "60",
+        "name": "rotatable multi-head carousel",
+        "description_locator": "description"
+      },
+      {
+        "numeral": "70",
+        "name": "carrier heads",
+        "description_locator": "description"
+      },
+      {
+        "numeral": "74",
+        "name": "carrier drive shaft",
+        "description_locator": "description"
+      },
+      {
+        "numeral": "76",
+        "name": "carrier head rotation motor",
+        "description_locator": "description"
+      },
+      {
+        "numeral": "80",
+        "name": "position sensor",
+        "description_locator": "description"
+      },
+      {
+        "numeral": "1155",
+        "name": "pad assembly",
+        "description_locator": "FIG. 11"
+      },
+      {
+        "numeral": "1160",
+        "name": "sub-pad",
+        "description_locator": "FIG. 11"
+      },
+      {
+        "numeral": "1170",
+        "name": "pad",
+        "description_locator": "FIG. 11"
+      },
+      {
+        "numeral": "1180",
+        "name": "pad window",
+        "description_locator": "FIG. 11"
+      },
+      {
+        "numeral": "1185",
+        "name": "thinned portion",
+        "description_locator": "FIG. 11"
+      }
+    ],
+    "dimensions_or_ranges": [
+      {
+        "what": "drive frequency guideline",
+        "value": "≤350",
+        "unit": "kHz",
+        "locator": "Table 1"
+      },
+      {
+        "what": "Cu film basis for Table 1",
+        "value": "up to about 1.5",
+        "unit": "µm",
+        "locator": "description"
+      },
+      {
+        "what": "core length (coil 610 example)",
+        "value": "about twenty",
+        "unit": "mm",
+        "locator": "FIG. 6 description"
+      },
+      {
+        "what": "core-to-wafer distance (core 1110)",
+        "value": "about 50",
+        "unit": "mil",
+        "locator": "FIG. 11 description"
+      },
+      {
+        "what": "spatial resolution",
+        "value": "on the order of about a millimeter",
+        "unit": "mm",
+        "locator": "description"
+      }
+    ],
+    "claim_constraints": [
+      {
+        "claim": "1",
+        "constraint": "platen to support a polishing surface; eddy current monitoring system with an elongated core positioned at least partially in the platen (remainder of claim not read)"
+      }
+    ]
+  },
+  {
+    "patent": "US5893796A",
+    "source_id": "S022",
+    "figure": "FIG. 2 (apparatus with endpoint detection), FIG. 3D-3F (window plug)",
+    "numerals": [
+      {
+        "numeral": "12",
+        "name": "polishing head",
+        "description_locator": "FIG. 2"
+      },
+      {
+        "numeral": "14",
+        "name": "wafer",
+        "description_locator": "FIG. 2"
+      },
+      {
+        "numeral": "16",
+        "name": "platen",
+        "description_locator": "FIG. 2"
+      },
+      {
+        "numeral": "18",
+        "name": "pad",
+        "description_locator": "FIG. 2"
+      },
+      {
+        "numeral": "20",
+        "name": "backing layer",
+        "description_locator": "FIG. 2"
+      },
+      {
+        "numeral": "22",
+        "name": "covering layer",
+        "description_locator": "FIG. 3D"
+      },
+      {
+        "numeral": "26",
+        "name": "central axis",
+        "description_locator": "FIG. 2"
+      },
+      {
+        "numeral": "30",
+        "name": "hole",
+        "description_locator": "FIG. 2"
+      },
+      {
+        "numeral": "32",
+        "name": "laser interferometer",
+        "description_locator": "FIG. 2"
+      },
+      {
+        "numeral": "34",
+        "name": "laser beam",
+        "description_locator": "FIG. 2"
+      },
+      {
+        "numeral": "36",
+        "name": "shoulder",
+        "description_locator": "FIG. 2"
+      },
+      {
+        "numeral": "38",
+        "name": "quartz insert",
+        "description_locator": "FIG. 2"
+      },
+      {
+        "numeral": "40",
+        "name": "chemical slurry",
+        "description_locator": "FIG. 2"
+      },
+      {
+        "numeral": "44",
+        "name": "laser and collimator",
+        "description_locator": "FIG. 4"
+      },
+      {
+        "numeral": "46",
+        "name": "beam splitter",
+        "description_locator": "FIG. 4"
+      },
+      {
+        "numeral": "48",
+        "name": "detector",
+        "description_locator": "FIG. 4"
+      },
+      {
+        "numeral": "602",
+        "name": "upper plug portion",
+        "description_locator": "FIG. 3D"
+      },
+      {
+        "numeral": "604",
+        "name": "lower plug portion",
+        "description_locator": "FIG. 3D"
+      },
+      {
+        "numeral": "616",
+        "name": "rim",
+        "description_locator": "FIG. 3D"
+      }
+    ],
+    "dimensions_or_ranges": [
+      {
+        "what": "upper plug L1 x H1",
+        "value": "about 2.0 x 0.5",
+        "unit": "in",
+        "locator": "FIG. 3D description"
+      },
+      {
+        "what": "lower plug L2 x H2",
+        "value": "about 2.2 x 0.7",
+        "unit": "in",
+        "locator": "FIG. 3D description"
+      },
+      {
+        "what": "rim width W1",
+        "value": "about 0.1",
+        "unit": "in",
+        "locator": "FIG. 3D"
+      },
+      {
+        "what": "upper plug thickness T1 (= covering layer)",
+        "value": "about fifty",
+        "unit": "mil",
+        "locator": "FIG. 3D"
+      },
+      {
+        "what": "lower plug thickness T2",
+        "value": "about forty",
+        "unit": "mil",
+        "locator": "FIG. 3D"
+      },
+      {
+        "what": "insert-to-wafer gap",
+        "value": "10 (250 µm)",
+        "unit": "mil",
+        "locator": "description"
+      }
+    ],
+    "claim_constraints": [
+      {
+        "claim": "not read",
+        "constraint": "claims truncated; summary: pad polishing surface with an aperture formed therein"
+      }
+    ]
+  },
+  {
+    "patent": "US7094139B2",
+    "source_id": "S011",
+    "figure": "FIG. 1 (perspective, part section), FIG. 2A (bottom), FIG. 4 (section 4-4)",
+    "numerals": [
+      {
+        "numeral": "100",
+        "name": "retaining ring",
+        "description_locator": "FIG. 1"
+      },
+      {
+        "numeral": "105",
+        "name": "lower portion",
+        "description_locator": "FIG. 1"
+      },
+      {
+        "numeral": "110",
+        "name": "flat bottom surface",
+        "description_locator": "FIG. 2A"
+      },
+      {
+        "numeral": "115",
+        "name": "inner diameter (lower)",
+        "description_locator": "FIG. 4"
+      },
+      {
+        "numeral": "120",
+        "name": "outer diameter surface (lower)",
+        "description_locator": "FIG. 4"
+      },
+      {
+        "numeral": "125",
+        "name": "vertical portion",
+        "description_locator": "FIG. 4"
+      },
+      {
+        "numeral": "130",
+        "name": "outwardly sloping portion",
+        "description_locator": "FIG. 4"
+      },
+      {
+        "numeral": "135",
+        "name": "flat top surface (lower)",
+        "description_locator": "FIG. 4"
+      },
+      {
+        "numeral": "140",
+        "name": "substrate receiving recess",
+        "description_locator": "FIG. 1"
+      },
+      {
+        "numeral": "145",
+        "name": "upper portion",
+        "description_locator": "FIG. 1"
+      },
+      {
+        "numeral": "150",
+        "name": "flat bottom surface (upper)",
+        "description_locator": "FIG. 4"
+      },
+      {
+        "numeral": "155",
+        "name": "inner diameter surface (upper)",
+        "description_locator": "FIG. 4"
+      },
+      {
+        "numeral": "160",
+        "name": "top surface",
+        "description_locator": "FIG. 3"
+      },
+      {
+        "numeral": "165",
+        "name": "holes",
+        "description_locator": "FIG. 3"
+      },
+      {
+        "numeral": "170",
+        "name": "alignment apertures",
+        "description_locator": "FIG. 3"
+      },
+      {
+        "numeral": "175",
+        "name": "outer diameter surface (upper)",
+        "description_locator": "FIG. 4"
+      },
+      {
+        "numeral": "180",
+        "name": "vertical section",
+        "description_locator": "FIG. 4"
+      },
+      {
+        "numeral": "185",
+        "name": "horizontal section",
+        "description_locator": "FIG. 4"
+      },
+      {
+        "numeral": "190",
+        "name": "outwardly sloped section",
+        "description_locator": "FIG. 4"
+      },
+      {
+        "numeral": "195",
+        "name": "flange",
+        "description_locator": "FIG. 4"
+      },
+      {
+        "numeral": "200",
+        "name": "drain holes",
+        "description_locator": "FIG. 2B"
+      },
+      {
+        "numeral": "210",
+        "name": "channels",
+        "description_locator": "FIG. 2A"
+      }
+    ],
+    "dimensions_or_ranges": [
+      {
+        "what": "inner surface 'radius' (as written)",
+        "value": "about 300",
+        "unit": "mm",
+        "locator": "summary (likely diameter)"
+      },
+      {
+        "what": "channels",
+        "value": "18 at 45° to radial",
+        "unit": "count / deg",
+        "locator": "FIG. 2A"
+      },
+      {
+        "what": "bolt holes",
+        "value": "18",
+        "unit": "count",
+        "locator": "FIG. 3"
+      },
+      {
+        "what": "drain holes",
+        "value": "4",
+        "unit": "count",
+        "locator": "description"
+      },
+      {
+        "what": "outer slope 130 / 190",
+        "value": "about 60",
+        "unit": "deg",
+        "locator": "FIG. 4"
+      },
+      {
+        "what": "inner slope 155",
+        "value": "about 80 (to top surface)",
+        "unit": "deg",
+        "locator": "FIG. 4"
+      }
+    ],
+    "claim_constraints": [
+      {
+        "claim": "1",
+        "constraint": "annular body with top, bottom, inner and outer diameter surfaces; outer diameter includes a flange with a lower surface parallel to the top surface"
+      }
+    ]
+  }
+]

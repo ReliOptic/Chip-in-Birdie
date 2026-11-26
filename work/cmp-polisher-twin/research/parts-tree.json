@@ -1,0 +1,45 @@
+{
+  "schema": "dta.parts-tree/v1",
+  "target_id": "amat-reflexion-lk-cmp-300mm",
+  "units": "mm",
+  "parts": [
+    {
+      "part_id": "p-example-plate",
+      "label": "Example plate",
+      "parent": null,
+      "role": "TODO physical role",
+      "critical": true,
+      "visible_in_default_view": true,
+      "exterior": false,
+      "evidence_grade": "E4_unknown",
+      "source_ids": [],
+      "key_dimensions": [
+        {
+          "name": "length",
+          "value": null,
+          "unit": "mm",
+          "source_id": null,
+          "locator": null,
+          "grade": "E4_unknown"
+        }
+      ],
+      "material": {
+        "name": null,
+        "source_id": null
+      },
+      "interfaces": [
+        {
+          "with": "p-other",
+          "kind": "bolted|sliding|optical|thermal|fluid|electrical",
+          "source_id": null
+        }
+      ],
+      "unknowns": [
+        {
+          "what": "everything — replace this example",
+          "resolves_with": "official drawing or two photos of the exact variant"
+        }
+      ]
+    }
+  ]
+}

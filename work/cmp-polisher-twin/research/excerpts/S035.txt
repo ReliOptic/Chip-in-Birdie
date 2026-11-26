@@ -1,0 +1,1 @@
+In this experiment, the CMP process was performed by using an Applied Materials Reflexion LK 300 mm tool with a five-zone polishing head. The polish pad was IC 1010 (DOW Chemical, Co.). The platen/carrier rotary speed was set at a constant value of 97/103 rpm

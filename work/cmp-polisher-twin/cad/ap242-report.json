@@ -1,0 +1,64 @@
+{
+  "schema": "AP242DIS",
+  "parts": [
+    {
+      "id": "p-base",
+      "path": "cad/step-ap242/p-base.step",
+      "reimport_volume_error": 1.2647449822319362e-15
+    },
+    {
+      "id": "p-carousel",
+      "path": "cad/step-ap242/p-carousel.step",
+      "reimport_volume_error": 4.5311026607176605e-14
+    },
+    {
+      "id": "p-carrier-head",
+      "path": "cad/step-ap242/p-carrier-head.step",
+      "reimport_volume_error": 1.062386840160926e-14
+    },
+    {
+      "id": "p-conditioner-arm",
+      "path": "cad/step-ap242/p-conditioner-arm.step",
+      "reimport_volume_error": 2.4403873417359568e-14
+    },
+    {
+      "id": "p-conditioner-disk",
+      "path": "cad/step-ap242/p-conditioner-disk.step",
+      "reimport_volume_error": 1.9061804444846194e-16
+    },
+    {
+      "id": "p-membrane-zones",
+      "path": "cad/step-ap242/p-membrane-zones.step",
+      "reimport_volume_error": 1.4668448893906416e-14
+    },
+    {
+      "id": "p-pad",
+      "path": "cad/step-ap242/p-pad.step",
+      "reimport_volume_error": 0.0
+    },
+    {
+      "id": "p-platen",
+      "path": "cad/step-ap242/p-platen.step",
+      "reimport_volume_error": 0.0
+    },
+    {
+      "id": "p-retaining-ring",
+      "path": "cad/step-ap242/p-retaining-ring.step",
+      "reimport_volume_error": 2.185829544066948e-14
+    },
+    {
+      "id": "p-slurry-arm",
+      "path": "cad/step-ap242/p-slurry-arm.step",
+      "reimport_volume_error": 7.231883301714124e-14
+    },
+    {
+      "id": "p-wafer",
+      "path": "cad/step-ap242/p-wafer.step",
+      "reimport_volume_error": 2.656354683926952e-16
+    }
+  ],
+  "assembly": {
+    "path": "cad/cmp-polisher-twin-assembly-ap242.step",
+    "schema_ok": true
+  }
+}

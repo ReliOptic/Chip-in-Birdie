@@ -1,0 +1,79 @@
+{
+ "platen_rpm": {
+  "value": 97,
+  "sigma": 0,
+  "grade": "E1_measured",
+  "source_id": "S035",
+  "locator": "\u00a72: platen/carrier 97/103 rpm (Reflexion LK recipe)"
+ },
+ "head_rpm": {
+  "value": 103,
+  "sigma": 0,
+  "grade": "E1_measured",
+  "source_id": "S035",
+  "locator": "\u00a72: platen/carrier 97/103 rpm"
+ },
+ "e_m": {
+  "value": 0.19,
+  "sigma": 0.04,
+  "grade": "E3_inferred",
+  "source_id": "INFERRED-NO-SOURCE",
+  "locator": "carrier-to-platen centre distance not found; \u22640.231 m keeps wafer on 762 mm pad"
+ },
+ "r_wafer_m": {
+  "value": 0.15,
+  "sigma": 0.0002,
+  "grade": "E3_inferred",
+  "source_id": "INFERRED-NO-SOURCE",
+  "locator": "300 mm wafer (SEMI M1, not in corpus)"
+ },
+ "n_zones": {
+  "value": 5,
+  "sigma": 0,
+  "grade": "E1_measured",
+  "source_id": "S035",
+  "locator": "\u00a73: 5-zone Contour heads"
+ },
+ "cal_P1_psi": {
+  "value": 1.0,
+  "sigma": 0,
+  "grade": "E1_measured",
+  "source_id": "S035",
+  "locator": "\u00a73: 4640 \u00c5/min at 1.0 psi (calibration point)"
+ },
+ "cal_RR1_A_min": {
+  "value": 4640,
+  "sigma": 0,
+  "grade": "E1_measured",
+  "source_id": "S035",
+  "locator": "\u00a73 text"
+ },
+ "cal_P2_psi": {
+  "value": 2.0,
+  "sigma": 0,
+  "grade": "E1_measured",
+  "source_id": "S035",
+  "locator": "\u00a73: 8553 \u00c5/min at 2.0 psi (calibration point)"
+ },
+ "cal_RR2_A_min": {
+  "value": 8553,
+  "sigma": 0,
+  "grade": "E1_measured",
+  "source_id": "S035",
+  "locator": "\u00a73 text"
+ },
+ "zone_psi": {
+  "value": 1.5,
+  "sigma": 0.1,
+  "grade": "E1_measured",
+  "source_id": "S035",
+  "locator": "\u00a73: WIWNU <4 % reported at 1.5 psi"
+ },
+ "display_time_scale": {
+  "value": 0.25,
+  "sigma": 0,
+  "grade": "E1_measured",
+  "source_id": "DECLARED",
+  "locator": "rotation shown at 1/4 speed"
+ }
+}

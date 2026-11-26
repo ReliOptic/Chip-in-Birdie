@@ -1,0 +1,58 @@
+{
+ "p-base": {
+  "label": "Polisher base",
+  "geometry": "Envelope around three stations; size inferred.",
+  "physics": "static frame"
+ },
+ "p-platen": {
+  "label": "Three platens, 762 mm",
+  "geometry": "30 in platens at 0/90/180° stations (Mirra-family layout).",
+  "physics": "rotate at 97 rpm (LK recipe)"
+ },
+ "p-pad": {
+  "label": "Polishing pads",
+  "geometry": "0.1 in pad on each platen; grooves not modelled.",
+  "physics": "pad velocity field drives removal"
+ },
+ "p-carousel": {
+  "label": "Head carousel",
+  "geometry": "Four-arm cross over stations (Mirra family).",
+  "physics": "indexes heads between stations"
+ },
+ "p-carrier-head": {
+  "label": "Carrier heads",
+  "geometry": "Housing around 305 mm retaining ring; height inferred.",
+  "physics": "down-force 0.5–3 psi; 103 rpm",
+  "manipulable": true
+ },
+ "p-retaining-ring": {
+  "label": "Retaining rings",
+  "geometry": "305 mm ID, 12.7 mm wide (patents).",
+  "physics": "keeps wafer under head; edge effects not modelled"
+ },
+ "p-membrane-zones": {
+  "label": "Five pressure zones",
+  "geometry": "Equal-area annuli (assumed split) under station-1 head.",
+  "physics": "zone pressure sets local removal"
+ },
+ "p-wafer": {
+  "label": "300 mm copper wafer",
+  "geometry": "Standard 300 mm wafer at station 1.",
+  "physics": "removal profile from kinematics + saturating law"
+ },
+ "p-conditioner-arm": {
+  "label": "Pad conditioner arm",
+  "geometry": "Pivot outside pad; reach per 1.7–14.7 in sweep.",
+  "physics": "sweeps 19 per min (S014)"
+ },
+ "p-conditioner-disk": {
+  "label": "Diamond conditioner disk",
+  "geometry": "Disk diameter not found; inferred.",
+  "physics": "restores pad asperities (not modelled)"
+ },
+ "p-slurry-arm": {
+  "label": "Slurry arm",
+  "geometry": "Arm over pad; position inferred.",
+  "physics": "300 ml/min slurry (S035)"
+ }
+}

@@ -1,0 +1,12 @@
+{
+  "solver": "physics/solver.py",
+  "solver_version": "1.0.0",
+  "solver_sha256": "f065bbdd9eb0a4531c4974cb791e4bb35f4e0dfaa2965ed4a101af0d9d42c26c",
+  "units": "SI",
+  "seed": 0,
+  "mean_A_min": 6675.834083319006,
+  "wiwnu": 0.00011405597156276345,
+  "a": 6.349551206590958e-13,
+  "b": 6.978984577691466e-06,
+  "V_mean_m_s": 1.930560269437251
+}

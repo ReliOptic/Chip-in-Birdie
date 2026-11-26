@@ -1,0 +1,1 @@
+All the 300 mm wafer polishing was performed at 4 psi downforce, 126 RPM table speed, 125 RPM carrier speed, 150 ml/min slurry flow rate and using 30% in-situ conditioning (3MA122 disk) with 6 lb force and 115 rpm speed.

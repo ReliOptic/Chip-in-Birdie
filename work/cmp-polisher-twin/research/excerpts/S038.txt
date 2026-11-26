@@ -1,0 +1,1 @@
+With manual adjustment of the pressures in the compartments, the wafer carrier was able to achieve a removal non-uniformity of 1.7% while maintaining a removal rate of 2,850 Å/min.

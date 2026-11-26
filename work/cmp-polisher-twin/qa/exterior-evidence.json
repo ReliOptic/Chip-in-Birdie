@@ -1,0 +1,24 @@
+{
+  "schema": "dta.exterior-evidence/v1",
+  "target_identity": {
+    "id": "amat-reflexion-lk-cmp-300mm",
+    "maker": "TODO",
+    "model": "TODO",
+    "variant": "TODO"
+  },
+  "search_paths": [
+    {
+      "channel": "manufacturer media",
+      "query": "TODO",
+      "url": "TODO",
+      "outcome": "TODO",
+      "date": "2026-11-26"
+    }
+  ],
+  "visual_references": [],
+  "recognition_parts": [],
+  "runtime_captures": [],
+  "open_questions": [
+    "TODO"
+  ]
+}

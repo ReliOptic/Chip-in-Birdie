@@ -1,0 +1,1 @@
+RR=100 corresponds to a Preston's constant of 4.14 Angstrom per psi per revolution over a wide range of pressures and pad rotational velocities
