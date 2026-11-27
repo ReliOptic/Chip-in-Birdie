@@ -1,0 +1,12 @@
+const {open} = require('./h'); const sleep = ms => new Promise(r => setTimeout(r, ms)); const assert = (c, m) => { if (!c) { console.log('FAIL', m); process.exitCode = 1; } else console.log('ok  ', m); };
+(async () => { const {p, errs, close} = await open({db:false});
+  await p.click('#bPlay'); await sleep(1200);
+  const [pop] = await Promise.all([p.waitForEvent('popup'), p.click('#pBar [data-pb="notes"]')]); await sleep(500);
+  assert(await pop.$eval('.notes', x => x.textContent.length > 20), 'speaker window shows notes');
+  assert(await pop.$$eval('.pv .stage', a => a.length) === 2, 'current and next previews');
+  assert(!(await p.$eval('#pNotes', x => x.classList.contains('on'))), 'audience screen has no notes');
+  const pos0 = await pop.$eval('.pos', x => x.textContent); await pop.click('[data-a="next"]'); await sleep(500);
+  assert(await pop.$eval('.pos', x => x.textContent) !== pos0, 'next from speaker window advances');
+  await pop.fill('#tot', '15'); await pop.dispatchEvent('#tot', 'change'); await sleep(1100);
+  assert(/\/ 15:00/.test(await p.$eval('#pBar .clock', x => x.textContent)), 'total time configurable');
+  assert(!errs.length, 'no errors ' + errs.join('|')); await close(); })();

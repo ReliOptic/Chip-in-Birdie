@@ -1,0 +1,110 @@
+<title>플랫폼 비즈니스 전략 – CUDA 플랫폼 발표</title>
+<script type="application/json" id="claude-artifacts-manifest">{"permissions": []}</script>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+KR:wght@400;500;600;700;800&family=Noto+Serif+KR:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="reveal.css">
+<link rel="stylesheet" href="studio.css">
+
+<div id="app">
+  <header id="bar">
+    <div class="name"><img src="img/nvidia-logo.png" alt="NVIDIA"><select id="deckSel" aria-label="덱"></select></div>
+    <button class="btn icon" type="button" id="bNewDeck" title="새 덱"><svg viewBox="0 0 16 16"><rect x="2.5" y="3.5" width="11" height="9" rx="1.5"/><path d="M8 6v4M6 8h4"/></svg></button>
+    <div class="seg cuda-only" role="group" aria-label="발표 길이">
+      <button type="button" data-deck="20" aria-pressed="true">20분</button>
+      <button type="button" data-deck="5" aria-pressed="false">5분</button>
+    </div>
+    <div id="peers" aria-label="지금 보는 사람"></div>
+    <span id="sync" role="img" aria-label="이 브라우저에만 저장" title="이 브라우저에만 저장"></span>
+    <div class="grow"></div>
+    <button class="btn ai-only" type="button" id="bGen" title="AI로 장표 만들기"><svg viewBox="0 0 16 16"><path d="M8 2v3M8 11v3M2 8h3M11 8h3M4 4l2 2M10 10l2 2M12 4l-2 2M6 10l-2 2"/></svg>AI 장표</button>
+    <button class="btn hide-sm" type="button" id="bComment" title="이 장표에 댓글" hidden><svg viewBox="0 0 16 16"><path d="M3 3.5h10v7H7l-3 2.5v-2.5H3z"/></svg>댓글</button>
+    <button class="btn hide-sm" type="button" id="bText" title="텍스트 추가 (T)"><svg viewBox="0 0 16 16"><path d="M3 3h10M8 3v10"/></svg>텍스트</button>
+    <button class="btn icon hide-sm" type="button" id="bUndo" title="실행 취소"><svg viewBox="0 0 16 16"><path d="M5 4 2 7l3 3M2 7h8a4 4 0 0 1 0 8H8"/></svg></button>
+    <button class="btn icon hide-sm" type="button" id="bRedo" title="다시 실행"><svg viewBox="0 0 16 16"><path d="M11 4l3 3-3 3M14 7H6a4 4 0 0 0 0 8h2"/></svg></button>
+    <button class="btn hide-sm" type="button" id="bPal" title="명령 팔레트"><svg viewBox="0 0 16 16"><path d="M3 4.5h10M3 8h10M3 11.5h6"/></svg></button>
+    <button class="btn hide-sm" type="button" id="bExport" title="내보내기"><svg viewBox="0 0 16 16"><path d="M8 2v8M5 7l3 3 3-3M3 12.5h10"/></svg>내보내기</button>
+    <button class="btn hide-sm" type="button" id="bInstall" hidden title="데스크톱 앱으로 설치"><svg viewBox="0 0 16 16"><rect x="2.5" y="3" width="11" height="8" rx="1.5"/><path d="M6 14h4M8 11v3"/></svg>앱으로 설치</button>
+    <button class="btn primary" type="button" id="bPlay" title="발표 시작"><svg viewBox="0 0 16 16"><path d="M5 3l8 5-8 5z" fill="currentColor" stroke="none"/></svg>발표</button>
+  </header>
+  <div id="main">
+    <nav id="rail" aria-label="장표 목록">
+      <div id="thumbs"></div>
+      <div id="railTools">
+        <button class="btn icon" type="button" id="bAdd" title="새 장표"><svg viewBox="0 0 16 16"><path d="M8 3v10M3 8h10"/></svg></button>
+        <button class="btn icon" type="button" id="bDup" title="장표 복제"><svg viewBox="0 0 16 16"><rect x="5" y="5" width="8" height="8" rx="1.5"/><path d="M3 10V4a1 1 0 0 1 1-1h6"/></svg></button>
+        <button class="btn icon" type="button" id="bUp" title="위로"><svg viewBox="0 0 16 16"><path d="M8 13V3M4 7l4-4 4 4"/></svg></button>
+        <button class="btn icon" type="button" id="bDown" title="아래로"><svg viewBox="0 0 16 16"><path d="M8 3v10M4 9l4 4 4-4"/></svg></button>
+      </div>
+    </nav>
+    <section id="center">
+      <div id="viewport"><div id="canvasWrap"><div id="canvas" class="stage static"></div></div>
+        <div id="findBar" hidden><input id="fq" placeholder="찾기" aria-label="찾기" autocomplete="off"><span id="fcount" class="num"></span><button type="button" class="ib" data-f="prev" title="이전"><svg viewBox="0 0 16 16"><path d="M4 10l4-4 4 4"/></svg></button><button type="button" class="ib" data-f="next" title="다음"><svg viewBox="0 0 16 16"><path d="M4 6l4 4 4-4"/></svg></button><input id="fr" placeholder="바꿀 말" aria-label="바꿀 말" autocomplete="off"><button type="button" class="btn" data-f="one">바꾸기</button><button type="button" class="btn" data-f="all">모두</button><button type="button" class="ib" data-f="close" title="닫기"><svg viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8"/></svg></button></div>
+        <button type="button" id="aiDot" hidden aria-label="AI"><svg viewBox="0 0 16 16"><path d="M8 1.5l1.6 4.9 4.9 1.6-4.9 1.6L8 14.5l-1.6-4.9L1.5 8l4.9-1.6z"/></svg></button>
+        <div id="aibar" hidden>
+          <div class="ah"><div class="seg" id="aiScope" role="group" aria-label="AI 범위"><button type="button" data-scope="sel">선택</button><button type="button" data-scope="slide">장표</button><button type="button" data-scope="deck">덱</button></div><span id="aiCount"></span><span class="ai-line"></span></div>
+          <div id="aireview" hidden></div>
+          <div class="chips"><button type="button" class="chip" data-q="title">짧은 제목으로</button><button type="button" class="chip" data-q="polish">문장 다듬기</button><button type="button" class="chip" data-q="short">더 간결하게</button><button type="button" class="chip" data-q="visual">도식으로 바꾸기</button><button type="button" class="chip" data-q="evidence">근거 보강</button></div>
+          <form id="aiform"><input id="aiq" autocomplete="off" placeholder="요청 입력" aria-label="AI 요청"><button type="submit" class="btn primary" id="aiGo">실행</button><button type="button" class="btn" id="aiStop" hidden>중지</button></form>
+        </div>
+      </div>
+      <div id="status"><span class="pos num"></span><button type="button" class="over" data-a="check"></button><button type="button" class="warn" data-a="check"></button><span class="grow"></span><button type="button" class="hist" data-a="hist"></button><span class="zc"><button type="button" class="ib" data-a="zout" title="축소"><svg viewBox="0 0 16 16"><path d="M4 8h8"/></svg></button><button type="button" class="zoom num" data-a="zfit" title="화면에 맞추기">100%</button><button type="button" class="ib" data-a="zin" title="확대"><svg viewBox="0 0 16 16"><path d="M4 8h8M8 4v8"/></svg></button></span></div>
+      <div id="notesBox"><label for="notes">발표 스크립트</label><textarea id="notes" spellcheck="false"></textarea></div>
+    </section>
+    <aside id="side">
+      <div id="tabs"><div class="seg" role="tablist">
+        <button type="button" data-tab="props" aria-pressed="true">속성</button>
+        <button type="button" data-tab="layers" aria-pressed="false">레이어</button>
+        <button type="button" data-tab="insert" aria-pressed="false">삽입</button>
+        <button type="button" data-tab="check" aria-pressed="false">점검</button>
+        <button type="button" data-tab="hist" aria-pressed="false">이력</button>
+        <button type="button" data-tab="theme" aria-pressed="false">테마</button>
+      </div>
+      <div class="seg" id="insSeg" hidden><button type="button" data-ins="layouts">레이아웃</button><button type="button" data-ins="assets">에셋</button><button type="button" data-ins="images">이미지</button></div></div>
+      <div id="panel"></div>
+    </aside>
+  </div>
+</div>
+
+<div id="genPop" class="pop" hidden>
+  <form id="genForm">
+    <label class="hint" for="genDesc">어떤 장표를 만들까요</label>
+    <textarea id="genDesc" class="ta" rows="3"></textarea>
+    <div class="exs"><button type="button" class="ex">CUDA와 AMD ROCm의 전환 비용 비교</button><button type="button" class="ex">FY2025와 FY2026 실적 비교와 시사점</button><button type="button" class="ex">CUDA 플랫폼의 가치 창출과 가치 획득 구조</button></div>
+    <div class="row2"><select id="genSec" class="inp" aria-label="섹션"></select><button type="submit" class="btn primary" id="genGo">만들기</button></div>
+    <button type="button" class="btn" id="genStop">중지</button>
+  </form>
+</div>
+<div id="deckPop" class="pop" hidden>
+  <form id="deckForm">
+    <label class="hint" for="deckName">새 덱 이름</label>
+    <input id="deckName" class="inp" autocomplete="off">
+    <div class="row2"><button type="submit" class="btn primary" data-copy="0">빈 덱</button><button type="submit" class="btn" data-copy="1">현재 덱 복제</button></div>
+  </form>
+</div>
+<div id="exportPop" class="pop menu" hidden><button type="button" data-cmd="pptx">PowerPoint (Windows)</button><button type="button" data-cmd="pptxMac">PowerPoint (Mac)</button><button type="button" data-cmd="print">인쇄 / 벡터 PDF</button><button type="button" data-cmd="pdf">이미지 PDF</button><button type="button" data-cmd="json">프로젝트 파일</button><hr><button type="button" data-cmd="open">프로젝트 파일 열기</button></div>
+<div id="ctx" class="menu" role="menu" hidden></div>
+<div id="pal" hidden><div class="pbox"><input id="palq" placeholder="명령, 장표, 레이아웃 검색" aria-label="명령 검색" autocomplete="off"><div id="pall"></div></div></div>
+<div id="busy" hidden><span></span></div>
+<div id="offscreen" aria-hidden="true"></div>
+<input type="file" id="fileIn" accept=".json,application/json" hidden>
+<div id="toast" hidden><span></span><button type="button" class="btn">되돌리기</button></div>
+<div id="present" hidden>
+  <div class="reveal"><div class="slides"></div></div>
+  
+  <div id="pNotes"></div>
+  <div id="pBar" role="toolbar" aria-label="발표 진행">
+    <button type="button" data-pb="prev" aria-label="이전"><svg viewBox="0 0 16 16" width="16" height="16"><path d="M10 3L5 8l5 5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>
+    <span class="num pos"></span>
+    <button type="button" data-pb="next" aria-label="다음"><svg viewBox="0 0 16 16" width="16" height="16"><path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>
+    <button type="button" data-pb="play" aria-pressed="false">재생</button>
+    <div class="tl"><i></i></div>
+    <button type="button" data-pb="time" class="num clock" title="전체 발표 시간 바꾸기">00:00 / 20:00</button>
+    <button type="button" data-pb="notes" aria-pressed="false" title="발표자 창 (N)">발표자 창</button>
+    <button type="button" data-pb="full" aria-label="전체 화면"><svg viewBox="0 0 16 16" width="16" height="16"><path d="M2.5 6V2.5H6M10 2.5h3.5V6M13.5 10v3.5H10M6 13.5H2.5V10" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.js"></script>
+<script src="deck-cuda.js"></script>
+<script src="engine.js"></script>

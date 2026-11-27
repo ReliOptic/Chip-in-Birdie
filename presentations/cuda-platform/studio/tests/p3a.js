@@ -1,0 +1,11 @@
+const {open} = require('./h'); const sleep = ms => new Promise(r => setTimeout(r, ms)); const assert = (c, m) => { if (!c) { console.log('FAIL', m); process.exitCode = 1; } else console.log('ok  ', m); };
+(async () => { const {p, errs, close} = await open({db:true});
+  await p.click('#tabs [data-tab="theme"]'); await sleep(150);
+  await p.$eval('#panel input[data-th="accent"]', x => { x.value = '#3366ff'; x.dispatchEvent(new Event('input', {bubbles:true})); }); await sleep(700);
+  assert(await p.$eval('#canvas', x => getComputedStyle(x).getPropertyValue('--g').trim()) === '#3366ff', 'accent applied to slides');
+  assert(await p.evaluate(() => __fdb.docs.get('themes/cuda') && __fdb.docs.get('themes/cuda').accent) === '#3366ff', 'theme stored');
+  await p.click('#panel input[data-th="pg"]'); await sleep(600);
+  assert(await p.$eval('#canvas .pg', x => getComputedStyle(x).display).catch(() => 'none') === 'none', 'master toggle hides page number');
+  await p.evaluate(() => document.activeElement.blur()); await p.evaluate(() => __fdb.remoteSet('themes/cuda', {accent:'red;}body{display:none', bg:'#111111'})); await sleep(300);
+  assert(await p.$eval('#canvas', x => getComputedStyle(x).getPropertyValue('--g').trim()) === '#76b900' && await p.$eval('body', x => getComputedStyle(x).display) !== 'none', 'hostile theme values rejected');
+  assert(!errs.length, 'no errors ' + errs.join('|')); await close(); })();
