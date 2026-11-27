@@ -112,6 +112,9 @@ button,input,select,textarea{font:inherit;color:inherit}
 
 /* ---------- slide stage (shared by canvas, thumbs, presentation) ---------- */
 .stage{position:relative;width:1600px;height:900px;background:var(--bg);overflow:hidden;font-family:var(--sans);color:var(--t1);text-align:left}
+.stage .bgfx{position:absolute;inset:0;pointer-events:none;background:radial-gradient(64% 70% at 100% 0%,rgba(118,185,0,.075),rgba(118,185,0,0) 72%),radial-gradient(50% 60% at 0% 100%,rgba(118,185,0,.035),rgba(118,185,0,0) 72%),linear-gradient(180deg,#050505,#000 40%)}
+.stage .bgfx::before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.09) 1px,transparent 1.3px);background-size:28px 28px;-webkit-mask-image:radial-gradient(70% 75% at 100% 0%,#000,transparent 75%);mask-image:radial-gradient(70% 75% at 100% 0%,#000,transparent 75%)}
+.stage .bgfx::after{content:'';position:absolute;right:-220px;top:-260px;width:820px;height:820px;border-radius:50%;border:1px solid rgba(118,185,0,.10);box-shadow:0 0 0 90px rgba(118,185,0,.018),0 0 0 180px rgba(118,185,0,.012)}
 .stage .el{position:absolute}
 .stage .txt{width:100%;height:100%;white-space:normal;word-break:keep-all;overflow-wrap:break-word;outline:none}
 .stage .txt small{font-size:.48em;letter-spacing:-0.02em}
@@ -1454,7 +1457,7 @@ function chromeHTML(s){
   const trk = sec >= 0 ? SECTIONS.map((t, i) => `<span class="${i === sec ? 'on' : i < sec ? 'done' : ''}">${esc(t)}</span>`).join('') : sec === -2 ? SECTIONS.map(t => `<span class="done">${esc(t)}</span>`).join('') : '<span class="on">Take home</span>';
   return `<div class="trk">${trk}</div><div class="rule"></div>${s.src ? `<div class="foot">${esc(s.src)}</div>` : ''}${n > 0 ? `<div class="pg num">${n}</div>` : ''}`;
 }
-function slideHTML(s, mode){ return s.els.map(e => elHTML(e, mode)).join('') + chromeHTML(s); }
+function slideHTML(s, mode){ return (s.kind === 'content' || s.kind === 'refs' ? '<div class="bgfx" aria-hidden="true"></div>' : '') + s.els.map(e => elHTML(e, mode)).join('') + chromeHTML(s); }
 
 function renderThumbs(){
   const box = $('#thumbs'); const L = list();
