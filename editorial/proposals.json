@@ -3073,10 +3073,20 @@
       "decision": "CIB-051",
       "date": "2026-11-27",
       "task": "TASK-004",
-      "revision": 2,
+      "revision": 3,
       "standard": "editorial/LANGUAGE.md",
       "reason": "근거 재리뷰 비차단: 참여사 전제 제거, 대상명 명시"
-    }
+    },
+    "language_review_history": [
+      {
+        "decision": "CIB-051",
+        "date": "2026-11-27",
+        "task": "TASK-004",
+        "revision": 2,
+        "standard": "editorial/LANGUAGE.md",
+        "reason": "근거 리뷰 비차단: 삼성 참여 재확인 전이므로 회사명 단정 제거"
+      }
+    ]
   },
   {
     "p_id": "P070",

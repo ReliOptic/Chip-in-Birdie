@@ -94,7 +94,7 @@ How did chip design and chip manufacturing become separate businesses?
 - 3D event: A phone board separates into design, wafer fabrication and packaging steps, each labelled with the type of company that performs it
 - Payoff: The viewer can see that a fabless company still depends on outside fabrication capacity, process schedules and packaging
 - Overlap boundary: Qualcomm's fabless operating model and supplier dependence; AMD's manufacturing separation is S1E03 and Apple's system-company case is S1E08.
-- Next: S1E07 — S1E06 relies on a dependable design-to-factory handoff; S1E07 looks at the Mead–Conway design rules, which defined part of that interface.
+- Next: S1E07 — S1E06 relies on a design-to-factory handoff; S1E07 goes back to an earlier period, to the Mead–Conway design rules, an early attempt to define such a handoff; treating them as a precondition for later foundries is interpretation. Thematic link, not causal.
 - Selection: RECOVERED_PR1_CORE — Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: Arm·Qualcomm·TSMC 공개 연차보고서 비교.
 
@@ -138,7 +138,7 @@ How do technical constraints change which chip architectures are worth adopting?
 - Protagonist / conflict: GPU designers serving a paying games market while extending their hardware to general computation
 - Choice: Invest in programmable parallel hardware
 - 3D event: A graphics board renders pixels; the same execution units are then shown processing numerical arrays
-- Payoff: The viewer can see that game sales supplied a market for programmable parallel hardware, and that software and research use were separate later steps toward AI computing; whether game revenue funded AI development is still to be verified
+- Payoff: The viewer can see that game sales supplied a market for parallel graphics hardware, and that software and research use were separate later steps toward AI computing; whether game revenue funded AI development is still to be verified
 - Overlap boundary: GPU market and programmability; the AlexNet result belongs to S2E06; later AI use is not presented as the designers' original intent.
 - Next: S2E02 — S2E01 depends on parallel hardware built from transistors; S2E02 returns to the early transistor and the problem of making it repeatably.
 - Selection: RECOVERED_PR1_CORE — Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.
@@ -273,7 +273,7 @@ How do cell design, manufacturing and market structure set the cost of a memory 
 - 3D event: A thread passes through ferrite rings and a read pulse flips a core
 - Payoff: The viewer can see that each stored bit had a physical production cost in labour and reliability
 - Overlap boundary: Ferrite-core manufacturing and hand assembly; the detailed transistor/capacitor refresh mechanism belongs to S3E07.
-- Next: S3E03 — S3E02 shows manufacturing effort per bit in core memory; S3E03 moves to later Japanese memory makers, whose product mix, costs and customer requirements changed together. Thematic link, not causal.
+- Next: S3E03 — S3E02 shows manufacturing effort per bit in core memory; S3E03 moves to later Japanese memory makers and how their product mix, costs and customer requirements are still to be examined together. Thematic link, not causal.
 - Selection: RECOVERED_PR1_CORE — Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: Computer History Museum 코어 메모리 기록·DRAM 전환 고객 자료.
 
@@ -287,7 +287,7 @@ How do cell design, manufacturing and market structure set the cost of a memory 
 - 3D event: Two qualification benches test distinct customer requirements beside a falling price order
 - Payoff: The viewer can see why product quality alone does not explain a national industry's market outcome
 - Overlap boundary: Japanese memory firms facing changing customer requirements, price and costs; not a single-cause quality verdict or an Intel-exit retelling.
-- Next: S3E04 — S3E03 shows product mix, cost and customer requirements changing together; S3E04 looks at one process choice, the self-aligned silicon gate, that changed manufacturing cost.
+- Next: S3E04 — S3E03 looks at product mix, cost and customer requirements; S3E04 goes back to 1968, to the self-aligned silicon gate, a process choice that affected transistor density and reproducibility. Thematic link, not causal.
 - Selection: RECOVERED_PR1_CORE — Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.
 - Selection flag: '일본이 최고 품질의 메모리를 만들었고 그것이 약점이었다'는 단일 원인 서사가 원래 전제이나 검증 전이므로 제품 구성·원가·고객 요구를 함께 보는 범위로 좁힘.
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: 고품질·장수명 설계가 값싼 PC용 메모리 시대에 약점이 된 과정.
@@ -349,7 +349,7 @@ How do cell design, manufacturing and market structure set the cost of a memory 
 - Selection: NEW_PRODUCTION_JUDGMENT — Editorial addition from existing PR #1 candidates to link cell economics and commercialisation; not a recovered user approval of its claims.
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: Dennard DRAM 특허·초기 메모리 상용 기록.
 
-### S3E08 · Toshiba's Flash Invention and the Flash Market
+### S3E08 · Toshiba's Flash Invention and Later Manufacturers
 
 - Source: PR #1 P044 → main P044; H: H047, H048. Original title: Inventing Flash Didn't Win the Market.
 - Korean title: 도시바의 플래시 발명과 이후 제조사들
@@ -358,7 +358,7 @@ How do cell design, manufacturing and market structure set the cost of a memory 
 - Choice: Convert a cell into reliable scalable products
 - 3D event: An erase block resets, then a factory tests endurance and yield
 - Payoff: The viewer can separate three sources of value: the patent, the product and volume production
-- Overlap boundary: Episode-specific mechanism and choice; review before script lock
+- Overlap boundary: Flash invention and later volume manufacturing; DRAM cell economics are S3E07.
 - Next: season resolution — Season 3 closes with three distinct costs of memory: making a cell work, making it repeatedly at scale, and building the products and customer relationships that sell it.
 - Selection: NEW_PRODUCTION_JUDGMENT — Editorial addition from existing PR #1 candidates to link cell economics and commercialisation; not a recovered user approval of its claims.
 - Selection flag: '발명한 회사가 시장까지 갖는 것은 아니다'는 일반화는 근거 부족, 인텔 팀·첫 고객·제조 장애물 자료 부족(H048 반영).
@@ -372,7 +372,7 @@ How do public decisions change what companies can build and sell?
 
 - Source: PR #1 P089 → main P089; H: H099. Original title: The AI Chip Rebuilt to Slip Under a Law.
 - Korean title: 2022–23년 수출 통제 기준과 AI 칩 사양
-- Question: How did dated export thresholds decide whether a chip with given specifications could ship?
+- Question: How did dated export thresholds decide whether a chip with given specifications needed an export licence?
 - Protagonist / conflict: Chip suppliers and regulators facing changing performance thresholds
 - Choice: To be verified: how chip specifications related to the export thresholds in force on given dates
 - 3D event: A chip's specification sheet is laid against dated export thresholds; the classification depends on both

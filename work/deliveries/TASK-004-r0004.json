@@ -1,0 +1,163 @@
+{
+  "artifacts": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "066c0fa4d4a4779556af46c1086d4aac635c624202d9c64826fbed748106c86f",
+      "size_bytes": 5982,
+      "snapshot_path": "work/deliveries/TASK-004-r0004/artifacts/AGENTS.md"
+    },
+    {
+      "path": "DECISIONS.md",
+      "sha256": "e79db347f609ac6a86c9ce635ef74d156845410e895a48cffd7a06433df7a10b",
+      "size_bytes": 5736,
+      "snapshot_path": "work/deliveries/TASK-004-r0004/artifacts/DECISIONS.md"
+    },
+    {
+      "path": "README.md",
+      "sha256": "41f1b159b8b9824361a8148866cc621e540892ea42ec9f15ebf32cafa224c7ec",
+      "size_bytes": 4842,
+      "snapshot_path": "work/deliveries/TASK-004-r0004/artifacts/README.md"
+    },
+    {
+      "path": "channel/AUDIENCE.md",
+      "sha256": "384aed50b0b2ab6bb8b2f03ed3b58d082485c36566a3eacd0bdc13ecaebcda62",
+      "size_bytes": 6456,
+      "snapshot_path": "work/deliveries/TASK-004-r0004/artifacts/channel/AUDIENCE.md"
+    },
+    {
+      "path": "channel/CHARTER.md",
+      "sha256": "a92ff99539947d4d63a0796433735ee1103280b50a4e451fde1b6f4f22089020",
+      "size_bytes": 3931,
+      "snapshot_path": "work/deliveries/TASK-004-r0004/artifacts/channel/CHARTER.md"
+    },
+    {
+      "path": "channel/SOURCES.md",
+      "sha256": "9d6097c939d26d4793549bc7456b621aed4d6b489e9a7fdaed5c99663c04407d",
+      "size_bytes": 2519,
+      "snapshot_path": "work/deliveries/TASK-004-r0004/artifacts/channel/SOURCES.md"
+    },
+    {
+      "path": "channel/charter.json",
+      "sha256": "befbce7e9a967072312e88f3ac17d9c6f5d9999d46b09e685aab8c5082b97886",
+      "size_bytes": 1175,
+      "snapshot_path": "work/deliveries/TASK-004-r0004/artifacts/channel/charter.json"
+    },
+    {
+      "path": "editorial/LANGUAGE.md",
+      "sha256": "51ccb47037952b1c4767be4c4ec596004b932a26e362d4d4e276ef5c7c51759d",
+      "size_bytes": 7621,
+      "snapshot_path": "work/deliveries/TASK-004-r0004/artifacts/editorial/LANGUAGE.md"
+    },
+    {
+      "path": "editorial/PLAYBOOK.md",
+      "sha256": "a677a256b3141354a559e15eac50f4691284f19cb8a1afc94c158e6e807d121c",
+      "size_bytes": 5907,
+      "snapshot_path": "work/deliveries/TASK-004-r0004/artifacts/editorial/PLAYBOOK.md"
+    },
+    {
+      "path": "editorial/PROGRAMMING.md",
+      "sha256": "0efdbe9e2c8959d57c1558e6621506bd2f6ae7e876e01d06e99f367ddbb5dcbb",
+      "size_bytes": 3793,
+      "snapshot_path": "work/deliveries/TASK-004-r0004/artifacts/editorial/PROGRAMMING.md"
+    },
+    {
+      "path": "editorial/SEASONS.md",
+      "sha256": "b63af1c14ab89ea226a6244bdc5a9f1d47799cbb0ef9c9ffc0732a46914ac10b",
+      "size_bytes": 48787,
+      "snapshot_path": "work/deliveries/TASK-004-r0004/artifacts/editorial/SEASONS.md"
+    },
+    {
+      "path": "editorial/catalog.json",
+      "sha256": "2a8eb980b2a42c099382eacd12a48878e1944825c677ce823a46f1e4744c6205",
+      "size_bytes": 347537,
+      "snapshot_path": "work/deliveries/TASK-004-r0004/artifacts/editorial/catalog.json"
+    },
+    {
+      "path": "editorial/proposals.json",
+      "sha256": "bab2a53ea595e604247617d72e8c5da1f95cf23e604f61ce74047a27e874296c",
+      "size_bytes": 169547,
+      "snapshot_path": "work/deliveries/TASK-004-r0004/artifacts/editorial/proposals.json"
+    },
+    {
+      "path": "editorial/seasons.json",
+      "sha256": "a3745c21423ac81fdc44940bcf00d2afcdfd89cfb8ebbaf724afa5d940c1a7c7",
+      "size_bytes": 97691,
+      "snapshot_path": "work/deliveries/TASK-004-r0004/artifacts/editorial/seasons.json"
+    },
+    {
+      "path": "ops/WORKFLOW.md",
+      "sha256": "537d475ce33f5fb4d762ad27f056b2f63eb3cf59dbe870c732d68d8e39d1fd99",
+      "size_bytes": 7928,
+      "snapshot_path": "work/deliveries/TASK-004-r0004/artifacts/ops/WORKFLOW.md"
+    },
+    {
+      "path": "prompts/README.md",
+      "sha256": "f9cca6eb13fabc54e3002719ccd5d7fcffa80d905326a0ea4502e396a90c828d",
+      "size_bytes": 1169,
+      "snapshot_path": "work/deliveries/TASK-004-r0004/artifacts/prompts/README.md"
+    },
+    {
+      "path": "prompts/editor.md",
+      "sha256": "642dbbe36380849bafc3202daae9a0b6e11a75c7efec986c2d66eca4ed50c075",
+      "size_bytes": 1437,
+      "snapshot_path": "work/deliveries/TASK-004-r0004/artifacts/prompts/editor.md"
+    },
+    {
+      "path": "prompts/editorial-reviewer.md",
+      "sha256": "99abfc138c4c80e1f68f792cd9657e594e346356bd5de1399e293f35ccd36ed5",
+      "size_bytes": 1295,
+      "snapshot_path": "work/deliveries/TASK-004-r0004/artifacts/prompts/editorial-reviewer.md"
+    },
+    {
+      "path": "prompts/evidence-reviewer.md",
+      "sha256": "8e3ff41854467c1250a676c3a025f31223a8bc9dedcf23f1b1f66faf1378dddb",
+      "size_bytes": 1176,
+      "snapshot_path": "work/deliveries/TASK-004-r0004/artifacts/prompts/evidence-reviewer.md"
+    },
+    {
+      "path": "prompts/researcher.md",
+      "sha256": "613621b76b716b2b67a4c19239394e6bc75ff236d691ce53163b556fb9a4c8e0",
+      "size_bytes": 1064,
+      "snapshot_path": "work/deliveries/TASK-004-r0004/artifacts/prompts/researcher.md"
+    },
+    {
+      "path": "prompts/viewer-reviewer.md",
+      "sha256": "68012c897e46954b8ad621b5903a5095030f2300b9548d0ae6d76666ce480363",
+      "size_bytes": 1636,
+      "snapshot_path": "work/deliveries/TASK-004-r0004/artifacts/prompts/viewer-reviewer.md"
+    },
+    {
+      "path": "prompts/visual-producer.md",
+      "sha256": "1503b674fd889da9c31134632eb32d000186a604dba75261a581081245c79742",
+      "size_bytes": 1104,
+      "snapshot_path": "work/deliveries/TASK-004-r0004/artifacts/prompts/visual-producer.md"
+    },
+    {
+      "path": "templates/episode-brief.md",
+      "sha256": "9ef217195f08bbed6c1b07408618fb88c027dfb584126161cb54a4918c52128f",
+      "size_bytes": 1133,
+      "snapshot_path": "work/deliveries/TASK-004-r0004/artifacts/templates/episode-brief.md"
+    },
+    {
+      "path": "templates/review-note.md",
+      "sha256": "31a64ea8cdeaba919602e61797a18a4cf0cbafd3bceff92e882a5c7ae5834c38",
+      "size_bytes": 738,
+      "snapshot_path": "work/deliveries/TASK-004-r0004/artifacts/templates/review-note.md"
+    }
+  ],
+  "bundle_sha256": "905a203ff39cdbb872a20d08449a2442df1ebf34d516a4cc7fb2e9a921e1fb3b",
+  "delivery_id": "TASK-004-r0004",
+  "episode_id": null,
+  "manifest_sha256": "ad23ad8333fc62104826afec4ab698b73502d14e235f14bc40231fefb662abe2",
+  "previous_delivery_id": "TASK-004-r0003",
+  "producer": {
+    "actor": "claude-code",
+    "model": "claude-opus-5-5",
+    "session_id": "session_01PGnDYYRkzDyviPFVMqxNV2"
+  },
+  "revision": 4,
+  "schema_version": "1.0",
+  "scope": "channel",
+  "submitted_at": "2026-11-27T14:46:26.396224Z",
+  "task_id": "TASK-004"
+}

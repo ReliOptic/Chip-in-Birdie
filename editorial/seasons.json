@@ -272,11 +272,21 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 2,
+        "revision": 3,
         "standard": "editorial/LANGUAGE.md",
         "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
       },
-      "selection_flag": "퇴사 서명 일화와 갈등 기록이 검증 전이며 지역 산업의 단일 기원 서사로 확대할 위험(P061 flag 반영)."
+      "selection_flag": "퇴사 서명 일화와 갈등 기록이 검증 전이며 지역 산업의 단일 기원 서사로 확대할 위험(P061 flag 반영).",
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 2,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "편집 리뷰 B1: flag 전파"
+        }
+      ]
     },
     {
       "episode_id": "S1E03",
@@ -413,10 +423,19 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 2,
+        "revision": 3,
         "standard": "editorial/LANGUAGE.md",
         "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
-      }
+      },
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "검증 전 IBM 거절 일화를 제목에서 빼고 공정 개발이라는 확인 가능한 대상으로 좁힘"
+        }
+      ]
     },
     {
       "episode_id": "S1E06",
@@ -435,7 +454,7 @@
       "screen_3d_event": "A phone board separates into design, wafer fabrication and packaging steps, each labelled with the type of company that performs it",
       "payoff": "The viewer can see that a fabless company still depends on outside fabrication capacity, process schedules and packaging",
       "next_episode": "S1E07",
-      "next_connection": "S1E06 relies on a dependable design-to-factory handoff; S1E07 looks at the Mead–Conway design rules, which defined part of that interface.",
+      "next_connection": "S1E06 relies on a design-to-factory handoff; S1E07 goes back to an earlier period, to the Mead–Conway design rules, an early attempt to define such a handoff; treating them as a precondition for later foundries is interpretation. Thematic link, not causal.",
       "selection": "RECOVERED_PR1_CORE",
       "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
       "audience_ref": "channel/audience.json",
@@ -458,9 +477,22 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
+        "revision": 4,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "'당신의 폰 속 칩' 식 일반화 제목을 기업·사업 모델 명칭으로 교체"
-      }
+        "reason": "TASK-004 r4: 편집 재리뷰 R1·R2, 근거 재리뷰 비차단 반영",
+        "fields": [
+          "next_connection"
+        ]
+      },
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "'당신의 폰 속 칩' 식 일반화 제목을 기업·사업 모델 명칭으로 교체"
+        }
+      ]
     },
     {
       "episode_id": "S1E07",
@@ -561,7 +593,7 @@
       "protagonist_conflict": "GPU designers serving a paying games market while extending their hardware to general computation",
       "choice": "Invest in programmable parallel hardware",
       "screen_3d_event": "A graphics board renders pixels; the same execution units are then shown processing numerical arrays",
-      "payoff": "The viewer can see that game sales supplied a market for programmable parallel hardware, and that software and research use were separate later steps toward AI computing; whether game revenue funded AI development is still to be verified",
+      "payoff": "The viewer can see that game sales supplied a market for parallel graphics hardware, and that software and research use were separate later steps toward AI computing; whether game revenue funded AI development is still to be verified",
       "next_episode": "S2E02",
       "next_connection": "S2E01 depends on parallel hardware built from transistors; S2E02 returns to the early transistor and the problem of making it repeatably.",
       "selection": "RECOVERED_PR1_CORE",
@@ -586,11 +618,32 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 2,
+        "revision": 4,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        "reason": "TASK-004 r4: 편집 재리뷰 R1·R2, 근거 재리뷰 비차단 반영",
+        "fields": [
+          "payoff"
+        ]
       },
-      "selection_flag": "게임 매출이 AI용 GPU 개발 자금이 됐다는 인과는 사후 해석일 수 있음. 당시 의도를 AI로 소급하지 않음(P055·H081 반영)."
+      "selection_flag": "게임 매출이 AI용 GPU 개발 자금이 됐다는 인과는 사후 해석일 수 있음. 당시 의도를 AI로 소급하지 않음(P055·H081 반영).",
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 2,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "편집 리뷰 B1: flag 전파"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        }
+      ]
     },
     {
       "episode_id": "S2E02",
@@ -634,10 +687,20 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 2,
+        "revision": 3,
         "standard": "editorial/LANGUAGE.md",
         "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
-      }
+      },
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 2,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "편집 리뷰 B4: 연결 전제 복원"
+        }
+      ]
     },
     {
       "episode_id": "S2E03",
@@ -681,10 +744,20 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 2,
+        "revision": 3,
         "standard": "editorial/LANGUAGE.md",
         "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
-      }
+      },
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 2,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "근거 리뷰 비차단: 완화책 성능 비용 단정 완화"
+        }
+      ]
     },
     {
       "episode_id": "S2E04",
@@ -728,10 +801,19 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 2,
+        "revision": 3,
         "standard": "editorial/LANGUAGE.md",
         "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
-      }
+      },
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "'시대를 앞선' 극적 표현과 '유행' 표현 제거"
+        }
+      ]
     },
     {
       "episode_id": "S2E05",
@@ -773,10 +855,20 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 2,
+        "revision": 3,
         "standard": "editorial/LANGUAGE.md",
         "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
-      }
+      },
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 2,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "편집 리뷰 B4: 주제 연결 표시"
+        }
+      ]
     },
     {
       "episode_id": "S2E06",
@@ -820,11 +912,21 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 2,
+        "revision": 3,
         "standard": "editorial/LANGUAGE.md",
         "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
       },
-      "selection_flag": "결과 변화를 GPU 두 장에만 귀속하면 데이터·모델의 기여를 지우는 인과 과장(H083 반영)."
+      "selection_flag": "결과 변화를 GPU 두 장에만 귀속하면 데이터·모델의 기여를 지우는 인과 과장(H083 반영).",
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 2,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "편집 리뷰 B1: flag 전파"
+        }
+      ]
     },
     {
       "episode_id": "S2E07",
@@ -868,11 +970,21 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 2,
+        "revision": 3,
         "standard": "editorial/LANGUAGE.md",
         "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
       },
-      "selection_flag": "1965년 논문이 곧바로 투자 기준이 됐다는 전제는 채택 시점 근거 확인 전, 시간 순서를 인과로 압축할 위험(H030 반영)."
+      "selection_flag": "1965년 논문이 곧바로 투자 기준이 됐다는 전제는 채택 시점 근거 확인 전, 시간 순서를 인과로 압축할 위험(H030 반영).",
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 2,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "편집 리뷰 B1, 근거 리뷰 비차단"
+        }
+      ]
     },
     {
       "episode_id": "S2E08",
@@ -952,7 +1064,7 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 2,
+        "revision": 3,
         "standard": "editorial/LANGUAGE.md",
         "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
       },
@@ -962,6 +1074,16 @@
           "value": "Why Intel Left DRAM",
           "replaced_on": "2026-11-27",
           "by": "CIB-051"
+        }
+      ],
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 2,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "편집 리뷰 B3: '왜'형 제목 제거, P046과 통일"
         }
       ]
     },
@@ -984,7 +1106,7 @@
       "screen_3d_event": "A thread passes through ferrite rings and a read pulse flips a core",
       "payoff": "The viewer can see that each stored bit had a physical production cost in labour and reliability",
       "next_episode": "S3E03",
-      "next_connection": "S3E02 shows manufacturing effort per bit in core memory; S3E03 moves to later Japanese memory makers, whose product mix, costs and customer requirements changed together. Thematic link, not causal.",
+      "next_connection": "S3E02 shows manufacturing effort per bit in core memory; S3E03 moves to later Japanese memory makers and how their product mix, costs and customer requirements are still to be examined together. Thematic link, not causal.",
       "selection": "RECOVERED_PR1_CORE",
       "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
       "audience_ref": "channel/audience.json",
@@ -1007,10 +1129,30 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 2,
+        "revision": 4,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
-      }
+        "reason": "TASK-004 r4: 편집 재리뷰 R1·R2, 근거 재리뷰 비차단 반영",
+        "fields": [
+          "next_connection"
+        ]
+      },
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "'짜였다(woven)' 서술형 제목을 대상 명사구로 교체"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        }
+      ]
     },
     {
       "episode_id": "S3E03",
@@ -1029,7 +1171,7 @@
       "screen_3d_event": "Two qualification benches test distinct customer requirements beside a falling price order",
       "payoff": "The viewer can see why product quality alone does not explain a national industry's market outcome",
       "next_episode": "S3E04",
-      "next_connection": "S3E03 shows product mix, cost and customer requirements changing together; S3E04 looks at one process choice, the self-aligned silicon gate, that changed manufacturing cost.",
+      "next_connection": "S3E03 looks at product mix, cost and customer requirements; S3E04 goes back to 1968, to the self-aligned silicon gate, a process choice that affected transistor density and reproducibility. Thematic link, not causal.",
       "selection": "RECOVERED_PR1_CORE",
       "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
       "audience_ref": "channel/audience.json",
@@ -1053,10 +1195,31 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 2,
+        "revision": 4,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
-      }
+        "reason": "TASK-004 r4: 편집 재리뷰 R1·R2, 근거 재리뷰 비차단 반영",
+        "fields": [
+          "next_connection"
+        ]
+      },
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 2,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "편집 리뷰 B2: 의인화와 단일 원인 단정 제거"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        }
+      ]
     },
     {
       "episode_id": "S3E04",
@@ -1147,10 +1310,20 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 2,
+        "revision": 3,
         "standard": "editorial/LANGUAGE.md",
         "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
-      }
+      },
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 2,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "편집 리뷰 B4: 주제 연결 표시"
+        }
+      ]
     },
     {
       "episode_id": "S3E06",
@@ -1192,10 +1365,19 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 2,
+        "revision": 3,
         "standard": "editorial/LANGUAGE.md",
         "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
-      }
+      },
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "제품명을 넣어 대상 식별이 가능하게 함; 'bargain' 비유 제거"
+        }
+      ]
     },
     {
       "episode_id": "S3E07",
@@ -1245,10 +1427,20 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 2,
+        "revision": 3,
         "standard": "editorial/LANGUAGE.md",
         "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
-      }
+      },
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 2,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "편집 리뷰 비차단: 약어 해소"
+        }
+      ]
     },
     {
       "episode_id": "S3E08",
@@ -1257,7 +1449,7 @@
       "source_namespace": "PR1@3c66e4b",
       "original_id": "P044",
       "original_title_en": "Inventing Flash Didn't Win the Market",
-      "title_en": "Toshiba's Flash Invention and the Flash Market",
+      "title_en": "Toshiba's Flash Invention and Later Manufacturers",
       "source_h_ids": [
         "H047",
         "H048"
@@ -1279,7 +1471,7 @@
       "production_status": "NOT_STARTED",
       "media_status": "NOT_READY",
       "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
-      "duplicate_boundary": "Episode-specific mechanism and choice; review before script lock",
+      "duplicate_boundary": "Flash invention and later volume manufacturing; DRAM cell economics are S3E07.",
       "title_history": [
         {
           "field": "title_en",
@@ -1292,6 +1484,12 @@
           "value": "도시바의 플래시 발명과 시장 주도권",
           "replaced_on": "2026-11-27",
           "by": "CIB-051"
+        },
+        {
+          "field": "title_en",
+          "value": "Toshiba's Flash Invention and the Flash Market",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
         }
       ],
       "title_ko": "도시바의 플래시 발명과 이후 제조사들",
@@ -1299,11 +1497,33 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 2,
+        "revision": 4,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        "reason": "TASK-004 r4: 편집 재리뷰 R1·R2, 근거 재리뷰 비차단 반영",
+        "fields": [
+          "title_en",
+          "duplicate_boundary"
+        ]
       },
-      "selection_flag": "'발명한 회사가 시장까지 갖는 것은 아니다'는 일반화는 근거 부족, 인텔 팀·첫 고객·제조 장애물 자료 부족(H048 반영)."
+      "selection_flag": "'발명한 회사가 시장까지 갖는 것은 아니다'는 일반화는 근거 부족, 인텔 팀·첫 고객·제조 장애물 자료 부족(H048 반영).",
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 2,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "편집 리뷰 B1: 질문 축소, flag 전파"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        }
+      ]
     },
     {
       "episode_id": "S4E01",
@@ -1318,7 +1538,7 @@
       ],
       "main_p_id": "P089",
       "crosswalk_status": "SAME_ID_REFRAMED",
-      "question": "How did dated export thresholds decide whether a chip with given specifications could ship?",
+      "question": "How did dated export thresholds decide whether a chip with given specifications needed an export licence?",
       "protagonist_conflict": "Chip suppliers and regulators facing changing performance thresholds",
       "choice": "To be verified: how chip specifications related to the export thresholds in force on given dates",
       "screen_3d_event": "A chip's specification sheet is laid against dated export thresholds; the classification depends on both",
@@ -1359,11 +1579,32 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 2,
+        "revision": 4,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        "reason": "TASK-004 r4: 편집 재리뷰 R1·R2, 근거 재리뷰 비차단 반영",
+        "fields": [
+          "question"
+        ]
       },
-      "selection_flag": "특정 AI 칩이 규제 때문에 재설계됐다는 전제는 H099 기록에 없는 확장(P089 flag 반영). 규정과 사양의 관계로 좁힘."
+      "selection_flag": "특정 AI 칩이 규제 때문에 재설계됐다는 전제는 H099 기록에 없는 확장(P089 flag 반영). 규정과 사양의 관계로 좁힘.",
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 2,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "편집 리뷰 B1, 근거 리뷰 비차단: 재설계 단정 제거, 기간 출처 표기"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        }
+      ]
     },
     {
       "episode_id": "S4E02",
@@ -1407,11 +1648,21 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 2,
+        "revision": 3,
         "standard": "editorial/LANGUAGE.md",
         "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
       },
-      "selection_flag": "전시 수요가 결정 정제 기술을 낳았다는 인과는 생산·기술이전 기록 확인 전(P022 반영)."
+      "selection_flag": "전시 수요가 결정 정제 기술을 낳았다는 인과는 생산·기술이전 기록 확인 전(P022 반영).",
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 2,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "편집 리뷰 B1: flag 전파"
+        }
+      ]
     },
     {
       "episode_id": "S4E03",
@@ -1455,10 +1706,19 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 2,
+        "revision": 3,
         "standard": "editorial/LANGUAGE.md",
         "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
-      }
+      },
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "'clock'·'valve' 비유 제거"
+        }
+      ]
     },
     {
       "episode_id": "S4E04",
@@ -1501,10 +1761,19 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 2,
+        "revision": 3,
         "standard": "editorial/LANGUAGE.md",
         "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
-      }
+      },
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "'선택했다(Chose)' 단일 결정 전제를 제목에서 빼고 사례 명사구로 교체"
+        }
+      ]
     },
     {
       "episode_id": "S4E05",
@@ -1548,10 +1817,19 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 2,
+        "revision": 3,
         "standard": "editorial/LANGUAGE.md",
         "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
-      }
+      },
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "'Secrets' 과장 제거, 기관명(SEMATECH) 명시"
+        }
+      ]
     },
     {
       "episode_id": "S4E06",
@@ -1595,10 +1873,19 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 2,
+        "revision": 3,
         "standard": "editorial/LANGUAGE.md",
         "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
-      }
+      },
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "'Rivals' 대립 구도 표현을 사업 명칭으로 단순화; 'organize suppliers' 부정확 연결 수정"
+        }
+      ]
     },
     {
       "episode_id": "S4E07",
@@ -1642,11 +1929,21 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 2,
+        "revision": 3,
         "standard": "editorial/LANGUAGE.md",
         "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
       },
-      "selection_flag": "구매 비중(60% 논쟁)과 첫 주문 성격이 검증 전이라 생산기술까지 바꿨다는 영향 범위는 과장 위험(H031 반영)."
+      "selection_flag": "구매 비중(60% 논쟁)과 첫 주문 성격이 검증 전이라 생산기술까지 바꿨다는 영향 범위는 과장 위험(H031 반영).",
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 2,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "편집 리뷰 B1: 질문 축소, flag 전파"
+        }
+      ]
     },
     {
       "episode_id": "S4E08",
