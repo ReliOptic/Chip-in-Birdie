@@ -1,0 +1,45 @@
+# TASK-004 r0001 증거 검토 (evidence)
+
+- 검토자: independent-evidence / model claude-opus-5-5 / session review-evidence-TASK-004 (제작 세션 session_01PGnDYYRkzDyviPFVMqxNV2와 다름)
+- 대상: work/deliveries/TASK-004-r0001.json (bundle a51fe1dd…), 커밋 8654025·fefaa6e·dae6e53·13df523·a78ac3a
+- 비교 기준: `8654025^`(ee8d3ec)의 editorial/seasons.json·proposals.json·catalog.json
+- 판정: **pass** (차단 사항 없음)
+
+## 검토 방법
+
+1. 세 파일의 레코드별로 바뀐 필드만 추출해, 새 텍스트의 라틴 문자 고유명사·숫자 토큰이 (a) 같은 레코드의 이전 필드(evidence_leads·research_gate·public_research_leads 포함), (b) 연결된 H/P 레코드에 있는지 자동 대조했다. 전체 32편·P 100건·H 100건에 적용.
+2. 한국어 고유명사·수치(릴리엔펠트, 프랑스, 보청기, 페어차일드 자금, 1974 조찬, 니치아, 마이크론, 리전시, 상계관세, 60% 논쟁, 19명 등)는 플래그된 항목과 표본에서 수동으로 원 레코드와 대조했다.
+3. 시즌 32편은 모든 변경 필드를 전부 읽었다. 카탈로그는 제목 변화가 큰 40건(H001, H006, H015, H017, H019, H023, H024, H027, H028, H030, H031, H034, H035, H039, H041, H044, H045, H048, H050, H052, H053, H054, H055, H056, H060, H064, H065, H066, H069, H070, H073, H075, H079, H084, H087, H090, H091, H094, H099, H100), 재선정안은 42건(P001, P004–P006, P008, P010, P012–P014, P018, P023, P026, P027, P032, P033, P036, P043, P045, P049, P053, P054, P056, P058, P059, P061, P066, P068, P069, P071–P073, P076–P078, P082, P083, P086, P089, P091–P093, P100)의 변경 필드를 전부 읽었다. 나머지 P 58건은 새·옛 제목 쌍과 자동 대조 결과만 확인했다.
+4. 보존 조건 확인: H의 h_id·source_working_title·source_review_title·proposed_p_ids·next/branch_h_id·source_snapshot_context·public_research_leads·legacy_tags, P의 p_id·source_h_ids·source_snapshot_date·map_type·proposed_order, 시즌 original_title_en 변경 없음. 바뀐 제목(시즌 title_en, P title_en/title_ko)은 모두 이전 값이 `title_history`에 있다.
+5. 미검증 표시가 줄어든 레코드를 정규식(검증·확인 전·추정·가설·해석·unverified·illustrative 등)으로 찾았다. 실제로 표시가 빠진 곳은 없었다(S1E05 payoff는 다른 문장으로 유지, S1E08은 오탐).
+6. `python3 tools/check_catalog.py` → PASS (H 100, P 100, errors 없음). `python3 tools/channel.py validate` → PASS (현재 artifact hash 일치).
+
+## 차단 사항
+
+없음.
+
+자동 대조에서 새로 보인 고유명사·수치는 모두 같은 레코드의 다른 필드, 연결된 H/P 레코드, 또는 같은 시즌의 다른 편을 가리키는 내부 참조로 확인됐다. 확인한 예: S1E03 GlobalFoundries·공급계약(evidence_leads), S1E04 RCA·ITRI, S1E02 Fairchild, S2E07 1965·산업 로드맵(evidence_leads), S3E07 1T1C·Dennard, S3E08 Toshiba, P023 Pfann·벨 연구소·1951(H015 era), P033 반필드(mechanism), P069 2012(primary_source_hunt), P091 페어차일드·1963(H028 era), H006 1904·플레밍, H008 릴리엔펠트·1926·1948, H053 PAS 2000, H056 Nine Commandments, H064 64Mb·Hitachi, H066 마이크론(era), H072 GE, H073 니치아·GaN, H090 Zilog·8080. 이전 제목에 있던 과장(최초, 규격 위반, 실패할 것이라는 말, 거절 일화, 밤새 켠 빛 등)은 제목에서 빠지고 selection_flag와 research_gate로 옮겨졌다. 일화를 사실처럼 쓰던 동기 서술(H017 벨 엔지니어의 판단, H034 조찬, H053 누수, H069 저전력 일화)은 "검증 전"으로 표시가 바뀌었다.
+
+## 비차단 사항
+
+1. **S4E01 제목의 "2022–23"(editorial/seasons.json S4E01 title_en·title_ko, S4E03 duplicate_boundary, editorial/SEASONS.md 364·367·401행)**
+   - 문제: 2023은 S4E01 레코드, H099, P089 어디에도 없다. 출처는 DECISIONS.md CIB-049("Historical 2022–23 export-control case")이고, language_review.reason에만 이 출처가 적혀 있다. H099 research_gate는 "2022/이후 규정… 정확 적용날짜" 검증 전이고, draft_synopsis는 "여러 국가와 연도의 조치를 하나의 규칙으로 합치지 않"는다고 적는다.
+   - 영향: 새로 지어낸 사실은 아니다. 다만 레코드만 읽는 사람은 이 날짜 범위의 근거를 찾을 수 없고, 제목이 두 해의 규정을 한 범위로 묶는다.
+   - 수정안: S4E01 evidence_leads에 "CIB-049: 2022–23 사례, 개정일별 규정 분리"를 추가한다. 대본 단계에서 2022년과 2023년 규정을 따로 표기한다.
+2. **S4E01에 selection_flag가 없음**: P089의 새 selection_flag는 "특정 AI 칩이 규제 때문에 재설계됐다는 전제는 기록에 없는 확장"이라고 적는다. 같은 P를 main_p_id로 쓰는 S4E01 제목은 여전히 "AI Chips Redesigned"라고 단정한다. 이 전제는 이전 제목에도 있었으므로 새로 생긴 주장은 아니다. 시즌 레코드에도 같은 플래그를 다는 것이 일관된다.
+3. **S2E03 payoff "why mitigations involve a performance tradeoff"**: 연결 레코드 H087의 research_gate는 "패치와 성능 비용 별도 검증"이다. 성능 비용을 확정 사실로 쓰지 말고 "whether and how much mitigations cost performance (to be verified)"처럼 쓰는 편이 맞다.
+4. **시즌 정본과 카탈로그 사이의 표시 수준 차이**: 카탈로그는 이번에 인과 연결을 검증 전으로 낮췄지만, 대응하는 시즌 문장은 그대로 단정한다. 두 경우 모두 이전 문안에 있던 것이고 새로 생긴 주장은 아니다.
+   - S1E04 payoff: RCA 공정 학습이 "foundry could sell manufacturing services"보다 먼저였다고 쓴다. H035는 "직접 연결 근거는 검증 전"이다.
+   - S2E07 payoff·title "Industry Roadmaps": H030은 업계가 무어의 전망을 계획 기준으로 채택한 시점을 검증 전이라 하고, 시간 순서가 인과로 압축될 위험을 지적한다.
+5. **H031 reviewed_title_ko "아폴로 유도 컴퓨터"**: 레코드에는 "MIT 아폴로 컴퓨터"만 있다. 통상 명칭이므로 사실 오류는 아니지만 레코드 밖의 명칭이다.
+6. **P069 제목이 삼성 참여를 단정**: selection_flag와 H078 gate는 "삼성 참여는 ASML 공식 발표로 재확인 전"이다. 이전 제목("Three Rivals")에도 같은 전제가 있었다. 확인 전까지는 제목에서 회사 이름을 빼는 방안을 검토할 수 있다.
+7. **P045 "1983–1992"·P043 "Samsung's 2013 Shift"·P053 "2003"·P006 "1994"**: 연도는 모두 연결 H의 era/synopsis에 있다. 다만 해당 gate는 날짜를 검증 전으로 둔다. 특히 P045는 끝 연도를 1992로 두어 추격이 그해 완료됐다는 해석을 함축한다.
+8. **용어 불일치(편집 영역)**: P058 title_ko "투기 실행", S2E03 title_ko "투기적 실행", H087 "추측실행"이 섞여 있다. 사실 문제는 아니며 editorial 리뷰로 넘긴다.
+
+## 검증하지 못한 것
+
+- 역사적 사실 자체(연도·인물·수치)를 1차 자료와 대조하지 않았다. 이번 검토는 기존 레코드 대비 새 주장 추가 여부만 본다. 외부 자료는 조회하지 않았다.
+- 한국어 고유명사·수치의 자동 대조는 하지 않았다(라틴 문자·숫자 토큰만 자동). 한국어는 표본과 플래그 항목만 수동으로 확인했다.
+- 카탈로그 60건과 재선정안 58건의 본문 필드(draft_synopsis, opening/ending 등)는 자동 토큰 대조 외에는 읽지 않았다.
+- editorial/SEASONS.md, PLAYBOOK.md, PROGRAMMING.md와 운영 문서(AGENTS.md, README.md, channel/*.md)는 이번 증거 검토 범위에서 깊게 보지 않았다. SEASONS.md는 S4E01 관련 행만 확인했다.
+- 권리·영상·재생 관련 사항은 이 작업 범위가 아니며 확인하지 않았다.
