@@ -5,14 +5,14 @@
       "H001"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "소련이 사지 않은 폴란드 컴퓨터",
-    "title_en": "The Polish Computer the USSR Never Bought",
+    "title_ko": "폴란드 ES-1032와 공동 계열 규격",
+    "title_en": "Poland's ES-1032 and the Shared Soviet-Bloc Standard",
     "proposed_order": "1",
-    "act": "01 작동하는데 실패한다",
+    "act": "01 기술 성능과 채택 조건",
     "opening": "1970년대 폴란드 컴퓨터 캐비닛 옆 규격 문서",
     "mechanism": "TTL·메모리·보드 설계와 프로그램 호환성의 경계",
-    "economic_question": "성능 개선과 공동 조달·수리의 표준 사이에서 누가 양보하는가",
-    "ending": "같은 캐비닛에 작동·승인·주문이라는 세 표식을 따로 남긴다",
+    "economic_question": "성능 개선과 공동 조달·수리 규격 중 어느 쪽이 우선했는가",
+    "ending": "같은 캐비닛에 작동(WORKS)·승인(ACCEPTED)·주문(ORDERED) 세 상태를 구분해 표시",
     "primary_source_hunt": "ES-1032 부품표와 당시 공동규격·수입 기록; 국가별 기록 교차확인",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -20,7 +20,29 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "소련이 사지 않은 폴란드 컴퓨터",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The Polish Computer the USSR Never Bought",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "selection_flag": "소련 미구매의 사유가 규격 문제였는지는 원사료 확인 전이며, 1974 폴란드 기종과 1975/76 소련 비교 기종의 완성 연도가 달라 비교 전제가 약해질 수 있음.",
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'사지 않은'을 중심 사건으로 둔 제목을 규격 관계로 좁히고 의문형 질문을 중립화"
+    }
   },
   {
     "p_id": "P002",
@@ -28,14 +50,14 @@
       "H080"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "일부러 비튼 반도체 마스크",
+    "title_ko": "의도적으로 변형한 포토마스크 패턴",
     "title_en": "The Deliberately Distorted Photomask",
     "proposed_order": "2",
-    "act": "01 작동하는데 실패한다",
+    "act": "01 기술 성능과 채택 조건",
     "opening": "곧은 설계선과 일부러 휘어진 포토마스크 두 장",
     "mechanism": "회절·OPC·ILT와 웨이퍼 가장자리 위치의 역문제",
     "economic_question": "누가 보정 계산·마스크 제작·검증 비용을 부담하는가",
-    "ending": "보기 흉한 마스크를 최종 웨이퍼와 같은 화면에 되돌린다",
+    "ending": "변형된 마스크 패턴과 최종 웨이퍼 패턴을 같은 화면에서 비교",
     "primary_source_hunt": "공개 OPC 사례의 mask-aerial-wafer 같은 조건 비교",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -43,7 +65,22 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "일부러 비튼 반도체 마스크",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'비튼' 구어 표현과 '보기 흉한' 주관 표현 정리"
+    }
   },
   {
     "p_id": "P003",
@@ -51,14 +88,14 @@
       "H050"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "GPU를 멈춰 세운 메모리",
-    "title_en": "The Memory That Stalled the GPU",
+    "title_ko": "HBM과 GPU 메모리 대역폭 병목",
+    "title_en": "HBM and the GPU Memory Bandwidth Bottleneck",
     "proposed_order": "3",
-    "act": "01 작동하는데 실패한다",
-    "opening": "연산 유닛은 켜져 있는데 비어 있는 데이터 경로",
+    "act": "01 기술 성능과 채택 조건",
+    "opening": "연산 유닛이 데이터 도착을 기다리는 유휴 구간",
     "mechanism": "HBM 대역폭과 메모리 계층·인터포저 연결의 제약",
-    "economic_question": "빠른 연산보다 빠른 데이터 이동에 얼마를 지불하는가",
-    "ending": "처음의 GPU를 HBM 스택과 패키지 전체로 다시 그린다",
+    "economic_question": "연산 성능보다 데이터 이동 대역폭에 얼마를 투자하는가",
+    "ending": "처음의 GPU를 HBM 스택과 패키지 전체 구조로 다시 제시",
     "primary_source_hunt": "메모리 업체의 HBM 공개 자료와 GPU 메모리 병목 측정",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -66,7 +103,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "GPU를 멈춰 세운 메모리",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The Memory That Stalled the GPU",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "메모리를 주어로 둔 의인화 제목을 기술 명칭 중심으로 교체"
+    }
   },
   {
     "p_id": "P004",
@@ -74,14 +132,14 @@
       "H039"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "남의 칩만 만들기로 한 TSMC",
-    "title_en": "TSMC's No-Competition Promise",
+    "title_ko": "TSMC의 전업 파운드리 모델",
+    "title_en": "TSMC's Pure-Play Foundry Model, 1987",
     "proposed_order": "4",
-    "act": "01 작동하는데 실패한다",
-    "opening": "자기 이름 없는 칩이 나오는 제조 라인",
+    "act": "01 기술 성능과 채택 조건",
+    "opening": "자사 브랜드 제품 없이 고객 설계만 생산하는 제조 라인",
     "mechanism": "파운드리의 공정 플랫폼·PDK·고객 설계 분리",
-    "economic_question": "고객과 경쟁하지 않겠다는 약속이 왜 경제적 자산이 되는가",
-    "ending": "웨이퍼의 브랜드가 아니라 고객과 공장의 계약을 보여준다",
+    "economic_question": "고객과 경쟁하지 않는 사업 구조는 고객 신뢰와 수주에 어떻게 작용했는가",
+    "ending": "웨이퍼 대신 고객과 파운드리 간 계약 구조를 제시",
     "primary_source_hunt": "TSMC 창업 당시 인터뷰·초기 고객 계약·연차보고서",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -89,7 +147,29 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "남의 칩만 만들기로 한 TSMC",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "TSMC's No-Competition Promise",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "selection_flag": "비경쟁 원칙이 초기 수주의 원인이었다는 인과는 초기 고객·계약·신뢰 형성 자료 확인 전.",
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'약속'이라는 일화성 표현을 사업 모델 명칭으로 바꾸고 인과를 질문으로 유지"
+    }
   },
   {
     "p_id": "P005",
@@ -97,14 +177,14 @@
       "H095"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "반도체 화재, 멈춘 자동차 공장",
-    "title_en": "One Fab Fire, Silent Car Factories",
+    "title_ko": "르네사스 나카 공장 화재와 자동차 생산",
+    "title_en": "The 2021 Renesas Naka Fire and Automakers",
     "proposed_order": "5",
-    "act": "01 작동하는데 실패한다",
-    "opening": "불이 꺼진 공장과 멈춘 자동차 생산라인의 교차 장면",
+    "act": "01 기술 성능과 채택 조건",
+    "opening": "2021년 3월 르네사스 나카 공장 화재 공지와 자동차 업체 생산 공시",
     "mechanism": "라인 복구·재검증·공정 중 WIP·양품 출하의 다른 시계",
-    "economic_question": "안전재고 없는 조달 체계는 누구의 효율이었는가",
-    "ending": "재가동 표시를 출하 가능 칩 수와 비교하며 끝낸다",
+    "economic_question": "낮은 안전재고를 전제한 조달 방식의 비용 절감과 공급 중단 위험은 누가 부담했는가",
+    "ending": "재가동 발표 시점과 출하량 회복 시점을 구분해 제시",
     "primary_source_hunt": "공장 화재 공식 타임라인·자동차 업체 생산 공시",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -112,7 +192,29 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "REWORK_REQUIRED"
+    "title_review_status": "REWORK_REQUIRED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "반도체 화재, 멈춘 자동차 공장",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "One Fab Fire, Silent Car Factories",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "selection_flag": "2021년 자동차 감산은 공급 부족 전반과 겹치므로 화재를 단독 원인으로 단정하면 과장 위험.",
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'멈춘 자동차 공장' 극적 표현과 단일 원인 전제를 사실 범위로 축소"
+    }
   },
   {
     "p_id": "P006",
@@ -120,14 +222,14 @@
       "H068"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "인텔을 흔든 나눗셈 오류",
-    "title_en": "Intel's Division Bug",
+    "title_ko": "인텔 펜티엄 FDIV 오류와 교체 결정",
+    "title_en": "Intel's 1994 Pentium Division Bug",
     "proposed_order": "6",
-    "act": "01 작동하는데 실패한다",
+    "act": "01 기술 성능과 채택 조건",
     "opening": "계산기에 같은 숫자를 넣은 두 컴퓨터의 다른 답",
     "mechanism": "특정 입력에서만 나타나는 부동소수점 나눗셈 오류",
     "economic_question": "드문 결함도 전량 교체의 책임이 되는 조건은 무엇인가",
-    "ending": "잘못된 숫자보다 고객의 신뢰 기준을 엔딩 오브젝트로 둔다",
+    "ending": "오류 발생 조건과 교체 정책 변경 과정을 같은 표에 정리",
     "primary_source_hunt": "인텔 FDIV 당시 공식 발표·교체 정책·기술 오류 분석",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -135,7 +237,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "인텔을 흔든 나눗셈 오류",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "Intel's Division Bug",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'흔든' 극적 표현 삭제, 연도·제품명 명시"
+    }
   },
   {
     "p_id": "P007",
@@ -143,14 +266,14 @@
       "H073"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "마침내 켜진 파란 LED",
-    "title_en": "Blue Light at Last",
+    "title_ko": "청색 LED의 GaN 재료 문제",
+    "title_en": "The GaN Problem Behind Blue LEDs",
     "proposed_order": "7",
-    "act": "01 작동하는데 실패한다",
+    "act": "01 기술 성능과 채택 조건",
     "opening": "빨강·초록만 켜진 초기 색광 디스플레이",
     "mechanism": "GaN 재료·결함·도핑·발광 효율의 난제",
     "economic_question": "기존 공정이 막힌 곳에 장기 연구비를 넣는 근거는 무엇인가",
-    "ending": "처음 비어 있던 파란 픽셀에 불을 켠다",
+    "ending": "적·녹·청 픽셀이 모두 갖춰진 디스플레이로 첫 장면을 다시 제시",
     "primary_source_hunt": "Nobel 공식 강연·GaN 연구 논문·초기 특허",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -158,7 +281,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "마침내 켜진 파란 LED",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "Blue Light at Last",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'마침내' 극적 톤 제거, 기술 대상 명시"
+    }
   },
   {
     "p_id": "P008",
@@ -166,14 +310,14 @@
       "H085"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "잘게 나눈 칩의 비싼 대가",
-    "title_en": "The Cost of Breaking Up a Chip",
+    "title_ko": "칩렛 분할의 수율 이득과 패키징 비용",
+    "title_en": "Chiplet Yield Gains and Packaging Costs",
     "proposed_order": "8",
-    "act": "01 작동하는데 실패한다",
+    "act": "01 기술 성능과 채택 조건",
     "opening": "하나의 거대한 다이와 작은 다이 여러 개를 나란히 배치",
     "mechanism": "레티클 크기·수율·다이 간 대역폭·패키지 연결 비용",
     "economic_question": "분할해 절약한 실리콘 값이 언제 패키징 비용에 밀리는가",
-    "ending": "조각난 다이를 완제품 패키지 안에서 다시 계산한다",
+    "ending": "분할 다이의 원가를 완제품 패키지 기준으로 다시 계산",
     "primary_source_hunt": "공식 칩렛 패키징 사례·UCIe 표준·수율 모델",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -181,20 +325,41 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "잘게 나눈 칩의 비싼 대가",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The Cost of Breaking Up a Chip",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'비싼 대가' 구어 표현을 원가 용어로 교체"
+    }
   },
   {
     "p_id": "P009",
     "source_h_ids": [],
     "map_type": "NEW",
-    "title_ko": "같은 칩, 다른 합격 판정",
-    "title_en": "Two Instruments, Two Verdicts",
+    "title_ko": "두 계측 장비의 다른 측정 결과",
+    "title_en": "One Reference Mask, Two Measurement Results",
     "proposed_order": "9",
-    "act": "01 작동하는데 실패한다",
+    "act": "01 기술 성능과 채택 조건",
     "opening": "같은 기준 마스크를 측정한 두 장비의 어긋난 좌표",
     "mechanism": "반복도와 정확도·T2T 매칭·좌표계·교정 모델의 차이",
     "economic_question": "합격 판정을 위해 기준 장비와 허용오차를 누가 정하는가",
-    "ending": "한 점의 오차가 제품 판정과 책임으로 바뀌는 과정을 회수한다",
+    "ending": "좌표 차이가 합격 판정과 책임 소재로 이어지는 과정을 정리",
     "primary_source_hunt": "공개 측정학 표준·장비 간 비교 논문; 고객·비공개 데이터 금지",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -202,7 +367,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "같은 칩, 다른 합격 판정",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "Two Instruments, Two Verdicts",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "오프닝이 마스크인데 '같은 칩'으로 쓴 제목 불일치 수정, 'Verdicts' 비유 제거"
+    }
   },
   {
     "p_id": "P010",
@@ -210,14 +396,14 @@
       "H030"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "공장 달력이 된 무어의 법칙",
-    "title_en": "Moore's Law Became a Factory Deadline",
+    "title_ko": "무어의 1965년 전망과 산업 투자 일정",
+    "title_en": "Moore's 1965 Forecast and Industry Roadmaps",
     "proposed_order": "10",
-    "act": "01 작동하는데 실패한다",
+    "act": "01 기술 성능과 채택 조건",
     "opening": "1965년 잡지에 실린 전망 곡선과 실제 투자 일정표",
     "mechanism": "집적도·수율·설계 복잡도가 서로 다른 성장 변수인 이유",
-    "economic_question": "산업 전체가 같은 미래 날짜를 약속할 때 누가 비용을 지는가",
-    "ending": "그래프의 점을 공장·인력·설비의 실제 일정으로 되돌린다",
+    "economic_question": "업계가 공통 로드맵 일정을 따를 때 투자 비용과 위험은 누가 부담하는가",
+    "ending": "그래프의 각 점을 공장·인력·설비 투자 일정과 대조",
     "primary_source_hunt": "Gordon Moore 1965 원문·후속 인터뷰·산업 로드맵",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -225,7 +411,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "공장 달력이 된 무어의 법칙",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "Moore's Law Became a Factory Deadline",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'공장 달력' 비유와 '산업 전체' 절대 표현 제거"
+    }
   },
   {
     "p_id": "P011",
@@ -233,13 +440,13 @@
       "H012"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "트랜지스터 첫 성공의 함정",
-    "title_en": "The First Transistor's Second Problem",
+    "title_ko": "점접촉 트랜지스터와 접합 트랜지스터",
+    "title_en": "From Point-Contact to Junction Transistor",
     "proposed_order": "11",
-    "act": "02 최초는 결승점이 아니다",
+    "act": "02 초기 발명과 제조 가능성",
     "opening": "1947년 점접촉 트랜지스터의 바늘 두 개",
     "mechanism": "점접촉 증폭과 접합 트랜지스터의 재현성·제조성",
-    "economic_question": "발명에 성공한 팀은 왜 다른 소자 구조로 갈라졌는가",
+    "economic_question": "첫 시연 소자 대신 다른 구조를 양산 후보로 택한 이유는 무엇인가",
     "ending": "첫 증폭 실험 사진 옆에 다음 세대 생산 소자를 놓는다",
     "primary_source_hunt": "Bell Labs 노트·특허·연구자 구술 기록 날짜별 대조",
     "source_status": "TITLE_REVISED_DRAFT",
@@ -248,7 +455,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "트랜지스터 첫 성공의 함정",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The First Transistor's Second Problem",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'함정' 극적 표현 제거, 팀 분열 전제를 구조 선택 질문으로 축소"
+    }
   },
   {
     "p_id": "P012",
@@ -256,13 +484,13 @@
       "H002"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "가열하자 전기가 더 잘 흘렀다",
-    "title_en": "The Crystal That Conducted More When Heated",
+    "title_ko": "패러데이의 황화은 가열 실험",
+    "title_en": "Faraday's 1833 Silver Sulfide Experiment",
     "proposed_order": "12",
-    "act": "02 최초는 결승점이 아니다",
+    "act": "02 초기 발명과 제조 가능성",
     "opening": "황화은을 데우는 실험과 예상 밖 계기 바늘",
     "mechanism": "관측 당시 조건과 후대 반도체 설명을 분리",
-    "economic_question": "돈이 되지 않는 이상한 관측을 왜 보존하는가",
+    "economic_question": "상업적 용도가 없는 관측 기록은 후대 연구에 어떤 가치를 갖는가",
     "ending": "계기의 방향을 당시 기록과 현대 설명으로 두 번 해석한다",
     "primary_source_hunt": "Faraday 1833 원문·황화은 상전이와 이온전도 반례 검토",
     "source_status": "TITLE_REVISED_DRAFT",
@@ -271,7 +499,29 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "가열하자 전기가 더 잘 흘렀다",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The Crystal That Conducted More When Heated",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "selection_flag": "황화은의 전도도 증가는 이온전도·상전이로 설명될 수 있어 '최초의 반도체 관측'으로 단정하면 과장 위험.",
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "서술형 제목을 명사구로 바꾸고 '돈이 되지 않는' 구어 표현 교체"
+    }
   },
   {
     "p_id": "P013",
@@ -280,10 +530,10 @@
       "H006"
     ],
     "map_type": "MERGED",
-    "title_ko": "전파를 소리로 바꾼 결정",
-    "title_en": "The Crystal That Made Radio Audible",
+    "title_ko": "결정 검파기와 초기 무선 수신",
+    "title_en": "Crystal Detectors in Early Radio Receivers",
     "proposed_order": "13",
-    "act": "02 최초는 결승점이 아니다",
+    "act": "02 초기 발명과 제조 가능성",
     "opening": "초기 무선 수신기에서 아무 소리도 나지 않는 순간",
     "mechanism": "결정 정류·전자관 검파·고주파와 가청신호 분리",
     "economic_question": "작동하는 원리와 조정할 수 있는 제품의 간격은 무엇인가",
@@ -295,7 +545,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "전파를 소리로 바꾼 결정",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The Crystal That Made Radio Audible",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'전파를 소리로 바꾼' 비유성 제목을 장치 명칭으로 교체"
+    }
   },
   {
     "p_id": "P014",
@@ -303,13 +574,13 @@
       "H008"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "20년 먼저 그려진 트랜지스터",
-    "title_en": "The Transistor Drawn Twenty Years Early",
+    "title_ko": "릴리엔펠트의 1926년 전계효과 특허",
+    "title_en": "Lilienfeld's 1926 Field-Effect Patent",
     "proposed_order": "14",
-    "act": "02 최초는 결승점이 아니다",
+    "act": "02 초기 발명과 제조 가능성",
     "opening": "작동 소자 옆에 20년 먼저 쓰인 특허 도면",
     "mechanism": "전계효과 아이디어와 표면 상태·제조 역량의 차이",
-    "economic_question": "아이디어의 소유권과 실제 작동의 공로는 왜 일치하지 않는가",
+    "economic_question": "특허 권리와 작동 소자 구현의 공로는 어떻게 구분되는가",
     "ending": "특허 도면 위에 구현되지 못했던 공정 조건을 덧그린다",
     "primary_source_hunt": "Lilienfeld 특허 원문·Bardeen/Brattain 실험 기록",
     "source_status": "TITLE_REVISED_DRAFT",
@@ -318,7 +589,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "20년 먼저 그려진 트랜지스터",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The Transistor Drawn Twenty Years Early",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'20년 먼저 그려진' 극적 대비를 특허 명칭·연도로 교체"
+    }
   },
   {
     "p_id": "P015",
@@ -327,10 +619,10 @@
       "H026"
     ],
     "map_type": "MERGED",
-    "title_ko": "연결선이 남은 최초의 집적회로",
-    "title_en": "The First Integrated Circuit Still Had Wires",
+    "title_ko": "킬비의 집적회로와 노이스의 평면 연결",
+    "title_en": "Kilby's Wired IC and Noyce's Planar Chip",
     "proposed_order": "15",
-    "act": "02 최초는 결승점이 아니다",
+    "act": "02 초기 발명과 제조 가능성",
     "opening": "실리콘 조각에서 밖으로 뻗은 가느다란 연결선",
     "mechanism": "Kilby 시연과 Noyce·Fairchild의 평면 집적 연결 경로",
     "economic_question": "시연품과 대량생산할 제품을 가르는 조건은 무엇인가",
@@ -342,7 +634,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "연결선이 남은 최초의 집적회로",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The First Integrated Circuit Still Had Wires",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "논쟁 여지가 있는 '최초' 단정을 두 경로 병기로 교체"
+    }
   },
   {
     "p_id": "P016",
@@ -350,14 +663,14 @@
       "H022"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "버릴 산화막이 살린 트랜지스터",
-    "title_en": "The Oxide Film That Saved the Transistor",
+    "title_ko": "실리콘 산화막 보호층과 평면 공정",
+    "title_en": "Silicon Oxide Passivation and the Planar Process",
     "proposed_order": "16",
-    "act": "02 최초는 결승점이 아니다",
-    "opening": "공정 끝에 제거하던 산화막을 남긴 웨이퍼",
+    "act": "02 초기 발명과 제조 가능성",
+    "opening": "산화막을 남긴 실리콘 웨이퍼(1955 벨 연구소 산화·확산 공정, 일화 검증 전)",
     "mechanism": "패시베이션·접합 보호·평면 공정의 메커니즘",
-    "economic_question": "더 좋은 소자를 만드는 방법이 왜 공정 순서 하나였는가",
-    "ending": "버릴 막의 원래 위치를 수십억 소자의 기초로 다시 본다",
+    "economic_question": "신규 장비 없이 공정 단계 변경만으로 소자 신뢰성을 높일 수 있었던 조건은 무엇인가",
+    "ending": "산화막 층을 이후 평면 공정의 기본 구조와 연결",
     "primary_source_hunt": "Computer History Museum Hoerni·초기 planar 특허",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -365,7 +678,29 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "버릴 산화막이 살린 트랜지스터",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The Oxide Film That Saved the Transistor",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "selection_flag": "Frosch·Derick 산화막 시연과 Hoerni 평면 공정의 연결이 검증 전이며 '제거하던 막을 남겼다'는 일화가 전제가 되면 과장 위험.",
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'살린' 의인화와 '수십억 소자' 과장 제거, 일화를 검증 전으로 표시"
+    }
   },
   {
     "p_id": "P017",
@@ -373,14 +708,14 @@
       "H027"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "트랜지스터를 막던 실리콘 표면",
-    "title_en": "The Silicon Surface Holding Transistors Back",
+    "title_ko": "실리콘 표면 상태와 MOS 트랜지스터",
+    "title_en": "Silicon Surface States and the MOS Transistor",
     "proposed_order": "17",
-    "act": "02 최초는 결승점이 아니다",
+    "act": "02 초기 발명과 제조 가능성",
     "opening": "표면에서 전류가 뜻대로 흐르지 않는 실험",
     "mechanism": "Si-SiO2 계면·표면 상태·MOS 게이트 제어",
-    "economic_question": "재료 자체보다 경계면 관리가 산업을 바꾼 이유",
-    "ending": "문제였던 표면을 스위치의 작동면으로 다시 보여준다",
+    "economic_question": "재료 개선보다 계면 관리가 양산성에 더 크게 작용한 조건은 무엇인가",
+    "ending": "표면 결함 문제와 MOS 게이트 제어 구조를 같은 단면도에서 비교",
     "primary_source_hunt": "Atalla·Kahng의 발표와 계면 결함 관련 초기 논문",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -388,7 +723,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "트랜지스터를 막던 실리콘 표면",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The Silicon Surface Holding Transistors Back",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'막던' 의인화 제거, 단정형 경제 문장을 질문으로 복원"
+    }
   },
   {
     "p_id": "P018",
@@ -396,14 +752,14 @@
       "H071"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "전압은 올렸는데 전류가 줄었다",
-    "title_en": "More Voltage, Less Current",
+    "title_ko": "에사키 터널 다이오드의 음저항",
+    "title_en": "Esaki's Tunnel Diode and Negative Resistance",
     "proposed_order": "18",
-    "act": "02 최초는 결승점이 아니다",
+    "act": "02 초기 발명과 제조 가능성",
     "opening": "전압계를 올리는 손과 내려가는 전류계",
     "mechanism": "양자 터널링과 음의 미분저항의 실험 조건",
     "economic_question": "새 물리 현상은 왜 꼭 장기 승자 소자가 되지 않는가",
-    "ending": "매력적인 그래프 옆에 밀려난 실제 제품의 시간표",
+    "ending": "음의 미분저항 그래프와 상용 소자 채택 기록을 나란히 제시",
     "primary_source_hunt": "Esaki 1958 논문·당시 상용 소자 경쟁 기록",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -411,7 +767,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "전압은 올렸는데 전류가 줄었다",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "More Voltage, Less Current",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "서술형 제목을 명사구로 바꾸고 '매력적인' 주관 표현 제거"
+    }
   },
   {
     "p_id": "P019",
@@ -419,13 +796,13 @@
       "H042"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "지워지지 않은 전하가 메모리로",
-    "title_en": "The Charge That Became Memory",
+    "title_ko": "부유 게이트와 비휘발성 메모리",
+    "title_en": "The Floating Gate Behind Flash Memory",
     "proposed_order": "19",
-    "act": "02 최초는 결승점이 아니다",
+    "act": "02 초기 발명과 제조 가능성",
     "opening": "절연막 안에 남아 있는 전하의 흔적",
     "mechanism": "부유 게이트·전하 저장·쓰기와 지우기의 대가",
-    "economic_question": "불량처럼 보인 현상을 비휘발성 가치로 바꾸려면",
+    "economic_question": "결함으로 보이던 전하 잔류를 저장 기능으로 쓰기 위한 조건은 무엇인가",
     "ending": "전하가 갇힌 같은 절연막을 저장 비트로 다시 해석한다",
     "primary_source_hunt": "Floating-gate/flash 원천 특허·연구자 기록",
     "source_status": "TITLE_REVISED_DRAFT",
@@ -434,7 +811,29 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "지워지지 않은 전하가 메모리로",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The Charge That Became Memory",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "selection_flag": "결함 분석 과정에서 메모리 구상이 나왔다는 서사는 원천 특허·연구자 기록 확인 전.",
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "비유성 제목 교체, 미완결 문장을 질문으로 복원"
+    }
   },
   {
     "p_id": "P020",
@@ -442,10 +841,10 @@
       "H046"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "메모리가 카메라의 눈이 됐다",
-    "title_en": "When Memory Became a Camera",
+    "title_ko": "메모리 구상에서 나온 CCD 이미지 센서",
+    "title_en": "The CCD: A Memory Idea Used for Imaging",
     "proposed_order": "20",
-    "act": "02 최초는 결승점이 아니다",
+    "act": "02 초기 발명과 제조 가능성",
     "opening": "빛을 받는 실리콘 격자와 화면 속 장면",
     "mechanism": "CCD의 전하 이동과 광전 변환 원리",
     "economic_question": "처음 의도와 다른 시장에서 기술이 살아남는 조건",
@@ -457,7 +856,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "메모리가 카메라의 눈이 됐다",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "When Memory Became a Camera",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'카메라의 눈' 비유 제거"
+    }
   },
   {
     "p_id": "P021",
@@ -465,14 +885,14 @@
       "H051"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "반도체를 망치는 먼지 한 알",
-    "title_en": "One Speck of Dust, One Broken Chip",
+    "title_ko": "클린룸과 먼지 입자 수율 문제",
+    "title_en": "Clean Rooms and the Particle Yield Problem",
     "proposed_order": "21",
-    "act": "03 웨이퍼는 불량을 기억한다",
+    "act": "03 재료 순도와 공정 결함",
     "opening": "먼지 한 알이 떨어지는 확대 컷",
     "mechanism": "입자·결함 밀도·포토레지스트 패턴의 수율 경로",
-    "economic_question": "좋은 공기의 비용은 한 장 웨이퍼에 어떻게 나뉘는가",
-    "ending": "빈 클린룸을 보이지 않는 공정 장비로 다시 정의한다",
+    "economic_question": "클린룸 운영 비용은 웨이퍼당 원가에 어떻게 배분되는가",
+    "ending": "클린룸 공조 설비를 수율 관리 설비로 제시",
     "primary_source_hunt": "클린룸 초기 표준·NIST 파티클 자료·수율 측정",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -480,7 +900,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "반도체를 망치는 먼지 한 알",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "One Speck of Dust, One Broken Chip",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'먼지 한 알, 칩 하나' 과장과 '보이지 않는 장비' 비유 제거"
+    }
   },
   {
     "p_id": "P022",
@@ -488,13 +929,13 @@
       "H010"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "레이더가 키운 깨끗한 결정",
-    "title_en": "Radar's Demand for a Purer Crystal",
+    "title_ko": "전시 레이더 검파기와 결정 순도",
+    "title_en": "Wartime Radar Detectors and Crystal Purity",
     "proposed_order": "22",
-    "act": "03 웨이퍼는 불량을 기억한다",
+    "act": "03 재료 순도와 공정 결함",
     "opening": "레이더 수신부에서 실패한 결정 접점",
     "mechanism": "게르마늄 결정 순도·정류 품질과 전시 수요의 관계",
-    "economic_question": "전쟁의 긴급 주문이 공정 기반기술을 남긴 방식",
+    "economic_question": "전시 긴급 조달은 결정 정제 기술 개발에 어떤 영향을 주었는가",
     "ending": "작은 검파기를 성장시킨 결정 성장 설비로 돌아간다",
     "primary_source_hunt": "전시 연구 기록·Bell Labs 결정 정제 회고",
     "source_status": "TITLE_REVISED_DRAFT",
@@ -503,7 +944,29 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "레이더가 키운 깨끗한 결정",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "Radar's Demand for a Purer Crystal",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "selection_flag": "전시 수요가 결정 정제 기술을 낳았다는 인과는 생산·기술이전·연구자 계보 기록 확인 전.",
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'레이더가 키운' 의인화 제거, 단정 문장을 질문으로 복원"
+    }
   },
   {
     "p_id": "P023",
@@ -511,13 +974,13 @@
       "H015"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "실리콘 불순물을 몰아낸 열",
-    "title_en": "The Heat That Purified Silicon",
+    "title_ko": "Pfann의 존 정제법",
+    "title_en": "Pfann's Zone Refining at Bell Labs, 1951",
     "proposed_order": "23",
-    "act": "03 웨이퍼는 불량을 기억한다",
+    "act": "03 재료 순도와 공정 결함",
     "opening": "금속 봉 전체를 천천히 움직이는 열원",
     "mechanism": "존 정제·분배계수·초고순도 재료의 불량 저감",
-    "economic_question": "순도가 사양이 될 때 소재 업체의 권력은 어떻게 변하는가",
+    "economic_question": "순도가 구매 사양이 될 때 소재 공급사의 협상력은 어떻게 변하는가",
     "ending": "버려질 끝단과 제품이 되는 중앙 결정의 대비",
     "primary_source_hunt": "Pfann zone refining 원문·소재 순도 측정 이력",
     "source_status": "TITLE_REVISED_DRAFT",
@@ -526,7 +989,29 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "실리콘 불순물을 몰아낸 열",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The Heat That Purified Silicon",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "selection_flag": "존 정제의 초기 적용 재료가 실리콘이었는지는 Pfann 원문으로 확인 전이므로 제목에서 재료를 특정하지 않음.",
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'몰아낸 열' 의인화와 '권력' 표현을 업무 용어로 교체"
+    }
   },
   {
     "p_id": "P024",
@@ -534,10 +1019,10 @@
       "H016"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "게르마늄 대신 실리콘을 택했다",
+    "title_ko": "게르마늄에서 실리콘으로의 전환",
     "title_en": "Why Silicon Replaced Germanium",
     "proposed_order": "24",
-    "act": "03 웨이퍼는 불량을 기억한다",
+    "act": "03 재료 순도와 공정 결함",
     "opening": "게르마늄과 실리콘을 나란히 놓은 실험대",
     "mechanism": "밴드갭·누설·열 특성·산화막 공정 적합성",
     "economic_question": "당장의 쉬운 제조와 장기 공정 플랫폼 사이의 선택",
@@ -549,7 +1034,22 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "게르마늄 대신 실리콘을 택했다",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "서술형 제목을 명사구로 교체"
+    }
   },
   {
     "p_id": "P025",
@@ -557,14 +1057,14 @@
       "H045"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "정렬할 일을 없앤 트랜지스터",
-    "title_en": "The Transistor That Aligned Itself",
+    "title_ko": "자기정렬 실리콘 게이트",
+    "title_en": "The Self-Aligned Silicon Gate, 1968",
     "proposed_order": "25",
-    "act": "03 웨이퍼는 불량을 기억한다",
+    "act": "03 재료 순도와 공정 결함",
     "opening": "겹쳐야 할 두 마스크의 십자표적",
     "mechanism": "셀프 얼라인드 게이트·중첩 오차·기생용량",
     "economic_question": "복잡한 장비 투자보다 공정 순서 변경이 유리할 때",
-    "ending": "사라진 정렬 단계가 곧 치수 개선임을 보여준다",
+    "ending": "정렬 단계가 줄어든 공정 흐름과 중첩 오차 감소를 비교",
     "primary_source_hunt": "실리콘 게이트 특허·공정 플로우 원문",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -572,7 +1072,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "정렬할 일을 없앤 트랜지스터",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The Transistor That Aligned Itself",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'Aligned Itself' 의인화 제거"
+    }
   },
   {
     "p_id": "P026",
@@ -580,13 +1101,13 @@
       "H056"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "실리콘을 망가뜨리는 구리",
-    "title_en": "Why Copper Threatened Silicon",
+    "title_ko": "IBM 구리 배선과 확산 오염 문제",
+    "title_en": "IBM's Copper Wiring and the Diffusion Problem",
     "proposed_order": "26",
-    "act": "03 웨이퍼는 불량을 기억한다",
+    "act": "03 재료 순도와 공정 결함",
     "opening": "구리선과 차단막 없는 실리콘 절단면",
     "mechanism": "확산·배리어·CMP·다마신 공정의 필요",
-    "economic_question": "재료의 물성보다 불량과 장비 호환성이 비싼 까닭",
+    "economic_question": "전도도 이점에도 확산 불량과 장비 호환성이 도입을 늦춘 이유는 무엇인가",
     "ending": "전도도가 좋은 선 옆에 보이지 않는 확산 장벽을 남긴다",
     "primary_source_hunt": "IBM 구리 배선 발표·damascene 특허·결함 연구",
     "source_status": "TITLE_REVISED_DRAFT",
@@ -595,7 +1116,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "실리콘을 망가뜨리는 구리",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "Why Copper Threatened Silicon",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'망가뜨리는', 'Threatened' 의인화 제거, 질문형 복원"
+    }
   },
   {
     "p_id": "P027",
@@ -603,14 +1145,14 @@
       "H058"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "구멍 끝까지 균일한 반도체 막",
-    "title_en": "A Uniform Film Deep Inside the Chip",
+    "title_ko": "원자층 증착과 고종횡비 구조",
+    "title_en": "Atomic Layer Deposition in Deep Holes",
     "proposed_order": "27",
-    "act": "03 웨이퍼는 불량을 기억한다",
-    "opening": "거대한 협곡처럼 확대한 고종횡비 홀",
+    "act": "03 재료 순도와 공정 결함",
+    "opening": "확대한 고종횡비 홀 단면",
     "mechanism": "ALD 자기제한 반응·막 두께 균일성",
     "economic_question": "공정 속도 손해를 감수할 만큼 균일성이 중요한 순간",
-    "ending": "깊이별 색이 다른 막이 한 겹으로 균일해진다",
+    "ending": "깊이별 막 두께 편차와 ALD 적용 후 균일성을 단면으로 비교",
     "primary_source_hunt": "ALD 원천문헌·3D NAND 공개 공정 논문",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -618,7 +1160,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "구멍 끝까지 균일한 반도체 막",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "A Uniform Film Deep Inside the Chip",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'협곡' 비유 제거, 공정 명칭 명시"
+    }
   },
   {
     "p_id": "P028",
@@ -626,10 +1189,10 @@
       "H059"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "반도체 불량 지도의 범인",
-    "title_en": "The Culprit in the Wafer Defect Map",
+    "title_ko": "웨이퍼 결함 지도와 원인 분석",
+    "title_en": "Reading a Wafer Defect Map",
     "proposed_order": "28",
-    "act": "03 웨이퍼는 불량을 기억한다",
+    "act": "03 재료 순도와 공정 결함",
     "opening": "웨이퍼 전체에 점점이 찍힌 결함 지도",
     "mechanism": "검사·분류·결함 군집과 수율 학습",
     "economic_question": "누가 데이터를 소유할 때 결함을 더 빨리 줄일 수 있는가",
@@ -641,16 +1204,37 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "반도체 불량 지도의 범인",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The Culprit in the Wafer Defect Map",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'범인' 비유 제거"
+    }
   },
   {
     "p_id": "P029",
     "source_h_ids": [],
     "map_type": "NEW",
-    "title_ko": "수율이 올라가도 적자인 공장",
-    "title_en": "The Fab That Lost Money at Higher Yield",
+    "title_ko": "수율 개선과 공장 손익의 시차",
+    "title_en": "Higher Yield, Delayed Profit at a Fab",
     "proposed_order": "29",
-    "act": "03 웨이퍼는 불량을 기억한다",
+    "act": "03 재료 순도와 공정 결함",
     "opening": "출하 가능한 다이 수가 늘어나는 수율 표",
     "mechanism": "웨이퍼당 다이·수율·고정비·램프 시간의 결합",
     "economic_question": "수율 개선이 매출보다 늦게 현금으로 돌아오는 이유",
@@ -662,20 +1246,41 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "수율이 올라가도 적자인 공장",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The Fab That Lost Money at Higher Yield",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'적자인 공장' 단정을 시차 구조로 축소(가상 수치 사용)"
+    }
   },
   {
     "p_id": "P030",
     "source_h_ids": [],
     "map_type": "NEW",
-    "title_ko": "골든 마스크에도 오차가 있다",
-    "title_en": "The Error in the Golden Mask",
+    "title_ko": "골든 마스크의 측정 불확도",
+    "title_en": "Measurement Uncertainty in a Golden Mask",
     "proposed_order": "30",
-    "act": "03 웨이퍼는 불량을 기억한다",
-    "opening": "금색 봉인이 붙은 기준 마스크와 두 측정값",
+    "act": "03 재료 순도와 공정 결함",
+    "opening": "기준(골든) 마스크와 서로 다른 두 측정값",
     "mechanism": "마스크 형상·좌표계·교정 표준·불확도 전파",
     "economic_question": "기준의 기준을 누가 승인하고 시간이 지나면 누가 고치는가",
-    "ending": "완벽해 보이던 기준 마스크 옆에 불확도 범위를 드러낸다",
+    "ending": "기준 마스크 측정값에 불확도 범위를 함께 표시",
     "primary_source_hunt": "공개 ISO/SEMI 측정표준·PTB/NIST 교정 자료만 사용",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -683,7 +1288,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "골든 마스크에도 오차가 있다",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The Error in the Golden Mask",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "서술형 제목 교체, 근거 없는 시각 장식(금색 봉인)과 '완벽해 보이던' 표현 제거"
+    }
   },
   {
     "p_id": "P031",
@@ -691,14 +1317,14 @@
       "H075"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "노광기 렌즈 밑의 물",
+    "title_ko": "액침 노광과 렌즈 아래의 물",
     "title_en": "Water Under the Lithography Lens",
     "proposed_order": "31",
-    "act": "04 빛이 만든 오차",
+    "act": "04 리소그래피와 마스크 계측",
     "opening": "노광 렌즈와 웨이퍼 사이의 물방울",
     "mechanism": "액침 굴절률과 NA·결함·청정도 제약",
-    "economic_question": "이상한 재료 하나로 장비 교체 시점을 얼마나 늦출 수 있나",
-    "ending": "물방울을 광학 도구와 공정 위험의 두 얼굴로 회수",
+    "economic_question": "액침 방식으로 차세대 광원 전환 시점을 얼마나 미룰 수 있었는가",
+    "ending": "물 층을 해상도 개선 수단이자 결함·청정도 위험으로 함께 제시",
     "primary_source_hunt": "액침 리소그래피 초기 논문·노광장비 공개 연혁",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -706,7 +1332,22 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "노광기 렌즈 밑의 물",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'이상한 재료', '두 얼굴' 비유 표현 정리"
+    }
   },
   {
     "p_id": "P032",
@@ -714,14 +1355,14 @@
       "H076"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "혼자 만들 수 없었던 EUV",
-    "title_en": "EUV Was Never a One-Company Invention",
+    "title_ko": "EUV 개발의 다기관 협력",
+    "title_en": "EUV's Multi-Organization Development",
     "proposed_order": "32",
-    "act": "04 빛이 만든 오차",
+    "act": "04 리소그래피와 마스크 계측",
     "opening": "진공 챔버 안의 EUV 광원과 거울·마스크",
     "mechanism": "13.5nm 광원·반사 광학·오염·레지스트의 상호 의존",
-    "economic_question": "경쟁 기업들이 기술 플랫폼 하나를 위해 협력해야 하는 이유",
-    "ending": "광원 한 점을 공급망 전체의 지도 안에 놓는다",
+    "economic_question": "경쟁 기업들이 공통 기술 플랫폼 개발에 협력한 조건은 무엇인가",
+    "ending": "광원·거울·마스크·레지스트 공급 주체를 하나의 지도에 표시",
     "primary_source_hunt": "ASML·imec·광원 업체 발표의 역할·시기 교차 검증",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -729,7 +1370,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "혼자 만들 수 없었던 EUV",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "EUV Was Never a One-Company Invention",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'Never' 절대 표현 제거, 당위형 질문을 조건 질문으로 교체"
+    }
   },
   {
     "p_id": "P033",
@@ -737,14 +1399,14 @@
       "H079"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "더 좋은 렌즈, 작아진 화면",
-    "title_en": "A Sharper Lens, a Smaller Image",
+    "title_ko": "High-NA EUV의 노광 필드 축소",
+    "title_en": "High-NA EUV's Half-Size Exposure Field",
     "proposed_order": "33",
-    "act": "04 빛이 만든 오차",
+    "act": "04 리소그래피와 마스크 계측",
     "opening": "고NA와 저NA의 노광 필드 사각형 비교",
     "mechanism": "NA·해상도·아나모픽 광학·반필드 제약",
     "economic_question": "해상도 개선이 재봉합·마스크·스루풋 문제를 낳을 때",
-    "ending": "작아진 창을 더 커진 공정 시간표에 겹친다",
+    "ending": "축소된 노광 필드와 추가 스티칭 공정 단계를 함께 표시",
     "primary_source_hunt": "ASML High NA 공식 자료·스티칭 공개 연구",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -752,7 +1414,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "더 좋은 렌즈, 작아진 화면",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "A Sharper Lens, a Smaller Image",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "대구형 제목을 기술 명칭으로 교체, 비유 엔딩 정리"
+    }
   },
   {
     "p_id": "P034",
@@ -760,10 +1443,10 @@
       "H055"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "빛이 모자라 생긴 미세한 흠집",
-    "title_en": "A Chip Defect From Too Few Photons",
+    "title_ko": "EUV 광자 산탄 잡음과 확률적 결함",
+    "title_en": "EUV Photon Shot Noise and Random Defects",
     "proposed_order": "34",
-    "act": "04 빛이 만든 오차",
+    "act": "04 리소그래피와 마스크 계측",
     "opening": "같은 설계인데 다른 결과를 보이는 미세 패턴 두 개",
     "mechanism": "EUV photon shot noise·레지스트 확률적 반응",
     "economic_question": "평균 선폭이 맞아도 희귀 결함이 비용을 결정하는 이유",
@@ -775,7 +1458,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "빛이 모자라 생긴 미세한 흠집",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "A Chip Defect From Too Few Photons",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'흠집' 구어 표현을 기술 용어로 교체"
+    }
   },
   {
     "p_id": "P035",
@@ -783,14 +1487,14 @@
       "H054"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "노광기 안의 두 무대",
-    "title_en": "The Two Stages Inside the Scanner",
+    "title_ko": "노광기의 듀얼 웨이퍼 스테이지",
+    "title_en": "Dual Wafer Stages in ASML Scanners",
     "proposed_order": "35",
-    "act": "04 빛이 만든 오차",
+    "act": "04 리소그래피와 마스크 계측",
     "opening": "웨이퍼 스테이지가 서로 교대하는 장면",
     "mechanism": "측정과 노광의 병렬 스케줄·스테이지 오버헤드",
     "economic_question": "정밀도 한계를 건드리지 않고 처리량을 늘리는 자본 선택",
-    "ending": "빠른 광학보다 시간을 없앤 동작 시퀀스를 보여준다",
+    "ending": "광학 개선 없이 측정·노광 병렬화로 줄인 대기 시간을 제시",
     "primary_source_hunt": "스캐너 듀얼스테이지 특허·장비 연혁 공식 자료",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -798,7 +1502,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "노광기 안의 두 무대",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The Two Stages Inside the Scanner",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'무대' 직역 수정, '시간을 없앤' 과장 제거"
+    }
   },
   {
     "p_id": "P036",
@@ -806,14 +1531,14 @@
       "H060"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "오차를 되돌려 고치는 노광기",
-    "title_en": "The Scanner That Corrects Itself",
+    "title_ko": "노광 공정의 피드백 보정 제어",
+    "title_en": "Feedback Control in Lithography Scanners",
     "proposed_order": "36",
-    "act": "04 빛이 만든 오차",
+    "act": "04 리소그래피와 마스크 계측",
     "opening": "노광 전후 측정값이 되돌아오는 제어 화면",
     "mechanism": "overlay·focus·CD 보정의 폐루프와 공정 제어",
     "economic_question": "더 비싼 센서가 더 비싼 렌즈보다 가치 있는 경우",
-    "ending": "최초의 레티클을 결과 데이터가 되돌리는 시스템으로 확장",
+    "ending": "측정 데이터가 다음 노광 조건에 반영되는 제어 흐름으로 정리",
     "primary_source_hunt": "공개 overlay APC 연구·장비사 기술자료",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -821,16 +1546,37 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "오차를 되돌려 고치는 노광기",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The Scanner That Corrects Itself",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'Corrects Itself' 의인화 제거"
+    }
   },
   {
     "p_id": "P037",
     "source_h_ids": [],
     "map_type": "NEW",
-    "title_ko": "멀쩡한 마스크에 숨은 결함",
-    "title_en": "The Invisible Flaw in a Perfect-Looking Mask",
+    "title_ko": "EUV 마스크 다층막의 위상 결함",
+    "title_en": "Phase Defects in EUV Mask Multilayers",
     "proposed_order": "37",
-    "act": "04 빛이 만든 오차",
+    "act": "04 리소그래피와 마스크 계측",
     "opening": "눈으로 멀쩡한 EUV 마스크와 패턴이 망가진 aerial image",
     "mechanism": "다층 반사막 위상·결함·printability와 광학 검사 차이",
     "economic_question": "보이는 결함을 찾는 비용과 실제 인쇄 위험을 누가 구분하는가",
@@ -842,20 +1588,41 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "멀쩡한 마스크에 숨은 결함",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The Invisible Flaw in a Perfect-Looking Mask",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'Perfect-Looking', '숨은' 극적 표현 제거"
+    }
   },
   {
     "p_id": "P038",
     "source_h_ids": [],
     "map_type": "NEW",
-    "title_ko": "1나노미터를 다르게 읽는 장비들",
-    "title_en": "Two Instruments Read One Nanometer Differently",
+    "title_ko": "마스크 위치 측정의 장비 간 차이",
+    "title_en": "Registration Mismatch Between Mask Metrology Tools",
     "proposed_order": "38",
-    "act": "04 빛이 만든 오차",
+    "act": "04 리소그래피와 마스크 계측",
     "opening": "격자 기준점은 같은데 놓인 위치가 다른 두 지도",
     "mechanism": "mask registration·고차 보정·필드 변형·overlay",
-    "economic_question": "계측기·공정·고객이 서로 다른 보정 기준을 쓸 때",
-    "ending": "좌표계 원점의 작은 차이가 웨이퍼의 큰 결정을 바꾼다",
+    "economic_question": "계측기·공정·고객이 서로 다른 보정 기준을 쓸 때 어느 기준을 우선하는가",
+    "ending": "좌표계 원점 차이가 보정값과 웨이퍼 판정에 미치는 영향을 정리",
     "primary_source_hunt": "공개 registration·stitching 계측 논문; 고객 도면 금지",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -863,19 +1630,40 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "1나노미터를 다르게 읽는 장비들",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "Two Instruments Read One Nanometer Differently",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "미완결 질문 복원, '작은 차이가 큰 결정' 대구 제거"
+    }
   },
   {
     "p_id": "P039",
     "source_h_ids": [],
     "map_type": "NEW",
-    "title_ko": "마스크만 보고 웨이퍼를 예측한다",
-    "title_en": "Predicting a Wafer From Its Mask",
+    "title_ko": "마스크 공중상 기반 웨이퍼 패턴 예측",
+    "title_en": "Predicting Wafer Patterns From Mask Images",
     "proposed_order": "39",
-    "act": "04 빛이 만든 오차",
+    "act": "04 리소그래피와 마스크 계측",
     "opening": "마스크 이미지와 그 마스크로 얻은 웨이퍼 패턴 비교",
     "mechanism": "공중상·레지스트 모델·CD 예측·matching 불확실성",
-    "economic_question": "가상 검사로 시간 절감 가능해도 검증을 없애지 못하는 이유",
+    "economic_question": "공중상 기반 예측이 검사 시간을 줄여도 웨이퍼 검증을 대체하지 못하는 이유는 무엇인가",
     "ending": "처음의 예측치를 실제 측정의 오차 막대와 겹친다",
     "primary_source_hunt": "공개 AIMS/aerial imaging·CD prediction 문헌; WLCD 상용 성능 주장 보류",
     "source_status": "TITLE_REVISED_DRAFT",
@@ -884,19 +1672,40 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "마스크만 보고 웨이퍼를 예측한다",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "Predicting a Wafer From Its Mask",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "서술형 제목을 명사구로 바꾸고 단정 문장을 질문으로 복원"
+    }
   },
   {
     "p_id": "P040",
     "source_h_ids": [],
     "map_type": "NEW",
-    "title_ko": "고친 마스크의 두 번째 시험",
-    "title_en": "The Second Test After Mask Repair",
+    "title_ko": "마스크 수리 후 재검증",
+    "title_en": "Requalifying a Photomask After Repair",
     "proposed_order": "40",
-    "act": "04 빛이 만든 오차",
+    "act": "04 리소그래피와 마스크 계측",
     "opening": "결함 한 점이 찍힌 고가 포토마스크",
     "mechanism": "repair 이후 위상·CD·에지·printability 재검증",
-    "economic_question": "부품 하나의 수리비가 전체 공정 리스크보다 낮은가",
+    "economic_question": "마스크 수리·재검증 비용을 신규 제작 비용과 공정 위험에 어떻게 비교하는가",
     "ending": "수리 완료 표시를 다시 한 번 시험 결과 옆에 세운다",
     "primary_source_hunt": "공개 reticle repair·requalification 논문; 실고객 데이터 불허",
     "source_status": "TITLE_REVISED_DRAFT",
@@ -905,7 +1714,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "고친 마스크의 두 번째 시험",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The Second Test After Mask Repair",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "제목을 공정 명칭(재검증)으로 명확화"
+    }
   },
   {
     "p_id": "P041",
@@ -913,11 +1743,11 @@
       "H043"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "손으로 짜던 컴퓨터 메모리",
-    "title_en": "When Computer Memory Was Handwoven",
+    "title_ko": "수작업 코어 메모리에서 반도체 메모리로",
+    "title_en": "From Hand-Wired Core Memory to Silicon",
     "proposed_order": "41",
-    "act": "05 기억의 가격",
-    "opening": "여성이 엮은 코어 메모리 매트와 실리콘 칩",
+    "act": "05 메모리 기술과 원가",
+    "opening": "수작업으로 배선한 자기 코어 메모리 매트와 실리콘 메모리 칩",
     "mechanism": "자기 코어와 반도체 저장의 비트 밀도·비용·신뢰성",
     "economic_question": "검증된 부품을 바꾸게 만드는 것은 언제인가",
     "ending": "짜인 철심 격자를 실리콘 메모리 배열로 이어 붙인다",
@@ -928,7 +1758,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "손으로 짜던 컴퓨터 메모리",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "When Computer Memory Was Handwoven",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'짜던' 비유를 사실 표현으로 교체, 원 가설 기록에 없는 인물 속성 표현 제외"
+    }
   },
   {
     "p_id": "P042",
@@ -936,14 +1787,14 @@
       "H044"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "두 부품으로 만든 DRAM 한 비트",
-    "title_en": "Two Components, One Bit of DRAM",
+    "title_ko": "데나드의 1T1C DRAM 셀",
+    "title_en": "Dennard's One-Transistor DRAM Cell",
     "proposed_order": "42",
-    "act": "05 기억의 가격",
+    "act": "05 메모리 기술과 원가",
     "opening": "철심 배열 옆에 1T1C 회로 하나",
     "mechanism": "DRAM 셀의 전하 저장·읽기·리프레시",
     "economic_question": "한 비트 가격을 낮추면서 새로운 전력·고장 비용을 받아들인 이유",
-    "ending": "한 셀의 전하가 데이터센터 비용으로 커지는 결말",
+    "ending": "셀 하나의 리프레시 전력을 대용량 메모리 시스템 전력으로 환산",
     "primary_source_hunt": "Dennard DRAM 특허·초기 메모리 상용 기록",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -951,7 +1802,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "두 부품으로 만든 DRAM 한 비트",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "Two Components, One Bit of DRAM",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "제목에 발명자·구조 명시, 비유 엔딩 정리"
+    }
   },
   {
     "p_id": "P043",
@@ -959,14 +1831,14 @@
       "H049"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "위로 자라는 낸드 메모리",
-    "title_en": "The Memory That Grew Upward",
+    "title_ko": "평면 NAND에서 3D NAND로",
+    "title_en": "Samsung's 2013 Shift to 3D NAND",
     "proposed_order": "43",
-    "act": "05 기억의 가격",
+    "act": "05 메모리 기술과 원가",
     "opening": "수평으로 줄어드는 셀과 수직으로 쌓인 NAND 층",
     "mechanism": "3D NAND 수직 스트링·셀 수·공정 단계의 맞교환",
-    "economic_question": "면적을 아껴도 층수를 올리는 장비 비용이 생긴다",
-    "ending": "웨이퍼 평면을 떠나 깊이 방향으로 눈을 움직인다",
+    "economic_question": "셀 면적 절감과 적층 공정 장비 비용 증가를 어떻게 비교하는가",
+    "ending": "웨이퍼 평면에서 수직 단면으로 시점 전환",
     "primary_source_hunt": "3D NAND 개발 원논문·업체 수직 구조 발표",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -974,7 +1846,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "위로 자라는 낸드 메모리",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The Memory That Grew Upward",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'자라는' 의인화 제거, 미완결 문장을 질문으로 복원"
+    }
   },
   {
     "p_id": "P044",
@@ -983,10 +1876,10 @@
       "H048"
     ],
     "map_type": "MERGED",
-    "title_ko": "플래시 발명과 시장의 승자는 달랐다",
-    "title_en": "Inventing Flash Didn't Win the Market",
+    "title_ko": "플래시 메모리 발명과 상업화 주체",
+    "title_en": "Flash Memory's Inventor and Its Early Sellers",
     "proposed_order": "44",
-    "act": "05 기억의 가격",
+    "act": "05 메모리 기술과 원가",
     "opening": "첫 플래시 셀 특허와 이후의 매출 그래프",
     "mechanism": "flash write-erase 특성과 제품·공정 최적화의 간극",
     "economic_question": "특허·양산·고객·자본이 다른 곳에 있을 때 누가 수익을 가져가는가",
@@ -998,7 +1891,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "플래시 발명과 시장의 승자는 달랐다",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "Inventing Flash Didn't Win the Market",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "서술형 제목을 명사구로 교체"
+    }
   },
   {
     "p_id": "P045",
@@ -1006,14 +1920,14 @@
       "H037"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "끝나지 않는 DRAM 추격전",
-    "title_en": "The DRAM Race That Never Ends",
+    "title_ko": "한국 DRAM 추격과 투자 시점",
+    "title_en": "Korea's DRAM Catch-Up, 1983–1992",
     "proposed_order": "45",
-    "act": "05 기억의 가격",
-    "opening": "새로운 DRAM 세대 발표 직후 달력",
+    "act": "05 메모리 기술과 원가",
+    "opening": "1983년 기흥 공사 현장과 해외 DRAM 세대 비교표",
     "mechanism": "DRAM 세대 전환·수율 학습·투자 타이밍",
     "economic_question": "기술을 따라잡는 것과 현금흐름을 버티는 것은 왜 다른가",
-    "ending": "결승선이 다음 공장의 착공선으로 바뀐다",
+    "ending": "세대 추격 완료 시점과 다음 공장 착공 시점을 연결",
     "primary_source_hunt": "미국·일본·한국 초기 DRAM 문서와 기업 공시",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -1021,7 +1935,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "끝나지 않는 DRAM 추격전",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The DRAM Race That Never Ends",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'Never Ends' 절대 표현과 '결승선' 비유 제거, 원 가설의 시기·장소 명시"
+    }
   },
   {
     "p_id": "P046",
@@ -1029,14 +1964,14 @@
       "H061"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "인텔이 버린 메모리 사업",
-    "title_en": "The Memory Business Intel Walked Away From",
+    "title_ko": "인텔의 1985년 DRAM 사업 철수",
+    "title_en": "Intel's 1985 Exit From DRAM",
     "proposed_order": "46",
-    "act": "05 기억의 가격",
+    "act": "05 메모리 기술과 원가",
     "opening": "인텔 초기 DRAM 제품과 CPU 장부",
     "mechanism": "제품 수익성·제조 용량·조직 내 자원배분",
-    "economic_question": "정체성을 만든 사업에서도 철수해야 하는 조건",
-    "ending": "없어진 메모리 매출이 남긴 설계·제조 역량으로 회귀",
+    "economic_question": "창업 주력 사업에서 철수를 결정한 수익성·설비 조건은 무엇인가",
+    "ending": "철수한 메모리 사업과 이후 이어진 설계·제조 역량을 구분해 제시",
     "primary_source_hunt": "Intel Andy Grove 회고와 당시 재무·제품 기록 분리",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -1044,20 +1979,41 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "인텔이 버린 메모리 사업",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The Memory Business Intel Walked Away From",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'버린', '정체성' 표현을 경영 용어로 교체, 질문 복원"
+    }
   },
   {
     "p_id": "P047",
     "source_h_ids": [],
     "map_type": "NEW",
-    "title_ko": "HBM 안에 갇힌 열",
-    "title_en": "Heat Trapped Inside HBM",
+    "title_ko": "HBM 적층 구조의 열 방출",
+    "title_en": "Heat Dissipation in Stacked HBM",
     "proposed_order": "47",
-    "act": "05 기억의 가격",
+    "act": "05 메모리 기술과 원가",
     "opening": "여러 층의 HBM 스택을 잘라 보이는 단면",
     "mechanism": "TSV·마이크로범프·열 경로·테스트·적층 수율",
     "economic_question": "대역폭 증가는 패키징과 냉각을 얼마나 요구하는가",
-    "ending": "빠른 데이터 경로 옆에 열의 출구를 그린다",
+    "ending": "데이터 경로와 열 방출 경로를 같은 단면에 표시",
     "primary_source_hunt": "HBM 제조사 공개 기술자료·열 저항 논문·표준",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -1065,20 +2021,41 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "HBM 안에 갇힌 열",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "Heat Trapped Inside HBM",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'갇힌 열' 극적 표현 교체"
+    }
   },
   {
     "p_id": "P048",
     "source_h_ids": [],
     "map_type": "NEW",
-    "title_ko": "가만두면 지워지는 DRAM",
-    "title_en": "The DRAM That Forgets on Its Own",
+    "title_ko": "DRAM 리프레시와 대기 전력",
+    "title_en": "DRAM Refresh and Idle Power Cost",
     "proposed_order": "48",
-    "act": "05 기억의 가격",
+    "act": "05 메모리 기술과 원가",
     "opening": "아무 일도 안 하는 서버 안에서 돌아가는 리프레시 주기",
     "mechanism": "누설·refresh·retention 분포·온도",
-    "economic_question": "메모리 용량이 커질수록 비가동 전력 비용은 무엇을 먹는가",
-    "ending": "그대로 남는 듯한 1비트를 계속 새로 채우는 장면으로 귀환",
+    "economic_question": "메모리 용량 증가에 따라 리프레시 전력 비용은 얼마나 늘어나는가",
+    "ending": "정지 상태처럼 보이는 1비트가 주기적으로 다시 기록되는 장면",
     "primary_source_hunt": "JEDEC 공개 자료·DRAM retention 원논문·전력 측정",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -1086,20 +2063,41 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "가만두면 지워지는 DRAM",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The DRAM That Forgets on Its Own",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'Forgets' 의인화와 '먹는가' 구어 표현 제거"
+    }
   },
   {
     "p_id": "P049",
     "source_h_ids": [],
     "map_type": "NEW",
-    "title_ko": "수백 층 낸드의 작은 구멍",
-    "title_en": "The Hole Through Hundreds of NAND Layers",
+    "title_ko": "3D NAND 고종횡비 식각",
+    "title_en": "Etching a Hole Through Hundreds of NAND Layers",
     "proposed_order": "49",
-    "act": "05 기억의 가격",
+    "act": "05 메모리 기술과 원가",
     "opening": "층을 겹쳐 놓은 구조에 뚫리는 한 줄 구멍",
     "mechanism": "high aspect ratio etch·profile·막 두께·채널 균일성",
     "economic_question": "층수가 늘 때 수율·장비 시간·검사 비용은 어떻게 늘어나는가",
-    "ending": "높은 탑의 층수가 아니라 관통한 홀의 형상을 남긴다",
+    "ending": "층수가 아니라 관통 홀의 단면 형상을 핵심 지표로 제시",
     "primary_source_hunt": "3D NAND 업체 공정 발표·HAR etch 연구",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -1107,20 +2105,41 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "수백 층 낸드의 작은 구멍",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The Hole Through Hundreds of NAND Layers",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "제목에 공정 명칭 명시, '탑' 비유 제거"
+    }
   },
   {
     "p_id": "P050",
     "source_h_ids": [],
     "map_type": "NEW",
-    "title_ko": "HBM이 차지한 DRAM 공장",
-    "title_en": "HBM's Claim on the DRAM Factory",
+    "title_ko": "HBM과 범용 DRAM의 생산능력 배분",
+    "title_en": "HBM and Standard DRAM Competing for Fab Capacity",
     "proposed_order": "50",
-    "act": "05 기억의 가격",
+    "act": "05 메모리 기술과 원가",
     "opening": "같은 공장의 제품 믹스 선택표",
     "mechanism": "HBM과 범용 DRAM의 웨이퍼·패키징·테스트 자원 분배",
-    "economic_question": "공급이 한쪽으로 쏠릴 때 전체 메모리 가격을 누가 바꾸는가",
-    "ending": "메모리 스택이 공장의 캐파 선택으로 다시 보인다",
+    "economic_question": "생산능력이 HBM에 집중될 때 범용 DRAM 공급과 가격에는 어떤 영향이 있는가",
+    "ending": "HBM 스택을 공장의 생산능력 배분 결정과 연결",
     "primary_source_hunt": "업체 공식 생산 믹스 공시·원가/수요 추정은 분리",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -1128,7 +2147,29 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "HBM이 차지한 DRAM 공장",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "HBM's Claim on the DRAM Factory",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "selection_flag": "HBM 전환이 범용 DRAM 공급·가격에 미친 영향은 업체 공시와 외부 추정을 분리하기 전이라 인과 단정 위험.",
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'차지한' 의인화와 '캐파' 약어 정리"
+    }
   },
   {
     "p_id": "P051",
@@ -1136,14 +2177,14 @@
       "H041"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "계산기 주문에서 태어난 CPU",
-    "title_en": "The CPU Born From a Calculator Order",
+    "title_ko": "부시콤 계산기 주문과 인텔 4004",
+    "title_en": "Busicom's Calculator Order and the Intel 4004",
     "proposed_order": "51",
-    "act": "06 코드는 기계를 붙잡는다",
+    "act": "06 소프트웨어 호환성과 프로세서 구조",
     "opening": "전자계산기 설계 의뢰서와 낱개 칩 설계안",
     "mechanism": "마이크로프로세서 통합과 응용별 논리의 차이",
-    "economic_question": "발주 회사와 설계 회사 중 제품 플랫폼의 미래는 누가 보았는가",
-    "ending": "계산기 보드에 있던 칩을 범용 컴퓨터 구조로 회수",
+    "economic_question": "범용 칩의 권리를 발주사와 설계사 중 누가 확보했고, 재협상 계약은 무엇을 바꾸었는가",
+    "ending": "계산기 보드의 칩 구성을 범용 프로세서 구조와 비교",
     "primary_source_hunt": "Intel 4004·Busicom 관계의 동시대 계약·구술 교차확인",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -1151,7 +2192,29 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "계산기 주문에서 태어난 CPU",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The CPU Born From a Calculator Order",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "selection_flag": "시마·파진·호프·부시콤 각자의 기여와 재협상 계약이 검증 전이라 '계산기 주문에서 CPU가 태어났다'는 단일 기원 서사는 과장 위험.",
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'태어난' 비유와 '미래를 누가 보았는가' 사후 의도 부여 제거"
+    }
   },
   {
     "p_id": "P052",
@@ -1159,10 +2222,10 @@
       "H033"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "IBM이 지키려 한 오래된 코드",
-    "title_en": "The Old Software IBM Wouldn't Abandon",
+    "title_ko": "IBM System/360의 호환성 결정",
+    "title_en": "IBM System/360 and Software Compatibility",
     "proposed_order": "52",
-    "act": "06 코드는 기계를 붙잡는다",
+    "act": "06 소프트웨어 호환성과 프로세서 구조",
     "opening": "새 컴퓨터 앞에서 돌아가야 하는 오래된 프로그램",
     "mechanism": "명령어 호환·마이크로코드·제품군의 경계",
     "economic_question": "하드웨어를 바꾸면서 고객의 전환비용을 누가 떠안는가",
@@ -1174,7 +2237,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "IBM이 지키려 한 오래된 코드",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The Old Software IBM Wouldn't Abandon",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'지키려 한' 의인화성 제목을 결정 대상 명칭으로 교체"
+    }
   },
   {
     "p_id": "P053",
@@ -1183,14 +2267,14 @@
       "H090"
     ],
     "map_type": "MERGED",
-    "title_ko": "새 CPU 안의 오래된 명령어",
-    "title_en": "Old Instructions in a New CPU",
+    "title_ko": "AMD64와 하위 호환",
+    "title_en": "AMD64 and Backward Compatibility, 2003",
     "proposed_order": "53",
-    "act": "06 코드는 기계를 붙잡는다",
+    "act": "06 소프트웨어 호환성과 프로세서 구조",
     "opening": "64비트 칩이 오래된 프로그램을 실행하는 장면",
     "mechanism": "ISA·모드 전환·레지스터 확장과 하위호환의 비용",
     "economic_question": "미래 성능과 오래된 고객의 소프트웨어 투자 중 누구를 택하는가",
-    "ending": "새 실리콘 단면 위에 오래된 명령어가 그대로 남는다",
+    "ending": "새 64비트 CPU에서 기존 32비트 프로그램이 실행되는 구조를 정리",
     "primary_source_hunt": "AMD64·x86-64 초기 아키텍처 문서·고객 전환 기록",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -1198,7 +2282,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "새 CPU 안의 오래된 명령어",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "Old Instructions in a New CPU",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "제목에 아키텍처 명칭 명시, 비유 엔딩 정리"
+    }
   },
   {
     "p_id": "P054",
@@ -1206,14 +2311,14 @@
       "H070"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "산 뒤에도 바꿀 수 있는 칩",
-    "title_en": "The Chip You Can Change After Buying",
+    "title_ko": "자일링스 FPGA의 출하 후 재구성",
+    "title_en": "Xilinx and the Reprogrammable FPGA",
     "proposed_order": "54",
-    "act": "06 코드는 기계를 붙잡는다",
+    "act": "06 소프트웨어 호환성과 프로세서 구조",
     "opening": "이미 납품된 보드에서 기능이 바뀌는 순간",
     "mechanism": "FPGA LUT·배선망·구성비트와 전력·속도 tradeoff",
     "economic_question": "맞춤 ASIC을 기다리지 않고 유연성을 사는 가격은 얼마인가",
-    "ending": "완성품이라던 칩 내부 배선이 다시 움직이는 장면",
+    "ending": "출하된 칩의 구성비트 변경으로 논리 기능이 바뀌는 과정",
     "primary_source_hunt": "Xilinx 초기 FPGA 자료·공식 architecture 문서",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -1221,7 +2326,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "산 뒤에도 바꿀 수 있는 칩",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The Chip You Can Change After Buying",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "제목에 회사·소자 명시, '배선이 움직이는' 부정확한 묘사 수정"
+    }
   },
   {
     "p_id": "P055",
@@ -1229,14 +2355,14 @@
       "H081"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "게임이 키운 AI용 GPU",
-    "title_en": "Games Paid for the AI GPU",
+    "title_ko": "PC 게임 시장과 초기 GPU",
+    "title_en": "NVIDIA's Early GPUs and the PC Gaming Market",
     "proposed_order": "55",
-    "act": "06 코드는 기계를 붙잡는다",
+    "act": "06 소프트웨어 호환성과 프로세서 구조",
     "opening": "게임 화면의 픽셀과 여러 계산 유닛",
     "mechanism": "픽셀 병렬성·메모리 계층·programmable shader",
-    "economic_question": "오락 시장의 매출이 왜 다음 산업용 컴퓨팅의 연구비가 됐는가",
-    "ending": "게임의 픽셀 처리 흐름이 AI의 병렬 연산으로 바뀐다",
+    "economic_question": "게임용 GPU 매출은 이후 범용 연산 개발 투자와 어떤 관계였는가",
+    "ending": "픽셀 병렬 처리 구조와 이후 범용 병렬 연산 구조를 비교",
     "primary_source_hunt": "NVIDIA·ATI 초기 GPU 연혁·API/제품 스펙",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -1244,7 +2370,29 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "게임이 키운 AI용 GPU",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "Games Paid for the AI GPU",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "selection_flag": "게임 매출이 AI용 GPU 개발 자금이 되었다는 인과는 결과에서 거꾸로 붙인 해석일 수 있어 재무·연혁 근거 확인 전.",
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'게임이 키운', 'Paid for' 사후 인과 단정 제거"
+    }
   },
   {
     "p_id": "P056",
@@ -1252,14 +2400,14 @@
       "H082"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "GPU를 과학자의 도구로 만든 CUDA",
-    "title_en": "CUDA Opened GPUs to Science",
+    "title_ko": "CUDA와 GPU 범용 연산",
+    "title_en": "CUDA and General-Purpose GPU Computing, 2006",
     "proposed_order": "56",
-    "act": "06 코드는 기계를 붙잡는다",
+    "act": "06 소프트웨어 호환성과 프로세서 구조",
     "opening": "연산이 빠른 그래픽 칩과 낯선 프로그래밍 화면",
     "mechanism": "GPGPU·CUDA·메모리 이동·소프트웨어 생태계",
-    "economic_question": "하드웨어 기능보다 도구와 인력이 시장을 여는 시점",
-    "ending": "그래픽 파이프라인을 범용 코드가 채운다",
+    "economic_question": "하드웨어 성능보다 개발 도구와 개발자 확보가 채택을 좌우한 조건은 무엇인가",
+    "ending": "그래픽 파이프라인 구성과 CUDA 범용 코드 실행 구조를 비교",
     "primary_source_hunt": "CUDA 발표·GPGPU 선행 연구·개발자 채택 기록",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -1267,7 +2415,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "GPU를 과학자의 도구로 만든 CUDA",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "CUDA Opened GPUs to Science",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'Opened' 비유 제거, 미완결 문장을 질문으로 복원"
+    }
   },
   {
     "p_id": "P057",
@@ -1275,14 +2444,14 @@
       "H083"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "GPU 두 대가 뒤집은 AI 대회",
-    "title_en": "Two GPUs Upended an AI Competition",
+    "title_ko": "AlexNet과 GPU 두 대",
+    "title_en": "AlexNet's Two GPUs at ImageNet 2012",
     "proposed_order": "57",
-    "act": "06 코드는 기계를 붙잡는다",
+    "act": "06 소프트웨어 호환성과 프로세서 구조",
     "opening": "이미지 분류 대회 성적표와 GPU 두 대",
     "mechanism": "딥러닝 학습 병렬화·메모리·데이터셋·오류율 지표",
-    "economic_question": "연구의 승리와 산업의 폭발 사이에는 무엇이 더 필요했는가",
-    "ending": "벤치마크 점수를 데이터센터 투자 결정으로 되돌린다",
+    "economic_question": "연구 성과와 이후 산업 투자 확대 사이에 어떤 조건이 더 필요했는가",
+    "ending": "대회 오류율과 이후 데이터센터 투자 사이의 연결 근거와 공백을 구분",
     "primary_source_hunt": "AlexNet 2012 논문·ImageNet 당시 규칙·후속 인프라 자료",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -1290,7 +2459,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "GPU 두 대가 뒤집은 AI 대회",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "Two GPUs Upended an AI Competition",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'뒤집은', '폭발' 극적 표현 제거, 벤치마크→투자 인과를 근거 구분으로 완화"
+    }
   },
   {
     "p_id": "P058",
@@ -1298,14 +2488,14 @@
       "H087"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "CPU의 지름길로 새어난 비밀",
-    "title_en": "Secrets Leaked From a CPU Shortcut",
+    "title_ko": "투기 실행과 Spectre·Meltdown",
+    "title_en": "Spectre, Meltdown and Speculative Execution",
     "proposed_order": "58",
-    "act": "06 코드는 기계를 붙잡는다",
+    "act": "06 소프트웨어 호환성과 프로세서 구조",
     "opening": "평범한 프로그램이 읽을 수 없어야 할 흔적",
     "mechanism": "분기 예측·투기 실행·캐시 부채널의 기본 구조",
     "economic_question": "성능 최적화의 비용을 누가 보안 패치와 재설계로 갚는가",
-    "ending": "성능 그래프 아래 숨었던 정보 경로를 드러낸다",
+    "ending": "성능 향상 기법과 캐시 부채널 정보 경로를 같은 도식에 표시",
     "primary_source_hunt": "Spectre/Meltdown 원논문·업체 공식 보안 권고",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -1313,20 +2503,41 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "CPU의 지름길로 새어난 비밀",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "Secrets Leaked From a CPU Shortcut",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'지름길로 새어난 비밀' 비유 제거"
+    }
   },
   {
     "p_id": "P059",
     "source_h_ids": [],
     "map_type": "NEW",
-    "title_ko": "설계를 나눠 가진 반도체 회사들",
-    "title_en": "The Chip Designed by Many Companies",
+    "title_ko": "SoC 설계의 EDA·IP 분업",
+    "title_en": "EDA Tools and IP Blocks in Chip Design",
     "proposed_order": "59",
-    "act": "06 코드는 기계를 붙잡는다",
+    "act": "06 소프트웨어 호환성과 프로세서 구조",
     "opening": "복잡한 SoC 설계 화면의 수많은 라이브러리 블록",
     "mechanism": "EDA·IP 블록·검증·타이밍 closure·테이프아웃",
-    "economic_question": "반도체 회사의 경계가 설계 툴 라이선스에 닿는 순간",
-    "ending": "마지막 레이아웃이 수천 조직의 계약과 모델로 읽힌다",
+    "economic_question": "설계 툴·IP 라이선스 의존은 반도체 회사의 사업 경계를 어떻게 정하는가",
+    "ending": "최종 레이아웃을 IP·툴 공급 계약 관계로 분해",
     "primary_source_hunt": "EDA 업체 연차보고서·공개 SoC 설계사례·RISC-V 문서",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -1334,16 +2545,37 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "설계를 나눠 가진 반도체 회사들",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The Chip Designed by Many Companies",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "근거 없는 '수천 조직' 수치 제거, 미완결 문장을 질문으로 복원"
+    }
   },
   {
     "p_id": "P060",
     "source_h_ids": [],
     "map_type": "NEW",
-    "title_ko": "열린 CPU 규격, 비싼 칩",
-    "title_en": "An Open CPU Standard, an Expensive Chip",
+    "title_ko": "RISC-V 공개 규격과 칩 개발 비용",
+    "title_en": "RISC-V's Open ISA and Chip Development Costs",
     "proposed_order": "60",
-    "act": "06 코드는 기계를 붙잡는다",
+    "act": "06 소프트웨어 호환성과 프로세서 구조",
     "opening": "공개 ISA 문서와 실제 실리콘 가격표",
     "mechanism": "RISC-V ISA·검증·물리 IP·툴체인·소프트웨어 호환",
     "economic_question": "규격 공개와 상업적 플랫폼 구축은 왜 다른 사업인가",
@@ -1355,7 +2587,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "열린 CPU 규격, 비싼 칩",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "An Open CPU Standard, an Expensive Chip",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'비싼 칩' 단정 대구를 비용 구조 표현으로 교체"
+    }
   },
   {
     "p_id": "P061",
@@ -1363,14 +2616,14 @@
       "H023"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "반도체 회사를 떠난 사표 8장",
-    "title_en": "Eight Resignations From a Chip Startup",
+    "title_ko": "쇼클리 연구소를 떠난 8명",
+    "title_en": "The Eight Who Left Shockley Semiconductor, 1957",
     "proposed_order": "61",
-    "act": "07 지식은 누구의 공장에 있는가",
-    "opening": "한 장의 사직 결정을 둘러싼 연구진의 책상",
+    "act": "07 기술 이전과 기업 간 협력",
+    "opening": "쇼클리 연구소 퇴사와 신규 회사 설립 기록",
     "mechanism": "실리콘 공정 지식·인력 이동·생산팀 형성",
-    "economic_question": "왜 인재의 집단 이탈이 한 지역 산업의 씨앗이 됐는가",
-    "ending": "떠난 사람들의 이름이 다음 회사의 조직도로 바뀐다",
+    "economic_question": "핵심 인력의 집단 이직은 지역 반도체 산업 형성에 어떤 경로로 작용했는가",
+    "ending": "퇴사자 명단과 신설 회사 조직도를 대조",
     "primary_source_hunt": "Fairchild 창립 기록·개인 구술·계약 문서",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -1378,7 +2631,29 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "반도체 회사를 떠난 사표 8장",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "Eight Resignations From a Chip Startup",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "selection_flag": "퇴사 서명 일화와 갈등 기록이 검증 전이며 지역 산업의 단일 기원 서사로 확대할 위험.",
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'사표 8장' 일화 전제와 '씨앗' 비유 제거"
+    }
   },
   {
     "p_id": "P062",
@@ -1386,14 +2661,14 @@
       "H017"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "트랜지스터 제조법을 판 벨연구소",
-    "title_en": "Bell Labs Sold the Transistor Playbook",
+    "title_ko": "벨 연구소의 트랜지스터 기술 라이선스",
+    "title_en": "Bell Labs' 1952 Transistor Licensing",
     "proposed_order": "62",
-    "act": "07 지식은 누구의 공장에 있는가",
+    "act": "07 기술 이전과 기업 간 협력",
     "opening": "벨 연구소의 기술 설명회와 제조 라이선스",
     "mechanism": "트랜지스터 지식 이전·공정 학습·특허 범위",
-    "economic_question": "비밀을 파는 선택이 생태계를 키우는 조건",
-    "ending": "문서가 타사의 생산라인으로 들어가는 화면으로 돌아온다",
+    "economic_question": "기술을 라이선스로 공개한 선택은 업계 확산에 어떤 조건으로 작용했는가",
+    "ending": "라이선스 문서와 타사 생산라인 도입 기록을 연결",
     "primary_source_hunt": "Bell Labs 1950년대 라이선싱 자료·법적 배경",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -1401,7 +2676,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "트랜지스터 제조법을 판 벨연구소",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "Bell Labs Sold the Transistor Playbook",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'Playbook', '비밀을 판다' 비유 제거"
+    }
   },
   {
     "p_id": "P063",
@@ -1409,10 +2705,10 @@
       "H018"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "보청기가 먼저 산 트랜지스터",
-    "title_en": "The Hearing Aid That Needed Transistors",
+    "title_ko": "보청기와 초기 트랜지스터 수요",
+    "title_en": "Hearing Aids as Early Transistor Customers",
     "proposed_order": "63",
-    "act": "07 지식은 누구의 공장에 있는가",
+    "act": "07 기술 이전과 기업 간 협력",
     "opening": "귀에 넣는 보청기와 큰 진공관 장치",
     "mechanism": "저전력·발열·휴대성·신뢰성과 초기 반도체 제품",
     "economic_question": "작지만 분명한 고객의 불편이 큰 시장보다 먼저 기술을 견인하는가",
@@ -1424,7 +2720,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "보청기가 먼저 산 트랜지스터",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The Hearing Aid That Needed Transistors",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'먼저 산' 순서 단정을 수요 관계로 축소"
+    }
   },
   {
     "p_id": "P064",
@@ -1433,14 +2750,14 @@
       "H020"
     ],
     "map_type": "MERGED",
-    "title_ko": "소니가 기술을 산 뒤 만든 라디오",
-    "title_en": "Sony Bought the License, Then Built the Radio",
+    "title_ko": "소니의 트랜지스터 라이선스와 휴대용 라디오",
+    "title_en": "Sony's Transistor License and Pocket Radio",
     "proposed_order": "64",
-    "act": "07 지식은 누구의 공장에 있는가",
+    "act": "07 기술 이전과 기업 간 협력",
     "opening": "작동하는 부품 라이선스와 휴대용 라디오 시제품",
     "mechanism": "RF 설계·전력·소형화·수신감도·양산의 결합",
-    "economic_question": "기술 도입 계약은 시장의 고객 경험을 대신하지 못한다",
-    "ending": "부품의 로고보다 실제 주머니에 들어가는 라디오로 끝낸다",
+    "economic_question": "라이선스 확보 이후 제품화에는 어떤 설계·양산 역량이 더 필요했는가",
+    "ending": "부품 라이선스와 완성된 휴대용 라디오 제품을 구분해 제시",
     "primary_source_hunt": "Sony 초기사·라이선스와 라디오 개발 당시 기록",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -1448,7 +2765,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "소니가 기술을 산 뒤 만든 라디오",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "Sony Bought the License, Then Built the Radio",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "단정형 교훈 문장을 질문으로 복원"
+    }
   },
   {
     "p_id": "P065",
@@ -1456,14 +2794,14 @@
       "H034"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "TSMC를 만든 대만의 선택",
-    "title_en": "The Decision That Created TSMC",
+    "title_ko": "대만 정부·ITRI와 TSMC 설립",
+    "title_en": "Taiwan's Policy Path to Founding TSMC",
     "proposed_order": "65",
-    "act": "07 지식은 누구의 공장에 있는가",
+    "act": "07 기술 이전과 기업 간 협력",
     "opening": "정책 회의 기록과 비어 있는 공장 터",
     "mechanism": "ITRI 기술 이전·제조 전담 기업 구조·공정 역량 형성",
     "economic_question": "국가 정책에서 사업 모델의 선택이 장비 구매보다 앞서는가",
-    "ending": "도면 없는 공장 터가 고객을 위한 산업 플랫폼으로 바뀐다",
+    "ending": "공장 부지와 이후 파운드리 사업 구조를 연결",
     "primary_source_hunt": "ITRI·TSMC 공식 연혁·창업자 인터뷰 교차검증",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -1471,7 +2809,29 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "TSMC를 만든 대만의 선택",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The Decision That Created TSMC",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "selection_flag": "1974년 조찬 회의 일화를 출발점으로 쓰면 참석 명단·계약 1차 기록 확인 전이라 과장 위험.",
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'만든 선택' 단일 원인 표현을 정책 경로로 축소"
+    }
   },
   {
     "p_id": "P066",
@@ -1479,14 +2839,14 @@
       "H035"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "대만으로 돌아온 기술자 19명",
-    "title_en": "Nineteen Engineers Returned to Taiwan",
+    "title_ko": "ITRI 기술자 19명의 미국 연수",
+    "title_en": "Nineteen Taiwanese Engineers Trained in the US",
     "proposed_order": "66",
-    "act": "07 지식은 누구의 공장에 있는가",
+    "act": "07 기술 이전과 기업 간 협력",
     "opening": "해외 연수 사진과 텅 빈 현지 생산 설비",
     "mechanism": "공정 이전·숙련 인력·교육과 수율 램프",
-    "economic_question": "설비를 수입하면 지식도 함께 도착한다고 생각한 오류",
-    "ending": "인력 명단이 실제 양품 생산의 첫 기록으로 이어진다",
+    "economic_question": "설비 도입과 공정 지식 이전에는 각각 어떤 비용과 시간이 드는가",
+    "ending": "연수 인력 명단과 첫 양품 생산 기록을 대조",
     "primary_source_hunt": "ITRI 초기 인력 이전 기록·생산 보고서",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -1494,7 +2854,29 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "대만으로 돌아온 기술자 19명",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "Nineteen Engineers Returned to Taiwan",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "selection_flag": "19명은 첫 파견조이므로 전체 기술 이전을 19명의 성과로 축약하면 과장 위험.",
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'오류'로 단정한 질문을 비용 비교 질문으로 교체"
+    }
   },
   {
     "p_id": "P067",
@@ -1502,10 +2884,10 @@
       "H036"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "일본 칩 라이벌의 공동 연구실",
-    "title_en": "Japanese Chip Rivals Shared a Laboratory",
+    "title_ko": "일본 초LSI 공동연구 프로젝트",
+    "title_en": "Japan's 1976 VLSI Joint Research Project",
     "proposed_order": "67",
-    "act": "07 지식은 누구의 공장에 있는가",
+    "act": "07 기술 이전과 기업 간 협력",
     "opening": "다른 기업 배지가 붙은 공동 연구실 출입증",
     "mechanism": "공통 기반 공정 연구와 제품 차별화의 분리",
     "economic_question": "누구도 혼자 감당 못 할 실험 비용은 어디까지 공유하는가",
@@ -1517,7 +2899,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "일본 칩 라이벌의 공동 연구실",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "Japanese Chip Rivals Shared a Laboratory",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "제목에 프로젝트 명칭·연도 명시"
+    }
   },
   {
     "p_id": "P068",
@@ -1525,11 +2928,11 @@
       "H038"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "불량을 공유한 미국 칩 경쟁사들",
-    "title_en": "US Chip Rivals Shared Their Defects",
+    "title_ko": "SEMATECH의 공동 공정 연구",
+    "title_en": "SEMATECH and Shared Process Research",
     "proposed_order": "68",
-    "act": "07 지식은 누구의 공장에 있는가",
-    "opening": "각사에서 가져온 불량 웨이퍼 맵",
+    "act": "07 기술 이전과 기업 간 협력",
+    "opening": "회원사 공정 결함 자료를 모은 공동 연구 도식(재구성)",
     "mechanism": "공통 장비·공정 결함·협력 연구 프로그램",
     "economic_question": "협력에서 공개할 공정과 감출 경쟁력을 어떻게 나누는가",
     "ending": "공통 원인 그래프 위에 각사 수율 수치를 분리한다",
@@ -1540,7 +2943,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "불량을 공유한 미국 칩 경쟁사들",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "US Chip Rivals Shared Their Defects",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'Shared Their Defects' 과장 제거, 재구성 장면 표시"
+    }
   },
   {
     "p_id": "P069",
@@ -1548,13 +2972,13 @@
       "H078"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "같은 EUV에 투자한 세 경쟁사",
-    "title_en": "Three Rivals Funded One EUV Future",
+    "title_ko": "인텔·TSMC·삼성의 ASML 공동 투자",
+    "title_en": "Intel, TSMC and Samsung's 2012 ASML Investment",
     "proposed_order": "69",
-    "act": "07 지식은 누구의 공장에 있는가",
+    "act": "07 기술 이전과 기업 간 협력",
     "opening": "경쟁사 세 개의 로고와 같은 EUV 장비",
     "mechanism": "고NA 전 단계 EUV 개발·공동 기반 장비 투자의 구조",
-    "economic_question": "누구도 승자가 보장되지 않는 기술에 공동 돈을 넣는 이유",
+    "economic_question": "성공이 보장되지 않은 장비 개발에 경쟁사들이 공동 투자한 이유는 무엇인가",
     "ending": "각자의 웨이퍼 공장을 하나의 광학 공급망에 연결한다",
     "primary_source_hunt": "ASML 2012 고객 공동 투자 프로그램 공시",
     "source_status": "TITLE_REVISED_DRAFT",
@@ -1563,19 +2987,41 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "같은 EUV에 투자한 세 경쟁사",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "Three Rivals Funded One EUV Future",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "selection_flag": "삼성 참여와 금액·구조는 ASML 공식 발표로 재확인 전.",
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'One EUV Future' 비유와 '공동 돈' 구어 표현 제거"
+    }
   },
   {
     "p_id": "P070",
     "source_h_ids": [],
     "map_type": "NEW",
-    "title_ko": "공장 없는 퀄컴의 반도체",
-    "title_en": "Qualcomm's Chips Without a Fab",
+    "title_ko": "퀄컴의 팹리스 사업 구조",
+    "title_en": "Qualcomm's Fabless Business Model",
     "proposed_order": "70",
-    "act": "07 지식은 누구의 공장에 있는가",
-    "opening": "회로도만 있는 회사와 수만 장의 웨이퍼",
+    "act": "07 기술 이전과 기업 간 협력",
+    "opening": "설계 조직과 외부 파운드리 웨이퍼 생산의 대비",
     "mechanism": "IP·PDK·디자인 룰·테이프아웃·파운드리 계약",
-    "economic_question": "자산 없는 회사가 산업의 중요한 경계를 소유하는 방식",
+    "economic_question": "생산설비 없는 회사가 설계 IP와 파운드리 계약으로 확보하는 사업 영역은 무엇인가",
     "ending": "회사 건물보다 설계 권리와 생산 슬롯을 중심에 놓는다",
     "primary_source_hunt": "Arm·Qualcomm·TSMC 공개 연차보고서 비교",
     "source_status": "TITLE_REVISED_DRAFT",
@@ -1584,7 +3030,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "공장 없는 퀄컴의 반도체",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "Qualcomm's Chips Without a Fab",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'자산 없는 회사' 부정확 표현 수정, 업무 용어로 교체"
+    }
   },
   {
     "p_id": "P071",
@@ -1592,13 +3059,13 @@
       "H065"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "DRAM 공장이 빚을 갚는 속도",
-    "title_en": "The Debt Clock of a DRAM Factory",
+    "title_ko": "하이닉스의 부채와 DRAM 가격 주기",
+    "title_en": "Hynix's 2001–2003 Debt and the DRAM Cycle",
     "proposed_order": "71",
-    "act": "08 공장보다 느린 돈",
+    "act": "08 설비 투자와 사업 구조",
     "opening": "라인이 돌아가는 속도계와 대출 만기표",
     "mechanism": "공정 세대 교체·대규모 capex·가격 사이클",
-    "economic_question": "기술은 진보하는데 기업 현금은 왜 부족해지는가",
+    "economic_question": "공정 기술 개선에도 현금흐름이 부족해지는 이유는 무엇인가",
     "ending": "칩 한 개의 가격을 설비 감가상각 달력에 연결한다",
     "primary_source_hunt": "공식 DRAM 업체 재무제표·투자 사이클 분석",
     "source_status": "TITLE_REVISED_DRAFT",
@@ -1607,7 +3074,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "DRAM 공장이 빚을 갚는 속도",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The Debt Clock of a DRAM Factory",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'Debt Clock' 비유 제거, 원 가설의 기업·시기 명시"
+    }
   },
   {
     "p_id": "P072",
@@ -1616,13 +3104,13 @@
       "H066"
     ],
     "map_type": "MERGED",
-    "title_ko": "DRAM 회사는 파산, 공장은 가동",
-    "title_en": "The DRAM Company Died, the Fab Kept Running",
+    "title_ko": "Qimonda·Elpida 파산 후 공장 처리",
+    "title_en": "Qimonda, Elpida and the Fate of Their Fabs",
     "proposed_order": "72",
-    "act": "08 공장보다 느린 돈",
-    "opening": "파산 공고 뒤에도 돌아가는 웨이퍼 라인",
+    "act": "08 설비 투자와 사업 구조",
+    "opening": "파산 공고 문서와 공장 인수·생산 기록",
     "mechanism": "유형 자산·공정 레시피·인력·기업 법적 실체의 차이",
-    "economic_question": "누가 생산을 이어받을 때 일자리는 남고 주주는 잃는가",
+    "economic_question": "생산이 인수자에게 넘어갈 때 고용·주주·채권자의 손실은 어떻게 나뉘는가",
     "ending": "정지된 법인 명패 옆에 새 소유자의 출하 기록을 둔다",
     "primary_source_hunt": "DRAM 기업 구조조정·법원 공시·공장 양수 자료",
     "source_status": "TITLE_REVISED_DRAFT",
@@ -1631,7 +3119,29 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "DRAM 회사는 파산, 공장은 가동",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The DRAM Company Died, the Fab Kept Running",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "selection_flag": "Qimonda와 Elpida의 공장 처리 결과가 다를 수 있어 '파산 후에도 공장이 가동' 전제는 사례별 확인 전.",
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'Died' 의인화와 두 사례를 하나로 묶은 단정 제거"
+    }
   },
   {
     "p_id": "P073",
@@ -1639,14 +3149,14 @@
       "H067"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "공장을 팔고도 칩을 만든 AMD",
-    "title_en": "AMD Sold Its Fab and Kept Designing Chips",
+    "title_ko": "AMD의 팹 분사와 공급 계약",
+    "title_en": "AMD's 2009 Fab Spin-Off and Supply Contract",
     "proposed_order": "73",
-    "act": "08 공장보다 느린 돈",
+    "act": "08 설비 투자와 사업 구조",
     "opening": "공장 매각 계약서와 계속되는 칩 출하",
     "mechanism": "파운드리 분리·공급 계약·제품 로드맵 의존",
-    "economic_question": "자산을 덜어도 운영 리스크가 남는 이유",
-    "ending": "부동산 매각 금액보다 남은 웨이퍼 공급 계약을 보여준다",
+    "economic_question": "설비를 분리한 뒤에도 남는 공급 계약상 위험은 무엇인가",
+    "ending": "분사 거래 금액보다 남은 웨이퍼 공급 계약 조건을 제시",
     "primary_source_hunt": "AMD/GlobalFoundries 분사 공시·공급계약",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -1654,7 +3164,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "공장을 팔고도 칩을 만든 AMD",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "AMD Sold Its Fab and Kept Designing Chips",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'매각' 표현을 분사로 정정(출처 계획과 일치), 질문 복원"
+    }
   },
   {
     "p_id": "P074",
@@ -1662,10 +3193,10 @@
       "H031"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "NASA가 산 칩을 다시 시험했다",
-    "title_en": "NASA Retested the Chips It Bought",
+    "title_ko": "NASA의 초기 IC 구매와 부품 검증",
+    "title_en": "NASA's Early IC Purchases and Qualification Testing",
     "proposed_order": "74",
-    "act": "08 공장보다 느린 돈",
+    "act": "08 설비 투자와 사업 구조",
     "opening": "구매한 반도체를 시험대로 다시 옮기는 장면",
     "mechanism": "환경 스트레스·방사선·수명·부품 적격성",
     "economic_question": "범용 제품과 우주용 제품의 가격 차이를 무엇이 만들었나",
@@ -1677,7 +3208,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "NASA가 산 칩을 다시 시험했다",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "NASA Retested the Chips It Bought",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "서술형 제목을 명사구로 바꾸고 '재시험' 일화 전제를 적격성 검증으로 축소"
+    }
   },
   {
     "p_id": "P075",
@@ -1685,14 +3237,14 @@
       "H032"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "NASA와 군대가 요구한 다른 칩",
-    "title_en": "NASA and the Military Wanted Different Chips",
+    "title_ko": "NASA와 군의 서로 다른 부품 규격",
+    "title_en": "Different Chip Specs for NASA and the Military",
     "proposed_order": "75",
-    "act": "08 공장보다 느린 돈",
+    "act": "08 설비 투자와 사업 구조",
     "opening": "서로 다른 규격의 여러 정부 발주서",
     "mechanism": "군수·우주·연구 수요와 부품 검증 기준의 차이",
     "economic_question": "공공 조달이 하나의 시장을 만드는가 여러 시장을 만드는가",
-    "ending": "한 장의 국기 대신 서로 다른 시험 규격을 배열한다",
+    "ending": "단일 정부 수요 대신 기관별 시험 규격을 나란히 배열",
     "primary_source_hunt": "NASA·DoD 역사적 조달 문서와 민간 출하 기록",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -1700,7 +3252,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "NASA와 군대가 요구한 다른 칩",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "NASA and the Military Wanted Different Chips",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'국기' 비유 제거"
+    }
   },
   {
     "p_id": "P076",
@@ -1708,10 +3281,10 @@
       "H063"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "DRAM 가격표가 무역 분쟁이 됐다",
-    "title_en": "When DRAM Prices Became a Trade Dispute",
+    "title_ko": "미·일 DRAM 가격 분쟁",
+    "title_en": "The 1986 US–Japan Dispute Over DRAM Prices",
     "proposed_order": "76",
-    "act": "08 공장보다 느린 돈",
+    "act": "08 설비 투자와 사업 구조",
     "opening": "내려가는 DRAM 가격표와 제소 서류",
     "mechanism": "가격 하락·원가·덤핑 기준·산업 정책의 차이",
     "economic_question": "소비자에게 좋은 가격이 국가 간 분쟁이 되는 조건",
@@ -1723,7 +3296,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "DRAM 가격표가 무역 분쟁이 됐다",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "When DRAM Prices Became a Trade Dispute",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "서술형 제목을 명사구로 교체, 연도 명시"
+    }
   },
   {
     "p_id": "P077",
@@ -1731,14 +3325,14 @@
       "H097"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "공장 한 채로는 칩 산업이 안 된다",
-    "title_en": "A Fab Is Not a Semiconductor Industry",
+    "title_ko": "CHIPS Act 공장 투자와 협력사 네트워크",
+    "title_en": "CHIPS Act Fabs and Their Supplier Networks",
     "proposed_order": "77",
-    "act": "08 공장보다 느린 돈",
-    "opening": "거대한 공장 완공 사진 옆 빈 협력사 목록",
+    "act": "08 설비 투자와 사업 구조",
+    "opening": "CHIPS Act 지원 결정 문서와 공장 예정지 사진",
     "mechanism": "생산 인력·재료·장비 서비스·고객 설계·수율 램프",
-    "economic_question": "정부가 지은 것은 건물인가 경쟁 가능한 네트워크인가",
-    "ending": "공장 한 채의 지도 바깥에 수백 협력 노드를 더한다",
+    "economic_question": "정부 보조금이 확보한 것은 생산 설비인가, 협력사·인력 네트워크인가",
+    "ending": "공장 하나의 위치 지도에 협력사·인력·서비스 거점을 추가",
     "primary_source_hunt": "산업정책 평가·공식 fab 투자·인력 통계",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -1746,7 +3340,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "공장 한 채로는 칩 산업이 안 된다",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "A Fab Is Not a Semiconductor Industry",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "슬로건형 제목과 근거 없는 '수백 노드' 수치 제거, '정부가 지은' 부정확 표현 수정"
+    }
   },
   {
     "p_id": "P078",
@@ -1754,10 +3369,10 @@
       "H086"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "공장 없이 칩 만드는 애플",
-    "title_en": "Apple Designs Chips Without a Fab",
+    "title_ko": "애플 M1과 외부 파운드리",
+    "title_en": "Apple's M1 and Outsourced Manufacturing",
     "proposed_order": "78",
-    "act": "08 공장보다 느린 돈",
+    "act": "08 설비 투자와 사업 구조",
     "opening": "제품 발표장과 외부 파운드리의 제조 설비",
     "mechanism": "커스텀 SoC·설계 통합·파운드리 제조 역할",
     "economic_question": "회사가 무엇을 내부에 두고 무엇을 계약으로 해결하는가",
@@ -1769,20 +3384,41 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "공장 없이 칩 만드는 애플",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "Apple Designs Chips Without a Fab",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "제목에 제품 명칭 명시"
+    }
   },
   {
     "p_id": "P079",
     "source_h_ids": [],
     "map_type": "NEW",
-    "title_ko": "반도체 투자 발표, 아직 없는 칩",
-    "title_en": "A Fab Announcement Is Not Chip Production",
+    "title_ko": "공장 투자 발표와 실제 양산 사이",
+    "title_en": "From Fab Announcement to Chip Production",
     "proposed_order": "79",
-    "act": "08 공장보다 느린 돈",
+    "act": "08 설비 투자와 사업 구조",
     "opening": "거대한 투자액이 적힌 보도자료와 비어 있는 부지",
     "mechanism": "건설·장비 반입·qualification·양산 램프의 단계",
     "economic_question": "보조금 약정·투자 발표·실제 생산을 누가 검증하는가",
-    "ending": "첫날의 금액을 양품 출하라는 마지막 계측값과 비교",
+    "ending": "발표 금액과 양품 출하 시점을 비교",
     "primary_source_hunt": "CHIPS 공식 보조금 계약·프로젝트 건설공시; 발표액과 집행액 분리",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -1790,19 +3426,40 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "반도체 투자 발표, 아직 없는 칩",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "A Fab Announcement Is Not Chip Production",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'아직 없는 칩' 대구 제거"
+    }
   },
   {
     "p_id": "P080",
     "source_h_ids": [],
     "map_type": "NEW",
-    "title_ko": "고객보다 먼저 지은 반도체 공장",
-    "title_en": "The Fab Built Before Its Customers Arrived",
+    "title_ko": "수요 확정 전 착공한 반도체 공장",
+    "title_en": "Building Fab Capacity Before Customer Commitments",
     "proposed_order": "80",
-    "act": "08 공장보다 느린 돈",
+    "act": "08 설비 투자와 사업 구조",
     "opening": "비어 있는 신규 라인의 투자 승인 회의",
     "mechanism": "capacity ramp·감가상각·수요 예측·고객 인증 기간",
-    "economic_question": "불확실한 수요에 수십억 달러를 미리 묶는 합리성은 무엇인가",
+    "economic_question": "확정되지 않은 수요에 대규모 설비 투자를 먼저 집행하는 근거는 무엇인가",
     "ending": "미래 수요 곡선을 다시 현재의 설비 승인서로 회수",
     "primary_source_hunt": "파운드리 연차보고서·CAPEX 계획·회계 공개 사례",
     "source_status": "TITLE_REVISED_DRAFT",
@@ -1811,7 +3468,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "고객보다 먼저 지은 반도체 공장",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The Fab Built Before Its Customers Arrived",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "근거 없는 '수십억 달러' 표현 제거, 제목을 계약 용어로 교체"
+    }
   },
   {
     "p_id": "P081",
@@ -1819,14 +3497,14 @@
       "H092"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "지진이 끊어버린 반도체 원료",
-    "title_en": "An Earthquake Cut Off Chip Materials",
+    "title_ko": "2011년 일본 지진과 반도체 소재 공급",
+    "title_en": "The 2011 Japan Earthquake and Chip Materials",
     "proposed_order": "81",
-    "act": "09 공급망에 마침표는 없다",
-    "opening": "금이 간 소재 공장과 완성 칩의 수출 지도",
+    "act": "09 공급 중단과 생산 복구",
+    "opening": "피해 소재 공장 위치와 완성 칩 수출 지도",
     "mechanism": "웨이퍼·포토레지스트·특수가스 단계별 upstream 공급",
     "economic_question": "어떤 공급 중단은 왜 재고만으로 해결되지 않는가",
-    "ending": "최종 칩에서 첫 소재 단계로 카메라를 거꾸로 이동",
+    "ending": "완성 칩에서 소재 공급 단계로 역순 추적",
     "primary_source_hunt": "공급사 당시 사고 공지·투입재 인증 자료",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -1834,7 +3512,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "지진이 끊어버린 반도체 원료",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "An Earthquake Cut Off Chip Materials",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'끊어버린' 과장과 '금이 간 공장' 연출 제거"
+    }
   },
   {
     "p_id": "P082",
@@ -1842,14 +3541,14 @@
       "H094"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "전기는 왔지만 웨이퍼는 죽었다",
-    "title_en": "Power Returned. The Wafers Were Lost.",
+    "title_ko": "2021년 텍사스 정전과 공정 중 웨이퍼 손실",
+    "title_en": "The 2021 Texas Blackout and Wafers in Process",
     "proposed_order": "82",
-    "act": "09 공급망에 마침표는 없다",
+    "act": "09 공급 중단과 생산 복구",
     "opening": "공장 전등이 다시 켜지는 순간",
     "mechanism": "배치 공정·진공·온도·불완전 WIP·재가동 인증",
-    "economic_question": "장비 가동을 복구라고 부르는 정치·경영적 유혹",
-    "ending": "켜진 전등 옆에 폐기된 웨이퍼 번호를 남긴다",
+    "economic_question": "장비 재가동을 생산 복구로 발표할 때 실제 출하 회복과는 어떤 차이가 있는가",
+    "ending": "재점등 시점과 폐기 웨이퍼 기록을 함께 제시",
     "primary_source_hunt": "fab 정전 사고의 공식 공시와 공정 복구 자료",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -1857,7 +3556,29 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "전기는 왔지만 웨이퍼는 죽었다",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "Power Returned. The Wafers Were Lost.",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "selection_flag": "웨이퍼 손실 규모(원 가설의 7만 장 추정 등)와 업체별 중단·복구 날짜는 원문 확인 전.",
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'웨이퍼는 죽었다' 의인화와 '유혹' 표현 제거"
+    }
   },
   {
     "p_id": "P083",
@@ -1865,10 +3586,10 @@
       "H093"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "새 원료를 거절한 반도체 공장",
-    "title_en": "Why a Fab Rejected New Materials",
+    "title_ko": "2019년 수출규제 이후 대체 소재 검증",
+    "title_en": "Testing Substitute Materials After Japan's 2019 Curbs",
     "proposed_order": "83",
-    "act": "09 공급망에 마침표는 없다",
+    "act": "09 공급 중단과 생산 복구",
     "opening": "같은 이름을 단 두 공급사의 원료 통",
     "mechanism": "금속 오염·입도·순도·process-of-record 검증",
     "economic_question": "공급사 다변화의 비용은 안전 재고보다 얼마나 큰가",
@@ -1880,7 +3601,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "새 원료를 거절한 반도체 공장",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "Why a Fab Rejected New Materials",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'거절' 의인화 제거, 원 가설의 사건 명시"
+    }
   },
   {
     "p_id": "P084",
@@ -1888,14 +3630,14 @@
       "H096"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "자동차 업체가 잃은 웨이퍼 자리",
-    "title_en": "Automakers Lost Their Wafer Slots",
+    "title_ko": "자동차 업체와 파운드리 생산 배정",
+    "title_en": "Automakers and Foundry Allocation, 2020–2022",
     "proposed_order": "84",
-    "act": "09 공급망에 마침표는 없다",
+    "act": "09 공급 중단과 생산 복구",
     "opening": "자동차 대기 고객 목록과 예약된 파운드리 슬롯",
     "mechanism": "장기 리드타임·생산 배분·차량 MCU 자격시험",
     "economic_question": "수요 예측 오류가 공급망 전체에서 증폭되는 이유",
-    "ending": "자동차 주문서가 칩 제조 예약 캘린더보다 늦게 도착한다",
+    "ending": "자동차 주문 시점과 파운드리 생산 예약 일정을 같은 달력에 표시",
     "primary_source_hunt": "자동차·반도체 공식 2020–22 생산 공시",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -1903,7 +3645,29 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "자동차 업체가 잃은 웨이퍼 자리",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "Automakers Lost Their Wafer Slots",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "selection_flag": "자동차 업체의 주문 감축이 이후 공급 부족의 주원인이었다는 기업별 인과 근거 확보 전.",
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'잃은 자리' 단정을 배정 구조로 축소"
+    }
   },
   {
     "p_id": "P085",
@@ -1911,13 +3675,13 @@
       "H077"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "EUV 장비가 왔는데 칩은 없었다",
-    "title_en": "The EUV Machine Arrived Before the Chips",
+    "title_ko": "EUV 장비 반입과 첫 양산 사이",
+    "title_en": "From EUV Tool Delivery to First Production",
     "proposed_order": "85",
-    "act": "09 공급망에 마침표는 없다",
+    "act": "09 공급 중단과 생산 복구",
     "opening": "도착한 거대한 노광장비와 비어 있는 양품 출하 기록",
     "mechanism": "설치·정렬·광원 안정화·레지스트·마스크·공정 검증",
-    "economic_question": "장비 인수와 고객이 구매할 수 있는 칩을 누가 동일시하는가",
+    "economic_question": "장비 인수와 판매 가능한 칩 생산 사이의 시차는 누구의 비용과 위험이 되는가",
     "ending": "장비가 설치된 날과 첫 양품 출하일을 따로 기록한다",
     "primary_source_hunt": "ASML 설치·인수 발표와 각 fab 양산 공시 시점 분리",
     "source_status": "TITLE_REVISED_DRAFT",
@@ -1926,7 +3690,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "EUV 장비가 왔는데 칩은 없었다",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The EUV Machine Arrived Before the Chips",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "서술형 제목 교체, 비난형 질문 중립화"
+    }
   },
   {
     "p_id": "P086",
@@ -1934,11 +3719,11 @@
       "H088"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "GPU·HBM은 있는데 서버가 없다",
-    "title_en": "GPU and HBM Ready. No Server.",
+    "title_ko": "CoWoS 패키징 용량과 AI 서버 공급",
+    "title_en": "CoWoS Packaging Capacity and AI Server Supply",
     "proposed_order": "86",
-    "act": "09 공급망에 마침표는 없다",
-    "opening": "칩 재고가 쌓여 있는데 출하하지 못하는 AI 서버",
+    "act": "09 공급 중단과 생산 복구",
+    "opening": "GPU·HBM 공급량과 패키징 처리량을 비교한 조립 공정 도식",
     "mechanism": "CoWoS·서브스트레이트·고속 링크·전원·냉각 연동",
     "economic_question": "AI 투자에서 실제 희소 자원은 어디로 이동하는가",
     "ending": "부품의 재고량을 완성 시스템의 출하량과 구분",
@@ -1949,20 +3734,42 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "GPU·HBM은 있는데 서버가 없다",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "GPU and HBM Ready. No Server.",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "selection_flag": "CoWoS가 AI 서버 출하의 병목이었다는 전제는 공식 고객·용량 자료 확보 전이며 추정과 분리 필요.",
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'No Server' 극적 단정 제거"
+    }
   },
   {
     "p_id": "P087",
     "source_h_ids": [],
     "map_type": "NEW",
-    "title_ko": "반도체 공장에 돌아오는 물",
-    "title_en": "The Water That Returns to a Fab",
+    "title_ko": "반도체 공장의 초순수 재활용",
+    "title_en": "Ultrapure Water Recycling at Chip Fabs",
     "proposed_order": "87",
-    "act": "09 공급망에 마침표는 없다",
-    "opening": "메가팹 수도관과 재활용 설비",
+    "act": "09 공급 중단과 생산 복구",
+    "opening": "대형 반도체 공장의 급수관과 재활용 설비",
     "mechanism": "초순수·세정·재활용률·공정 오염 변수",
     "economic_question": "물 절약이 지역사회·공정 안정성·자본비용에 미치는 영향",
-    "ending": "물 한 컵이 공장을 돌고 돌아오는 경로로 회수",
+    "ending": "급수·세정·재활용 순환 경로와 재활용률 제시",
     "primary_source_hunt": "TSMC·Intel 공식 물관리 지속가능성 보고서",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -1970,20 +3777,41 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "반도체 공장에 돌아오는 물",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The Water That Returns to a Fab",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "비유성 엔딩 정리, 제목에 대상 명시"
+    }
   },
   {
     "p_id": "P088",
     "source_h_ids": [],
     "map_type": "NEW",
-    "title_ko": "AI 칩을 기다리게 한 기판",
-    "title_en": "The Substrate That Delayed AI Chips",
+    "title_ko": "ABF 기판과 AI 칩 패키징 공급",
+    "title_en": "ABF Substrates and AI Chip Packaging Supply",
     "proposed_order": "88",
-    "act": "09 공급망에 마침표는 없다",
+    "act": "09 공급 중단과 생산 복구",
     "opening": "작은 패키지 기판과 초대형 연산 칩의 대비",
     "mechanism": "ABF 기판·미세배선·패키지 기계적 응력·테스트",
-    "economic_question": "노드가 아닌 패키지 소재가 협상력을 갖는 이유",
-    "ending": "거대한 AI 칩의 공급망을 손바닥 크기 기판으로 축소",
+    "economic_question": "공정 노드가 아닌 패키지 기판 공급사가 협상력을 갖는 조건은 무엇인가",
+    "ending": "AI 칩 공급망에서 기판 공정 단계의 위치 표시",
     "primary_source_hunt": "기판업체 공식 보고서·패키징 공정 자료",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -1991,7 +3819,29 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "AI 칩을 기다리게 한 기판",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The Substrate That Delayed AI Chips",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "selection_flag": "기판 부족이 AI 칩 출하를 지연시켰다는 인과는 원 가설(H) 계보 없는 신규 제안으로 공식 자료 확인 전.",
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'기다리게 한' 의인화와 인과 단정 제거"
+    }
   },
   {
     "p_id": "P089",
@@ -1999,14 +3849,14 @@
       "H099"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "수출규제가 바꾼 AI 칩 설계",
-    "title_en": "The AI Chip Redesigned for Export Rules",
+    "title_ko": "수출 규제 기준과 AI 칩 사양",
+    "title_en": "Export Rules and AI Chip Specifications",
     "proposed_order": "89",
-    "act": "09 공급망에 마침표는 없다",
-    "opening": "설계 검토 회의에 도착한 수출규제 문서",
+    "act": "09 공급 중단과 생산 복구",
+    "opening": "수출 규제 원문과 AI 칩 사양표",
     "mechanism": "성능 지표·구성·컴퓨팅 연결과 규제 분류의 경계",
     "economic_question": "제품이 제조되기 전 법규 변화는 투자·시장을 어떻게 바꾸는가",
-    "ending": "발표되지 않은 회로 설계표에 새로운 경계선을 그린다",
+    "ending": "칩 성능 지표 위에 규제 분류 기준선을 표시",
     "primary_source_hunt": "관할 정부 원문 규정·개정일·적용 예외 분리",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -2014,19 +3864,41 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "수출규제가 바꾼 AI 칩 설계",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The AI Chip Redesigned for Export Rules",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "selection_flag": "원 가설 H099는 장비 계약·배송 일정 중심이며 특정 AI 칩이 규제 때문에 재설계됐다는 전제는 기록에 없는 확장이라 원문 규정·제품 자료 확인 전.",
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'재설계' 단정과 재구성 회의 장면 제거"
+    }
   },
   {
     "p_id": "P090",
     "source_h_ids": [],
     "map_type": "NEW",
-    "title_ko": "완성된 반도체의 세계 일주",
-    "title_en": "The Chip That Traveled the World",
+    "title_ko": "반도체 한 개의 공정별 생산 거점",
+    "title_en": "Where One Chip Is Designed, Made and Tested",
     "proposed_order": "90",
-    "act": "09 공급망에 마침표는 없다",
-    "opening": "한 장의 웨이퍼가 택배 상자 여러 개로 바뀌는 여정",
+    "act": "09 공급 중단과 생산 복구",
+    "opening": "웨이퍼 한 장이 설계·전공정·조립·테스트 거점을 거치는 경로",
     "mechanism": "설계·전공정·조립·테스트·최종 시스템 통합의 분업",
-    "economic_question": "Made in이라는 한 줄은 어느 공정의 가치를 말하는가",
+    "economic_question": "원산지 표기는 어느 공정 단계의 부가가치를 반영하는가",
     "ending": "칩에 적힌 원산지 표기 위에 실제 공정 지도를 겹친다",
     "primary_source_hunt": "OECD·UNCTAD 반도체 공급망 자료·기업 공개 제조 거점",
     "source_status": "TITLE_REVISED_DRAFT",
@@ -2035,7 +3907,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "완성된 반도체의 세계 일주",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The Chip That Traveled the World",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'세계 일주', '택배 상자' 비유 제거"
+    }
   },
   {
     "p_id": "P091",
@@ -2043,14 +3936,14 @@
       "H028"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "너무 일찍 등장한 저전력 칩",
-    "title_en": "The Low-Power Chip Before Its Time",
+    "title_ko": "페어차일드의 1963년 CMOS와 초기 채택",
+    "title_en": "Fairchild's 1963 CMOS and Its Early Adoption",
     "proposed_order": "91",
-    "act": "10 반도체의 다음 경계",
+    "act": "10 신기술의 사업화 조건",
     "opening": "전력계가 더 낮은 소자와 당시 고객의 계산기",
     "mechanism": "CMOS 정적 전력과 초기 속도·면적·공정 부담",
     "economic_question": "시장이 아직 값 매기지 않는 효율은 누가 먼저 채택하는가",
-    "ending": "작았던 전력 차이가 모바일 시대의 기본 조건이 된다",
+    "ending": "초기 대기 전력 차이와 이후 휴대기기 설계 기준을 비교",
     "primary_source_hunt": "CMOS 초기 논문·RCA 제품·모바일 설계 역사",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -2058,7 +3951,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "너무 일찍 등장한 저전력 칩",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The Low-Power Chip Before Its Time",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'너무 일찍', 'Before Its Time' 사후 평가 제거"
+    }
   },
   {
     "p_id": "P092",
@@ -2066,14 +3980,14 @@
       "H072"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "계산하지 않고 빛나는 반도체",
-    "title_en": "The Semiconductor That Made Light",
+    "title_ko": "GE의 1962년 가시광 LED",
+    "title_en": "GE's 1962 Visible-Light LED",
     "proposed_order": "92",
-    "act": "10 반도체의 다음 경계",
+    "act": "10 신기술의 사업화 조건",
     "opening": "전류를 넣자 빛나는 작은 결정",
     "mechanism": "전기발광·직접천이 밴드갭·LED와 효율",
     "economic_question": "같은 반도체 제조 기술이 전혀 다른 시장을 여는 순간",
-    "ending": "신호용 불빛이 도시의 조명과 디스플레이로 확대",
+    "ending": "표시등에서 조명·디스플레이로 확대된 응용 범위 제시",
     "primary_source_hunt": "초기 LED 논문·상용화 기록·에너지 데이터",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -2081,7 +3995,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "계산하지 않고 빛나는 반도체",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The Semiconductor That Made Light",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'계산하지 않고 빛나는' 비유성 제목 교체, 원 가설의 연도·기관 명시"
+    }
   },
   {
     "p_id": "P093",
@@ -2089,14 +4024,14 @@
       "H074"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "우주 카메라에서 스마트폰으로",
-    "title_en": "From Space Cameras to Smartphones",
+    "title_ko": "JPL CMOS 이미지 센서의 상용화",
+    "title_en": "JPL's CMOS Image Sensor and Phone Cameras",
     "proposed_order": "93",
-    "act": "10 반도체의 다음 경계",
+    "act": "10 신기술의 사업화 조건",
     "opening": "우주에서 찍힌 어두운 이미지와 휴대폰 카메라",
     "mechanism": "CMOS image sensor·노이즈·저전력 readout",
     "economic_question": "극단적 제약을 해결한 기술이 대중시장 표준이 되는 경로",
-    "ending": "처음의 별빛을 일상 사진으로 회수",
+    "ending": "우주 임무용 센서 요구 조건과 휴대폰 카메라 요구 조건을 비교",
     "primary_source_hunt": "NASA/JPL CMOS 센서 연구·상용 이미지센서 연혁",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -2104,7 +4039,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "우주 카메라에서 스마트폰으로",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "From Space Cameras to Smartphones",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'별빛' 연출 엔딩 정리, 기관 명시"
+    }
   },
   {
     "p_id": "P094",
@@ -2112,10 +4068,10 @@
       "H089"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "더 비싼 칩을 넣는 전기차",
-    "title_en": "The EV That Chose a Pricier Chip",
+    "title_ko": "SiC 전력반도체와 전기차 시스템 원가",
+    "title_en": "SiC Power Chips and EV System Cost",
     "proposed_order": "94",
-    "act": "10 반도체의 다음 경계",
+    "act": "10 신기술의 사업화 조건",
     "opening": "원가표에서 비싸진 칩과 사라진 배선·부품들",
     "mechanism": "전력반도체 SiC/GaN·시스템 손실·열관리의 상호작용",
     "economic_question": "부품 단가와 전체 시스템 비용 중 무엇으로 채택을 결정하는가",
@@ -2127,20 +4083,41 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "더 비싼 칩을 넣는 전기차",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The EV That Chose a Pricier Chip",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'선택한 전기차' 의인화성 제목을 원가 구조로 교체"
+    }
   },
   {
     "p_id": "P095",
     "source_h_ids": [],
     "map_type": "NEW",
-    "title_ko": "칩의 뒷면으로 간 전력선",
-    "title_en": "Power Wires Moved to the Back of the Chip",
+    "title_ko": "후면 전력 공급(BSPDN) 구조",
+    "title_en": "Backside Power Delivery in Chips",
     "proposed_order": "95",
-    "act": "10 반도체의 다음 경계",
+    "act": "10 신기술의 사업화 조건",
     "opening": "앞면이 복잡한 칩을 뒤집어 배선을 그리는 장면",
     "mechanism": "backside power delivery·IR drop·배선 혼잡·공정 위험",
     "economic_question": "앞면 면적을 아끼려 후면 공정비를 더하는 선택",
-    "ending": "처음 칩의 뒷면을 새 전력 지도처럼 다시 보여준다",
+    "ending": "칩 후면 전력 배선 구조를 단면도로 제시",
     "primary_source_hunt": "imec·Intel 공식 BSPDN 연구자료와 수율 제약",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -2148,16 +4125,37 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "칩의 뒷면으로 간 전력선",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "Power Wires Moved to the Back of the Chip",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'전력 지도처럼' 비유 엔딩 정리"
+    }
   },
   {
     "p_id": "P096",
     "source_h_ids": [],
     "map_type": "NEW",
-    "title_ko": "위아래로 쌓는 트랜지스터",
-    "title_en": "Stacking Transistors Vertically",
+    "title_ko": "CFET 수직 적층 트랜지스터",
+    "title_en": "CFET: Stacking n- and p-Type Transistors",
     "proposed_order": "96",
-    "act": "10 반도체의 다음 경계",
+    "act": "10 신기술의 사업화 조건",
     "opening": "n형과 p형 소자가 서로 위에 놓인 CFET 단면",
     "mechanism": "GAA에서 CFET까지 셀 피치·접촉·열·공정 통합",
     "economic_question": "물리적으로 가능한 구조가 언제 경제적으로 생산 가능한가",
@@ -2169,16 +4167,37 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "위아래로 쌓는 트랜지스터",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "Stacking Transistors Vertically",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "제목에 구조 명칭 명시"
+    }
   },
   {
     "p_id": "P097",
     "source_h_ids": [],
     "map_type": "NEW",
-    "title_ko": "12인치 EUV 마스크에 건 승부",
-    "title_en": "The Bet on a 12-Inch EUV Mask",
+    "title_ko": "ASML·TSMC의 12인치 EUV 마스크 계획",
+    "title_en": "ASML and TSMC's 12-Inch EUV Mask Plan",
     "proposed_order": "97",
-    "act": "10 반도체의 다음 경계",
+    "act": "10 신기술의 사업화 조건",
     "opening": "6인치 마스크와 12인치 구상 도면",
     "mechanism": "High-NA half-field·스티칭·레티클 크기·스루풋",
     "economic_question": "마스크 규격을 바꾸는 산업 전체의 전환비용을 누가 부담하는가",
@@ -2190,20 +4209,42 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "12인치 EUV 마스크에 건 승부",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The Bet on a 12-Inch EUV Mask",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "selection_flag": "2026-09-08 발표의 내용과 범위는 1차 원문 재확인 전이며 계획 단계를 양산 전환으로 쓰지 않음.",
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "'승부', 'Bet' 극적 표현 제거, 계획 단계 명시"
+    }
   },
   {
     "p_id": "P098",
     "source_h_ids": [],
     "map_type": "NEW",
-    "title_ko": "전선 대신 빛으로 연결하는 칩",
-    "title_en": "Connecting Chips With Light",
+    "title_ko": "광 연결 패키징(CPO)",
+    "title_en": "Co-Packaged Optics for Chip Interconnects",
     "proposed_order": "98",
-    "act": "10 반도체의 다음 경계",
+    "act": "10 신기술의 사업화 조건",
     "opening": "서버 보드에서 뜨거워지는 전기적 연결부",
     "mechanism": "co-packaged optics·전자-광 변환·광섬유·열·패키지",
     "economic_question": "전력 효율 이득이 제조 수율과 서비스 비용을 넘는가",
-    "ending": "빛이 켜지는 장면 뒤에 남은 전기 신호 구간을 보여준다",
+    "ending": "광 연결 구간과 남은 전기 신호 구간을 구분해 표시",
     "primary_source_hunt": "공개 CPO 원논문·IEEE 로드맵·업체 기술 성숙도 자료",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -2211,16 +4252,37 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "전선 대신 빛으로 연결하는 칩",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "Connecting Chips With Light",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "제목에 기술 명칭 명시, 연출형 엔딩 정리"
+    }
   },
   {
     "p_id": "P099",
     "source_h_ids": [],
     "map_type": "NEW",
-    "title_ko": "칩은 빨라졌는데 전기가 부족하다",
-    "title_en": "Faster Chips, Not Enough Power",
+    "title_ko": "AI 데이터센터의 전력 제약",
+    "title_en": "AI Chip Efficiency and Data Center Power Limits",
     "proposed_order": "99",
-    "act": "10 반도체의 다음 경계",
+    "act": "10 신기술의 사업화 조건",
     "opening": "전력을 요구하는 AI 서버랙 앞 전력 분전반",
     "mechanism": "컴퓨트 효율·메모리 전력·냉각·전력 밀도의 결합",
     "economic_question": "칩 PPA 최적화가 데이터센터 총비용을 어떻게 바꾸는가",
@@ -2232,7 +4294,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "칩은 빨라졌는데 전기가 부족하다",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "Faster Chips, Not Enough Power",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "서술형 제목을 명사구로 교체"
+    }
   },
   {
     "p_id": "P100",
@@ -2240,14 +4323,14 @@
       "H100"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "완공됐지만 끝나지 않은 반도체 공장",
-    "title_en": "The Fab Is Finished. The Story Isn't.",
+    "title_ko": "Terafab 공장 계획의 진행 단계",
+    "title_en": "Terafab: From Announcement to Production",
     "proposed_order": "100",
-    "act": "10 반도체의 다음 경계",
-    "opening": "공장 준공식 사진 옆 아직 텅 빈 양품 생산 기록",
+    "act": "10 신기술의 사업화 조건",
+    "opening": "Terafab 프로젝트 발표 자료와 아직 없는 양품 생산 기록",
     "mechanism": "착공·설치·시제품·수율·고객 인증·상업 출하의 상태 구분",
-    "economic_question": "어떤 시점의 성공을 누가 선언할 자격이 있는가",
-    "ending": "첫 편의 WORKS·ACCEPTED·ORDERED를 다시 빌려 미래에 질문한다",
+    "economic_question": "공장 프로젝트의 진행 단계별 성과는 어떤 증거로 확인하는가",
+    "ending": "1편의 작동·승인·주문(WORKS·ACCEPTED·ORDERED) 구분을 현재 공장 프로젝트에 적용",
     "primary_source_hunt": "선택한 현행 공장의 공식 프로젝트 마일스톤; 결말 미확정 표시",
     "source_status": "TITLE_REVISED_DRAFT",
     "source_evidence_status": "SOURCE_PENDING",
@@ -2255,6 +4338,28 @@
     "audience_ref": "channel/audience.json",
     "release_slot": null,
     "editorial_review_status": "NEEDS_CHANNEL_REVIEW",
-    "title_review_status": "NOT_APPROVED"
+    "title_review_status": "NOT_APPROVED",
+    "title_history": [
+      {
+        "field": "title_ko",
+        "value": "완공됐지만 끝나지 않은 반도체 공장",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The Fab Is Finished. The Story Isn't.",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ],
+    "selection_flag": "원 가설 기준 공장은 계획 단계일 수 있어 '완공' 전제는 현행 공시 재조회 전 사용 불가.",
+    "language_review": {
+      "decision": "CIB-051",
+      "date": "2026-11-27",
+      "task": "TASK-004",
+      "standard": "editorial/LANGUAGE.md",
+      "reason": "근거 없는 '완공' 전제와 극적 대구 제목 제거"
+    }
   }
 ]
