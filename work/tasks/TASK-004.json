@@ -46,6 +46,15 @@
       "review_id": "TASK-004-r0001-evidence-cc04b87e5e96",
       "role": "evidence",
       "verdict": "pass"
+    },
+    {
+      "actor": "independent-editorial",
+      "at": "2026-11-27T14:35:25.126190Z",
+      "blocking": true,
+      "event": "REVIEW_RECORDED",
+      "review_id": "TASK-004-r0001-editorial-e1e827d0a342",
+      "role": "editorial",
+      "verdict": "changes_requested"
     }
   ],
   "objective": "2026-11-27 사용자 지시(CIB-051)에 따라 시즌 정본 32편, 원본 카탈로그 H001–H100의 편집 필드, 재선정안 P001–P100, 채널·편집 운영 문서를 비유·비약·과장·의인화 없이 다시 쓴다. ID·계보·원제·출처 스냅샷은 보존하고, 전제가 검증되지 않은 주제는 표시한다.",
@@ -56,8 +65,8 @@
   ],
   "revision": 1,
   "scope": "channel",
-  "status": "IN_REVIEW",
+  "status": "CHANGES_REQUESTED",
   "task_id": "TASK-004",
   "title": "LANGUAGE.md 기준으로 편집 자산 전면 재작성",
-  "updated_at": "2026-11-27T14:34:54.854788Z"
+  "updated_at": "2026-11-27T14:35:25.126206Z"
 }
