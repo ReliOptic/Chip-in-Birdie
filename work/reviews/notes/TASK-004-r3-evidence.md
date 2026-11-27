@@ -1,0 +1,71 @@
+# TASK-004 r0003 증거 검토 (evidence)
+
+- 검토자: independent-evidence-r3 / model claude-opus-5-5 / session review-evidence-TASK-004-r3 (제작 세션 session_01PGnDYYRkzDyviPFVMqxNV2, r1·r2 리뷰 세션과 다름. 같은 모델 계열)
+- 대상: work/deliveries/TASK-004-r0003.json (bundle 49d21a8c…, manifest 6203e7a9…). 비교 기준: `git diff 06df6d6 4b1329d -- editorial/ ops/ prompts/`.
+- r3 변경 파일 5개(seasons.json, SEASONS.md, proposals.json, ops/WORKFLOW.md, prompts/README.md)의 작업 트리 SHA-256이 delivery 기록과 일치함을 확인했다. catalog.json은 r3에서 바뀌지 않았다.
+- 판정: **pass** (차단 사항 없음)
+
+## 검토 방법
+
+1. seasons.json을 06df6d6과 필드 단위로 비교했다. 시즌 4개 레코드와 최상위 필드는 바뀌지 않았다. 에피소드는 27편이 바뀌었다.
+   - 바뀐 필드: next_connection 24편, language_review, S2E01·S2E03 payoff, S3E03·S4E01 question, S4E01 screen_3d_event·duplicate_boundary, S2E07 duplicate_boundary, S3E08 title_ko·title_history.
+   - 바뀐 문장은 모두 직접 읽었다. 32편 전체의 next_connection·question·payoff·flag도 다시 읽었다.
+2. 새로 나온 명사·수치를 같은 레코드의 이전 필드, 연결 H/P, DECISIONS.md와 대조했다.
+   - S2E05→06 "data, model and implementation choices": H083 story_question·draft_synopsis, S2E06 selection_flag에 있다.
+   - S2E06→07 "goes back to 1965 … later industry roadmaps": S2E07 제목·질문과 같다.
+   - S3E07→08 "Toshiba's flash invention and later manufacturers": S3E08 질문과 같다.
+   - S4E06→07, S4E07→08 "setting test requirements": S4E07 question·payoff와 같다.
+   - S3E05→06 "reused chips during development": S3E06 payoff("program–test–revise cycle"), evidence_leads와 S3E06 next("for reuse")의 범위 안이다.
+   - S4E03→04 "devices developed elsewhere": S4E04 제목·S4E04 next와 같다.
+   - S3E03 question의 요소(customer requirements, costs, product mix): 같은 편 choice·duplicate_boundary·selection_flag에 있다.
+   - P069 "ASML 고객 공동 투자 프로그램 / Customer Co-Investment Program": H078 physical_anchor·reviewed_title_ko, P069 primary_source_hunt에 있다. 새 opening의 "참여사 명단은 … 확인 전"은 H078 research_gate·P069 selection_flag와 맞는다.
+   - 레코드 밖에서 새로 들어온 고유명사·날짜·수치·사건은 없다.
+3. 보존 조건을 확인했다.
+   - 32편의 episode_id·original_id·original_title_en·source_h_ids·main_p_id·source_namespace·crosswalk_status는 바뀌지 않았다.
+   - r3에서 바뀐 제목은 두 건이다. S3E08 title_ko와 P069 title_en·title_ko 모두 이전 값이 title_history에 있다.
+4. seasons.json의 title·question·choice·3D event·payoff·next·flag·boundary 문장이 모두 SEASONS.md에 같은 문장으로 들어 있다(스크립트 대조, 누락 0).
+5. 검사 도구:
+   - `python3 tools/check_catalog.py` → errors 없음 (H 100, P 100 보존).
+   - `python3 tools/channel.py validate` → PASS.
+
+## r2 비차단 사항 처리 상태
+
+1. S2E05 next 단일 요인 귀속: **처리됨.** "data, model and implementation choices also shaped the result"로 바뀌었다.
+2. S3E05 next "shortened": **처리됨.** "changed how customers reused chips during development"로 바뀌어 방향을 단정하지 않는다.
+3. S4E01 3D event "not the chip": **처리됨.** "the classification depends on both"로 바뀌었다.
+4. S2E03 payoff 비용 존재 전제: **처리됨.** "whether and how much …"로 바뀌었다.
+5. P069 opening의 세 회사 전제: **처리됨.** "여러 칩 제조사 … (참여사 명단은 ASML 공식 발표로 확인 전)"으로 바뀌었다.
+6. S2E01 "created": **부분 처리.** "supplied"로 되돌렸지만 r2에서 들어온 "programmable"이 남았다(아래 비차단 1).
+7. S2E02 next thematic 표시: **처리됨.** 시간 간격도 "much later"로 명시했다.
+
+r2 편집 리뷰의 인과 연결 지적(S4E07→08, S2E06→07, S3E02→03)도 연결 레코드 범위로 좁혀졌다. 세 문장에 thematic 표시가 붙었다.
+
+## 차단 사항
+
+없음.
+
+## 비차단 사항
+
+1. **S2E01 payoff "programmable parallel hardware"** (seasons.json S2E01 payoff, SEASONS.md 같은 행)
+   - 문제: H081 draft_synopsis는 1990년대 게임 그래픽 회로를 "범용성을 넓히기보다 당시 게임 … 요구에 맞추는 선택"으로 쓴다. 게임 판매가 공급한 시장을 "programmable" 하드웨어 시장으로 규정하면 H081의 서술보다 범위가 넓어진다. "programmable"은 r1 문안에도 없었고 r2에서 들어왔다.
+   - 수정안: "supplied a market for parallel graphics hardware".
+2. **language_review.revision 값** (seasons.json 27편, proposals.json P069)
+   - 문제: reason은 "TASK-004 r3: …"인데 revision 값은 2다. S1E05·S2E04·S3E02·S3E06·S4E03–S4E06에는 r3에서 `"revision": 2`가 새로 추가됐다. P069 reason도 r3 변경인데 revision은 2다.
+   - 영향: 실제 리비전은 delivery 원장(r0003)에 정확히 남아 있으므로 차단하지 않는다. 다만 레코드만 읽는 사람은 변경 리비전을 잘못 알게 된다.
+   - 수정안: r3에서 바꾼 레코드의 revision을 3으로 고친다.
+3. **S4E01 question "decide whether a chip … could ship"**
+   - 문제: H099는 규정을 "허가·장비 성능 기준"으로 적고, payoff는 "export classification"까지만 말한다. 기준이 정하는 것은 분류와 허가 요건이고, 실제 출하 여부는 허가 결과에 달려 있다. 과거형 "did … decide"는 2022–23 사례(CIB-049)와 맞는다.
+   - 수정안: "…decide whether a chip with given specifications needed an export licence?"
+4. **r3에서 바뀌지 않은 연결 문장 2건(32편 재검토 중 확인)**
+   - S3E04 next "the self-aligned silicon gate, that changed manufacturing cost": S3E04 payoff는 밀도·재현성까지만 적는다. 원가 변화는 레코드에 없다.
+   - S3E03 next·S3E02 next "changing together": S3E03 choice는 "To be verified"인데, 세 요인이 동시에 변했다는 점을 사실로 쓴다. 두 문장 모두 thematic 연결 문장이라 영향은 작다.
+5. **S2E02 next "large transistor budgets"**: 레코드에 없는 일반적 특징 서술이다. 사건·수치 주장이 아니고 thematic 표시가 붙어 있어 허용 범위로 본다.
+6. **S3E08 제목 범위 불일치(편집 영역)**: title_en은 "the Flash Market", 새 title_ko는 "이후 제조사들"이다. 사실 문제는 아니다.
+
+## 검증하지 못한 것
+
+- 역사적 사실 자체(연도·인물·수치·ASML 프로그램 명칭·참여사)는 1차 자료와 대조하지 않았고 외부 자료도 조회하지 않았다. 이번 검토는 기존 레코드·연결 H/P·DECISIONS 대비 새 주장 추가 여부만 본다.
+- 한국어 필드는 자동 대조하지 않았다. r3에서 바뀐 한국어 필드(S3E08 title_ko, P069 title_ko·opening·reason, language_review reason)는 수동으로 읽었다.
+- 운영 문서는 r3 diff 두 줄만 확인했다(WORKFLOW 41행, prompts/README 3행). 사실 주장은 없고, viewer 입력 범위가 AGENTS.md·viewer-reviewer.md와 일치하게 됐다.
+- 작업 트리의 analytics/observations.csv·editorial/catalog.csv·templates/analytics-import.csv 변경은 커밋되지 않았고 delivery 대상이 아니어서 다루지 않았다.
+- 권리·영상·재생은 범위 밖이다.
