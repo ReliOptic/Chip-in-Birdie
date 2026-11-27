@@ -626,6 +626,29 @@ body:not(.ai-on) .ai-only{display:none!important}
 
 /* editable spans inherit their host's type; generic span rules inside exhibits must not restyle them */
 .stage .pe.pe{font:inherit;color:inherit;letter-spacing:inherit;width:auto;height:auto;min-width:0;border:0;border-radius:0;background:none;padding:0;margin:0;flex:none;grid-column:auto;grid-row:auto;box-shadow:none;display:inline}
+
+/* v11: restrained accent, motion only where it carries meaning */
+:where(.stage) .an{animation:none}
+.reveal .slides section.present :is(.sc-agent, .a-dc, .a-share, .a-time, .a-hb, .a-paint) .an{animation-name:a-fade;animation-duration:400ms;animation-fill-mode:both}
+.reveal .slides section.present .a-dc .b.an{animation-name:a-growy;animation-duration:700ms}
+.reveal .slides section.present :is(.a-share, .a-time, .a-hb) .an:is(i, .fl){animation-name:a-growx;animation-duration:700ms}
+.reveal .slides section.present .sc-agent .dur i.n{animation:a-growx 500ms var(--ease) both}
+.a-stack .ly.f{background:#141a0c;border:1px solid #33461a;color:var(--t1)}
+.a-stack .ly.f span{color:var(--t2)}
+.a-stack .ly.f .ic{filter:none;mix-blend-mode:lighten}
+.a-stack .brace.f span{color:var(--t1)}
+.a-stk.fill{background:#141a0c;color:var(--t1);border-color:#33461a}
+.a-stk.fill em{color:var(--g)}
+.a-cards .cd,.a-cards .cd.o{border-top:1px solid var(--line)}
+.a-cards .hd em{color:#3a3a3a}
+.a-ex .r em{color:var(--t3)}
+.a-db .col.g p::before{background:var(--t2)}
+.a-db .col.g .h{color:var(--t1)}
+.a-fly .nd{position:absolute;transform:translate(-50%,-50%);width:210px;padding:14px 12px;text-align:center;background:#151515;border:1px solid #3a3a3a;border-radius:10px;font-size:23px;font-weight:500;color:var(--t1)}
+.a-fly .ctr{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);text-align:center;font-size:26px;line-height:1.35;font-weight:600;color:var(--g)}
+.a-kpi .k b[style*="var(--g)"]{color:var(--t1)!important}
+.a-kpi .k:first-child b[style*="var(--g)"]{color:var(--g)!important}
+
 /* ---------- phone ---------- */
 @media (max-width:900px){
   body{overflow:auto}
@@ -756,12 +779,12 @@ const FILLS = ['g','card','raised','t3'];
 /* ============ IMAGES (from the presenters' earlier NVIDIA deck) ============ */
 /* photos come from the 4-2 team's 2026.5.20 class deck supplied as the design reference */
 const IMG = {
-  cover:{src:'', name:'표지 곡선'},
-  keynote:{src:'', name:'키노트 무대'},
-  geforce:{src:'', name:'GeForce 256 카드'},
-  wave:{src:'', name:'병렬 연산 시각화'},
-  vision:{src:'', name:'이미지 인식'},
-  datacenter:{src:'', name:'AI 데이터센터'},
+  cover:{src:'img/cover.webp', name:'표지 곡선'},
+  keynote:{src:'img/keynote.webp', name:'키노트 무대'},
+  geforce:{src:'img/geforce.webp', name:'GeForce 256 카드'},
+  wave:{src:'img/wave.webp', name:'병렬 연산 시각화'},
+  vision:{src:'img/vision.webp', name:'이미지 인식'},
+  datacenter:{src:'img/datacenter.webp', name:'AI 데이터센터'},
 };
 const ICONS = ['chip','layers','cubes','people','cap','rocket','bulb','server','network','shield','robot','branch','flask','chart','search','bank'];
 const ic = k => ICONS.includes(k) ? `<img class="ic" src="img/ic-${k}.png" alt="">` : '';
@@ -816,11 +839,11 @@ const ASSETS = {
     props:[['w','단어 (|로 구분)'],['hi','강조 위치','number']], d:{w:'Compute|Unified|Device|Architecture', hi:2},
     render:p => `<div class="a-acr">${cells(p.w).map((w, k) => `<div class="${k + 1 === +p.hi ? 'u' : ''} an" style="${D(150 + k * 120)}"><b>${esc(w.charAt(0))}</b><span>${pe('w', 0, k, w)}</span></div>`).join('')}</div>`},
   onemany: {name:'하나의 프로그램 → 여러 GPU', nw:720, nh:160,
-    props:[['src','프로그램'],['t','대상 (|로 구분)']], d:{src:'', t:'게임용 GeForce|워크스테이션|데이터센터용 GPU'},
+    props:[['src','프로그램'],['t','대상 (|로 구분)']], d:{src:'program.cu', t:'게임용 GeForce|워크스테이션|데이터센터용 GPU'},
     render:p => `<div class="a-om"><div class="src">${pe('src', -1, -1, p.src)}</div><svg width="120" height="160" viewBox="0 0 120 160" aria-hidden="true"><path class="dr an" style="--l:600;${D(500)}" d="M0 80 C60 80 60 16 120 16 M0 80 H120 M0 80 C60 80 60 144 120 144" fill="none" stroke="#76b900" stroke-width="2"/></svg><div class="tg">${cells(p.t).map((x, k) => `<div class="an" style="${D(800 + k * 100)}">${pe('t', 0, k, x)}</div>`).join('')}</div></div>`},
   stack: {name:'플랫폼 계층 구조', nw:1180, nh:600,
     props:[['rows','층 (아이콘|이름|설명|■ 또는 □) 위에서 아래로','textarea'],['top','□ 묶음 이름'],['bot','■ 묶음 이름']],
-    d:{rows:'robot|AI 모델 · 응용 프로그램|연구기관과 기업이 개발해 공개|□\nbranch|프레임워크 · 개발 도구|모델 학습과 배포에 쓰는 소프트웨어|□\ncubes|CUDA-X 라이브러리|1,000개 이상의 연산 라이브러리|■\nlayers|CUDA 플랫폼|컴파일러 · 런타임 · 프로그래밍 모델|■\nchip|GPU 하드웨어|GeForce에서 데이터센터용 GPU까지|■', top:'외부 개발자가 만든 영역', bot:'NVIDIA가 제공하는 영역'},
+    d:{rows:'robot|AI 모델 · 응용 프로그램|연구기관과 기업이 개발해 공개|□\nbranch|프레임워크 · 개발 도구|모델 학습과 배포에 쓰는 소프트웨어|□\ncubes|CUDA-X 라이브러리|1,000개 이상의 연산 라이브러리|■\nlayers|CUDA 플랫폼|컴파일러 · 런타임 · 프로그래밍 모델|■\nchip|GPU 하드웨어|GeForce에서 데이터센터용 GPU까지|■', top:'외부 개발자', bot:'NVIDIA 제공'},
     render:p => { const rs = lines(p.rows).map(cells); const n = rs.length; const h = Math.floor((600 - (n - 1) * 12) / n);
       const grp = f => rs.map((r, i) => ({r, i})).filter(o => (o.r[3] || '■').startsWith(f));
       const brace = (g, label, cls) => { if (!g.length) return ''; const y0 = g[0].i * (h + 12), y1 = g[g.length - 1].i * (h + 12) + h;
@@ -831,12 +854,13 @@ const ASSETS = {
   flywheel: {name:'교차 네트워크 효과 순환', nw:760, nh:600,
     props:[['nodes','네 단계 (|로 구분, 위부터 시계 방향)'],['c','가운데 글']],
     d:{nodes:'개발자 유입|응용 프로그램 증가|GPU 수요 증가|설치 기반 확대', c:'교차\n네트워크 효과'},
-    render:p => { const n = cells(p.nodes).slice(0, 4); const pos = [[380, 70], [660, 300], [380, 530], [100, 300]];
-      const arcs = ['M500 90 A 280 230 0 0 1 680 230', 'M680 370 A 280 230 0 0 1 500 510', 'M260 510 A 280 230 0 0 1 80 370', 'M80 230 A 280 230 0 0 1 260 90'];
-      return `<div class="a-fly"><svg viewBox="0 0 760 600" aria-hidden="true"><defs><marker id="fa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#76b900"/></marker></defs>
-        ${arcs.map((d, k) => `<path class="dr an" style="--l:320;${D(500 + k * 350)}" d="${d}" fill="none" stroke="#76b900" stroke-width="3" marker-end="url(#fa)"/>`).join('')}</svg>
-        ${n.map((t, k) => `<div class="nd an" style="left:${pos[k][0]}px;top:${pos[k][1]}px;${D(300 + k * 350)}">${pe('nodes', 0, k, t)}</div>`).join('')}
-        <div class="ctr an" style="${D(1800)}">${pe('c', -1, -1, p.c).replace(/\n/g, '<br>')}</div></div>`; }},
+    render:p => { const n = cells(p.nodes).slice(0, 4); const cx = 380, cy = 300, r = 220; const ang = [-90, 0, 90, 180];
+      const pt = a => [cx + r * Math.cos(a * Math.PI / 180), cy + r * Math.sin(a * Math.PI / 180)];
+      const arc = k => { const a0 = ang[k] + 30, a1 = ang[k] + 62; const [x0, y0] = pt(a0), [x1, y1] = pt(a1); return `M${x0.toFixed(1)} ${y0.toFixed(1)} A ${r} ${r} 0 0 1 ${x1.toFixed(1)} ${y1.toFixed(1)}`; };
+      return `<div class="a-fly"><svg viewBox="0 0 760 600" aria-hidden="true"><defs><marker id="fa" viewBox="0 0 12 12" refX="10" refY="6" markerUnits="userSpaceOnUse" markerWidth="16" markerHeight="16" orient="auto"><path d="M1 1.5 L11 6 L1 10.5 Z" fill="#cfcfcf"/></marker></defs>
+        ${[0, 1, 2, 3].map(k => `<path d="${arc(k)}" fill="none" stroke="#cfcfcf" stroke-width="3" stroke-linecap="round" marker-end="url(#fa)"/>`).join('')}</svg>
+        ${n.map((t, k) => { const [x, y] = pt(ang[k]); return `<div class="nd" style="left:${x.toFixed(0)}px;top:${y.toFixed(0)}px">${pe('nodes', 0, k, t)}</div>`; }).join('')}
+        <div class="ctr">${pe('c', -1, -1, p.c).replace(/\n/g, '<br>')}</div></div>`; }},
   kv: {fluid:true, name:'항목 표 (키 | 값)', nw:560, nh:420,
     props:[['t','제목'],['rows','행 (키|값)','textarea']],
     d:{t:'핵심 상호작용 (《플랫폼 레볼루션》)', rows:'생산자|CUDA로 프로그램을 개발하는 개발자\n소비자|프로그램을 활용하는 연구자와 기업\n가치 단위|프로그램 · 학습 코드 · AI 모델\n가치 회수|거래 수수료 없이 GPU 판매로 회수'},
@@ -903,7 +927,7 @@ const ASSETS = {
     props:[['s','출발'],['ok','연결됨'],['no','막힘'],['r1','연결 이유 1'],['r2','연결 이유 2']], d:{s:'CUDA 프로그램', ok:'NVIDIA GPU', no:'타사 칩', r1:'NVIDIA GPU 전용 기계어로 컴파일', r2:'NVIDIA 전용 라이브러리 호출'},
     render:p => `<div class="a-lock"><svg viewBox="0 0 1200 480" role="img" aria-label="${esc(p.s)}은 ${esc(p.ok)}로만 이어진다">
       <rect x="20" y="180" width="320" height="120" rx="16" fill="none" stroke="#aaa" stroke-width="2"/><text x="180" y="250" text-anchor="middle" fill="#fff" font-size="30" font-weight="500">${esc(p.s)}</text>
-      <path class="dr an" style="--l:480;${D(300)}" d="M340 240 C520 240 560 110 760 110" fill="none" stroke="#76b900" stroke-width="4"/><rect x="760" y="50" width="400" height="120" rx="16" fill="#76b900"/><text x="960" y="120" text-anchor="middle" fill="#0b1200" font-size="30" font-weight="600">${esc(p.ok)}</text>
+      <path class="dr an" style="--l:480;${D(300)}" d="M340 240 C520 240 560 110 760 110" fill="none" stroke="#76b900" stroke-width="4"/><rect x="760" y="50" width="400" height="120" rx="16" fill="#141a0c" stroke="#76b900" stroke-width="2"/><text x="960" y="120" text-anchor="middle" fill="#ffffff" font-size="30" font-weight="600">${esc(p.ok)}</text>
       <text class="an" style="${D(700)}" x="440" y="120" fill="#aaa" font-size="20" text-anchor="middle">${esc(p.r1)}</text><text class="an" style="${D(800)}" x="440" y="150" fill="#aaa" font-size="20" text-anchor="middle">${esc(p.r2)}</text>
       <path class="an" style="${D(900)}" d="M340 240 C460 240 500 330 560 355" fill="none" stroke="#555" stroke-width="4" stroke-dasharray="10 10"/><path class="an" style="${D(1200)}" d="M600 345 l24 24 M624 345 l-24 24" stroke="#e5484d" stroke-width="4"/>
       <rect x="760" y="310" width="400" height="120" rx="16" fill="#151515" stroke="#2d2d2d" stroke-width="2"/><text x="960" y="380" text-anchor="middle" fill="#888" font-size="30" font-weight="500">${esc(p.no)}</text></svg></div>`},
@@ -999,9 +1023,9 @@ const CAPT = (t, x, y, w) => T(t, x, y, w, 28, {size:18, color:'t3'});
 const EXEC = 'CUDA는 플랫폼|NVIDIA는 개발 기반만 제공하고, 프로그램과 모델은 외부 개발자가 만든다. 수수료 대신 GPU 판매로 수익을 낸다\n커뮤니티 효과|개발자가 늘수록 GPU를 살 이유가 늘고, GPU가 늘수록 개발자가 늘었다. 딥러닝도 이 커뮤니티에서 나왔다\nAI 시대의 독점|데이터센터 매출은 ChatGPT 이후 약 13배, 점유율은 80%대. 해자의 핵심은 다른 칩으로 옮기기 어렵다는 전환 비용이다\n대체 움직임|AI가 코드 이식을 맡으면서 AMD로 옮기는 데 6~12개월 걸리던 작업이 약 3일로 줄었다\n고착의 한계|고착에 기댄 플랫폼 전략은 전환 비용이 낮아지는 만큼 약해진다\n더 큰 플랫폼|허깅페이스 인수 결정은 하드웨어 고착 대신 오픈소스 생태계를 확보하는 방향이다. 관건은 고착 없이도 GPU 수요를 지킬 수 있는가';
 
 const BASE = [
- {id:'cover', kind:'cover', d:'20 5', o20:0, o5:0, els:[I('cover', 0, 0, 1600, 900, {radius:0, op:0.2, anim:'none'}), R(128, 540, 64, 6), T('NVIDIA CUDA의 플랫폼 전략', 128, 568, 1300, 100, {size:72, weight:600, lh:1.1}), T('KAIST 플랫폼과 비즈니스 · IMMS 박병진 · PMBA 조기원', 128, 684, 1300, 32, {size:22, color:'t2'})], notes:''},
+ {id:'cover', kind:'cover', d:'20 5', o20:0, o5:0, els:[I('keynote', 0, 0, 1600, 900, {radius:0, op:0.42, anim:'none'}), R(128, 540, 64, 6), T('NVIDIA CUDA의 플랫폼 전략', 128, 568, 1300, 100, {size:72, weight:600, lh:1.1}), T('KAIST 플랫폼과 비즈니스 · IMMS 박병진 · PMBA 조기원', 128, 684, 1300, 32, {size:22, color:'t2'})], notes:''},
 
- {id:'s05', kind:'content', sec:0, d:'20', o20:1, min:1.5, els:[H('CUDA 플랫폼의 구조'), A('stack', 210, 200, 1180, 600)], notes:
+ {id:'s05', kind:'content', sec:0, d:'20', o20:1, min:1.5, els:[H('CUDA 플랫폼의 구조'), A('stack', 96, 208, 940, 600), I('wave', 1104, 208, 400, 600)], notes:
 `CUDA는 NVIDIA가 만든 개발 기반입니다. 아래 세 층, GPU와 CUDA, 라이브러리는 NVIDIA가 만들고, 위의 프로그램과 AI 모델은 외부 개발자가 만듭니다.
 NVIDIA는 응용 프로그램을 직접 만들지 않습니다. 대신 외부가 만든 것이 쌓일수록 GPU가 필요해지는 구조를 만들었습니다.
 
@@ -1009,17 +1033,17 @@ NVIDIA는 응용 프로그램을 직접 만들지 않습니다. 대신 외부가
  {id:'s05b', kind:'content', sec:0, d:'20 5', o20:2, o5:1, min:1.5, min5:1, els:[H('커뮤니티 효과와 GPU 수요'), A('flywheel', 96, 196, 760, 600), A('kv', 944, 236, 560, 420)], notes:
 `CUDA로 만든 프로그램이 늘면 GPU를 살 이유가 늘고, GPU가 늘면 CUDA로 개발하는 사람이 늘어납니다. 교차 네트워크 효과입니다.
 NVIDIA는 이 순환에서 수수료를 받지 않습니다. GPU 판매로 수익을 냅니다. 커뮤니티가 커지는 것이 곧 GPU 수요입니다.`},
- {id:'s06', kind:'scene', d:'20', o20:3, min:1.5, els:[A('sc_train', 0, 0, 1600, 900), H('NVIDIA CUDA에서 찾은 딥러닝 프로세스')], notes:
+ {id:'s06', kind:'content', sec:0, d:'20', o20:3, min:1.5, els:[H('NVIDIA CUDA에서 찾은 딥러닝 프로세스'), I('vision', 96, 208, 800, 560), T('15.3%', 960, 232, 560, 150, {size:136, weight:600, color:'g', lh:1}), T('AlexNet 오류율 · ImageNet 2012 1위', 960, 392, 560, 36, {size:24, color:'t2'}), T('26.2%', 960, 480, 560, 110, {size:88, weight:600, color:'t1', lh:1}), T('2위', 960, 596, 560, 36, {size:24, color:'t3'}), T('게임용 GTX 580 두 장, 학습 5~6일', 960, 720, 560, 36, {size:22, color:'t3'})], notes:
 `이 커뮤니티 효과가 가장 크게 드러난 사례가 AlexNet입니다. 2012년 토론토대 대학원생이 게임용 GTX 580 두 장으로 CUDA 프로그램을 직접 짜서 5~6일 학습했고, 이미지 인식 대회에서 오류율 15.3%로 우승했습니다. 2위는 26.2%였습니다.
 NVIDIA가 만든 프로그램이 아니었고, NVIDIA가 겨냥한 시장도 아니었습니다. 딥러닝이라는 용도는 커뮤니티에서 나왔습니다.
 
 [메모] 결과표는 클릭하면 나타난다. 출처는 참고자료 장.`},
- {id:'s08', kind:'scene', d:'20', o20:4, min:1, els:[A('sc_repo', 0, 0, 1600, 900), H('1,100만 개발자')], notes:
+ {id:'s08', kind:'scene', d:'20', o20:4, min:1, els:[I('datacenter', 0, 0, 1600, 900, {radius:0, op:0.35, anim:'none'}), H('1,100만 개발자'), T('1,100만', 96, 288, 1200, 248, {size:208, weight:600, lh:1.1}), T('CUDA로 개발하는 사람의 수. 이들이 만든 코드가 곧 GPU 수요다', 96, 560, 1200, 44, {size:30, color:'t2'})], notes:
 `이후 AI 연구는 대부분 CUDA 위에서 진행됐습니다. 공개된 코드를 다음 사람이 받아 쓰면서 생태계가 커졌고, 개발자는 1,100만 명 규모입니다.
 
 [메모] 개발자 수는 NVIDIA 집계. 다른 자료는 400만~750만 명.`},
 
- {id:'s09', kind:'content', sec:1, d:'20 5', o20:5, o5:2, min:1.5, min5:1, els:[H('AI 시대의 GPU 독점'), A('dcchart', 96, 200, 840, 600), A('sharebars', 1040, 300, 400, 140)], notes:
+ {id:'s09', kind:'content', sec:1, d:'20 5', o20:5, o5:2, min:1.5, min5:0.75, els:[H('AI 시대의 GPU 독점'), A('dcchart', 96, 200, 840, 600), A('sharebars', 1040, 232, 400, 140), I('datacenter', 1040, 440, 464, 352)], notes:
 `ChatGPT 이후 수요가 한꺼번에 몰렸습니다. NVIDIA의 FY2026 데이터센터 매출은 1,937억 달러로, ChatGPT 이전의 약 13배입니다. 점유율은 2023년 약 87%, 2026년 약 81%입니다.
 
 [메모] 점유율은 추정치. 매출 증가에는 칩 성능과 공급 능력도 함께 작용했다는 점은 질문이 나오면 답한다.`},
@@ -1036,27 +1060,27 @@ NVIDIA가 만든 프로그램이 아니었고, NVIDIA가 겨냥한 시장도 아
 `그 비용이 2026년에 무너지기 시작했습니다. Anthropic은 AI 모델이 CUDA 추론 코드를 AMD MI355X용으로 옮기는 데 약 3일이 걸렸다고 밝혔습니다. 예전에는 6~12개월이 걸리던 작업입니다.
 
 [메모] 투자자 대상 자료에 실린 회사 자체 발표이며, 모델 하나의 추론 작업에 한정된 수치다. 이 자료는 Anthropic의 모델인 Claude가 정리를 도왔다. 질문이 나오면 이 단서를 그대로 말한다. OpenAI도 자체 칩용 커널 작성을 AI에게 맡겼다는 2차 보도가 있다.`},
- {id:'s14', kind:'content', sec:2, d:'20', o20:9, min:1.5, els:[H('기존 플랫폼 접근은 무너지는가'), A('matrix', 96, 196, 900, 582, {pts:'CUDA 2012–2025|0.82|0.85|■\nCUDA 2026~|0.82|0.45|□', arr:'1>2', q:'|고착형 플랫폼||개방형 플랫폼'}), A('sticker', 1040, 300, 464, 300, {lb:'질문', t:'외부의 축적은 그대로인데 전환 비용만 낮아진다면, 고착에 기댄 독점은 유지될 수 있는가'})], notes:
+ {id:'s14', kind:'content', sec:2, o5:4, min5:0.75, d:'20 5', o20:9, min:1.5, els:[H('기존 플랫폼 접근은 무너지는가'), A('matrix', 96, 196, 900, 582, {pts:'CUDA 2012–2025|0.82|0.85|■\nCUDA 2026~|0.82|0.45|□', arr:'1>2', q:'|고착형 플랫폼||개방형 플랫폼'}), A('sticker', 1040, 300, 464, 300, {lb:'질문', t:'외부의 축적은 그대로인데 전환 비용만 낮아진다면, 고착에 기댄 독점은 유지될 수 있는가'})], notes:
 `CUDA의 강점은 두 가지였습니다. 외부 개발자가 쌓아 준다는 것, 그리고 쌓인 것을 옮기기 어렵다는 것입니다.
 AI가 이식을 맡으면 두 번째 힘이 약해집니다. 축적은 남아 있지만 고착은 풀립니다. 고착에 기댄 플랫폼 전략이 흔들리는 지점입니다.`},
  {id:'s12', kind:'content', sec:2, d:'20', o20:10, min:1, els:[H('NVIDIA의 반론'), A('debate', 96, 216, 1408, 480), A('sharebar', 96, 760, 1408, 24)], notes:
 `NVIDIA의 반론도 있습니다. AI는 CUDA 코드도 더 빨리 짜 주기 때문에 오히려 CUDA 생태계가 더 커진다는 것입니다. 점유율도 아직 80%대입니다. 지금 판단하기는 이릅니다.`},
 
- {id:'s13', kind:'scene', d:'20 5', o20:11, o5:4, min:1.5, min5:1, els:[A('sc_hub', 0, 0, 1600, 900), H('허깅페이스 인수 결정')], notes:
+ {id:'s13', kind:'scene', d:'20 5', o20:11, o5:5, min:1.5, min5:0.5, els:[A('sc_hub', 0, 0, 1600, 900), H('허깅페이스 인수 결정')], notes:
 `2026년 9월 NVIDIA는 허깅페이스를 129억 달러에 인수하기로 했습니다. 허깅페이스는 개발자 1,800만 명이 모델 300만 개를 공유하는 오픈소스 AI 플랫폼입니다. 거래는 규제 승인을 거쳐 2027년 상반기에 끝날 예정입니다.
 NVIDIA는 인수 후에도 플랫폼을 열어 두고, NVIDIA 하드웨어를 쓰지 않아도 되게 하겠다고 공시했습니다.
 
 [메모] 인수 발표(9월)가 Anthropic 발표(11월)보다 먼저다. 대응 관계로 말하지 않는다. "인수했다"가 아니라 "인수하기로 했다".`},
- {id:'hf2', kind:'content', sec:3, d:'20', o20:12, min:1.5, els:[H('더 큰 플랫폼, 오픈소스 생태계'), A('cmptable', 96, 208, 1408, 440, {h:'CUDA|허깅페이스', rows:'쌓이는 것|프로그램|AI 모델\nNVIDIA 칩|●필수|○선택\n강점의 원천|축적 + 고착|축적\n형성 방식|자체 구축|인수'}), A('sticker', 96, 696, 1408, 96, {lb:'해석', t:'하드웨어에 묶는 플랫폼에서, 모델이 모이는 생태계를 확보하는 플랫폼으로 범위를 넓히는 움직임으로 읽을 수 있다', fill:true})], notes:
+ {id:'hf2', kind:'content', sec:3, o5:6, min5:0.75, d:'20 5', o20:12, min:1.5, els:[H('더 큰 플랫폼, 오픈소스 생태계'), A('cmptable', 96, 208, 940, 440, {h:'CUDA|허깅페이스', rows:'쌓이는 것|프로그램|AI 모델\nNVIDIA 칩|●필수|○선택\n강점의 원천|축적 + 고착|축적\n형성 방식|자체 구축|인수'}), I('keynote', 1104, 208, 400, 440), A('sticker', 96, 696, 1408, 96, {lb:'해석', t:'칩에 묶는 플랫폼에서, 모델이 모이는 생태계를 확보하는 플랫폼으로 범위를 넓히는 움직임으로 읽을 수 있다'})], notes:
 `두 플랫폼 모두 외부 개발자가 만든 것이 쌓이는 곳입니다. CUDA에는 프로그램이, 허깅페이스에는 모델이 쌓입니다.
 차이는 고착입니다. CUDA는 NVIDIA 칩에 묶여 있지만 허깅페이스는 묶여 있지 않습니다.
 그래서 이 인수는 칩에 묶는 플랫폼에서, 모델이 모이는 생태계를 확보하는 플랫폼으로 범위를 넓히는 움직임으로 읽을 수 있습니다.
 
 [메모] 다른 해석: 공개 모델 생태계가 커지면 GPU 수요가 늘어난다는 수요 확대 전략. AMD와 아마존도 허깅페이스 투자자라 중립성 유지 여부가 관전 지점.`},
- {id:'s15', kind:'content', sec:3, d:'20 5', o20:13, o5:5, min:1, min5:0.5, els:[I('datacenter', 0, 0, 1600, 900, {radius:0, op:0.22, anim:'none'}), H('남은 질문'), T('고착 없이도<br><span class="g">GPU 수요를 지킬 수 있는가</span>', 96, 232, 1408, 220, {size:84, weight:600, lh:1.15}),
+ {id:'s15', kind:'content', sec:3, d:'20', o20:13, o5:5, min:1, min5:0.5, els:[I('datacenter', 0, 0, 1600, 900, {radius:0, op:0.22, anim:'none'}), H('남은 질문'), T('고착 없이도<br><span class="g">GPU 수요를 지킬 수 있는가</span>', 96, 232, 1408, 220, {size:84, weight:600, lh:1.15}),
    A('cards', 96, 540, 1408, 240, {items:'shield|허깅페이스의 중립성|AMD와 아마존도 투자자다. 중립성이 유지되는지가 첫 신호다|□\nrobot|AI 이식의 적용 범위|지금은 추론 작업이다. 학습으로 넓어지는지 본다|□\nchart|점유율 추이|2023년 약 87%에서 2026년 약 81%로|■', step:false})], notes:
 `CUDA는 커뮤니티가 쌓아 주고, 그것을 옮기기 어려워서 강했습니다. AI가 옮기는 일을 맡으면 두 번째 힘은 약해집니다. NVIDIA는 묶어 두지 않는 플랫폼을 인수하기로 했습니다. 고착 없이도 GPU 수요를 지킬 수 있는지가 앞으로 볼 지점입니다.`},
- {id:'take', kind:'content', sec:-1, d:'20 5', o20:14, o5:6, min:1, min5:0.5, els:[H('Take home'), A('execsum', 96, 200, 1408, 620, {rows:EXEC})], notes:
+ {id:'take', kind:'content', sec:-1, d:'20 5', o20:14, o5:7, min:1, min5:0.5, els:[H('Take home'), A('execsum', 96, 200, 1408, 620, {rows:EXEC})], notes:
 `정리하겠습니다. 화면의 여섯 줄이 오늘 발표의 전부입니다.`},
  {id:'refs', kind:'refs', d:'20 5', o20:99, o5:99, els:[H('참고자료'), T(
 '<b>CUDA 개발자 수</b> Jon Peddie Research, CUDA turns 20 with 11 million developers (NVIDIA SC26 발표)<br><b>AlexNet</b> Krizhevsky, Sutskever, Hinton. ImageNet classification with deep convolutional neural networks (2012)<br><b>FY2026 실적</b> NVIDIA Announces Financial Results for Fourth Quarter and Fiscal 2026<br><b>데이터센터 13배</b> PC Gamer, FY2026 데이터센터 실적 보도 (CFO 발언)<br><b>대형 클라우드 비중</b> TechRepublic (CFO 발언)<br><b>점유율</b> NewMarketPitch, Silicon Analysts, SwotPal, Oreate AI (추정치)<br><b>Anthropic AMD 이식</b> The Decoder, Mezha (Anthropic IPO 로드쇼 자료 보도)<br><b>NVIDIA 반론</b> Computer Weekly, CUDA at 20 (Ian Buck)<br><b>허깅페이스 인수</b> NVIDIA 블로그, SEC 8-K (2026.9.2), Yahoo Finance, 서울신문, IT데일리<br><b>교재</b> Parker, Van Alstyne, Choudary. 《플랫폼 레볼루션》<br><b>장면</b> 재현 화면은 발표자가 그린 도식이며 실제 제품 화면이 아님. 표지와 배경 사진은 4-2조 발표 자료(2026.5.20)',
@@ -1993,7 +2017,7 @@ $('#fr').addEventListener('keydown', ev => { if (ev.key === 'Enter'){ ev.prevent
 $('#findBar').addEventListener('click', ev => { const b = ev.target.closest('button'); if (!b) return; const a = b.dataset.f; if (a === 'prev') gotoHit(-1); if (a === 'next') gotoHit(1); if (a === 'one') replaceAll(true); if (a === 'all') replaceAll(false); if (a === 'close') closeFind(); });
 
 /* ============ QUALITY CHECKS ============ */
-const BANNED = [[/해자/, '비유 표현: 해자 → 진입장벽'], [/무기/, '비유 표현: 무기'], [/잠그|잠금 효과/, '비유 표현: 잠그다 → 전환 비용'], [/포획/, '번역투: 가치 포획 → 수익 확보'], [/단순히[^.]*아니라/, 'AI 문체: 단순히 ~가 아니라'], [/비지니스/, '맞춤법: 비지니스 → 비즈니스'], [/게임 ?체인저|혁신적인|압도적/, '과한 강조어'], [/구동한다|가능하게 한다/, '번역투 동사']];
+const BANNED = [[/무기/, '비유 표현: 무기'], [/잠그|잠금 효과/, '비유 표현: 잠그다 → 전환 비용'], [/포획/, '번역투: 가치 포획 → 수익 확보'], [/단순히[^.]*아니라/, 'AI 문체: 단순히 ~가 아니라'], [/비지니스/, '맞춤법: 비지니스 → 비즈니스'], [/게임 ?체인저|혁신적인|압도적/, '과한 강조어'], [/구동한다|가능하게 한다/, '번역투 동사']];
 function lint(){
   const out = []; const L = list();
   L.forEach((s, i) => {
