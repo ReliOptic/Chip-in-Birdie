@@ -9,7 +9,7 @@ const BASE = [
 
  {id:'st1', src:'NVIDIA SC26 발표 (Jon Peddie Research 보도)', kind:'content', sec:0, d:'5', o20:0.6, o5:3, min:1, min5:0.25, els:[H('개발자 코드 축적과 GPU 수요'), SUB('약 600만 개발자의 CUDA 코드 → NVIDIA GPU 수요'), A('story', 96, 196, 1408, 640, {stage:1})], notes:
 `CUDA 개발자는 약 600만 명입니다. 이들이 CUDA로 짠 코드는 NVIDIA GPU에서 돌아가고, 코드가 쌓일수록 GPU 수요가 늘어납니다.`},
- {id:'s05', src:'NVIDIA SC26 발표 (CUDA-X 집계) · Parker 외, 《플랫폼 레볼루션》', kind:'content', sec:0, d:'20 5', o20:1, min:1.5, o5:1, min5:0.75, els:[H('CUDA 플랫폼의 구조'), SUB('외부 개발자가 가치를 만들고 NVIDIA가 GPU 판매로 회수하는 구조'), A('stack', 210, 200, 1180, 600)], notes:
+ {id:'s05', tr:'convex', src:'NVIDIA SC26 발표 (CUDA-X 집계) · Parker 외, 《플랫폼 레볼루션》', kind:'content', sec:0, d:'20 5', o20:1, min:1.5, o5:1, min5:0.75, els:[H('CUDA 플랫폼의 구조'), SUB('외부 개발자가 가치를 만들고 NVIDIA가 GPU 판매로 회수하는 구조'), A('stack', 210, 200, 1180, 600)], notes:
 `CUDA는 GPU 위에서 돌아가는 개발 플랫폼입니다. 아래 세 층, GPU와 CUDA, CUDA-X 라이브러리는 NVIDIA가 만듭니다. 그 위의 프레임워크와 AI 모델은 외부 개발자가 만듭니다.
 가치는 외부가 만들고, NVIDIA는 수수료 없이 GPU 판매로 회수합니다.`},
  {id:'s05b', src:'Parker 외, 《플랫폼 레볼루션》 · 발표자 정리', kind:'content', sec:0, d:'20 5', o20:2, o5:2, min:1.5, min5:0.75, els:[H('커뮤니티 효과와 GPU 수요'), SUB('개발자 · 응용 프로그램 · GPU 설치 기반이 서로를 키우는 교차 네트워크 효과'), A('flywheel', 96, 196, 760, 600), A('kv', 944, 236, 560, 420)], notes:
