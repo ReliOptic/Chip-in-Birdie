@@ -1253,7 +1253,7 @@ Object.assign(ASSETS, {
 });
 
 /* ============ BASE DECK ============ */
-const SECTIONS = ['커뮤니티 효과', '코드에 묶인 독점', 'AI가 연 길', '플랫폼 재편', '투자 논리'];
+const SECTIONS = ['CUDA 생태계', '시장 지위', 'AI 코드 이식', '허깅페이스 인수', '인수 배경'];
 let uid = 0;
 const T = (html, x, y, w, h, o = {}) => ({id:'e' + (++uid), type:'text', html, x, y, w, h, size:o.size || 32, color:o.color || 't1', weight:o.weight || 400, align:o.align || 'left', lh:o.lh || 1.3, mono:!!o.mono, anim:o.anim || 'none'});
 const A = (asset, x, y, w, h, p = {}, anim = 'none') => ({id:'e' + (++uid), type:'asset', asset, x, y, w, h, p:Object.assign({}, (ASSETS[asset] || {}).d, p), anim});
