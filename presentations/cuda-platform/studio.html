@@ -1,4 +1,5 @@
 <title>플랫폼 비즈니스 전략 – CUDA 플랫폼 발표</title>
+<script type="application/json" id="claude-artifacts-manifest">{"permissions": []}</script>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
@@ -398,6 +399,105 @@ body:not(.ai-on) .ai-only{display:none!important}
 #deckPop{right:auto;left:max(16px,env(safe-area-inset-left,0px))}
 #toast{position:fixed;z-index:40;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);display:flex;align-items:center;gap:12px;padding:8px 8px 8px 16px;background:var(--raised);border:1px solid #3a3a3a;border-radius:10px;font:500 13px/18px var(--sans);box-shadow:0 8px 24px rgba(0,0,0,0.5);max-width:calc(100vw - 32px)}
 
+
+/* ---------- v4 editor chrome ---------- */
+#canvas.panning,#canvas.panning *{cursor:grab!important}
+#canvas .guide{position:absolute;background:#ff4fa3;pointer-events:none;z-index:6}
+#canvas .guide.v{top:0;bottom:0;width:1px}
+#canvas .guide.h{left:0;right:0;height:1px}
+#canvas .el.hid{opacity:.28}
+#canvas .el.locked{cursor:default}
+.rhandle{position:absolute;left:50%;top:-40px;width:16px;height:16px;margin-left:-8px;border-radius:50%;background:var(--bg);border:2px solid var(--g);cursor:grab}
+.rhandle::after{content:"";position:absolute;left:5px;top:14px;width:2px;height:22px;background:var(--g)}
+.stage i{font-style:italic}
+#bar .kb{font:400 12px/1 var(--mono);color:var(--t3)}
+#status{display:flex;align-items:center;gap:12px;height:32px;padding:0 16px;border-top:1px solid var(--line);background:var(--shell);font:400 12px/16px var(--sans);color:var(--t3);white-space:nowrap;overflow:hidden}
+#status button{all:unset;cursor:pointer;color:var(--t3);transition:color 120ms var(--ease)}
+#status button:hover{color:var(--t1)}
+#status button:focus-visible{outline:2px solid var(--g);outline-offset:2px;border-radius:4px}
+#status [data-s=ok]::before,#status [data-s=bad]::before,#status [data-s=warn]::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;background:var(--g)}
+#status [data-s=bad]::before{background:#e5484d}
+#status [data-s=warn]::before{background:var(--warn)}
+#status .grow{flex:1}
+#status .zc{display:flex;align-items:center;gap:4px}
+#status .zoom{width:44px;text-align:center}
+.ib{all:unset;cursor:pointer;display:inline-grid;place-items:center;width:24px;height:24px;border-radius:6px;color:var(--t2);transition:background-color 120ms var(--ease),color 120ms var(--ease)}
+.ib:hover{background:var(--raised);color:var(--t1)}
+.ib[aria-pressed=true]{color:var(--g)}
+#findBar{position:absolute;z-index:21;top:12px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:6px;padding:6px;background:var(--card);border:1px solid #3a3a3a;border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,0.5);max-width:calc(100% - 16px)}
+#findBar input{width:160px;min-width:0;height:28px;background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:0 8px;color:var(--t1);font:400 13px/1 var(--sans);outline:none}
+#findBar input:focus{border-color:var(--g)}
+#findBar .btn{height:28px}
+#fcount{font:400 12px/1 var(--mono);color:var(--t3);min-width:36px;text-align:center}
+.menu{position:fixed;z-index:60;min-width:220px;padding:6px;background:var(--card);border:1px solid #3a3a3a;border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,0.5);display:flex;flex-direction:column}
+.menu button{all:unset;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:6px 10px;border-radius:6px;font:400 13px/18px var(--sans);color:var(--t1)}
+.menu button:hover,.menu button:focus{background:var(--raised)}
+.menu button[disabled]{color:#555;pointer-events:none}
+.menu kbd{font:400 12px/1 var(--mono);color:var(--t3)}
+.menu hr{border:0;border-top:1px solid var(--line);margin:4px 0}
+#exportPop{top:calc(60px + env(safe-area-inset-top,0px));right:max(120px,env(safe-area-inset-right,0px));left:auto;width:300px}
+#exportPop button{flex-direction:column;align-items:flex-start;gap:2px}
+#exportPop em{font-style:normal;font-size:12px;color:var(--t3)}
+#pal{position:fixed;inset:0;z-index:70;background:rgba(0,0,0,0.5);display:grid;justify-items:center;align-items:start;padding-top:12vh}
+#pal .pbox{width:min(560px,calc(100vw - 32px));background:var(--card);border:1px solid #3a3a3a;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,0.5);overflow:hidden}
+#palq{width:100%;height:48px;border:0;border-bottom:1px solid var(--line);background:transparent;padding:0 16px;font:400 15px/1 var(--sans);color:var(--t1);outline:none}
+#pall{max-height:50vh;overflow:auto;padding:6px;display:flex;flex-direction:column}
+#pall button{all:unset;cursor:pointer;display:grid;grid-template-columns:48px 1fr auto;gap:12px;align-items:center;padding:8px 10px;border-radius:6px;font:400 13px/18px var(--sans)}
+#pall button em{font-style:normal;font-size:11px;color:var(--t3)}
+#pall button kbd{font:400 12px/1 var(--mono);color:var(--t3)}
+#pall button[aria-selected=true],#pall button:hover{background:var(--raised)}
+#busy{position:fixed;z-index:80;left:50%;top:72px;transform:translateX(-50%);padding:8px 16px;background:var(--raised);border:1px solid #3a3a3a;border-radius:10px;font:500 13px/18px var(--sans)}
+#offscreen{position:fixed;left:-20000px;top:0;width:1600px;height:900px;overflow:hidden}
+#insSeg{margin-top:8px;width:100%}
+#insSeg button{flex:1;text-align:center}
+#tabs .seg button{padding:6px 4px}
+.layers{display:flex;flex-direction:column;gap:2px}
+.layers .ly{display:grid;grid-template-columns:1fr 24px 24px;align-items:center;gap:4px;padding:2px 4px;border-radius:6px}
+.layers .ly.on{background:var(--raised);box-shadow:inset 0 1px 0 rgba(255,255,255,0.12)}
+.layers .nm{all:unset;cursor:pointer;font:400 13px/28px var(--sans);color:var(--t2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.layers .ly.on .nm{color:var(--t1)}
+.layers .nm em{font-style:normal;font-size:11px;color:var(--g);margin-right:6px}
+.grid table{width:100%;border-collapse:collapse}
+.grid td{padding:1px}
+.grid input{width:100%;min-width:0;height:28px;background:var(--card);border:1px solid var(--line);border-radius:4px;padding:0 6px;color:var(--t1);font:400 12px/1 var(--sans);outline:none}
+.grid input:focus{border-color:var(--g)}
+.grid tr:first-child input{color:var(--t3)}
+.grid .rm{width:24px}
+.grid .btn{margin-top:6px}
+.chkhead{padding:10px 12px;border-radius:8px;font:500 13px/18px var(--sans);border:1px solid var(--line)}
+.chkhead.ok{color:var(--g);border-color:#2b3a14;background:#0f1606}
+.chkhead.warn{color:var(--warn);border-color:#4a3a10;background:#171206}
+.issues{gap:4px}
+.iss{all:unset;cursor:pointer;display:grid;grid-template-columns:28px 1fr;gap:8px;align-items:center;padding:6px 8px;border-radius:6px;font:400 12px/16px var(--sans);color:var(--t2)}
+.iss:hover{background:var(--raised)}
+.iss em{font:400 12px/1 var(--mono);font-style:normal;color:var(--t3)}
+.iss.err span{color:#ff8a8d}
+.iss.warn span{color:#ffd166}
+.vers{display:flex;flex-direction:column;gap:6px}
+.vr{display:flex;align-items:center;justify-content:space-between;gap:8px;font:400 13px/18px var(--sans)}
+.vr em{display:block;font-style:normal;font-size:11px;color:var(--t3)}
+.hlist{display:flex;flex-direction:column;gap:2px;max-height:240px;overflow:auto;font:400 12px/20px var(--sans);color:var(--t2)}
+.btn kbd{font:400 11px/1 var(--mono);opacity:.7}
+#aiScope button{padding:3px 8px;font-size:12px}
+#aiScope button:disabled{opacity:.35;pointer-events:none}
+#aireview{display:flex;flex-direction:column;gap:8px;border-top:1px solid var(--line);padding-top:8px}
+#aireview .rh{display:flex;justify-content:space-between;gap:8px;font:400 12px/16px var(--sans);color:var(--t3)}
+#aireview .rh b{color:var(--t1);font-weight:500}
+#aireview .rl{display:flex;flex-direction:column;gap:2px;max-height:200px;overflow:auto}
+#aireview label{display:flex;gap:8px;align-items:center;font:400 12px/18px var(--sans);color:var(--t2);padding:2px 0}
+#aireview input{accent-color:var(--g)}
+#aireview .rb{display:flex;gap:8px}
+.a-chart{display:block}
+.a-chart .bar.an{animation-name:a-growy;transform-origin:bottom;transform-box:fill-box}
+.a-3d{display:flex;flex-direction:column;align-items:center;gap:16px;height:100%}
+.a-3d .sc{flex:1;width:100%;display:grid;place-items:center;perspective:1200px}
+.a-3d .pl{display:grid;gap:6px;width:420px;height:420px;transform:rotateX(58deg) rotateZ(-42deg);transform-style:preserve-3d}
+.a-3d .pl i{display:block;border-radius:3px;background:#1a1a1a;border:1px solid #2d2d2d}
+.a-3d .pl i.on{background:var(--g);border-color:#9bd23a;box-shadow:0 0 0 1px #0b1200 inset}
+.a-3d .pl i.on.an{animation-name:a-lift;animation-duration:500ms}
+@keyframes a-lift{from{background:#1a1a1a;border-color:#2d2d2d;transform:translateZ(0)}}
+.a-3d span{font-size:20px;color:var(--t2)}
+
 /* ---------- phone ---------- */
 @media (max-width:900px){
   body{overflow:auto}
@@ -431,7 +531,11 @@ body:not(.ai-on) .ai-only{display:none!important}
     <div class="grow"></div>
     <button class="btn ai-only" type="button" id="bGen" title="AI로 장표 만들기"><svg viewBox="0 0 16 16"><path d="M8 2v3M8 11v3M2 8h3M11 8h3M4 4l2 2M10 10l2 2M12 4l-2 2M6 10l-2 2"/></svg>AI 장표</button>
     <button class="btn hide-sm" type="button" id="bText" title="텍스트 추가 (T)"><svg viewBox="0 0 16 16"><path d="M3 3h10M8 3v10"/></svg>텍스트</button>
-    <button class="btn hide-sm" type="button" id="bUndo" title="되돌리기 (Ctrl+Z)"><svg viewBox="0 0 16 16"><path d="M5 4 2 7l3 3M2 7h8a4 4 0 0 1 0 8H8"/></svg></button>
+    <button class="btn icon hide-sm" type="button" id="bUndo" title="실행 취소"><svg viewBox="0 0 16 16"><path d="M5 4 2 7l3 3M2 7h8a4 4 0 0 1 0 8H8"/></svg></button>
+    <button class="btn icon hide-sm" type="button" id="bRedo" title="다시 실행"><svg viewBox="0 0 16 16"><path d="M11 4l3 3-3 3M14 7H6a4 4 0 0 0 0 8h2"/></svg></button>
+    <button class="btn hide-sm" type="button" id="bPal" title="명령 팔레트"><svg viewBox="0 0 16 16"><path d="M3 4.5h10M3 8h10M3 11.5h6"/></svg><span class="kb"></span></button>
+    <button class="btn hide-sm" type="button" id="bExport" title="내보내기"><svg viewBox="0 0 16 16"><path d="M8 2v8M5 7l3 3 3-3M3 12.5h10"/></svg>내보내기</button>
+    <button class="btn hide-sm" type="button" id="bInstall" hidden title="데스크톱 앱으로 설치"><svg viewBox="0 0 16 16"><rect x="2.5" y="3" width="11" height="8" rx="1.5"/><path d="M6 14h4M8 11v3"/></svg>앱으로 설치</button>
     <button class="btn primary" type="button" id="bPlay" title="발표 시작"><svg viewBox="0 0 16 16"><path d="M5 3l8 5-8 5z" fill="currentColor" stroke="none"/></svg>발표</button>
   </header>
   <div id="main">
@@ -446,21 +550,26 @@ body:not(.ai-on) .ai-only{display:none!important}
     </nav>
     <section id="center">
       <div id="viewport"><div id="canvasWrap"><div id="canvas" class="stage static"></div></div>
+        <div id="findBar" hidden><input id="fq" placeholder="찾기" aria-label="찾기" autocomplete="off"><span id="fcount" class="num"></span><button type="button" class="ib" data-f="prev" title="이전"><svg viewBox="0 0 16 16"><path d="M4 10l4-4 4 4"/></svg></button><button type="button" class="ib" data-f="next" title="다음"><svg viewBox="0 0 16 16"><path d="M4 6l4 4 4-4"/></svg></button><input id="fr" placeholder="바꿀 말" aria-label="바꿀 말" autocomplete="off"><button type="button" class="btn" data-f="one">바꾸기</button><button type="button" class="btn" data-f="all">모두</button><button type="button" class="ib" data-f="close" title="닫기"><svg viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8"/></svg></button></div>
         <div id="aibar" hidden>
-          <div class="ah"><span id="aiCount"></span><span class="ai-line"></span></div>
+          <div class="ah"><div class="seg" id="aiScope" role="group" aria-label="AI 범위"><button type="button" data-scope="sel">선택</button><button type="button" data-scope="slide">장표</button><button type="button" data-scope="deck">덱</button></div><span id="aiCount"></span><span class="ai-line"></span></div>
+          <div id="aireview" hidden></div>
           <div class="chips"><button type="button" class="chip" data-q="title">결론형 제목으로</button><button type="button" class="chip" data-q="polish">문장 다듬기</button><button type="button" class="chip" data-q="short">더 간결하게</button><button type="button" class="chip" data-q="visual">도식으로 바꾸기</button><button type="button" class="chip" data-q="evidence">근거 보강</button></div>
           <form id="aiform"><input id="aiq" autocomplete="off" placeholder="요청 입력" aria-label="AI 요청"><button type="submit" class="btn primary" id="aiGo">실행</button><button type="button" class="btn" id="aiStop" hidden>중지</button></form>
         </div>
       </div>
+      <div id="status"><span class="pos num"></span><button type="button" class="over" data-a="check"></button><button type="button" class="warn" data-a="check"></button><span class="grow"></span><button type="button" class="hist" data-a="hist"></button><span class="zc"><button type="button" class="ib" data-a="zout" title="축소"><svg viewBox="0 0 16 16"><path d="M4 8h8"/></svg></button><button type="button" class="zoom num" data-a="zfit" title="화면에 맞추기">100%</button><button type="button" class="ib" data-a="zin" title="확대"><svg viewBox="0 0 16 16"><path d="M4 8h8M8 4v8"/></svg></button></span></div>
       <div id="notesBox"><label for="notes">발표 스크립트</label><textarea id="notes" spellcheck="false"></textarea></div>
     </section>
     <aside id="side">
       <div id="tabs"><div class="seg" role="tablist">
         <button type="button" data-tab="props" aria-pressed="true">속성</button>
-        <button type="button" data-tab="layouts" aria-pressed="false">레이아웃</button>
-        <button type="button" data-tab="assets" aria-pressed="false">에셋</button>
-        <button type="button" data-tab="images" aria-pressed="false">이미지</button>
-      </div></div>
+        <button type="button" data-tab="layers" aria-pressed="false">레이어</button>
+        <button type="button" data-tab="insert" aria-pressed="false">삽입</button>
+        <button type="button" data-tab="check" aria-pressed="false">점검</button>
+        <button type="button" data-tab="hist" aria-pressed="false">이력</button>
+      </div>
+      <div class="seg" id="insSeg" hidden><button type="button" data-ins="layouts">레이아웃</button><button type="button" data-ins="assets">에셋</button><button type="button" data-ins="images">이미지</button></div></div>
       <div id="panel"></div>
     </aside>
   </div>
@@ -482,6 +591,12 @@ body:not(.ai-on) .ai-only{display:none!important}
     <div class="row2"><button type="submit" class="btn primary" data-copy="0">빈 덱</button><button type="submit" class="btn" data-copy="1">현재 덱 복제</button></div>
   </form>
 </div>
+<div id="exportPop" class="pop menu" hidden><button type="button" data-cmd="pptx">PowerPoint (.pptx)<em>텍스트는 편집 가능, 도식은 이미지</em></button><button type="button" data-cmd="pdf">PDF<em>장표마다 한 쪽</em></button><button type="button" data-cmd="json">프로젝트 파일 (.json)<em>이 편집기에서 다시 열 수 있음</em></button><hr><button type="button" data-cmd="open">프로젝트 파일 열기</button></div>
+<div id="ctx" class="menu" role="menu" hidden></div>
+<div id="pal" hidden><div class="pbox"><input id="palq" placeholder="명령, 장표, 레이아웃 검색" aria-label="명령 검색" autocomplete="off"><div id="pall"></div></div></div>
+<div id="busy" hidden><span></span></div>
+<div id="offscreen" aria-hidden="true"></div>
+<input type="file" id="fileIn" accept=".json,application/json" hidden>
 <div id="toast" hidden><span></span><button type="button" class="btn">되돌리기</button></div>
 <div id="present" hidden>
   <div class="reveal"><div class="slides"></div></div>
@@ -681,7 +796,7 @@ const EXEC = '기원|2006년 NVIDIA는 GPU를 그래픽 전용 장치에서 범�
 
 const BASE = [
  {id:'cover', kind:'cover', d:'20 5', o20:0, o5:0, els:[I('cover', 0, 0, 1600, 900, {radius:0, op:0.2, anim:'none'}), R(128, 540, 64, 6), T('NVIDIA CUDA의 플랫폼 전략', 128, 568, 1300, 100, {size:72, weight:600, lh:1.1}), T('외부 개발자의 축적과 전환 비용으로 형성된 경쟁우위, 그리고 AI가 가져온 변화', 128, 676, 1300, 44, {size:28, color:'t2'}), T('KAIST 플랫폼과 비즈니스 · IMMS 박병진 · PMBA 조기원 · 2026년 11월', 128, 772, 1300, 32, {size:20, color:'t2'})], notes:''},
- {id:'exec', kind:'content', sec:-1, d:'20', o20:0.5, min:1, src:'', els:[H('CUDA의 경쟁우위는 외부 개발자의 축적과 높은 전환 비용에서 비롯되었으며, AI는 그중 전환 비용을 낮추기 시작했다'), A('execsum', 96, 200, 1408, 620, {rows:EXEC})], notes:
+ {id:'exec', kind:'content', sec:-1, d:'20', o20:0.5, min:1, src:'출처: 각 장의 각주 참조', els:[H('CUDA의 경쟁우위는 외부 개발자의 축적과 높은 전환 비용에서 비롯되었으며, AI는 그중 전환 비용을 낮추기 시작했다'), A('execsum', 96, 200, 1408, 620, {rows:EXEC})], notes:
 `오늘 발표에서는 NVIDIA의 CUDA를 플랫폼 관점에서 분석하겠습니다. 화면의 여섯 단계 순서로 진행합니다.
 
 [메모] 30초 안에 넘긴다. 각 줄의 근거는 뒤에서 한 장씩 제시한다.`},
@@ -801,7 +916,6 @@ let deck = '20';
 let curId = null;
 let selId = null;
 let tab = 'props';
-const undo = [];
 const overridden = new Set();       // ids that differ from BASE (stored)
 
 function inDeck(s, d = deck){ return !s.deleted && String(s.d).split(' ').includes(d); }
@@ -820,6 +934,8 @@ function clean(html){
       if (t === 'BR') out += '<br>';
       else if (t === 'B' || t === 'STRONG') out += '<b>' + inner + '</b>';
       else if (t === 'SMALL') out += '<small>' + inner + '</small>';
+      else if (t === 'I' || t === 'EM') out += '<i>' + inner + '</i>';
+      else if (t === 'U') out += '<u>' + inner + '</u>';
       else if (t === 'SPAN' && ['g', 't2', 't3'].includes(n.className)) out += `<span class="${n.className}">${inner}</span>`;
       else if (t === 'DIV' || t === 'P') out += (out && !out.endsWith('<br>') ? '<br>' : '') + inner;
       else out += inner; } }); return out; };
@@ -828,8 +944,9 @@ function clean(html){
 
 /* ============ RENDER ============ */
 function elHTML(e, mode){
-  const st = `left:${e.x}px;top:${e.y}px;width:${e.w}px;height:${e.h}px;`;
-  const cls = ['el']; if (mode === 'present'){ if (e.anim === 'step') cls.push('fragment'); if (e.anim === 'fade') cls.push('an-rise'); }
+  if (e.hidden && mode === 'present') return '';
+  const st = `left:${e.x}px;top:${e.y}px;width:${e.w}px;height:${e.h}px;${e.rot ? `transform:rotate(${+e.rot}deg);` : ''}`;
+  const cls = ['el']; if (e.hidden) cls.push('hid'); if (e.lock) cls.push('locked'); if (mode === 'present'){ if (e.anim === 'step') cls.push('fragment'); if (e.anim === 'fade') cls.push('an-rise'); }
   if (e.type === 'text'){
     const ts = `font-size:${e.size}px;line-height:${e.lh || 1.2};font-weight:${e.weight};color:${COLORS[e.color] || COLORS.t1};text-align:${e.align};${e.mono ? 'font-family:var(--mono);' : ''}${e.size >= 40 ? 'letter-spacing:-0.02em;' : ''}`;
     return `<div class="${cls.join(' ')}" data-id="${esc(e.id)}" style="${st}"><div class="txt" style="${ts}">${clean(e.html)}</div></div>`;
@@ -867,15 +984,16 @@ function renderCanvas(){
   c.innerHTML = s ? slideHTML(s, 'edit') : '';
   if (s){ if (selId && !s.els.some(e => e.id === selId)) selId = null; [...multi].forEach(id => { if (!s.els.some(e => e.id === id)) multi.delete(id); });
     selected().forEach(e => { const n = c.querySelector(`.el[data-id="${CSS.escape(e.id)}"]`); if (n) n.classList.add('sel'); });
-    if (selId && !multi.size){ const n = c.querySelector(`.el[data-id="${CSS.escape(selId)}"]`); if (n) n.insertAdjacentHTML('beforeend', '<div class="handle" data-h="1"></div>'); } }
+    if (selId && !multi.size){ const n = c.querySelector(`.el[data-id="${CSS.escape(selId)}"]`); if (n && !curEl().lock) n.insertAdjacentHTML('beforeend', '<div class="handle" data-h="1"></div><div class="rhandle" data-r="1" title="회전 (Shift: 15도 단위)"></div>'); } }
   $('#notes').value = s ? (s.notes || '') : '';
 }
 let K = 1;
 function fitCanvas(){
   const vp = $('#viewport'); const pad = innerWidth <= 900 ? 16 : 32;
-  K = Math.max(0.05, Math.min((vp.clientWidth - pad) / 1600, (vp.clientHeight - pad) / 900));
+  const fk = Math.max(0.05, Math.min((vp.clientWidth - pad) / 1600, (vp.clientHeight - pad) / 900)); K = fk * (typeof ZM === 'number' ? ZM : 1);
   $('#canvas').style.transform = `scale(${K})`;
-  const w = $('#canvasWrap'); w.style.width = 1600 * K + 'px'; w.style.height = 900 * K + 'px';
+  const w = $('#canvasWrap'); w.style.width = 1600 * K + 'px'; w.style.height = 900 * K + 'px'; w.style.transform = typeof PX === 'number' && (PX || PY) ? `translate(${PX}px,${PY}px)` : '';
+  if (typeof renderStatus === 'function' && $('#status')) $('#status').querySelector('.zoom').textContent = Math.round((typeof ZM === 'number' ? ZM : 1) * 100) + '%';
 }
 
 /* ---------- inspector ---------- */
@@ -917,7 +1035,7 @@ function renderPanel(){
       <div class="grp"><div class="lbl">배분 시간 (분)</div><div class="row2">${fld('min', '20', s.min ?? '', 'number')}${fld('min5', '5', s.min5 ?? '', 'number')}</div></div>
       <div class="grp ai-only"><div class="lbl">AI</div><button class="btn primary" type="button" id="bAskAll">이 장표 전체에 AI 요청</button></div>
       <div class="grp"><div class="lbl">요소 추가</div><div class="row2"><button class="btn" type="button" data-add="text">텍스트</button><button class="btn" type="button" data-add="rect">도형</button></div></div>
-      <div class="grp"><div class="lbl">단축키</div><div class="hint"><span class="kbd">더블클릭</span> 글 고치기 · <span class="kbd">Del</span> 요소 삭제 · <span class="kbd">Ctrl D</span> 요소 복제 · <span class="kbd">↑↓←→</span> 4px 이동 · <span class="kbd">Ctrl Z</span> 되돌리기</div></div>
+      <div class="grp"><div class="lbl">단축키</div><div class="hint"><span class="kbd">${esc(KEYS('Mod+K'))}</span> 모든 명령 · <span class="kbd">더블클릭</span> 글 고치기 · <span class="kbd">우클릭</span> 메뉴 · <span class="kbd">${esc(KEYS('Mod+F'))}</span> 찾기 · <span class="kbd">${esc(KEYS('Mod+S'))}</span> 버전 저장 · <span class="kbd">Space</span>+드래그 화면 이동</div></div>
       <div class="grp">${isBase && changed ? '<button class="btn" type="button" id="bReset">이 장표를 원본으로 되돌리기</button>' : ''}<button class="btn" type="button" id="bDelSlide">장표 삭제</button></div>`;
     return;
   }
@@ -948,25 +1066,11 @@ function renderPanel(){
 
 function renderAll(){
   if (!list().some(s => s.id === curId)) curId = (list()[0] || {}).id;
-  renderThumbs(); renderCanvas(); renderPanel();
+  renderThumbs(); renderCanvas(); renderPanel(); if (typeof renderStatus === 'function' && $('#status')) renderStatus();
   document.querySelectorAll('#bar .seg button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.deck === deck)));
 }
 
 /* ============ EDIT + PERSIST ============ */
-function snapshot(){ const s = cur(); if (s){ undo.push({id:s.id, data:clone(s)}); if (undo.length > 80) undo.shift(); } }
-function changed(s, opts = {}){
-  overridden.add(s.id); queueSave(s);
-  if (!opts.noCanvas && s.id === curId) renderCanvas();
-  renderThumb(s.id);
-  if (opts.panel) renderPanel();
-}
-function doUndo(){
-  const u = undo.pop(); if (!u) return;
-  const i = slides.findIndex(s => s.id === u.id); if (i < 0) slides.push(u.data); else slides[i] = u.data;
-  curId = u.id; if (!u.data.els.some(e => e.id === selId)) selId = null;
-  queueSave(u.data); renderAll();
-}
-
 /* ============ STORAGE: per-deck slide docs, shared through the artifact db ============ */
 let deckId = 'cuda';
 let decks = [{id:'cuda', name:'CUDA 플랫폼 발표'}];
@@ -997,7 +1101,7 @@ async function flush(){
 }
 function applyStored(id, v){
   if (!v || typeof v !== 'object' || !Array.isArray(v.els)) return;
-  const s = {id, d:String(v.d || '20'), o20:+v.o20 || 0, o5:+v.o5 || 0, min:v.min, min5:v.min5, kind:String(v.kind || 'content'), sec:v.sec == null ? null : +v.sec, src:String(v.src || ''), deleted:!!v.deleted, notes:String(v.notes || ''),
+  const s = {id, d:String(v.d || '20'), o20:+v.o20 || 0, o5:+v.o5 || 0, min:v.min, min5:v.min5, kind:String(v.kind || 'content'), sec:v.sec == null ? null : +v.sec, src:String(v.src || ''), tr:v.tr, deleted:!!v.deleted, notes:String(v.notes || ''),
     els:v.els.filter(e => e && typeof e === 'object').map(e => ({...e, id:String(e.id), x:+e.x || 0, y:+e.y || 0, w:+e.w || 10, h:+e.h || 10}))};
   const i = slides.findIndex(x => x.id === id); if (i < 0) slides.push(s); else slides[i] = s;
   overridden.add(id);
@@ -1035,9 +1139,9 @@ function switchDeck(id){
   if (id === deckId) return; if (editingText) finishText();
   deckId = id; deck = '20'; slides = clone(baseFor()); overridden.clear(); undo.length = 0; curId = null; clearSel(); hideAI();
   if (!store.db) loadLocal();
-  renderDecks(); renderAll(); if (store.db) subSlides();
+  renderDecks(); renderAll(); if (store.db) subSlides(); subVersions();
 }
-async function createDeck(name, copy){
+async function createDeck(name, copy, imported){
   const id = nid('d'); const nm = String(name || '').trim().slice(0, 60) || '새 발표';
   const src = copy ? list().map(s => clone(s)) : null;
   decks.push({id, name:nm});
@@ -1045,7 +1149,8 @@ async function createDeck(name, copy){
   else { try { localStorage.setItem(LSD, JSON.stringify(decks.filter(d => d.id !== 'cuda'))); } catch (_) {} }
   switchDeck(id);
   let seed;
-  if (src) seed = src.map((s, i) => ({...s, id:nid('n'), d:'20', o20:i, o5:i}));
+  if (imported){ seed = []; imported.forEach((sv, i) => { if (!sv || !Array.isArray(sv.els)) return; const t = {id:nid('n'), kind:['cover', 'content', 'refs', 'plain'].includes(sv.kind) ? sv.kind : 'content', sec:sv.sec == null ? null : +sv.sec, src:String(sv.src || '').slice(0, 400), tr:sv.tr, d:'20', o20:i, o5:i, notes:String(sv.notes || ''), els:sv.els.map(vElKeep).filter(Boolean)}; seed.push(t); }); }
+  else if (src) seed = src.map((s, i) => ({...s, id:nid('n'), d:'20', o20:i, o5:i}));
   else seed = [
     {id:nid('n'), kind:'cover', d:'20', o20:0, els:[I('cover', 0, 0, 1600, 900, {radius:0, op:0.2, anim:'none'}), R(128, 540, 64, 6), T(esc(nm), 128, 568, 1300, 100, {size:72, weight:600, lh:1.1}), T('부제', 128, 676, 1300, 44, {size:28, color:'t2'}), T('발표자 · 날짜', 128, 772, 1300, 32, {size:20, color:'t2'})], notes:''},
     {id:nid('n'), kind:'content', sec:-1, d:'20', o20:1, src:'', els:[H('이 발표의 핵심 주장을 한 문장으로 쓴다'), A('execsum', 96, 200, 1408, 620, {rows:EXEC})], notes:''},
@@ -1062,17 +1167,19 @@ async function connect(){
     decks = [{id:'cuda', name:'CUDA 플랫폼 발표'}].concat(snap.docs.map(d => ({id:d.id, name:String((d.data() || {}).name || '발표').slice(0, 60)})));
     renderDecks();
   }, () => {});
-  subSlides();
+  subSlides(); subVersions();
 }
 $('#deckSel').addEventListener('change', ev => switchDeck(ev.target.value));
 $('#bNewDeck').addEventListener('click', () => { const p = $('#deckPop'); p.hidden = !p.hidden; if (!p.hidden) $('#deckName').focus(); });
 $('#deckForm').addEventListener('submit', ev => { ev.preventDefault(); const copy = ev.submitter && ev.submitter.dataset.copy === '1'; $('#deckPop').hidden = true; createDeck($('#deckName').value, copy); $('#deckName').value = ''; });
-/* ---------- canvas interaction: select, marquee, group move, resize ---------- */
+/* ---------- canvas interaction: select, marquee, group move, alt-duplicate, snap, resize, rotate, pan ---------- */
 const canvas = $('#canvas');
-let drag = null, marq = null;
+let drag = null, marq = null, pan = null, spaceDown = false;
 const multi = new Set();
+function groupIds(s, id){ const e = s.els.find(x => x.id === id); return e && e.g ? s.els.filter(x => x.g === e.g).map(x => x.id) : [id]; }
 function selected(){ const s = cur(); if (!s) return []; const ids = new Set(multi); if (selId) ids.add(selId); return s.els.filter(e => ids.has(e.id)); }
 function clearSel(){ selId = null; multi.clear(); }
+function selectIds(ids){ clearSel(); ids.forEach(i => multi.add(i)); selId = ids[ids.length - 1] || null; if (multi.size === 1) multi.clear(); }
 function toSlide(ev){ const r = canvas.getBoundingClientRect(); return {x:(ev.clientX - r.left) / K, y:(ev.clientY - r.top) / K}; }
 const isBg = e => e.w >= 1500 && e.h >= 800;
 function drawMarq(){
@@ -1080,66 +1187,131 @@ function drawMarq(){
   const x0 = Math.min(marq.x0, marq.x1), y0 = Math.min(marq.y0, marq.y1);
   m.style.cssText = `left:${x0}px;top:${y0}px;width:${Math.abs(marq.x1 - marq.x0)}px;height:${Math.abs(marq.y1 - marq.y0)}px`;
 }
+function guides(gs){ canvas.querySelectorAll('.guide').forEach(n => n.remove()); gs.forEach(([ax, v]) => { const d = document.createElement('div'); d.className = 'guide ' + ax; d.style[ax === 'v' ? 'left' : 'top'] = v + 'px'; canvas.appendChild(d); }); }
+function snapMove(s, group, dx, dy){
+  const ids = new Set(group.map(g => g.e.id));
+  const bx0 = Math.min(...group.map(g => g.x)) + dx, by0 = Math.min(...group.map(g => g.y)) + dy;
+  const bx1 = Math.max(...group.map(g => g.x + g.e.w)) + dx, by1 = Math.max(...group.map(g => g.y + g.e.h)) + dy;
+  const xs = [96, 800, 1504], ys = [196, 450, 820, 72];
+  s.els.forEach(e => { if (ids.has(e.id) || isBg(e) || e.hidden) return; xs.push(e.x, e.x + e.w / 2, e.x + e.w); ys.push(e.y, e.y + e.h / 2, e.y + e.h); });
+  const th = 6 / Math.max(K, 0.2); let sx = 0, sy = 0, gx = null, gy = null, best = th + 1;
+  [bx0, (bx0 + bx1) / 2, bx1].forEach(v => xs.forEach(c => { const d = c - v; if (Math.abs(d) < best && Math.abs(d) <= th){ best = Math.abs(d); sx = d; gx = c; } }));
+  best = th + 1;
+  [by0, (by0 + by1) / 2, by1].forEach(v => ys.forEach(c => { const d = c - v; if (Math.abs(d) < best && Math.abs(d) <= th){ best = Math.abs(d); sy = d; gy = c; } }));
+  const out = []; if (gx != null) out.push(['v', gx]); if (gy != null) out.push(['h', gy]); guides(out);
+  return [dx + sx, dy + sy];
+}
 canvas.addEventListener('pointerdown', ev => {
+  if (ev.button === 2) return;
+  if (spaceDown || ev.button === 1){ pan = {sx:ev.clientX, sy:ev.clientY, px:PX, py:PY}; canvas.setPointerCapture(ev.pointerId); ev.preventDefault(); return; }
   if (editingText){ if (ev.target.closest('.editing')) return; finishText(); }
-  const s = cur(); if (!s) return;
-  const elNode = ev.target.closest('.el'); const id = elNode && elNode.dataset.id; const e = id && s.els.find(x => x.id === id);
-  if (!e || (isBg(e) && !selected().includes(e) && !ev.altKey)){
-    const p = toSlide(ev); marq = {x0:p.x, y0:p.y, x1:p.x, y1:p.y, add:ev.shiftKey};
+  const s = cur(); if (!s) return; closeCtx();
+  if (ev.detail >= 2 && !ev.shiftKey){ const nd = ev.target.closest('.el'); const te = nd && s.els.find(x => x.id === nd.dataset.id); if (te && te.type === 'text' && !te.lock){ ev.preventDefault(); startEdit(te.id); return; } }
+  const elNode = ev.target.closest('.el'); const id = elNode && elNode.dataset.id; let e = id && s.els.find(x => x.id === id);
+  if (e && e.lock && !selected().includes(e)) e = null;
+  if (!e || (isBg(e) && !selected().includes(e))){
+    const p = toSlide(ev); marq = {x0:p.x, y0:p.y, x1:p.x, y1:p.y};
     if (!ev.shiftKey){ clearSel(); renderCanvas(); renderPanel(); }
     hideAI(); canvas.setPointerCapture(ev.pointerId); ev.preventDefault(); return;
   }
+  const gids = groupIds(s, e.id);
   if (ev.shiftKey){
-    if (multi.has(id) || selId === id){ multi.delete(id); if (selId === id){ selId = [...multi].pop() || null; } }
-    else { if (selId) multi.add(selId); multi.add(id); selId = id; }
+    const on = gids.every(g => g === selId || multi.has(g));
+    if (on){ gids.forEach(g => multi.delete(g)); if (gids.includes(selId)) selId = [...multi].pop() || null; }
+    else { if (selId) multi.add(selId); gids.forEach(g => multi.add(g)); selId = e.id; }
+    if (multi.size === 1){ selId = [...multi][0]; multi.clear(); }
     renderCanvas(); renderPanel(); placeAI(); return;
   }
-  if (!(selId === id || multi.has(id))){ clearSel(); selId = id; renderCanvas(); renderPanel(); }
-  else if (selId !== id){ selId = id; renderPanel(); }
-  const resize = !!ev.target.closest('[data-h]');
-  drag = {id, sx:ev.clientX, sy:ev.clientY, w:e.w, h:e.h, resize, moved:false, group:selected().map(x => ({e:x, x:x.x, y:x.y}))};
+  if (!(selId === e.id || multi.has(e.id))){ selectIds(gids); renderCanvas(); renderPanel(); }
+  const resize = !!ev.target.closest('[data-h]'), rotate = !!ev.target.closest('[data-r]');
+  if (selected().some(x => x.lock) && !resize){ hideAI(); return; }
+  drag = {id:e.id, sx:ev.clientX, sy:ev.clientY, w:e.w, h:e.h, ratio:e.w / e.h, resize, rotate, alt:ev.altKey && !resize && !rotate, moved:false, group:selected().map(x => ({e:x, x:x.x, y:x.y}))};
   hideAI(); canvas.setPointerCapture(ev.pointerId); ev.preventDefault();
 });
 canvas.addEventListener('pointermove', ev => {
+  if (pan){ PX = pan.px + ev.clientX - pan.sx; PY = pan.py + ev.clientY - pan.sy; applyView(); return; }
   if (marq){ const p = toSlide(ev); marq.x1 = p.x; marq.y1 = p.y; drawMarq(); return; }
   if (!drag) return; const s = cur(); const e = s.els.find(x => x.id === drag.id); if (!e) return;
-  const dx = (ev.clientX - drag.sx) / K, dy = (ev.clientY - drag.sy) / K;
+  let dx = (ev.clientX - drag.sx) / K, dy = (ev.clientY - drag.sy) / K;
   if (!drag.moved && Math.hypot(dx, dy) < 3) return;
-  if (!drag.moved){ snapshot(); drag.moved = true; dragging = true; }
-  const snap = v => Math.round(v / 4) * 4;
+  if (!drag.moved){
+    snapshot(drag.rotate ? '회전' : drag.resize ? '크기 조절' : drag.alt ? '복제하며 이동' : '이동'); drag.moved = true; dragging = true;
+    if (drag.alt){ const gmap = {}; const copies = drag.group.map(g => { const c = clone(g.e); c.id = nid('e'); if (c.g){ gmap[c.g] = gmap[c.g] || nid('g'); c.g = gmap[c.g]; } s.els.push(c); return {e:c, x:g.x, y:g.y}; }); drag.group = copies; selectIds(copies.map(c => c.e.id)); renderCanvas(); }
+  }
+  const snap4 = v => Math.round(v / 4) * 4;
+  if (drag.rotate){
+    const r = canvas.getBoundingClientRect(); const cx = r.left + (e.x + e.w / 2) * K, cy = r.top + (e.y + e.h / 2) * K;
+    let a = Math.atan2(ev.clientY - cy, ev.clientX - cx) * 180 / Math.PI + 90; if (ev.shiftKey) a = Math.round(a / 15) * 15; else a = Math.round(a);
+    e.rot = ((a % 360) + 360) % 360; if (e.rot > 180) e.rot -= 360;
+    const n = canvas.querySelector(`.el[data-id="${CSS.escape(e.id)}"]`); if (n) n.style.transform = e.rot ? `rotate(${e.rot}deg)` : '';
+    return;
+  }
   if (drag.resize){
-    e.w = Math.max(16, snap(drag.w + dx)); e.h = Math.max(8, snap(drag.h + dy));
-    if (e.type === 'asset') renderCanvas();
-    else { const n = canvas.querySelector(`.el[data-id="${CSS.escape(e.id)}"]`); if (n){ n.style.width = e.w + 'px'; n.style.height = e.h + 'px'; } }
-  } else drag.group.forEach(g => { g.e.x = snap(g.x + dx); g.e.y = snap(g.y + dy); const n = canvas.querySelector(`.el[data-id="${CSS.escape(g.e.id)}"]`); if (n){ n.style.left = g.e.x + 'px'; n.style.top = g.e.y + 'px'; } });
+    let w = Math.max(16, snap4(drag.w + dx)), h = Math.max(8, snap4(drag.h + dy));
+    if (ev.shiftKey || e.type === 'img'){ if (Math.abs(dx) > Math.abs(dy)) h = Math.round(w / drag.ratio / 4) * 4; else w = Math.round(h * drag.ratio / 4) * 4; }
+    e.w = w; e.h = h;
+    if (e.type === 'asset') renderCanvas(); else { const n = canvas.querySelector(`.el[data-id="${CSS.escape(e.id)}"]`); if (n){ n.style.width = e.w + 'px'; n.style.height = e.h + 'px'; } }
+    return;
+  }
+  if (ev.shiftKey){ if (Math.abs(dx) > Math.abs(dy)) dy = 0; else dx = 0; }
+  if (!ev.metaKey && !ev.ctrlKey) [dx, dy] = snapMove(s, drag.group, dx, dy); else guides([]);
+  drag.group.forEach(g => { g.e.x = snap4(g.x + dx); g.e.y = snap4(g.y + dy); const n = canvas.querySelector(`.el[data-id="${CSS.escape(g.e.id)}"]`); if (n){ n.style.left = g.e.x + 'px'; n.style.top = g.e.y + 'px'; } });
 });
 canvas.addEventListener('pointerup', () => {
+  guides([]);
+  if (pan){ pan = null; return; }
   if (marq){
     const m = marq; marq = null; const x0 = Math.min(m.x0, m.x1), x1 = Math.max(m.x0, m.x1), y0 = Math.min(m.y0, m.y1), y1 = Math.max(m.y0, m.y1);
-    if (x1 - x0 > 6 || y1 - y0 > 6){ const s = cur(); s.els.forEach(e => { if (!isBg(e) && e.x < x1 && e.x + e.w > x0 && e.y < y1 && e.y + e.h > y0) multi.add(e.id); }); selId = [...multi].pop() || null; if (multi.size === 1) multi.clear(); }
+    if (x1 - x0 > 6 || y1 - y0 > 6){ const s = cur(); const hit = new Set([...multi, ...(selId ? [selId] : [])]);
+      s.els.forEach(e => { if (!isBg(e) && !e.lock && !e.hidden && e.x < x1 && e.x + e.w > x0 && e.y < y1 && e.y + e.h > y0) groupIds(s, e.id).forEach(i => hit.add(i)); }); selectIds([...hit]); }
     renderCanvas(); renderPanel(); placeAI(); return;
   }
   if (!drag) return; const moved = drag.moved; drag = null; dragging = false;
   if (moved) changed(cur(), {panel:true});
   placeAI();
 });
-canvas.addEventListener('dblclick', ev => {
-  const n = ev.target.closest('.el'); const s = cur(); if (!n || !s) return;
-  const e = s.els.find(x => x.id === n.dataset.id); if (!e || e.type !== 'text') return;
-  snapshot(); editingText = true; multi.clear(); selId = e.id; n.classList.add('editing');
+function startEdit(id){
+  const s = cur(); const n = canvas.querySelector(`.el[data-id="${CSS.escape(id)}"]`); const e = s && s.els.find(x => x.id === id); if (!n || !e || e.lock || e.type !== 'text') return;
+  snapshot('텍스트 편집'); editingText = true; multi.clear(); selId = e.id; n.classList.add('editing');
   const t = n.querySelector('.txt'); t.contentEditable = 'true'; t.focus();
   const r = document.createRange(); r.selectNodeContents(t); r.collapse(false); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r);
   hideAI();
+}
+canvas.addEventListener('dblclick', ev => {
+  if (editingText) return;
+  const n = ev.target.closest('.el') || document.elementFromPoint(ev.clientX, ev.clientY)?.closest('#canvas .el'); const s = cur(); if (!n || !s) return;
+  const e = s.els.find(x => x.id === n.dataset.id); if (!e || e.lock) return;
+  if (e.type !== 'text'){ if (e.type === 'asset'){ tab = 'props'; setTab(); renderPanel(); const f = $('#panel [data-p], #panel .grid input'); if (f) f.focus(); } return; }
+  startEdit(e.id);
 });
 function finishText(){
   const n = canvas.querySelector('.el.editing'); editingText = false; aiRange = null; if (!n) return;
   const s = cur(); const e = s.els.find(x => x.id === n.dataset.id);
   const t = n.querySelector('.txt'); const html = clean(t.innerHTML);
-  if (e && html !== e.html){ e.html = html; changed(s); } else renderCanvas();
-  placeAI();
+  if (e && html !== e.html){ e.html = html; changed(s); } else { undo.pop(); renderCanvas(); }
+  placeAI(); renderStatus();
 }
 canvas.addEventListener('focusout', ev => { if (ev.target.classList && ev.target.classList.contains('txt') && editingText) setTimeout(() => { const a = document.activeElement; if (!canvas.contains(a) && !(a && a.closest && a.closest('#aibar'))) finishText(); }, 0); });
+canvas.addEventListener('contextmenu', ev => {
+  ev.preventDefault(); if (editingText) return;
+  const s = cur(); const n = ev.target.closest('.el'); const e = n && s && s.els.find(x => x.id === n.dataset.id);
+  if (e && !(selId === e.id || multi.has(e.id))){ selectIds(groupIds(s, e.id)); renderCanvas(); renderPanel(); }
+  openCtx(ev.clientX, ev.clientY);
+});
 
+/* zoom and pan: pinch (ctrl+wheel) zooms at the cursor, wheel pans when zoomed, space+drag pans */
+let ZM = 1, PX = 0, PY = 0;
+function applyView(){ fitCanvas(); }
+$('#viewport').addEventListener('wheel', ev => {
+  if (!$('#present').hidden) return;
+  if (ev.ctrlKey || ev.metaKey){
+    ev.preventDefault(); const vp = $('#viewport').getBoundingClientRect(); const old = K;
+    ZM = Math.min(4, Math.max(0.5, ZM * Math.exp(-ev.deltaY * 0.01)));
+    const cw = $('#canvasWrap').getBoundingClientRect(); const fx = (ev.clientX - cw.left) / old, fy = (ev.clientY - cw.top) / old;
+    fitCanvas(); const nw = $('#canvasWrap').getBoundingClientRect(); PX += ev.clientX - (nw.left + fx * K); PY += ev.clientY - (nw.top + fy * K); fitCanvas();
+  } else if (ZM > 1.001){ ev.preventDefault(); PX -= ev.deltaX; PY -= ev.deltaY; fitCanvas(); }
+}, {passive:false});
+function zoomTo(z){ ZM = z; if (z === 1){ PX = 0; PY = 0; } fitCanvas(); }
 /* ============ AI: select-to-edit and slide generation (viewer's own Claude via `sample`) ============ */
 let sample = null, aiRange = null, aiCtl = null;
 const STYLE = `문체 기준 (한국어 경영전략 발표 자료, 청중은 MBA 학생과 교수):
@@ -1238,18 +1410,24 @@ function aiFail(err){
   if (code === 'aborted' || (err && err.name === 'AbortError')) return;
   toast(code === 'rate_limited' ? '요청이 많습니다. 잠시 뒤에 다시 시도해 주세요' : '요청을 처리하지 못했습니다. 다시 시도해 주세요');
 }
-function hideAI(){ const b = $('#aibar'); if (b && !b.classList.contains('busy')) b.hidden = true; }
-function placeAI(){
-  const bar = $('#aibar'); if (!sample || !bar || bar.classList.contains('busy')) return;
-  const vp = $('#viewport').getBoundingClientRect(); let box = null;
+function hideAI(){ const b = $('#aibar'); if (b && !b.classList.contains('busy') && !review) b.hidden = true; }
+function placeAI(force){
+  const bar = $('#aibar'); if (!sample || !bar) return;
+  const vp = $('#viewport').getBoundingClientRect(); const cw = $('#canvasWrap').getBoundingClientRect(); let box = null;
+  const sel = selected();
   if (aiRange){ const rr = aiRange.getBoundingClientRect(); box = {l:rr.left - vp.left, t:rr.top - vp.top, b:rr.bottom - vp.top}; }
-  else { const sel = selected(); if (!sel.length || editingText){ bar.hidden = true; return; }
-    const cw = $('#canvasWrap').getBoundingClientRect(); const x0 = Math.min(...sel.map(e => e.x)), y0 = Math.min(...sel.map(e => e.y)), y1 = Math.max(...sel.map(e => e.y + e.h));
-    box = {l:cw.left - vp.left + x0 * K, t:cw.top - vp.top + y0 * K, b:cw.top - vp.top + y1 * K}; }
+  else {
+    if (!(review || force || sel.length) || (editingText && !review)){ if (!bar.classList.contains('busy')) bar.hidden = true; return; }
+    if (!sel.length && aiScope === 'sel') aiScope = 'slide';
+    if (sel.length && !review && !force && aiScope !== 'sel') aiScope = 'sel';
+    if (sel.length && aiScope === 'sel'){ const x0 = Math.min(...sel.map(e => e.x)), y0 = Math.min(...sel.map(e => e.y)), y1 = Math.max(...sel.map(e => e.y + e.h)); box = {l:cw.left - vp.left + x0 * K, t:cw.top - vp.top + y0 * K, b:cw.top - vp.top + y1 * K}; }
+    else box = {l:cw.left - vp.left + 24, t:cw.top - vp.top + 16, b:cw.top - vp.top + 16};
+  }
   bar.hidden = false; const w = bar.offsetWidth, h = bar.offsetHeight;
   const left = Math.max(8, Math.min(vp.width - w - 8, box.l)); let top = box.b + 8; if (top + h > vp.height - 8) top = Math.max(8, box.t - h - 8);
   bar.style.left = left + 'px'; bar.style.top = top + 'px';
-  $('#aiCount').textContent = aiRange ? '선택한 문장' : `${selected().length}개 요소`;
+  document.querySelectorAll('#aiScope button').forEach(x => { x.setAttribute('aria-pressed', String(x.dataset.scope === aiScope)); x.disabled = !!aiRange || (x.dataset.scope === 'sel' && !sel.length); });
+  $('#aiCount').textContent = aiRange ? '선택한 문장' : aiScope === 'deck' ? `덱 전체 ${list().length}장` : aiScope === 'slide' ? '이 장표 전체' : `${sel.length}개 요소`;
 }
 document.addEventListener('selectionchange', () => {
   if (!editingText || !sample) return; const sl = getSelection();
@@ -1328,7 +1506,7 @@ $('#panel').addEventListener('input', ev => {
     if (v === '20' && t.checked && s.o20 == null) s.o20 = 50;
     s.d = [...set].filter(Boolean).join(' ') || deck; changed(s); renderAll(); }
 });
-let snapT = 0; function snapshotOnce(){ const now = Date.now(); if (now - snapT > 1200) snapshot(); snapT = now; }
+let snapT = 0; function snapshotOnce(label){ const now = Date.now(); if (now - snapT > 1200) snapshot(label || '속성 변경'); snapT = now; }
 $('#panel').addEventListener('click', ev => {
   const b = ev.target.closest('button'); if (!b) return; const s = cur(); const e = curEl();
   if (b.dataset.asset){ addAsset(b.dataset.asset); return; }
@@ -1397,7 +1575,7 @@ $('#bDup').onclick = () => { const c = cur(); if (!c) return; const L = list(); 
 function move(dir){ const L = list(); const i = L.findIndex(s => s.id === curId); const j = i + dir; if (i < 0 || j < 0 || j >= L.length) return;
   const a = L[i], b = L[j]; const oa = ord(a), ob = ord(b); setOrd(a, ob); setOrd(b, oa); if (oa === ob) setOrd(a, ob + dir * 0.01); changed(a); changed(b); renderAll(); }
 $('#bUp').onclick = () => move(-1); $('#bDown').onclick = () => move(1);
-$('#bText').onclick = addText; $('#bUndo').onclick = doUndo;
+$('#bText').onclick = addText; $('#bUndo').onclick = () => doUndo();
 document.querySelectorAll('#bar .seg button').forEach(b => b.onclick = () => { deck = b.dataset.deck; selId = null; renderAll(); });
 function setTab(){ document.querySelectorAll('#tabs button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.tab === tab))); }
 document.querySelectorAll('#tabs button').forEach(b => b.onclick = () => { tab = b.dataset.tab; setTab(); renderPanel(); });
@@ -1405,24 +1583,513 @@ document.querySelectorAll('#tabs button').forEach(b => b.onclick = () => { tab =
 let notesT = null;
 $('#notes').addEventListener('input', () => { const s = cur(); if (!s) return; s.notes = $('#notes').value; clearTimeout(notesT); notesT = setTimeout(() => { overridden.add(s.id); queueSave(s); }, 400); });
 
+/* ============ HISTORY: one undo/redo stack shared by direct edits, commands and the agent ============ */
+const undo = [], redo = [];
+function snapshot(label = '편집', ids){
+  const items = (ids || [curId]).filter(Boolean).map(id => { const s = slides.find(x => x.id === id); return {id, data:s ? clone(s) : null}; });
+  if (!items.length) return; undo.push({label, items, cur:curId}); if (undo.length > 150) undo.shift(); redo.length = 0; renderStatus();
+}
+function swapItems(items){
+  return items.map(it => {
+    const i = slides.findIndex(x => x.id === it.id); const now = i >= 0 ? clone(slides[i]) : null;
+    if (it.data){ if (i < 0) slides.push(clone(it.data)); else slides[i] = clone(it.data); }
+    else if (i >= 0) slides[i].deleted = true;
+    const s = slides.find(x => x.id === it.id); if (s){ overridden.add(s.id); queueSave(s); }
+    return {id:it.id, data:now};
+  });
+}
+function doUndo(){ if (editingText){ document.execCommand('undo'); return; } const u = undo.pop(); if (!u) return; redo.push({label:u.label, items:swapItems(u.items), cur:curId}); curId = u.cur; if (!list().some(s => s.id === curId)) curId = (list()[0] || {}).id; clearSel(); hideAI(); renderAll(); toast('실행 취소: ' + u.label); }
+function doRedo(){ if (editingText){ document.execCommand('redo'); return; } const r = redo.pop(); if (!r) return; undo.push({label:r.label, items:swapItems(r.items), cur:curId}); curId = r.cur; if (!list().some(s => s.id === curId)) curId = (list()[0] || {}).id; clearSel(); hideAI(); renderAll(); toast('다시 실행: ' + r.label); }
+function changed(s, opts = {}){
+  overridden.add(s.id); queueSave(s);
+  if (!opts.noCanvas && s.id === curId) renderCanvas();
+  renderThumb(s.id); if (opts.panel) renderPanel(); renderStatus();
+}
+
+/* ============ COMMANDS (keyboard, palette, context menu, app menu all call these) ============ */
+let clip = null;
+const isMac = /Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent);
+const KEYS = k => isMac ? k.replace(/Mod\+/g, '⌘').replace(/Shift\+/g, '⇧').replace(/Alt\+/g, '⌥') : k.replace(/Mod\+/g, 'Ctrl+');
+function editSel(label, fn, {keepSel = true} = {}){ const s = cur(); const g = selected(); if (!s || !g.length) return false; snapshot(label); fn(s, g); if (!keepSel) clearSel(); changed(s, {panel:true}); placeAI(); return true; }
+function copySel(){ const g = selected(); if (!g.length) return null; clip = {from:curId, els:clone(g)}; return JSON.stringify({cudaStudio:1, els:clip.els}); }
+function pasteEls(els, from){
+  const s = cur(); if (!s || !els || !els.length) return; snapshot('붙여넣기');
+  const off = from === curId ? 24 : 0; const gmap = {}; const ids = [];
+  els.forEach(o => { const v = o.id && o.type ? {...o} : null; if (!v) return; const e = clone(v); e.id = nid('e'); e.x = (+e.x || 0) + off; e.y = (+e.y || 0) + off; if (e.g){ gmap[e.g] = gmap[e.g] || nid('g'); e.g = gmap[e.g]; } if (e.type === 'text') e.html = clean(e.html); s.els.push(e); ids.push(e.id); });
+  if (clip && from === curId) clip.els.forEach(x => { x.x += 24; x.y += 24; });
+  selectIds(ids); changed(s, {panel:true}); placeAI();
+}
+function dupSlide(){ const c = cur(); if (!c) return; const L = list(); const i = L.findIndex(s => s.id === curId); const s = clone(c); s.id = nid('n'); s.els.forEach(e => e.id = nid('e')); setOrd(s, between(i)); slides.push(s); snapshot('장표 복제', [s.id]); undo[undo.length - 1].items[0].data = null; curId = s.id; clearSel(); changed(s); renderAll(); }
+function zorder(dir){ editSel(dir === 'front' ? '맨 앞으로' : dir === 'back' ? '맨 뒤로' : dir === 'fwd' ? '앞으로' : '뒤로', (s, g) => {
+  const ids = new Set(g.map(e => e.id)); const rest = s.els.filter(e => !ids.has(e.id));
+  if (dir === 'front') s.els = rest.concat(g); else if (dir === 'back'){ const bg = rest.filter(isBg); s.els = bg.concat(g, rest.filter(e => !isBg(e))); }
+  else { const arr = s.els.slice(); const idx = g.map(e => arr.indexOf(e)).sort((a, b) => dir === 'fwd' ? b - a : a - b);
+    idx.forEach(i => { const j = dir === 'fwd' ? i + 1 : i - 1; if (j < 0 || j >= arr.length || ids.has(arr[j].id)) return; [arr[i], arr[j]] = [arr[j], arr[i]]; }); s.els = arr; } }); }
+function fmtText(cmd){ if (editingText){ document.execCommand(cmd); return true; } return false; }
+const CMD = {
+  undo:{l:'실행 취소', k:'Mod+Z', run:doUndo},
+  redo:{l:'다시 실행', k:'Mod+Shift+Z', run:doRedo},
+  cut:{l:'잘라내기', k:'Mod+X', run:() => { if (copySel()) editSel('잘라내기', (s, g) => { const ids = new Set(g.map(e => e.id)); s.els = s.els.filter(e => !ids.has(e.id)); }, {keepSel:false}); }},
+  copy:{l:'복사', k:'Mod+C', run:() => { const t = copySel(); if (t && navigator.clipboard) navigator.clipboard.writeText(t).catch(() => {}); if (t) toast(`${clip.els.length}개 요소 복사`); }},
+  paste:{l:'붙여넣기', k:'Mod+V', run:() => { if (clip) pasteEls(clip.els, clip.from); }},
+  dup:{l:'복제', k:'Mod+D', run:() => { if (selected().length){ copySel(); pasteEls(clip.els, curId); } else dupSlide(); }},
+  del:{l:'삭제', k:'Delete', run:() => editSel('삭제', (s, g) => { const ids = new Set(g.map(e => e.id)); s.els = s.els.filter(e => !ids.has(e.id)); }, {keepSel:false})},
+  all:{l:'모두 선택', k:'Mod+A', run:() => { const s = cur(); if (!s) return; selectIds(s.els.filter(x => !isBg(x) && !x.lock && !x.hidden).map(x => x.id)); renderCanvas(); renderPanel(); placeAI(); }},
+  group:{l:'그룹', k:'Mod+G', run:() => { if (selected().length < 2) return; const g = nid('g'); editSel('그룹', (s, els) => els.forEach(e => e.g = g)); }},
+  ungroup:{l:'그룹 해제', k:'Mod+Shift+G', run:() => editSel('그룹 해제', (s, els) => els.forEach(e => delete e.g))},
+  front:{l:'맨 앞으로', k:'Mod+Shift+]', run:() => zorder('front')},
+  fwd:{l:'앞으로', k:'Mod+]', run:() => zorder('fwd')},
+  bwd:{l:'뒤로', k:'Mod+[', run:() => zorder('bwd')},
+  back:{l:'맨 뒤로', k:'Mod+Shift+[', run:() => zorder('back')},
+  lock:{l:'잠금 전환', k:'Mod+Shift+L', run:() => { const on = !selected().every(e => e.lock); editSel(on ? '잠금' : '잠금 해제', (s, g) => g.forEach(e => e.lock = on)); }},
+  hide:{l:'숨기기 전환', k:'Mod+Shift+H', run:() => { const on = !selected().every(e => e.hidden); editSel(on ? '숨기기' : '보이기', (s, g) => g.forEach(e => e.hidden = on)); }},
+  bold:{l:'굵게', k:'Mod+B', run:() => fmtText('bold')},
+  italic:{l:'기울임', k:'Mod+I', run:() => fmtText('italic')},
+  underline:{l:'밑줄', k:'Mod+U', run:() => fmtText('underline')},
+  save:{l:'버전 저장', k:'Mod+S', run:() => saveVersion()},
+  find:{l:'찾기와 바꾸기', k:'Mod+F', run:() => openFind()},
+  palette:{l:'명령 팔레트', k:'Mod+K', run:() => openPal()},
+  text:{l:'텍스트 추가', k:'T', run:() => addText()},
+  newSlide:{l:'새 장표', k:'Mod+Shift+N', run:() => $('#bAdd').click()},
+  dupSlide:{l:'장표 복제', k:'', run:dupSlide},
+  zin:{l:'확대', k:'Mod+=', run:() => zoomTo(Math.min(4, ZM * 1.25))},
+  zout:{l:'축소', k:'Mod+-', run:() => zoomTo(Math.max(0.5, ZM / 1.25))},
+  zfit:{l:'화면에 맞추기', k:'Mod+0', run:() => zoomTo(1)},
+  present:{l:'발표 시작', k:'Mod+Enter', run:() => present()},
+  check:{l:'점검 보기', k:'', run:() => { tab = 'check'; setTab(); renderPanel(); }},
+  history:{l:'수정 이력 보기', k:'', run:() => { tab = 'hist'; setTab(); renderPanel(); }},
+  pptx:{l:'PPTX로 내보내기', k:'', run:() => exportPPTX()},
+  pdf:{l:'PDF로 내보내기', k:'', run:() => exportPDF()},
+  json:{l:'프로젝트 파일로 저장', k:'Mod+Shift+S', run:() => exportJSON()},
+  open:{l:'프로젝트 파일 열기', k:'Mod+O', run:() => $('#fileIn').click()},
+  ai:{l:'AI에게 요청', k:'Mod+J', run:() => { if (!sample) return; if (!selected().length){ aiScope = 'slide'; } placeAI(true); setTimeout(() => $('#aiq').focus(), 0); }},
+  aiSlide:{l:'AI로 장표 만들기', k:'', run:() => $('#bGen').click()},
+};
+function keyOf(ev){
+  const parts = []; if (ev.metaKey || ev.ctrlKey) parts.push('Mod'); if (ev.shiftKey) parts.push('Shift'); if (ev.altKey) parts.push('Alt');
+  let k = ev.key; if (k === '+') k = '='; if (k === '_') k = '-'; if (k === '{') k = '['; if (k === '}') k = ']';
+  if (k.length === 1) k = k.toUpperCase(); if (k === 'Backspace') k = 'Delete';
+  parts.push(k); return parts.join('+');
+}
+const KEYMAP = {}; Object.entries(CMD).forEach(([id, c]) => { if (c.k) KEYMAP[c.k.replace(/\+(\w)$/, (m, a) => '+' + a.toUpperCase())] = id; });
+KEYMAP['Mod+Y'] = 'redo'; KEYMAP['Mod+Shift+Delete'] = 'del';
 addEventListener('keydown', ev => {
+  if (ev.key === ' ' && !ev.target.closest('input,textarea,select,[contenteditable=true]') && $('#present').hidden){ if (!spaceDown){ spaceDown = true; canvas.classList.add('panning'); } ev.preventDefault(); return; }
   if (!$('#present').hidden) return;
+  if (!$('#pal').hidden || !$('#ctx').hidden){ if (ev.key === 'Escape'){ closePal(); closeCtx(); ev.preventDefault(); } if (!$('#ctx').hidden) return; if (!$('#pal').hidden) return; }
   const typing = ev.target.closest && ev.target.closest('input,textarea,select,[contenteditable=true]');
-  if ((ev.ctrlKey || ev.metaKey) && ev.key.toLowerCase() === 'z' && !typing){ ev.preventDefault(); doUndo(); return; }
-  if (typing){ if (ev.key === 'Escape' && editingText){ finishText(); } return; }
-  const s = cur(); const e = multi.size > 1 ? null : curEl();
-  if ((ev.ctrlKey || ev.metaKey) && ev.key.toLowerCase() === 'a' && s){ ev.preventDefault(); clearSel(); s.els.filter(x => !isBg(x)).forEach(x => multi.add(x.id)); selId = [...multi].pop() || null; if (multi.size === 1) multi.clear(); renderCanvas(); renderPanel(); placeAI(); return; }
-  if ((ev.key === 'Delete' || ev.key === 'Backspace') && multi.size > 1){ ev.preventDefault(); snapshot(); const ids = new Set(selected().map(x => x.id)); s.els = s.els.filter(x => !ids.has(x.id)); clearSel(); hideAI(); changed(s, {panel:true}); return; }
-  if ((ev.key === 'Delete' || ev.key === 'Backspace') && e){ ev.preventDefault(); snapshot(); s.els = s.els.filter(x => x !== e); selId = null; hideAI(); changed(s, {panel:true}); }
-  else if ((ev.ctrlKey || ev.metaKey) && ev.key.toLowerCase() === 'd' && e){ ev.preventDefault(); snapshot(); const c = clone(e); c.id = nid('e'); c.x += 24; c.y += 24; s.els.push(c); selId = c.id; changed(s, {panel:true}); }
-  else if (e && ev.key.startsWith('Arrow')){ ev.preventDefault(); snapshotOnce(); const d = ev.shiftKey ? 16 : 4;
-    if (ev.key === 'ArrowLeft') e.x -= d; if (ev.key === 'ArrowRight') e.x += d; if (ev.key === 'ArrowUp') e.y -= d; if (ev.key === 'ArrowDown') e.y += d; changed(s, {panel:true}); }
-  else if (!e && (ev.key === 'ArrowDown' || ev.key === 'ArrowUp')){ ev.preventDefault(); const L = list(); const i = L.findIndex(x => x.id === curId); const n = L[i + (ev.key === 'ArrowDown' ? 1 : -1)]; if (n){ curId = n.id; renderAll(); } }
-  else if (ev.key === 'Escape' && (selId || multi.size)){ clearSel(); hideAI(); renderCanvas(); renderPanel(); }
-  else if (ev.key === 'F5' || (ev.key === 'Enter' && (ev.ctrlKey || ev.metaKey))){ ev.preventDefault(); present(); }
-  else if (ev.key === 't' || ev.key === 'T'){ addText(); }
+  const combo = keyOf(ev); let id = KEYMAP[combo];
+  if (typing){
+    if (editingText && ev.target.closest('[contenteditable=true]')){
+      if (['bold', 'italic', 'underline'].includes(id)){ ev.preventDefault(); CMD[id].run(); return; }
+      if (ev.key === 'Escape'){ ev.preventDefault(); finishText(); return; }
+    }
+    if (['save', 'find', 'palette', 'present'].includes(id)){ ev.preventDefault(); CMD[id].run(); }
+    return;
+  }
+  if (['cut', 'copy', 'paste'].includes(id)) return; // handled by the native clipboard events below
+  if (id === 'text' && (ev.metaKey || ev.ctrlKey)) return;
+  if (id){ ev.preventDefault(); CMD[id].run(); return; }
+  const s = cur(); const g = selected();
+  if (ev.key.startsWith('Arrow') && g.length && !ev.metaKey && !ev.ctrlKey){
+    ev.preventDefault(); if (g.some(e => e.lock)) return; snapshotOnce('미세 이동'); const d = ev.shiftKey ? 16 : 4;
+    g.forEach(e => { if (ev.key === 'ArrowLeft') e.x -= d; if (ev.key === 'ArrowRight') e.x += d; if (ev.key === 'ArrowUp') e.y -= d; if (ev.key === 'ArrowDown') e.y += d; }); changed(s, {panel:true}); placeAI(); return;
+  }
+  if (!g.length && (ev.key === 'ArrowDown' || ev.key === 'ArrowUp' || ev.key === 'PageDown' || ev.key === 'PageUp')){ ev.preventDefault(); const L = list(); const i = L.findIndex(x => x.id === curId); const n = L[i + (ev.key.endsWith('Down') ? 1 : -1)]; if (n){ curId = n.id; renderAll(); } return; }
+  if (ev.key === 'Enter' && g.length === 1 && g[0].type === 'text'){ ev.preventDefault(); startEdit(g[0].id); return; }
+  if (ev.key === 'Escape'){ if (g.length){ clearSel(); hideAI(); renderCanvas(); renderPanel(); } else if (!$('#findBar').hidden) closeFind(); }
+  if (ev.key === 'F5'){ ev.preventDefault(); present(); }
+});
+addEventListener('keyup', ev => { if (ev.key === ' '){ spaceDown = false; canvas.classList.remove('panning'); } });
+const inField = t => t && t.closest && t.closest('input,textarea,select,[contenteditable=true]');
+document.addEventListener('copy', ev => { if (inField(ev.target) || !$('#present').hidden) return; const t = copySel(); if (!t) return; ev.preventDefault(); ev.clipboardData.setData('text/plain', t); toast(`${clip.els.length}개 요소 복사`); });
+document.addEventListener('cut', ev => { if (inField(ev.target) || !$('#present').hidden) return; const t = copySel(); if (!t) return; ev.preventDefault(); ev.clipboardData.setData('text/plain', t); CMD.del.run(); });
+document.addEventListener('paste', ev => {
+  if (inField(ev.target) || !$('#present').hidden) return; const s = cur(); if (!s) return;
+  const txt = ev.clipboardData && ev.clipboardData.getData('text/plain'); ev.preventDefault();
+  if (txt){ try { const o = JSON.parse(txt); if (o && o.cudaStudio && Array.isArray(o.els)){ pasteEls(o.els.map(vElKeep).filter(Boolean), clip && clip.from); return; } } catch (_) {}
+    snapshot('텍스트 붙여넣기'); const t = T(esc(txt.slice(0, 2000)).replace(/\n/g, '<br>'), 200, 360, 1200, 120, {size:28, lh:1.5}); t.id = nid('e'); s.els.push(t); selectIds([t.id]); changed(s, {panel:true}); return; }
+  if (clip) pasteEls(clip.els, clip.from);
+});
+function vElKeep(o){ const v = vEl(o); if (v){ v.id = 'x'; if (o.g) v.g = String(o.g); if (o.rot) v.rot = +o.rot || 0; if (o.lock) v.lock = true; if (o.hidden) v.hidden = true; } return v; }
+
+/* context menu (native popup inside the installed app) */
+function ctxItems(){
+  const g = selected(); const has = g.length > 0;
+  return [['cut', has], ['copy', has], ['paste', !!clip], ['dup', true], ['del', has], null, ['front', has], ['fwd', has], ['bwd', has], ['back', has], null, ['group', g.length > 1], ['ungroup', g.some(e => e.g)], ['lock', has], ['hide', has], null, ['ai', !!sample]];
+}
+function openCtx(x, y){
+  if (desktop && desktop.Menu && desktop.fs !== undefined && desktopInstalled){
+    desktop.Menu.popup(ctxItems().map(it => it ? {label:CMD[it[0]].l, enabled:it[1], accelerator:accel(CMD[it[0]].k), click:() => CMD[it[0]].run()} : {type:'separator'})).catch(() => openHtmlCtx(x, y)); return; }
+  openHtmlCtx(x, y);
+}
+function openHtmlCtx(x, y){
+  const m = $('#ctx'); m.innerHTML = ctxItems().map(it => it ? `<button type="button" data-cmd="${it[0]}" ${it[1] ? '' : 'disabled'}><span>${esc(CMD[it[0]].l)}</span><kbd>${esc(KEYS(CMD[it[0]].k))}</kbd></button>` : '<hr>').join('');
+  m.hidden = false; const w = m.offsetWidth, h = m.offsetHeight; m.style.left = Math.min(x, innerWidth - w - 8) + 'px'; m.style.top = Math.min(y, innerHeight - h - 8) + 'px';
+  const first = m.querySelector('button:not([disabled])'); if (first) first.focus();
+}
+function closeCtx(){ const m = $('#ctx'); if (m) m.hidden = true; }
+$('#ctx').addEventListener('click', ev => { const b = ev.target.closest('button[data-cmd]'); if (!b) return; closeCtx(); CMD[b.dataset.cmd].run(); });
+$('#ctx').addEventListener('keydown', ev => { const bs = [...$('#ctx').querySelectorAll('button:not([disabled])')]; const i = bs.indexOf(document.activeElement); if (ev.key === 'ArrowDown'){ ev.preventDefault(); (bs[i + 1] || bs[0]).focus(); } if (ev.key === 'ArrowUp'){ ev.preventDefault(); (bs[i - 1] || bs[bs.length - 1]).focus(); } if (ev.key === 'Escape') closeCtx(); });
+document.addEventListener('pointerdown', ev => { if (!ev.target.closest('#ctx')) closeCtx(); if (!ev.target.closest('#exportPop,#bExport')) $('#exportPop').hidden = true; }, true);
+
+/* command palette */
+let palSel = 0;
+function palEntries(q){
+  const L = list(); const items = [];
+  Object.entries(CMD).forEach(([id, c]) => items.push({t:c.l, k:c.k, run:() => c.run(), kind:'명령'}));
+  L.forEach((s, i) => items.push({t:`${i + 1}. ${plainTitle(s)}`, run:() => { curId = s.id; clearSel(); renderAll(); }, kind:'장표'}));
+  LAYOUTS.forEach((l, i) => items.push({t:'레이아웃: ' + l[0], run:() => addLayout(i), kind:'삽입'}));
+  Object.entries(ASSETS).forEach(([k, a]) => items.push({t:'에셋: ' + a.name, run:() => addAsset(k), kind:'삽입'}));
+  const qq = q.trim().toLowerCase(); return qq ? items.filter(it => it.t.toLowerCase().includes(qq)).slice(0, 40) : items.slice(0, 40);
+}
+function renderPal(){ const it = palEntries($('#palq').value); palSel = Math.min(palSel, it.length - 1); $('#pall').innerHTML = it.map((x, i) => `<button type="button" data-i="${i}" aria-selected="${i === palSel}"><em>${esc(x.kind)}</em><span>${esc(x.t)}</span>${x.k ? `<kbd>${esc(KEYS(x.k))}</kbd>` : ''}</button>`).join(''); $('#pall').__items = it; const a = $('#pall').querySelector('[aria-selected=true]'); if (a) a.scrollIntoView({block:'nearest'}); }
+function openPal(){ if (editingText) finishText(); $('#pal').hidden = false; $('#palq').value = ''; palSel = 0; renderPal(); $('#palq').focus(); }
+function closePal(){ $('#pal').hidden = true; }
+$('#palq').addEventListener('input', () => { palSel = 0; renderPal(); });
+$('#palq').addEventListener('keydown', ev => { const it = $('#pall').__items || []; if (ev.key === 'ArrowDown'){ ev.preventDefault(); palSel = Math.min(it.length - 1, palSel + 1); renderPal(); } else if (ev.key === 'ArrowUp'){ ev.preventDefault(); palSel = Math.max(0, palSel - 1); renderPal(); } else if (ev.key === 'Enter'){ ev.preventDefault(); const x = it[palSel]; closePal(); if (x) x.run(); } else if (ev.key === 'Escape'){ closePal(); } });
+$('#pall').addEventListener('click', ev => { const b = ev.target.closest('button'); if (!b) return; const x = ($('#pall').__items || [])[+b.dataset.i]; closePal(); if (x) x.run(); });
+$('#pal').addEventListener('pointerdown', ev => { if (ev.target === $('#pal')) closePal(); });
+
+/* find and replace across the deck (text elements, asset labels, notes) */
+let hits = [], hitI = -1;
+function plain(h){ return String(h || '').replace(/<br\s*\/?>/g, '\n').replace(/<[^>]+>/g, '').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&amp;/g, '&'); }
+function runFind(){
+  const q = $('#fq').value; hits = []; if (!q){ $('#fcount').textContent = ''; return; }
+  list().forEach(s => { s.els.forEach(e => { const txt = e.type === 'text' ? plain(e.html) : e.type === 'asset' ? Object.values(e.p || {}).join(' ') : ''; if (txt.includes(q)) hits.push({s:s.id, e:e.id}); }); if ((s.notes || '').includes(q)) hits.push({s:s.id, notes:true}); });
+  $('#fcount').textContent = hits.length ? `${Math.max(0, hitI) + 1}/${hits.length}` : '없음';
+}
+function gotoHit(d){ if (!hits.length) return; hitI = (hitI + d + hits.length) % hits.length; const h = hits[hitI]; curId = h.s; clearSel(); if (h.e) selId = h.e; renderAll(); $('#fcount').textContent = `${hitI + 1}/${hits.length}`; if (h.notes){ const n = $('#notes'); const i = n.value.indexOf($('#fq').value); n.focus(); n.setSelectionRange(i, i + $('#fq').value.length); $('#fq').focus(); } }
+function replaceIn(s, e, q, r){
+  if (e.type === 'text'){ const before = e.html; e.html = clean(before.split(esc(q)).join(esc(r))); return before !== e.html; }
+  if (e.type === 'asset'){ let c = false; Object.keys(e.p || {}).forEach(k => { if (typeof e.p[k] === 'string' && e.p[k].includes(q)){ e.p[k] = e.p[k].split(q).join(r); c = true; } }); return c; }
+  return false;
+}
+function replaceAll(onlyCurrent){
+  const q = $('#fq').value, r = $('#fr').value; if (!q) return; const targets = onlyCurrent && hitI >= 0 ? [hits[hitI]] : hits; if (!targets.length) return;
+  const sids = [...new Set(targets.map(h => h.s))]; snapshot(onlyCurrent ? '바꾸기' : `모두 바꾸기 (${targets.length}곳)`, sids);
+  targets.forEach(h => { const s = slides.find(x => x.id === h.s); if (!s) return; if (h.notes) s.notes = s.notes.split(q).join(r); else { const e = s.els.find(x => x.id === h.e); if (e) replaceIn(s, e, q, r); } });
+  sids.forEach(id => { const s = slides.find(x => x.id === id); if (s) changed(s); }); renderAll(); hitI = -1; runFind(); toast(`${targets.length}곳을 바꿨습니다`, true);
+}
+function openFind(){ if (editingText) finishText(); $('#findBar').hidden = false; $('#fq').focus(); $('#fq').select(); runFind(); }
+function closeFind(){ $('#findBar').hidden = true; hits = []; hitI = -1; }
+$('#fq').addEventListener('input', () => { hitI = -1; runFind(); });
+$('#fq').addEventListener('keydown', ev => { if (ev.key === 'Enter'){ ev.preventDefault(); gotoHit(ev.shiftKey ? -1 : 1); } if (ev.key === 'Escape') closeFind(); });
+$('#fr').addEventListener('keydown', ev => { if (ev.key === 'Enter'){ ev.preventDefault(); replaceAll(true); } if (ev.key === 'Escape') closeFind(); });
+$('#findBar').addEventListener('click', ev => { const b = ev.target.closest('button'); if (!b) return; const a = b.dataset.f; if (a === 'prev') gotoHit(-1); if (a === 'next') gotoHit(1); if (a === 'one') replaceAll(true); if (a === 'all') replaceAll(false); if (a === 'close') closeFind(); });
+
+/* ============ QUALITY CHECKS ============ */
+const BANNED = [[/해자/, '비유 표현: 해자 → 진입장벽'], [/무기/, '비유 표현: 무기'], [/잠그|잠금 효과/, '비유 표현: 잠그다 → 전환 비용'], [/포획/, '번역투: 가치 포획 → 수익 확보'], [/단순히[^.]*아니라/, 'AI 문체: 단순히 ~가 아니라'], [/비지니스/, '맞춤법: 비지니스 → 비즈니스'], [/게임 ?체인저|혁신적인|압도적/, '과한 강조어'], [/구동한다|가능하게 한다/, '번역투 동사']];
+function lint(){
+  const out = []; const L = list();
+  L.forEach((s, i) => {
+    const thumb = document.querySelector(`#thumbs .thumb[data-id="${CSS.escape(s.id)}"] .stage`);
+    s.els.forEach(e => {
+      if (e.hidden) return;
+      if (!isBg(e) && (e.x < 0 || e.y < 0 || e.x + e.w > 1600 || e.y + e.h > 900)) out.push({s:s.id, e:e.id, n:i + 1, sev:'warn', m:'캔버스 밖으로 나간 요소'});
+      if (e.type === 'text'){ const t = plain(e.html); BANNED.forEach(([re, m]) => { if (re.test(t)) out.push({s:s.id, e:e.id, n:i + 1, sev:'warn', m}); });
+        if (thumb){ const n = thumb.querySelector(`.el[data-id="${CSS.escape(e.id)}"] .txt`); if (n && (n.scrollHeight > n.clientHeight + 4 || n.scrollWidth > n.clientWidth + 4)) out.push({s:s.id, e:e.id, n:i + 1, sev:'err', m:'텍스트 넘침', over:true}); } }
+      if (e.type === 'asset'){ const t = Object.values(e.p || {}).join(' '); BANNED.forEach(([re, m]) => { if (re.test(t)) out.push({s:s.id, e:e.id, n:i + 1, sev:'warn', m}); }); }
+    });
+    if (s.kind === 'content'){
+      const all = s.els.map(e => e.type === 'text' ? plain(e.html) : e.type === 'asset' ? Object.values(e.p || {}).join(' ') : '').join(' ');
+      if (/\d/.test(all) && !s.src) out.push({s:s.id, n:i + 1, sev:'warn', m:'수치가 있지만 출처 각주가 없음'});
+      const tt = plainTitle(s); if (tt.length > 70) out.push({s:s.id, n:i + 1, sev:'warn', m:`제목이 깁니다 (${tt.length}자)`});
+      if (!s.notes || s.notes.trim().length < 10) out.push({s:s.id, n:i + 1, sev:'info', m:'발표 스크립트 없음'});
+    }
+  });
+  return out;
+}
+let lastLint = [];
+function renderStatus(){
+  const st = $('#status'); if (!st) return; const L = list(); const i = L.findIndex(s => s.id === curId);
+  lastLint = lint(); const over = lastLint.filter(x => x.over).length, warn = lastLint.filter(x => x.sev !== 'info').length - over;
+  st.querySelector('.pos').textContent = `${i + 1} / ${L.length}장`;
+  const o = st.querySelector('.over'); o.textContent = over ? `텍스트 넘침 ${over}` : '텍스트 넘침 없음'; o.dataset.s = over ? 'bad' : 'ok';
+  const w = st.querySelector('.warn'); w.textContent = warn ? `점검 경고 ${warn}` : '점검 경고 없음'; w.dataset.s = warn ? 'warn' : 'ok';
+  st.querySelector('.hist').textContent = `수정 이력 ${undo.length}`;
+  st.querySelector('.zoom').textContent = Math.round(ZM * 100) + '%';
+}
+$('#status').addEventListener('click', ev => { const b = ev.target.closest('button'); if (!b) return; const a = b.dataset.a; if (a === 'check') CMD.check.run(); if (a === 'hist') CMD.history.run(); if (a === 'zin') CMD.zin.run(); if (a === 'zout') CMD.zout.run(); if (a === 'zfit') CMD.zfit.run(); });
+
+/* ============ VERSIONS: Cmd+S saves a named restore point of the whole deck ============ */
+const versPath = () => deckId === 'cuda' ? 'versions' : 'decks/' + deckId + '/versions';
+let versions = [], versUnsub = null;
+async function saveVersion(){
+  if (editingText) finishText(); clearTimeout(store.timer); await flush();
+  const v = {at:Date.now(), name:`${new Date().toLocaleString('ko-KR', {month:'numeric', day:'numeric', hour:'2-digit', minute:'2-digit'})} 저장`, slides:slides.filter(s => !s.deleted).map(clone)};
+  if (store.db){ try { await store.db.collection(versPath()).add(v); toast('버전을 저장했습니다'); } catch (e){ toast('버전을 저장하지 못했습니다. 문서가 너무 크면 장표 수를 줄여 주세요'); } }
+  else { try { const k = lsKey() + ':versions'; const a = JSON.parse(localStorage.getItem(k) || '[]'); a.unshift({...v, id:nid('v')}); localStorage.setItem(k, JSON.stringify(a.slice(0, 10))); versions = a.slice(0, 10); toast('이 브라우저에 버전을 저장했습니다'); } catch (_) { toast('버전을 저장하지 못했습니다'); } }
+  if (tab === 'hist') renderPanel();
+}
+function subVersions(){
+  if (versUnsub){ versUnsub(); versUnsub = null; }
+  if (!store.db){ try { versions = JSON.parse(localStorage.getItem(lsKey() + ':versions') || '[]'); } catch (_) { versions = []; } return; }
+  versUnsub = store.db.collection(versPath()).orderBy('at', 'desc').limit(20).onSnapshot(snap => { versions = snap.docs.map(d => ({id:d.id, ...(d.data() || {})})); if (tab === 'hist') renderPanel(); }, () => {});
+}
+function restoreVersion(id){
+  const v = versions.find(x => x.id === id); if (!v || !Array.isArray(v.slides)) return;
+  const ids = [...new Set(slides.map(s => s.id).concat(v.slides.map(s => s && s.id).filter(Boolean)))];
+  snapshot('버전 복원: ' + (v.name || ''), ids);
+  const keep = new Set(v.slides.map(s => s && s.id));
+  slides.forEach(s => { if (!keep.has(s.id)){ s.deleted = true; changed(s, {noCanvas:true}); } });
+  v.slides.forEach(sv => { if (!sv || !sv.id) return; applyStored(sv.id, {...sv, deleted:false}); const s = slides.find(x => x.id === sv.id); if (s) changed(s, {noCanvas:true}); });
+  curId = null; clearSel(); renderAll(); toast('버전을 복원했습니다', true);
+}
+
+/* ============ EXPORT / IMPORT ============ */
+const LIBS = {pptx:['https://cdn.jsdelivr.net/npm/pptxgenjs@3.12.0/dist/pptxgen.bundle.js', 'PptxGenJS'], h2i:['https://cdnjs.cloudflare.com/ajax/libs/html-to-image/1.11.11/html-to-image.min.js', 'htmlToImage'], pdf:['https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js', 'jspdf']};
+function loadLib(k){ const [u, g] = LIBS[k]; if (window[g]) return Promise.resolve(window[g]); return new Promise((res, rej) => { const sc = document.createElement('script'); sc.src = u; sc.onload = () => res(window[g]); sc.onerror = () => rej(new Error('load')); document.head.appendChild(sc); }); }
+let downloads = null;
+async function saveFile(filename, data){
+  if (downloads){ try { const r = await downloads.save({filename, data}); return r; } catch (e){ toast(e && e.code === 'declined' ? '저장을 취소했습니다' : '파일을 저장하지 못했습니다'); return null; } }
+  const blob = data instanceof Blob ? data : new Blob([data]); const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = filename; document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 4000); return {saved:true};
+}
+const deckName = () => (decks.find(d => d.id === deckId) || {}).name || '발표';
+function offStage(html){ const box = $('#offscreen'); box.innerHTML = `<div class="stage static">${html}</div>`; return box.firstChild; }
+async function waitImgs(node){ await Promise.all([...node.querySelectorAll('img')].map(im => im.complete ? 0 : new Promise(r => { im.onload = im.onerror = r; }))); }
+function busy(msg){ const b = $('#busy'); b.hidden = !msg; b.querySelector('span').textContent = msg || ''; }
+async function exportPDF(){
+  try { busy('PDF 만드는 중'); const [h2i, jspdf] = await Promise.all([loadLib('h2i'), loadLib('pdf')]);
+    const doc = new jspdf.jsPDF({orientation:'landscape', unit:'px', format:[1600, 900], compress:true}); const L = list();
+    for (let i = 0; i < L.length; i++){ busy(`PDF 만드는 중 ${i + 1}/${L.length}`); const node = offStage(slideHTML(L[i], 'thumb')); await waitImgs(node);
+      const url = await h2i.toJpeg(node, {quality:0.92, pixelRatio:1.5, skipFonts:true, backgroundColor:'#000000', width:1600, height:900}); if (i) doc.addPage([1600, 900], 'landscape'); doc.addImage(url, 'JPEG', 0, 0, 1600, 900); }
+    busy(''); await saveFile(deckName() + '.pdf', doc.output('blob'));
+  } catch (e){ busy(''); toast('PDF를 만들지 못했습니다'); }
+}
+function runsFrom(html, color){
+  const runs = []; const root = new DOMParser().parseFromString('<div>' + clean(html) + '</div>', 'text/html').body.firstChild;
+  const walk = (n, st) => n.childNodes.forEach(c => { if (c.nodeType === 3){ if (c.textContent) runs.push({text:c.textContent, options:{...st}}); } else if (c.tagName === 'BR'){ if (runs.length) runs[runs.length - 1].options.breakLine = true; else runs.push({text:'', options:{breakLine:true}}); } else { const s2 = {...st}; if (c.tagName === 'B') s2.bold = true; if (c.tagName === 'I') s2.italic = true; if (c.tagName === 'U') s2.underline = {style:'sng'}; if (c.tagName === 'SMALL') s2.fontSize = (st.fontSize || 20) * 0.5; if (c.tagName === 'SPAN') s2.color = c.className === 'g' ? '76B900' : c.className === 't2' ? 'AAAAAA' : '888888'; walk(c, s2); } });
+  walk(root, {color}); return runs;
+}
+const HEX = {t1:'FFFFFF', t2:'AAAAAA', t3:'888888', g:'76B900', card:'151515', raised:'1F1F1F', ink:'0B1200'};
+async function toDataURL(src){ const r = await fetch(src); const b = await r.blob(); return new Promise(res => { const fr = new FileReader(); fr.onload = () => res(fr.result); fr.readAsDataURL(b); }); }
+async function exportPPTX(){
+  try { busy('PPTX 만드는 중'); const [PG, h2i] = await Promise.all([loadLib('pptx'), loadLib('h2i')]);
+    const p = new PG(); p.layout = 'LAYOUT_WIDE'; p.title = deckName(); const S = 13.333 / 1600; const L = list(); const imgCache = {};
+    for (let i = 0; i < L.length; i++){ busy(`PPTX 만드는 중 ${i + 1}/${L.length}`); const s = L[i]; const sl = p.addSlide(); sl.background = {color:'000000'};
+      for (const e of s.els){ if (e.hidden) continue; const box = {x:e.x * S, y:e.y * S, w:e.w * S, h:e.h * S, rotate:e.rot || 0};
+        if (e.type === 'text') sl.addText(runsFrom(e.html, HEX[e.color] || 'FFFFFF'), {...box, fontSize:Math.round(e.size * 0.6 * 10) / 10, bold:+e.weight >= 600, align:e.align, valign:'top', margin:0, fontFace:'Apple SD Gothic Neo', lineSpacingMultiple:e.lh || 1.2, fit:'none'});
+        else if (e.type === 'rect') sl.addShape(p.ShapeType[e.radius ? 'roundRect' : 'rect'], {...box, fill:{color:HEX[e.fill] || '76B900'}, line:{color:HEX[e.fill] || '76B900', width:0}, rectRadius:e.radius ? Math.min(0.5, e.radius / Math.min(e.w, e.h)) : 0});
+        else if (e.type === 'img' && IMG[e.img]){ imgCache[e.img] = imgCache[e.img] || await toDataURL(IMG[e.img].src); sl.addImage({data:imgCache[e.img], ...box, transparency:Math.round((1 - (e.op ?? 1)) * 100), sizing:{type:e.fit === 'contain' ? 'contain' : 'cover', w:box.w, h:box.h}}); }
+        else if (e.type === 'asset'){ const node = offStage(elHTML({...e, x:0, y:0, rot:0}, 'thumb')); node.style.width = e.w + 'px'; node.style.height = e.h + 'px'; await waitImgs(node); const url = await h2i.toPng(node, {pixelRatio:2, skipFonts:true, width:e.w, height:e.h}); sl.addImage({data:url, ...box}); }
+      }
+      if (s.kind === 'content'){ const sec = s.sec == null ? -1 : +s.sec; sl.addText(sec >= 0 ? SECTIONS.map((t, k) => ({text:t + '    ', options:{color:k === sec ? '76B900' : '5C5C5C'}})) : [{text:'요약', options:{color:'76B900'}}], {x:96 * S, y:28 * S, w:1300 * S, h:24 * S, fontSize:8.4, margin:0});
+        sl.addShape(p.ShapeType.line, {x:96 * S, y:180 * S, w:1408 * S, h:0, line:{color:'2D2D2D', width:0.75}});
+        if (s.src) sl.addText(s.src, {x:96 * S, y:848 * S, w:1300 * S, h:22 * S, fontSize:7.8, color:'6F6F6F', margin:0});
+        const n = L.filter(x => x.kind === 'content').indexOf(s) + 1; sl.addText(String(n), {x:1440 * S, y:848 * S, w:64 * S, h:22 * S, fontSize:7.8, color:'888888', align:'right', margin:0}); }
+      if (s.notes) sl.addNotes(s.notes);
+    }
+    const blob = await p.write({outputType:'blob'}); busy(''); await saveFile(deckName() + '.pptx', blob);
+  } catch (e){ busy(''); toast('PPTX를 만들지 못했습니다'); }
+}
+async function exportJSON(){ const data = JSON.stringify({format:'cuda-studio', version:4, name:deckName(), slides:list().map(clone)}, null, 1); await saveFile(deckName() + '.slides.json', new Blob([data], {type:'application/json'})); }
+$('#fileIn').addEventListener('change', async ev => {
+  const f = ev.target.files && ev.target.files[0]; ev.target.value = ''; if (!f) return;
+  try { const o = JSON.parse(await f.text()); if (!o || o.format !== 'cuda-studio' || !Array.isArray(o.slides)) throw 0;
+    await createDeck(String(o.name || f.name.replace(/\.slides\.json$|\.json$/, '')).slice(0, 60), false, o.slides); toast('프로젝트를 열었습니다');
+  } catch (_) { toast('이 파일은 열 수 없습니다. 이 편집기에서 저장한 프로젝트 파일만 열 수 있습니다'); }
 });
 
+/* ============ DESKTOP APP (Install as app): native menu with accelerators, native context menu ============ */
+let desktop = null, desktopInstalled = false;
+const accel = k => k ? k.replace('Mod+', 'CmdOrCtrl+').replace('Delete', 'Backspace') : undefined;
+async function initDesktop(){
+  try { desktop = window.claude && window.claude.use ? await window.claude.use('desktop') : null; } catch (_) { desktop = null; }
+  try { downloads = window.claude && window.claude.use ? await window.claude.use('downloads') : null; } catch (_) { downloads = null; }
+  if (!desktop) return;
+  let st = 'unavailable'; try { st = await desktop.install.state(); } catch (_) {}
+  $('#bInstall').hidden = st !== 'available';
+  desktopInstalled = !!desktop.Menu && !!desktop.window;
+  if (!desktopInstalled) return;
+  const it = id => ({label:CMD[id].l, accelerator:accel(CMD[id].k), click:() => { if (inField(document.activeElement) && ['undo', 'redo', 'all'].includes(id) && !editingText){ document.execCommand(id === 'all' ? 'selectAll' : id); return; } CMD[id].run(); }});
+  const sep = {type:'separator'};
+  desktop.Menu.setApplicationMenu([
+    {label:'파일', submenu:[it('save'), it('json'), it('open'), sep, it('pptx'), it('pdf')]},
+    {label:'편집', submenu:[it('undo'), it('redo'), sep, {role:'cut'}, {role:'copy'}, {role:'paste'}, it('dup'), it('del'), it('all'), sep, it('find'), it('palette')]},
+    {label:'정렬', submenu:[it('group'), it('ungroup'), sep, it('front'), it('fwd'), it('bwd'), it('back'), sep, it('lock'), it('hide')]},
+    {label:'삽입', submenu:[it('text'), it('newSlide'), it('dupSlide'), sep, it('aiSlide'), it('ai')]},
+    {label:'보기', submenu:[it('zin'), it('zout'), it('zfit'), sep, it('check'), it('history'), sep, it('present')]},
+  ]).catch(() => {});
+}
+$('#bInstall').addEventListener('click', () => { if (desktop) desktop.install.request().then(r => { if (r === 'installed') toast('앱으로 설치했습니다'); }).catch(() => toast('설치하지 못했습니다')); });
+$('#bExport').addEventListener('click', () => { const p = $('#exportPop'); p.hidden = !p.hidden; });
+$('#exportPop').addEventListener('click', ev => { const b = ev.target.closest('button[data-cmd]'); if (!b) return; $('#exportPop').hidden = true; CMD[b.dataset.cmd].run(); });
+$('#bRedo').onclick = doRedo; $('#bPal').onclick = openPal;
+
+/* ============ MORE EXHIBITS: editable data chart and a 3D compute grid ============ */
+Object.assign(ASSETS, {
+  chart:{fluid:true, name:'데이터 차트 (막대·선)', nw:960, nh:520,
+    props:[['kind','종류 (bar 또는 line)'],['rows','데이터 (첫 줄은 머리글)','textarea'],['unit','단위'],['hl','강조할 항목 (마지막 항목은 last)']],
+    d:{kind:'bar', rows:'구분|매출|매출총이익률(%)\nFY2025|1305|75.0\nFY2026|2159|71.1', unit:'억 달러', hl:'last'},
+    render:(p, bx) => {
+      const W = bx ? bx.w : 960, Hh = bx ? bx.h : 520; const rs = lines(p.rows).map(cells); if (rs.length < 2) return '';
+      const head = rs[0], data = rs.slice(1); const series = head.slice(1, 3); const val = v => +String(v || '').replace(/[^0-9.\-]/g, '') || 0;
+      const L = 72, R = 24, T = 48, B = 56; const pw = W - L - R, ph = Hh - T - B;
+      const mx = Math.max(1, ...data.map(r => val(r[1]))); const nice = Math.pow(10, Math.floor(Math.log10(mx))); const top = Math.ceil(mx / nice) * nice;
+      const y = v => T + ph - v / top * ph; const n = data.length; const bw = Math.min(120, pw / n * 0.5);
+      const xs = data.map((_, i) => L + pw * (i + 0.5) / n);
+      const grid = [0, 0.25, 0.5, 0.75, 1].map(f => `<line x1="${L}" x2="${W - R}" y1="${y(top * f)}" y2="${y(top * f)}" stroke="#2d2d2d"/><text x="${L - 12}" y="${y(top * f) + 6}" text-anchor="end" fill="#888" font-size="16">${(top * f).toLocaleString('ko-KR')}</text>`).join('');
+      const hlIdx = p.hl === 'last' ? n - 1 : data.findIndex(r => r[0] === p.hl);
+      const marks = p.kind === 'line'
+        ? `<path class="dr an" style="--l:2000" d="${xs.map((x, i) => (i ? 'L' : 'M') + x + ' ' + y(val(data[i][1]))).join(' ')}" fill="none" stroke="#76b900" stroke-width="4"/>` + xs.map((x, i) => `<circle class="an" style="${D(300 + i * 80)}" cx="${x}" cy="${y(val(data[i][1]))}" r="7" fill="${i === hlIdx ? '#76b900' : '#000'}" stroke="#76b900" stroke-width="3"/>`).join('')
+        : xs.map((x, i) => `<rect class="an bar" style="${D(200 + i * 100)}" x="${x - bw / 2}" y="${y(val(data[i][1]))}" width="${bw}" height="${Math.max(0, T + ph - y(val(data[i][1])))}" rx="4" fill="${i === hlIdx || hlIdx < 0 ? '#76b900' : '#555'}"/>`).join('');
+      const labels = xs.map((x, i) => `<text x="${x}" y="${y(val(data[i][1])) - 14}" text-anchor="middle" fill="#fff" font-size="22" font-weight="600">${esc(data[i][1])}</text><text x="${x}" y="${Hh - B + 32}" text-anchor="middle" fill="#aaa" font-size="18">${esc(data[i][0])}</text>`).join('');
+      const s2 = series[1] ? xs.map((x, i) => `<text x="${x}" y="${Hh - B + 52}" text-anchor="middle" fill="#76b900" font-size="15">${esc(series[1])} ${esc(data[i][2] || '')}</text>`).join('') : '';
+      return `<svg class="a-chart" width="${W}" height="${Hh}" viewBox="0 0 ${W} ${Hh}" role="img" aria-label="${esc(series[0] || '')}"><text x="${L}" y="24" fill="#aaa" font-size="18">${esc(series[0] || '')}${p.unit ? ' (' + esc(p.unit) + ')' : ''}</text>${grid}${marks}${labels}${s2}</svg>`;
+    }},
+  gpu3d:{name:'3D 병렬 연산 격자', nw:900, nh:560,
+    props:[['n','한 변의 코어 수','number'],['lit','켜진 비율 (%)','number'],['label','설명']],
+    d:{n:12, lit:100, label:'GPU 코어가 동시에 연산하는 구조 (개념도)'},
+    render:p => { const n = Math.max(4, Math.min(20, +p.n || 12)); const lit = Math.max(0, Math.min(100, +p.lit || 0)); const tot = n * n; const on = Math.round(tot * lit / 100);
+      return `<div class="a-3d"><div class="sc"><div class="pl" style="grid-template-columns:repeat(${n},1fr)">${Array.from({length:tot}, (_, i) => `<i class="${i < on ? 'on an' : ''}" style="${D(300 + (i % n + Math.floor(i / n)) * 40)}"></i>`).join('')}</div></div><span>${esc(p.label)}</span></div>`; }},
+});
+LAYOUTS.push(['실적 차트', 3, () => [H('NVIDIA의 매출은 FY2026에 2,159억 달러로 증가했으나, 매출총이익률은 71.1%로 낮아졌다'), A('chart', 96, 216, 900, 560), A('kpis', 1040, 216, 464, 560, {rows:'2,159억 달러|FY2026 매출|NVIDIA 실적 발표|g\n71.1%|FY2026 매출총이익률|FY2025 75.0%'})]]);
+LAYOUTS.push(['3D 개념도', 0, () => [H('GPU는 수천 개의 코어가 같은 연산을 동시에 수행하도록 설계된 병렬 연산 장치다'), A('gpu3d', 96, 196, 900, 580), A('sticker', 1040, 300, 464, 300, {lb:'핵심', t:'같은 연산을 대량의 데이터에 동시에 적용하는 작업일수록 CPU 대비 GPU의 처리 효율이 높다'})]]);
+
+/* ============ PANELS: properties, layers, insert, checks, history ============ */
+let insTab = 'layouts';
+const renderPanelBase = renderPanel;
+renderPanel = function(){
+  const P = $('#panel'); $('#insSeg').hidden = tab !== 'insert';
+  document.querySelectorAll('#insSeg button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.ins === insTab)));
+  if (tab === 'insert'){ const t = tab; tab = insTab; renderPanelBase(); tab = t; return; }
+  if (tab === 'layers') return renderLayers(P);
+  if (tab === 'check') return renderCheck(P);
+  if (tab === 'hist') return renderHist(P);
+  renderPanelBase(); enhanceProps(P);
+};
+function elName(e){ if (e.type === 'text') return plain(e.html).replace(/\s+/g, ' ').slice(0, 28) || '텍스트'; if (e.type === 'asset') return (ASSETS[e.asset] || {}).name || e.asset; if (e.type === 'img') return '이미지: ' + ((IMG[e.img] || {}).name || ''); return '도형'; }
+function renderLayers(P){
+  const s = cur(); if (!s){ P.innerHTML = ''; return; } const sel = new Set(selected().map(e => e.id));
+  P.innerHTML = `<div class="grp"><div class="lbl">레이어 (위가 앞)</div><div class="layers">${s.els.slice().reverse().map(e => `<div class="ly ${sel.has(e.id) ? 'on' : ''}" data-id="${esc(e.id)}"><button type="button" class="nm" data-a="sel">${e.g ? '<em>그룹</em>' : ''}${esc(elName(e))}</button><button type="button" class="ib" data-a="hide" aria-pressed="${!!e.hidden}" title="숨기기">${e.hidden ? '<svg viewBox="0 0 16 16"><path d="M2 2l12 12M6.5 6.6A2 2 0 0 0 9.4 9.5M4.2 4.4C2.8 5.3 2 6.6 1.5 8c1.2 3 3.8 5 6.5 5 1.3 0 2.5-.4 3.6-1.2M7 3.1C7.3 3 7.7 3 8 3c2.7 0 5.3 2 6.5 5-.3.8-.8 1.6-1.3 2.2"/></svg>' : '<svg viewBox="0 0 16 16"><path d="M1.5 8C2.7 5 5.3 3 8 3s5.3 2 6.5 5c-1.2 3-3.8 5-6.5 5S2.7 11 1.5 8z"/><circle cx="8" cy="8" r="2"/></svg>'}</button><button type="button" class="ib" data-a="lock" aria-pressed="${!!e.lock}" title="잠금">${e.lock ? '<svg viewBox="0 0 16 16"><rect x="3.5" y="7" width="9" height="6.5" rx="1"/><path d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2"/></svg>' : '<svg viewBox="0 0 16 16"><rect x="3.5" y="7" width="9" height="6.5" rx="1"/><path d="M5.5 7V5a2.5 2.5 0 0 1 5 0"/></svg>'}</button></div>`).join('')}</div></div>
+    <div class="grp"><div class="row2"><button class="btn" type="button" data-cmd="fwd">앞으로</button><button class="btn" type="button" data-cmd="bwd">뒤로</button><button class="btn" type="button" data-cmd="group">그룹</button><button class="btn" type="button" data-cmd="ungroup">그룹 해제</button></div></div>`;
+}
+function renderCheck(P){
+  const L = lastLint = lint(); const n = L.filter(x => x.sev !== 'info').length;
+  P.innerHTML = `<div class="grp"><div class="chkhead ${n ? 'warn' : 'ok'}">${n ? `경고 ${n}건` : '모든 장이 점검 항목을 통과했습니다'}</div></div>
+    <div class="grp ai-only"><button class="btn primary" type="button" id="bAiDeck">덱 전체 문체를 AI로 점검</button></div>
+    <div class="grp issues">${L.map(x => `<button type="button" class="iss ${x.sev}" data-s="${esc(x.s)}" data-e="${esc(x.e || '')}"><em class="num">${x.n}</em><span>${esc(x.m)}</span></button>`).join('') || ''}</div>`;
+}
+function renderHist(P){
+  const ago = t => { const m = Math.round((Date.now() - t) / 60000); return m < 1 ? '방금' : m < 60 ? m + '분 전' : Math.round(m / 60) + '시간 전'; };
+  P.innerHTML = `<div class="grp"><div class="lbl">저장한 버전</div><button class="btn primary" type="button" data-cmd="save">지금 버전 저장 <kbd>${esc(KEYS('Mod+S'))}</kbd></button>
+    <div class="vers">${versions.map(v => `<div class="vr"><span>${esc(v.name || '')}<em>${esc(ago(v.at || 0))} · ${(v.slides || []).length}장</em></span><button class="btn" type="button" data-ver="${esc(v.id)}">복원</button></div>`).join('') || '<div class="hint">저장한 버전이 없습니다</div>'}</div></div>
+    <div class="grp"><div class="lbl">이번 세션의 수정 이력</div><div class="hlist">${undo.slice().reverse().slice(0, 40).map(u => `<div>${esc(u.label)}</div>`).join('') || '<div class="hint">아직 수정하지 않았습니다</div>'}</div>
+    <div class="row2"><button class="btn" type="button" data-cmd="undo">실행 취소</button><button class="btn" type="button" data-cmd="redo">다시 실행</button></div></div>`;
+}
+/* element inspector additions: rotation, lock/hide, table editor for data props, slide transition */
+function enhanceProps(P){
+  const s = cur(); if (!s) return; const e = multi.size > 1 ? null : curEl();
+  if (e){
+    const g = P.querySelector('.grp'); if (g) g.insertAdjacentHTML('beforeend', `<div class="row2">${fld('rot', '°', e.rot || 0)}<div class="row2"><button class="btn" type="button" data-cmd="lock">${e.lock ? '잠금 해제' : '잠금'}</button><button class="btn" type="button" data-cmd="hide">${e.hidden ? '보이기' : '숨기기'}</button></div></div>`);
+    P.querySelectorAll('textarea[data-p]').forEach(ta => { if (!ta.value.includes('|')) return; const k = ta.dataset.p; const rows = lines(ta.value).map(cells); const nc = Math.max(...rows.map(r => r.length));
+      const grid = document.createElement('div'); grid.className = 'grid'; grid.dataset.gp = k;
+      grid.innerHTML = `<table>${rows.map((r, i) => `<tr>${Array.from({length:nc}, (_, j) => `<td><input data-r="${i}" data-c="${j}" value="${esc(r[j] ?? '')}" aria-label="${i + 1}행 ${j + 1}열"></td>`).join('')}<td class="rm"><button type="button" class="ib" data-rm="${i}" title="행 삭제"><svg viewBox="0 0 16 16"><path d="M4 8h8"/></svg></button></td></tr>`).join('')}</table><button type="button" class="btn" data-addrow="1">행 추가</button>`;
+      ta.replaceWith(grid); });
+  } else if (multi.size <= 1){
+    const first = P.querySelector('.grp'); if (first) first.insertAdjacentHTML('beforeend', `<label class="grp"><span class="hint">발표 전환</span><select class="inp" data-tr="1">${[['fade', '페이드'], ['slide', '밀기'], ['convex', '입체 회전'], ['zoom', '확대'], ['none', '없음']].map(([v, l]) => `<option value="${v}" ${(s.tr || 'fade') === v ? 'selected' : ''}>${l}</option>`).join('')}</select></label>`);
+  }
+}
+function gridString(grid){ const rows = []; grid.querySelectorAll('tr').forEach(tr => { const c = [...tr.querySelectorAll('input')].map(i => i.value.replace(/\|/g, '/').replace(/\n/g, ' ')); rows.push(c.join('|').replace(/\|+$/, '')); }); return rows.join('\n'); }
+$('#panel').addEventListener('input', ev => {
+  const t = ev.target; const s = cur(); if (!s) return;
+  const grid = t.closest('.grid'); if (grid){ ev.stopImmediatePropagation(); const e = curEl(); if (!e) return; snapshotOnce('데이터 편집'); e.p = Object.assign({}, ASSETS[e.asset].d, e.p || {}); e.p[grid.dataset.gp] = gridString(grid); changed(s, {noCanvas:false}); return; }
+  if (t.dataset.tr){ ev.stopImmediatePropagation(); snapshot('전환 효과'); s.tr = t.value; changed(s, {noCanvas:true}); }
+}, true);
+$('#panel').addEventListener('click', ev => {
+  const b = ev.target.closest('button'); if (!b) return; const s = cur();
+  if (b.dataset.cmd){ ev.stopImmediatePropagation(); CMD[b.dataset.cmd].run(); if (tab !== 'props') renderPanel(); return; }
+  if (b.dataset.ver){ ev.stopImmediatePropagation(); if (b.dataset.armed){ restoreVersion(b.dataset.ver); } else { b.dataset.armed = '1'; b.textContent = '한 번 더 누르면 복원'; } return; }
+  if (b.id === 'bAiDeck'){ ev.stopImmediatePropagation(); aiScope = 'deck'; placeAI(true); runAI(QUICK.polish); return; }
+  const grid = b.closest('.grid');
+  if (grid && (b.dataset.addrow || b.dataset.rm != null)){ ev.stopImmediatePropagation(); const e = curEl(); if (!e) return; snapshot('데이터 편집'); let rows = lines(e.p[grid.dataset.gp]).map(cells);
+    if (b.dataset.addrow){ const nc = Math.max(...rows.map(r => r.length)); rows.push(Array(nc).fill('')); rows[rows.length - 1][0] = '새 항목'; } else rows.splice(+b.dataset.rm, 1);
+    e.p[grid.dataset.gp] = rows.map(r => r.join('|')).join('\n'); changed(s, {panel:true}); return; }
+  const iss = b.closest('.iss'); if (iss){ ev.stopImmediatePropagation(); curId = iss.dataset.s; clearSel(); if (iss.dataset.e) selId = iss.dataset.e; renderThumbs(); renderCanvas(); renderStatus(); return; }
+  const ly = b.closest('.layers .ly'); if (ly && s){ ev.stopImmediatePropagation(); const id = ly.dataset.id; const e = s.els.find(x => x.id === id); if (!e) return;
+    if (b.dataset.a === 'sel'){ if (ev.shiftKey){ if (multi.has(id) || selId === id){ multi.delete(id); if (selId === id) selId = [...multi].pop() || null; } else { if (selId) multi.add(selId); multi.add(id); selId = id; } if (multi.size === 1){ selId = [...multi][0]; multi.clear(); } } else selectIds([id]); renderCanvas(); renderLayers($('#panel')); placeAI(); }
+    else { snapshot(b.dataset.a === 'hide' ? '숨기기 전환' : '잠금 전환'); e[b.dataset.a === 'hide' ? 'hidden' : 'lock'] = !e[b.dataset.a === 'hide' ? 'hidden' : 'lock']; changed(s); renderLayers($('#panel')); }
+    return; }
+}, true);
+document.querySelectorAll('#insSeg button').forEach(b => b.onclick = () => { insTab = b.dataset.ins; renderPanel(); });
+
+/* ============ AGENT: scoped requests, preview, partial accept, one undo step ============ */
+let aiScope = 'sel', review = null;
+function scopeEls(){ const s = cur(); if (!s) return []; return aiScope === 'slide' ? s.els.filter(e => !isBg(e)) : selected(); }
+async function runAIv2(instr){
+  if (!sample || !instr) return;
+  if (aiRange) return runText(instr);
+  if (review) endReview(false);
+  const s = cur(); if (!s) return;
+  let input, deckMode = aiScope === 'deck';
+  if (deckMode){
+    const pack = list().map(x => ({slide:x.id, title:plainTitle(x), texts:x.els.filter(e => e.type === 'text').map(e => ({id:e.id, html:clean(e.html)})), notes:(x.notes || '').slice(0, 900)}));
+    input = `${STYLE}\n\n${FACTS}\n\n덱 전체:\n${JSON.stringify(pack)}\n\n요청: ${instr}\n\n고칠 곳만 JSON 객체 하나로 출력: {"changes":[{"slide":"장표 id","id":"텍스트 요소 id","html":"고친 내용"}],"notes":[{"slide":"장표 id","text":"고친 발표 스크립트 전체"}],"summary":"20자 이내"}. 고칠 필요가 없는 곳은 넣지 않는다.`;
+  } else {
+    const sel = scopeEls(); if (!sel.length) return;
+    const others = s.els.filter(e => !sel.includes(e)).map(e => ({id:e.id, type:e.type, x:e.x, y:e.y, w:e.w, h:e.h, ...(e.type === 'text' ? {text:plain(e.html).slice(0, 80)} : e.type === 'asset' ? {asset:e.asset} : {})}));
+    input = `${STYLE}\n\n${FACTS}\n\n${CANVAS}\n\n덱 흐름:\n${outline()}\n\n현재 장 제목: ${plainTitle(s)}\n현재 장 발표 스크립트: ${(s.notes || '').slice(0, 900)}\n선택하지 않은 요소(참고용, 건드리지 말 것): ${JSON.stringify(others)}\n\n선택한 요소:\n${JSON.stringify(sel.map(slim))}\n\n요청: ${instr}\n\nJSON 객체 하나만 출력: {"replace":[선택한 요소를 고친 전체 객체, 같은 id 유지], "add":[새로 추가할 요소, id 없이], "remove":[지울 요소 id], "notes":"발표 스크립트를 고쳐야 하면 전체 문장, 아니면 생략", "summary":"바꾼 내용 20자 이내"}`;
+  }
+  setBusy(true); aiCtl = new AbortController();
+  try {
+    const out = await sample.json(input, {signal:aiCtl.signal, modelTier:deckMode ? 'complex' : 'default'});
+    const ch = [];
+    if (deckMode){
+      (Array.isArray(out && out.changes) ? out.changes : []).forEach(c => { const sl = slides.find(x => x.id === c.slide); const e = sl && sl.els.find(x => x.id === c.id && x.type === 'text'); if (e && typeof c.html === 'string' && clean(c.html) !== clean(e.html)) ch.push({kind:'text', slide:sl.id, id:e.id, html:clean(c.html), label:`${list().indexOf(sl) + 1}장 · ${plain(c.html).slice(0, 40)}`}); });
+      (Array.isArray(out && out.notes) ? out.notes : []).forEach(c => { const sl = slides.find(x => x.id === c.slide); if (sl && typeof c.text === 'string' && c.text.trim() && c.text !== sl.notes) ch.push({kind:'notes', slide:sl.id, text:c.text, label:`${list().indexOf(sl) + 1}장 · 발표 스크립트`}); });
+    } else {
+      const ids = new Set(scopeEls().map(e => e.id));
+      (Array.isArray(out && out.replace) ? out.replace : []).forEach(r => { if (!r || !ids.has(r.id)) return; const v = vEl(r); if (v) ch.push({kind:'replace', slide:s.id, id:r.id, el:{...v, id:r.id}, label:'수정 · ' + elName(v)}); });
+      (Array.isArray(out && out.remove) ? out.remove : []).forEach(id => { if (ids.has(id)){ const e = s.els.find(x => x.id === id); ch.push({kind:'remove', slide:s.id, id, label:'삭제 · ' + (e ? elName(e) : id)}); } });
+      (Array.isArray(out && out.add) ? out.add : []).slice(0, 8).forEach(a => { const v = vEl(a); if (v){ v.id = nid('e'); ch.push({kind:'add', slide:s.id, el:v, label:'추가 · ' + elName(v)}); } });
+      if (out && typeof out.notes === 'string' && out.notes.trim()) ch.push({kind:'notes', slide:s.id, text:out.notes, label:'발표 스크립트 수정'});
+    }
+    if (!ch.length){ toast('바꿀 내용이 없었습니다'); return; }
+    startReview(ch, String((out && out.summary) || 'AI 편집').slice(0, 40));
+    $('#aiq').value = '';
+  } catch (err){ aiFail(err); } finally { setBusy(false); aiCtl = null; placeAI(true); }
+}
+function startReview(changes, summary){
+  const sids = [...new Set(changes.map(c => c.slide))];
+  review = {changes:changes.map(c => ({...c, on:true})), summary, pre:sids.map(id => ({id, data:clone(slides.find(x => x.id === id))}))};
+  applyReview(); renderReview();
+}
+function applyReview(){
+  review.pre.forEach(p => { const i = slides.findIndex(x => x.id === p.id); slides[i] = clone(p.data); });
+  review.changes.filter(c => c.on).forEach(c => { const s = slides.find(x => x.id === c.slide); if (!s) return;
+    if (c.kind === 'text'){ const e = s.els.find(x => x.id === c.id); if (e) e.html = c.html; }
+    if (c.kind === 'notes') s.notes = c.text;
+    if (c.kind === 'replace'){ const i = s.els.findIndex(x => x.id === c.id); if (i >= 0){ const old = s.els[i]; s.els[i] = {...c.el, g:old.g}; } }
+    if (c.kind === 'remove') s.els = s.els.filter(x => x.id !== c.id);
+    if (c.kind === 'add') s.els.push(clone(c.el)); });
+  renderThumbs(); renderCanvas(); renderStatus();
+}
+function renderReview(){
+  const box = $('#aireview'); if (!review){ box.hidden = true; box.innerHTML = ''; return; }
+  box.hidden = false;
+  box.innerHTML = `<div class="rh"><b>${esc(review.summary)}</b><span>${review.changes.filter(c => c.on).length}/${review.changes.length}개 적용 예정</span></div>
+    <div class="rl">${review.changes.map((c, i) => `<label><input type="checkbox" data-ri="${i}" ${c.on ? 'checked' : ''}><span>${esc(c.label)}</span></label>`).join('')}</div>
+    <div class="rb"><button type="button" class="btn primary" data-rv="ok">적용</button><button type="button" class="btn" data-rv="no">모두 취소</button></div>`;
+  placeAI(true);
+}
+function endReview(accept){
+  if (!review) return; const r = review; review = null;
+  if (accept && r.changes.some(c => c.on)){
+    undo.push({label:'AI: ' + r.summary, items:r.pre.map(p => ({id:p.id, data:p.data})), cur:curId}); redo.length = 0;
+    r.pre.forEach(p => { const s = slides.find(x => x.id === p.id); if (s) changed(s, {noCanvas:true}); });
+    const keep = r.changes.filter(c => c.on && (c.kind === 'replace' || c.kind === 'add') && c.slide === curId).map(c => c.kind === 'add' ? c.el.id : c.id);
+    if (keep.length) selectIds(keep); toast('AI 편집을 적용했습니다', true);
+  } else { r.pre.forEach(p => { const i = slides.findIndex(x => x.id === p.id); slides[i] = clone(p.data); }); }
+  renderReview(); renderAll(); placeAI();
+}
+$('#aibar').addEventListener('change', ev => { const t = ev.target; if (t.dataset.ri != null && review){ review.changes[+t.dataset.ri].on = t.checked; applyReview(); renderReview(); } });
+$('#aibar').addEventListener('click', ev => { const b = ev.target.closest('[data-rv],[data-scope]'); if (!b) return; ev.stopImmediatePropagation();
+  if (b.dataset.rv) endReview(b.dataset.rv === 'ok');
+  if (b.dataset.scope){ aiScope = b.dataset.scope; document.querySelectorAll('#aiScope button').forEach(x => x.setAttribute('aria-pressed', String(x.dataset.scope === aiScope))); placeAI(true); }
+}, true);
+
+runAI = runAIv2;
 /* ============ PRESENT (Reveal.js) ============ */
 let rv = null; let wentFull = false;
 function fmt(m){ if (m == null || m === '') return ''; const t = Math.round(parseFloat(m) * 60); return Math.floor(t / 60) + ':' + String(t % 60).padStart(2, '0'); }
@@ -1431,7 +2098,7 @@ function present(){
   if (typeof Reveal === 'undefined') { return; }
   const L = list(); const start = Math.max(0, L.findIndex(s => s.id === curId));
   const ov = $('#present'); ov.hidden = false;
-  ov.querySelector('.slides').innerHTML = L.map(s => `<section data-id="${esc(s.id)}"><div class="stage">${slideHTML(s, 'present')}</div></section>`).join('');
+  ov.querySelector('.slides').innerHTML = L.map(s => `<section data-id="${esc(s.id)}" data-transition="${['fade', 'slide', 'convex', 'zoom', 'none'].includes(s.tr) ? s.tr : 'fade'}"><div class="stage">${slideHTML(s, 'present')}</div></section>`).join('');
   rv = new Reveal(ov.querySelector('.reveal'), {width:1600, height:900, margin:0, minScale:0.05, maxScale:4, center:false, hash:false, history:false, embedded:true, keyboardCondition:null,
     controls:false, controlsTutorial:false, progress:true, transition:'fade', transitionSpeed:'fast', backgroundTransition:'none', overview:true, keyboard:{27: exitPresent, 78: toggleNotes}});
   rv.initialize().then(() => { rv.slide(start); updNotes(); });
@@ -1461,6 +2128,6 @@ let hotT; $('#present').addEventListener('mousemove', () => { const o = $('#pres
 new ResizeObserver(() => { fitCanvas(); fitThumbs(); placeAI(); }).observe($('#viewport'));
 loadLocal(); renderAll(); fitCanvas(); setSync('local'); renderDecks();
 $('#genSec').innerHTML = '<option value="-1">요약</option>' + SECTIONS.map((t, i) => `<option value="${i}">${esc(t)}</option>`).join('');
-connect(); initAI();
+connect(); initAI(); initDesktop(); subVersions(); renderStatus(); $('#bPal .kb').textContent = KEYS('Mod+K');
 })();
 </script>
