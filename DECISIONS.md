@@ -34,3 +34,7 @@ CIB-048 USER_DIRECTIVE: Sequential production cycle S1E01 → S2E01 → S3E01 �
 CIB-049 IMPLEMENTED_POLICY: Target 8–9 minutes; 6–12 if the story needs it. English script and real VO lead animation timing. Documentary reconstructions and illustrative process models must be labeled. Historical 2022–23 export-control case requires dated rules; no statement of current legality. Original overclaiming titles retained only as provenance; reviewed working titles narrow them.
 
 CIB-050 USER_DIRECTIVE: Stay in Chat; no new payments or YouTube uploads. Source code, reproducible playback, real audio and QA required; independent review still applies. Production binary outputs remain outside Git.
+
+## 2026-11-27 · Korean language and argument standard
+
+CIB-051 USER_DIRECTIVE: Korean scripts, subtitles, titles and decks follow editorial/LANGUAGE.md — no metaphor or personification in place of mechanism, titles that follow from the previous scene, neutral labels, business vocabulary, noun-style on-screen text, causal links between scenes, no chronology turned into response, labelled fact vs interpretation, conservative sourced numbers with formulas, references page plus faint footnotes. Source: user feedback during the KAIST CUDA platform deck (presentations/cuda-platform). Not yet linked from AGENTS.md or PLAYBOOK.md, whose reviewed hashes would change; linking needs a separate review.
