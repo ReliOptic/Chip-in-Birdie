@@ -1136,7 +1136,7 @@ Object.assign(ASSETS, {
         <div class="win br an" style="${D(200)}"><div class="tb"><i></i><i></i><i></i><div class="url">${pe('q', -1, -1, p.q)}</div></div>
           <div class="list">${it.map((r, k) => `<div class="it an" style="${D(500 + k * 260)}"><b>${pe('items', k, 0, r[0])}</b><span>${pe('items', k, 1, r[1] || '')}</span><em>CUDA</em></div>`).join('')}</div></div>
         <div class="big fragment"><b class="num">${pe('n', -1, -1, p.n)}</b><span>${pe('nl', -1, -1, p.nl)}</span></div></div>`; }},
-  sc_agent:{scene:true, name:'장면: AI 에이전트의 코드 이식', nw:1600, nh:900,
+  sc_agent:{scene:true, name:'장면: AI 기반 코드 변환', nw:1600, nh:900,
     props:[['lens','플랫폼 렌즈'],['ask','요청'],['steps','진행 단계','textarea'],['old','과거 기간'],['now','이번 기간']],
     d:{lens:'전환 비용', ask:'이 CUDA 추론 코드를 AMD MI355X에서 돌아가게 옮겨 줘', steps:'CUDA 커널 구조 분석\nAMD용 코드로 변환\n성능 비교와 수정\n테스트 통과', old:'6~12개월', now:'약 3일'},
     render:p => { const st = lines(p.steps);
@@ -1194,7 +1194,7 @@ Object.assign(ASSETS, {
 Object.assign(ASSETS, {
   bridge:{name:'전환 비용 전후 (닫힌 길과 열린 길)', nw:1408, nh:600,
     props:[['l1','첫 줄 이름'],['l2','둘째 줄 이름'],['src','출발'],['nv','NVIDIA 쪽'],['amd','대안 칩'],['wall','막힌 이유'],['ai','다리 역할'],['old','과거 기간'],['now','2026년 기간']],
-    d:{l1:'지금까지', l2:'2026년', src:'CUDA 코드', nv:'NVIDIA GPU', amd:'AMD GPU', wall:'다시 짜야 함', ai:'AI 에이전트가 이식', old:'6~12개월', now:'약 3일'},
+    d:{l1:'지금까지', l2:'2026년', src:'CUDA 코드', nv:'NVIDIA GPU', amd:'AMD GPU', wall:'다시 짜야 함', ai:'AI 기반 코드 변환', old:'6~12개월', now:'약 3일'},
     render:p => `<div class="a-br">
       <div class="row r1"><em>${pe('l1', -1, -1, p.l1)}</em>
         <div class="bx s">${pe('src', -1, -1, p.src)}</div>
@@ -1222,7 +1222,7 @@ Object.assign(ASSETS, {
 Object.assign(ASSETS, {
   story:{name:'이야기 그림 (코드 → 칩, 장면 1~5)', nw:1408, nh:640,
     props:[['stage','장면 (1~5)','number'],['chips','칩 (|로 구분)'],['ai','번역 단계'],['hub','모델 허브'],['m1','장면 1 수치'],['m2','장면 2 수치'],['m3','장면 3 수치'],['m4','장면 4 수치'],['m5','장면 5 문구']],
-    d:{stage:1, chips:'NVIDIA GPU|AMD GPU|자체 칩', ai:'AI 에이전트가 코드 이식', hub:'모델 유통 · 허깅페이스 (인수 예정)', m1:'CUDA 개발자 1,100만 명', m2:'매출 90% 데이터센터 · 매출총이익률 71.1%', m3:'이식 기간 6~12개월 → 약 3일', m4:'인수 결정 129억 달러', m5:'허깅페이스 모델은 칩과 무관하게 실행'},
+    d:{stage:1, chips:'NVIDIA GPU|AMD GPU|자체 칩', ai:'AI 기반 코드 변환', hub:'모델 유통 · 허깅페이스 (인수 예정)', m1:'CUDA 개발자 1,100만 명', m2:'매출 90% 데이터센터 · 매출총이익률 71.1%', m3:'이식 기간 6~12개월 → 약 3일', m4:'인수 결정 129억 달러', m5:'허깅페이스 모델은 칩과 무관하게 실행'},
     render:p => { const st = Math.max(1, Math.min(5, +p.stage || 1)); const ch = cells(p.chips);
       const nw = k => st === k ? 'new' : '';
       const blocks = Array.from({length:12}, (_, i) => `<i class="cb ${st === 1 ? 'new' : ''}" style="--d:${i * 70}ms">&lt;/&gt;</i>`).join('');
@@ -1247,7 +1247,7 @@ Object.assign(ASSETS, {
 });
 
 /* ============ BASE DECK ============ */
-const SECTIONS = ['CUDA 생태계', '시장 지위', 'AI 코드 이식', '허깅페이스 인수', '인수 배경'];
+const SECTIONS = ['CUDA 생태계', '시장 지위', 'AI 코드 변환', '허깅페이스 인수', '인수 배경'];
 let uid = 0;
 const T = (html, x, y, w, h, o = {}) => ({id:'e' + (++uid), type:'text', html, x, y, w, h, size:o.size || 32, color:o.color || 't1', weight:o.weight || 400, align:o.align || 'left', lh:o.lh || 1.3, mono:!!o.mono, anim:o.anim || 'none'});
 const A = (asset, x, y, w, h, p = {}, anim = 'none') => ({id:'e' + (++uid), type:'asset', asset, x, y, w, h, p:Object.assign({}, (ASSETS[asset] || {}).d, p), anim});
@@ -1256,7 +1256,7 @@ const I = (img, x, y, w, h, o = {}) => ({id:'e' + (++uid), type:'img', img, x, y
 const H = t => T(t, 96, 80, 1408, 72, {size:48, weight:600, lh:1.2});
 const CAPT = (t, x, y, w) => T(t, x, y, w, 28, {size:18, color:'t3'});
 
-const EXEC = '개발자 코드 축적과 GPU 수요|1,100만 개발자의 CUDA 코드 축적이 GPU 수요로 연결\n코드 종속 기반의 독점|NVIDIA GPU 전용 코드. 매출의 90% 데이터센터, 매출총이익률 71.1%\nAI 이식과 전환 비용 하락|AI 이식으로 이식 기간 6~12개월 → 약 3일\n허깅페이스 인수 결정|인수가 129억 달러. 전환 비용 기반 구조에 개방형 네트워크 효과 추가\n허깅페이스 인수의 투자 논리|통제 지점 확장, 양면 네트워크 효과, GPU 수요 확대. 전제는 플랫폼 중립성 유지';
+const EXEC = '개발자 코드 축적과 GPU 수요|1,100만 개발자의 CUDA 코드 축적이 GPU 수요로 연결\n코드 종속 기반의 독점|NVIDIA GPU 전용 코드. 매출의 90% 데이터센터, 매출총이익률 71.1%\nAI 코드 변환과 전환 비용 하락|AI 코드 변환으로 이식 기간 6~12개월 → 약 3일\n허깅페이스 인수 결정|인수가 129억 달러. 전환 비용 기반 구조에 개방형 네트워크 효과 추가\n허깅페이스 인수의 투자 논리|통제 지점 확장, 양면 네트워크 효과, GPU 수요 확대. 전제는 플랫폼 중립성 유지';
 
 const BASE = [
  {id:'cover', kind:'cover', d:'20 5', o20:0, o5:0, els:[I('cover', 0, 0, 1600, 900, {radius:0, op:0.3, anim:'none'}), I('logo', 128, 96, 420, 80, {radius:0, fit:'contain', anim:'none'}), R(128, 540, 64, 6), T('NVIDIA CUDA의 플랫폼 전략', 128, 568, 1300, 100, {size:72, weight:600, lh:1.1}), T('KAIST 플랫폼과 비즈니스 · IMMS 박병진 · PMBA 조기원', 128, 684, 1300, 32, {size:22, color:'t2'})], notes:''},
@@ -1307,22 +1307,22 @@ NVIDIA는 더 이상 그래픽카드 회사가 아니라 AI 인프라 회사입�
 보통 판매량이 이만큼 늘면 가격 경쟁으로 이익률이 내려갑니다. NVIDIA의 매출총이익률은 75.0%에서 71.1%로 3.9%p 내려가는 데 그쳤습니다. 다음 장에서 그 이유를 봅니다.
 
 [메모] 65%는 2,159 ÷ 1,305 − 1. 90%는 1,937 ÷ 2,159.`},
- {id:'s10', kind:'content', sec:1, d:'20', o20:8, min:1.5, els:[H('독점의 원천: 전환 비용'), A('lock', 96, 220, 940, 376), A('kpis', 1080, 220, 424, 376, {rows:'71.1%|매출총이익률 (FY2026)|높은 가격 유지|g\n약 81%|AI 가속기 점유율 (2026, 추정)|2023년 약 87%'}), A('sticker', 96, 680, 1408, 96, {lb:'시사점', t:'GPU 성능보다 높은 전환 비용이 해자. 높은 가격에도 고객 이탈 제한'})], notes:
+ {id:'s10', kind:'content', sec:1, d:'20', o20:8, min:1.5, els:[H('독점의 원천: 전환 비용'), A('lock', 96, 220, 940, 376), A('kpis', 1080, 216, 424, 456, {rows:'71.1%|매출총이익률 (FY2026)|높은 가격 유지|g\n약 81%|AI 가속기 점유율 (2026, 추정)|2023년 약 87%\n6~12개월|타사 칩 이식 기간|CUDA 코드 재작성 기준 (2026년 이전)'}), A('sticker', 96, 712, 1408, 96, {lb:'시사점', t:'GPU 성능보다 높은 전환 비용이 해자. 높은 가격에도 고객 이탈 제한'})], notes:
 `CUDA로 짠 프로그램은 다른 회사 칩에서 돌지 않습니다. NVIDIA GPU 전용 기계어로 컴파일되고, NVIDIA 전용 라이브러리를 부르기 때문입니다. 옮기려면 다시 짜야 합니다.
 그래서 매출총이익률이 71%를 넘어도 고객이 떠나지 못했습니다. 독점의 원천은 성능보다 전환 비용이었습니다.`},
 
- {id:'st3', kind:'content', sec:2, d:'5', o20:6.9, o5:5, min:1.5, min5:1, els:[H('AI 이식과 전환 비용 하락'), A('story', 96, 196, 1408, 640, {stage:3})], notes:
-`2026년, 이 벽에 틈이 생겼습니다. AI 에이전트가 CUDA 코드를 AMD용으로 옮기는 데 약 3일이 걸렸다는 발표가 나왔습니다. 예전에는 6~12개월이 걸리던 일입니다. CUDA로 짠 코드를 다른 칩으로 옮기는 비용이 크게 낮아질 수 있다는 뜻입니다.
+ {id:'st3', kind:'content', sec:2, d:'5', o20:6.9, o5:5, min:1.5, min5:1, els:[H('AI 코드 변환과 전환 비용 하락'), A('story', 96, 196, 1408, 640, {stage:3})], notes:
+`2026년, 이 벽에 틈이 생겼습니다. AI 모델로 CUDA 코드를 AMD용으로 변환하는 데 약 3일이 걸렸다는 발표가 나왔습니다. 예전에는 6~12개월이 걸리던 일입니다. CUDA로 짠 코드를 다른 칩으로 옮기는 비용이 크게 낮아질 수 있다는 뜻입니다.
 
 [메모] Anthropic 투자자 대상 자료의 자체 발표, 단일 모델의 추론 작업에 한정. 이 자료는 Anthropic의 모델인 Claude가 정리를 도왔다.`},
- {id:'alt', kind:'content', sec:2, d:'20', o20:9, min:1, els:[H('AI 가속기 경쟁 구도'), A('ranges', 96, 216, 1408, 360), A('sticker', 96, 640, 1408, 96, {lb:'관건', t:'자체 칩·AMD 전환 시 CUDA 코드 재작성 필요. 걸림돌은 칩 성능이 아닌 코드'})], notes:
+ {id:'alt', kind:'content', sec:2, d:'20', o20:9, min:1, els:[H('AI 가속기 경쟁 구도'), A('ranges', 96, 200, 1408, 250), A('cards', 96, 476, 1408, 220, {step:false, items:'chip|고객 자체 칩|AWS Trainium · Google TPU · Microsoft Maia · Meta MTIA. 최대 고객의 공급자 겸 경쟁자 전환|■\nbranch|CUDA 대체 소프트웨어|AMD ROCm · OpenAI Triton · Intel oneAPI. 오픈소스 기반 대체 시도|□\nlayers|전환 장벽|CUDA 전용 코드 재작성 필요. 과거 이식 기간 6~12개월|□'}), A('sticker', 96, 736, 1408, 84, {lb:'관건', t:'자체 칩·AMD 전환 시 CUDA 코드 재작성 필요. 걸림돌은 칩 성능이 아닌 코드'})], notes:
 `가장 큰 고객인 대형 클라우드 사업자들은 자체 칩을 만들고 있고, AMD도 대안으로 나와 있습니다.
 하지만 옮기려면 CUDA로 짠 코드를 다시 써야 했습니다. 지금까지는 그 비용이 대체를 막았습니다.
 
 [메모] 모두 추정치이며 출처마다 차이가 있다(AMD 5~12%).`},
- {id:'pivot', kind:'content', sec:2, d:'20', o20:10, o5:3, min:1.5, min5:1.25, els:[H('AMD 전환 경로 개방'), A('bridge', 96, 200, 1408, 600)], notes:
+ {id:'pivot', kind:'content', sec:2, d:'20', o20:10, o5:3, min:1.5, min5:1.25, els:[H('AMD 전환 경로 개방'), A('bridge', 96, 208, 940, 400), A('kv', 1080, 208, 424, 400, {t:'발표 내용', rows:'주체|Anthropic, 자사 AI 모델 활용\n대상|CUDA 추론 코드 → AMD MI355X\n기간|약 3일 (과거 6~12개월)\n범위|단일 모델 추론 작업 · 회사 자체 발표'}), A('sticker', 96, 712, 1408, 96, {lb:'시사점', t:'전환 장벽이던 코드 재작성 기간의 대폭 단축. 단일 사례·추론 작업 한정'})], notes:
 `지금까지 CUDA 코드는 NVIDIA GPU에서만 돌았습니다. AMD로 옮기려면 다시 짜야 했고, 그 비용이 대체를 막았습니다.
-2026년에 이 길이 열렸습니다. Anthropic은 AI 에이전트가 CUDA 추론 코드를 AMD MI355X용으로 옮기는 데 약 3일이 걸렸다고 밝혔습니다. 예전에는 6~12개월이 걸리던 일입니다.
+2026년에 이 길이 열렸습니다. Anthropic은 자사 AI 모델로 CUDA 추론 코드를 AMD MI355X용으로 변환하는 데 약 3일이 걸렸다고 밝혔습니다. 예전에는 6~12개월이 걸리던 일입니다.
 해자의 핵심이던 전환 비용이 AI 때문에 무너지기 시작한 것입니다.
 
 [메모] 첫 클릭에 2026년 줄, 두 번째 클릭에 기간 막대가 12개월에서 3일로 줄어든다. 수치는 투자자 대상 자료의 회사 자체 발표이며 단일 모델의 추론 작업에 한정. 이 자료는 Anthropic의 모델인 Claude가 정리를 도왔다.`},
@@ -1330,9 +1330,9 @@ NVIDIA는 더 이상 그래픽카드 회사가 아니라 AI 인프라 회사입�
 `그 비용이 2026년에 무너지기 시작했습니다. Anthropic은 AI 모델이 CUDA 추론 코드를 AMD MI355X용으로 옮기는 데 약 3일이 걸렸다고 밝혔습니다. 예전에는 6~12개월이 걸리던 작업입니다.
 
 [메모] 투자자 대상 자료에 실린 회사 자체 발표이며, 모델 하나의 추론 작업에 한정된 수치다. 이 자료는 Anthropic의 모델인 Claude가 정리를 도왔다. 질문이 나오면 이 단서를 그대로 말한다. OpenAI도 자체 칩용 커널 작성을 AI에게 맡겼다는 2차 보도가 있다.`},
- {id:'s14', kind:'content', sec:2, o5:4, min5:0.5, d:'20', o20:11, min:1.5, els:[H('고착형 플랫폼 전략의 지속 가능성'), A('matrix', 96, 196, 900, 582, {pts:'CUDA 2012–2025|0.82|0.85|■\nCUDA 2026~|0.82|0.45|□', arr:'1>2', q:'|고착형 플랫폼||개방형 플랫폼'}), A('sticker', 1040, 300, 464, 300, {lb:'질문', t:'외부 축적은 유지, 전환 비용만 하락 시 고착 기반 독점의 지속 여부'})], notes:
+ {id:'s14', kind:'content', sec:2, o5:4, min5:0.5, d:'20', o20:11, min:1.5, els:[H('고착형 플랫폼 전략의 지속 가능성'), A('matrix', 96, 196, 900, 582, {pts:'CUDA 2012–2025|0.82|0.85|■\nCUDA 2026~|0.82|0.45|□', arr:'1>2', q:'|고착형 플랫폼||개방형 플랫폼'}), A('kv', 1040, 196, 464, 340, {t:'판단 기준', rows:'가로축|외부 개발자 결과물의 축적\n세로축|다른 칩·플랫폼으로 옮기는 비용\n2012–2025|CUDA 전용 코드, 이식 6~12개월\n2026~|AI 코드 변환, 이식 약 3일'}), A('sticker', 1040, 572, 464, 206, {lb:'질문', t:'외부 축적은 유지, 전환 비용만 하락 시 고착 기반 독점의 지속 여부'})], notes:
 `CUDA의 강점은 두 가지였습니다. 외부 개발자가 쌓아 준다는 것, 그리고 쌓인 것을 옮기기 어렵다는 것입니다.
-AI가 이식을 맡으면 두 번째 힘이 약해집니다. 축적은 남아 있지만 고착은 풀립니다. 고착에 기댄 플랫폼 전략이 흔들리는 지점입니다.`},
+AI로 코드를 변환하면 두 번째 힘이 약해집니다. 축적은 남아 있지만 고착은 풀립니다. 고착에 기댄 플랫폼 전략이 흔들리는 지점입니다.`},
  {id:'s12', kind:'content', sec:2, d:'20', o20:12, min:1, els:[H('NVIDIA의 반론'), A('debate', 96, 216, 1408, 480), A('sharebar', 96, 760, 1408, 24)], notes:
 `NVIDIA의 반론도 있습니다. AI는 CUDA 코드도 더 빨리 짜 주기 때문에 오히려 CUDA 생태계가 더 커진다는 것입니다. 점유율도 아직 80%대입니다. 지금 판단하기는 이릅니다.`},
 
@@ -1359,19 +1359,19 @@ CUDA는 코드를 자사 칩에 종속시켜 개발자 기반을 유지했습니
 
 [메모] 개발자 수는 집계 기준이 달라 단순 비교에 한계가 있다(두 수치 모두 NVIDIA 집계).`},
  {id:'st5', kind:'content', sec:3, d:'', o20:13, min:1, els:[H('재편 후 구도: 칩은 경쟁 체제, 모델 유통은 NVIDIA'), A('story', 96, 196, 1408, 640, {stage:5})], notes:
-`그림으로 다시 보면, AI 이식으로 CUDA 코드는 AMD와 자체 칩으로도 옮겨갈 수 있게 됐습니다. 칩 층에서는 경쟁이 열립니다.
+`그림으로 다시 보면, AI 코드 변환으로 CUDA 코드는 AMD와 자체 칩으로도 옮겨갈 수 있게 됐습니다. 칩 층에서는 경쟁이 열립니다.
 그 위에서 모델이 오가는 자리는 NVIDIA가 보유하게 됩니다. 어느 칩을 쓰든 모델은 이 허브를 거칩니다.
 
 [메모] 인수는 아직 종결 전이다. "보유하게 된다"로 말한다. 점유율 추이(2023년 약 87% → 2026년 약 81%, 추정).`},
- {id:'ba', kind:'content', sec:3, d:'20 5', o20:15, o5:7, min:1.5, min5:1, els:[H('인수 전후 비교'), A('cmptable', 96, 200, 1408, 500, {h:'인수 전 · CUDA|인수 후 · CUDA + 허깅페이스', rows:'개발자 기반|1,100만 명|+ 1,800만 명\n축적 자산|코드 · 라이브러리 1,000개+|+ 공개 모델 300만 개+\n고객 유지 방식|전환 비용 · NVIDIA 칩 필수|+ 네트워크 효과 · 칩 선택 자유\n취약점|AI 이식 시 전환 비용 하락|중립성 훼손 시 이탈'}), A('sticker', 96, 736, 1408, 84, {lb:'시사점', t:'코드 종속은 AI 이식으로 약화 가능. 개방형 플랫폼의 네트워크 효과는 칩 전환과 무관하게 유지'})], notes:
+ {id:'ba', kind:'content', sec:3, d:'20 5', o20:15, o5:7, min:1.5, min5:1, els:[H('인수 전후 비교'), A('cmptable', 96, 200, 1408, 500, {h:'인수 전 · CUDA|인수 후 · CUDA + 허깅페이스', rows:'개발자 기반|1,100만 명|+ 1,800만 명\n축적 자산|코드 · 라이브러리 1,000개+|+ 공개 모델 300만 개+\n고객 유지 방식|전환 비용 · NVIDIA 칩 필수|+ 네트워크 효과 · 칩 선택 자유\n취약점|AI 코드 변환 시 전환 비용 하락|중립성 훼손 시 이탈'}), A('sticker', 96, 736, 1408, 84, {lb:'시사점', t:'코드 종속은 AI 코드 변환으로 약화 가능. 개방형 플랫폼의 네트워크 효과는 칩 전환과 무관하게 유지'})], notes:
 `인수 전후를 같은 기준으로 비교했습니다.
-인수 전 NVIDIA의 개발자 기반은 CUDA 하나였고, 고객을 붙잡는 방식은 전환 비용이었습니다. 다른 칩으로 옮기려면 코드를 다시 짜야 했기 때문입니다. 이 방식의 취약점은 앞에서 본 AI 이식입니다. 6~12개월 걸리던 이식이 약 3일로 줄면 전환 비용이 더 이상 고객을 붙잡지 못합니다.
+인수 전 NVIDIA의 개발자 기반은 CUDA 하나였고, 고객을 붙잡는 방식은 전환 비용이었습니다. 다른 칩으로 옮기려면 코드를 다시 짜야 했기 때문입니다. 이 방식의 취약점은 앞에서 본 AI 코드 변환입니다. 6~12개월 걸리던 이식이 약 3일로 줄면 전환 비용이 더 이상 고객을 붙잡지 못합니다.
 허깅페이스는 다른 방식으로 개발자를 붙잡습니다. 모델을 올리는 쪽이 많을수록 내려받는 쪽이 모이고, 이용자가 많을수록 공급자가 모이는 양면 네트워크 효과입니다. 이 효과는 고객이 어떤 칩을 쓰든 유지됩니다.
 인수 후 NVIDIA는 전환 비용에 기대는 CUDA에, 칩과 무관하게 유지되는 네트워크 효과를 더하게 됩니다. 대신 새 취약점이 생깁니다. 허깅페이스가 NVIDIA에 유리하게 운영되면 이용자가 떠납니다.
 
-[메모] 인수 발표(9월)가 Anthropic 발표(11월)보다 먼저다. AI 이식에 대한 대응으로 말하지 않고, 두 고객 유지 방식의 구조 차이로 설명한다.`},
- {id:'mx2', kind:'content', sec:3, d:'20', o20:16, min:1, els:[H('플랫폼 유형 변화: 고착형 → 개방형'), A('matrix', 96, 196, 900, 582, {pts:'CUDA 2012–2025|0.82|0.85|□\nCUDA 2026~|0.82|0.45|□\n허깅페이스 (인수 후)|0.72|0.15|■', arr:'1>2\n2>3', q:'|고착형 플랫폼||개방형 플랫폼'}), A('sticker', 1040, 300, 464, 300, {lb:'시사점', t:'고착형 위치는 AI 이식으로 약화. 전환 비용에 의존하지 않는 개방형 위치 확보를 위한 투자'})], notes:
-`앞에서 본 매트릭스로 돌아가겠습니다. CUDA는 외부 개발자의 축적이 많고 전환 비용이 높은 고착형 플랫폼이었습니다. AI 이식으로 전환 비용이 내려가면서 아래로 이동하고 있습니다.
+[메모] 인수 발표(9월)가 Anthropic 발표(11월)보다 먼저다. AI 코드 변환에 대한 대응으로 말하지 않고, 두 고객 유지 방식의 구조 차이로 설명한다.`},
+ {id:'mx2', kind:'content', sec:3, d:'20', o20:16, min:1, els:[H('플랫폼 유형 변화: 고착형 → 개방형'), A('matrix', 96, 196, 900, 582, {pts:'CUDA 2012–2025|0.82|0.85|□\nCUDA 2026~|0.82|0.45|□\n허깅페이스 (인수 후)|0.72|0.15|■', arr:'1>2\n2>3', q:'|고착형 플랫폼||개방형 플랫폼'}), A('kv', 1040, 196, 464, 340, {t:'유형 구분', rows:'고착형|전환 비용으로 고객 유지\n개방형|네트워크 효과로 고객 유지\n허깅페이스|모델 300만 개+, 칩 무관\n인수 후|두 유형 동시 보유'}), A('sticker', 1040, 572, 464, 206, {lb:'시사점', t:'고착형 위치는 AI 코드 변환으로 약화. 전환 비용에 의존하지 않는 개방형 위치 확보를 위한 투자'})], notes:
+`앞에서 본 매트릭스로 돌아가겠습니다. CUDA는 외부 개발자의 축적이 많고 전환 비용이 높은 고착형 플랫폼이었습니다. AI 코드 변환으로 전환 비용이 내려가면서 아래로 이동하고 있습니다.
 허깅페이스는 축적은 많지만 전환 비용이 낮은 개방형 플랫폼입니다. 인수가 완료되면 NVIDIA는 고착형과 개방형 두 위치를 함께 보유하게 됩니다.
 
 [메모] 좌표는 발표자 판단에 따른 개념적 위치이며 측정값이 아니다.`},
@@ -1386,7 +1386,7 @@ CUDA는 코드를 자사 칩에 종속시켜 개발자 기반을 유지했습니
  {id:'take', kind:'content', sec:-1, d:'20', o20:18, o5:6, min:1, min5:0.25, els:[H('Take home'), A('execsum', 96, 200, 1408, 620, {rows:EXEC})], notes:
 `정리하겠습니다. 화면의 다섯 줄이 오늘 발표의 전부입니다.`},
  {id:'refs', kind:'refs', d:'20 5', o20:99, o5:99, els:[H('참고자료'), T(
-'<b>CUDA 개발자 수</b> Jon Peddie Research, CUDA turns 20 with 11 million developers (NVIDIA SC26 발표)<br><b>AlexNet</b> Krizhevsky, Sutskever, Hinton. ImageNet classification with deep convolutional neural networks (2012)<br><b>FY2026 실적</b> NVIDIA Announces Financial Results for Fourth Quarter and Fiscal 2026<br><b>데이터센터 13배</b> PC Gamer, FY2026 데이터센터 실적 보도 (CFO 발언)<br><b>대형 클라우드 비중</b> TechRepublic (CFO 발언)<br><b>점유율</b> NewMarketPitch, Silicon Analysts, SwotPal, Oreate AI (추정치)<br><b>Anthropic AMD 이식</b> The Decoder, Mezha (Anthropic IPO 로드쇼 자료 보도)<br><b>NVIDIA 반론</b> Computer Weekly, CUDA at 20 (Ian Buck)<br><b>허깅페이스 인수</b> NVIDIA 블로그, SEC 8-K (2026.9.2), Yahoo Finance, 서울신문, IT데일리<br><b>FY2017 매출 구성, 제품별 가격대</b> 4-2조 발표 자료 NVIDIA Blue Ocean Strategy v2 (2026.5.20)<br><b>교재</b> Parker, Van Alstyne, Choudary. 《플랫폼 레볼루션》<br><b>장면</b> 재현 화면은 발표자가 그린 도식이며 실제 제품 화면이 아님. 사진은 4-2조 발표 자료(2026.5.20). NVIDIA 로고는 NVIDIA의 상표',
+'<b>CUDA 개발자 수</b> Jon Peddie Research, CUDA turns 20 with 11 million developers (NVIDIA SC26 발표)<br><b>AlexNet</b> Krizhevsky, Sutskever, Hinton. ImageNet classification with deep convolutional neural networks (2012)<br><b>FY2026 실적</b> NVIDIA Announces Financial Results for Fourth Quarter and Fiscal 2026<br><b>데이터센터 13배</b> PC Gamer, FY2026 데이터센터 실적 보도 (CFO 발언)<br><b>대형 클라우드 비중</b> TechRepublic (CFO 발언)<br><b>점유율</b> NewMarketPitch, Silicon Analysts, SwotPal, Oreate AI (추정치)<br><b>Anthropic AMD 이식</b> The Decoder, Mezha (Anthropic IPO 로드쇼 자료 보도)<br><b>NVIDIA 반론</b> Computer Weekly, CUDA at 20 (Ian Buck)<br><b>허깅페이스 인수</b> NVIDIA 블로그, SEC 8-K (2026.9.2), Yahoo Finance, 서울신문, IT데일리<br><b>FY2017 매출 구성, 제품별 가격대, 고객 자체 칩·CUDA 대체 소프트웨어 사례</b> 4-2조 발표 자료 NVIDIA Blue Ocean Strategy v2 (2026.5.20)<br><b>교재</b> Parker, Van Alstyne, Choudary. 《플랫폼 레볼루션》<br><b>장면</b> 재현 화면은 발표자가 그린 도식이며 실제 제품 화면이 아님. 사진은 4-2조 발표 자료(2026.5.20). NVIDIA 로고는 NVIDIA의 상표',
  96, 196, 1408, 640, {size:19, color:'t2', lh:1.7})], notes:''},
 ];
 
