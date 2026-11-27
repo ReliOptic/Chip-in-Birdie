@@ -1,0 +1,771 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CUDA 플랫폼 발표</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet">
+<style>
+:root{
+  --bg:#000; --card:#151515; --raised:#1f1f1f; --line:#2d2d2d;
+  --t1:#ffffff; --t2:#aaaaaa; --t3:#888888;
+  --g:#76b900; --g2:#4f7a00; --g3:#24380a;
+  --ease:cubic-bezier(0.22,1,0.36,1);
+  --sans:"Pretendard Variable","Pretendard","Inter","Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:var(--bg);color:var(--t1);font-family:var(--sans);overflow:hidden}
+body{display:grid;place-items:center}
+.num{font-variant-numeric:tabular-nums}
+
+/* stage 1600x900, scaled to fit */
+#stage{position:relative;width:1600px;height:900px;transform-origin:center;flex:none}
+.slide{position:absolute;inset:0;padding:72px 96px 64px;opacity:0;pointer-events:none;transform:translateY(8px);transition:opacity 300ms var(--ease),transform 300ms var(--ease);display:flex;flex-direction:column}
+.slide.on{opacity:1;pointer-events:auto;transform:none}
+.slide.off{display:none}
+.slide>h2{font-size:44px;line-height:1.15;font-weight:600;letter-spacing:-0.02em;max-width:1200px}
+.idx{position:absolute;top:80px;right:96px;font:400 18px/1 var(--mono);color:var(--t3)}
+.idx b{font-weight:500;color:var(--g)}
+.body{flex:1;display:flex;align-items:center;justify-content:center;min-height:0}
+.notes,.notes5{display:none}
+.cap{font-size:22px;line-height:32px;color:var(--t2)}
+.meta{font:400 18px/24px var(--mono);color:var(--t3)}
+.big{font-size:200px;line-height:1;font-weight:600;letter-spacing:-0.03em;color:var(--g)}
+.big small{font-size:96px;letter-spacing:-0.02em}
+.stack{display:flex;flex-direction:column;align-items:center;gap:24px;text-align:center}
+
+/* fragments */
+.frag{opacity:0;transform:translateY(8px);transition:opacity 300ms var(--ease),transform 300ms var(--ease)}
+.frag.shown{opacity:1;transform:none}
+
+/* cover */
+.cover{padding:0}
+.cover svg.arcs{position:absolute;inset:0;width:100%;height:100%}
+.cover .ct{position:absolute;left:128px;bottom:144px}
+.cover .bar{width:64px;height:6px;background:var(--g);margin-bottom:32px}
+.cover h1{font-size:88px;line-height:1.04;font-weight:600;letter-spacing:-0.03em}
+.cover .sub{font-size:32px;line-height:40px;color:var(--t2);margin-top:16px}
+.cover .who{margin-top:56px;font-size:22px;line-height:32px;color:var(--t2)}
+.cover .who span{color:var(--t1)}
+
+/* filled = made by NVIDIA, outlined = made outside */
+.nv{background:var(--g);color:#0b1200;border-radius:12px}
+.ext{border:2px solid var(--t2);color:var(--t1);border-radius:12px;background:transparent}
+.ext.dim{border-color:var(--line);color:var(--t3)}
+
+/* s1 paint */
+.paint{display:flex;gap:64px}
+.paint figure{display:flex;flex-direction:column;align-items:center;gap:20px}
+.paint svg{width:560px;height:440px;background:var(--card);border:1px solid var(--line);border-radius:16px}
+.paint figcaption{font:500 28px/1 var(--sans)}
+.paint .dot{opacity:0}
+.on .paint .dot{animation:pop 120ms var(--ease) forwards}
+.on .paint .px{animation:pop 120ms var(--ease) 600ms forwards}
+.paint .px{opacity:0}
+@keyframes pop{to{opacity:1}}
+
+/* s2 flow */
+.flow{display:flex;align-items:center;gap:32px}
+.flow .box{width:320px;height:240px;border-radius:16px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;font-size:28px;font-weight:500;background:var(--card);border:1px solid var(--line)}
+.flow .box.mask{border:2px dashed var(--t3)}
+.flow .arrow{width:72px;height:2px;background:var(--t3);position:relative}
+.flow .arrow::after{content:"";position:absolute;right:-2px;top:-7px;border:8px solid transparent;border-left:12px solid var(--t3);border-right:0}
+.flow code{font:400 24px/1.4 var(--mono);color:var(--t2)}
+
+/* s3 chips */
+.chips{display:grid;grid-template-columns:repeat(8,96px);gap:16px;margin-top:24px}
+.chips i{display:block;height:64px;border-radius:8px;border:2px solid var(--line);background:var(--card)}
+.on .chips i{animation:fill 300ms var(--ease) forwards}
+@keyframes fill{to{background:var(--g);border-color:var(--g)}}
+
+/* s4 acronym */
+.acr{display:flex;gap:40px;align-items:flex-end}
+.acr div{display:flex;flex-direction:column;gap:12px;color:var(--t3)}
+.acr b{font-size:160px;line-height:1;font-weight:600;letter-spacing:-0.03em;color:var(--raised);-webkit-text-stroke:2px var(--t3)}
+.acr span{font-size:28px}
+.acr .u b{color:var(--g);-webkit-text-stroke:0}
+.acr .u span{color:var(--t1);font-weight:500}
+.one2many{display:flex;align-items:center;gap:24px;margin-top:64px}
+.one2many .src{padding:16px 24px;font:500 22px/1 var(--mono)}
+.one2many .tg{display:flex;flex-direction:column;gap:12px}
+.one2many .tg div{padding:12px 20px;font-size:22px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--t2)}
+.one2many svg{width:120px;height:160px}
+
+/* s5 platform diagram */
+.plat{position:relative;width:1240px;height:560px}
+.plat .base{position:absolute;left:0;right:0;bottom:0;height:96px;display:flex;align-items:center;justify-content:space-between;padding:0 32px;font-size:28px;font-weight:600}
+.plat .base em{font-style:normal;font-weight:500;font-size:22px;opacity:.75}
+.plat .actor{position:absolute;top:96px;width:240px;display:flex;flex-direction:column;align-items:center;gap:16px;font-size:24px;color:var(--t2);text-align:center}
+.plat .actor svg{width:80px;height:80px}
+.plat .apps{position:absolute;left:400px;top:48px;width:440px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.plat .apps div{height:72px;display:flex;align-items:center;justify-content:center;font-size:20px;color:var(--t2)}
+.plat .legend{position:absolute;right:0;top:-8px;display:flex;gap:24px;font-size:18px;color:var(--t3)}
+.plat .legend i{display:inline-block;width:16px;height:16px;border-radius:4px;vertical-align:-2px;margin-right:8px}
+.plat svg.links{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+
+/* s6 bars */
+.hbars{width:1200px;display:flex;flex-direction:column;gap:40px}
+.hbar{display:grid;grid-template-columns:200px 1fr;align-items:center;gap:24px}
+.hbar .lb{font-size:28px;color:var(--t2)}
+.hbar .tr{position:relative;height:96px}
+.hbar .fl{height:100%;border-radius:8px;transform-origin:left;transform:scaleX(0);transition:transform 500ms var(--ease) 200ms}
+.on .hbar .fl,.shown .hbar .fl{transform:scaleX(1)}
+.hbar .v{position:absolute;top:50%;transform:translateY(-50%);font-size:56px;font-weight:600;letter-spacing:-0.02em;padding-left:24px}
+
+/* s7 rows */
+.rows{display:flex;flex-direction:column;gap:20px;width:1160px}
+.rows div{text-align:left;display:grid;grid-template-columns:40px 1fr;align-items:center;gap:24px;padding:24px 32px;background:var(--card);border:1px solid var(--line);border-radius:16px;font-size:36px;line-height:1.3;font-weight:500}
+.rows i{width:28px;height:28px;border-radius:6px}
+
+/* s9 chart */
+.chart{display:grid;grid-template-columns:1fr 360px;gap:96px;align-items:end;width:1280px}
+.cols{position:relative;height:560px;display:flex;align-items:flex-end;gap:96px;padding-left:40px;border-bottom:1px solid var(--line)}
+.col{width:200px;display:flex;flex-direction:column;align-items:center;gap:12px;position:relative}
+.col .b{width:100%;border-radius:8px 8px 0 0;transform-origin:bottom;transform:scaleY(0);transition:transform 600ms var(--ease) 200ms}
+.on .col .b{transform:scaleY(1)}
+.col .l{position:absolute;bottom:-44px;font-size:20px;color:var(--t3);white-space:nowrap}
+.col .top{font-size:28px;font-weight:500;color:var(--t1)}
+.times{position:absolute;left:600px;top:0;white-space:nowrap;font-size:120px;font-weight:600;letter-spacing:-0.03em;color:var(--g)}
+.share{display:flex;flex-direction:column;gap:24px}
+.share .row{display:grid;grid-template-columns:72px 1fr 64px;gap:16px;align-items:center;font-size:20px;color:var(--t3)}
+.share .row div{height:16px;background:var(--raised);border-radius:4px;overflow:hidden}
+.share .row div i{display:block;height:100%;background:var(--t2)}
+.share .row b{font-weight:500;color:var(--t1);text-align:right}
+
+/* s10 lock */
+.lock{width:1200px;height:480px}
+
+/* s11 time */
+.time{width:1280px;display:flex;flex-direction:column;gap:48px}
+.trow{display:grid;grid-template-columns:400px 1fr;align-items:center;gap:32px}
+.trow .n{white-space:nowrap;font-size:88px;font-weight:600;letter-spacing:-0.03em;line-height:1}
+.trow .tr{height:56px;position:relative;background:var(--card);border-radius:8px}
+.trow .tr i{position:absolute;top:0;bottom:0;left:0;border-radius:8px;transform-origin:left;transform:scaleX(0);transition:transform 600ms var(--ease) 200ms}
+.on .trow .tr i{transform:scaleX(1)}
+.axis{display:grid;grid-template-columns:400px 1fr;gap:32px}
+.axis div{display:flex;justify-content:space-between;font:400 18px/1 var(--mono);color:var(--t3)}
+.fine{font-size:20px;line-height:28px;color:var(--t3)}
+
+/* s12 share */
+.sbar{width:1000px;height:40px;border-radius:8px;background:var(--raised);overflow:hidden;margin-top:24px}
+.sbar i{display:block;height:100%;width:81%;background:var(--g);transform-origin:left;transform:scaleX(0);transition:transform 600ms var(--ease) 200ms}
+.on .sbar i{transform:scaleX(1)}
+
+/* s14 compare */
+.cmp{display:grid;grid-template-columns:220px 1fr 1fr;width:1240px;border-top:1px solid var(--line)}
+.cmp>div{padding:28px 24px;border-bottom:1px solid var(--line);font-size:30px;line-height:1.3;display:flex;align-items:center;gap:16px}
+.cmp .h{font-size:36px;font-weight:600}
+.cmp .k{font-size:22px;color:var(--t3)}
+.cmp .hf{color:var(--t1)}
+.cmp .h.cu{color:var(--g)}
+.pin{width:24px;height:24px;border-radius:50%;flex:none}
+
+/* refs */
+.refs{columns:2;column-gap:64px;font-size:17px;line-height:26px;color:var(--t2);width:100%;align-self:flex-start;margin-top:40px}
+.refs p{break-inside:avoid;margin-bottom:12px}
+.refs b{color:var(--t1);font-weight:500}
+
+/* chrome */
+#prog{position:fixed;left:0;bottom:0;height:4px;background:var(--g);transition:width 300ms var(--ease);z-index:5}
+#deckSw{position:fixed;right:24px;bottom:20px;display:flex;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:4px;gap:4px;opacity:0;transition:opacity 160ms var(--ease);z-index:6}
+body.hot #deckSw{opacity:1}
+#deckSw button{all:unset;cursor:pointer;font:500 14px/1 var(--mono);color:var(--t3);padding:8px 12px;border-radius:4px;transition:background-color 120ms var(--ease),color 120ms var(--ease)}
+#deckSw button:hover{color:var(--t1)}
+#deckSw button[aria-pressed=true]{background:var(--raised);color:var(--t1);box-shadow:inset 0 1px 0 rgba(255,255,255,0.12)}
+#deckSw button:focus-visible{outline:2px solid var(--g);outline-offset:2px}
+#notesPane{position:fixed;left:0;right:0;bottom:0;max-height:44vh;overflow:auto;background:rgba(21,21,21,0.97);border-top:1px solid var(--line);padding:24px 32px 32px;font-size:18px;line-height:28px;color:var(--t1);transform:translateY(100%);transition:transform 300ms var(--ease);z-index:7}
+body.notes #notesPane{transform:none}
+#notesPane p{margin-bottom:8px;max-width:1100px}
+#notesPane .aux{color:var(--t2);font-size:16px;line-height:24px;margin-top:12px}
+#notesPane .aux b{color:var(--g);font-weight:500}
+#notesPane .tm{font:400 14px/1 var(--mono);color:var(--t3);margin-bottom:12px}
+
+/* presenter window */
+body.presenter{display:block;overflow:auto;padding:32px}
+body.presenter #stage,body.presenter #prog,body.presenter #deckSw,body.presenter #notesPane{display:none}
+#pv{display:none}
+body.presenter #pv{display:grid;grid-template-columns:1fr 320px;gap:32px}
+#pv .cur{font-size:28px;line-height:44px}
+#pv .cur p{margin-bottom:16px}
+#pv .cur .aux{font-size:20px;line-height:32px;color:var(--t2)}
+#pv .cur .aux b{color:var(--g);font-weight:500}
+#pv h3{font-size:32px;font-weight:600;margin-bottom:24px}
+#pv aside{font:400 18px/28px var(--mono);color:var(--t3);display:flex;flex-direction:column;gap:16px}
+#pv aside .clk{font-size:56px;line-height:1;color:var(--t1)}
+#pv aside .nx{color:var(--t2);font-family:var(--sans);font-size:20px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation-duration:1ms!important;animation-delay:0ms!important}}
+</style>
+</head>
+<body>
+<div id="stage">
+
+<!-- ============ COVER (both) ============ -->
+<section class="slide cover" data-deck="20 5" data-o5="0" data-title="표지">
+  <svg class="arcs" viewBox="0 0 1600 900" aria-hidden="true">
+    <g fill="none" stroke="#24380a" stroke-width="40" opacity=".9">
+      <ellipse cx="1080" cy="420" rx="760" ry="420"/>
+      <ellipse cx="1100" cy="420" rx="620" ry="330" stroke="#1d2e08"/>
+      <ellipse cx="1120" cy="420" rx="480" ry="245" stroke="#172507"/>
+      <ellipse cx="1140" cy="420" rx="340" ry="165" stroke="#111b05"/>
+      <ellipse cx="1160" cy="420" rx="200" ry="92" stroke="#0c1304"/>
+    </g>
+  </svg>
+  <div class="ct">
+    <div class="bar"></div>
+    <h1>엔비디아 CUDA</h1>
+    <div class="sub">플랫폼으로 읽기</div>
+    <div class="who">KAIST 플랫폼과 비즈니스 · IMMS <span>박병진</span> · PMBA <span>조기원</span></div>
+  </div>
+  <aside class="notes"><p>(표지)</p></aside>
+</section>
+
+<!-- ============ 20분: 1 ============ -->
+<section class="slide" data-deck="20" data-min="1" data-title="GPU는 병렬 계산기다">
+  <h2>GPU는 병렬 계산기다</h2>
+  <div class="body">
+    <div class="paint">
+      <figure><svg class="p-cpu" viewBox="0 0 560 440" role="img" aria-label="총열 하나가 한 발씩 쏴서 웃는 얼굴을 그린다"></svg><figcaption>CPU</figcaption></figure>
+      <figure><svg class="p-gpu" viewBox="0 0 560 440" role="img" aria-label="천 개가 넘는 총열이 한 번에 쏴서 그림 전체를 그린다"></svg><figcaption style="color:var(--g)">GPU</figcaption></figure>
+    </div>
+  </div>
+  <aside class="notes">
+    <p>2008년 엔비디아 행사에서 물감총 시연이 있었습니다. 로봇 하나는 물감을 한 발씩 쏴서 웃는 얼굴을 그렸고, 다른 하나는 천 개가 넘는 총열로 한 번에 쏴서 모나리자를 그렸습니다. 앞의 것이 CPU이고 뒤의 것이 GPU입니다.</p>
+    <p class="aux"><b>주의</b> 2008년 8월 NVISION 08. CUDA 발표(2006)보다 뒤의 일이므로 CUDA 이전 사건처럼 말하지 않는다. 총열 수는 출처마다 1,100/2,100으로 갈려 "천 개가 넘는"으로 말한다. 화면 그림은 직접 그린 도식.</p>
+  </aside>
+</section>
+
+<!-- 2 -->
+<section class="slide" data-deck="20" data-min="1" data-title="그림 그리는 데만 쓸 수 있었다">
+  <h2>그런데 그림 그리는 데만 쓸 수 있었다</h2>
+  <div class="body">
+    <div class="flow">
+      <div class="box"><code>A × B</code><span>계산</span></div>
+      <div class="arrow"></div>
+      <div class="box mask">
+        <svg width="96" height="84" viewBox="0 0 96 84" aria-hidden="true"><path d="M48 4 L92 80 H4 Z" fill="none" stroke="#aaaaaa" stroke-width="3"/></svg>
+        <span>그림 그리는 명령</span>
+      </div>
+      <div class="arrow"></div>
+      <div class="box"><span style="font-size:48px;color:var(--g);font-weight:600">GPU</span></div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p>이 계산 능력은 화면을 그리는 명령으로만 쓸 수 있었습니다. 과학 계산에 쓰려던 연구자들은 계산을 그림 그리는 작업처럼 꾸며서 GPU에 넘겨야 했습니다. 속도는 좋았지만 그래픽을 모르면 손댈 수 없었습니다.</p>
+    <p class="aux"><b>근거</b> 스탠퍼드 Ian Buck 연구팀이 DirectX, OpenGL로 삼각형을 그리게 하면서 행렬 곱셈을 시켰다.</p>
+  </aside>
+</section>
+
+<!-- 3 -->
+<section class="slide" data-deck="20" data-min="1.5" data-title="범용으로 간다">
+  <h2>엔비디아의 결단: 범용으로 간다</h2>
+  <div class="body">
+    <div class="stack">
+      <div class="big">GPGPU</div>
+      <div class="meta">2006년 11월</div>
+      <div class="chips" aria-label="게임용 GeForce 전체">
+        <i style="animation-delay:500ms"></i><i style="animation-delay:550ms"></i><i style="animation-delay:600ms"></i><i style="animation-delay:650ms"></i><i style="animation-delay:700ms"></i><i style="animation-delay:750ms"></i><i style="animation-delay:800ms"></i><i style="animation-delay:850ms"></i>
+      </div>
+      <div class="cap">GeForce 전 제품</div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p>엔비디아는 GPU를 그래픽 전용에서 범용 계산 장치로 바꾸기로 했습니다. GPGPU입니다. 그리고 이 기능을 일부 고급 제품이 아니라 게임용 GeForce 전체에 넣었습니다. 당시 이 결정으로 이익이 거의 사라졌습니다.</p>
+    <p class="aux"><b>수치(말로만, 한 번)</b> 원가 50% 상승, 당시 총마진 35%, 시가총액 약 15억 달러까지 하락. 젠슨 황의 회고(Lex Fridman 팟캐스트 #494).</p>
+    <p class="aux"><b>주의</b> 비용 이야기는 여기서 끝낸다.</p>
+  </aside>
+</section>
+
+<!-- 4 -->
+<section class="slide" data-deck="20" data-min="1" data-title="CUDA라는 이름">
+  <h2>CUDA라는 이름</h2>
+  <div class="body">
+    <div class="stack">
+      <div class="acr">
+        <div><b>C</b><span>Compute</span></div>
+        <div class="u"><b>U</b><span>Unified</span></div>
+        <div><b>D</b><span>Device</span></div>
+        <div><b>A</b><span>Architecture</span></div>
+      </div>
+      <div class="one2many">
+        <div class="src nv">program.cu</div>
+        <svg viewBox="0 0 120 160" aria-hidden="true"><path d="M0 80 C60 80 60 16 120 16 M0 80 H120 M0 80 C60 80 60 144 120 144" fill="none" stroke="#76b900" stroke-width="2"/></svg>
+        <div class="tg"><div>게임용 GeForce</div><div>워크스테이션</div><div>서버용 GPU</div></div>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p>Compute Unified Device Architecture입니다. Unified가 핵심입니다. 어느 엔비디아 GPU에서든 같은 프로그램이 돌아갑니다. 싼 게임용 카드에서 짠 프로그램이 서버용 GPU에서도 그대로 돕니다.</p>
+    <p class="aux"><b>사실</b> CUDA 발표 2006년 11월 8일, 1.0 공개 2007년 2월.</p>
+  </aside>
+</section>
+
+<!-- 5 (shared with 5분 #2) -->
+<section class="slide" data-deck="20 5" data-o5="2" data-min="2" data-min5="0.83" data-title="왜 플랫폼인가">
+  <h2>왜 플랫폼인가</h2>
+  <div class="body">
+    <div class="plat">
+      <div class="legend"><span><i style="background:var(--g)"></i>엔비디아가 만든 것</span><span><i style="border:2px solid var(--t2)"></i>바깥에서 만든 것</span></div>
+      <svg class="links" viewBox="0 0 1240 560" aria-hidden="true">
+        <defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#aaaaaa"/></marker></defs>
+        <path d="M250 136 H384" stroke="#aaaaaa" stroke-width="2" marker-end="url(#ah)"/>
+        <path d="M856 136 H990" stroke="#aaaaaa" stroke-width="2" marker-end="url(#ah)"/>
+        <path d="M1110 260 C1110 380 900 400 760 450" fill="none" stroke="#76b900" stroke-width="2" stroke-dasharray="6 8" marker-end="url(#ah)"/>
+        <path d="M480 450 C340 400 130 380 130 260" fill="none" stroke="#76b900" stroke-width="2" stroke-dasharray="6 8" marker-end="url(#ah)"/>
+        <text x="935" y="410" fill="#888888" font-size="20" font-family="Pretendard Variable, sans-serif">GPU 구매</text>
+        <text x="190" y="410" fill="#888888" font-size="20" font-family="Pretendard Variable, sans-serif">개발자 증가</text>
+      </svg>
+      <div class="actor" style="left:10px">
+        <svg viewBox="0 0 80 80"><circle cx="40" cy="26" r="16" fill="none" stroke="#aaaaaa" stroke-width="2"/><path d="M10 76 C10 52 70 52 70 76" fill="none" stroke="#aaaaaa" stroke-width="2"/></svg>
+        프로그램 짜는 사람
+      </div>
+      <div class="apps">
+        <div class="ext">응용</div><div class="ext">AI 모델</div><div class="ext">학습 코드</div>
+        <div class="ext">응용</div><div class="ext">도구</div><div class="ext">응용</div>
+      </div>
+      <div class="actor" style="left:990px">
+        <svg viewBox="0 0 80 80"><circle cx="40" cy="26" r="16" fill="none" stroke="#aaaaaa" stroke-width="2"/><path d="M10 76 C10 52 70 52 70 76" fill="none" stroke="#aaaaaa" stroke-width="2"/></svg>
+        가져다 쓰는 사람
+      </div>
+      <div class="base nv"><span>CUDA · 기본 라이브러리</span><em>GPU 판매로 수익, 수수료 없음</em></div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p>엔비디아는 응용 프로그램을 직접 만들지 않습니다. 만들 수 있는 바탕만 내놓습니다.</p>
+    <p>그 위에서 프로그램을 짜는 사람과, 그 프로그램을 가져다 쓰는 사람이 따로 있습니다.</p>
+    <p>프로그램이 늘면 GPU를 살 이유가 늘고, GPU가 늘면 프로그램 짜는 사람이 늡니다.</p>
+    <p>엔비디아는 이 사이에서 수수료를 받지 않고 GPU를 팔아 법니다.</p>
+    <p class="aux"><b>교재 연결(한 번만)</b> 《플랫폼 레볼루션》은 플랫폼을 외부 생산자와 소비자 사이의 가치 창출 상호작용을 가능케 하는 사업으로 정의합니다. CUDA는 거래를 중개하는 플랫폼이 아니라, 그 위에서 남들이 만들게 하는 플랫폼입니다.</p>
+    <p class="aux"><b>미리 품는 의문</b> "그냥 개발 도구 아닌가?" → 초록으로 채운 바닥(CUDA, 기본 라이브러리)은 엔비디아가 만든 것, 테두리만 있는 칸(응용 프로그램, AI 모델)은 바깥에서 만든 것. 이 구분을 가리키며 답한다. CUDA-X 라이브러리 1,000여 개도 엔비디아가 만든 쪽이다.</p>
+  </aside>
+  <aside class="notes5">
+    <p>엔비디아는 응용 프로그램을 직접 만들지 않습니다. 만들 수 있는 바탕만 내놓습니다. 그 위에서 프로그램을 짜는 사람과, 그 프로그램을 가져다 쓰는 사람이 따로 있습니다.</p>
+    <p>프로그램이 늘면 GPU를 살 이유가 늘고, GPU가 늘면 프로그램 짜는 사람이 늡니다. 엔비디아는 이 사이에서 수수료를 받지 않고 GPU를 팔아 법니다.</p>
+    <p class="aux"><b>교재 연결(한 번만)</b> 외부 생산자와 소비자 사이의 가치 창출 상호작용을 가능케 하는 사업. 거래 중개형이 아니라 그 위에서 남들이 만들게 하는 플랫폼.</p>
+  </aside>
+</section>
+
+<!-- 6 -->
+<section class="slide" data-deck="20" data-min="1.5" data-title="AlexNet">
+  <h2>AlexNet: 실제로 일어난 일</h2>
+  <div class="body">
+    <div class="stack" style="align-items:flex-start">
+      <div class="hbars">
+        <div class="hbar"><div class="lb">AlexNet</div><div class="tr"><div class="fl" style="width:58.4%;background:var(--g)"></div><div class="v num" style="left:58.4%;color:var(--g)">15.3%</div></div></div>
+        <div class="hbar"><div class="lb">2위</div><div class="tr"><div class="fl" style="width:100%;background:var(--raised)"></div><div class="v num" style="left:0;color:var(--t1)">26.2%</div></div></div>
+      </div>
+      <div class="meta" style="padding-left:224px">ImageNet 2012 · 상위 5개 오류율 · 낮을수록 좋음</div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p>2012년 토론토 대학의 대학원생이 신경망 학습 프로그램을 CUDA로 직접 짰습니다. 장비는 게임용 GTX 580 두 장이었고, 학습에 5~6일이 걸렸습니다. 이미지 인식 대회에서 오류율 15.3%로 우승했고 2위는 26.2%였습니다.</p>
+    <p class="aux"><b>출처</b> Krizhevsky 외 2012 논문(1차 자료). GTX 580 3GB 두 장.</p>
+  </aside>
+</section>
+
+<!-- 7 -->
+<section class="slide" data-deck="20" data-min="2" data-title="왜 플랫폼의 결실인가">
+  <h2>이것이 왜 플랫폼의 결실인가</h2>
+  <div class="body">
+    <div class="rows">
+      <div class="frag"><i class="ext" style="border-radius:6px"></i>엔비디아가 만든 프로그램이 아니다</div>
+      <div class="frag"><i class="nv" style="border-radius:6px"></i>매장에서 파는 게임용 카드</div>
+      <div class="frag"><i class="ext" style="border-radius:6px"></i>공개된 코드 위에 다음 연구가 쌓였다</div>
+      <div class="frag"><i class="nv" style="border-radius:6px"></i>프로그램은 그대로, GPU만 바꾼다</div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p>엔비디아가 만든 프로그램이 아닙니다. 엔비디아는 딥러닝을 겨냥한 적이 없습니다.</p>
+    <p>대학원생이 매장에서 살 수 있는 카드로 했습니다. 모든 GeForce에 CUDA를 넣었기 때문에 가능했습니다.</p>
+    <p>연구팀은 이 코드를 공개했습니다. 다른 연구자들이 가져다 쓰고 그 위에 쌓았습니다.</p>
+    <p>논문에는 더 빠른 GPU가 나오면 결과가 더 좋아질 것이라고 적혀 있습니다. 프로그램은 그대로 두고 GPU만 바꾸면 됩니다.</p>
+    <p>엔비디아는 바탕을 열어 두었고 쓸모는 바깥에서 나왔습니다.</p>
+    <p class="aux"><b>미리 품는 의문</b> "선견지명인가, 운인가?" → 딥러닝을 예측한 것은 아니었다고 그대로 말한다. 젠슨 황 본인도 "언젠가 놀라운 일이 생길 것"이라는 기대 수준이었다고 말했다. "좋은데 쓰지 못했다"는 문장은 출처 미확인이므로 인용하지 않는다.</p>
+    <p class="aux"><b>조작</b> → 키를 누를 때마다 한 줄씩 나타난다.</p>
+  </aside>
+</section>
+
+<!-- 8 -->
+<section class="slide" data-deck="20" data-min="1" data-title="2012~2022">
+  <h2>같은 일이 반복되며 커졌다, 2012~2022</h2>
+  <div class="body">
+    <div class="stack">
+      <div class="big num">1,100<small>만 명</small></div>
+      <div class="cap">CUDA 개발자 · 엔비디아 집계</div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p>AlexNet 이후 AI 연구자 대부분이 CUDA 위에서 일했습니다. 누군가 공개한 코드를 다음 사람이 받아 쓰는 일이 쌓였고, 지금 엔비디아 집계로 개발자가 1,100만 명입니다.</p>
+    <p class="aux"><b>주의</b> 개발자 수는 출처에 따라 400만에서 1,100만까지 다르다. "엔비디아 집계"라고 밝힌다(SC26 발표, Jon Peddie Research).</p>
+  </aside>
+</section>
+
+<!-- 9 -->
+<section class="slide" data-deck="20" data-min="1.5" data-title="2023년 이후">
+  <h2>2023년 이후</h2>
+  <div class="body">
+    <div class="chart">
+      <div class="cols">
+        <div class="col"><div class="b" style="height:40px;background:var(--t3)"></div><div class="l">ChatGPT 이전</div></div>
+        <div class="col"><div class="top num">1,937억 달러</div><div class="b" style="height:480px;background:var(--g)"></div><div class="l">FY2026</div></div>
+        <div class="times num">13배</div>
+      </div>
+      <div class="share">
+        <div class="meta">엔비디아 점유율 추정</div>
+        <div class="row num"><span>2023</span><div><i style="width:87%"></i></div><b>87%</b></div>
+        <div class="row num"><span>2026</span><div><i style="width:81%"></i></div><b>81%</b></div>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p>FY2026 데이터센터 매출은 1,937억 달러이고 ChatGPT 이후 약 13배입니다. 점유율은 2023년 약 87%, 2026년 약 81%입니다.</p>
+    <p class="aux"><b>숫자로 알 수 없는 것</b> 이 중 CUDA가 기여한 몫은 나눠 볼 수 없다. 칩 성능과 공급 능력도 함께 작용했다.</p>
+    <p class="aux"><b>주의</b> 막대는 13배 비율만 나타낸 것(왼쪽 막대 = 1). AMD 점유율은 추정치가 5~12%로 갈린다. 대형 클라우드 회사의 자체 칩은 12~18%로 추정된다. 점유율은 NewMarketPitch 추정치.</p>
+  </aside>
+</section>
+
+<!-- 10 -->
+<section class="slide" data-deck="20" data-min="1" data-title="강한 플랫폼의 이면">
+  <h2>강한 플랫폼의 이면</h2>
+  <div class="body">
+    <svg class="lock" viewBox="0 0 1200 480" role="img" aria-label="CUDA 프로그램은 엔비디아 GPU로만 이어진다">
+      <rect x="40" y="180" width="320" height="120" rx="16" fill="none" stroke="#aaaaaa" stroke-width="2"/>
+      <text x="200" y="250" text-anchor="middle" fill="#ffffff" font-size="30" font-weight="500" font-family="Pretendard Variable, sans-serif">CUDA 프로그램</text>
+      <path d="M360 240 C520 240 560 110 760 110" fill="none" stroke="#76b900" stroke-width="4"/>
+      <rect x="760" y="50" width="400" height="120" rx="16" fill="#76b900"/>
+      <text x="960" y="120" text-anchor="middle" fill="#0b1200" font-size="30" font-weight="600" font-family="Pretendard Variable, sans-serif">엔비디아 GPU</text>
+      <path d="M360 240 C460 240 500 330 560 355" fill="none" stroke="#555555" stroke-width="4" stroke-dasharray="10 10"/>
+      <path d="M600 345 l24 24 M624 345 l-24 24" stroke="#888888" stroke-width="4"/>
+      <rect x="760" y="310" width="400" height="120" rx="16" fill="#151515" stroke="#2d2d2d" stroke-width="2"/>
+      <text x="960" y="380" text-anchor="middle" fill="#888888" font-size="30" font-weight="500" font-family="Pretendard Variable, sans-serif">다른 회사 칩</text>
+    </svg>
+  </div>
+  <aside class="notes">
+    <p>CUDA로 짠 프로그램은 다른 회사 칩에서 돌지 않습니다. 엔비디아 GPU의 기계어로 바뀌고, 엔비디아 전용 라이브러리를 불러 쓰기 때문입니다. 옮기려면 다시 짜야 합니다. 그래서 고객은 가격이 높아도 엔비디아를 떠나기 어려웠습니다.</p>
+    <p class="aux"><b>보충</b> 데이터센터 매출의 절반 남짓이 대형 클라우드 회사에서 나온다. 엔비디아 총마진은 FY2026 기준 71.1%다.</p>
+    <p class="aux"><b>미리 품는 의문</b> "왜 다른 칩에서 안 도는가?" → 위 문장으로 답이 된다. 기술적 필연이 아니라 엔비디아의 선택이라는 점을 한 문장 더할 수 있다.</p>
+  </aside>
+</section>
+
+<!-- 11 (shared with 5분 #4) -->
+<section class="slide" data-deck="20 5" data-o5="4" data-min="1.5" data-min5="1" data-title="2026년에 달라진 것">
+  <h2>2026년에 달라진 것</h2>
+  <div class="body">
+    <div class="time">
+      <div class="trow"><div class="n num" style="color:var(--g)">3일</div><div class="tr"><i style="width:0.82%;min-width:8px;background:var(--g)"></i></div></div>
+      <div class="trow"><div class="n num">6~12개월</div><div class="tr"><i style="width:100%;background:linear-gradient(90deg,#555555 0 49.3%,#333333 49.3% 100%)"></i></div></div>
+      <div class="axis"><span></span><div class="num"><span>0</span><span>6개월</span><span>12개월</span></div></div>
+      <div class="fine" style="margin-top:16px">AI 모델이 AMD MI355X용으로 옮긴 기간 · Anthropic 투자자 대상 자료 · 모델 하나의 추론 작업에 한정</div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p>Anthropic은 AI 모델이 AMD GPU용 이식 작업을 약 3일에 끝냈고 예전에는 6~12개월이 걸렸다고 밝혔습니다. 투자자 대상 발표이고 모델 하나의 추론 작업에 한정된 수치입니다.</p>
+    <p class="aux"><b>미리 품는 의문</b> "자기 회사 주장 아닌가?" → 맞다. 화면 아래 단서를 같이 가리킨다.</p>
+    <p class="aux"><b>보충(필요하면 한 문장)</b> OpenAI가 자체 칩에서 AI에게 커널을 쓰게 했다는 보도가 있다. 2차 보도다.</p>
+    <p class="aux"><b>단서</b> 이 자료는 Anthropic의 모델인 Claude가 정리를 도왔다. 그 점을 감안해 이 수치에는 단서를 반드시 붙인다.</p>
+  </aside>
+  <aside class="notes5">
+    <p>CUDA로 짠 프로그램은 다른 회사 칩에서 돌지 않습니다. 옮기려면 다시 짜야 했고, 그래서 고객은 가격이 높아도 엔비디아를 떠나기 어려웠습니다.</p>
+    <p>Anthropic은 AI 모델이 AMD GPU용 이식 작업을 약 3일에 끝냈고 예전에는 6~12개월이 걸렸다고 밝혔습니다. 투자자 대상 발표이고 모델 하나의 추론 작업에 한정된 수치입니다.</p>
+    <p>엔비디아는 AI가 CUDA 프로그램도 더 빨리 짜주니 오히려 유리하다고 봅니다. 점유율도 아직 80%대입니다. 판단하기에는 이릅니다.</p>
+    <p class="aux"><b>단서</b> 자사 주장이다. 이 자료는 Anthropic의 모델인 Claude가 정리를 도왔으므로 단서를 반드시 붙인다.</p>
+  </aside>
+</section>
+
+<!-- 12 -->
+<section class="slide" data-deck="20" data-min="1" data-title="엔비디아의 반론">
+  <h2>엔비디아의 반론</h2>
+  <div class="body">
+    <div class="stack">
+      <div class="big num">81%</div>
+      <div class="sbar"><i></i></div>
+      <div class="cap">엔비디아 점유율 추정 · 2026</div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p>엔비디아는 AI가 CUDA 프로그램도 더 빨리 짜주니 오히려 유리하다고 봅니다. 점유율도 아직 80%대입니다. 판단하기에는 이릅니다.</p>
+    <p class="aux"><b>출처</b> Ian Buck 발언(Computer Weekly). 점유율은 NewMarketPitch 추정치.</p>
+  </aside>
+</section>
+
+<!-- 13 -->
+<section class="slide" data-deck="20" data-min="1.5" data-title="허깅페이스">
+  <h2>엔비디아의 다음 움직임: 허깅페이스</h2>
+  <div class="body">
+    <div class="stack">
+      <div class="big num">129<small>억 달러</small></div>
+      <div class="cap">2026년 9월 인수 계약 · 2027년 상반기 종결 예정</div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p>2026년 9월 엔비디아는 허깅페이스를 129억 달러에 인수하기로 했습니다. 허깅페이스는 AI 모델을 올리고 내려받는 곳입니다. 개발자 1,800만 명이 모델 300만 개를 공유하고 있습니다. 거래는 규제 승인을 거쳐 2027년 상반기에 끝날 예정입니다.</p>
+    <p class="aux"><b>주의</b> 이 발표(9월 3일)는 앞 장의 Anthropic 발표(11월)보다 두 달 먼저다. 대응 관계로 말하지 않는다. "인수했다"가 아니라 "인수하기로 했다".</p>
+    <p class="aux"><b>세부</b> 129.3억 달러 = 주주 대금 약 119억 + 직원 보상 최대 10억. 9월 2일 계약, 9월 3일 발표(엔비디아 블로그, SEC 8-K).</p>
+  </aside>
+</section>
+
+<!-- 14 -->
+<section class="slide" data-deck="20" data-min="1.5" data-title="CUDA와 허깅페이스">
+  <h2>CUDA와 무엇이 같고 무엇이 다른가</h2>
+  <div class="body">
+    <div class="cmp">
+      <div></div><div class="h cu">CUDA</div><div class="h hf">허깅페이스</div>
+      <div class="k">쌓이는 것</div><div>프로그램</div><div>모델</div>
+      <div class="k">엔비디아 칩</div><div><i class="pin" style="background:var(--g)"></i>필요</div><div><i class="pin" style="border:2px solid var(--t2)"></i>필요 없음</div>
+      <div class="k">시작</div><div>2006년부터 직접 만듦</div><div>이미 모인 곳을 삼</div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p>같은 점이 있습니다. 둘 다 바깥 사람들이 만든 것이 쌓이는 자리입니다. CUDA에는 프로그램이 쌓였고 허깅페이스에는 모델이 쌓입니다.</p>
+    <p>다른 점도 있습니다. CUDA 프로그램은 엔비디아 GPU에서만 돕니다. 허깅페이스는 인수 뒤에도 엔비디아 칩을 쓰지 않아도 된다고 엔비디아가 밝혔습니다.</p>
+    <p>CUDA는 2006년부터 직접 만들어 10년을 기다렸습니다. 허깅페이스는 이미 사람이 모인 곳을 샀습니다.</p>
+    <p>(해석) CUDA를 키운 힘은 두 가지였습니다. 바깥 사람들이 쌓아 준다는 것과, 쌓인 것을 옮기기 어렵다는 것입니다. 두 번째 힘이 약해질 수 있는 시점에 엔비디아는 첫 번째 힘이 있는 자리를 하나 더 확보한 것으로 읽을 수 있습니다.</p>
+    <p class="aux"><b>미리 품는 의문</b> "결국 엔비디아 칩에 묶으려는 것 아닌가?" → 엔비디아는 열어 두겠다고 공시에 적었다. 허깅페이스 투자자에는 AMD와 아마존도 있어서 중립이 유지되는지가 관전 지점이다. 묶을 것이라고 단정하지 않는다.</p>
+    <p class="aux"><b>다른 해석</b> 엔비디아 경영진은 공개 모델 생태계가 커지면 GPU 수요가 늘어난다고 여러 차례 말해 왔다. 해자 방어가 아니라 수요 확대로 볼 수도 있다.</p>
+    <p class="aux"><b>표 "필요 없음"</b> 엔비디아의 약속(블로그, SEC 8-K)이며 결과는 미정.</p>
+  </aside>
+</section>
+
+<!-- 15 -->
+<section class="slide" data-deck="20" data-min="1" data-title="정리">
+  <h2>정리</h2>
+  <div class="body">
+    <div class="stack"><div style="font-size:88px;line-height:1.15;font-weight:600;letter-spacing:-0.03em">묶지 않고도<br><span style="color:var(--g)">GPU가 팔리는가</span></div></div>
+  </div>
+  <aside class="notes">
+    <p>CUDA는 바깥 사람들이 프로그램을 쌓아 주면서 커졌고, 그 프로그램을 옮기기 어려워서 강했습니다. AI가 옮기는 일을 대신하게 되면 두 번째 힘은 약해집니다. 엔비디아는 묶어 두지 않는 자리를 새로 샀습니다. 묶지 않고도 GPU가 팔리는지가 앞으로 볼 지점입니다.</p>
+    <p class="aux"><b>선택(빼도 됨)</b> 마지막에 한 줄만: "바꾸고 찾는 수고를 AI가 대신하게 되면, 그 수고 위에 세운 우위는 어떻게 되는가." 피클은 이름만 한 번 언급하고 답을 내리지 않는다.</p>
+    <p class="aux"><b>표현</b> 허깅페이스는 "인수하기로 했다" 상태다. "새로 샀다"는 원문 그대로 두되, 질문이 나오면 2027년 상반기 종결 예정이라고 답한다.</p>
+  </aside>
+</section>
+
+<!-- ============ 5분 발제 ============ -->
+<section class="slide" data-deck="5" data-o5="1" data-min5="0.83" data-title="범용으로 열었다">
+  <h2>GPU는 병렬 계산기였고, 엔비디아는 그것을 범용으로 열었다</h2>
+  <div class="body">
+    <div class="stack">
+      <div class="acr">
+        <div><b>C</b><span>Compute</span></div>
+        <div class="u"><b>U</b><span>Unified</span></div>
+        <div><b>D</b><span>Device</span></div>
+        <div><b>A</b><span>Architecture</span></div>
+      </div>
+      <div class="chips" aria-label="게임용 GeForce 전체">
+        <i style="animation-delay:400ms"></i><i style="animation-delay:450ms"></i><i style="animation-delay:500ms"></i><i style="animation-delay:550ms"></i><i style="animation-delay:600ms"></i><i style="animation-delay:650ms"></i><i style="animation-delay:700ms"></i><i style="animation-delay:750ms"></i>
+      </div>
+      <div class="meta">2006년 11월 · GeForce 전 제품</div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p>2008년 엔비디아 행사에서 물감총 시연이 있었습니다. 로봇 하나는 물감을 한 발씩 쏴서 웃는 얼굴을 그렸고, 다른 하나는 천 개가 넘는 총열로 한 번에 쏴서 모나리자를 그렸습니다. 앞의 것이 CPU이고 뒤의 것이 GPU입니다.</p>
+    <p>이 계산 능력은 화면을 그리는 명령으로만 쓸 수 있었습니다. 엔비디아는 GPU를 그래픽 전용에서 범용 계산 장치로 바꾸기로 했고, 이 기능을 게임용 GeForce 전체에 넣었습니다.</p>
+    <p>그것이 CUDA, Compute Unified Device Architecture입니다. 어느 엔비디아 GPU에서든 같은 프로그램이 돌아갑니다.</p>
+    <p class="aux"><b>주의</b> 물감총 시연(2008)은 CUDA 발표(2006)보다 뒤. 비용 이야기는 5분 버전에서 생략해도 된다.</p>
+  </aside>
+</section>
+
+<section class="slide" data-deck="5" data-o5="3" data-min5="1.5" data-title="AlexNet이 보여준 것">
+  <h2>AlexNet이 보여준 것</h2>
+  <div class="body">
+    <div class="stack" style="gap:48px">
+      <div class="hbars" style="gap:24px">
+        <div class="hbar"><div class="lb">AlexNet</div><div class="tr" style="height:72px"><div class="fl" style="width:58.4%;background:var(--g)"></div><div class="v num" style="left:58.4%;color:var(--g);font-size:44px">15.3%</div></div></div>
+        <div class="hbar"><div class="lb">2위</div><div class="tr" style="height:72px"><div class="fl" style="width:100%;background:var(--raised)"></div><div class="v num" style="left:0;color:var(--t1);font-size:44px">26.2%</div></div></div>
+      </div>
+      <div class="rows" style="width:1200px;gap:12px">
+        <div class="frag" style="font-size:28px;padding:16px 24px"><i class="ext" style="border-radius:6px"></i>엔비디아가 만든 프로그램이 아니다</div>
+        <div class="frag" style="font-size:28px;padding:16px 24px"><i class="nv" style="border-radius:6px"></i>매장에서 파는 게임용 카드</div>
+        <div class="frag" style="font-size:28px;padding:16px 24px"><i class="ext" style="border-radius:6px"></i>공개된 코드 위에 다음 연구가 쌓였다</div>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p>2012년 토론토 대학의 대학원생이 신경망 학습 프로그램을 CUDA로 직접 짰습니다. 장비는 게임용 GTX 580 두 장이었고, 학습에 5~6일이 걸렸습니다. 이미지 인식 대회에서 오류율 15.3%로 우승했고 2위는 26.2%였습니다.</p>
+    <p>엔비디아가 만든 프로그램이 아닙니다. 엔비디아는 딥러닝을 겨냥한 적이 없습니다. 대학원생이 매장에서 살 수 있는 카드로 했습니다. 모든 GeForce에 CUDA를 넣었기 때문에 가능했습니다. 연구팀은 이 코드를 공개했고, 다른 연구자들이 가져다 쓰고 그 위에 쌓았습니다.</p>
+    <p>엔비디아는 바탕을 열어 두었고 쓸모는 바깥에서 나왔습니다.</p>
+    <p class="aux"><b>미리 품는 의문</b> "선견지명인가, 운인가?" → 딥러닝을 예측한 것은 아니었다고 그대로 말한다.</p>
+  </aside>
+</section>
+
+<section class="slide" data-deck="5" data-o5="5" data-min5="0.83" data-title="허깅페이스, 남는 질문">
+  <h2>허깅페이스, 그리고 남는 질문</h2>
+  <div class="body">
+    <div class="stack" style="gap:40px">
+      <div class="meta">2026년 9월 · 129억 달러 인수 계약 · 2027년 상반기 종결 예정</div>
+      <div style="font-size:88px;line-height:1.15;font-weight:600;letter-spacing:-0.03em">묶지 않고도<br><span style="color:var(--g)">GPU가 팔리는가</span></div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p>2026년 9월 엔비디아는 허깅페이스를 129억 달러에 인수하기로 했습니다. 허깅페이스는 AI 모델을 올리고 내려받는 곳입니다. 거래는 규제 승인을 거쳐 2027년 상반기에 끝날 예정입니다.</p>
+    <p>둘 다 바깥 사람들이 만든 것이 쌓이는 자리입니다. 다만 CUDA 프로그램은 엔비디아 GPU에서만 돌고, 허깅페이스는 인수 뒤에도 엔비디아 칩을 쓰지 않아도 된다고 엔비디아가 밝혔습니다.</p>
+    <p>(해석) CUDA를 키운 힘은 바깥 사람들이 쌓아 준다는 것과 쌓인 것을 옮기기 어렵다는 것이었습니다. 두 번째 힘이 약해질 수 있는 시점에 엔비디아는 첫 번째 힘이 있는 자리를 하나 더 확보한 것으로 읽을 수 있습니다. 묶지 않고도 GPU가 팔리는지, 토론해 보고 싶습니다.</p>
+    <p class="aux"><b>주의</b> 인수 발표(9월)가 Anthropic 발표(11월)보다 먼저다. 대응 관계로 말하지 않는다.</p>
+  </aside>
+</section>
+
+<!-- ============ REFERENCES (both) ============ -->
+<section class="slide" data-deck="20 5" data-o5="6" data-title="참고자료">
+  <h2>참고자료</h2>
+  <div class="refs">
+    <p><b>CUDA 개발자 수</b> Jon Peddie Research, CUDA turns 20 with 11 million developers</p>
+    <p><b>젠슨 황 회고</b> Lex Fridman 팟캐스트 #494 (Fudzilla, 바이라인네트워크 보도)</p>
+    <p><b>Brook과 GPGPU</b> The Next Platform, Inside the programming evolution of GPU computing (2015)</p>
+    <p><b>물감총 시연</b> TechCrunch (2008.8.28), Wikipedia: Nvision</p>
+    <p><b>AlexNet</b> Krizhevsky, Sutskever, Hinton. ImageNet classification with deep convolutional neural networks</p>
+    <p><b>FY2026 실적</b> NVIDIA Announces Financial Results for Fourth Quarter and Fiscal 2026</p>
+    <p><b>13배</b> PC Gamer, FY2026 데이터센터 실적 보도</p>
+    <p><b>대형 클라우드 비중</b> TechRepublic</p>
+    <p><b>점유율</b> NewMarketPitch, Silicon Analysts, SwotPal (추정치)</p>
+    <p><b>Anthropic AMD 이식</b> The Decoder, Mezha (IPO 로드쇼 자료 보도)</p>
+    <p><b>엔비디아 반론</b> Computer Weekly, CUDA at 20 (Ian Buck)</p>
+    <p><b>허깅페이스 인수</b> NVIDIA 블로그, SEC 8-K (2026.9.2), Yahoo Finance, 서울신문, IT데일리</p>
+    <p><b>교재</b> Parker, Van Alstyne, Choudary. 《플랫폼 레볼루션》</p>
+  </div>
+  <aside class="notes"><p>(참고자료. URL 전체 목록은 같은 폴더 README.md)</p></aside>
+</section>
+
+</div>
+
+<div id="prog"></div>
+<div id="deckSw" role="group" aria-label="발표 길이">
+  <button type="button" data-v="20" aria-pressed="true">20분</button>
+  <button type="button" data-v="5" aria-pressed="false">5분</button>
+</div>
+<div id="notesPane" aria-live="polite"></div>
+<div id="pv"><div><h3></h3><div class="cur"></div></div><aside><div class="clk num">00:00</div><div class="pos"></div><div class="nx"></div></aside></div>
+
+<script>
+(() => {
+  const stage = document.getElementById('stage');
+  const all = [...stage.querySelectorAll('.slide')];
+  const params = new URLSearchParams(location.search);
+  const presenter = location.hash === '#presenter';
+  let deck = params.get('v') === '5' ? '5' : '20';
+  let list = [], i = 0;
+  const ch = 'BroadcastChannel' in window ? new BroadcastChannel('cuda-deck') : null;
+
+  /* paint-gun drawings */
+  const NS = 'http://www.w3.org/2000/svg';
+  const mk = (tag, a) => { const e = document.createElementNS(NS, tag); for (const k in a) e.setAttribute(k, a[k]); return e; };
+  const cpu = stage.querySelector('.p-cpu');
+  if (cpu) {
+    cpu.append(mk('rect', {x: 270, y: 16, width: 20, height: 40, rx: 4, fill: '#555555'}));
+    const pts = [];
+    for (let k = 0; k < 28; k++) { const a = k / 28 * Math.PI * 2; pts.push([280 + 130 * Math.cos(a), 250 + 130 * Math.sin(a)]); }
+    pts.push([235, 215], [325, 215]);
+    for (let k = 0; k <= 10; k++) { const a = Math.PI * (0.15 + 0.7 * k / 10); pts.push([280 + 75 * Math.cos(a), 255 + 60 * Math.sin(a)]); }
+    pts.forEach(([x, y], n) => { const c = mk('circle', {cx: x.toFixed(1), cy: y.toFixed(1), r: 9, fill: '#aaaaaa', class: 'dot'}); c.style.animationDelay = (400 + n * 90) + 'ms'; cpu.append(c); });
+  }
+  const gpu = stage.querySelector('.p-gpu');
+  if (gpu) {
+    const cols = 40, rows = 30, s = 12, ox = 40, oy = 64;
+    for (let c = 0; c < cols; c++) gpu.append(mk('rect', {x: ox + c * s + 3, y: 16, width: 6, height: 28, rx: 2, fill: '#555555'}));
+    const ramp = ['#0c1304', '#172507', '#24380a', '#3a5a06', '#4f7a00', '#62990a', '#76b900', '#9bd23a'];
+    for (let r = 0; r < rows; r++) for (let c = 0; c < cols; c++) {
+      const x = (c - 19.5) / 20, y = (r - 14.5) / 15;
+      const head = Math.hypot(x / 0.42, (y + 0.28) / 0.55);
+      const body = y > 0.35 ? Math.hypot(x / 0.95, (y - 1.25) / 0.85) : 9;
+      let v = 0.18 + 0.12 * Math.sin(c * 0.4 + r * 0.25);
+      if (head < 1) v = 0.95 - head * 0.45 + 0.08 * Math.cos(c * 0.9);
+      else if (body < 1) v = 0.55 - body * 0.3;
+      const k = Math.max(0, Math.min(7, Math.round(v * 7)));
+      gpu.append(mk('rect', {x: ox + c * s, y: oy + r * s, width: s - 1, height: s - 1, fill: ramp[k], class: 'px'}));
+    }
+  }
+
+  function notesHTML(sl) { const n = (deck === '5' && sl.querySelector('.notes5')) || sl.querySelector('.notes'); return n ? n.innerHTML : ''; }
+  function mins(sl) { return deck === '5' ? (sl.dataset.min5 || '') : (sl.dataset.min || ''); }
+  function fmtMin(m) { if (!m) return ''; const t = Math.round(parseFloat(m) * 60); return Math.floor(t / 60) + ':' + String(t % 60).padStart(2, '0'); }
+
+  function build() {
+    list = all.filter(s => s.dataset.deck.split(' ').includes(deck));
+    if (deck === '5') list.sort((a, b) => a.dataset.o5 - b.dataset.o5);
+    all.forEach(s => s.classList.toggle('off', !list.includes(s)));
+    const total = list.length - 2; // excl. cover, refs
+    list.forEach((s, n) => {
+      let idx = s.querySelector('.idx');
+      if (n === 0 || n === list.length - 1) { if (idx) idx.remove(); return; }
+      if (!idx) { idx = document.createElement('div'); idx.className = 'idx num'; s.append(idx); }
+      idx.innerHTML = '<b>' + String(n).padStart(2, '0') + '</b> / ' + String(total).padStart(2, '0');
+    });
+    document.querySelectorAll('#deckSw button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.v === deck)));
+  }
+
+  function show(n, from) {
+    i = Math.max(0, Math.min(list.length - 1, n));
+    all.forEach(s => s.classList.remove('on'));
+    const cur = list[i];
+    // replay entry animations
+    cur.querySelectorAll('.frag').forEach(f => f.classList.remove('shown'));
+    void cur.offsetWidth;
+    cur.classList.add('on');
+    document.getElementById('prog').style.width = (i / (list.length - 1) * 100) + '%';
+    const np = document.getElementById('notesPane');
+    np.innerHTML = '<div class="tm">' + (i) + ' / ' + (list.length - 1) + (mins(cur) ? ' · ' + fmtMin(mins(cur)) : '') + '</div>' + notesHTML(cur);
+    history.replaceState(null, '', '?v=' + deck + '&s=' + i + (presenter ? '#presenter' : ''));
+    renderPV();
+    if (ch && from !== 'remote') ch.postMessage({deck, i, f: shownCount()});
+  }
+  function shownCount() { return list[i] ? list[i].querySelectorAll('.frag.shown').length : 0; }
+  function next() {
+    const f = list[i].querySelector('.frag:not(.shown)');
+    if (f) { f.classList.add('shown'); ch && ch.postMessage({deck, i, f: shownCount()}); renderPV(); return; }
+    show(i + 1);
+  }
+  function prev() {
+    const f = [...list[i].querySelectorAll('.frag.shown')].pop();
+    if (f) { f.classList.remove('shown'); ch && ch.postMessage({deck, i, f: shownCount()}); renderPV(); return; }
+    show(i - 1);
+  }
+  function setDeck(v) { if (v === deck) return; deck = v; build(); show(0); }
+
+  function fit() { const k = Math.min(innerWidth / 1600, innerHeight / 900); stage.style.transform = 'scale(' + k + ')'; }
+
+  /* presenter view */
+  const t0 = Date.now();
+  function renderPV() {
+    if (!presenter) return;
+    const cur = list[i], nx = list[i + 1];
+    document.querySelector('#pv h3').textContent = cur.dataset.title || '';
+    document.querySelector('#pv .cur').innerHTML = notesHTML(cur);
+    const fr = cur.querySelectorAll('.frag').length;
+    document.querySelector('#pv .pos').textContent = i + ' / ' + (list.length - 1) + (mins(cur) ? ' · ' + fmtMin(mins(cur)) : '') + (fr ? ' · 줄 ' + shownCount() + '/' + fr : '');
+    document.querySelector('#pv .nx').textContent = nx ? '다음 → ' + (nx.dataset.title || '') : '';
+  }
+  if (presenter) {
+    document.body.classList.add('presenter');
+    setInterval(() => { const s = Math.floor((Date.now() - t0) / 1000); document.querySelector('#pv .clk').textContent = String(Math.floor(s / 60)).padStart(2, '0') + ':' + String(s % 60).padStart(2, '0'); }, 1000);
+  }
+  if (ch) ch.onmessage = e => {
+    const d = e.data; if (d.deck !== deck) { deck = d.deck; build(); }
+    if (d.i !== i) show(d.i, 'remote');
+    list[i].querySelectorAll('.frag').forEach((f, k) => f.classList.toggle('shown', k < d.f));
+    renderPV();
+  };
+
+  addEventListener('keydown', e => {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    const k = e.key;
+    if (['ArrowRight', 'ArrowDown', 'PageDown', ' ', 'Enter'].includes(k)) { e.preventDefault(); next(); }
+    else if (['ArrowLeft', 'ArrowUp', 'PageUp', 'Backspace'].includes(k)) { e.preventDefault(); prev(); }
+    else if (k === 'Home') show(0);
+    else if (k === 'End') show(list.length - 1);
+    else if (k === 'n' || k === 'N') document.body.classList.toggle('notes');
+    else if (k === 'p' || k === 'P') window.open(location.pathname + '?v=' + deck + '&s=' + i + '#presenter', 'cuda-presenter', 'width=1100,height=760');
+    else if (k === 'f' || k === 'F') { document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen().catch(() => {}); }
+    else if (k === '5') setDeck('5');
+    else if (k === '2') setDeck('20');
+  });
+  stage.addEventListener('click', e => { if (e.clientX < innerWidth / 4) prev(); else next(); });
+  document.querySelectorAll('#deckSw button').forEach(b => b.addEventListener('click', () => setDeck(b.dataset.v)));
+  let hotT; addEventListener('mousemove', () => { document.body.classList.add('hot'); clearTimeout(hotT); hotT = setTimeout(() => document.body.classList.remove('hot'), 1600); });
+  addEventListener('resize', fit);
+
+  build(); fit();
+  show(parseInt(params.get('s') || '0', 10) || 0);
+})();
+</script>
+</body>
+</html>
