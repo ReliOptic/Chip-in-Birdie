@@ -8,13 +8,13 @@
   "audience_ref": "channel/audience.json",
   "claim": {
     "actor": "claude-code",
-    "claimed_at": "2026-11-27T14:46:26.337192Z",
-    "lease_expires_at": "2026-11-27T20:46:26.337202Z",
+    "claimed_at": "2026-11-27T15:10:08.026448Z",
+    "lease_expires_at": "2026-11-27T21:10:08.026459Z",
     "model": "claude-opus-5-5",
     "session_id": "session_01PGnDYYRkzDyviPFVMqxNV2",
     "session_id_source": "explicit"
   },
-  "current_delivery_id": "TASK-004-r0004",
+  "current_delivery_id": "TASK-004-r0005",
   "episode_id": null,
   "history": [
     {
@@ -172,6 +172,27 @@
       "review_id": "TASK-004-r0004-evidence-75c751c7e2c8",
       "role": "evidence",
       "verdict": "changes_requested"
+    },
+    {
+      "actor": "claude-code",
+      "at": "2026-11-27T15:10:08.026470Z",
+      "claim": {
+        "actor": "claude-code",
+        "claimed_at": "2026-11-27T15:10:08.026448Z",
+        "lease_expires_at": "2026-11-27T21:10:08.026459Z",
+        "model": "claude-opus-5-5",
+        "session_id": "session_01PGnDYYRkzDyviPFVMqxNV2",
+        "session_id_source": "explicit"
+      },
+      "event": "CLAIMED"
+    },
+    {
+      "actor": "claude-code",
+      "at": "2026-11-27T15:10:08.118111Z",
+      "bundle_sha256": "673d648d7d7a8340557220e4c3040fb49d8865858fa4190c8f9d62a0b213210a",
+      "delivery_id": "TASK-004-r0005",
+      "event": "SUBMITTED",
+      "revision": 5
     }
   ],
   "objective": "2026-11-27 사용자 지시(CIB-051)에 따라 시즌 정본 32편, 원본 카탈로그 H001–H100의 편집 필드, 재선정안 P001–P100, 채널·편집 운영 문서를 비유·비약·과장·의인화 없이 다시 쓴다. ID·계보·원제·출처 스냅샷은 보존하고, 전제가 검증되지 않은 주제는 표시한다.",
@@ -180,10 +201,10 @@
     "editorial",
     "evidence"
   ],
-  "revision": 4,
+  "revision": 5,
   "scope": "channel",
-  "status": "CHANGES_REQUESTED",
+  "status": "IN_REVIEW",
   "task_id": "TASK-004",
   "title": "LANGUAGE.md 기준으로 편집 자산 전면 재작성",
-  "updated_at": "2026-11-27T14:54:47.006241Z"
+  "updated_at": "2026-11-27T15:10:08.118126Z"
 }

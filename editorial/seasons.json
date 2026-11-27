@@ -201,7 +201,7 @@
       "screen_3d_event": "A customer's layout enters a wafer carrier; finished dies return to the customer, and the design stays with the customer",
       "payoff": "The viewer can see that a foundry offers wafer capacity together with a commitment not to compete with its customers; whether that commitment won the first customers is still to be verified",
       "next_episode": "S1E02",
-      "next_connection": "S1E01 separates who owns a design from who manufactures it; that separation needs manufacturing know-how that can exist outside the designer, and S1E02 goes back to an earlier case where such know-how left one company with eight engineers.",
+      "next_connection": "S1E01 separates who owns a design from who manufactures it; S1E02 goes back to 1956–57, to eight engineers whose departure moved manufacturing know-how between firms. Thematic link, not causal.",
       "selection": "RECOVERED_PR1_CORE",
       "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
       "audience_ref": "channel/audience.json",
@@ -224,11 +224,24 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 2,
+        "revision": 5,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "편집 리뷰 B1·B4: flag 전파, 연결 전제 복원"
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection"
+        ]
       },
-      "selection_flag": "비경쟁 원칙이 초기 수주의 원인이었다는 인과는 초기 고객·계약 자료 확인 전(P004 flag 반영). 원칙과 수주를 인과로 단정하지 않음."
+      "selection_flag": "비경쟁 원칙이 초기 수주의 원인이었다는 인과는 초기 고객·계약 자료 확인 전(P004 flag 반영). 원칙과 수주를 인과로 단정하지 않음.",
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 2,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "편집 리뷰 B1·B4: flag 전파, 연결 전제 복원"
+        }
+      ]
     },
     {
       "episode_id": "S1E02",
@@ -249,7 +262,7 @@
       "screen_3d_event": "Illustrative reconstruction: the same process notebooks appear first at benches in Shockley's laboratory, then at a newly built fabrication line",
       "payoff": "The viewer can separate what moved with the engineers (skills and process knowledge) from what a new company still had to arrange before it could sell products; the signing anecdote and conflict accounts are still to be verified",
       "next_episode": "S1E03",
-      "next_connection": "S1E02 shows engineers leaving to build a new manufacturer; S1E03 shows a different arrangement, AMD keeping chip design and separating its factories into another company. Thematic link, not causal.",
+      "next_connection": "S1E02 shows engineers leaving to build a new manufacturer; S1E03 moves forward to 2009, to a different arrangement: AMD keeping chip design and separating its factories into another company. Thematic link, not causal.",
       "selection": "RECOVERED_PR1_CORE",
       "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
       "audience_ref": "channel/audience.json",
@@ -272,9 +285,12 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 3,
+        "revision": 5,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection"
+        ]
       },
       "selection_flag": "퇴사 서명 일화와 갈등 기록이 검증 전이며 지역 산업의 단일 기원 서사로 확대할 위험(P061 flag 반영).",
       "language_review_history": [
@@ -285,6 +301,14 @@
           "revision": 2,
           "standard": "editorial/LANGUAGE.md",
           "reason": "편집 리뷰 B1: flag 전파"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
         }
       ]
     },
@@ -307,7 +331,7 @@
       "screen_3d_event": "A fab's ownership label changes while AMD design files continue to enter the same line",
       "payoff": "The viewer can see that going fabless removes fab ownership and its capital spending, while dependence on capacity, process and supply contracts remains",
       "next_episode": "S1E04",
-      "next_connection": "S1E03 depends on another organisation being able to run the fabs; S1E04 goes earlier, to how Taiwan's technology-transfer program built that kind of operating capability.",
+      "next_connection": "S1E03 depends on another organisation running the fabs; S1E04 goes back to 1976–78, to how Taiwan's technology-transfer program built operating capability. Thematic link, not causal.",
       "selection": "RECOVERED_PR1_CORE",
       "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
       "audience_ref": "channel/audience.json",
@@ -330,9 +354,22 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
+        "revision": 5,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "'공장을 모두 팔았다'는 절대·부정확 표현을 분사(GlobalFoundries)로 좁힘"
-      }
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection"
+        ]
+      },
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "'공장을 모두 팔았다'는 절대·부정확 표현을 분사(GlobalFoundries)로 좁힘"
+        }
+      ]
     },
     {
       "episode_id": "S1E04",
@@ -353,7 +390,7 @@
       "screen_3d_event": "Illustrative reconstruction: operators run successive wafer lots on a period production line until test results meet qualification",
       "payoff": "The viewer can see why running a licensed process with stable results was a separate capability from licensing it; whether this directly led to the later foundry business is still to be verified",
       "next_episode": "S1E05",
-      "next_connection": "S1E04 shows production built on licensed process knowledge; S1E05 asks when a foundry would take on the cost and risk of developing a process itself.",
+      "next_connection": "S1E04 shows production built on licensed process knowledge; S1E05 moves to a later process generation and asks when a foundry would take on the cost and risk of developing a process itself.",
       "selection": "RECOVERED_PR1_CORE",
       "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
       "audience_ref": "channel/audience.json",
@@ -376,11 +413,24 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 2,
+        "revision": 5,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "편집 리뷰 B1, 근거 리뷰 비차단: 인과 단정 완화"
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection"
+        ]
       },
-      "selection_flag": "첫 파견 인원의 성과로 전체 기술 이전을 축약할 위험, 이후 파운드리 사업과의 직접 연결은 검증 전(P066·H035 반영)."
+      "selection_flag": "첫 파견 인원의 성과로 전체 기술 이전을 축약할 위험, 이후 파운드리 사업과의 직접 연결은 검증 전(P066·H035 반영).",
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 2,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "편집 리뷰 B1, 근거 리뷰 비차단: 인과 단정 완화"
+        }
+      ]
     },
     {
       "episode_id": "S1E05",
@@ -404,7 +454,7 @@
       "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
       "audience_ref": "channel/audience.json",
       "evidence_status": "UNVERIFIED_RESEARCH_LEADS",
-      "evidence_leads": "구리 배선 세대에서 기술 제휴 대신 자체 개발을 택한 결정",
+      "evidence_leads": "TSMC 구리 배선 공정의 개발 경로와 IBM 제휴 제안·거절 여부를 보여 주는 1차 기록",
       "production_status": "NOT_STARTED",
       "media_status": "NOT_READY",
       "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
@@ -423,9 +473,12 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 3,
+        "revision": 5,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "evidence_leads"
+        ]
       },
       "language_review_history": [
         {
@@ -434,6 +487,22 @@
           "task": "TASK-004",
           "standard": "editorial/LANGUAGE.md",
           "reason": "검증 전 IBM 거절 일화를 제목에서 빼고 공정 개발이라는 확인 가능한 대상으로 좁힘"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        }
+      ],
+      "field_history": [
+        {
+          "field": "evidence_leads",
+          "value": "구리 배선 세대에서 기술 제휴 대신 자체 개발을 택한 결정",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
         }
       ]
     },
@@ -505,18 +574,18 @@
       "source_h_ids": [],
       "main_p_id": null,
       "crosswalk_status": "PR_ONLY_NO_MAIN_P_ID",
-      "question": "How did the Mead–Conway design method help separate chip design from fabrication?",
+      "question": "What did the Mead–Conway design method change in how designers and fabs worked together?",
       "protagonist_conflict": "Mead, Conway and chip designers without access to their own production line",
       "choice": "Use scalable design rules and shared fabrication runs",
       "screen_3d_event": "Several layouts are placed on one shared wafer and return as separate chips",
       "payoff": "The viewer can see how a common set of design rules lets designers and fabs work separately; describing this as a technical precondition for foundries is interpretation",
       "next_episode": "S1E08",
-      "next_connection": "S1E07 shows a shared design interface that allows specialisation; S1E08 asks why a system company such as Apple would bring chip design in-house while still buying fabrication.",
+      "next_connection": "S1E07 shows a shared design interface; S1E08 moves forward to 2020, to why a system company such as Apple would design chips in-house while still buying fabrication. Thematic link, not causal.",
       "selection": "NEW_PRODUCTION_JUDGMENT",
       "selection_reason": "Editorial addition from existing PR #1 candidates to link design interfaces and system ownership; not a recovered user approval of its claims.",
       "audience_ref": "channel/audience.json",
       "evidence_status": "UNVERIFIED_RESEARCH_LEADS",
-      "evidence_leads": "설계 규칙을 공장에서 떼어 낸 미드-콘웨이 방법과 공유 제작 서비스. 파운드리의 기술적 전제",
+      "evidence_leads": "미드-콘웨이 설계 방법과 공유 제작 서비스 기록. 파운드리의 전제로 볼지는 해석",
       "production_status": "NOT_STARTED",
       "media_status": "NOT_READY",
       "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
@@ -534,9 +603,32 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
+        "revision": 5,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "'누구나 칩을 설계' 절대 표현 제거, 방법·인물 명칭으로 교체"
-      }
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection",
+          "evidence_leads",
+          "question"
+        ]
+      },
+      "field_history": [
+        {
+          "field": "evidence_leads",
+          "value": "설계 규칙을 공장에서 떼어 낸 미드-콘웨이 방법과 공유 제작 서비스. 파운드리의 기술적 전제",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ],
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "'누구나 칩을 설계' 절대 표현 제거, 방법·인물 명칭으로 교체"
+        }
+      ]
     },
     {
       "episode_id": "S1E08",
@@ -595,7 +687,7 @@
       "screen_3d_event": "A graphics board renders pixels; the same execution units are then shown processing numerical arrays",
       "payoff": "The viewer can see that game sales supplied a market for parallel graphics hardware, and that software and research use were separate later steps toward AI computing; whether game revenue funded AI development is still to be verified",
       "next_episode": "S2E02",
-      "next_connection": "S2E01 depends on parallel hardware built from transistors; S2E02 returns to the early transistor and the problem of making it repeatably.",
+      "next_connection": "S2E01 depends on parallel hardware built from transistors; S2E02 goes back to 1947, to the early transistor and the problem of making it repeatably.",
       "selection": "RECOVERED_PR1_CORE",
       "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
       "audience_ref": "channel/audience.json",
@@ -618,11 +710,11 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 4,
+        "revision": 5,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "TASK-004 r4: 편집 재리뷰 R1·R2, 근거 재리뷰 비차단 반영",
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
         "fields": [
-          "payoff"
+          "next_connection"
         ]
       },
       "selection_flag": "게임 매출이 AI용 GPU 개발 자금이 됐다는 인과는 사후 해석일 수 있음. 당시 의도를 AI로 소급하지 않음(P055·H081 반영).",
@@ -642,6 +734,17 @@
           "revision": 3,
           "standard": "editorial/LANGUAGE.md",
           "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 4,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r4: 편집 재리뷰 R1·R2, 근거 재리뷰 비차단 반영",
+          "fields": [
+            "payoff"
+          ]
         }
       ]
     },
@@ -664,7 +767,7 @@
       "screen_3d_event": "A point-contact device amplifies a signal, then fails a repeatability test across samples",
       "payoff": "The viewer can distinguish demonstrating a device once from producing it reliably, two different engineering problems",
       "next_episode": "S2E03",
-      "next_connection": "S2E02 shows transistors becoming reproducible; S2E03 moves to a much later use of large transistor budgets, speculative execution, and the data it exposed. Thematic link, not causal.",
+      "next_connection": "S2E02 shows transistors becoming reproducible; S2E03 moves forward to 2018, to a much later speed technique, speculative execution, and the data it exposed. Thematic link, not causal.",
       "selection": "RECOVERED_PR1_CORE",
       "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
       "audience_ref": "channel/audience.json",
@@ -687,9 +790,12 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 3,
+        "revision": 5,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection"
+        ]
       },
       "language_review_history": [
         {
@@ -699,6 +805,14 @@
           "revision": 2,
           "standard": "editorial/LANGUAGE.md",
           "reason": "편집 리뷰 B4: 연결 전제 복원"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
         }
       ]
     },
@@ -721,7 +835,7 @@
       "screen_3d_event": "A rejected instruction leaves a cache state change that a second process measures by timing",
       "payoff": "The viewer can see why discarding a speculative result does not remove every hardware side effect; whether and how much the mitigations cost in performance is still to be verified",
       "next_episode": "S2E04",
-      "next_connection": "S2E03 shows a speed technique with a security cost; S2E04 looks at early CMOS, where developers accepted lower speed to reduce power consumption. Thematic link, not causal.",
+      "next_connection": "S2E03 shows a speed technique with a security cost; S2E04 goes back to 1963, to early CMOS, where developers accepted lower speed to reduce power consumption. Thematic link, not causal.",
       "selection": "RECOVERED_PR1_CORE",
       "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
       "audience_ref": "channel/audience.json",
@@ -744,9 +858,12 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 3,
+        "revision": 5,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection"
+        ]
       },
       "language_review_history": [
         {
@@ -756,6 +873,14 @@
           "revision": 2,
           "standard": "editorial/LANGUAGE.md",
           "reason": "근거 리뷰 비차단: 완화책 성능 비용 단정 완화"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
         }
       ]
     },
@@ -778,7 +903,7 @@
       "screen_3d_event": "Complementary switches alternate while the current drawn at idle falls on a battery meter",
       "payoff": "The viewer can see how a change in the binding constraint, from speed to power, can change which circuit technology is adopted",
       "next_episode": "S2E05",
-      "next_connection": "S2E04 shows a circuit-level trade between speed and power; S2E05 moves to the instruction-set level and asks which costs remain when the specification itself is open, as with RISC-V. Thematic link, not causal.",
+      "next_connection": "S2E04 shows a circuit-level trade between speed and power; S2E05 moves to a later, instruction-set-level question: which costs remain when the specification itself is open, as with RISC-V. Thematic link, not causal.",
       "selection": "RECOVERED_PR1_CORE",
       "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
       "audience_ref": "channel/audience.json",
@@ -801,9 +926,12 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 3,
+        "revision": 5,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection"
+        ]
       },
       "language_review_history": [
         {
@@ -812,6 +940,14 @@
           "task": "TASK-004",
           "standard": "editorial/LANGUAGE.md",
           "reason": "'시대를 앞선' 극적 표현과 '유행' 표현 제거"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
         }
       ]
     },
@@ -947,7 +1083,7 @@
       "screen_3d_event": "A wafer layout shrinks on schedule while a delayed tool delivery misses the next process window",
       "payoff": "The viewer can see how a published forecast was later written into roadmap targets; when it became an investment benchmark is still to be verified",
       "next_episode": "S2E08",
-      "next_connection": "S2E07 assumes scaling keeps delivering useful gains; S2E08 asks what happens when raising clock speed stops being an affordable way to gain performance.",
+      "next_connection": "S2E07 assumes scaling keeps delivering useful gains; S2E08 moves to a later period and asks what happens when raising clock speed stops being an affordable way to gain performance.",
       "selection": "NEW_PRODUCTION_JUDGMENT",
       "selection_reason": "Editorial addition from existing PR #1 candidates to link scaling commitments and power limits; not a recovered user approval of its claims.",
       "audience_ref": "channel/audience.json",
@@ -970,9 +1106,12 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 3,
+        "revision": 5,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection"
+        ]
       },
       "selection_flag": "1965년 논문이 곧바로 투자 기준이 됐다는 전제는 채택 시점 근거 확인 전, 시간 순서를 인과로 압축할 위험(H030 반영).",
       "language_review_history": [
@@ -983,6 +1122,14 @@
           "revision": 2,
           "standard": "editorial/LANGUAGE.md",
           "reason": "편집 리뷰 B1, 근거 리뷰 비차단"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
         }
       ]
     },
@@ -1037,7 +1184,7 @@
       "source_namespace": "PR1@3c66e4b",
       "original_id": "P046",
       "original_title_en": "The Day Intel Quit the Business It Invented",
-      "title_en": "Intel's 1985 Exit From DRAM",
+      "title_en": "Intel's Exit From DRAM",
       "source_h_ids": [
         "H061"
       ],
@@ -1049,7 +1196,7 @@
       "screen_3d_event": "Two product lots compete for fab slots; one loses its next allocation",
       "payoff": "The viewer can see the exit as a capacity-allocation decision under DRAM competition, not as Intel leaving all memory products",
       "next_episode": "S3E02",
-      "next_connection": "S3E01 is a decision about the cost of producing memory bits; S3E02 goes back to magnetic core memory, where that cost was visible in hand assembly. Thematic link, not causal.",
+      "next_connection": "S3E01 is a decision about the cost of producing memory bits; S3E02 goes back to 1970, to magnetic core memory, where that cost was visible in hand assembly. Thematic link, not causal.",
       "selection": "RECOVERED_PR1_CORE",
       "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
       "audience_ref": "channel/audience.json",
@@ -1064,14 +1211,24 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 3,
+        "revision": 5,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection",
+          "title_en"
+        ]
       },
       "title_history": [
         {
           "field": "title_en",
           "value": "Why Intel Left DRAM",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        },
+        {
+          "field": "title_en",
+          "value": "Intel's 1985 Exit From DRAM",
           "replaced_on": "2026-11-27",
           "by": "CIB-051"
         }
@@ -1084,6 +1241,14 @@
           "revision": 2,
           "standard": "editorial/LANGUAGE.md",
           "reason": "편집 리뷰 B3: '왜'형 제목 제거, P046과 통일"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
         }
       ]
     },
@@ -1106,7 +1271,7 @@
       "screen_3d_event": "A thread passes through ferrite rings and a read pulse flips a core",
       "payoff": "The viewer can see that each stored bit had a physical production cost in labour and reliability",
       "next_episode": "S3E03",
-      "next_connection": "S3E02 shows manufacturing effort per bit in core memory; S3E03 moves to later Japanese memory makers and how their product mix, costs and customer requirements are still to be examined together. Thematic link, not causal.",
+      "next_connection": "S3E02 shows manufacturing effort per bit in core memory; S3E03 moves to later Japanese memory makers, whose product mix, costs and customer requirements are examined together. Thematic link, not causal.",
       "selection": "RECOVERED_PR1_CORE",
       "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
       "audience_ref": "channel/audience.json",
@@ -1129,9 +1294,9 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 4,
+        "revision": 5,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "TASK-004 r4: 편집 재리뷰 R1·R2, 근거 재리뷰 비차단 반영",
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
         "fields": [
           "next_connection"
         ]
@@ -1151,6 +1316,17 @@
           "revision": 3,
           "standard": "editorial/LANGUAGE.md",
           "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 4,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r4: 편집 재리뷰 R1·R2, 근거 재리뷰 비차단 반영",
+          "fields": [
+            "next_connection"
+          ]
         }
       ]
     },
@@ -1176,7 +1352,7 @@
       "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
       "audience_ref": "channel/audience.json",
       "evidence_status": "UNVERIFIED_RESEARCH_LEADS",
-      "evidence_leads": "고품질·장수명 설계가 값싼 PC용 메모리 시대에 약점이 된 과정",
+      "evidence_leads": "일본 메모리 기업의 제품 구성·원가·고객 요구 자료. 품질 우위가 약점이었다는 원 기획 전제를 시험",
       "production_status": "NOT_STARTED",
       "media_status": "NOT_READY",
       "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
@@ -1195,11 +1371,11 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 4,
+        "revision": 5,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "TASK-004 r4: 편집 재리뷰 R1·R2, 근거 재리뷰 비차단 반영",
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
         "fields": [
-          "next_connection"
+          "evidence_leads"
         ]
       },
       "language_review_history": [
@@ -1218,6 +1394,25 @@
           "revision": 3,
           "standard": "editorial/LANGUAGE.md",
           "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 4,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r4: 편집 재리뷰 R1·R2, 근거 재리뷰 비차단 반영",
+          "fields": [
+            "next_connection"
+          ]
+        }
+      ],
+      "field_history": [
+        {
+          "field": "evidence_leads",
+          "value": "고품질·장수명 설계가 값싼 PC용 메모리 시대에 약점이 된 과정",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
         }
       ]
     },
@@ -1240,7 +1435,7 @@
       "screen_3d_event": "A patterned gate shields the channel while adjacent regions are formed",
       "payoff": "The viewer can see how self-alignment links one process choice to transistor density and reproducibility",
       "next_episode": "S3E05",
-      "next_connection": "S3E04 lowers one barrier to denser products; S3E05 asks what Samsung had to commit before it could learn such processes for DRAM.",
+      "next_connection": "S3E04 lowers one barrier to denser products; S3E05 moves forward to 1983, to what Samsung had to commit before it could learn such processes for DRAM. Thematic link, not causal.",
       "selection": "RECOVERED_PR1_CORE",
       "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
       "audience_ref": "channel/audience.json",
@@ -1263,9 +1458,22 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
+        "revision": 5,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "'Trick'·칩이 스스로 줄 선다는 의인화를 공정 명칭으로 교체"
-      }
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection"
+        ]
+      },
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "'Trick'·칩이 스스로 줄 선다는 의인화를 공정 명칭으로 교체"
+        }
+      ]
     },
     {
       "episode_id": "S3E05",
@@ -1286,7 +1494,7 @@
       "screen_3d_event": "Illustrative model: an initially sparse good-die map improves across successive lots",
       "payoff": "The viewer can see market entry as repeated yield improvement across production lots, not a single announcement",
       "next_episode": "S3E06",
-      "next_connection": "S3E05 shows a firm building production capability through repeated process learning; S3E06 looks at a product feature, the erasable EPROM window, that changed how customers reused chips during development. Thematic link, not causal.",
+      "next_connection": "S3E05 shows a firm building production capability through repeated process learning; S3E06 goes back to an earlier period, to a product feature, the erasable EPROM window, that changed how customers reused chips during development. Thematic link, not causal.",
       "selection": "RECOVERED_PR1_CORE",
       "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
       "audience_ref": "channel/audience.json",
@@ -1310,9 +1518,12 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 3,
+        "revision": 5,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection"
+        ]
       },
       "language_review_history": [
         {
@@ -1322,6 +1533,14 @@
           "revision": 2,
           "standard": "editorial/LANGUAGE.md",
           "reason": "편집 리뷰 B4: 주제 연결 표시"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
         }
       ]
     },
@@ -1342,12 +1561,12 @@
       "screen_3d_event": "A ceramic package's quartz window admits UV, then a programmer writes it again",
       "payoff": "The viewer can see how an erasable chip changed the program–test–revise cycle for developers; no invented discovery dialogue is used",
       "next_episode": "S3E07",
-      "next_connection": "EPROM stores charge for reuse; S3E07 shows DRAM storing charge on different terms, giving up persistence for dense bits that must be refreshed. Thematic link, not causal.",
+      "next_connection": "EPROM stores charge for reuse; S3E07 turns to IBM's DRAM work of 1967–74, which stored charge on different terms, giving up persistence for dense bits that must be refreshed. Thematic link, not causal.",
       "selection": "RECOVERED_PR1_CORE",
       "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
       "audience_ref": "channel/audience.json",
       "evidence_status": "UNVERIFIED_RESEARCH_LEADS",
-      "evidence_leads": "지울 수 있는 메모리가 개발 방식 자체를 바꾼 과정",
+      "evidence_leads": "EPROM 출시 기록과 고객의 개발·수정 방식 변화를 보여 주는 자료. 개발 방식을 바꿨다는 원 기획 전제를 시험",
       "production_status": "NOT_STARTED",
       "media_status": "NOT_READY",
       "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
@@ -1365,9 +1584,13 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 3,
+        "revision": 5,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection",
+          "evidence_leads"
+        ]
       },
       "language_review_history": [
         {
@@ -1376,6 +1599,22 @@
           "task": "TASK-004",
           "standard": "editorial/LANGUAGE.md",
           "reason": "제품명을 넣어 대상 식별이 가능하게 함; 'bargain' 비유 제거"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        }
+      ],
+      "field_history": [
+        {
+          "field": "evidence_leads",
+          "value": "지울 수 있는 메모리가 개발 방식 자체를 바꾼 과정",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
         }
       ]
     },
@@ -1398,7 +1637,7 @@
       "screen_3d_event": "A capacitor discharges, is sensed, then refreshed by the access path",
       "payoff": "The viewer can see why a DRAM cell is small and cheap per bit, and why the refresh requirement is part of that cost",
       "next_episode": "S3E08",
-      "next_connection": "S3E07 explains the cost of one DRAM bit; S3E08 separates what Toshiba's flash invention and later manufacturers each contributed to flash products. Thematic link, not causal.",
+      "next_connection": "S3E07 explains the cost of one DRAM bit; S3E08 moves forward to 1984 and separates what Toshiba's flash invention and later manufacturers each contributed to flash products. Thematic link, not causal.",
       "selection": "NEW_PRODUCTION_JUDGMENT",
       "selection_reason": "Editorial addition from existing PR #1 candidates to link cell economics and commercialisation; not a recovered user approval of its claims.",
       "audience_ref": "channel/audience.json",
@@ -1427,9 +1666,12 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 3,
+        "revision": 5,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection"
+        ]
       },
       "language_review_history": [
         {
@@ -1439,6 +1681,14 @@
           "revision": 2,
           "standard": "editorial/LANGUAGE.md",
           "reason": "편집 리뷰 비차단: 약어 해소"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
         }
       ]
     },
@@ -1544,7 +1794,7 @@
       "screen_3d_event": "A chip's specification sheet is laid against dated export thresholds; the classification depends on both",
       "payoff": "The viewer can see how an export classification depends on product specifications on a given date; no claim is made about current legality or about a specific redesign",
       "next_episode": "S4E02",
-      "next_connection": "S4E01 shows a rule tying chip specifications to export classification; S4E02 looks at a different public influence, wartime radar demand for purer material. Thematic link, not causal.",
+      "next_connection": "S4E01 shows a rule tying chip specifications to export classification; S4E02 goes back to 1941–45, to a different public influence, wartime radar demand for purer material. Thematic link, not causal.",
       "selection": "RECOVERED_PR1_CORE",
       "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
       "audience_ref": "channel/audience.json",
@@ -1579,11 +1829,11 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 4,
+        "revision": 5,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "TASK-004 r4: 편집 재리뷰 R1·R2, 근거 재리뷰 비차단 반영",
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
         "fields": [
-          "question"
+          "next_connection"
         ]
       },
       "selection_flag": "특정 AI 칩이 규제 때문에 재설계됐다는 전제는 H099 기록에 없는 확장(P089 flag 반영). 규정과 사양의 관계로 좁힘.",
@@ -1603,6 +1853,17 @@
           "revision": 3,
           "standard": "editorial/LANGUAGE.md",
           "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 4,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r4: 편집 재리뷰 R1·R2, 근거 재리뷰 비차단 반영",
+          "fields": [
+            "question"
+          ]
         }
       ]
     },
@@ -1625,7 +1886,7 @@
       "screen_3d_event": "A receiver misses an echo; a detector with purer crystal then resolves it",
       "payoff": "The viewer can see how military demand coincided with work on specific materials and devices; whether it produced the purification techniques is still to be verified",
       "next_episode": "S4E03",
-      "next_connection": "Radar depended on suitable material; S4E03's 2019 licensing case shows why a fab cannot simply replace a restricted chemical with any available supply. Thematic link, not causal.",
+      "next_connection": "Radar depended on suitable material; S4E03 moves forward to 2019, to a licensing case that shows why a fab cannot simply replace a restricted chemical with any available supply. Thematic link, not causal.",
       "selection": "RECOVERED_PR1_CORE",
       "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
       "audience_ref": "channel/audience.json",
@@ -1648,9 +1909,12 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 3,
+        "revision": 5,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection"
+        ]
       },
       "selection_flag": "전시 수요가 결정 정제 기술을 낳았다는 인과는 생산·기술이전 기록 확인 전(P022 반영).",
       "language_review_history": [
@@ -1661,6 +1925,14 @@
           "revision": 2,
           "standard": "editorial/LANGUAGE.md",
           "reason": "편집 리뷰 B1: flag 전파"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
         }
       ]
     },
@@ -1683,7 +1955,7 @@
       "screen_3d_event": "A new chemical lot waits at a qualification test step before it can reach production wafers",
       "payoff": "The viewer can see that an export restriction and a technical substitution run on different timelines, and why a replacement supply is not usable until it passes qualification",
       "next_episode": "S4E04",
-      "next_connection": "Qualifying a material causes delay even after supply exists; S4E04 asks which dependencies remained when the Soviet Union tried to reproduce devices developed elsewhere. Thematic link, not causal.",
+      "next_connection": "Qualifying a material causes delay even after supply exists; S4E04 goes back to the Soviet period and asks which dependencies remained when the Soviet Union tried to reproduce devices developed elsewhere. Thematic link, not causal.",
       "selection": "RECOVERED_PR1_CORE",
       "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
       "audience_ref": "channel/audience.json",
@@ -1706,9 +1978,12 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 3,
+        "revision": 5,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection"
+        ]
       },
       "language_review_history": [
         {
@@ -1717,6 +1992,14 @@
           "task": "TASK-004",
           "standard": "editorial/LANGUAGE.md",
           "reason": "'clock'·'valve' 비유 제거"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
         }
       ]
     },
@@ -1737,12 +2020,12 @@
       "screen_3d_event": "A die image is compared with a layout and a delayed production lot",
       "payoff": "The viewer can see what copying gave Soviet planners and what it constrained, based on device-specific evidence rather than one national decision",
       "next_episode": "S4E05",
-      "next_connection": "Copying seeks access to capabilities developed elsewhere; S4E05's SEMATECH is a different policy route, sharing selected manufacturing problems among domestic rivals. Thematic link, not causal.",
+      "next_connection": "Copying seeks access to capabilities developed elsewhere; S4E05 moves to 1987, to SEMATECH, a different policy route that shared selected manufacturing problems among domestic rivals. Thematic link, not causal.",
       "selection": "RECOVERED_PR1_CORE",
       "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
       "audience_ref": "channel/audience.json",
       "evidence_status": "UNVERIFIED_RESEARCH_LEADS",
-      "evidence_leads": "젤레노그라드를 세우고도 독자 설계 대신 복제를 택한 결정과 그 대가",
+      "evidence_leads": "젤레노그라드 설립 이후 개별 소자별 복제 사례와, 국가 단위 복제 결정이 있었는지 여부를 보여 주는 정책 문서",
       "production_status": "NOT_STARTED",
       "media_status": "NOT_READY",
       "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
@@ -1761,9 +2044,13 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 3,
+        "revision": 5,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection",
+          "evidence_leads"
+        ]
       },
       "language_review_history": [
         {
@@ -1772,6 +2059,22 @@
           "task": "TASK-004",
           "standard": "editorial/LANGUAGE.md",
           "reason": "'선택했다(Chose)' 단일 결정 전제를 제목에서 빼고 사례 명사구로 교체"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        }
+      ],
+      "field_history": [
+        {
+          "field": "evidence_leads",
+          "value": "젤레노그라드를 세우고도 독자 설계 대신 복제를 택한 결정과 그 대가",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
         }
       ]
     },
@@ -1794,7 +2097,7 @@
       "screen_3d_event": "Separate sample wafers converge at a shared metrology station",
       "payoff": "The viewer can see how firms shared selected manufacturing and equipment problems while still competing on products",
       "next_episode": "S4E06",
-      "next_connection": "US rivals cooperated within a defined research boundary; S4E06's Japanese VLSI program allows a comparison with a different arrangement, without treating cooperation as one universal recipe. Thematic link, not causal.",
+      "next_connection": "US rivals cooperated within a defined research boundary; S4E06 goes back to 1976–79, to Japan's earlier VLSI program, which allows a comparison with a different arrangement without treating cooperation as one universal recipe. Thematic link, not causal.",
       "selection": "RECOVERED_PR1_CORE",
       "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
       "audience_ref": "channel/audience.json",
@@ -1817,9 +2120,12 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 3,
+        "revision": 5,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection"
+        ]
       },
       "language_review_history": [
         {
@@ -1828,6 +2134,14 @@
           "task": "TASK-004",
           "standard": "editorial/LANGUAGE.md",
           "reason": "'Secrets' 과장 제거, 기관명(SEMATECH) 명시"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
         }
       ]
     },
@@ -1850,7 +2164,7 @@
       "screen_3d_event": "Common research samples branch back into separate pilot lines",
       "payoff": "The viewer can see what participants shared and what each company kept, rather than one unified laboratory",
       "next_episode": "S4E07",
-      "next_connection": "S4E06 shows government-organised research among rivals; S4E07 shows a public customer, NASA, setting the tests chips had to pass. Thematic link, not causal.",
+      "next_connection": "S4E06 shows government-organised research among rivals; S4E07 goes back to 1962–65, to a public customer, NASA, setting the tests chips had to pass. Thematic link, not causal.",
       "selection": "RECOVERED_PR1_CORE",
       "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
       "audience_ref": "channel/audience.json",
@@ -1873,9 +2187,12 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 3,
+        "revision": 5,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection"
+        ]
       },
       "language_review_history": [
         {
@@ -1884,6 +2201,14 @@
           "task": "TASK-004",
           "standard": "editorial/LANGUAGE.md",
           "reason": "'Rivals' 대립 구도 표현을 사업 명칭으로 단순화; 'organize suppliers' 부정확 연결 수정"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
         }
       ]
     },
@@ -1906,7 +2231,7 @@
       "screen_3d_event": "A purchased IC survives environmental testing before entering a guidance module",
       "payoff": "The viewer can see how NASA's purchasing and test requirements related to early production, and that NASA and defense buyers had different needs; the share of purchases is still to be verified",
       "next_episode": "S4E08",
-      "next_connection": "S4E07 shows a public buyer setting test requirements; S4E08 moves to a later dispute in which memory prices and market access became matters of trade law. Thematic link, not causal.",
+      "next_connection": "S4E07 shows a public buyer setting test requirements; S4E08 moves forward to 1986–87, to a dispute in which memory prices and market access became matters of trade law. Thematic link, not causal.",
       "selection": "NEW_PRODUCTION_JUDGMENT",
       "selection_reason": "Editorial addition from existing PR #1 candidates to link procurement and trade rules; not a recovered user approval of its claims.",
       "audience_ref": "channel/audience.json",
@@ -1929,9 +2254,12 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
-        "revision": 3,
+        "revision": 5,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection"
+        ]
       },
       "selection_flag": "구매 비중(60% 논쟁)과 첫 주문 성격이 검증 전이라 생산기술까지 바꿨다는 영향 범위는 과장 위험(H031 반영).",
       "language_review_history": [
@@ -1942,6 +2270,14 @@
           "revision": 2,
           "standard": "editorial/LANGUAGE.md",
           "reason": "편집 리뷰 B1: 질문 축소, flag 전파"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
         }
       ]
     },

@@ -1,0 +1,2331 @@
+{
+  "schema_version": 1,
+  "authority": "2026-11-14 explicit user directive in Chat; canonical editorial selection, not publication approval",
+  "provenance": {
+    "pr": 1,
+    "head": "3c66e4b97f8c4bafefd80f8b099ad297bfd7610b",
+    "main_base": "a11b495b1281093ea93da75befc423a3c5e53f00",
+    "claude_sessions": [
+      "https://claude.ai/chat/95e2893d-4544-4777-bd67-b514d6908513",
+      "https://claude.ai/chat/5e1a4db1-4692-4e24-86af-68ad0d78c5c0"
+    ],
+    "claude_session_access": "User supplied recovery; no claim of direct session access",
+    "older_proposal": "origin/proposal/261113-season-program-s1-s4 read; not adopted because its main-only P100 selection differs from recovered PR core"
+  },
+  "production_queue": [
+    "S1E01",
+    "S2E01",
+    "S3E01",
+    "S4E01",
+    "S1E02",
+    "S2E02",
+    "S3E02",
+    "S4E02",
+    "S1E03",
+    "S2E03",
+    "S3E03",
+    "S4E03",
+    "S1E04",
+    "S2E04",
+    "S3E04",
+    "S4E04",
+    "S1E05",
+    "S2E05",
+    "S3E05",
+    "S4E05",
+    "S1E06",
+    "S2E06",
+    "S3E06",
+    "S4E06",
+    "S1E07",
+    "S2E07",
+    "S3E07",
+    "S4E07",
+    "S1E08",
+    "S2E08",
+    "S3E08",
+    "S4E08"
+  ],
+  "queue_policy": "Finish S1E01 loop before S2E01, S3E01, S4E01; then E02 cycle. Queue does not imply upload schedule.",
+  "seasons": [
+    {
+      "season": 1,
+      "title_en": "DESIGN AND MANUFACTURING AS SEPARATE BUSINESSES",
+      "title_ko": "설계와 제조의 분리",
+      "question": "How did chip design and chip manufacturing become separate businesses?",
+      "count": 8,
+      "title_history": [
+        {
+          "field": "title_en",
+          "value": "WHO MAKES IT",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        },
+        {
+          "field": "title_ko",
+          "value": "누가 만드는가",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        },
+        {
+          "field": "title_en",
+          "value": "DESIGN AND MANUFACTURING",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ],
+      "language_review": {
+        "decision": "CIB-051",
+        "date": "2026-11-27",
+        "task": "TASK-004",
+        "revision": 2,
+        "standard": "editorial/LANGUAGE.md",
+        "reason": "편집 리뷰 비차단: 영문·국문 범위 일치"
+      }
+    },
+    {
+      "season": 2,
+      "title_en": "TECHNICAL LIMITS AND DESIGN CHOICES",
+      "title_ko": "기술 한계와 설계 선택",
+      "question": "How do technical constraints change which chip architectures are worth adopting?",
+      "count": 8,
+      "title_history": [
+        {
+          "field": "title_en",
+          "value": "LIMITS AND THE NEXT MOVE",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        },
+        {
+          "field": "title_ko",
+          "value": "한계와 다음 선택",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        },
+        {
+          "field": "title_en",
+          "value": "TECHNICAL LIMITS AND ARCHITECTURE CHOICES",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        },
+        {
+          "field": "title_ko",
+          "value": "기술 한계와 아키텍처 선택",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ],
+      "language_review": {
+        "decision": "CIB-051",
+        "date": "2026-11-27",
+        "task": "TASK-004",
+        "revision": 2,
+        "standard": "editorial/LANGUAGE.md",
+        "reason": "편집 리뷰 비차단: 트랜지스터 재현성·로드맵 편까지 포함하는 범위"
+      }
+    },
+    {
+      "season": 3,
+      "title_en": "THE COST STRUCTURE OF MEMORY CHIPS",
+      "title_ko": "메모리 반도체의 비용 구조",
+      "question": "How do cell design, manufacturing and market structure set the cost of a memory bit?",
+      "count": 8,
+      "title_history": [
+        {
+          "field": "title_en",
+          "value": "THE PRICE OF MEMORY",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        },
+        {
+          "field": "title_ko",
+          "value": "기억의 가격",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ],
+      "language_review": {
+        "decision": "CIB-051",
+        "date": "2026-11-27",
+        "task": "TASK-004",
+        "standard": "editorial/LANGUAGE.md",
+        "reason": "'기억의 가격'은 중의적 비유이므로 메모리 반도체 비용 구조로 사실화"
+      }
+    },
+    {
+      "season": 4,
+      "title_en": "GOVERNMENT POLICY AND CHIP MARKETS",
+      "title_ko": "정부 정책과 반도체 시장",
+      "question": "How do public decisions change what companies can build and sell?",
+      "count": 8,
+      "title_history": [
+        {
+          "field": "title_en",
+          "value": "NATIONS AND CHIPS",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        },
+        {
+          "field": "title_ko",
+          "value": "국가와 반도체",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ],
+      "language_review": {
+        "decision": "CIB-051",
+        "date": "2026-11-27",
+        "task": "TASK-004",
+        "standard": "editorial/LANGUAGE.md",
+        "reason": "'국가와 반도체'를 정책·시장의 관계로 구체화; 질문은 유지"
+      }
+    }
+  ],
+  "episodes": [
+    {
+      "episode_id": "S1E01",
+      "season": 1,
+      "episode": 1,
+      "source_namespace": "PR1@3c66e4b",
+      "original_id": "P004",
+      "original_title_en": "The Company That Makes Everyone's Chips Sells None of Its Own",
+      "title_en": "TSMC and the Pure-Play Foundry Model",
+      "source_h_ids": [
+        "H039"
+      ],
+      "main_p_id": "P004",
+      "crosswalk_status": "SAME_ID_REFRAMED",
+      "question": "Why would a chip manufacturer commit not to sell chips that compete with its customers?",
+      "protagonist_conflict": "Morris Chang's TSMC and chip designers who need manufacturing capacity but not a manufacturer that competes with them",
+      "choice": "Operate as a dedicated foundry that manufactures customer designs and sells no chip products of its own",
+      "screen_3d_event": "A customer's layout enters a wafer carrier; finished dies return to the customer, and the design stays with the customer",
+      "payoff": "The viewer can see that a foundry offers wafer capacity together with a commitment not to compete with its customers; whether that commitment won the first customers is still to be verified",
+      "next_episode": "S1E02",
+      "next_connection": "S1E01 separates who owns a design from who manufactures it; S1E02 goes back to 1956–57, to eight engineers whose departure moved manufacturing know-how between firms. Thematic link, not causal.",
+      "selection": "RECOVERED_PR1_CORE",
+      "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
+      "audience_ref": "channel/audience.json",
+      "evidence_status": "UNVERIFIED_RESEARCH_LEADS",
+      "evidence_leads": "TSMC 창업 당시 인터뷰·초기 고객 계약·연차보고서",
+      "production_status": "NOT_STARTED",
+      "media_status": "NOT_READY",
+      "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
+      "duplicate_boundary": "Pure-play foundry/customer rivalry and manufacturing trust; RCA/ITRI transfer is S1E04 and later process independence is S1E05.",
+      "title_history": [
+        {
+          "field": "title_en",
+          "value": "TSMC's No-Competition Promise",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ],
+      "title_ko": "TSMC와 순수 파운드리 모델",
+      "language_review": {
+        "decision": "CIB-051",
+        "date": "2026-11-27",
+        "task": "TASK-004",
+        "revision": 5,
+        "standard": "editorial/LANGUAGE.md",
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection"
+        ]
+      },
+      "selection_flag": "비경쟁 원칙이 초기 수주의 원인이었다는 인과는 초기 고객·계약 자료 확인 전(P004 flag 반영). 원칙과 수주를 인과로 단정하지 않음.",
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 2,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "편집 리뷰 B1·B4: flag 전파, 연결 전제 복원"
+        }
+      ]
+    },
+    {
+      "episode_id": "S1E02",
+      "season": 1,
+      "episode": 2,
+      "source_namespace": "PR1@3c66e4b",
+      "original_id": "P061",
+      "original_title_en": "Silicon Valley Started With Eight People Quitting",
+      "title_en": "The Eight Engineers Who Left Shockley for Fairchild",
+      "source_h_ids": [
+        "H023"
+      ],
+      "main_p_id": "P061",
+      "crosswalk_status": "SAME_ID_REFRAMED",
+      "question": "Beyond their own skills, what did eight departing engineers need to turn a resignation into a manufacturing company?",
+      "protagonist_conflict": "Eight engineers in a dispute with Shockley's management",
+      "choice": "Resign together and organise a new company",
+      "screen_3d_event": "Illustrative reconstruction: the same process notebooks appear first at benches in Shockley's laboratory, then at a newly built fabrication line",
+      "payoff": "The viewer can separate what moved with the engineers (skills and process knowledge) from what a new company still had to arrange before it could sell products; the signing anecdote and conflict accounts are still to be verified",
+      "next_episode": "S1E03",
+      "next_connection": "S1E02 shows engineers leaving to build a new manufacturer; S1E03 moves forward to 2009, to a different arrangement: AMD keeping chip design and separating its factories into another company. Thematic link, not causal.",
+      "selection": "RECOVERED_PR1_CORE",
+      "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
+      "audience_ref": "channel/audience.json",
+      "evidence_status": "UNVERIFIED_RESEARCH_LEADS",
+      "evidence_leads": "Fairchild 창립 기록·개인 구술·계약 문서",
+      "production_status": "NOT_STARTED",
+      "media_status": "NOT_READY",
+      "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
+      "duplicate_boundary": "Fairchild founding as a case of process knowledge moving with people; not a single-origin history of Silicon Valley.",
+      "title_history": [
+        {
+          "field": "title_en",
+          "value": "Silicon Valley Started With Eight People Quitting",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ],
+      "title_ko": "쇼클리 회사를 떠난 여덟 엔지니어",
+      "language_review": {
+        "decision": "CIB-051",
+        "date": "2026-11-27",
+        "task": "TASK-004",
+        "revision": 5,
+        "standard": "editorial/LANGUAGE.md",
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection"
+        ]
+      },
+      "selection_flag": "퇴사 서명 일화와 갈등 기록이 검증 전이며 지역 산업의 단일 기원 서사로 확대할 위험(P061 flag 반영).",
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 2,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "편집 리뷰 B1: flag 전파"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        }
+      ]
+    },
+    {
+      "episode_id": "S1E03",
+      "season": 1,
+      "episode": 3,
+      "source_namespace": "PR1@3c66e4b",
+      "original_id": "P073",
+      "original_title_en": "Why AMD Sold All Its Factories",
+      "title_en": "AMD, GlobalFoundries and the Move to Fabless",
+      "source_h_ids": [
+        "H067"
+      ],
+      "main_p_id": "P073",
+      "crosswalk_status": "SAME_ID_REFRAMED",
+      "question": "What does a chip designer gain and give up when it separates its factories into another company?",
+      "protagonist_conflict": "AMD management weighing the investment needed to keep both chip design and manufacturing competitive",
+      "choice": "Separate the manufacturing business into GlobalFoundries and buy wafers under supply agreements",
+      "screen_3d_event": "A fab's ownership label changes while AMD design files continue to enter the same line",
+      "payoff": "The viewer can see that going fabless removes fab ownership and its capital spending, while dependence on capacity, process and supply contracts remains",
+      "next_episode": "S1E04",
+      "next_connection": "S1E03 depends on another organisation running the fabs; S1E04 goes back to 1976–78, to how Taiwan's technology-transfer program built operating capability. Thematic link, not causal.",
+      "selection": "RECOVERED_PR1_CORE",
+      "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
+      "audience_ref": "channel/audience.json",
+      "evidence_status": "UNVERIFIED_RESEARCH_LEADS",
+      "evidence_leads": "AMD/GlobalFoundries 분사 공시·공급계약",
+      "production_status": "NOT_STARTED",
+      "media_status": "NOT_READY",
+      "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
+      "duplicate_boundary": "AMD's manufacturing separation and wafer-supply dependence; the pure-play foundry model is S1E01 and Qualcomm's fabless operation is S1E06.",
+      "title_history": [
+        {
+          "field": "title_en",
+          "value": "Why AMD Sold All Its Factories",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ],
+      "title_ko": "AMD의 제조 부문 분리와 GlobalFoundries",
+      "language_review": {
+        "decision": "CIB-051",
+        "date": "2026-11-27",
+        "task": "TASK-004",
+        "revision": 5,
+        "standard": "editorial/LANGUAGE.md",
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection"
+        ]
+      },
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "'공장을 모두 팔았다'는 절대·부정확 표현을 분사(GlobalFoundries)로 좁힘"
+        }
+      ]
+    },
+    {
+      "episode_id": "S1E04",
+      "season": 1,
+      "episode": 4,
+      "source_namespace": "PR1@3c66e4b",
+      "original_id": "P066",
+      "original_title_en": "How Taiwan Learned to Make Chips",
+      "title_en": "Taiwan's RCA Technology Transfer Program",
+      "source_h_ids": [
+        "H035"
+      ],
+      "main_p_id": "P066",
+      "crosswalk_status": "SAME_ID_REFRAMED",
+      "question": "How does licensed process know-how become a local team's repeatable manufacturing capability?",
+      "protagonist_conflict": "ITRI engineers and Taiwan's industrial-policy officials facing a gap in process experience",
+      "choice": "License process technology from RCA and train engineers and operators",
+      "screen_3d_event": "Illustrative reconstruction: operators run successive wafer lots on a period production line until test results meet qualification",
+      "payoff": "The viewer can see why running a licensed process with stable results was a separate capability from licensing it; whether this directly led to the later foundry business is still to be verified",
+      "next_episode": "S1E05",
+      "next_connection": "S1E04 shows production built on licensed process knowledge; S1E05 moves to a later process generation and asks when a foundry would take on the cost and risk of developing a process itself.",
+      "selection": "RECOVERED_PR1_CORE",
+      "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
+      "audience_ref": "channel/audience.json",
+      "evidence_status": "UNVERIFIED_RESEARCH_LEADS",
+      "evidence_leads": "ITRI 초기 인력 이전 기록·생산 보고서",
+      "production_status": "NOT_STARTED",
+      "media_status": "NOT_READY",
+      "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
+      "duplicate_boundary": "RCA/ITRI technology transfer, training and qualification before TSMC; do not repeat the pure-play founding thesis of S1E01.",
+      "title_history": [
+        {
+          "field": "title_en",
+          "value": "How Taiwan Learned to Make Chips",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ],
+      "title_ko": "대만의 RCA 기술 이전 사업",
+      "language_review": {
+        "decision": "CIB-051",
+        "date": "2026-11-27",
+        "task": "TASK-004",
+        "revision": 5,
+        "standard": "editorial/LANGUAGE.md",
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection"
+        ]
+      },
+      "selection_flag": "첫 파견 인원의 성과로 전체 기술 이전을 축약할 위험, 이후 파운드리 사업과의 직접 연결은 검증 전(P066·H035 반영).",
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 2,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "편집 리뷰 B1, 근거 리뷰 비차단: 인과 단정 완화"
+        }
+      ]
+    },
+    {
+      "episode_id": "S1E05",
+      "season": 1,
+      "episode": 5,
+      "source_namespace": "PR1@3c66e4b",
+      "original_id": "P137",
+      "original_title_en": "The Chip Factory That Turned Down IBM",
+      "title_en": "TSMC and Copper Interconnect Process Development",
+      "source_h_ids": [],
+      "main_p_id": null,
+      "crosswalk_status": "PR_ONLY_NO_MAIN_P_ID",
+      "question": "When does a foundry develop a process itself rather than license one from a partner?",
+      "protagonist_conflict": "TSMC process teams weighing dependence on a partner's technology against development cost and risk",
+      "choice": "To be verified: whether TSMC declined an IBM process alliance and developed copper interconnect in-house; the episode presents only what primary records support",
+      "screen_3d_event": "Illustrative model: two copper integration routes reach reliability test stations; the route tied to the IBM claim is marked unverified",
+      "payoff": "The viewer can see the cost and risk a foundry takes on when it develops a process in-house; the IBM decision appears only as far as records confirm it",
+      "next_episode": "S1E06",
+      "next_connection": "S1E05 concerns control over process technology; S1E06 looks at Qualcomm, which built its business on chip design while buying manufacturing. Thematic link, not causal.",
+      "selection": "RECOVERED_PR1_CORE",
+      "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
+      "audience_ref": "channel/audience.json",
+      "evidence_status": "UNVERIFIED_RESEARCH_LEADS",
+      "evidence_leads": "TSMC 구리 배선 공정의 개발 경로와 IBM 제휴 제안·거절 여부를 보여 주는 1차 기록",
+      "production_status": "NOT_STARTED",
+      "media_status": "NOT_READY",
+      "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
+      "duplicate_boundary": "Later TSMC process-development independence and the specific IBM premise; no invented refusal scene and no retelling of 1987 founding.",
+      "title_history": [
+        {
+          "field": "title_en",
+          "value": "TSMC, IBM and the Cost of Process Independence",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ],
+      "title_ko": "TSMC의 구리 배선 공정 개발",
+      "selection_flag": "IBM 제휴 거절 일화가 원래 기획의 전제이나 1차 기록 검증 전이므로, 검증되지 않으면 공정 자체 개발 비용 주제로만 유지할지 교체할지 결정이 필요함.",
+      "language_review": {
+        "decision": "CIB-051",
+        "date": "2026-11-27",
+        "task": "TASK-004",
+        "revision": 5,
+        "standard": "editorial/LANGUAGE.md",
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "evidence_leads"
+        ]
+      },
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "검증 전 IBM 거절 일화를 제목에서 빼고 공정 개발이라는 확인 가능한 대상으로 좁힘"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        }
+      ],
+      "field_history": [
+        {
+          "field": "evidence_leads",
+          "value": "구리 배선 세대에서 기술 제휴 대신 자체 개발을 택한 결정",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ]
+    },
+    {
+      "episode_id": "S1E06",
+      "season": 1,
+      "episode": 6,
+      "source_namespace": "PR1@3c66e4b",
+      "original_id": "P070",
+      "original_title_en": "The Chip in Your Phone Came From a Company With No Factory",
+      "title_en": "Qualcomm's Fabless Chip Business",
+      "source_h_ids": [],
+      "main_p_id": "P070",
+      "crosswalk_status": "SAME_ID_REFRAMED",
+      "question": "How does a company sell chips without owning a fab?",
+      "protagonist_conflict": "Qualcomm design teams managing manufacturing, packaging and product-schedule risks that sit with outside suppliers",
+      "choice": "Design chips in-house and contract wafer fabrication and packaging to outside suppliers",
+      "screen_3d_event": "A phone board separates into design, wafer fabrication and packaging steps, each labelled with the type of company that performs it",
+      "payoff": "The viewer can see that a fabless company still depends on outside fabrication capacity, process schedules and packaging",
+      "next_episode": "S1E07",
+      "next_connection": "S1E06 relies on a design-to-factory handoff; S1E07 goes back to an earlier period, to the Mead–Conway design rules, an early attempt to define such a handoff; treating them as a precondition for later foundries is interpretation. Thematic link, not causal.",
+      "selection": "RECOVERED_PR1_CORE",
+      "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
+      "audience_ref": "channel/audience.json",
+      "evidence_status": "UNVERIFIED_RESEARCH_LEADS",
+      "evidence_leads": "Arm·Qualcomm·TSMC 공개 연차보고서 비교",
+      "production_status": "NOT_STARTED",
+      "media_status": "NOT_READY",
+      "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
+      "duplicate_boundary": "Qualcomm's fabless operating model and supplier dependence; AMD's manufacturing separation is S1E03 and Apple's system-company case is S1E08.",
+      "title_history": [
+        {
+          "field": "title_en",
+          "value": "The Chip in Your Phone Came From a Company With No Factory",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ],
+      "title_ko": "퀄컴의 팹리스 사업 구조",
+      "language_review": {
+        "decision": "CIB-051",
+        "date": "2026-11-27",
+        "task": "TASK-004",
+        "revision": 4,
+        "standard": "editorial/LANGUAGE.md",
+        "reason": "TASK-004 r4: 편집 재리뷰 R1·R2, 근거 재리뷰 비차단 반영",
+        "fields": [
+          "next_connection"
+        ]
+      },
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "'당신의 폰 속 칩' 식 일반화 제목을 기업·사업 모델 명칭으로 교체"
+        }
+      ]
+    },
+    {
+      "episode_id": "S1E07",
+      "season": 1,
+      "episode": 7,
+      "source_namespace": "PR1@3c66e4b",
+      "original_id": "P109",
+      "original_title_en": "The Textbook That Let Anyone Design a Chip",
+      "title_en": "Mead and Conway's Chip Design Rules",
+      "source_h_ids": [],
+      "main_p_id": null,
+      "crosswalk_status": "PR_ONLY_NO_MAIN_P_ID",
+      "question": "What did the Mead–Conway design method change in how designers and fabs worked together?",
+      "protagonist_conflict": "Mead, Conway and chip designers without access to their own production line",
+      "choice": "Use scalable design rules and shared fabrication runs",
+      "screen_3d_event": "Several layouts are placed on one shared wafer and return as separate chips",
+      "payoff": "The viewer can see how a common set of design rules lets designers and fabs work separately; describing this as a technical precondition for foundries is interpretation",
+      "next_episode": "S1E08",
+      "next_connection": "S1E07 shows a shared design interface; S1E08 moves forward to 2020, to why a system company such as Apple would design chips in-house while still buying fabrication. Thematic link, not causal.",
+      "selection": "NEW_PRODUCTION_JUDGMENT",
+      "selection_reason": "Editorial addition from existing PR #1 candidates to link design interfaces and system ownership; not a recovered user approval of its claims.",
+      "audience_ref": "channel/audience.json",
+      "evidence_status": "UNVERIFIED_RESEARCH_LEADS",
+      "evidence_leads": "미드-콘웨이 설계 방법과 공유 제작 서비스 기록. 파운드리의 전제로 볼지는 해석",
+      "production_status": "NOT_STARTED",
+      "media_status": "NOT_READY",
+      "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
+      "duplicate_boundary": "Design rules and shared fabrication service as the design–fab interface; foundry business formation is S1E01.",
+      "title_history": [
+        {
+          "field": "title_en",
+          "value": "The Textbook That Let Anyone Design a Chip",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ],
+      "title_ko": "미드-콘웨이 설계 규칙",
+      "language_review": {
+        "decision": "CIB-051",
+        "date": "2026-11-27",
+        "task": "TASK-004",
+        "revision": 5,
+        "standard": "editorial/LANGUAGE.md",
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection",
+          "evidence_leads",
+          "question"
+        ]
+      },
+      "field_history": [
+        {
+          "field": "evidence_leads",
+          "value": "설계 규칙을 공장에서 떼어 낸 미드-콘웨이 방법과 공유 제작 서비스. 파운드리의 기술적 전제",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ],
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "'누구나 칩을 설계' 절대 표현 제거, 방법·인물 명칭으로 교체"
+        }
+      ]
+    },
+    {
+      "episode_id": "S1E08",
+      "season": 1,
+      "episode": 8,
+      "source_namespace": "PR1@3c66e4b",
+      "original_id": "P078",
+      "original_title_en": "Apple Designs Chips Without a Fab",
+      "title_en": "Apple Designs Chips Without a Fab",
+      "source_h_ids": [
+        "H086"
+      ],
+      "main_p_id": "P078",
+      "crosswalk_status": "SAME_RECORD",
+      "question": "Why would Apple design a processor and still buy manufacturing?",
+      "protagonist_conflict": "Apple chip architects weighing system integration against the investment a fab would require",
+      "choice": "Control system design and outsource fabrication",
+      "screen_3d_event": "A phone enclosure closes around a chip made from a wafer fabricated by another company",
+      "payoff": "The viewer can see why a company may own chip design for product integration while buying fabrication, and which dependencies remain",
+      "next_episode": null,
+      "next_connection": "Season 1 closes on boundary choices: a company can own system design, process development, both or neither, and in each case still depends on capabilities it buys.",
+      "selection": "NEW_PRODUCTION_JUDGMENT",
+      "selection_reason": "Editorial addition from existing PR #1 candidates to link design interfaces and system ownership; not a recovered user approval of its claims.",
+      "audience_ref": "channel/audience.json",
+      "evidence_status": "UNVERIFIED_RESEARCH_LEADS",
+      "evidence_leads": "Apple 공식 SoC 소개·TSMC 공개 제조 자료",
+      "production_status": "NOT_STARTED",
+      "media_status": "NOT_READY",
+      "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
+      "duplicate_boundary": "Apple's system-company chip design with outsourced fabrication; Qualcomm's fabless chip business is S1E06.",
+      "title_ko": "애플의 자체 칩 설계와 외부 제조",
+      "language_review": {
+        "decision": "CIB-051",
+        "date": "2026-11-27",
+        "task": "TASK-004",
+        "standard": "editorial/LANGUAGE.md",
+        "reason": "제목은 사실형이라 유지; 'bottleneck을 소유' 구호형 payoff를 이해 내용으로 교체"
+      }
+    },
+    {
+      "episode_id": "S2E01",
+      "season": 2,
+      "episode": 1,
+      "source_namespace": "PR1@3c66e4b",
+      "original_id": "P055",
+      "original_title_en": "Video Games Paid for the AI Boom",
+      "title_en": "From Gaming Graphics Cards to AI Computing",
+      "source_h_ids": [
+        "H081"
+      ],
+      "main_p_id": "P055",
+      "crosswalk_status": "SAME_ID_REFRAMED",
+      "question": "How did hardware built for the game graphics market come to be used for AI computation?",
+      "protagonist_conflict": "GPU designers serving a paying games market while extending their hardware to general computation",
+      "choice": "Invest in programmable parallel hardware",
+      "screen_3d_event": "A graphics board renders pixels; the same execution units are then shown processing numerical arrays",
+      "payoff": "The viewer can see that game sales supplied a market for parallel graphics hardware, and that software and research use were separate later steps toward AI computing; whether game revenue funded AI development is still to be verified",
+      "next_episode": "S2E02",
+      "next_connection": "S2E01 depends on parallel hardware built from transistors; S2E02 goes back to 1947, to the early transistor and the problem of making it repeatably.",
+      "selection": "RECOVERED_PR1_CORE",
+      "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
+      "audience_ref": "channel/audience.json",
+      "evidence_status": "UNVERIFIED_RESEARCH_LEADS",
+      "evidence_leads": "NVIDIA·ATI 초기 GPU 연혁·API/제품 스펙",
+      "production_status": "NOT_STARTED",
+      "media_status": "NOT_READY",
+      "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
+      "duplicate_boundary": "GPU market and programmability; the AlexNet result belongs to S2E06; later AI use is not presented as the designers' original intent.",
+      "title_history": [
+        {
+          "field": "title_en",
+          "value": "How Gaming GPUs Became Engines for AI",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ],
+      "title_ko": "게임용 GPU와 AI 연산",
+      "language_review": {
+        "decision": "CIB-051",
+        "date": "2026-11-27",
+        "task": "TASK-004",
+        "revision": 5,
+        "standard": "editorial/LANGUAGE.md",
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection"
+        ]
+      },
+      "selection_flag": "게임 매출이 AI용 GPU 개발 자금이 됐다는 인과는 사후 해석일 수 있음. 당시 의도를 AI로 소급하지 않음(P055·H081 반영).",
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 2,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "편집 리뷰 B1: flag 전파"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 4,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r4: 편집 재리뷰 R1·R2, 근거 재리뷰 비차단 반영",
+          "fields": [
+            "payoff"
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "S2E02",
+      "season": 2,
+      "episode": 2,
+      "source_namespace": "PR1@3c66e4b",
+      "original_id": "P011",
+      "original_title_en": "The Tiny Switch That Runs Your Entire Life",
+      "title_en": "Bell Labs' Transistor: From Lab Device to Production",
+      "source_h_ids": [
+        "H012"
+      ],
+      "main_p_id": "P011",
+      "crosswalk_status": "SAME_ID_REFRAMED",
+      "question": "What problems remained after Bell Labs had a working transistor?",
+      "protagonist_conflict": "Bell Labs researchers working with point-contact devices whose amplification was hard to reproduce",
+      "choice": "Turn a laboratory point-contact device into devices that can be made repeatably",
+      "screen_3d_event": "A point-contact device amplifies a signal, then fails a repeatability test across samples",
+      "payoff": "The viewer can distinguish demonstrating a device once from producing it reliably, two different engineering problems",
+      "next_episode": "S2E03",
+      "next_connection": "S2E02 shows transistors becoming reproducible; S2E03 moves forward to 2018, to a much later speed technique, speculative execution, and the data it exposed. Thematic link, not causal.",
+      "selection": "RECOVERED_PR1_CORE",
+      "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
+      "audience_ref": "channel/audience.json",
+      "evidence_status": "UNVERIFIED_RESEARCH_LEADS",
+      "evidence_leads": "Bell Labs 노트·특허·연구자 구술 기록 날짜별 대조",
+      "production_status": "NOT_STARTED",
+      "media_status": "NOT_READY",
+      "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
+      "duplicate_boundary": "Point-contact transistor and reproducibility; not a general history of all transistor types.",
+      "title_history": [
+        {
+          "field": "title_en",
+          "value": "The Tiny Switch That Runs Your Entire Life",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ],
+      "title_ko": "벨 연구소 트랜지스터의 재현성 과제",
+      "language_review": {
+        "decision": "CIB-051",
+        "date": "2026-11-27",
+        "task": "TASK-004",
+        "revision": 5,
+        "standard": "editorial/LANGUAGE.md",
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection"
+        ]
+      },
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 2,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "편집 리뷰 B4: 연결 전제 복원"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        }
+      ]
+    },
+    {
+      "episode_id": "S2E03",
+      "season": 2,
+      "episode": 3,
+      "source_namespace": "PR1@3c66e4b",
+      "original_id": "P058",
+      "original_title_en": "The Speed Trick That Leaked Everyone's Secrets",
+      "title_en": "Spectre, Meltdown and Speculative Execution",
+      "source_h_ids": [
+        "H087"
+      ],
+      "main_p_id": "P058",
+      "crosswalk_status": "SAME_ID_REFRAMED",
+      "question": "How can a processor that works ahead expose data it was not allowed to read?",
+      "protagonist_conflict": "CPU architects and security researchers weighing performance against isolation between processes",
+      "choice": "Execute instructions speculatively before access checks resolve; after disclosure, add mitigations",
+      "screen_3d_event": "A rejected instruction leaves a cache state change that a second process measures by timing",
+      "payoff": "The viewer can see why discarding a speculative result does not remove every hardware side effect; whether and how much the mitigations cost in performance is still to be verified",
+      "next_episode": "S2E04",
+      "next_connection": "S2E03 shows a speed technique with a security cost; S2E04 goes back to 1963, to early CMOS, where developers accepted lower speed to reduce power consumption. Thematic link, not causal.",
+      "selection": "RECOVERED_PR1_CORE",
+      "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
+      "audience_ref": "channel/audience.json",
+      "evidence_status": "UNVERIFIED_RESEARCH_LEADS",
+      "evidence_leads": "Spectre/Meltdown 원논문·업체 공식 보안 권고",
+      "production_status": "NOT_STARTED",
+      "media_status": "NOT_READY",
+      "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
+      "duplicate_boundary": "Speculative-execution side channels; not a survey of all CPU security flaws.",
+      "title_history": [
+        {
+          "field": "title_en",
+          "value": "The Speed Trick That Leaked Everyone's Secrets",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ],
+      "title_ko": "스펙터·멜트다운과 투기적 실행",
+      "language_review": {
+        "decision": "CIB-051",
+        "date": "2026-11-27",
+        "task": "TASK-004",
+        "revision": 5,
+        "standard": "editorial/LANGUAGE.md",
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection"
+        ]
+      },
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 2,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "근거 리뷰 비차단: 완화책 성능 비용 단정 완화"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        }
+      ]
+    },
+    {
+      "episode_id": "S2E04",
+      "season": 2,
+      "episode": 4,
+      "source_namespace": "PR1@3c66e4b",
+      "original_id": "P091",
+      "original_title_en": "The Chip Design Rejected as Too Slow Now Runs Everything",
+      "title_en": "Early CMOS: Slower Circuits, Lower Power",
+      "source_h_ids": [
+        "H028"
+      ],
+      "main_p_id": "P091",
+      "crosswalk_status": "SAME_ID_REFRAMED",
+      "question": "What did early CMOS give up in speed to reduce idle power consumption?",
+      "protagonist_conflict": "CMOS developers whose early devices were slower than the alternatives",
+      "choice": "Accept lower speed to reduce power drawn while idle",
+      "screen_3d_event": "Complementary switches alternate while the current drawn at idle falls on a battery meter",
+      "payoff": "The viewer can see how a change in the binding constraint, from speed to power, can change which circuit technology is adopted",
+      "next_episode": "S2E05",
+      "next_connection": "S2E04 shows a circuit-level trade between speed and power; S2E05 moves to a later, instruction-set-level question: which costs remain when the specification itself is open, as with RISC-V. Thematic link, not causal.",
+      "selection": "RECOVERED_PR1_CORE",
+      "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
+      "audience_ref": "channel/audience.json",
+      "evidence_status": "UNVERIFIED_RESEARCH_LEADS",
+      "evidence_leads": "CMOS 초기 논문·RCA 제품·모바일 설계 역사",
+      "production_status": "NOT_STARTED",
+      "media_status": "NOT_READY",
+      "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
+      "duplicate_boundary": "Early CMOS power–speed tradeoff; mobile adoption is context only; the later clock-speed power limit is S2E08.",
+      "title_history": [
+        {
+          "field": "title_en",
+          "value": "The Low-Power Chip Before Its Time",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ],
+      "title_ko": "초기 CMOS의 속도와 전력",
+      "language_review": {
+        "decision": "CIB-051",
+        "date": "2026-11-27",
+        "task": "TASK-004",
+        "revision": 5,
+        "standard": "editorial/LANGUAGE.md",
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection"
+        ]
+      },
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "'시대를 앞선' 극적 표현과 '유행' 표현 제거"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        }
+      ]
+    },
+    {
+      "episode_id": "S2E05",
+      "season": 2,
+      "episode": 5,
+      "source_namespace": "PR1@3c66e4b",
+      "original_id": "P060",
+      "original_title_en": "The Chip Design Nobody Owns",
+      "title_en": "RISC-V: An Open Instruction Set and Its Costs",
+      "source_h_ids": [],
+      "main_p_id": "P060",
+      "crosswalk_status": "SAME_ID_REFRAMED",
+      "question": "What is free about an open instruction set, and what still costs money?",
+      "protagonist_conflict": "RISC-V implementers facing verification and fabrication costs",
+      "choice": "Share one instruction-set specification while building separate implementations",
+      "screen_3d_event": "One instruction passes through different processor cores and their test benches",
+      "payoff": "The viewer can separate what an open specification makes available from the design, verification and fabrication costs of a finished chip",
+      "next_episode": "S2E06",
+      "next_connection": "S2E05 separates a published specification from the hardware built on it; S2E06 looks at a 2012 training run on existing graphics hardware, where data, model and implementation choices also shaped the result. Thematic link, not causal.",
+      "selection": "RECOVERED_PR1_CORE",
+      "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
+      "audience_ref": "channel/audience.json",
+      "evidence_status": "UNVERIFIED_RESEARCH_LEADS",
+      "evidence_leads": "RISC-V International 규격·실제 구현체 공개 논문",
+      "production_status": "NOT_STARTED",
+      "media_status": "NOT_READY",
+      "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
+      "duplicate_boundary": "Open instruction-set economics and implementation cost; circuit technology is S2E04.",
+      "title_history": [
+        {
+          "field": "title_en",
+          "value": "The Chip Design Nobody Owns",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ],
+      "title_ko": "RISC-V 개방형 명령어 집합과 구현 비용",
+      "language_review": {
+        "decision": "CIB-051",
+        "date": "2026-11-27",
+        "task": "TASK-004",
+        "revision": 3,
+        "standard": "editorial/LANGUAGE.md",
+        "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+      },
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 2,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "편집 리뷰 B4: 주제 연결 표시"
+        }
+      ]
+    },
+    {
+      "episode_id": "S2E06",
+      "season": 2,
+      "episode": 6,
+      "source_namespace": "PR1@3c66e4b",
+      "original_id": "P057",
+      "original_title_en": "Two Gaming Cards Beat Every AI Lab in 2012",
+      "title_en": "AlexNet's Two-GPU Training in 2012",
+      "source_h_ids": [
+        "H083"
+      ],
+      "main_p_id": "P057",
+      "crosswalk_status": "SAME_ID_REFRAMED",
+      "question": "What did training on two GPUs change for one 2012 image-recognition contest entry?",
+      "protagonist_conflict": "AlexNet researchers facing training time and memory limits",
+      "choice": "Split training across two GPUs",
+      "screen_3d_event": "Image batches divide across two boards and combine at an evaluation result",
+      "payoff": "The viewer can see what splitting training across two GPUs enabled for one benchmark result, alongside the data and model choices that also shaped it",
+      "next_episode": "S2E07",
+      "next_connection": "S2E06 is one 2012 result; S2E07 goes back to 1965, to Moore's forecast and how later industry roadmaps used it. Thematic link, not causal.",
+      "selection": "RECOVERED_PR1_CORE",
+      "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
+      "audience_ref": "channel/audience.json",
+      "evidence_status": "UNVERIFIED_RESEARCH_LEADS",
+      "evidence_leads": "AlexNet 2012 논문·ImageNet 당시 규칙·후속 인프라 자료",
+      "production_status": "NOT_STARTED",
+      "media_status": "NOT_READY",
+      "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
+      "duplicate_boundary": "2012 experiment and its specific result; GPU industry origin belongs to S2E01",
+      "title_history": [
+        {
+          "field": "title_en",
+          "value": "Two GPUs and the 2012 ImageNet Breakthrough",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ],
+      "title_ko": "AlexNet의 2012년 GPU 두 장 학습",
+      "language_review": {
+        "decision": "CIB-051",
+        "date": "2026-11-27",
+        "task": "TASK-004",
+        "revision": 3,
+        "standard": "editorial/LANGUAGE.md",
+        "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+      },
+      "selection_flag": "결과 변화를 GPU 두 장에만 귀속하면 데이터·모델의 기여를 지우는 인과 과장(H083 반영).",
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 2,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "편집 리뷰 B1: flag 전파"
+        }
+      ]
+    },
+    {
+      "episode_id": "S2E07",
+      "season": 2,
+      "episode": 7,
+      "source_namespace": "PR1@3c66e4b",
+      "original_id": "P010",
+      "original_title_en": "Moore's Law Became a Factory Deadline",
+      "title_en": "Moore's 1965 Forecast and Industry Roadmaps",
+      "source_h_ids": [
+        "H030"
+      ],
+      "main_p_id": "P010",
+      "crosswalk_status": "SAME_RECORD",
+      "question": "How was Moore's 1965 forecast later used in industry roadmaps?",
+      "protagonist_conflict": "Chip firms and equipment suppliers synchronizing investment",
+      "choice": "Coordinate research and capital spending around a scaling schedule",
+      "screen_3d_event": "A wafer layout shrinks on schedule while a delayed tool delivery misses the next process window",
+      "payoff": "The viewer can see how a published forecast was later written into roadmap targets; when it became an investment benchmark is still to be verified",
+      "next_episode": "S2E08",
+      "next_connection": "S2E07 assumes scaling keeps delivering useful gains; S2E08 moves to a later period and asks what happens when raising clock speed stops being an affordable way to gain performance.",
+      "selection": "NEW_PRODUCTION_JUDGMENT",
+      "selection_reason": "Editorial addition from existing PR #1 candidates to link scaling commitments and power limits; not a recovered user approval of its claims.",
+      "audience_ref": "channel/audience.json",
+      "evidence_status": "UNVERIFIED_RESEARCH_LEADS",
+      "evidence_leads": "Gordon Moore 1965 원문·후속 인터뷰·산업 로드맵",
+      "production_status": "NOT_STARTED",
+      "media_status": "NOT_READY",
+      "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
+      "duplicate_boundary": "Moore's forecast and its later use in industry roadmaps; physical power limits are S2E08.",
+      "title_history": [
+        {
+          "field": "title_en",
+          "value": "Moore's Law Became a Factory Deadline",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ],
+      "title_ko": "무어의 1965년 예측과 산업 로드맵",
+      "language_review": {
+        "decision": "CIB-051",
+        "date": "2026-11-27",
+        "task": "TASK-004",
+        "revision": 5,
+        "standard": "editorial/LANGUAGE.md",
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection"
+        ]
+      },
+      "selection_flag": "1965년 논문이 곧바로 투자 기준이 됐다는 전제는 채택 시점 근거 확인 전, 시간 순서를 인과로 압축할 위험(H030 반영).",
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 2,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "편집 리뷰 B1, 근거 리뷰 비차단"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        }
+      ]
+    },
+    {
+      "episode_id": "S2E08",
+      "season": 2,
+      "episode": 8,
+      "source_namespace": "PR1@3c66e4b",
+      "original_id": "P099",
+      "original_title_en": "Faster Chips, Not Enough Power",
+      "title_en": "Heat Limits on Processor Clock Speeds",
+      "source_h_ids": [],
+      "main_p_id": "P099",
+      "crosswalk_status": "SAME_RECORD",
+      "question": "What happens when a faster chip cannot shed its heat?",
+      "protagonist_conflict": "Processor designers facing voltage and power limits",
+      "choice": "Pursue performance through architecture and parallelism instead of higher clock speeds",
+      "screen_3d_event": "A heat spreader saturates as further clock increases stop adding performance; work is redistributed across parallel units",
+      "payoff": "The viewer can see that processor performance depends on power, heat and architecture together, which leads back to the GPU parallelism of S2E01",
+      "next_episode": null,
+      "next_connection": "Season 2 returns to GPUs with a clearer constraint: useful performance depends on power, heat, memory and software, not clock speed alone.",
+      "selection": "NEW_PRODUCTION_JUDGMENT",
+      "selection_reason": "Editorial addition from existing PR #1 candidates to link scaling commitments and power limits; not a recovered user approval of its claims.",
+      "audience_ref": "channel/audience.json",
+      "evidence_status": "UNVERIFIED_RESEARCH_LEADS",
+      "evidence_leads": "공개 GPU TDP·데이터센터 PUE·전력망 공시; 범위 명시",
+      "production_status": "NOT_STARTED",
+      "media_status": "NOT_READY",
+      "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
+      "duplicate_boundary": "Power and heat limits on clock scaling; the early CMOS low-power tradeoff is S2E04.",
+      "title_history": [
+        {
+          "field": "title_en",
+          "value": "Faster Chips, Not Enough Power",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ],
+      "title_ko": "프로세서 클럭 속도와 발열 한계",
+      "language_review": {
+        "decision": "CIB-051",
+        "date": "2026-11-27",
+        "task": "TASK-004",
+        "standard": "editorial/LANGUAGE.md",
+        "reason": "모호한 대구형 제목을 대상(클럭 속도·발열)으로 구체화"
+      }
+    },
+    {
+      "episode_id": "S3E01",
+      "season": 3,
+      "episode": 1,
+      "source_namespace": "PR1@3c66e4b",
+      "original_id": "P046",
+      "original_title_en": "The Day Intel Quit the Business It Invented",
+      "title_en": "Intel's Exit From DRAM",
+      "source_h_ids": [
+        "H061"
+      ],
+      "main_p_id": "P046",
+      "crosswalk_status": "SAME_ID_REFRAMED",
+      "question": "Why did Intel exit DRAM, one of its early product lines?",
+      "protagonist_conflict": "Intel managers allocating scarce capacity under DRAM competition",
+      "choice": "Shift resources away from commodity DRAM toward processors",
+      "screen_3d_event": "Two product lots compete for fab slots; one loses its next allocation",
+      "payoff": "The viewer can see the exit as a capacity-allocation decision under DRAM competition, not as Intel leaving all memory products",
+      "next_episode": "S3E02",
+      "next_connection": "S3E01 is a decision about the cost of producing memory bits; S3E02 goes back to 1970, to magnetic core memory, where that cost was visible in hand assembly. Thematic link, not causal.",
+      "selection": "RECOVERED_PR1_CORE",
+      "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
+      "audience_ref": "channel/audience.json",
+      "evidence_status": "UNVERIFIED_RESEARCH_LEADS",
+      "evidence_leads": "Intel Andy Grove 회고와 당시 재무·제품 기록 분리",
+      "production_status": "NOT_STARTED",
+      "media_status": "NOT_READY",
+      "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
+      "duplicate_boundary": "Intel DRAM exit and product/capacity allocation; later Japanese memory-sector product mix belongs to S3E03 and Samsung entry to S3E05.",
+      "title_ko": "인텔의 DRAM 사업 철수",
+      "language_review": {
+        "decision": "CIB-051",
+        "date": "2026-11-27",
+        "task": "TASK-004",
+        "revision": 5,
+        "standard": "editorial/LANGUAGE.md",
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection",
+          "title_en"
+        ]
+      },
+      "title_history": [
+        {
+          "field": "title_en",
+          "value": "Why Intel Left DRAM",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        },
+        {
+          "field": "title_en",
+          "value": "Intel's 1985 Exit From DRAM",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ],
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 2,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "편집 리뷰 B3: '왜'형 제목 제거, P046과 통일"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        }
+      ]
+    },
+    {
+      "episode_id": "S3E02",
+      "season": 3,
+      "episode": 2,
+      "source_namespace": "PR1@3c66e4b",
+      "original_id": "P041",
+      "original_title_en": "Computer Memory Used to Be Woven by Hand",
+      "title_en": "Hand-Wired Magnetic Core Memory",
+      "source_h_ids": [
+        "H043"
+      ],
+      "main_p_id": "P041",
+      "crosswalk_status": "SAME_ID_REFRAMED",
+      "question": "How did hand-threaded magnetic core memory become a manufacturing problem?",
+      "protagonist_conflict": "Memory assemblers and computer builders balancing labor and reliability",
+      "choice": "Wire storage arrays repeatably, then compare semiconductor alternatives",
+      "screen_3d_event": "A thread passes through ferrite rings and a read pulse flips a core",
+      "payoff": "The viewer can see that each stored bit had a physical production cost in labour and reliability",
+      "next_episode": "S3E03",
+      "next_connection": "S3E02 shows manufacturing effort per bit in core memory; S3E03 moves to later Japanese memory makers, whose product mix, costs and customer requirements are examined together. Thematic link, not causal.",
+      "selection": "RECOVERED_PR1_CORE",
+      "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
+      "audience_ref": "channel/audience.json",
+      "evidence_status": "UNVERIFIED_RESEARCH_LEADS",
+      "evidence_leads": "Computer History Museum 코어 메모리 기록·DRAM 전환 고객 자료",
+      "production_status": "NOT_STARTED",
+      "media_status": "NOT_READY",
+      "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
+      "duplicate_boundary": "Ferrite-core manufacturing and hand assembly; the detailed transistor/capacitor refresh mechanism belongs to S3E07.",
+      "title_history": [
+        {
+          "field": "title_en",
+          "value": "Computer Memory Used to Be Woven by Hand",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ],
+      "title_ko": "수작업 자기 코어 메모리",
+      "language_review": {
+        "decision": "CIB-051",
+        "date": "2026-11-27",
+        "task": "TASK-004",
+        "revision": 5,
+        "standard": "editorial/LANGUAGE.md",
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection"
+        ]
+      },
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "'짜였다(woven)' 서술형 제목을 대상 명사구로 교체"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 4,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r4: 편집 재리뷰 R1·R2, 근거 재리뷰 비차단 반영",
+          "fields": [
+            "next_connection"
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "S3E03",
+      "season": 3,
+      "episode": 3,
+      "source_namespace": "PR1@3c66e4b",
+      "original_id": "P120",
+      "original_title_en": "Japan Made the Best Memory Chips. That Was the Problem.",
+      "title_en": "Japanese Memory Makers and the PC Market",
+      "source_h_ids": [],
+      "main_p_id": null,
+      "crosswalk_status": "PR_ONLY_NO_MAIN_P_ID",
+      "question": "How did changing customer requirements, costs and product mix affect Japanese memory makers?",
+      "protagonist_conflict": "Japanese memory firms facing changing customers and price pressure",
+      "choice": "To be verified: how firms set product mix, cost and reliability targets as customer requirements changed; no single-cause verdict",
+      "screen_3d_event": "Two qualification benches test distinct customer requirements beside a falling price order",
+      "payoff": "The viewer can see why product quality alone does not explain a national industry's market outcome",
+      "next_episode": "S3E04",
+      "next_connection": "S3E03 looks at product mix, cost and customer requirements; S3E04 goes back to 1968, to the self-aligned silicon gate, a process choice that affected transistor density and reproducibility. Thematic link, not causal.",
+      "selection": "RECOVERED_PR1_CORE",
+      "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
+      "audience_ref": "channel/audience.json",
+      "evidence_status": "UNVERIFIED_RESEARCH_LEADS",
+      "evidence_leads": "일본 메모리 기업의 제품 구성·원가·고객 요구 자료. 품질 우위가 약점이었다는 원 기획 전제를 시험",
+      "production_status": "NOT_STARTED",
+      "media_status": "NOT_READY",
+      "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
+      "duplicate_boundary": "Japanese memory firms facing changing customer requirements, price and costs; not a single-cause quality verdict or an Intel-exit retelling.",
+      "title_history": [
+        {
+          "field": "title_en",
+          "value": "Japan’s Memory Giants and the Changing PC Market",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ],
+      "title_ko": "일본 메모리 기업과 PC 시장 변화",
+      "selection_flag": "'일본이 최고 품질의 메모리를 만들었고 그것이 약점이었다'는 단일 원인 서사가 원래 전제이나 검증 전이므로 제품 구성·원가·고객 요구를 함께 보는 범위로 좁힘.",
+      "language_review": {
+        "decision": "CIB-051",
+        "date": "2026-11-27",
+        "task": "TASK-004",
+        "revision": 5,
+        "standard": "editorial/LANGUAGE.md",
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "evidence_leads"
+        ]
+      },
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 2,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "편집 리뷰 B2: 의인화와 단일 원인 단정 제거"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 4,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r4: 편집 재리뷰 R1·R2, 근거 재리뷰 비차단 반영",
+          "fields": [
+            "next_connection"
+          ]
+        }
+      ],
+      "field_history": [
+        {
+          "field": "evidence_leads",
+          "value": "고품질·장수명 설계가 값싼 PC용 메모리 시대에 약점이 된 과정",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ]
+    },
+    {
+      "episode_id": "S3E04",
+      "season": 3,
+      "episode": 4,
+      "source_namespace": "PR1@3c66e4b",
+      "original_id": "P025",
+      "original_title_en": "The Trick That Let Chips Line Themselves Up",
+      "title_en": "The Self-Aligned Silicon Gate",
+      "source_h_ids": [
+        "H045"
+      ],
+      "main_p_id": "P025",
+      "crosswalk_status": "SAME_ID_REFRAMED",
+      "question": "How did the gate itself define where later processing steps would act?",
+      "protagonist_conflict": "Silicon-gate process developers facing mask alignment limits",
+      "choice": "Use the gate to define later processing boundaries",
+      "screen_3d_event": "A patterned gate shields the channel while adjacent regions are formed",
+      "payoff": "The viewer can see how self-alignment links one process choice to transistor density and reproducibility",
+      "next_episode": "S3E05",
+      "next_connection": "S3E04 lowers one barrier to denser products; S3E05 moves forward to 1983, to what Samsung had to commit before it could learn such processes for DRAM. Thematic link, not causal.",
+      "selection": "RECOVERED_PR1_CORE",
+      "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
+      "audience_ref": "channel/audience.json",
+      "evidence_status": "UNVERIFIED_RESEARCH_LEADS",
+      "evidence_leads": "실리콘 게이트 특허·공정 플로우 원문",
+      "production_status": "NOT_STARTED",
+      "media_status": "NOT_READY",
+      "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
+      "duplicate_boundary": "Self-aligned silicon-gate process; the DRAM cell is S3E07.",
+      "title_history": [
+        {
+          "field": "title_en",
+          "value": "The Trick That Let Chips Line Themselves Up",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ],
+      "title_ko": "자기 정렬 실리콘 게이트",
+      "language_review": {
+        "decision": "CIB-051",
+        "date": "2026-11-27",
+        "task": "TASK-004",
+        "revision": 5,
+        "standard": "editorial/LANGUAGE.md",
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection"
+        ]
+      },
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "'Trick'·칩이 스스로 줄 선다는 의인화를 공정 명칭으로 교체"
+        }
+      ]
+    },
+    {
+      "episode_id": "S3E05",
+      "season": 3,
+      "episode": 5,
+      "source_namespace": "PR1@3c66e4b",
+      "original_id": "P045",
+      "original_title_en": "Samsung Was Told It Would Fail at Chips",
+      "title_en": "Samsung's Entry Into DRAM",
+      "source_h_ids": [
+        "H037"
+      ],
+      "main_p_id": "P045",
+      "crosswalk_status": "SAME_ID_REFRAMED",
+      "question": "Why would a new firm enter DRAM when established firms already led the market?",
+      "protagonist_conflict": "Samsung management and engineers facing capital and learning barriers",
+      "choice": "Commit capital to DRAM development and repeated process learning",
+      "screen_3d_event": "Illustrative model: an initially sparse good-die map improves across successive lots",
+      "payoff": "The viewer can see market entry as repeated yield improvement across production lots, not a single announcement",
+      "next_episode": "S3E06",
+      "next_connection": "S3E05 shows a firm building production capability through repeated process learning; S3E06 goes back to an earlier period, to a product feature, the erasable EPROM window, that changed how customers reused chips during development. Thematic link, not causal.",
+      "selection": "RECOVERED_PR1_CORE",
+      "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
+      "audience_ref": "channel/audience.json",
+      "evidence_status": "UNVERIFIED_RESEARCH_LEADS",
+      "evidence_leads": "미국·일본·한국 초기 DRAM 문서와 기업 공시",
+      "production_status": "NOT_STARTED",
+      "media_status": "NOT_READY",
+      "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
+      "duplicate_boundary": "Samsung DRAM entry, capital commitment and repeated process learning; Intel exit is contextual background only.",
+      "title_history": [
+        {
+          "field": "title_en",
+          "value": "Samsung Was Told It Would Fail at Chips",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ],
+      "title_ko": "삼성전자의 DRAM 시장 진입",
+      "selection_flag": "원제의 '실패할 것이라는 말을 들었다' 일화는 출처 검증 전이므로 제목·전제에서 빼고 진입 결정과 공정 학습으로 좁힘.",
+      "language_review": {
+        "decision": "CIB-051",
+        "date": "2026-11-27",
+        "task": "TASK-004",
+        "revision": 5,
+        "standard": "editorial/LANGUAGE.md",
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection"
+        ]
+      },
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 2,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "편집 리뷰 B4: 주제 연결 표시"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        }
+      ]
+    },
+    {
+      "episode_id": "S3E06",
+      "season": 3,
+      "episode": 6,
+      "source_namespace": "PR1@3c66e4b",
+      "original_id": "P147",
+      "original_title_en": "The Chip With a Window",
+      "title_en": "The EPROM's Quartz Window",
+      "source_h_ids": [],
+      "main_p_id": null,
+      "crosswalk_status": "PR_ONLY_NO_MAIN_P_ID",
+      "question": "Why did EPROM packages have a quartz window?",
+      "protagonist_conflict": "EPROM developers and programmers facing costly reprogramming",
+      "choice": "Use electrically programmed charge and ultraviolet erasure",
+      "screen_3d_event": "A ceramic package's quartz window admits UV, then a programmer writes it again",
+      "payoff": "The viewer can see how an erasable chip changed the program–test–revise cycle for developers; no invented discovery dialogue is used",
+      "next_episode": "S3E07",
+      "next_connection": "EPROM stores charge for reuse; S3E07 turns to IBM's DRAM work of 1967–74, which stored charge on different terms, giving up persistence for dense bits that must be refreshed. Thematic link, not causal.",
+      "selection": "RECOVERED_PR1_CORE",
+      "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
+      "audience_ref": "channel/audience.json",
+      "evidence_status": "UNVERIFIED_RESEARCH_LEADS",
+      "evidence_leads": "EPROM 출시 기록과 고객의 개발·수정 방식 변화를 보여 주는 자료. 개발 방식을 바꿨다는 원 기획 전제를 시험",
+      "production_status": "NOT_STARTED",
+      "media_status": "NOT_READY",
+      "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
+      "duplicate_boundary": "EPROM ultraviolet erasure and reprogramming during development; DRAM refresh is S3E07 and flash erase blocks are S3E08.",
+      "title_history": [
+        {
+          "field": "title_en",
+          "value": "The Chip With a Window",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ],
+      "title_ko": "EPROM의 석영 창",
+      "language_review": {
+        "decision": "CIB-051",
+        "date": "2026-11-27",
+        "task": "TASK-004",
+        "revision": 5,
+        "standard": "editorial/LANGUAGE.md",
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection",
+          "evidence_leads"
+        ]
+      },
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "제품명을 넣어 대상 식별이 가능하게 함; 'bargain' 비유 제거"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        }
+      ],
+      "field_history": [
+        {
+          "field": "evidence_leads",
+          "value": "지울 수 있는 메모리가 개발 방식 자체를 바꾼 과정",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ]
+    },
+    {
+      "episode_id": "S3E07",
+      "season": 3,
+      "episode": 7,
+      "source_namespace": "PR1@3c66e4b",
+      "original_id": "P042",
+      "original_title_en": "Two Components, One Bit of DRAM",
+      "title_en": "Dennard's One-Transistor DRAM Cell",
+      "source_h_ids": [
+        "H044"
+      ],
+      "main_p_id": "P042",
+      "crosswalk_status": "SAME_RECORD",
+      "question": "How did one transistor and one capacitor change a bit's economics?",
+      "protagonist_conflict": "Dennard and memory designers facing density and refresh tradeoffs",
+      "choice": "Store each bit as capacitor charge and restore it periodically (refresh)",
+      "screen_3d_event": "A capacitor discharges, is sensed, then refreshed by the access path",
+      "payoff": "The viewer can see why a DRAM cell is small and cheap per bit, and why the refresh requirement is part of that cost",
+      "next_episode": "S3E08",
+      "next_connection": "S3E07 explains the cost of one DRAM bit; S3E08 moves forward to 1984 and separates what Toshiba's flash invention and later manufacturers each contributed to flash products. Thematic link, not causal.",
+      "selection": "NEW_PRODUCTION_JUDGMENT",
+      "selection_reason": "Editorial addition from existing PR #1 candidates to link cell economics and commercialisation; not a recovered user approval of its claims.",
+      "audience_ref": "channel/audience.json",
+      "evidence_status": "UNVERIFIED_RESEARCH_LEADS",
+      "evidence_leads": "Dennard DRAM 특허·초기 메모리 상용 기록",
+      "production_status": "NOT_STARTED",
+      "media_status": "NOT_READY",
+      "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
+      "duplicate_boundary": "DRAM 1T1C operation, charge loss, refresh and bit economics; avoid repeating the complete core-memory manufacturing history of S3E02.",
+      "title_history": [
+        {
+          "field": "title_en",
+          "value": "Two Components, One Bit of DRAM",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        },
+        {
+          "field": "title_ko",
+          "value": "데나드의 1T1C DRAM 셀",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ],
+      "title_ko": "데나드의 1트랜지스터 DRAM 셀",
+      "language_review": {
+        "decision": "CIB-051",
+        "date": "2026-11-27",
+        "task": "TASK-004",
+        "revision": 5,
+        "standard": "editorial/LANGUAGE.md",
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection"
+        ]
+      },
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 2,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "편집 리뷰 비차단: 약어 해소"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        }
+      ]
+    },
+    {
+      "episode_id": "S3E08",
+      "season": 3,
+      "episode": 8,
+      "source_namespace": "PR1@3c66e4b",
+      "original_id": "P044",
+      "original_title_en": "Inventing Flash Didn't Win the Market",
+      "title_en": "Toshiba's Flash Invention and Later Manufacturers",
+      "source_h_ids": [
+        "H047",
+        "H048"
+      ],
+      "main_p_id": "P044",
+      "crosswalk_status": "SAME_RECORD",
+      "question": "What did Toshiba's invention and later manufacturers each contribute to flash products?",
+      "protagonist_conflict": "Inventors and manufacturers facing product and investment choices",
+      "choice": "Convert a cell into reliable scalable products",
+      "screen_3d_event": "An erase block resets, then a factory tests endurance and yield",
+      "payoff": "The viewer can separate three sources of value: the patent, the product and volume production",
+      "next_episode": null,
+      "next_connection": "Season 3 closes with three distinct costs of memory: making a cell work, making it repeatedly at scale, and building the products and customer relationships that sell it.",
+      "selection": "NEW_PRODUCTION_JUDGMENT",
+      "selection_reason": "Editorial addition from existing PR #1 candidates to link cell economics and commercialisation; not a recovered user approval of its claims.",
+      "audience_ref": "channel/audience.json",
+      "evidence_status": "UNVERIFIED_RESEARCH_LEADS",
+      "evidence_leads": "Toshiba 초기 flash 논문·업체 사업 연혁·시장자료",
+      "production_status": "NOT_STARTED",
+      "media_status": "NOT_READY",
+      "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
+      "duplicate_boundary": "Flash invention and later volume manufacturing; DRAM cell economics are S3E07.",
+      "title_history": [
+        {
+          "field": "title_en",
+          "value": "Inventing Flash Didn't Win the Market",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        },
+        {
+          "field": "title_ko",
+          "value": "도시바의 플래시 발명과 시장 주도권",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        },
+        {
+          "field": "title_en",
+          "value": "Toshiba's Flash Invention and the Flash Market",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ],
+      "title_ko": "도시바의 플래시 발명과 이후 제조사들",
+      "language_review": {
+        "decision": "CIB-051",
+        "date": "2026-11-27",
+        "task": "TASK-004",
+        "revision": 4,
+        "standard": "editorial/LANGUAGE.md",
+        "reason": "TASK-004 r4: 편집 재리뷰 R1·R2, 근거 재리뷰 비차단 반영",
+        "fields": [
+          "title_en",
+          "duplicate_boundary"
+        ]
+      },
+      "selection_flag": "'발명한 회사가 시장까지 갖는 것은 아니다'는 일반화는 근거 부족, 인텔 팀·첫 고객·제조 장애물 자료 부족(H048 반영).",
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 2,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "편집 리뷰 B1: 질문 축소, flag 전파"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        }
+      ]
+    },
+    {
+      "episode_id": "S4E01",
+      "season": 4,
+      "episode": 1,
+      "source_namespace": "PR1@3c66e4b",
+      "original_id": "P089",
+      "original_title_en": "The AI Chip Rebuilt to Slip Under a Law",
+      "title_en": "Export Control Thresholds and AI Chip Specifications, 2022–23",
+      "source_h_ids": [
+        "H099"
+      ],
+      "main_p_id": "P089",
+      "crosswalk_status": "SAME_ID_REFRAMED",
+      "question": "How did dated export thresholds decide whether a chip with given specifications needed an export licence?",
+      "protagonist_conflict": "Chip suppliers and regulators facing changing performance thresholds",
+      "choice": "To be verified: how chip specifications related to the export thresholds in force on given dates",
+      "screen_3d_event": "A chip's specification sheet is laid against dated export thresholds; the classification depends on both",
+      "payoff": "The viewer can see how an export classification depends on product specifications on a given date; no claim is made about current legality or about a specific redesign",
+      "next_episode": "S4E02",
+      "next_connection": "S4E01 shows a rule tying chip specifications to export classification; S4E02 goes back to 1941–45, to a different public influence, wartime radar demand for purer material. Thematic link, not causal.",
+      "selection": "RECOVERED_PR1_CORE",
+      "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
+      "audience_ref": "channel/audience.json",
+      "evidence_status": "UNVERIFIED_RESEARCH_LEADS",
+      "evidence_leads": "관할 정부 원문 규정·개정일·적용 예외 분리. 2022–23 기간 표기의 출처: DECISIONS.md CIB-049",
+      "production_status": "NOT_STARTED",
+      "media_status": "NOT_READY",
+      "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
+      "duplicate_boundary": "Dated export-control thresholds and chip specifications; Japan's 2019 materials licensing is S4E03.",
+      "title_history": [
+        {
+          "field": "title_en",
+          "value": "The AI Chip Redesigned for Export Rules",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        },
+        {
+          "field": "title_en",
+          "value": "AI Chips Redesigned for 2022–23 Export Rules",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        },
+        {
+          "field": "title_ko",
+          "value": "2022–23년 수출 규제와 AI 칩 재설계",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ],
+      "title_ko": "2022–23년 수출 통제 기준과 AI 칩 사양",
+      "language_review": {
+        "decision": "CIB-051",
+        "date": "2026-11-27",
+        "task": "TASK-004",
+        "revision": 5,
+        "standard": "editorial/LANGUAGE.md",
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection"
+        ]
+      },
+      "selection_flag": "특정 AI 칩이 규제 때문에 재설계됐다는 전제는 H099 기록에 없는 확장(P089 flag 반영). 규정과 사양의 관계로 좁힘.",
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 2,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "편집 리뷰 B1, 근거 리뷰 비차단: 재설계 단정 제거, 기간 출처 표기"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 4,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r4: 편집 재리뷰 R1·R2, 근거 재리뷰 비차단 반영",
+          "fields": [
+            "question"
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "S4E02",
+      "season": 4,
+      "episode": 2,
+      "source_namespace": "PR1@3c66e4b",
+      "original_id": "P022",
+      "original_title_en": "Radar Made the Chip Industry Possible",
+      "title_en": "Wartime Radar and Crystal Detector Purity",
+      "source_h_ids": [
+        "H010"
+      ],
+      "main_p_id": "P022",
+      "crosswalk_status": "SAME_ID_REFRAMED",
+      "question": "Why did radar receivers depend on purer crystal detectors?",
+      "protagonist_conflict": "Radar laboratories and material suppliers facing unreliable detection",
+      "choice": "Improve crystal purity and contacts",
+      "screen_3d_event": "A receiver misses an echo; a detector with purer crystal then resolves it",
+      "payoff": "The viewer can see how military demand coincided with work on specific materials and devices; whether it produced the purification techniques is still to be verified",
+      "next_episode": "S4E03",
+      "next_connection": "Radar depended on suitable material; S4E03 moves forward to 2019, to a licensing case that shows why a fab cannot simply replace a restricted chemical with any available supply. Thematic link, not causal.",
+      "selection": "RECOVERED_PR1_CORE",
+      "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
+      "audience_ref": "channel/audience.json",
+      "evidence_status": "UNVERIFIED_RESEARCH_LEADS",
+      "evidence_leads": "전시 연구 기록·Bell Labs 결정 정제 회고",
+      "production_status": "NOT_STARTED",
+      "media_status": "NOT_READY",
+      "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
+      "duplicate_boundary": "Wartime radar detector materials; modern fab material qualification is S4E03.",
+      "title_history": [
+        {
+          "field": "title_en",
+          "value": "Radar’s Demand for a Purer Crystal",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ],
+      "title_ko": "전시 레이더와 결정 검출기 순도",
+      "language_review": {
+        "decision": "CIB-051",
+        "date": "2026-11-27",
+        "task": "TASK-004",
+        "revision": 5,
+        "standard": "editorial/LANGUAGE.md",
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection"
+        ]
+      },
+      "selection_flag": "전시 수요가 결정 정제 기술을 낳았다는 인과는 생산·기술이전 기록 확인 전(P022 반영).",
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 2,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "편집 리뷰 B1: flag 전파"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        }
+      ]
+    },
+    {
+      "episode_id": "S4E03",
+      "season": 4,
+      "episode": 3,
+      "source_namespace": "PR1@3c66e4b",
+      "original_id": "P083",
+      "original_title_en": "Three Chemicals That Nearly Stopped the World's Memory Chips",
+      "title_en": "Japan's 2019 Export Controls and Fab Material Qualification",
+      "source_h_ids": [
+        "H093"
+      ],
+      "main_p_id": "P083",
+      "crosswalk_status": "SAME_ID_REFRAMED",
+      "question": "Why is an available replacement chemical not yet usable in a fab?",
+      "protagonist_conflict": "Japanese exporters and Korean fabs facing 2019 licensing and qualification risk",
+      "choice": "Qualify materials while managing supply uncertainty",
+      "screen_3d_event": "A new chemical lot waits at a qualification test step before it can reach production wafers",
+      "payoff": "The viewer can see that an export restriction and a technical substitution run on different timelines, and why a replacement supply is not usable until it passes qualification",
+      "next_episode": "S4E04",
+      "next_connection": "Qualifying a material causes delay even after supply exists; S4E04 goes back to the Soviet period and asks which dependencies remained when the Soviet Union tried to reproduce devices developed elsewhere. Thematic link, not causal.",
+      "selection": "RECOVERED_PR1_CORE",
+      "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
+      "audience_ref": "channel/audience.json",
+      "evidence_status": "UNVERIFIED_RESEARCH_LEADS",
+      "evidence_leads": "재료 qualification 공개표준·대체 공급 사례",
+      "production_status": "NOT_STARTED",
+      "media_status": "NOT_READY",
+      "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
+      "duplicate_boundary": "2019 materials licensing and fab qualification time; the 2022–23 chip export rules are S4E01.",
+      "title_history": [
+        {
+          "field": "title_en",
+          "value": "Japan’s 2019 Export Controls and the Fab Qualification Clock",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ],
+      "title_ko": "일본의 2019년 수출 규제와 소재 적격성 평가",
+      "language_review": {
+        "decision": "CIB-051",
+        "date": "2026-11-27",
+        "task": "TASK-004",
+        "revision": 5,
+        "standard": "editorial/LANGUAGE.md",
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection"
+        ]
+      },
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "'clock'·'valve' 비유 제거"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        }
+      ]
+    },
+    {
+      "episode_id": "S4E04",
+      "season": 4,
+      "episode": 4,
+      "source_namespace": "PR1@3c66e4b",
+      "original_id": "P101",
+      "original_title_en": "Why the Soviet Union Chose to Copy American Chips",
+      "title_en": "Soviet Copies of American Chips",
+      "source_h_ids": [],
+      "main_p_id": null,
+      "crosswalk_status": "PR_ONLY_NO_MAIN_P_ID",
+      "question": "What did copying buy Soviet planners and what did it constrain?",
+      "protagonist_conflict": "Soviet planners and engineers balancing compatibility and autonomy",
+      "choice": "To be verified: which specific devices were copied and which policy decisions led to copying",
+      "screen_3d_event": "A die image is compared with a layout and a delayed production lot",
+      "payoff": "The viewer can see what copying gave Soviet planners and what it constrained, based on device-specific evidence rather than one national decision",
+      "next_episode": "S4E05",
+      "next_connection": "Copying seeks access to capabilities developed elsewhere; S4E05 moves to 1987, to SEMATECH, a different policy route that shared selected manufacturing problems among domestic rivals. Thematic link, not causal.",
+      "selection": "RECOVERED_PR1_CORE",
+      "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
+      "audience_ref": "channel/audience.json",
+      "evidence_status": "UNVERIFIED_RESEARCH_LEADS",
+      "evidence_leads": "젤레노그라드 설립 이후 개별 소자별 복제 사례와, 국가 단위 복제 결정이 있었는지 여부를 보여 주는 정책 문서",
+      "production_status": "NOT_STARTED",
+      "media_status": "NOT_READY",
+      "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
+      "duplicate_boundary": "Soviet device copying, examined device by device; SEMATECH cooperation is S4E05.",
+      "title_history": [
+        {
+          "field": "title_en",
+          "value": "Why the Soviet Union Chose to Copy American Chips",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ],
+      "title_ko": "소련의 미국 반도체 복제",
+      "selection_flag": "'젤레노그라드를 세우고도 독자 설계 대신 복제를 택했다'는 국가 단위 단일 결정은 검증 전이므로 개별 소자 복제 사례 중심으로 좁힘.",
+      "language_review": {
+        "decision": "CIB-051",
+        "date": "2026-11-27",
+        "task": "TASK-004",
+        "revision": 5,
+        "standard": "editorial/LANGUAGE.md",
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection",
+          "evidence_leads"
+        ]
+      },
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "'선택했다(Chose)' 단일 결정 전제를 제목에서 빼고 사례 명사구로 교체"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        }
+      ],
+      "field_history": [
+        {
+          "field": "evidence_leads",
+          "value": "젤레노그라드를 세우고도 독자 설계 대신 복제를 택한 결정과 그 대가",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ]
+    },
+    {
+      "episode_id": "S4E05",
+      "season": 4,
+      "episode": 5,
+      "source_namespace": "PR1@3c66e4b",
+      "original_id": "P068",
+      "original_title_en": "When America's Chip Rivals Shared Their Secrets",
+      "title_en": "SEMATECH and Shared US Manufacturing Research",
+      "source_h_ids": [
+        "H038"
+      ],
+      "main_p_id": "P068",
+      "crosswalk_status": "SAME_ID_REFRAMED",
+      "question": "Why would competing US chipmakers share manufacturing problems?",
+      "protagonist_conflict": "SEMATECH member firms facing common manufacturing weaknesses",
+      "choice": "Cooperate on precompetitive process research",
+      "screen_3d_event": "Separate sample wafers converge at a shared metrology station",
+      "payoff": "The viewer can see how firms shared selected manufacturing and equipment problems while still competing on products",
+      "next_episode": "S4E06",
+      "next_connection": "US rivals cooperated within a defined research boundary; S4E06 goes back to 1976–79, to Japan's earlier VLSI program, which allows a comparison with a different arrangement without treating cooperation as one universal recipe. Thematic link, not causal.",
+      "selection": "RECOVERED_PR1_CORE",
+      "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
+      "audience_ref": "channel/audience.json",
+      "evidence_status": "UNVERIFIED_RESEARCH_LEADS",
+      "evidence_leads": "SEMATECH 설립문서·회원사 회고·공정 연구 공개자료",
+      "production_status": "NOT_STARTED",
+      "media_status": "NOT_READY",
+      "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
+      "duplicate_boundary": "SEMATECH and US precompetitive manufacturing cooperation; establish its own participants and boundaries before comparing the Japanese VLSI program.",
+      "title_history": [
+        {
+          "field": "title_en",
+          "value": "When America's Chip Rivals Shared Their Secrets",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ],
+      "title_ko": "SEMATECH 공동 제조 연구",
+      "language_review": {
+        "decision": "CIB-051",
+        "date": "2026-11-27",
+        "task": "TASK-004",
+        "revision": 5,
+        "standard": "editorial/LANGUAGE.md",
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection"
+        ]
+      },
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "'Secrets' 과장 제거, 기관명(SEMATECH) 명시"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        }
+      ]
+    },
+    {
+      "episode_id": "S4E06",
+      "season": 4,
+      "episode": 6,
+      "source_namespace": "PR1@3c66e4b",
+      "original_id": "P067",
+      "original_title_en": "Japan Put Its Chip Rivals in One Laboratory",
+      "title_en": "Japan's VLSI Research Project",
+      "source_h_ids": [
+        "H036"
+      ],
+      "main_p_id": "P067",
+      "crosswalk_status": "SAME_ID_REFRAMED",
+      "question": "What could Japanese rivals accomplish in one research program?",
+      "protagonist_conflict": "VLSI project participants balancing shared research and proprietary advantage",
+      "choice": "Share selected research while retaining company capabilities",
+      "screen_3d_event": "Common research samples branch back into separate pilot lines",
+      "payoff": "The viewer can see what participants shared and what each company kept, rather than one unified laboratory",
+      "next_episode": "S4E07",
+      "next_connection": "S4E06 shows government-organised research among rivals; S4E07 goes back to 1962–65, to a public customer, NASA, setting the tests chips had to pass. Thematic link, not causal.",
+      "selection": "RECOVERED_PR1_CORE",
+      "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
+      "audience_ref": "channel/audience.json",
+      "evidence_status": "UNVERIFIED_RESEARCH_LEADS",
+      "evidence_leads": "일본 VLSI 프로젝트 공식 보고서·참여사 기술공개",
+      "production_status": "NOT_STARTED",
+      "media_status": "NOT_READY",
+      "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
+      "duplicate_boundary": "Japan VLSI program, shared research and separate company capabilities; do not substitute SEMATECH institutions or imply a single universal cooperation model.",
+      "title_history": [
+        {
+          "field": "title_en",
+          "value": "Japan’s Rivals and the VLSI Research Project",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ],
+      "title_ko": "일본 VLSI 공동 연구 사업",
+      "language_review": {
+        "decision": "CIB-051",
+        "date": "2026-11-27",
+        "task": "TASK-004",
+        "revision": 5,
+        "standard": "editorial/LANGUAGE.md",
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection"
+        ]
+      },
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "'Rivals' 대립 구도 표현을 사업 명칭으로 단순화; 'organize suppliers' 부정확 연결 수정"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        }
+      ]
+    },
+    {
+      "episode_id": "S4E07",
+      "season": 4,
+      "episode": 7,
+      "source_namespace": "PR1@3c66e4b",
+      "original_id": "P074",
+      "original_title_en": "NASA Retested the Chips It Bought",
+      "title_en": "NASA's Integrated Circuit Purchases and Testing",
+      "source_h_ids": [
+        "H031"
+      ],
+      "main_p_id": "P074",
+      "crosswalk_status": "SAME_RECORD",
+      "question": "What did NASA require when it bought and tested early integrated circuits?",
+      "protagonist_conflict": "NASA and defense buyers facing reliability and procurement constraints",
+      "choice": "Buy and qualify integrated circuits for demanding systems",
+      "screen_3d_event": "A purchased IC survives environmental testing before entering a guidance module",
+      "payoff": "The viewer can see how NASA's purchasing and test requirements related to early production, and that NASA and defense buyers had different needs; the share of purchases is still to be verified",
+      "next_episode": "S4E08",
+      "next_connection": "S4E07 shows a public buyer setting test requirements; S4E08 moves forward to 1986–87, to a dispute in which memory prices and market access became matters of trade law. Thematic link, not causal.",
+      "selection": "NEW_PRODUCTION_JUDGMENT",
+      "selection_reason": "Editorial addition from existing PR #1 candidates to link procurement and trade rules; not a recovered user approval of its claims.",
+      "audience_ref": "channel/audience.json",
+      "evidence_status": "UNVERIFIED_RESEARCH_LEADS",
+      "evidence_leads": "NASA 부품 적격성 문서·초기 반도체 채택 기록",
+      "production_status": "NOT_STARTED",
+      "media_status": "NOT_READY",
+      "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
+      "duplicate_boundary": "Government procurement and qualification testing as demand; trade law is S4E08 and wartime radar materials are S4E02.",
+      "title_history": [
+        {
+          "field": "title_en",
+          "value": "NASA Retested the Chips It Bought",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ],
+      "title_ko": "NASA의 집적회로 구매와 적격성 시험",
+      "language_review": {
+        "decision": "CIB-051",
+        "date": "2026-11-27",
+        "task": "TASK-004",
+        "revision": 5,
+        "standard": "editorial/LANGUAGE.md",
+        "reason": "TASK-004 r5: 별도 세션 리뷰 B1·B2 및 비차단 1–5 반영",
+        "fields": [
+          "next_connection"
+        ]
+      },
+      "selection_flag": "구매 비중(60% 논쟁)과 첫 주문 성격이 검증 전이라 생산기술까지 바꿨다는 영향 범위는 과장 위험(H031 반영).",
+      "language_review_history": [
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 2,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "편집 리뷰 B1: 질문 축소, flag 전파"
+        },
+        {
+          "decision": "CIB-051",
+          "date": "2026-11-27",
+          "task": "TASK-004",
+          "revision": 3,
+          "standard": "editorial/LANGUAGE.md",
+          "reason": "TASK-004 r3: 편집 재리뷰 N1–N3, 근거 재리뷰 비차단 반영"
+        }
+      ]
+    },
+    {
+      "episode_id": "S4E08",
+      "season": 4,
+      "episode": 8,
+      "source_namespace": "PR1@3c66e4b",
+      "original_id": "P076",
+      "original_title_en": "When DRAM Prices Became a Trade Dispute",
+      "title_en": "The US–Japan DRAM Price Dispute",
+      "source_h_ids": [
+        "H063"
+      ],
+      "main_p_id": "P076",
+      "crosswalk_status": "SAME_RECORD",
+      "question": "How did DRAM prices become a matter of trade negotiation between the US and Japan?",
+      "protagonist_conflict": "US and Japanese firms and trade officials disputing price and access",
+      "choice": "Negotiate and enforce a semiconductor agreement",
+      "screen_3d_event": "Identical DRAM packages cross customs beside dated price comparison records",
+      "payoff": "The viewer can see that a chip's price was also a legal comparison in a trade case, which links back to the export rules of S4E01",
+      "next_episode": null,
+      "next_connection": "Season 4 returns to its export-control opening: governments shape chips through demand, research, qualification and trade rules, each on a different timeline.",
+      "selection": "NEW_PRODUCTION_JUDGMENT",
+      "selection_reason": "Editorial addition from existing PR #1 candidates to link procurement and trade rules; not a recovered user approval of its claims.",
+      "audience_ref": "channel/audience.json",
+      "evidence_status": "UNVERIFIED_RESEARCH_LEADS",
+      "evidence_leads": "당시 미·일 반도체 협정 및 무역 조사 원문",
+      "production_status": "NOT_STARTED",
+      "media_status": "NOT_READY",
+      "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
+      "duplicate_boundary": "US–Japan DRAM price and market-access dispute under trade law; Intel's DRAM exit is S3E01.",
+      "title_history": [
+        {
+          "field": "title_en",
+          "value": "When DRAM Prices Became a Trade Dispute",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ],
+      "title_ko": "미·일 DRAM 가격 분쟁",
+      "language_review": {
+        "decision": "CIB-051",
+        "date": "2026-11-27",
+        "task": "TASK-004",
+        "standard": "editorial/LANGUAGE.md",
+        "reason": "당사국·품목을 명시해 사건 식별 가능하게 함"
+      }
+    }
+  ]
+}

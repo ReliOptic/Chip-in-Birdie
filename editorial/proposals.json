@@ -2000,7 +2000,7 @@
     ],
     "map_type": "REFRAMED",
     "title_ko": "인텔의 1985년 DRAM 사업 철수",
-    "title_en": "Intel's 1985 Exit From DRAM",
+    "title_en": "Intel's Exit From DRAM",
     "proposed_order": "46",
     "act": "05 메모리 기술과 원가",
     "opening": "인텔 초기 DRAM 제품과 CPU 장부",
@@ -2027,15 +2027,34 @@
         "value": "The Memory Business Intel Walked Away From",
         "replaced_on": "2026-11-27",
         "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "Intel's 1985 Exit From DRAM",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
       }
     ],
     "language_review": {
       "decision": "CIB-051",
       "date": "2026-11-27",
       "task": "TASK-004",
+      "revision": 5,
       "standard": "editorial/LANGUAGE.md",
-      "reason": "'버린', '정체성' 표현을 경영 용어로 교체, 질문 복원"
-    }
+      "reason": "TASK-004 r5: S3E01과 통일, 식별에 필요 없는 연도 제거",
+      "fields": [
+        "title_en"
+      ]
+    },
+    "language_review_history": [
+      {
+        "decision": "CIB-051",
+        "date": "2026-11-27",
+        "task": "TASK-004",
+        "standard": "editorial/LANGUAGE.md",
+        "reason": "'버린', '정체성' 표현을 경영 용어로 교체, 질문 복원"
+      }
+    ]
   },
   {
     "p_id": "P047",
