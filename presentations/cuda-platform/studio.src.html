@@ -1209,7 +1209,7 @@ Object.assign(ASSETS, {
 Object.assign(ASSETS, {
   story:{name:'이야기 그림 (코드 → 칩, 장면 1~5)', nw:1408, nh:640,
     props:[['stage','장면 (1~5)','number'],['chips','칩 (|로 구분)'],['ai','번역 단계'],['hub','모델 허브'],['m1','장면 1 수치'],['m2','장면 2 수치'],['m3','장면 3 수치'],['m4','장면 4 수치'],['m5','장면 5 문구']],
-    d:{stage:1, chips:'NVIDIA GPU|AMD GPU|자체 칩', ai:'AI 에이전트가 코드 이식', hub:'모델 허브 · 허깅페이스', m1:'CUDA 개발자 1,100만 명', m2:'매출 90% 데이터센터 · 매출총이익률 71.1%', m3:'이식 기간 6~12개월 → 약 3일', m4:'인수 결정 129억 달러', m5:'칩은 무엇이든, 모델은 NVIDIA 위에'},
+    d:{stage:1, chips:'NVIDIA GPU|AMD GPU|자체 칩', ai:'AI 에이전트가 코드 이식', hub:'모델 허브 · 허깅페이스', m1:'CUDA 개발자 1,100만 명', m2:'매출 90% 데이터센터 · 매출총이익률 71.1%', m3:'이식 기간 6~12개월 → 약 3일', m4:'인수 결정 129억 달러', m5:'허깅페이스는 어떤 칩과도 연결된다'},
     render:p => { const st = Math.max(1, Math.min(5, +p.stage || 1)); const ch = cells(p.chips);
       const nw = k => st === k ? 'new' : '';
       const blocks = Array.from({length:12}, (_, i) => `<i class="cb ${st === 1 ? 'new' : ''}" style="--d:${i * 70}ms">&lt;/&gt;</i>`).join('');
@@ -1234,7 +1234,7 @@ Object.assign(ASSETS, {
 });
 
 /* ============ BASE DECK ============ */
-const SECTIONS = ['커뮤니티 효과', '코드에 묶인 독점', 'AI가 연 길', '모델을 쥐는 플랫폼', '남은 질문'];
+const SECTIONS = ['커뮤니티 효과', '코드에 묶인 독점', 'AI가 연 길', '플랫폼 확장', '남은 질문'];
 let uid = 0;
 const T = (html, x, y, w, h, o = {}) => ({id:'e' + (++uid), type:'text', html, x, y, w, h, size:o.size || 32, color:o.color || 't1', weight:o.weight || 400, align:o.align || 'left', lh:o.lh || 1.3, mono:!!o.mono, anim:o.anim || 'none'});
 const A = (asset, x, y, w, h, p = {}, anim = 'none') => ({id:'e' + (++uid), type:'asset', asset, x, y, w, h, p:Object.assign({}, ASSETS[asset].d, p), anim});
@@ -1243,7 +1243,7 @@ const I = (img, x, y, w, h, o = {}) => ({id:'e' + (++uid), type:'img', img, x, y
 const H = t => T(t, 96, 80, 1408, 72, {size:48, weight:600, lh:1.2});
 const CAPT = (t, x, y, w) => T(t, x, y, w, 28, {size:18, color:'t3'});
 
-const EXEC = '개발자의 코드가 GPU 수요가 된다|1,100만 개발자가 CUDA로 쌓은 코드가 GPU 수요를 만들었다\n코드가 묶여 있어서 독점이었다|그 코드는 NVIDIA GPU에서만 돌았다. 매출의 90%가 데이터센터, 매출총이익률 71.1%\nAI가 코드의 국적을 지운다|AI가 이식을 맡으면서 6~12개월 걸리던 작업이 약 3일로 줄었다\n코드 대신 모델을 쥔다|허깅페이스 인수 결정으로 어떤 칩과도 연결되는 모델 층을 확보하려 한다\n남은 질문|묶지 않고도 GPU 수요를 지킬 수 있는가';
+const EXEC = '개발자의 코드가 GPU 수요가 된다|1,100만 개발자가 CUDA로 쌓은 코드가 GPU 수요를 만들었다\n코드가 묶여 있어서 독점이었다|그 코드는 NVIDIA GPU에서만 돌았다. 매출의 90%가 데이터센터, 매출총이익률 71.1%\nAI가 코드의 국적을 지운다|AI가 이식을 맡으면서 6~12개월 걸리던 작업이 약 3일로 줄었다\n허깅페이스 인수로 생태계를 넓힌다|특정 칩에 묶이지 않은 오픈소스 모델 플랫폼을 인수하기로 했다\n남은 질문|묶지 않고도 GPU 수요를 지킬 수 있는가';
 
 const BASE = [
  {id:'cover', kind:'cover', d:'20 5', o20:0, o5:0, els:[I('cover', 0, 0, 1600, 900, {radius:0, op:0.3, anim:'none'}), I('logo', 128, 96, 420, 80, {radius:0, fit:'contain', anim:'none'}), R(128, 540, 64, 6), T('NVIDIA CUDA의 플랫폼 전략', 128, 568, 1300, 100, {size:72, weight:600, lh:1.1}), T('KAIST 플랫폼과 비즈니스 · IMMS 박병진 · PMBA 조기원', 128, 684, 1300, 32, {size:22, color:'t2'})], notes:''},
@@ -1313,8 +1313,8 @@ AI가 이식을 맡으면 두 번째 힘이 약해집니다. 축적은 남아 �
  {id:'s12', kind:'content', sec:2, d:'20', o20:10, min:1, els:[H('NVIDIA의 반론'), A('debate', 96, 216, 1408, 480), A('sharebar', 96, 760, 1408, 24)], notes:
 `NVIDIA의 반론도 있습니다. AI는 CUDA 코드도 더 빨리 짜 주기 때문에 오히려 CUDA 생태계가 더 커진다는 것입니다. 점유율도 아직 80%대입니다. 지금 판단하기는 이릅니다.`},
 
- {id:'st4', kind:'content', sec:3, d:'20 5', o20:10.6, o5:6, min:1, min5:0.75, els:[H('코드 대신 모델을 쥔다'), A('story', 96, 196, 1408, 640, {stage:4})], notes:
-`NVIDIA는 2026년 9월 허깅페이스를 129억 달러에 인수하기로 했습니다. 코드가 칩을 묶던 자리 위에, 모델이 모이는 층을 쥐는 것입니다. 이 층은 어떤 칩과도 연결됩니다.
+ {id:'st4', kind:'content', sec:3, d:'20 5', o20:10.6, o5:6, min:1, min5:0.75, els:[H('허깅페이스 인수로 생태계를 넓힌다'), A('story', 96, 196, 1408, 640, {stage:4})], notes:
+`NVIDIA는 2026년 9월 허깅페이스를 129억 달러에 인수하기로 했습니다. 허깅페이스는 개발자들이 AI 모델을 공유하는 오픈소스 플랫폼이고, 특정 칩에 묶여 있지 않습니다. NVIDIA는 인수 후에도 개방을 유지하겠다고 공시했습니다. CUDA 바깥의 생태계로 플랫폼을 넓히는 움직임입니다.
 
 [메모] 인수 발표(9월)가 Anthropic 발표(11월)보다 먼저다. 대응 관계로 말하지 않는다. 2027년 상반기 종결 예정.`},
  {id:'s13', kind:'scene', d:'20', o20:11, o5:5, min:1.5, min5:0.5, els:[A('sc_hub', 0, 0, 1600, 900), H('허깅페이스 인수 결정')], notes:
