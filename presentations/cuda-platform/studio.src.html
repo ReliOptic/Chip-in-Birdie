@@ -368,6 +368,11 @@ body:not(.deck-cuda) .cuda-only{display:none}
 body:not(.ai-on) .ai-only{display:none!important}
 #marq{position:absolute;border:2px dashed var(--g);background:rgba(118,185,0,0.08);pointer-events:none;z-index:5}
 #canvas .el.sel{outline:2px solid var(--g)}
+#aiDot{all:unset;position:absolute;z-index:22;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;cursor:pointer;background:var(--g);color:var(--g-ink);box-shadow:0 4px 12px rgba(0,0,0,0.5);transition:transform 120ms var(--ease)}
+#aiDot:hover{transform:scale(1.06)}
+#aiDot:active{transform:scale(0.97)}
+#aiDot:focus-visible{outline:2px solid var(--t1);outline-offset:2px}
+#aiDot svg{width:16px;height:16px;fill:currentColor}
 #aibar{position:absolute;z-index:20;width:min(560px,calc(100% - 16px));background:var(--card);border:1px solid #3a3a3a;border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:8px;box-shadow:0 8px 24px rgba(0,0,0,0.5)}
 #aibar .ah{display:flex;align-items:center;gap:8px;font:500 12px/16px var(--sans);color:var(--t3)}
 #aibar .ai-line{flex:1;height:2px;border-radius:2px;background:var(--line);overflow:hidden;position:relative}
@@ -531,7 +536,7 @@ body:not(.ai-on) .ai-only{display:none!important}
     <button class="btn hide-sm" type="button" id="bText" title="텍스트 추가 (T)"><svg viewBox="0 0 16 16"><path d="M3 3h10M8 3v10"/></svg>텍스트</button>
     <button class="btn icon hide-sm" type="button" id="bUndo" title="실행 취소"><svg viewBox="0 0 16 16"><path d="M5 4 2 7l3 3M2 7h8a4 4 0 0 1 0 8H8"/></svg></button>
     <button class="btn icon hide-sm" type="button" id="bRedo" title="다시 실행"><svg viewBox="0 0 16 16"><path d="M11 4l3 3-3 3M14 7H6a4 4 0 0 0 0 8h2"/></svg></button>
-    <button class="btn hide-sm" type="button" id="bPal" title="명령 팔레트"><svg viewBox="0 0 16 16"><path d="M3 4.5h10M3 8h10M3 11.5h6"/></svg><span class="kb"></span></button>
+    <button class="btn hide-sm" type="button" id="bPal" title="명령 팔레트"><svg viewBox="0 0 16 16"><path d="M3 4.5h10M3 8h10M3 11.5h6"/></svg></button>
     <button class="btn hide-sm" type="button" id="bExport" title="내보내기"><svg viewBox="0 0 16 16"><path d="M8 2v8M5 7l3 3 3-3M3 12.5h10"/></svg>내보내기</button>
     <button class="btn hide-sm" type="button" id="bInstall" hidden title="데스크톱 앱으로 설치"><svg viewBox="0 0 16 16"><rect x="2.5" y="3" width="11" height="8" rx="1.5"/><path d="M6 14h4M8 11v3"/></svg>앱으로 설치</button>
     <button class="btn primary" type="button" id="bPlay" title="발표 시작"><svg viewBox="0 0 16 16"><path d="M5 3l8 5-8 5z" fill="currentColor" stroke="none"/></svg>발표</button>
@@ -549,6 +554,7 @@ body:not(.ai-on) .ai-only{display:none!important}
     <section id="center">
       <div id="viewport"><div id="canvasWrap"><div id="canvas" class="stage static"></div></div>
         <div id="findBar" hidden><input id="fq" placeholder="찾기" aria-label="찾기" autocomplete="off"><span id="fcount" class="num"></span><button type="button" class="ib" data-f="prev" title="이전"><svg viewBox="0 0 16 16"><path d="M4 10l4-4 4 4"/></svg></button><button type="button" class="ib" data-f="next" title="다음"><svg viewBox="0 0 16 16"><path d="M4 6l4 4 4-4"/></svg></button><input id="fr" placeholder="바꿀 말" aria-label="바꿀 말" autocomplete="off"><button type="button" class="btn" data-f="one">바꾸기</button><button type="button" class="btn" data-f="all">모두</button><button type="button" class="ib" data-f="close" title="닫기"><svg viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8"/></svg></button></div>
+        <button type="button" id="aiDot" hidden aria-label="AI"><svg viewBox="0 0 16 16"><path d="M8 1.5l1.6 4.9 4.9 1.6-4.9 1.6L8 14.5l-1.6-4.9L1.5 8l4.9-1.6z"/></svg></button>
         <div id="aibar" hidden>
           <div class="ah"><div class="seg" id="aiScope" role="group" aria-label="AI 범위"><button type="button" data-scope="sel">선택</button><button type="button" data-scope="slide">장표</button><button type="button" data-scope="deck">덱</button></div><span id="aiCount"></span><span class="ai-line"></span></div>
           <div id="aireview" hidden></div>
@@ -589,7 +595,7 @@ body:not(.ai-on) .ai-only{display:none!important}
     <div class="row2"><button type="submit" class="btn primary" data-copy="0">빈 덱</button><button type="submit" class="btn" data-copy="1">현재 덱 복제</button></div>
   </form>
 </div>
-<div id="exportPop" class="pop menu" hidden><button type="button" data-cmd="pptx">PowerPoint (.pptx)<em>텍스트는 편집 가능, 도식은 이미지</em></button><button type="button" data-cmd="pdf">PDF<em>장표마다 한 쪽</em></button><button type="button" data-cmd="json">프로젝트 파일 (.json)<em>이 편집기에서 다시 열 수 있음</em></button><hr><button type="button" data-cmd="open">프로젝트 파일 열기</button></div>
+<div id="exportPop" class="pop menu" hidden><button type="button" data-cmd="pptx">PowerPoint</button><button type="button" data-cmd="pdf">PDF</button><button type="button" data-cmd="json">프로젝트 파일</button><hr><button type="button" data-cmd="open">프로젝트 파일 열기</button></div>
 <div id="ctx" class="menu" role="menu" hidden></div>
 <div id="pal" hidden><div class="pbox"><input id="palq" placeholder="명령, 장표, 레이아웃 검색" aria-label="명령 검색" autocomplete="off"><div id="pall"></div></div></div>
 <div id="busy" hidden><span></span></div>
@@ -598,7 +604,7 @@ body:not(.ai-on) .ai-only{display:none!important}
 <div id="toast" hidden><span></span><button type="button" class="btn">되돌리기</button></div>
 <div id="present" hidden>
   <div class="reveal"><div class="slides"></div></div>
-  <div id="pHelp"><span class="kbd">N</span><span class="hint">노트</span><span class="kbd">Esc</span><span class="hint">편집으로</span></div>
+  
   <div id="pNotes"></div>
 </div>
 
@@ -712,7 +718,7 @@ const ASSETS = {
       return `<div class="a-ph"><div class="line"></div>${rs.map((r, k) => `<div class="st ${r[3] === 'h' ? 'h' : ''} an" style="${D(200 + k * 150)}"><i></i><em class="num">${pe('rows', k, 0, r[0])}</em><b>${pe('rows', k, 1, r[1])}</b><span>${pe('rows', k, 2, r[2] || '')}</span></div>`).join('')}</div>`; }},
   matrix: {name:'2×2 매트릭스', nw:960, nh:620,
     props:[['x','가로축'],['y','세로축'],['q','사분면 (왼위|오른위|왼아래|오른아래)'],['pts','점 (이름|x 0~1|y 0~1|■ 또는 □)','textarea'],['arr','화살표 (1>2, 줄바꿈 구분)','textarea']],
-    d:{x:'외부 개발자의 축적 →', y:'전환 비용 →', q:'|고착형 플랫폼||개방형 플랫폼', pts:'CUDA 2012–2025|0.82|0.85|■\nCUDA 2026~ (해석)|0.82|0.45|□\n허깅페이스|0.72|0.15|□', arr:'1>2'},
+    d:{x:'외부 개발자의 축적 →', y:'전환 비용 →', q:'|고착형 플랫폼||개방형 플랫폼', pts:'CUDA 2012–2025|0.82|0.85|■\nCUDA 2026~|0.82|0.45|□\n허깅페이스|0.72|0.15|□', arr:'1>2'},
     render:p => { const X = v => 140 + Math.max(0, Math.min(1, +v || 0)) * 760, Y = v => 560 - Math.max(0, Math.min(1, +v || 0)) * 520;
       const pts = lines(p.pts).map(cells); const q = cells(p.q);
       const arr = lines(p.arr).map(a => a.split('>').map(n => pts[(+n || 0) - 1])).filter(a => a[0] && a[1]);
@@ -724,11 +730,11 @@ const ASSETS = {
         ${pts.map((r, k) => { const f = (r[3] || '■').startsWith('■'); return `<g class="an pt" style="${D(300 + k * 250)}"><circle cx="${X(r[1])}" cy="${Y(r[2])}" r="16" fill="${f ? '#76b900' : '#000'}" stroke="${f ? '#76b900' : '#aaa'}" stroke-width="3"/><text x="${X(r[1]) - 28}" y="${Y(r[2]) + 8}" text-anchor="end" fill="${f ? '#fff' : '#aaa'}" font-size="24" font-weight="500">${esc(r[0])}</text></g>`; }).join('')}</svg></div>`; }},
   debate: {fluid:true, name:'논거 비교 (두 입장)', nw:1408, nh:480,
     props:[['lt','왼쪽 제목'],['l','왼쪽 논거','textarea'],['rt','오른쪽 제목'],['r','오른쪽 논거','textarea'],['v','가운데 판단']],
-    d:{lt:'전환 비용 약화 논리', l:'AI가 CUDA 코드를 타사 칩용으로 이식 (Anthropic, 약 3일)\n이식 비용이 낮아지면 멀티호밍이 쉬워진다\n대형 클라우드 사업자의 자체 칩 비중 12~18% (추정)', rt:'생태계 강화 논리 (NVIDIA)', r:'AI가 CUDA 코드 작성 속도도 높인다 (Ian Buck)\nCUDA 기반 코드가 더 빠르게 축적된다\n점유율은 여전히 80%대 (2026년 약 81%, 추정)', v:'판단 유보'},
+    d:{lt:'전환 비용 약화 논리', l:'AI가 CUDA 코드를 타사 칩용으로 이식 (Anthropic, 약 3일)\n이식 비용이 낮아지면 멀티호밍이 쉬워진다\n대형 클라우드 사업자의 자체 칩 비중 12~18%', rt:'생태계 강화 논리 (NVIDIA)', r:'AI가 CUDA 코드 작성 속도도 높인다 (Ian Buck)\nCUDA 기반 코드가 더 빠르게 축적된다\n점유율은 여전히 80%대 (2026년 약 81%)', v:'판단 유보'},
     render:p => `<div class="a-db"><div class="col an" style="${D(200)}"><div class="h">${pe('lt', -1, -1, p.lt)}</div>${lines(p.l).map((t, i) => `<p>${pe('l', i, -1, t)}</p>`).join('')}</div><div class="vs an" style="${D(700)}"><span>${pe('v', -1, -1, p.v)}</span></div><div class="col g an" style="${D(450)}"><div class="h">${pe('rt', -1, -1, p.rt)}</div>${lines(p.r).map((t, i) => `<p>${pe('r', i, -1, t)}</p>`).join('')}</div></div>`},
   kpis: {fluid:true, name:'핵심 수치 카드', nw:1408, nh:200,
     props:[['rows','카드 (값|이름|주석|g 강조)','textarea']],
-    d:{rows:'129억 달러|인수 금액|주주 대금 약 119억 달러 + 임직원 보상 최대 10억 달러|g\n1,800만 명+|허깅페이스 개발자 수|NVIDIA 집계\n300만 개+|공유 모델 수|NVIDIA 집계'},
+    d:{rows:'129억 달러|인수 금액|주주 대금 약 119억 달러 + 임직원 보상 최대 10억 달러|g\n1,800만 명+|허깅페이스 개발자 수|2026년 9월 기준\n300만 개+|공유 모델 수|2026년 9월 기준'},
     render:(p, bx) => { const rs = lines(p.rows).map(cells); const one = bx && bx.w < 640;
       return `<div class="a-kpi" style="grid-template-columns:repeat(${one ? 1 : Math.max(1, rs.length)},1fr)">${rs.map((r, k) => `<div class="k an" style="${D(150 + k * 120)}"><span class="lb">${pe('rows', k, 1, r[1] || '')}</span><b class="num" style="color:${r[3] === 'g' ? 'var(--g)' : 'var(--t1)'}">${pe('rows', k, 0, r[0])}</b><em>${pe('rows', k, 2, r[2] || '')}</em></div>`).join('')}</div>`; }},
   timeline: {fluid:true, name:'사건 타임라인', nw:1408, nh:220,
@@ -755,7 +761,7 @@ const ASSETS = {
     render:p => { const m = Math.max(1, +p.m || 1); const H = 470;
       return `<div class="a-dc"><div class="cols"><div class="col"><div class="b an" style="height:${(H / m).toFixed(0)}px;background:var(--t3)"></div><div class="l">${pe('bl', -1, -1, p.bl)}</div></div><div class="col"><div class="top num">${pe('tv', -1, -1, p.tv)}</div><div class="b an" style="height:${H}px;background:var(--g)"></div><div class="l">${pe('tl', -1, -1, p.tl)}</div></div></div><div class="times num an" style="${D(800)}">${esc(m)}배</div></div>`; }},
   sharebars: {name:'점유율 막대 목록', nw:400, nh:140,
-    props:[['t','제목'],['rows','행 (이름|값)','textarea']], d:{t:'NVIDIA 점유율 (추정)', rows:'2023|87\n2026|81'},
+    props:[['t','제목'],['rows','행 (이름|값)','textarea']], d:{t:'NVIDIA 점유율', rows:'2023|87\n2026|81'},
     render:p => `<div class="a-sb"><div class="ttl">${pe('t', -1, -1, p.t)}</div>${lines(p.rows).map(cells).map((r, i) => `<div class="r num"><span>${pe('rows', i, 0, r[0])}</span><div><i class="an" style="width:${Math.min(100, +r[1] || 0)}%"></i></div><b>${esc(r[1])}%</b></div>`).join('')}</div>`},
   lock: {name:'묶임 도식 (한쪽만 연결)', nw:1200, nh:480,
     props:[['s','출발'],['ok','연결됨'],['no','막힘'],['r1','연결 이유 1'],['r2','연결 이유 2']], d:{s:'CUDA 프로그램', ok:'NVIDIA GPU', no:'타사 칩', r1:'NVIDIA GPU 전용 기계어로 컴파일', r2:'NVIDIA 전용 라이브러리 호출'},
@@ -767,7 +773,7 @@ const ASSETS = {
       <rect x="760" y="310" width="400" height="120" rx="16" fill="#151515" stroke="#2d2d2d" stroke-width="2"/><text x="960" y="380" text-anchor="middle" fill="#888" font-size="30" font-weight="500">${esc(p.no)}</text></svg></div>`},
   timecmp: {name:'기간 비교 (같은 축)', nw:1280, nh:330,
     props:[['a','짧은 쪽 표기'],['ad','짧은 쪽 일수','number'],['b','긴 쪽 표기'],['b1','긴 쪽 최소 일수','number'],['b2','긴 쪽 최대 일수','number'],['cap','단서','textarea']],
-    d:{a:'약 3일', ad:3, b:'6~12개월', b1:180, b2:365, cap:'AI 모델이 AMD MI355X용으로 코드를 이식하는 데 걸린 기간 · Anthropic 투자자 대상 자료(회사 자체 발표) · 단일 모델의 추론 작업에 한정'},
+    d:{a:'약 3일', ad:3, b:'6~12개월', b1:180, b2:365, cap:'AMD MI355X용 코드 이식에 걸린 기간'},
     render:p => { const mx = Math.max(+p.b2 || 1, +p.ad || 1); const pa = Math.max(0.8, (+p.ad || 0) / mx * 100), p1 = (+p.b1 || 0) / mx * 100, p2 = (+p.b2 || 0) / mx * 100;
       return `<div class="a-time"><div class="r"><div class="n num" style="color:var(--g)">${pe('a', -1, -1, p.a)}</div><div class="tr"><i class="an" style="left:0;width:${pa}%;background:var(--g)"></i></div></div>
       <div class="r"><div class="n num">${pe('b', -1, -1, p.b)}</div><div class="tr"><i class="an" style="left:0;width:${p2}%;background:#333"></i><i class="an" style="left:0;width:${p1}%;background:#555"></i></div></div>
@@ -775,7 +781,7 @@ const ASSETS = {
       ${p.cap ? `<div class="fine">${pe('cap', -1, -1, p.cap)}</div>` : ''}</div>`; }},
   cmptable: {fluid:true, name:'두 칸 비교표', nw:1240, nh:300,
     props:[['h','열 제목 (|로 구분)'],['rows','행 (항목|왼쪽|오른쪽, ●/○ 표시 가능)','textarea']],
-    d:{h:'CUDA|허깅페이스', rows:'축적 대상|프로그램|AI 모델\nNVIDIA 칩|●필수|○선택 (NVIDIA 발표)\n형성 방식|2006년부터 자체 구축|기존 플랫폼 인수'},
+    d:{h:'CUDA|허깅페이스', rows:'축적 대상|프로그램|AI 모델\nNVIDIA 칩|●필수|○선택\n형성 방식|2006년부터 자체 구축|기존 플랫폼 인수'},
     render:(p, bx) => { const sm = bx && bx.w < 760; const h = cells(p.h); const cell = (t, i, j) => { const m = /^([●○])\s*/.exec(t); return m ? `<i class="pin ${m[1] === '●' ? 'f' : 'o'}"></i>${pe('rows', i, j, t.slice(m[0].length))}` : pe('rows', i, j, t); };
       return `<div class="a-cmp ${sm ? 'sm' : ''}"><div></div><div class="h h1">${pe('h', 0, 0, h[0])}</div><div class="h">${pe('h', 0, 1, h[1])}</div>${lines(p.rows).map(cells).map((r, i) => `<div class="k">${pe('rows', i, 0, r[0])}</div><div>${cell(r[1] || '', i, 1)}</div><div>${cell(r[2] || '', i, 2)}</div>`).join('')}</div>`; }},
   sharebar: {fluid:true, name:'점유율 한 줄 막대', nw:1000, nh:40,
@@ -793,7 +799,7 @@ const I = (img, x, y, w, h, o = {}) => ({id:'e' + (++uid), type:'img', img, x, y
 const H = t => T(t, 96, 80, 1408, 72, {size:48, weight:600, lh:1.2});
 const CAPT = (t, x, y, w) => T(t, x, y, w, 28, {size:18, color:'t3'});
 
-const EXEC = '출발점|2006년 NVIDIA는 GPU를 범용 연산 장치로 개방하고 이를 GeForce 전 제품에 탑재했다. 당장의 수익성을 포기하고 설치 기반을 먼저 확보한 결정이었다\n플랫폼 설계|NVIDIA는 CUDA와 핵심 라이브러리를 제공하고, 그 위의 응용 프로그램과 AI 모델은 외부가 만든다. 거래 수수료 대신 GPU 판매로 가치를 회수한다\n외부 혁신|2012년 AlexNet은 NVIDIA가 의도하지 않은 용도를 외부 연구자가 발견한 사례다. 앞선 발표가 행운으로 본 지점을 플랫폼 설계의 결과로 다시 해석한다\n확장과 고착|공개 코드와 라이브러리가 쌓일수록 개발 생산성은 높아졌고, 다른 칩으로 옮기는 비용도 함께 커졌다. 같은 독자 규격이 NV1에서는 실패하고 CUDA에서는 성공한 이유다\n2026년의 변화|AI가 코드 이식을 대신하면서 전환 비용이 낮아질 가능성이 제기되었다(Anthropic 자체 발표, 약 3일)\n전략적 시사점 (해석)|허깅페이스 인수 결정(129억 달러)은 전환 비용에 기대지 않고 외부의 축적을 확보하려는 시도로 해석할 수 있다. 관건은 고착 없이도 GPU 수요를 지킬 수 있는가이다';
+const EXEC = '출발점|2006년 NVIDIA는 GPU를 범용 연산 장치로 개방하고 이를 GeForce 전 제품에 탑재했다. 당장의 수익성을 포기하고 설치 기반을 먼저 확보한 결정이었다\n플랫폼 설계|NVIDIA는 CUDA와 핵심 라이브러리를 제공하고, 그 위의 응용 프로그램과 AI 모델은 외부가 만든다. 거래 수수료 대신 GPU 판매로 가치를 회수한다\n외부 혁신|2012년 AlexNet은 NVIDIA가 의도하지 않은 용도를 외부 연구자가 발견한 사례다. 앞선 발표가 행운으로 본 지점을 플랫폼 설계의 결과로 다시 해석한다\n확장과 고착|공개 코드와 라이브러리가 쌓일수록 개발 생산성은 높아졌고, 다른 칩으로 옮기는 비용도 함께 커졌다. 같은 독자 규격이 NV1에서는 실패하고 CUDA에서는 성공한 이유다\n2026년의 변화|AI가 코드 이식을 대신하면서 전환 비용이 낮아질 가능성이 제기되었다(약 3일)\n전략적 시사점|허깅페이스 인수 결정(129억 달러)은 전환 비용에 기대지 않고 외부의 축적을 확보하려는 시도로 해석할 수 있다. 관건은 고착 없이도 GPU 수요를 지킬 수 있는가이다';
 
 const BASE = [
  {id:'cover', kind:'cover', d:'20 5', o20:0, o5:0, els:[I('cover', 0, 0, 1600, 900, {radius:0, op:0.2, anim:'none'}), R(128, 540, 64, 6), T('NVIDIA CUDA에서 찾은 딥러닝 프로세스', 128, 568, 1300, 100, {size:72, weight:600, lh:1.1}), T('외부 개발자의 축적이 만든 경쟁우위는 AI 시대에도 유지될 수 있는가', 128, 676, 1300, 44, {size:28, color:'t2'}), T('KAIST 플랫폼과 비즈니스 · IMMS 박병진 · PMBA 조기원 · 2026년 11월', 128, 772, 1300, 32, {size:20, color:'t2'})], notes:''},
@@ -801,47 +807,47 @@ const BASE = [
 `오늘 발표에서는 NVIDIA의 CUDA를 플랫폼 관점에서 분석하겠습니다. 화면의 여섯 단계 순서로 진행합니다.
 
 [메모] 30초 안에 넘긴다. 각 줄의 근거는 뒤에서 한 장씩 제시한다.`},
- {id:'q0', kind:'content', sec:-1, d:'20', o20:0.7, min:1, src:'출처: 2026.5.20 경영전략 수업 NVIDIA 발표 2건과 토론', els:[H('지난 발표가 남긴 세 가지 질문'), A('cards', 96, 216, 1408, 560, {items:'search|NVIDIA의 성공은 전략인가, 행운인가|앞선 발표는 여러 번의 행운을 잘 포착한 결과로 보았다. 우리는 우연한 발견이 일어날 수 있게 설계된 구조에 주목한다 (10장)|□\npeople|시장이 먼저 열렸는가, NVIDIA가 시장을 열었는가|수업 토론에서 제기된 질문이다. 개발자와 설치 기반이 서로를 키우는 교차 네트워크 효과로 설명한다 (8장)|□\nlayers|독자 규격은 왜 NV1에서 실패하고 CUDA에서 성공했나|앞선 발표가 관찰한 역설이다. 규격 위에 외부 개발자의 투자가 쌓였는지가 갈랐다 (13장)|■', step:true})], notes:
+ {id:'q0', kind:'content', sec:-1, d:'20', o20:0.7, min:1, src:'출처: 2026.5.20 경영전략 수업 NVIDIA 발표와 토론', els:[H('지난 발표가 남긴 세 가지 질문'), A('cards', 96, 216, 1408, 560, {items:'search|NVIDIA의 성공은 전략인가, 행운인가|앞선 발표는 여러 번의 행운을 잘 포착한 결과로 보았다. 우리는 우연한 발견이 일어날 수 있게 설계된 구조에 주목한다 (10장)|□\npeople|시장이 먼저 열렸는가, NVIDIA가 시장을 열었는가|수업 토론에서 제기된 질문이다. 개발자와 설치 기반이 서로를 키우는 교차 네트워크 효과로 설명한다 (8장)|□\nlayers|독자 규격은 왜 NV1에서 실패하고 CUDA에서 성공했나|앞선 발표가 관찰한 역설이다. 규격 위에 외부 개발자의 투자가 쌓였는지가 갈랐다 (13장)|■', step:true})], notes:
 `지난 5월 경영전략 수업에서 NVIDIA를 다룬 두 발표가 있었습니다. 한 팀은 NVIDIA의 성공을 여러 번의 행운을 잘 포착한 결과로 보았고, 다른 팀은 블루오션 전략으로 설명했습니다. 오늘 저희는 그때 남은 세 가지 질문에 플랫폼 관점으로 답해 보겠습니다.
 
 [메모] 카드는 클릭할 때마다 한 장씩 나타난다. 각 카드 끝의 숫자는 답이 나오는 장 번호다. 장 순서를 바꾸면 이 숫자도 고친다.`},
- {id:'s01', kind:'content', sec:0, d:'20', o20:1, min:1, src:'출처: NVISION 08 시연(2008.8), TechCrunch(2008.8.28), Wikipedia: Nvision. 총열 수는 출처에 따라 1,100개 또는 2,100개. 도식은 발표자 작성', els:[H('GPU, 동시에 계산하는 칩'), A('paintgun', 160, 200, 1280, 600)], notes:
+ {id:'s01', kind:'content', sec:0, d:'20', o20:1, min:1, src:'출처: NVISION 08(2008.8), TechCrunch, Wikipedia', els:[H('GPU, 동시에 계산하는 칩'), A('paintgun', 160, 200, 1280, 600)], notes:
 `2008년 NVIDIA 행사에서 물감총 시연이 있었습니다. 한 로봇은 총열 하나로 물감을 한 발씩 쏘아 웃는 얼굴을 그렸고, 다른 로봇은 1,000개가 넘는 총열을 한 번에 발사해 모나리자를 그렸습니다. 앞의 방식이 CPU, 뒤의 방식이 GPU입니다.
 
 [주의] 2008년 8월 NVISION 08의 시연이다. CUDA 발표(2006년)보다 뒤의 일이므로 CUDA 이전 사건처럼 말하지 않는다. 총열 수는 "1,000개가 넘는"으로 말한다.
 [화면] 왼쪽은 점이 하나씩 찍히며 막대가 천천히 차고, 오른쪽은 총열이 동시에 발사된 뒤 그림 전체가 한 번에 완성되며 막대가 275ms 만에 찬다.`},
- {id:'s02', kind:'content', sec:0, d:'20', o20:2, min:1, src:'출처: The Next Platform, Inside the programming evolution of GPU computing (2015), Ian Buck 회고', els:[H('그래픽 명령으로 위장한 계산'), A('disguise', 240, 236, 1120, 260), A('sticker', 96, 600, 1408, 96, {lb:'한계', t:'그래픽 API를 다룰 줄 아는 소수의 연구자만 GPU의 연산 능력을 활용할 수 있었다'})], notes:
+ {id:'s02', kind:'content', sec:0, d:'20', o20:2, min:1, src:'출처: The Next Platform(2015)', els:[H('그래픽 명령으로 위장한 계산'), A('disguise', 240, 236, 1120, 260), A('sticker', 96, 600, 1408, 96, {lb:'문제', t:'그래픽 API를 다룰 줄 아는 소수의 연구자만 GPU의 연산 능력을 활용할 수 있었다'})], notes:
 `당시 GPU의 연산 능력은 화면을 그리는 명령을 통해서만 쓸 수 있었습니다. 과학 계산에 GPU를 쓰려는 연구자는 계산을 그래픽 작업으로 변환해 넘겨야 했습니다. 속도는 빨랐지만, 그래픽 프로그래밍을 모르면 활용할 수 없었습니다.
 
 [근거] 스탠퍼드 Ian Buck 연구팀은 DirectX와 OpenGL로 삼각형을 그리게 하는 방식으로 행렬 곱셈을 수행했다.`},
- {id:'s03', kind:'content', sec:0, d:'20', o20:3, min:1.5, src:'출처: Wikipedia CUDA, Computerworld(CUDA 발표 2006.11.8). 비용 수치는 젠슨 황 회고(Lex Fridman 팟캐스트 #494). 사진: 4-2조 발표 자료(2026.5.20)', els:[H('GeForce 전 제품에 건 승부'), I('geforce', 96, 208, 600, 344), CAPT('GeForce 256(1999), 게임용 그래픽카드 제품군', 96, 564, 600),
+ {id:'s03', kind:'content', sec:0, d:'20', o20:3, min:1.5, src:'출처: Wikipedia, Computerworld, Lex Fridman Podcast #494', els:[H('GeForce 전 제품에 건 승부'), I('geforce', 96, 208, 600, 344), CAPT('GeForce 256(1999), 게임용 그래픽카드 제품군', 96, 564, 600),
    T('GPGPU', 760, 216, 744, 150, {size:132, color:'g', weight:600, lh:1}), T('그래픽 전용에서 범용 연산으로 · 2006년 11월', 760, 380, 744, 32, {size:22, color:'t2'}), A('chips', 760, 460, 744, 54), CAPT('고급형 일부가 아닌 GeForce 전 제품에 탑재', 760, 528, 744),
    A('sticker', 96, 640, 1408, 96, {lb:'의미', t:'게이머가 사는 모든 그래픽카드가 범용 연산 장치가 되었고, 이 설치 기반이 이후 개발자 생태계의 출발점이 되었다'})], notes:
 `NVIDIA는 GPU를 그래픽 전용 장치에서 범용 연산 장치로 전환하기로 했습니다. 이를 GPGPU라고 합니다. 그리고 이 기능을 일부 고급형 제품이 아니라 게임용 GeForce 전 제품에 탑재했습니다. 이 결정으로 당시 이익이 거의 사라졌습니다.
 
 [수치, 말로 한 번만] 원가 50% 상승, 당시 매출총이익률 35%, 시가총액 약 15억 달러까지 하락. 젠슨 황의 회고.
 [주의] 비용 이야기는 여기서 끝낸다. 사진의 GeForce 256은 1999년 제품으로, 제품군을 보여 주는 용도다.`},
- {id:'s04', kind:'content', sec:0, d:'20', o20:4, min:1, src:'출처: Wikipedia CUDA (CUDA 1.0 공개 2007.2)', els:[H('CUDA의 핵심, Unified'), A('acronym', 96, 232, 880, 220), A('onemany', 96, 560, 720, 160), I('wave', 1056, 216, 448, 504, {fit:'cover'})], notes:
+ {id:'s04', kind:'content', sec:0, d:'20', o20:4, min:1, src:'출처: Wikipedia', els:[H('CUDA의 핵심, Unified'), A('acronym', 96, 232, 880, 220), A('onemany', 96, 560, 720, 160), I('wave', 1056, 216, 448, 504, {fit:'cover'})], notes:
 `CUDA는 Compute Unified Device Architecture의 약자입니다. 핵심은 Unified, 즉 호환성입니다. 어떤 NVIDIA GPU에서든 같은 프로그램이 실행됩니다. 저렴한 게임용 그래픽카드에서 작성한 프로그램을 서버용 GPU에서도 그대로 쓸 수 있습니다.
 
 [사실] CUDA 발표 2006년 11월 8일, CUDA 1.0 공개 2007년 2월. 오른쪽 이미지는 병렬 연산 시각화(4-2조 발표 자료).`},
- {id:'s05', kind:'content', sec:1, d:'20', o20:5, min:1, src:'출처: SC26 NVIDIA 발표(Jon Peddie Research): CUDA-X 라이브러리 1,000개 이상. 계층 구분은 발표자 정리', els:[H('CUDA 플랫폼의 구조'), A('stack', 210, 200, 1180, 600)], notes:
+ {id:'s05', kind:'content', sec:1, d:'20', o20:5, min:1, src:'출처: NVIDIA SC26, Jon Peddie Research', els:[H('CUDA 플랫폼의 구조'), A('stack', 210, 200, 1180, 600)], notes:
 `NVIDIA는 응용 프로그램을 직접 만들지 않습니다. 개발에 필요한 기반만 제공합니다.
 그 위에서 프로그램을 개발하는 사람과 그 프로그램을 활용하는 사람이 따로 존재합니다.
 
 [예상 질문] "결국 개발 도구 아닌가?" → 아래 세 층(초록)은 NVIDIA가 제공하는 영역, 위 두 층(테두리)은 외부 개발자가 만든 영역이다. CUDA-X 라이브러리 1,000여 개는 NVIDIA가 만든 쪽에 속한다.`},
- {id:'s05b', kind:'content', sec:1, d:'20 5', o20:5.5, o5:2, min:1, min5:0.83, src:'출처: Parker, Van Alstyne, Choudary, 《플랫폼 레볼루션》(플랫폼 정의). 순환 구조는 발표자 정리', els:[H('개발자와 GPU가 서로를 키운다'), A('flywheel', 96, 196, 760, 600), A('kv', 944, 236, 560, 420)], notes:
+ {id:'s05b', kind:'content', sec:1, d:'20 5', o20:5.5, o5:2, min:1, min5:0.83, src:'출처: Parker, Van Alstyne, Choudary, 《플랫폼 레볼루션》', els:[H('개발자와 GPU가 서로를 키운다'), A('flywheel', 96, 196, 760, 600), A('kv', 944, 236, 560, 420)], notes:
 `CUDA 기반 프로그램이 늘어날수록 GPU를 구매할 이유가 커지고, GPU 설치 기반이 넓어질수록 CUDA로 개발하는 사람도 늘어납니다.
 NVIDIA는 이 과정에서 거래 수수료를 받지 않고, GPU 판매로 수익을 확보합니다.
 
 [교재 연결, 한 번만] 《플랫폼 레볼루션》은 플랫폼을 외부 생산자와 소비자 사이의 가치 창출 상호작용을 가능하게 하는 사업으로 정의합니다. CUDA는 거래를 중개하는 플랫폼이 아니라, 외부 개발자가 그 위에서 가치를 만들도록 하는 플랫폼입니다.
 [5분 버전에서는 앞에 붙임] NVIDIA는 응용 프로그램을 직접 만들지 않고 개발 기반만 제공합니다. 그 위에서 프로그램을 개발하는 사람과 활용하는 사람이 따로 존재합니다.`},
- {id:'s06', kind:'content', sec:2, d:'20', o20:6, min:1.5, src:'출처: Krizhevsky, Sutskever, Hinton (2012), ImageNet classification with deep convolutional neural networks. 사진: 4-2조 발표 자료(2026.5.20)', els:[H('AlexNet, 게임용 GPU 두 장의 결과'), A('hbars', 96, 224, 920, 276), I('vision', 1064, 208, 440, 300), CAPT('ImageNet 이미지 인식 대회', 1064, 520, 440),
+ {id:'s06', kind:'content', sec:2, d:'20', o20:6, min:1.5, src:'출처: Krizhevsky, Sutskever, Hinton (2012)', els:[H('AlexNet, 게임용 GPU 두 장의 결과'), A('hbars', 96, 224, 920, 276), I('vision', 1064, 208, 440, 300), CAPT('ImageNet 이미지 인식 대회', 1064, 520, 440),
    A('kpis', 96, 600, 1408, 200, {rows:'GTX 580 × 2|사용 장비|시판 게임용 그래픽카드|g\n5~6일|학습 기간|대학원생이 CUDA로 직접 구현\n15.3%|1위 오류율|2위는 26.2%'})], notes:
 `2012년 토론토대학교의 한 대학원생이 신경망 학습 프로그램을 CUDA로 직접 작성했습니다. 사용한 장비는 게임용 GTX 580 두 장이었고, 학습에는 5~6일이 걸렸습니다. 이 모델은 이미지 인식 대회에서 오류율 15.3%로 우승했습니다. 2위의 오류율은 26.2%였습니다.
 
 [출처] Krizhevsky 외(2012) 논문, 1차 자료. GTX 580 3GB 두 장. 10.9%p = 26.2 − 15.3.`},
- {id:'s07', kind:'content', sec:2, d:'20', o20:7, min:2, src:'출처: Krizhevsky 외 (2012). 네 가지 조건의 구분은 발표자 해석', els:[H('NVIDIA CUDA에서 찾은 딥러닝 프로세스'), A('cards', 96, 216, 1408, 440), A('sticker', 96, 704, 1408, 96, {lb:'해석', t:'앞선 발표는 이를 행운으로 보았다. 플랫폼 관점에서는 외부의 우연한 발견이 일어날 수 있도록 문을 열어 둔 설계의 결과로 볼 수 있다', fill:true})], notes:
+ {id:'s07', kind:'content', sec:2, d:'20', o20:7, min:2, src:'출처: Krizhevsky, Sutskever, Hinton (2012)', els:[H('NVIDIA CUDA에서 찾은 딥러닝 프로세스'), A('cards', 96, 216, 1408, 440), A('sticker', 96, 704, 1408, 96, {lb:'시사점', t:'앞선 발표는 이를 행운으로 보았다. 플랫폼 관점에서 보면 외부의 발견이 일어날 수 있도록 문을 열어 둔 설계의 결과다', fill:true})], notes:
 `첫째, AlexNet은 NVIDIA가 만든 프로그램이 아닙니다. NVIDIA는 딥러닝 시장을 겨냥한 적이 없습니다.
 둘째, 대학원생이 매장에서 구입할 수 있는 그래픽카드로 연구했습니다. GeForce 전 제품에 CUDA를 탑재했기 때문에 가능한 일이었습니다.
 셋째, 연구팀은 코드를 공개했고, 다른 연구자들이 이를 재사용하며 후속 연구를 쌓아 갔습니다.
@@ -850,28 +856,28 @@ NVIDIA는 이 과정에서 거래 수수료를 받지 않고, GPU 판매로 수�
 
 [예상 질문] "선견지명인가, 운인가?" → 딥러닝을 예측한 것은 아니었다고 그대로 답한다. 젠슨 황도 "언젠가 놀라운 일이 생길 것"이라는 기대 수준이었다고 말했다. "좋은데 쓰지 못했다"는 발언은 출처를 확인하지 못했으므로 인용하지 않는다.
 [조작] 카드는 클릭할 때마다 한 장씩 나타난다.`},
- {id:'s08', kind:'content', sec:3, d:'20', o20:8, min:1, src:'출처: SC26 NVIDIA 발표(Jon Peddie Research). 다른 자료는 400만~750만 명. 단계 구분은 발표자 정리', els:[H('1,100만 개발자 생태계'), A('phases', 96, 216, 1408, 400), A('kpis', 96, 640, 1408, 168, {rows:'1,100만 명|CUDA 개발자 수|NVIDIA 집계 (출처별 400만~1,100만)|g\n1,000개+|CUDA-X 라이브러리|NVIDIA 개발'})], notes:
+ {id:'s08', kind:'content', sec:3, d:'20', o20:8, min:1, src:'출처: NVIDIA SC26, Jon Peddie Research', els:[H('1,100만 개발자 생태계'), A('phases', 96, 216, 1408, 400), A('kpis', 96, 640, 1408, 168, {rows:'1,100만 명|CUDA 개발자 수|2026년 기준|g\n1,000개+|CUDA-X 라이브러리|NVIDIA 제공'})], notes:
 `AlexNet 이후 AI 연구자 대부분이 CUDA 기반에서 연구했습니다. 누군가 공개한 코드를 다음 연구자가 받아 쓰는 일이 반복되며 축적되었고, NVIDIA 집계 기준으로 현재 개발자는 1,100만 명입니다.
 
 [주의] 개발자 수는 출처에 따라 400만~1,100만 명으로 차이가 크다. 반드시 "NVIDIA 집계"라고 밝힌다.
 [화면] 단계 구분은 질의응답 대비용이다. 강조된 2012–2022 구간이 지금 설명하는 시기다.`},
- {id:'s09', kind:'content', sec:3, d:'20', o20:9, min:1.5, src:'출처: NVIDIA FY2026 실적 발표, CFO 발언(PC Gamer). 점유율은 NewMarketPitch 추정치. 막대는 배수만 표시', els:[H('데이터센터 매출 13배'), A('dcchart', 96, 200, 840, 600), A('sharebars', 1040, 224, 400, 140, {t:'NVIDIA 점유율 (추정)'}), A('sticker', 1040, 440, 464, 300, {lb:'한계', t:'매출 증가에는 칩 성능과 공급 능력도 함께 작용했다. CUDA만의 기여분은 식별되지 않는다'})], notes:
+ {id:'s09', kind:'content', sec:3, d:'20', o20:9, min:1.5, src:'출처: NVIDIA FY2026 실적, PC Gamer, NewMarketPitch', els:[H('데이터센터 매출 13배'), A('dcchart', 96, 200, 840, 600), A('sharebars', 1040, 224, 400, 140, {t:'NVIDIA 점유율'})], notes:
 `FY2026 데이터센터 매출은 1,937억 달러로, ChatGPT 출시 이후 약 13배 증가했습니다. 점유율은 2023년 약 87%, 2026년 약 81%로 추정됩니다.
 
 [숫자로 알 수 없는 것] 이 성장에서 CUDA가 기여한 몫은 분리할 수 없다. 칩 성능과 공급 능력도 함께 작용했다.
 [주의] 막대는 13배라는 비율만 나타낸다(왼쪽 막대 = 1). AMD 점유율 추정치는 5~12%로 출처마다 다르다. 대형 클라우드 사업자의 자체 칩 비중은 12~18%로 추정된다.`},
- {id:'nv1', kind:'content', sec:3, d:'20', o20:9.5, min:1, src:'출처: NV1 관련 사실은 4-2조 발표 자료(2026.5.20) 기준. CUDA 개발자 수는 NVIDIA 집계(SC26). 비교 구도와 해석은 발표자', els:[H('NV1은 실패하고 CUDA는 성공한 이유'), A('cmptable', 96, 200, 1408, 476, {h:'NV1 (1995)|CUDA (2006~)', rows:'독자 규격|●사각형 기반 렌더링, DirectX와 비호환|●CUDA 전용 프로그래밍 모델\n외부 개발자|○사실상 없음, Sega 단일 파트너에 의존|●연구자와 기업, 1,100만 명 (NVIDIA 집계)\n설치 기반|○신제품 단독 출시|●이미 팔린 GeForce 전 제품\n결과|○시장에서 외면|●사실상의 업계 표준'}), A('sticker', 96, 708, 1408, 96, {lb:'해석', t:'독자 규격은 그 자체로 진입장벽이 되지 않는다. 그 위에 외부의 투자가 쌓였을 때 비로소 전환 비용이 된다', fill:true})], notes:
+ {id:'nv1', kind:'content', sec:3, d:'20', o20:9.5, min:1, src:'출처: 4-2조 발표 자료(2026.5.20), NVIDIA SC26', els:[H('NV1은 실패하고 CUDA는 성공한 이유'), A('cmptable', 96, 200, 1408, 476, {h:'NV1 (1995)|CUDA (2006~)', rows:'독자 규격|●사각형 기반 렌더링, DirectX와 비호환|●CUDA 전용 프로그래밍 모델\n외부 개발자|○사실상 없음, Sega 단일 파트너에 의존|●연구자와 기업, 1,100만 명\n설치 기반|○신제품 단독 출시|●이미 팔린 GeForce 전 제품\n결과|○시장에서 외면|●사실상의 업계 표준'}), A('sticker', 96, 708, 1408, 96, {lb:'시사점', t:'독자 규격은 그 자체로 진입장벽이 되지 않는다. 그 위에 외부의 투자가 쌓였을 때 비로소 전환 비용이 된다', fill:true})], notes:
 `앞선 발표에서 흥미로운 관찰이 있었습니다. NVIDIA의 첫 제품 NV1은 업계 표준을 따르지 않은 독자 규격 때문에 실패했는데, 지금은 CUDA라는 독자 규격이 NVIDIA의 가장 큰 강점이 되었다는 것입니다.
 플랫폼 관점에서 보면 두 규격의 차이는 기술이 아니라 그 위에 무엇이 쌓였느냐에 있습니다. NV1에는 규격을 쓰는 외부 개발자가 없었고, CUDA는 이미 팔린 GeForce 전체를 설치 기반으로 삼아 연구자들을 끌어들였습니다.
 독자 규격은 그 위에 외부의 투자가 쌓였을 때 비로소 전환 비용이 됩니다.
 
 [근거] NV1의 사각형 기반 렌더링과 Sega Saturn 의존은 4-2조 발표 자료 기준이다. 질문이 나오면 그 자료를 근거로 들었다고 밝힌다.`},
- {id:'s10', kind:'content', sec:3, d:'20', o20:10, min:1, src:'출처: NVIDIA FY2026 실적 발표(매출총이익률), CFO 발언(TechRepublic, 대형 클라우드 사업자 비중)', els:[H('옮기기 어려운 것이 경쟁력'), A('lock', 96, 220, 940, 376), A('kpis', 1080, 220, 424, 376, {rows:'71.1%|매출총이익률 (FY2026)|높은 가격이 유지됨|g\n50% 남짓|대형 클라우드 사업자 비중|데이터센터 매출 기준'}), A('sticker', 96, 680, 1408, 96, {lb:'해석', t:'전환 비용은 기술적 필연이 아니라 NVIDIA의 설계 선택이었다. 가격이 높아도 고객이 떠나기 어려웠던 이유다'})], notes:
+ {id:'s10', kind:'content', sec:3, d:'20', o20:10, min:1, src:'출처: NVIDIA FY2026 실적, TechRepublic', els:[H('옮기기 어려운 것이 경쟁력'), A('lock', 96, 220, 940, 376), A('kpis', 1080, 220, 424, 376, {rows:'71.1%|매출총이익률 (FY2026)|높은 가격이 유지됨|g\n50% 남짓|대형 클라우드 사업자 비중|데이터센터 매출 기준'}), A('sticker', 96, 680, 1408, 96, {lb:'시사점', t:'전환 비용은 기술적 필연이 아니라 NVIDIA의 설계 선택이었다. 가격이 높아도 고객이 떠나기 어려웠던 이유다'})], notes:
 `CUDA로 작성한 프로그램은 타사 칩에서 실행되지 않습니다. NVIDIA GPU 전용 기계어로 컴파일되고, NVIDIA 전용 라이브러리를 호출하기 때문입니다. 다른 칩으로 옮기려면 프로그램을 다시 작성해야 합니다. 그래서 고객은 가격이 높아도 NVIDIA를 떠나기 어려웠습니다.
 
 [보충] 데이터센터 매출의 절반 남짓이 대형 클라우드 사업자에서 발생한다. FY2026 매출총이익률은 71.1%다.
 [예상 질문] "왜 다른 칩에서는 실행되지 않는가?" → 위 설명으로 답이 된다.`},
- {id:'s11', kind:'content', sec:4, d:'20 5', o20:11, o5:4, min:1.5, min5:1, src:'출처: Anthropic IPO 로드쇼 자료(The Decoder, Mezha 보도). 회사 자체 발표이며 단일 모델의 추론 작업에 한정', els:[H('6~12개월에서 3일로'), A('timecmp', 160, 248, 1280, 330), A('sticker', 96, 680, 1408, 96, {lb:'단서', t:'투자자 대상 자료에 실린 회사 자체 발표이며, 단일 모델의 추론 작업에 한정된 수치다'})], notes:
+ {id:'s11', kind:'content', sec:4, d:'20 5', o20:11, o5:4, min:1.5, min5:1, src:'출처: Anthropic IPO 로드쇼 자료, The Decoder', els:[H('6~12개월에서 3일로'), A('timecmp', 160, 248, 1280, 330)], notes:
 `Anthropic은 AI 모델이 AMD GPU용 이식 작업을 약 3일 만에 마쳤으며, 과거에는 같은 작업에 6~12개월이 걸렸다고 밝혔습니다. 다만 이는 투자자 대상 자료에 실린 회사 자체 발표이고, 단일 모델의 추론 작업에 한정된 수치입니다.
 
 [5분 버전에서는 앞에 붙임] CUDA로 작성한 프로그램은 타사 칩에서 실행되지 않습니다. 옮기려면 다시 작성해야 했기 때문에, 고객은 가격이 높아도 NVIDIA를 떠나기 어려웠습니다.
@@ -879,15 +885,15 @@ NVIDIA는 이 과정에서 거래 수수료를 받지 않고, GPU 판매로 수�
 [예상 질문] "회사 자체 주장 아닌가?" → 그렇다. 화면 아래 단서를 함께 가리킨다.
 [보충, 필요하면 한 문장] OpenAI가 자체 칩용 커널 작성을 AI에게 맡겼다는 보도가 있다. 2차 보도다.
 [단서] 이 자료는 Anthropic의 모델인 Claude가 정리를 도왔다. 이 점을 감안해 이 수치에는 반드시 단서를 붙인다.`},
- {id:'s12', kind:'content', sec:4, d:'20', o20:12, min:1, src:'출처: Ian Buck 발언(Computer Weekly), Anthropic 로드쇼 자료 보도. 점유율과 자체 칩 비중은 추정치(NewMarketPitch, Oreate AI)', els:[H('NVIDIA의 반론'), A('debate', 96, 216, 1408, 480), A('sharebar', 96, 760, 1408, 24)], notes:
+ {id:'s12', kind:'content', sec:4, d:'20', o20:12, min:1, src:'출처: Computer Weekly, The Decoder, NewMarketPitch', els:[H('NVIDIA의 반론'), A('debate', 96, 216, 1408, 480), A('sharebar', 96, 760, 1408, 24)], notes:
 `NVIDIA는 AI가 CUDA 프로그램 작성도 빠르게 해 주므로 오히려 유리하다는 입장입니다. 점유율도 여전히 80%대입니다. 현재로서는 어느 쪽으로 판단하기에 이릅니다.
 
 [화면] 아래 막대는 2026년 NVIDIA 점유율 추정치 81%다.`},
- {id:'s13', kind:'content', sec:5, d:'20', o20:13, min:1.5, src:'출처: NVIDIA 블로그, SEC 8-K(2026.9.2), Yahoo Finance, 서울신문. 개발자·모델 수는 NVIDIA 집계', els:[H('허깅페이스 인수 결정'), A('kpis', 96, 216, 1408, 200), A('timeline', 96, 504, 1408, 220)], notes:
+ {id:'s13', kind:'content', sec:5, d:'20', o20:13, min:1.5, src:'출처: NVIDIA, SEC 8-K(2026.9.2)', els:[H('허깅페이스 인수 결정'), A('kpis', 96, 216, 1408, 200), A('timeline', 96, 504, 1408, 220)], notes:
 `2026년 9월 NVIDIA는 허깅페이스를 129억 달러에 인수하기로 했습니다. 허깅페이스는 AI 모델을 공유하고 내려받는 플랫폼으로, 개발자 1,800만 명이 모델 300만 개를 공유하고 있습니다. 거래는 규제 승인을 거쳐 2027년 상반기에 종결될 예정입니다.
 
 [주의] 인수 발표(9월 3일)는 앞 장의 Anthropic 발표(11월)보다 두 달 먼저다. 대응 관계로 설명하지 않는다. 타임라인의 회색 점이 이 순서를 보여 준다. "인수했다"가 아니라 "인수하기로 했다"로 말한다.`},
- {id:'s14', kind:'content', sec:5, d:'20 5', o20:14, o5:5, min:1.5, min5:0.5, src:'출처: NVIDIA 블로그, SEC 8-K(플랫폼 개방 유지, NVIDIA 하드웨어 사용 의무 없음: 약속이며 결과는 미정). 매트릭스 배치는 발표자 해석', els:[H('CUDA와 허깅페이스'), A('matrix', 96, 196, 900, 582), A('cmptable', 1040, 240, 464, 300, {h:'CUDA|허깅페이스', rows:'축적 대상|프로그램|AI 모델\nNVIDIA 칩|●필수|○선택\n형성 방식|자체 구축|인수'})], notes:
+ {id:'s14', kind:'content', sec:5, d:'20 5', o20:14, o5:5, min:1.5, min5:0.5, src:'출처: NVIDIA, SEC 8-K', els:[H('CUDA와 허깅페이스'), A('matrix', 96, 196, 900, 582), A('cmptable', 1040, 240, 464, 300, {h:'CUDA|허깅페이스', rows:'축적 대상|프로그램|AI 모델\nNVIDIA 칩|●필수|○선택\n형성 방식|자체 구축|인수'})], notes:
 `두 플랫폼에는 공통점이 있습니다. 둘 다 외부 개발자가 만든 결과물이 축적되는 곳입니다. CUDA에는 프로그램이, 허깅페이스에는 AI 모델이 쌓입니다.
 차이점도 있습니다. CUDA 프로그램은 NVIDIA GPU에서만 실행되지만, 허깅페이스는 인수 이후에도 NVIDIA 칩을 쓰지 않아도 된다고 NVIDIA가 밝혔습니다.
 또 CUDA는 2006년부터 직접 구축해 10년 가까이 기다린 반면, 허깅페이스는 이미 개발자가 모여 있는 플랫폼을 인수한 것입니다.
@@ -896,19 +902,19 @@ NVIDIA는 이 과정에서 거래 수수료를 받지 않고, GPU 판매로 수�
 [예상 질문] "결국 NVIDIA 칩에 묶으려는 것 아닌가?" → NVIDIA는 개방을 유지하겠다고 공시했다. 허깅페이스 투자자에는 AMD와 아마존도 있어 중립성이 유지되는지가 관전 포인트다. 고착시킬 것이라고 단정하지 않는다.
 [다른 해석] NVIDIA 경영진은 공개 모델 생태계가 커지면 GPU 수요도 늘어난다고 여러 차례 말해 왔다. 진입장벽 방어가 아니라 수요 확대 전략으로 볼 수도 있다.
 [5분 버전] 이 장 다음에 "전환 비용 없이도 GPU 수요를 유지할 수 있는가"를 토론 질문으로 제시한다.`},
- {id:'s15', kind:'content', sec:5, d:'20 5', o20:15, o5:6, min:1, min5:0.33, src:'관전 지표는 발표자 정리', els:[I('datacenter', 0, 0, 1600, 900, {radius:0, op:0.22, anim:'none'}), H('남은 질문'), T('고착 없이도<br><span class="g">GPU 수요를 지킬 수 있는가</span>', 96, 232, 1408, 220, {size:84, weight:600, lh:1.15}),
-   A('cards', 96, 540, 1408, 240, {items:'shield|허깅페이스의 중립성|AMD와 아마존도 투자자다. 중립성이 유지되는지가 첫 신호다|□\nrobot|AI 이식의 적용 범위|지금은 단일 모델의 추론 작업이다. 학습과 다른 작업으로 넓어지는지 본다|□\nchart|점유율 추이|2023년 약 87%에서 2026년 약 81%로 (추정)|■', step:false})], notes:
+ {id:'s15', kind:'content', sec:5, d:'20 5', o20:15, o5:6, min:1, min5:0.33, src:'', els:[I('datacenter', 0, 0, 1600, 900, {radius:0, op:0.22, anim:'none'}), H('남은 질문'), T('고착 없이도<br><span class="g">GPU 수요를 지킬 수 있는가</span>', 96, 232, 1408, 220, {size:84, weight:600, lh:1.15}),
+   A('cards', 96, 540, 1408, 240, {items:'shield|허깅페이스의 중립성|AMD와 아마존도 투자자다. 중립성이 유지되는지가 첫 신호다|□\nrobot|AI 이식의 적용 범위|지금은 단일 모델의 추론 작업이다. 학습과 다른 작업으로 넓어지는지 본다|□\nchart|점유율 추이|2023년 약 87%에서 2026년 약 81%로|■', step:false})], notes:
 `CUDA는 외부 개발자가 프로그램을 축적하면서 성장했고, 그 프로그램을 다른 플랫폼으로 옮기기 어려웠기 때문에 강했습니다. AI가 이식을 대행하게 되면 두 번째 힘은 약해집니다. NVIDIA는 사용자를 고착시키지 않는 플랫폼을 새로 인수하기로 했습니다. 전환 비용 없이도 GPU 수요를 유지할 수 있는지가 앞으로 지켜볼 지점입니다.
 
 [선택, 생략 가능] 마지막에 한 문장만: "탐색하고 전환하는 수고를 AI가 대신하게 되면, 그 수고 위에 세운 경쟁우위는 어떻게 되는가." 피클은 이름만 한 번 언급하고 답을 제시하지 않는다.
 [표현] 허깅페이스는 "인수하기로 했다" 상태다. 질문이 나오면 2027년 상반기 종결 예정이라고 답한다.`},
- {id:'f01', kind:'content', sec:0, d:'5', o5:1, min5:0.83, src:'출처: Wikipedia CUDA, NVISION 08(2008). 사진: 4-2조 발표 자료(2026.5.20)', els:[H('GPU를 범용으로 연 NVIDIA'), I('geforce', 96, 216, 560, 320), A('acronym', 720, 216, 784, 196), A('chips', 720, 472, 784, 56), CAPT('2006년 11월 · GeForce 전 제품 탑재', 720, 544, 784), A('sticker', 96, 640, 1408, 96, {lb:'핵심', t:'한 번 작성한 프로그램이 모든 NVIDIA GPU에서 실행된다. 소비자용 그래픽카드 전체가 범용 연산 장치가 되었다'})], notes:
+ {id:'f01', kind:'content', sec:0, d:'5', o5:1, min5:0.83, src:'출처: Wikipedia, NVISION 08', els:[H('GPU를 범용으로 연 NVIDIA'), I('geforce', 96, 216, 560, 320), A('acronym', 720, 216, 784, 196), A('chips', 720, 472, 784, 56), CAPT('2006년 11월 · GeForce 전 제품 탑재', 720, 544, 784), A('sticker', 96, 640, 1408, 96, {lb:'핵심', t:'한 번 작성한 프로그램이 모든 NVIDIA GPU에서 실행된다. 소비자용 그래픽카드 전체가 범용 연산 장치가 되었다'})], notes:
 `2008년 NVIDIA 행사의 물감총 시연에서, 한 로봇은 물감을 한 발씩 쏘아 웃는 얼굴을 그렸고 다른 로봇은 1,000개가 넘는 총열을 한 번에 발사해 모나리자를 그렸습니다. 앞의 방식이 CPU, 뒤의 방식이 GPU입니다.
 당시 이 연산 능력은 화면을 그리는 명령을 통해서만 쓸 수 있었습니다. NVIDIA는 GPU를 범용 연산 장치로 전환하고, 이 기능을 게임용 GeForce 전 제품에 탑재했습니다.
 그것이 CUDA, Compute Unified Device Architecture입니다. 어떤 NVIDIA GPU에서든 같은 프로그램이 실행됩니다.
 
 [주의] 물감총 시연(2008)은 CUDA 발표(2006)보다 뒤의 일이다. 5분 버전에서는 비용 이야기를 생략해도 된다.`},
- {id:'f03', kind:'content', sec:2, d:'5', o5:3, min5:1.5, src:'출처: Krizhevsky 외 (2012). 조건 구분은 발표자 해석', els:[H('NVIDIA CUDA에서 찾은 딥러닝 프로세스'), A('hbars', 96, 208, 860, 256, {cap:'ImageNet 2012 · 상위 5개 오류율'}), I('vision', 1040, 200, 464, 280),
+ {id:'f03', kind:'content', sec:2, d:'5', o5:3, min5:1.5, src:'출처: Krizhevsky, Sutskever, Hinton (2012)', els:[H('NVIDIA CUDA에서 찾은 딥러닝 프로세스'), A('hbars', 96, 208, 860, 256, {cap:'ImageNet 2012 · 상위 5개 오류율'}), I('vision', 1040, 200, 464, 280),
    A('cards', 96, 512, 1408, 300, {items:'robot|외부 연구자가 개발|대학원생이 CUDA로 직접 구현|□\npeople|시판 게임용 GPU로 접근 가능|GTX 580 두 장, 학습 5~6일|■\nbranch|공개 코드를 통한 연구 축적|이후 AI 연구 대부분이 CUDA 기반에서 진행|□', step:true})], notes:
 `2012년 토론토대학교의 한 대학원생이 신경망 학습 프로그램을 CUDA로 직접 작성했습니다. 장비는 게임용 GTX 580 두 장이었고, 학습에 5~6일이 걸렸습니다. 이미지 인식 대회에서 오류율 15.3%로 우승했고, 2위의 오류율은 26.2%였습니다.
 AlexNet은 NVIDIA가 만든 프로그램이 아닙니다. NVIDIA는 딥러닝을 겨냥한 적이 없습니다. 대학원생이 매장에서 구입할 수 있는 그래픽카드로 연구할 수 있었던 것은 GeForce 전 제품에 CUDA를 탑재했기 때문입니다. 연구팀이 코드를 공개했고, 다른 연구자들이 이를 재사용하며 후속 연구를 쌓았습니다.
@@ -995,7 +1001,7 @@ function renderCanvas(){
   c.innerHTML = s ? slideHTML(s, 'edit') : '';
   if (s){ if (selId && !s.els.some(e => e.id === selId)) selId = null; [...multi].forEach(id => { if (!s.els.some(e => e.id === id)) multi.delete(id); });
     selected().forEach(e => { const n = c.querySelector(`.el[data-id="${CSS.escape(e.id)}"]`); if (n) n.classList.add('sel'); });
-    if (selId && !multi.size){ const n = c.querySelector(`.el[data-id="${CSS.escape(selId)}"]`); if (n && !curEl().lock) n.insertAdjacentHTML('beforeend', '<div class="handle" data-h="1"></div><div class="rhandle" data-r="1" title="회전 (Shift: 15도 단위)"></div>'); } }
+    if (selId && !multi.size){ const n = c.querySelector(`.el[data-id="${CSS.escape(selId)}"]`); if (n && !curEl().lock) n.insertAdjacentHTML('beforeend', '<div class="handle" data-h="1"></div><div class="rhandle" data-r="1"></div>'); } }
   $('#notes').value = s ? (s.notes || '') : '';
 }
 let K = 1;
@@ -1012,19 +1018,19 @@ function fld(k, label, v, type = 'number'){ return `<label class="fld"><span>${l
 function renderPanel(){
   const P = $('#panel');
   if (tab === 'assets'){
-    P.innerHTML = `<div class="grp"><div class="lbl">에셋을 누르면 현재 장표에 들어갑니다</div><div class="agrid">${Object.entries(ASSETS).map(([k, a]) => `<button class="acard" type="button" data-asset="${k}"><span class="pv"><div data-pv="${k}"></div></span><b>${esc(a.name)}</b></button>`).join('')}</div></div>`;
+    P.innerHTML = `<div class="grp"><div class="agrid">${Object.entries(ASSETS).map(([k, a]) => `<button class="acard" type="button" data-asset="${k}"><span class="pv"><div data-pv="${k}"></div></span><b>${esc(a.name)}</b></button>`).join('')}</div></div>`;
     P.querySelectorAll('[data-pv]').forEach(d => { const a = ASSETS[d.dataset.pv]; const box = d.parentElement; const k = Math.min(box.clientWidth / a.nw, box.clientHeight / a.nh) * 0.9;
       d.className = 'stage static'; d.style.cssText = `width:${a.nw}px;height:${a.nh}px;background:transparent;transform:translate(${(box.clientWidth - a.nw * k) / 2}px,${(box.clientHeight - a.nh * k) / 2}px) scale(${k})`;
       d.innerHTML = a.render(Object.assign({}, a.d), {w:a.nw, h:a.nh}); });
     return;
   }
   if (tab === 'layouts'){
-    P.innerHTML = `<div class="grp"><div class="lbl">레이아웃을 누르면 현재 장표 뒤에 새 장표가 생깁니다</div><div class="agrid">${LAYOUTS.map((l, i) => `<button class="acard" type="button" data-layout="${i}"><span class="pv"><span class="stage static" data-lpv="${i}"></span></span><b>${esc(l[0])}</b></button>`).join('')}</div></div>`;
+    P.innerHTML = `<div class="grp"><div class="agrid">${LAYOUTS.map((l, i) => `<button class="acard" type="button" data-layout="${i}"><span class="pv"><span class="stage static" data-lpv="${i}"></span></span><b>${esc(l[0])}</b></button>`).join('')}</div></div>`;
     P.querySelectorAll('[data-lpv]').forEach(d => { const box = d.parentElement; const els = LAYOUTS[+d.dataset.lpv][2](); d.style.cssText = `position:absolute;left:0;top:0;transform-origin:0 0;transform:scale(${box.clientWidth / 1600})`; d.innerHTML = els.map(e => elHTML(e, 'thumb')).join(''); });
     return;
   }
   if (tab === 'images'){
-    P.innerHTML = `<div class="grp"><div class="lbl">이미지를 누르면 현재 장표에 들어갑니다</div><div class="agrid">${Object.entries(IMG).map(([k, m]) => `<button class="acard" type="button" data-img="${k}"><span class="pv"><img src="${m.src}" alt="" style="width:100%;height:100%;object-fit:cover"></span><b>${esc(m.name)}</b></button>`).join('')}</div></div>`;
+    P.innerHTML = `<div class="grp"><div class="agrid">${Object.entries(IMG).map(([k, m]) => `<button class="acard" type="button" data-img="${k}"><span class="pv"><img src="${m.src}" alt="" style="width:100%;height:100%;object-fit:cover"></span><b>${esc(m.name)}</b></button>`).join('')}</div></div>`;
     return;
   }
   const s = cur(); const e = curEl();
@@ -1046,7 +1052,7 @@ function renderPanel(){
       <div class="grp"><div class="lbl">배분 시간 (분)</div><div class="row2">${fld('min', '20', s.min ?? '', 'number')}${fld('min5', '5', s.min5 ?? '', 'number')}</div></div>
       <div class="grp ai-only"><div class="lbl">AI</div><button class="btn primary" type="button" id="bAskAll">이 장표 전체에 AI 요청</button></div>
       <div class="grp"><div class="lbl">요소 추가</div><div class="row2"><button class="btn" type="button" data-add="text">텍스트</button><button class="btn" type="button" data-add="rect">도형</button></div></div>
-      <div class="grp"><div class="lbl">단축키</div><div class="hint"><span class="kbd">${esc(KEYS('Mod+K'))}</span> 모든 명령 · <span class="kbd">더블클릭</span> 글 고치기 · <span class="kbd">우클릭</span> 메뉴 · <span class="kbd">${esc(KEYS('Mod+F'))}</span> 찾기 · <span class="kbd">${esc(KEYS('Mod+S'))}</span> 버전 저장 · <span class="kbd">Space</span>+드래그 화면 이동</div></div>
+      
       <div class="grp">${isBase && changed ? '<button class="btn" type="button" id="bReset">이 장표를 원본으로 되돌리기</button>' : ''}<button class="btn" type="button" id="bDelSlide">장표 삭제</button></div>`;
     return;
   }
@@ -1185,11 +1191,22 @@ $('#bNewDeck').addEventListener('click', () => { const p = $('#deckPop'); p.hidd
 $('#deckForm').addEventListener('submit', ev => { ev.preventDefault(); const copy = ev.submitter && ev.submitter.dataset.copy === '1'; $('#deckPop').hidden = true; createDeck($('#deckName').value, copy); $('#deckName').value = ''; });
 /* ---------- canvas interaction: select, marquee, group move, alt-duplicate, snap, resize, rotate, pan ---------- */
 const canvas = $('#canvas');
-let drag = null, marq = null, pan = null, spaceDown = false, pendPE = null, pendTXT = null;
+let drag = null, marq = null, pan = null, spaceDown = false, pendPE = null, pendTXT = null, tsel = null;
+/* text selection inside the scaled canvas is driven here, so a click puts the caret where it lands and a drag selects freely */
+function caretPoint(x, y){ if (document.caretRangeFromPoint){ const r = document.caretRangeFromPoint(x, y); return r ? {n:r.startContainer, o:r.startOffset} : null; } if (document.caretPositionFromPoint){ const c = document.caretPositionFromPoint(x, y); return c ? {n:c.offsetNode, o:c.offset} : null; } return null; }
+function textPointer(ev, host){
+  if (ev.button !== 0) return; const a = caretPoint(ev.clientX, ev.clientY); if (!a || !host.contains(a.n)) return;
+  ev.preventDefault(); host.focus({preventScroll:true}); const sel = getSelection();
+  if (ev.detail === 2){ sel.setBaseAndExtent(a.n, a.o, a.n, a.o); if (sel.modify){ sel.modify('move', 'backward', 'word'); sel.modify('extend', 'forward', 'word'); } return; }
+  if (ev.detail >= 3){ const r = document.createRange(); r.selectNodeContents(host); sel.removeAllRanges(); sel.addRange(r); return; }
+  if (ev.shiftKey && sel.rangeCount && host.contains(sel.anchorNode)) sel.setBaseAndExtent(sel.anchorNode, sel.anchorOffset, a.n, a.o);
+  else sel.setBaseAndExtent(a.n, a.o, a.n, a.o);
+  tsel = {host, a:ev.shiftKey && sel.anchorNode ? {n:sel.anchorNode, o:sel.anchorOffset} : a}; canvas.setPointerCapture(ev.pointerId);
+}
 const multi = new Set();
 function groupIds(s, id){ const e = s.els.find(x => x.id === id); return e && e.g ? s.els.filter(x => x.g === e.g).map(x => x.id) : [id]; }
 function selected(){ const s = cur(); if (!s) return []; const ids = new Set(multi); if (selId) ids.add(selId); return s.els.filter(e => ids.has(e.id)); }
-function clearSel(){ selId = null; multi.clear(); }
+function clearSel(){ selId = null; multi.clear(); if (!review) aiOpen = false; }
 function selectIds(ids){ clearSel(); ids.forEach(i => multi.add(i)); selId = ids[ids.length - 1] || null; if (multi.size === 1) multi.clear(); }
 function toSlide(ev){ const r = canvas.getBoundingClientRect(); return {x:(ev.clientX - r.left) / K, y:(ev.clientY - r.top) / K}; }
 const isBg = e => e.w >= 1500 && e.h >= 800;
@@ -1215,13 +1232,13 @@ function snapMove(s, group, dx, dy){
 canvas.addEventListener('pointerdown', ev => {
   if (ev.button === 2) return;
   if (spaceDown || ev.button === 1){ pan = {sx:ev.clientX, sy:ev.clientY, px:PX, py:PY}; canvas.setPointerCapture(ev.pointerId); ev.preventDefault(); return; }
-  if (editingText){ if (ev.target.closest('.pe.on, .editing .txt')) return; finishText(); }
+  if (editingText){ const host = ev.target.closest('.pe.on, .editing .txt'); if (host){ textPointer(ev, host); return; } finishText(); }
   const s = cur(); if (!s) return; closeCtx();
   { const nd = ev.target.closest('.el'); const te = nd && s.els.find(x => x.id === nd.dataset.id); const was = te && selId === te.id && !multi.size;
     const sp = ev.target.closest('.pe') || (ev.target.querySelectorAll && ev.target.querySelectorAll('.pe').length === 1 ? ev.target.querySelector('.pe') : null);
     if (te && !te.lock && !ev.shiftKey && !ev.altKey && (ev.detail >= 2 || was)){
-      if (sp && te.type === 'asset'){ ev.preventDefault(); if (!was){ selectIds([te.id]); renderCanvas(); } const sp2 = canvas.querySelector(`.el[data-id="${CSS.escape(te.id)}"] .pe[data-pe="${sp.dataset.pe}"]`); if (ev.detail >= 2 || was){ pendPE = {span:sp2, id:te.id, x:ev.clientX, y:ev.clientY}; } }
-      else if (te.type === 'text' && (ev.detail >= 2)){ ev.preventDefault(); startEdit(te.id); return; }
+      if (sp && te.type === 'asset'){ ev.preventDefault(); if (!was){ selectIds([te.id]); renderCanvas(); } const sp2 = canvas.querySelector(`.el[data-id="${CSS.escape(te.id)}"] .pe[data-pe="${sp.dataset.pe}"]`); if (ev.detail >= 2 || was){ pendPE = {span:sp2, id:te.id, x:ev.clientX, y:ev.clientY, word:ev.detail >= 2}; } }
+      else if (te.type === 'text' && (ev.detail >= 2)){ ev.preventDefault(); startEdit(te.id, ev.clientX, ev.clientY, true); return; }
       else if (te.type === 'text' && was){ pendTXT = {id:te.id, x:ev.clientX, y:ev.clientY}; }
     } }
   const elNode = ev.target.closest('.el'); const id = elNode && elNode.dataset.id; let e = id && s.els.find(x => x.id === id);
@@ -1246,6 +1263,7 @@ canvas.addEventListener('pointerdown', ev => {
   hideAI(); canvas.setPointerCapture(ev.pointerId); ev.preventDefault();
 });
 canvas.addEventListener('pointermove', ev => {
+  if (tsel){ const b = caretPoint(ev.clientX, ev.clientY); if (b && tsel.host.contains(b.n)) getSelection().setBaseAndExtent(tsel.a.n, tsel.a.o, b.n, b.o); return; }
   if (pan){ PX = pan.px + ev.clientX - pan.sx; PY = pan.py + ev.clientY - pan.sy; applyView(); return; }
   if (marq){ const p = toSlide(ev); marq.x1 = p.x; marq.y1 = p.y; drawMarq(); return; }
   if (!drag) return; const s = cur(); const e = s.els.find(x => x.id === drag.id); if (!e) return;
@@ -1275,6 +1293,7 @@ canvas.addEventListener('pointermove', ev => {
   drag.group.forEach(g => { g.e.x = snap4(g.x + dx); g.e.y = snap4(g.y + dy); const n = canvas.querySelector(`.el[data-id="${CSS.escape(g.e.id)}"]`); if (n){ n.style.left = g.e.x + 'px'; n.style.top = g.e.y + 'px'; } });
 });
 canvas.addEventListener('pointerup', () => {
+  if (tsel){ tsel = null; return; }
   guides([]);
   if (pan){ pan = null; return; }
   if (marq){
@@ -1285,8 +1304,8 @@ canvas.addEventListener('pointerup', () => {
   }
   if (!drag){ pendPE = pendTXT = null; return; } const moved = drag.moved; drag = null; dragging = false;
   if (moved){ pendPE = pendTXT = null; changed(cur(), {panel:true}); }
-  else if (pendPE && pendPE.span){ const p0 = pendPE; pendPE = pendTXT = null; startPE(p0.span, p0.id); return; }
-  else if (pendTXT){ const t0 = pendTXT; pendPE = pendTXT = null; startEdit(t0.id); return; }
+  else if (pendPE && pendPE.span){ const p0 = pendPE; pendPE = pendTXT = null; peAt = {x:p0.x, y:p0.y, word:p0.word}; startPE(p0.span, p0.id); return; }
+  else if (pendTXT){ const t0 = pendTXT; pendPE = pendTXT = null; startEdit(t0.id, t0.x, t0.y); return; }
   pendPE = pendTXT = null;
   placeAI();
 });
@@ -1301,29 +1320,35 @@ function setPE(e, spec, text){
     v = L.join('\n'); }
   if (v === before) return false; e.p[k] = v; return true;
 }
-let peEdit = null;
+let peEdit = null, peAt = null;
 function startPE(span, elId){
   const s = cur(); const e = s && s.els.find(x => x.id === elId); if (!e || e.lock) return;
   snapshot('도식 글 수정'); editingText = true; peEdit = {id:elId, spec:span.dataset.pe}; selId = elId; multi.clear();
   const host = span.closest('.el'); host.classList.add('editing'); span.classList.add('on');
   span.contentEditable = 'true';
-  span.focus(); const r = document.createRange(); r.selectNodeContents(span); const sl = getSelection(); sl.removeAllRanges(); sl.addRange(r);
+  span.focus(); caretAt(span, peAt && peAt.x, peAt && peAt.y, peAt && peAt.word); peAt = null;
   span.addEventListener('keydown', ev => { if (ev.key === 'Enter' && !ev.shiftKey){ ev.preventDefault(); finishText(); } }, {once:false});
   hideAI();
 }
-function startEdit(id){
+function caretAt(host, x, y, word){
+  const sel = getSelection(); let r = null;
+  if (x != null){ if (document.caretRangeFromPoint) r = document.caretRangeFromPoint(x, y); else if (document.caretPositionFromPoint){ const cp = document.caretPositionFromPoint(x, y); if (cp){ r = document.createRange(); r.setStart(cp.offsetNode, cp.offset); } } }
+  if (!r || !host.contains(r.startContainer)){ r = document.createRange(); r.selectNodeContents(host); r.collapse(false); }
+  r.collapse(true); sel.removeAllRanges(); sel.addRange(r);
+  if (word && sel.modify){ sel.modify('move', 'backward', 'word'); sel.modify('extend', 'forward', 'word'); }
+}
+function startEdit(id, x, y, word){
   const s = cur(); const n = canvas.querySelector(`.el[data-id="${CSS.escape(id)}"]`); const e = s && s.els.find(x => x.id === id); if (!n || !e || e.lock || e.type !== 'text') return;
-  snapshot('텍스트 편집'); editingText = true; multi.clear(); selId = e.id; n.classList.add('editing');
+  snapshot('텍스트 편집'); editingText = true; multi.clear(); selId = e.id; n.classList.add('editing'); n.querySelectorAll('.handle,.rhandle').forEach(h => h.remove());
   const t = n.querySelector('.txt'); t.contentEditable = 'true'; t.focus();
-  const r = document.createRange(); r.selectNodeContents(t); r.collapse(false); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r);
-  hideAI();
+  caretAt(t, x, y, word); hideAI();
 }
 canvas.addEventListener('dblclick', ev => {
   if (editingText) return;
   const n = ev.target.closest('.el') || document.elementFromPoint(ev.clientX, ev.clientY)?.closest('#canvas .el'); const s = cur(); if (!n || !s) return;
   const e = s.els.find(x => x.id === n.dataset.id); if (!e || e.lock) return;
   if (e.type !== 'text'){ if (e.type === 'asset' && !n.querySelector('.pe')){ tab = 'props'; setTab(); renderPanel(); const f = $('#panel [data-p], #panel .grid input'); if (f) f.focus(); } return; }
-  startEdit(e.id);
+  startEdit(e.id, ev.clientX, ev.clientY, true);
 });
 function finishText(){
   if (peEdit){ const pe0 = peEdit; peEdit = null; editingText = false; aiRange = null; const s = cur(); const e = s && s.els.find(x => x.id === pe0.id); const sp = canvas.querySelector('.pe.on');
@@ -1454,31 +1479,37 @@ function aiFail(err){
   if (code === 'aborted' || (err && err.name === 'AbortError')) return;
   toast(code === 'rate_limited' ? '요청이 많습니다. 잠시 뒤에 다시 시도해 주세요' : '요청을 처리하지 못했습니다. 다시 시도해 주세요');
 }
-function hideAI(){ const b = $('#aibar'); if (b && !b.classList.contains('busy') && !review) b.hidden = true; }
+function hideAI(){ const b = $('#aibar'); if (b && !b.classList.contains('busy') && !review) b.hidden = true; const d = $('#aiDot'); if (d) d.hidden = true; }
+let aiOpen = false;
 function placeAI(force){
-  const bar = $('#aibar'); if (!sample || !bar) return;
+  const bar = $('#aibar'); const dot = $('#aiDot'); if (!sample || !bar) return; if (force) aiOpen = true;
   const vp = $('#viewport').getBoundingClientRect(); const cw = $('#canvasWrap').getBoundingClientRect(); let box = null;
   const sel = selected();
-  if (aiRange){ const rr = aiRange.getBoundingClientRect(); box = {l:rr.left - vp.left, t:rr.top - vp.top, b:rr.bottom - vp.top}; }
+  if (aiRange){ const rr = aiRange.getBoundingClientRect(); box = {l:rr.left - vp.left, r:rr.right - vp.left, t:rr.top - vp.top, b:rr.bottom - vp.top}; }
   else {
-    if (!(review || force || sel.length) || (editingText && !review)){ if (!bar.classList.contains('busy')) bar.hidden = true; return; }
+    if (!(review || force || sel.length) || (editingText && !review && !aiRange)){ if (!bar.classList.contains('busy')) bar.hidden = true; dot.hidden = true; aiOpen = false; return; }
     if (!sel.length && aiScope === 'sel') aiScope = 'slide';
     if (sel.length && !review && !force && aiScope !== 'sel') aiScope = 'sel';
-    if (sel.length && aiScope === 'sel'){ const x0 = Math.min(...sel.map(e => e.x)), y0 = Math.min(...sel.map(e => e.y)), y1 = Math.max(...sel.map(e => e.y + e.h)); box = {l:cw.left - vp.left + x0 * K, t:cw.top - vp.top + y0 * K, b:cw.top - vp.top + y1 * K}; }
+    if (sel.length && aiScope === 'sel'){ const x0 = Math.min(...sel.map(e => e.x)), y0 = Math.min(...sel.map(e => e.y)), y1 = Math.max(...sel.map(e => e.y + e.h)); box = {l:cw.left - vp.left + x0 * K, r:cw.left - vp.left + Math.max(...sel.map(e => e.x + e.w)) * K, t:cw.top - vp.top + y0 * K, b:cw.top - vp.top + y1 * K}; }
     else box = {l:cw.left - vp.left + 24, t:cw.top - vp.top + 16, b:cw.top - vp.top + 16};
   }
-  bar.hidden = false; const w = bar.offsetWidth, h = bar.offsetHeight;
+  if (!(aiOpen || review || bar.classList.contains('busy'))){
+    bar.hidden = true; dot.hidden = false; const rx = box.r != null ? box.r : box.l;
+    dot.style.left = Math.max(8, Math.min(vp.width - 40, rx - 16)) + 'px'; dot.style.top = (box.t - 40 >= 8 ? box.t - 40 : box.b + 8) + 'px'; return; }
+  dot.hidden = true; bar.hidden = false; const w = bar.offsetWidth, h = bar.offsetHeight;
   const left = Math.max(8, Math.min(vp.width - w - 8, box.l)); let top = box.b + 8; if (top + h > vp.height - 8) top = Math.max(8, box.t - h - 8);
   bar.style.left = left + 'px'; bar.style.top = top + 'px';
   document.querySelectorAll('#aiScope button').forEach(x => { x.setAttribute('aria-pressed', String(x.dataset.scope === aiScope)); x.disabled = !!aiRange || (x.dataset.scope === 'sel' && !sel.length); });
   $('#aiCount').textContent = aiRange ? '선택한 문장' : aiScope === 'deck' ? `덱 전체 ${list().length}장` : aiScope === 'slide' ? '이 장표 전체' : `${sel.length}개 요소`;
 }
+$('#aiDot').addEventListener('mousedown', ev => ev.preventDefault());
+$('#aiDot').addEventListener('click', () => { placeAI(true); setTimeout(() => { if (!aiRange) $('#aiq').focus(); }, 0); });
 document.addEventListener('selectionchange', () => {
   if (!editingText || !sample) return; const sl = getSelection();
   if (sl.rangeCount && !sl.isCollapsed){ const r = sl.getRangeAt(0); const host = r.commonAncestorContainer.nodeType === 1 ? r.commonAncestorContainer : r.commonAncestorContainer.parentElement;
     if (host && host.closest('.txt[contenteditable=true]')){ aiRange = r.cloneRange(); placeAI(); return; } }
   if (document.activeElement && document.activeElement.closest && document.activeElement.closest('#aibar')) return;
-  aiRange = null; const b = $('#aibar'); if (b && !b.classList.contains('busy')) b.hidden = true;
+  aiRange = null; const b = $('#aibar'); if (b && !b.classList.contains('busy') && !review){ b.hidden = true; aiOpen = false; } const d = $('#aiDot'); if (d) d.hidden = true;
 });
 $('#aibar').addEventListener('mousedown', ev => { if (ev.target.closest('.chip')) ev.preventDefault(); });
 $('#aibar').addEventListener('click', ev => { const c = ev.target.closest('.chip'); if (c) runAI(QUICK[c.dataset.q]); });
@@ -1524,7 +1555,7 @@ const LAYOUTS = [
   ['2×2 매트릭스', 5, () => [H('CUDA와 허깅페이스'), A('matrix', 96, 196, 900, 582), A('kv', 1040, 236, 464, 420, {t:'판단 기준', rows:'가로축|외부 개발자 결과물의 축적 정도\n세로축|다른 플랫폼으로 옮기는 비용'})]],
   ['계층 구조', 1, () => [H('CUDA 플랫폼의 구조'), A('stack', 210, 200, 1180, 600)]],
   ['네트워크 효과', 1, () => [H('개발자와 GPU가 서로를 키운다'), A('flywheel', 96, 196, 760, 600), A('kv', 944, 236, 560, 420)]],
-  ['단계 타임라인', 3, () => [H('CUDA의 진화 단계'), A('phases', 96, 216, 1408, 400), A('kpis', 96, 640, 1408, 168, {rows:'1,100만 명|CUDA 개발자 수|NVIDIA 집계|g\n1,000개+|CUDA-X 라이브러리|NVIDIA 개발'})]],
+  ['단계 타임라인', 3, () => [H('CUDA의 진화 단계'), A('phases', 96, 216, 1408, 400), A('kpis', 96, 640, 1408, 168, {rows:'1,100만 명|CUDA 개발자 수|NVIDIA 집계|g\n1,000개+|CUDA-X 라이브러리|NVIDIA 제공'})]],
   ['찬반 논거', 4, () => [H('두 가지 시각'), A('debate', 96, 216, 1408, 520)]],
   ['비교표', 5, () => [H('CUDA와 허깅페이스 비교'), A('cmptable', 96, 232, 1408, 330), A('sticker', 96, 640, 1408, 96)]],
   ['네 가지 요인', 2, () => [H('NVIDIA CUDA에서 찾은 딥러닝 프로세스'), A('cards', 96, 216, 1408, 440), A('sticker', 96, 704, 1408, 96, {fill:true})]],
@@ -1768,7 +1799,7 @@ function openCtx(x, y){
   openHtmlCtx(x, y);
 }
 function openHtmlCtx(x, y){
-  const m = $('#ctx'); m.innerHTML = ctxItems().map(it => it ? `<button type="button" data-cmd="${it[0]}" ${it[1] ? '' : 'disabled'}><span>${esc(CMD[it[0]].l)}</span><kbd>${esc(KEYS(CMD[it[0]].k))}</kbd></button>` : '<hr>').join('');
+  const m = $('#ctx'); m.innerHTML = ctxItems().map(it => it ? `<button type="button" data-cmd="${it[0]}" ${it[1] ? '' : 'disabled'}><span>${esc(CMD[it[0]].l)}</span></button>` : '<hr>').join('');
   m.hidden = false; const w = m.offsetWidth, h = m.offsetHeight; m.style.left = Math.min(x, innerWidth - w - 8) + 'px'; m.style.top = Math.min(y, innerHeight - h - 8) + 'px';
   const first = m.querySelector('button:not([disabled])'); if (first) first.focus();
 }
@@ -1787,7 +1818,7 @@ function palEntries(q){
   Object.entries(ASSETS).forEach(([k, a]) => items.push({t:'에셋: ' + a.name, run:() => addAsset(k), kind:'삽입'}));
   const qq = q.trim().toLowerCase(); return qq ? items.filter(it => it.t.toLowerCase().includes(qq)).slice(0, 40) : items.slice(0, 40);
 }
-function renderPal(){ const it = palEntries($('#palq').value); palSel = Math.min(palSel, it.length - 1); $('#pall').innerHTML = it.map((x, i) => `<button type="button" data-i="${i}" aria-selected="${i === palSel}"><em>${esc(x.kind)}</em><span>${esc(x.t)}</span>${x.k ? `<kbd>${esc(KEYS(x.k))}</kbd>` : ''}</button>`).join(''); $('#pall').__items = it; const a = $('#pall').querySelector('[aria-selected=true]'); if (a) a.scrollIntoView({block:'nearest'}); }
+function renderPal(){ const it = palEntries($('#palq').value); palSel = Math.min(palSel, it.length - 1); $('#pall').innerHTML = it.map((x, i) => `<button type="button" data-i="${i}" aria-selected="${i === palSel}"><em>${esc(x.kind)}</em><span>${esc(x.t)}</span></button>`).join(''); $('#pall').__items = it; const a = $('#pall').querySelector('[aria-selected=true]'); if (a) a.scrollIntoView({block:'nearest'}); }
 function openPal(){ if (editingText) finishText(); $('#pal').hidden = false; $('#palq').value = ''; palSel = 0; renderPal(); $('#palq').focus(); }
 function closePal(){ $('#pal').hidden = true; }
 $('#palq').addEventListener('input', () => { palSel = 0; renderPal(); });
@@ -2017,7 +2048,7 @@ function renderCheck(P){
 }
 function renderHist(P){
   const ago = t => { const m = Math.round((Date.now() - t) / 60000); return m < 1 ? '방금' : m < 60 ? m + '분 전' : Math.round(m / 60) + '시간 전'; };
-  P.innerHTML = `<div class="grp"><div class="lbl">저장한 버전</div><button class="btn primary" type="button" data-cmd="save">지금 버전 저장 <kbd>${esc(KEYS('Mod+S'))}</kbd></button>
+  P.innerHTML = `<div class="grp"><div class="lbl">저장한 버전</div><button class="btn primary" type="button" data-cmd="save">지금 버전 저장</button>
     <div class="vers">${versions.map(v => `<div class="vr"><span>${esc(v.name || '')}<em>${esc(ago(v.at || 0))} · ${(v.slides || []).length}장</em></span><button class="btn" type="button" data-ver="${esc(v.id)}">복원</button></div>`).join('') || '<div class="hint">저장한 버전이 없습니다</div>'}</div></div>
     <div class="grp"><div class="lbl">이번 세션의 수정 이력</div><div class="hlist">${undo.slice().reverse().slice(0, 40).map(u => `<div>${esc(u.label)}</div>`).join('') || '<div class="hint">아직 수정하지 않았습니다</div>'}</div>
     <div class="row2"><button class="btn" type="button" data-cmd="undo">실행 취소</button><button class="btn" type="button" data-cmd="redo">다시 실행</button></div></div>`;
@@ -2172,6 +2203,6 @@ let hotT; $('#present').addEventListener('mousemove', () => { const o = $('#pres
 new ResizeObserver(() => { fitCanvas(); fitThumbs(); placeAI(); }).observe($('#viewport'));
 loadLocal(); renderAll(); fitCanvas(); setSync('local'); renderDecks();
 $('#genSec').innerHTML = '<option value="-1">요약</option>' + SECTIONS.map((t, i) => `<option value="${i}">${esc(t)}</option>`).join('');
-connect(); initAI(); initDesktop(); subVersions(); renderStatus(); $('#bPal .kb').textContent = KEYS('Mod+K');
+connect(); initAI(); initDesktop(); subVersions(); renderStatus();
 })();
 </script>
