@@ -6,7 +6,7 @@ Main P001–P100 remain unchanged. P101/P109/P120/P137/P147 exist in PR #1; thei
 
 The first production cycle is S1E01 → S2E01 → S3E01 → S4E01; complete each before moving on. Then repeat for E02 through E08. Release dates remain unset. 8–9 minutes is the planning default; 6–12 minutes requires a story reason and measured VO. Shorts are not substitutes.
 
-## S1: DESIGN AND MANUFACTURING / 설계와 제조의 분리
+## S1: DESIGN AND MANUFACTURING AS SEPARATE BUSINESSES / 설계와 제조의 분리
 
 How did chip design and chip manufacturing become separate businesses?
 
@@ -18,10 +18,11 @@ How did chip design and chip manufacturing become separate businesses?
 - Protagonist / conflict: Morris Chang's TSMC and chip designers who need manufacturing capacity but not a manufacturer that competes with them
 - Choice: Operate as a dedicated foundry that manufactures customer designs and sells no chip products of its own
 - 3D event: A customer's layout enters a wafer carrier; finished dies return to the customer, and the design stays with the customer
-- Payoff: The viewer can see that a foundry sells wafer capacity together with a commitment not to compete with its customers
+- Payoff: The viewer can see that a foundry offers wafer capacity together with a commitment not to compete with its customers; whether that commitment won the first customers is still to be verified
 - Overlap boundary: Pure-play foundry/customer rivalry and manufacturing trust; RCA/ITRI transfer is S1E04 and later process independence is S1E05.
-- Next: S1E02 — S1E01 separates design ownership from manufacturing; S1E02 goes back to eight engineers leaving Shockley's company, an earlier case of manufacturing know-how moving between firms with its people.
+- Next: S1E02 — S1E01 separates who owns a design from who manufactures it; that separation needs manufacturing know-how that can exist outside the designer, and S1E02 goes back to an earlier case where such know-how left one company with eight engineers.
 - Selection: RECOVERED_PR1_CORE — Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.
+- Selection flag: 비경쟁 원칙이 초기 수주의 원인이었다는 인과는 초기 고객·계약 자료 확인 전(P004 flag 반영). 원칙과 수주를 인과로 단정하지 않음.
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: TSMC 창업 당시 인터뷰·초기 고객 계약·연차보고서.
 
 ### S1E02 · The Eight Engineers Who Left Shockley for Fairchild
@@ -32,10 +33,11 @@ How did chip design and chip manufacturing become separate businesses?
 - Protagonist / conflict: Eight engineers in a dispute with Shockley's management
 - Choice: Resign together and organise a new company
 - 3D event: Illustrative reconstruction: the same process notebooks appear first at benches in Shockley's laboratory, then at a newly built fabrication line
-- Payoff: The viewer can separate what moved with the engineers (skills and process knowledge) from what a new company still had to arrange before it could sell products
+- Payoff: The viewer can separate what moved with the engineers (skills and process knowledge) from what a new company still had to arrange before it could sell products; the signing anecdote and conflict accounts are still to be verified
 - Overlap boundary: Fairchild founding as a case of process knowledge moving with people; not a single-origin history of Silicon Valley.
 - Next: S1E03 — S1E02 shows engineers leaving to build a new manufacturer; S1E03 shows a different arrangement, AMD keeping chip design and separating its factories into another company.
 - Selection: RECOVERED_PR1_CORE — Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.
+- Selection flag: 퇴사 서명 일화와 갈등 기록이 검증 전이며 지역 산업의 단일 기원 서사로 확대할 위험(P061 flag 반영).
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: Fairchild 창립 기록·개인 구술·계약 문서.
 
 ### S1E03 · AMD, GlobalFoundries and the Move to Fabless
@@ -60,10 +62,11 @@ How did chip design and chip manufacturing become separate businesses?
 - Protagonist / conflict: ITRI engineers and Taiwan's industrial-policy officials facing a gap in process experience
 - Choice: License process technology from RCA and train engineers and operators
 - 3D event: Illustrative reconstruction: operators run successive wafer lots on a period production line until test results meet qualification
-- Payoff: The viewer can see why running a process repeatably with stable results came before a foundry could sell manufacturing services to outside customers
+- Payoff: The viewer can see why running a licensed process with stable results was a separate capability from licensing it; whether this directly led to the later foundry business is still to be verified
 - Overlap boundary: RCA/ITRI technology transfer, training and qualification before TSMC; do not repeat the pure-play founding thesis of S1E01.
 - Next: S1E05 — S1E04 shows production built on licensed process knowledge; S1E05 asks when a foundry would take on the cost and risk of developing a process itself.
 - Selection: RECOVERED_PR1_CORE — Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.
+- Selection flag: 첫 파견 인원의 성과로 전체 기술 이전을 축약할 위험, 이후 파운드리 사업과의 직접 연결은 검증 전(P066·H035 반영).
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: ITRI 초기 인력 이전 기록·생산 보고서.
 
 ### S1E05 · TSMC and Copper Interconnect Process Development
@@ -123,7 +126,7 @@ How did chip design and chip manufacturing become separate businesses?
 - Selection: NEW_PRODUCTION_JUDGMENT — Editorial addition from existing PR #1 candidates to link design interfaces and system ownership; not a recovered user approval of its claims.
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: Apple 공식 SoC 소개·TSMC 공개 제조 자료.
 
-## S2: TECHNICAL LIMITS AND ARCHITECTURE CHOICES / 기술 한계와 아키텍처 선택
+## S2: TECHNICAL LIMITS AND DESIGN CHOICES / 기술 한계와 설계 선택
 
 How do technical constraints change which chip architectures are worth adopting?
 
@@ -135,10 +138,11 @@ How do technical constraints change which chip architectures are worth adopting?
 - Protagonist / conflict: GPU designers serving a paying games market while extending their hardware to general computation
 - Choice: Invest in programmable parallel hardware
 - 3D event: A graphics board renders pixels; the same execution units are then shown processing numerical arrays
-- Payoff: The viewer can see that game sales supplied a market for parallel hardware, while programming software and research use were separate steps toward AI computing
+- Payoff: The viewer can see that game sales created a market for programmable parallel hardware, and that software and research use were separate later steps toward AI computing; whether game revenue funded AI development is still to be verified
 - Overlap boundary: GPU market and programmability; the AlexNet result belongs to S2E06; later AI use is not presented as the designers' original intent.
 - Next: S2E02 — S2E01 depends on parallel hardware built from transistors; S2E02 returns to the early transistor and the problem of making it repeatably.
 - Selection: RECOVERED_PR1_CORE — Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.
+- Selection flag: 게임 매출이 AI용 GPU 개발 자금이 됐다는 인과는 사후 해석일 수 있음. 당시 의도를 AI로 소급하지 않음(P055·H081 반영).
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: NVIDIA·ATI 초기 GPU 연혁·API/제품 스펙.
 
 ### S2E02 · Bell Labs' Transistor: From Lab Device to Production
@@ -151,7 +155,7 @@ How do technical constraints change which chip architectures are worth adopting?
 - 3D event: A point-contact device amplifies a signal, then fails a repeatability test across samples
 - Payoff: The viewer can distinguish demonstrating a device once from producing it reliably, two different engineering problems
 - Overlap boundary: Point-contact transistor and reproducibility; not a general history of all transistor types.
-- Next: S2E03 — S2E02 makes the transistor reproducible; S2E03 moves to processors that execute instructions speculatively for speed, and to the data this exposed.
+- Next: S2E03 — Once transistors could be made in volume, designers spent them on techniques for speed; S2E03 shows one of those techniques, speculative execution, and the data it exposed.
 - Selection: RECOVERED_PR1_CORE — Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: Bell Labs 노트·특허·연구자 구술 기록 날짜별 대조.
 
@@ -163,7 +167,7 @@ How do technical constraints change which chip architectures are worth adopting?
 - Protagonist / conflict: CPU architects and security researchers weighing performance against isolation between processes
 - Choice: Execute instructions speculatively before access checks resolve; after disclosure, add mitigations
 - 3D event: A rejected instruction leaves a cache state change that a second process measures by timing
-- Payoff: The viewer can see why discarding a speculative result does not remove every hardware side effect, and why mitigations involve a performance tradeoff
+- Payoff: The viewer can see why discarding a speculative result does not remove every hardware side effect; the size of the performance cost of mitigations is still to be verified
 - Overlap boundary: Speculative-execution side channels; not a survey of all CPU security flaws.
 - Next: S2E04 — S2E03 trades isolation for speed; S2E04 looks at early CMOS, where developers accepted lower speed to reduce power consumption.
 - Selection: RECOVERED_PR1_CORE — Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.
@@ -193,7 +197,7 @@ How do technical constraints change which chip architectures are worth adopting?
 - 3D event: One instruction passes through different processor cores and their test benches
 - Payoff: The viewer can separate what an open specification makes available from the design, verification and fabrication costs of a finished chip
 - Overlap boundary: Open instruction-set economics and implementation cost; circuit technology is S2E04.
-- Next: S2E06 — S2E05 shows that a specification is a starting point; S2E06 shows the AlexNet experiment, where a specific hardware and software choice affected a result.
+- Next: S2E06 — S2E05 separates a published specification from the hardware built on it; S2E06 looks at a case where existing graphics hardware, not a new design, made a 2012 training run practical. Thematic link, not causal.
 - Selection: RECOVERED_PR1_CORE — Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: RISC-V International 규격·실제 구현체 공개 논문.
 
@@ -205,24 +209,26 @@ How do technical constraints change which chip architectures are worth adopting?
 - Protagonist / conflict: AlexNet researchers facing training time and memory limits
 - Choice: Split training across two GPUs
 - 3D event: Image batches divide across two boards and combine at an evaluation result
-- Payoff: The viewer can see what splitting training across two GPUs enabled for one benchmark result, within the limits of that contest
+- Payoff: The viewer can see what splitting training across two GPUs enabled for one benchmark result, alongside the data and model choices that also shaped it
 - Overlap boundary: 2012 experiment and its specific result; GPU industry origin belongs to S2E01
 - Next: S2E07 — One research result can influence investment; S2E07 asks how the industry coordinated investment around Moore's forecast of chip scaling.
 - Selection: RECOVERED_PR1_CORE — Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.
+- Selection flag: 결과 변화를 GPU 두 장에만 귀속하면 데이터·모델의 기여를 지우는 인과 과장(H083 반영).
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: AlexNet 2012 논문·ImageNet 당시 규칙·후속 인프라 자료.
 
 ### S2E07 · Moore's 1965 Forecast and Industry Roadmaps
 
 - Source: PR #1 P010 → main P010; H: H030. Original title: Moore's Law Became a Factory Deadline.
 - Korean title: 무어의 1965년 예측과 산업 로드맵
-- Question: How did a forecast become a schedule for industry investment?
+- Question: How was Moore's 1965 forecast later used in industry roadmaps?
 - Protagonist / conflict: Chip firms and equipment suppliers synchronizing investment
 - Choice: Coordinate research and capital spending around a scaling schedule
 - 3D event: A wafer layout shrinks on schedule while a delayed tool delivery misses the next process window
-- Payoff: The viewer can see how a published forecast was turned into roadmap targets that chipmakers and equipment suppliers planned investment against
+- Payoff: The viewer can see how a published forecast was later written into roadmap targets; when it became an investment benchmark is still to be verified
 - Overlap boundary: Moore's forecast as an investment-coordination schedule; physical power limits are S2E08.
 - Next: S2E08 — S2E07 assumes scaling keeps delivering useful gains; S2E08 asks what happens when raising clock speed stops being an affordable way to gain performance.
 - Selection: NEW_PRODUCTION_JUDGMENT — Editorial addition from existing PR #1 candidates to link scaling commitments and power limits; not a recovered user approval of its claims.
+- Selection flag: 1965년 논문이 곧바로 투자 기준이 됐다는 전제는 채택 시점 근거 확인 전, 시간 순서를 인과로 압축할 위험(H030 반영).
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: Gordon Moore 1965 원문·후속 인터뷰·산업 로드맵.
 
 ### S2E08 · Heat Limits on Processor Clock Speeds
@@ -243,7 +249,7 @@ How do technical constraints change which chip architectures are worth adopting?
 
 How do cell design, manufacturing and market structure set the cost of a memory bit?
 
-### S3E01 · Why Intel Left DRAM
+### S3E01 · Intel's 1985 Exit From DRAM
 
 - Source: PR #1 P046 → main P046; H: H061. Original title: The Day Intel Quit the Business It Invented.
 - Korean title: 인텔의 DRAM 사업 철수
@@ -281,7 +287,7 @@ How do cell design, manufacturing and market structure set the cost of a memory 
 - 3D event: Two qualification benches test distinct customer requirements beside a falling price order
 - Payoff: The viewer can see why product quality alone does not explain a national industry's market outcome
 - Overlap boundary: Japanese memory firms facing changing customer requirements, price and costs; not a single-cause quality verdict or an Intel-exit retelling.
-- Next: S3E04 — A changing market penalises the wrong cost structure; S3E04 looks at the self-aligned silicon gate, a process choice that changed what manufacturers could build economically.
+- Next: S3E04 — S3E03 shows product mix, cost and customer requirements changing together; S3E04 looks at one process choice, the self-aligned silicon gate, that changed manufacturing cost.
 - Selection: RECOVERED_PR1_CORE — Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.
 - Selection flag: '일본이 최고 품질의 메모리를 만들었고 그것이 약점이었다'는 단일 원인 서사가 원래 전제이나 검증 전이므로 제품 구성·원가·고객 요구를 함께 보는 범위로 좁힘.
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: 고품질·장수명 설계가 값싼 PC용 메모리 시대에 약점이 된 과정.
@@ -310,7 +316,7 @@ How do cell design, manufacturing and market structure set the cost of a memory 
 - 3D event: Illustrative model: an initially sparse good-die map improves across successive lots
 - Payoff: The viewer can see market entry as repeated yield improvement across production lots, not a single announcement
 - Overlap boundary: Samsung DRAM entry, capital commitment and repeated process learning; Intel exit is contextual background only.
-- Next: S3E06 — S3E05 builds production capability; S3E06 shows another source of value, the erasable EPROM, which changed how customers reused a chip during development.
+- Next: S3E06 — S3E05 shows a firm building production capability through repeated process learning; S3E06 looks at a product feature, the erasable EPROM window, that shortened customers' development cycles. Thematic link, not causal.
 - Selection: RECOVERED_PR1_CORE — Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.
 - Selection flag: 원제의 '실패할 것이라는 말을 들었다' 일화는 출처 검증 전이므로 제목·전제에서 빼고 진입 결정과 공정 학습으로 좁힘.
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: 미국·일본·한국 초기 DRAM 문서와 기업 공시.
@@ -332,7 +338,7 @@ How do cell design, manufacturing and market structure set the cost of a memory 
 ### S3E07 · Dennard's One-Transistor DRAM Cell
 
 - Source: PR #1 P042 → main P042; H: H044. Original title: Two Components, One Bit of DRAM.
-- Korean title: 데나드의 1T1C DRAM 셀
+- Korean title: 데나드의 1트랜지스터 DRAM 셀
 - Question: How did one transistor and one capacitor change a bit's economics?
 - Protagonist / conflict: Dennard and memory designers facing density and refresh tradeoffs
 - Choice: Store each bit as capacitor charge and restore it periodically (refresh)
@@ -347,7 +353,7 @@ How do cell design, manufacturing and market structure set the cost of a memory 
 
 - Source: PR #1 P044 → main P044; H: H047, H048. Original title: Inventing Flash Didn't Win the Market.
 - Korean title: 도시바의 플래시 발명과 시장 주도권
-- Question: Why did inventing flash not decide which companies led its market?
+- Question: What did Toshiba's invention and later manufacturers each contribute to flash products?
 - Protagonist / conflict: Inventors and manufacturers facing product and investment choices
 - Choice: Convert a cell into reliable scalable products
 - 3D event: An erase block resets, then a factory tests endurance and yield
@@ -355,24 +361,26 @@ How do cell design, manufacturing and market structure set the cost of a memory 
 - Overlap boundary: Episode-specific mechanism and choice; review before script lock
 - Next: season resolution — Season 3 closes with three distinct costs of memory: making a cell work, making it repeatedly at scale, and building the products and customer relationships that sell it.
 - Selection: NEW_PRODUCTION_JUDGMENT — Editorial addition from existing PR #1 candidates to link cell economics and commercialisation; not a recovered user approval of its claims.
+- Selection flag: '발명한 회사가 시장까지 갖는 것은 아니다'는 일반화는 근거 부족, 인텔 팀·첫 고객·제조 장애물 자료 부족(H048 반영).
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: Toshiba 초기 flash 논문·업체 사업 연혁·시장자료.
 
 ## S4: GOVERNMENT POLICY AND CHIP MARKETS / 정부 정책과 반도체 시장
 
 How do public decisions change what companies can build and sell?
 
-### S4E01 · AI Chips Redesigned for 2022–23 Export Rules
+### S4E01 · Export Control Thresholds and AI Chip Specifications, 2022–23
 
 - Source: PR #1 P089 → main P089; H: H099. Original title: The AI Chip Rebuilt to Slip Under a Law.
-- Korean title: 2022–23년 수출 규제와 AI 칩 재설계
+- Korean title: 2022–23년 수출 통제 기준과 AI 칩 사양
 - Question: How can an export rule change a chip before it ships?
 - Protagonist / conflict: Chip suppliers and regulators facing changing performance thresholds
-- Choice: Redesign a product against the rules in force on a given date
-- 3D event: Interconnect bandwidth is reduced on a chip while an export check applies a dated performance threshold
-- Payoff: The viewer can see how a product specification and its export classification changed together; no claim is made about current legality
+- Choice: To be verified: how chip specifications related to the export thresholds in force on given dates
+- 3D event: A chip's specification sheet is laid against a dated export threshold; the classification changes with the date, not the chip
+- Payoff: The viewer can see how an export classification depends on product specifications on a given date; no claim is made about current legality or about a specific redesign
 - Overlap boundary: Dated export-control thresholds and product redesign; Japan's 2019 materials licensing is S4E03.
-- Next: S4E02 — A dated export rule can change product design; S4E02 asks how wartime radar demand instead pulled material and device development forward.
+- Next: S4E02 — A dated export rule ties product specifications to classification; S4E02 looks at a different public influence, wartime radar demand for purer material.
 - Selection: RECOVERED_PR1_CORE — Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.
+- Selection flag: 특정 AI 칩이 규제 때문에 재설계됐다는 전제는 H099 기록에 없는 확장(P089 flag 반영). 규정과 사양의 관계로 좁힘.
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: 관할 정부 원문 규정·개정일·적용 예외 분리.
 
 ### S4E02 · Wartime Radar and Crystal Detector Purity
@@ -383,10 +391,11 @@ How do public decisions change what companies can build and sell?
 - Protagonist / conflict: Radar laboratories and material suppliers facing unreliable detection
 - Choice: Improve crystal purity and contacts
 - 3D event: A receiver misses an echo; a detector with purer crystal then resolves it
-- Payoff: The viewer can see how military demand accelerated specific material and device capabilities, without crediting it with the whole industry
+- Payoff: The viewer can see how military demand coincided with work on specific materials and devices; whether it produced the purification techniques is still to be verified
 - Overlap boundary: Wartime radar detector materials; modern fab material qualification is S4E03.
 - Next: S4E03 — Radar depended on suitable material; S4E03's 2019 licensing case shows why a fab cannot simply replace a restricted chemical with any available supply.
 - Selection: RECOVERED_PR1_CORE — Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.
+- Selection flag: 전시 수요가 결정 정제 기술을 낳았다는 인과는 생산·기술이전 기록 확인 전(P022 반영).
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: 전시 연구 기록·Bell Labs 결정 정제 회고.
 
 ### S4E03 · Japan's 2019 Export Controls and Fab Material Qualification
@@ -450,14 +459,15 @@ How do public decisions change what companies can build and sell?
 
 - Source: PR #1 P074 → main P074; H: H031. Original title: NASA Retested the Chips It Bought.
 - Korean title: NASA의 집적회로 구매와 적격성 시험
-- Question: How did government orders shape an early integrated-circuit market?
+- Question: What did NASA require when it bought and tested early integrated circuits?
 - Protagonist / conflict: NASA and defense buyers facing reliability and procurement constraints
 - Choice: Buy and qualify integrated circuits for demanding systems
 - 3D event: A purchased IC survives environmental testing before entering a guidance module
-- Payoff: The viewer can see how government purchasing and test requirements shaped production, and that NASA and defense buyers had different needs
+- Payoff: The viewer can see how NASA's purchasing and test requirements related to early production, and that NASA and defense buyers had different needs; the share of purchases is still to be verified
 - Overlap boundary: Government procurement and qualification testing as demand; trade law is S4E08 and wartime radar materials are S4E02.
 - Next: S4E08 — Procurement can support an industry's production; S4E08's US–Japan memory dispute shows how the resulting price and market access became matters of trade law.
 - Selection: NEW_PRODUCTION_JUDGMENT — Editorial addition from existing PR #1 candidates to link procurement and trade rules; not a recovered user approval of its claims.
+- Selection flag: 구매 비중(60% 논쟁)과 첫 주문 성격이 검증 전이라 생산기술까지 바꿨다는 영향 범위는 과장 위험(H031 반영).
 - Evidence: UNVERIFIED_RESEARCH_LEADS. Production: NOT_STARTED. Source hunt: NASA 부품 적격성 문서·초기 반도체 채택 기록.
 
 ### S4E08 · The US–Japan DRAM Price Dispute

@@ -1581,15 +1581,24 @@
     "current_media_status": null,
     "release_slot": null,
     "reported_existing_artifact": null,
-    "reviewed_title_ko": "아폴로 유도 컴퓨터의 NOR 게이트 IC 조달",
+    "reviewed_title_ko": "아폴로 컴퓨터 팀의 NOR 게이트 IC 조달",
     "selection_flag": "원제목 'The Order That Taught Chips to Fly'와 '생산기술까지 바꿨다'는 전제는 구매 비중(60% 논쟁)과 첫 주문 성격이 검증 전이라 영향 범위를 과장할 위험이 있음.",
     "language_review": {
       "decision": "CIB-051",
       "date": "2026-11-27",
       "task": "TASK-004",
+      "revision": 2,
       "standard": "editorial/LANGUAGE.md",
-      "reason": "'서로를 바꿔 놓은 것이다' 단정을 해석으로 표시, '선한 구매자' 등 가치 표현 정리"
-    }
+      "reason": "근거 리뷰 비차단: 레코드에 없는 '유도 컴퓨터' 명칭 제거"
+    },
+    "title_history": [
+      {
+        "field": "reviewed_title_ko",
+        "value": "아폴로 유도 컴퓨터의 NOR 게이트 IC 조달",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      }
+    ]
   },
   {
     "h_id": "H032",

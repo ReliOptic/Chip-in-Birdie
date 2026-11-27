@@ -51,7 +51,7 @@
     ],
     "map_type": "REFRAMED",
     "title_ko": "의도적으로 변형한 포토마스크 패턴",
-    "title_en": "The Deliberately Distorted Photomask",
+    "title_en": "Optical Proximity Correction on Photomasks",
     "proposed_order": "2",
     "act": "01 기술 성능과 채택 조건",
     "opening": "곧은 설계선과 일부러 휘어진 포토마스크 두 장",
@@ -72,14 +72,21 @@
         "value": "일부러 비튼 반도체 마스크",
         "replaced_on": "2026-11-27",
         "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "The Deliberately Distorted Photomask",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
       }
     ],
     "language_review": {
       "decision": "CIB-051",
       "date": "2026-11-27",
       "task": "TASK-004",
+      "revision": 2,
       "standard": "editorial/LANGUAGE.md",
-      "reason": "'비튼' 구어 표현과 '보기 흉한' 주관 표현 정리"
+      "reason": "편집 리뷰 비차단: 대상명(OPC) 명시"
     }
   },
   {
@@ -132,7 +139,7 @@
       "H039"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "TSMC의 전업 파운드리 모델",
+    "title_ko": "TSMC의 순수 파운드리 모델",
     "title_en": "TSMC's Pure-Play Foundry Model, 1987",
     "proposed_order": "4",
     "act": "01 기술 성능과 채택 조건",
@@ -160,6 +167,12 @@
         "value": "TSMC's No-Competition Promise",
         "replaced_on": "2026-11-27",
         "by": "CIB-051"
+      },
+      {
+        "field": "title_ko",
+        "value": "TSMC의 전업 파운드리 모델",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
       }
     ],
     "selection_flag": "비경쟁 원칙이 초기 수주의 원인이었다는 인과는 초기 고객·계약·신뢰 형성 자료 확인 전.",
@@ -167,8 +180,9 @@
       "decision": "CIB-051",
       "date": "2026-11-27",
       "task": "TASK-004",
+      "revision": 2,
       "standard": "editorial/LANGUAGE.md",
-      "reason": "'약속'이라는 일화성 표현을 사업 모델 명칭으로 바꾸고 인과를 질문으로 유지"
+      "reason": "편집 리뷰 비차단: S1E01과 용어 통일"
     }
   },
   {
@@ -1020,7 +1034,7 @@
     ],
     "map_type": "REFRAMED",
     "title_ko": "게르마늄에서 실리콘으로의 전환",
-    "title_en": "Why Silicon Replaced Germanium",
+    "title_en": "From Germanium to Silicon",
     "proposed_order": "24",
     "act": "03 재료 순도와 공정 결함",
     "opening": "게르마늄과 실리콘을 나란히 놓은 실험대",
@@ -1041,14 +1055,21 @@
         "value": "게르마늄 대신 실리콘을 택했다",
         "replaced_on": "2026-11-27",
         "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "Why Silicon Replaced Germanium",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
       }
     ],
     "language_review": {
       "decision": "CIB-051",
       "date": "2026-11-27",
       "task": "TASK-004",
+      "revision": 2,
       "standard": "editorial/LANGUAGE.md",
-      "reason": "서술형 제목을 명사구로 교체"
+      "reason": "편집 리뷰 B3: '왜'형 제목 제거"
     }
   },
   {
@@ -1318,7 +1339,7 @@
     ],
     "map_type": "REFRAMED",
     "title_ko": "액침 노광과 렌즈 아래의 물",
-    "title_en": "Water Under the Lithography Lens",
+    "title_en": "Immersion Lithography and the Water Layer",
     "proposed_order": "31",
     "act": "04 리소그래피와 마스크 계측",
     "opening": "노광 렌즈와 웨이퍼 사이의 물방울",
@@ -1339,14 +1360,21 @@
         "value": "노광기 렌즈 밑의 물",
         "replaced_on": "2026-11-27",
         "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "Water Under the Lithography Lens",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
       }
     ],
     "language_review": {
       "decision": "CIB-051",
       "date": "2026-11-27",
       "task": "TASK-004",
+      "revision": 2,
       "standard": "editorial/LANGUAGE.md",
-      "reason": "'이상한 재료', '두 얼굴' 비유 표현 정리"
+      "reason": "편집 리뷰 비차단: 대상명 명시"
     }
   },
   {
@@ -1921,7 +1949,7 @@
     ],
     "map_type": "REFRAMED",
     "title_ko": "한국 DRAM 추격과 투자 시점",
-    "title_en": "Korea's DRAM Catch-Up, 1983–1992",
+    "title_en": "Korea's DRAM Catch-Up From 1983",
     "proposed_order": "45",
     "act": "05 메모리 기술과 원가",
     "opening": "1983년 기흥 공사 현장과 해외 DRAM 세대 비교표",
@@ -1948,14 +1976,21 @@
         "value": "The DRAM Race That Never Ends",
         "replaced_on": "2026-11-27",
         "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "Korea's DRAM Catch-Up, 1983–1992",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
       }
     ],
     "language_review": {
       "decision": "CIB-051",
       "date": "2026-11-27",
       "task": "TASK-004",
+      "revision": 2,
       "standard": "editorial/LANGUAGE.md",
-      "reason": "'Never Ends' 절대 표현과 '결승선' 비유 제거, 원 가설의 시기·장소 명시"
+      "reason": "근거 리뷰 비차단: 추격 종료 시점 해석 제거"
     }
   },
   {
@@ -2488,13 +2523,13 @@
       "H087"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "투기 실행과 Spectre·Meltdown",
+    "title_ko": "투기적 실행과 Spectre·Meltdown",
     "title_en": "Spectre, Meltdown and Speculative Execution",
     "proposed_order": "58",
     "act": "06 소프트웨어 호환성과 프로세서 구조",
     "opening": "평범한 프로그램이 읽을 수 없어야 할 흔적",
     "mechanism": "분기 예측·투기 실행·캐시 부채널의 기본 구조",
-    "economic_question": "성능 최적화의 비용을 누가 보안 패치와 재설계로 갚는가",
+    "economic_question": "누가 보안 패치·재설계 비용을 부담하는가",
     "ending": "성능 향상 기법과 캐시 부채널 정보 경로를 같은 도식에 표시",
     "primary_source_hunt": "Spectre/Meltdown 원논문·업체 공식 보안 권고",
     "source_status": "TITLE_REVISED_DRAFT",
@@ -2516,14 +2551,21 @@
         "value": "Secrets Leaked From a CPU Shortcut",
         "replaced_on": "2026-11-27",
         "by": "CIB-051"
+      },
+      {
+        "field": "title_ko",
+        "value": "투기 실행과 Spectre·Meltdown",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
       }
     ],
     "language_review": {
       "decision": "CIB-051",
       "date": "2026-11-27",
       "task": "TASK-004",
+      "revision": 2,
       "standard": "editorial/LANGUAGE.md",
-      "reason": "'지름길로 새어난 비밀' 비유 제거"
+      "reason": "편집 리뷰 비차단: 부채 은유 제거"
     }
   },
   {
@@ -2972,8 +3014,8 @@
       "H078"
     ],
     "map_type": "REFRAMED",
-    "title_ko": "인텔·TSMC·삼성의 ASML 공동 투자",
-    "title_en": "Intel, TSMC and Samsung's 2012 ASML Investment",
+    "title_ko": "2012년 칩 제조사들의 ASML 공동 투자",
+    "title_en": "Chipmakers' 2012 Co-Investment in ASML",
     "proposed_order": "69",
     "act": "07 기술 이전과 기업 간 협력",
     "opening": "경쟁사 세 개의 로고와 같은 EUV 장비",
@@ -3000,6 +3042,18 @@
         "value": "Three Rivals Funded One EUV Future",
         "replaced_on": "2026-11-27",
         "by": "CIB-051"
+      },
+      {
+        "field": "title_ko",
+        "value": "인텔·TSMC·삼성의 ASML 공동 투자",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "Intel, TSMC and Samsung's 2012 ASML Investment",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
       }
     ],
     "selection_flag": "삼성 참여와 금액·구조는 ASML 공식 발표로 재확인 전.",
@@ -3007,8 +3061,9 @@
       "decision": "CIB-051",
       "date": "2026-11-27",
       "task": "TASK-004",
+      "revision": 2,
       "standard": "editorial/LANGUAGE.md",
-      "reason": "'One EUV Future' 비유와 '공동 돈' 구어 표현 제거"
+      "reason": "근거 리뷰 비차단: 삼성 참여 재확인 전이므로 회사명 단정 제거"
     }
   },
   {
@@ -3105,7 +3160,7 @@
     ],
     "map_type": "MERGED",
     "title_ko": "Qimonda·Elpida 파산 후 공장 처리",
-    "title_en": "Qimonda, Elpida and the Fate of Their Fabs",
+    "title_en": "Qimonda and Elpida's Fabs After Bankruptcy",
     "proposed_order": "72",
     "act": "08 설비 투자와 사업 구조",
     "opening": "파산 공고 문서와 공장 인수·생산 기록",
@@ -3132,6 +3187,12 @@
         "value": "The DRAM Company Died, the Fab Kept Running",
         "replaced_on": "2026-11-27",
         "by": "CIB-051"
+      },
+      {
+        "field": "title_en",
+        "value": "Qimonda, Elpida and the Fate of Their Fabs",
+        "replaced_on": "2026-11-27",
+        "by": "CIB-051"
       }
     ],
     "selection_flag": "Qimonda와 Elpida의 공장 처리 결과가 다를 수 있어 '파산 후에도 공장이 가동' 전제는 사례별 확인 전.",
@@ -3139,8 +3200,9 @@
       "decision": "CIB-051",
       "date": "2026-11-27",
       "task": "TASK-004",
+      "revision": 2,
       "standard": "editorial/LANGUAGE.md",
-      "reason": "'Died' 의인화와 두 사례를 하나로 묶은 단정 제거"
+      "reason": "편집 리뷰 비차단: 극적 어휘 제거"
     }
   },
   {

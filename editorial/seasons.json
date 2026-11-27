@@ -50,7 +50,7 @@
   "seasons": [
     {
       "season": 1,
-      "title_en": "DESIGN AND MANUFACTURING",
+      "title_en": "DESIGN AND MANUFACTURING AS SEPARATE BUSINESSES",
       "title_ko": "설계와 제조의 분리",
       "question": "How did chip design and chip manufacturing become separate businesses?",
       "count": 8,
@@ -66,20 +66,27 @@
           "value": "누가 만드는가",
           "replaced_on": "2026-11-27",
           "by": "CIB-051"
+        },
+        {
+          "field": "title_en",
+          "value": "DESIGN AND MANUFACTURING",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
         }
       ],
       "language_review": {
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
+        "revision": 2,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "'WHO MAKES IT'은 대상이 모호해 다루는 주제(설계·제조 분업)를 그대로 적음"
+        "reason": "편집 리뷰 비차단: 영문·국문 범위 일치"
       }
     },
     {
       "season": 2,
-      "title_en": "TECHNICAL LIMITS AND ARCHITECTURE CHOICES",
-      "title_ko": "기술 한계와 아키텍처 선택",
+      "title_en": "TECHNICAL LIMITS AND DESIGN CHOICES",
+      "title_ko": "기술 한계와 설계 선택",
       "question": "How do technical constraints change which chip architectures are worth adopting?",
       "count": 8,
       "title_history": [
@@ -94,14 +101,27 @@
           "value": "한계와 다음 선택",
           "replaced_on": "2026-11-27",
           "by": "CIB-051"
+        },
+        {
+          "field": "title_en",
+          "value": "TECHNICAL LIMITS AND ARCHITECTURE CHOICES",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        },
+        {
+          "field": "title_ko",
+          "value": "기술 한계와 아키텍처 선택",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
         }
       ],
       "language_review": {
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
+        "revision": 2,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "'다음 선택(NEXT MOVE)'의 연출형 표현을 대상 명사구로 교체"
+        "reason": "편집 리뷰 비차단: 트랜지스터 재현성·로드맵 편까지 포함하는 범위"
       }
     },
     {
@@ -179,9 +199,9 @@
       "protagonist_conflict": "Morris Chang's TSMC and chip designers who need manufacturing capacity but not a manufacturer that competes with them",
       "choice": "Operate as a dedicated foundry that manufactures customer designs and sells no chip products of its own",
       "screen_3d_event": "A customer's layout enters a wafer carrier; finished dies return to the customer, and the design stays with the customer",
-      "payoff": "The viewer can see that a foundry sells wafer capacity together with a commitment not to compete with its customers",
+      "payoff": "The viewer can see that a foundry offers wafer capacity together with a commitment not to compete with its customers; whether that commitment won the first customers is still to be verified",
       "next_episode": "S1E02",
-      "next_connection": "S1E01 separates design ownership from manufacturing; S1E02 goes back to eight engineers leaving Shockley's company, an earlier case of manufacturing know-how moving between firms with its people.",
+      "next_connection": "S1E01 separates who owns a design from who manufactures it; that separation needs manufacturing know-how that can exist outside the designer, and S1E02 goes back to an earlier case where such know-how left one company with eight engineers.",
       "selection": "RECOVERED_PR1_CORE",
       "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
       "audience_ref": "channel/audience.json",
@@ -204,9 +224,11 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
+        "revision": 2,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "'약속'의 극적 표현을 사업 모델 명칭으로 바꾸고 'never'·'first' 절대 표현 제거"
-      }
+        "reason": "편집 리뷰 B1·B4: flag 전파, 연결 전제 복원"
+      },
+      "selection_flag": "비경쟁 원칙이 초기 수주의 원인이었다는 인과는 초기 고객·계약 자료 확인 전(P004 flag 반영). 원칙과 수주를 인과로 단정하지 않음."
     },
     {
       "episode_id": "S1E02",
@@ -225,7 +247,7 @@
       "protagonist_conflict": "Eight engineers in a dispute with Shockley's management",
       "choice": "Resign together and organise a new company",
       "screen_3d_event": "Illustrative reconstruction: the same process notebooks appear first at benches in Shockley's laboratory, then at a newly built fabrication line",
-      "payoff": "The viewer can separate what moved with the engineers (skills and process knowledge) from what a new company still had to arrange before it could sell products",
+      "payoff": "The viewer can separate what moved with the engineers (skills and process knowledge) from what a new company still had to arrange before it could sell products; the signing anecdote and conflict accounts are still to be verified",
       "next_episode": "S1E03",
       "next_connection": "S1E02 shows engineers leaving to build a new manufacturer; S1E03 shows a different arrangement, AMD keeping chip design and separating its factories into another company.",
       "selection": "RECOVERED_PR1_CORE",
@@ -250,9 +272,11 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
+        "revision": 2,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "'실리콘밸리는 여덟 명의 퇴사로 시작' 단일 기원 서사를 퇴사·창업 사건으로 좁힘"
-      }
+        "reason": "편집 리뷰 B1: flag 전파"
+      },
+      "selection_flag": "퇴사 서명 일화와 갈등 기록이 검증 전이며 지역 산업의 단일 기원 서사로 확대할 위험(P061 flag 반영)."
     },
     {
       "episode_id": "S1E03",
@@ -317,7 +341,7 @@
       "protagonist_conflict": "ITRI engineers and Taiwan's industrial-policy officials facing a gap in process experience",
       "choice": "License process technology from RCA and train engineers and operators",
       "screen_3d_event": "Illustrative reconstruction: operators run successive wafer lots on a period production line until test results meet qualification",
-      "payoff": "The viewer can see why running a process repeatably with stable results came before a foundry could sell manufacturing services to outside customers",
+      "payoff": "The viewer can see why running a licensed process with stable results was a separate capability from licensing it; whether this directly led to the later foundry business is still to be verified",
       "next_episode": "S1E05",
       "next_connection": "S1E04 shows production built on licensed process knowledge; S1E05 asks when a foundry would take on the cost and risk of developing a process itself.",
       "selection": "RECOVERED_PR1_CORE",
@@ -342,9 +366,11 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
+        "revision": 2,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "국가를 주어로 한 의인화 제목을 실제 사업(RCA·ITRI 기술 이전)으로 교체"
-      }
+        "reason": "편집 리뷰 B1, 근거 리뷰 비차단: 인과 단정 완화"
+      },
+      "selection_flag": "첫 파견 인원의 성과로 전체 기술 이전을 축약할 위험, 이후 파운드리 사업과의 직접 연결은 검증 전(P066·H035 반영)."
     },
     {
       "episode_id": "S1E05",
@@ -534,7 +560,7 @@
       "protagonist_conflict": "GPU designers serving a paying games market while extending their hardware to general computation",
       "choice": "Invest in programmable parallel hardware",
       "screen_3d_event": "A graphics board renders pixels; the same execution units are then shown processing numerical arrays",
-      "payoff": "The viewer can see that game sales supplied a market for parallel hardware, while programming software and research use were separate steps toward AI computing",
+      "payoff": "The viewer can see that game sales created a market for programmable parallel hardware, and that software and research use were separate later steps toward AI computing; whether game revenue funded AI development is still to be verified",
       "next_episode": "S2E02",
       "next_connection": "S2E01 depends on parallel hardware built from transistors; S2E02 returns to the early transistor and the problem of making it repeatably.",
       "selection": "RECOVERED_PR1_CORE",
@@ -559,9 +585,11 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
+        "revision": 2,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "'AI의 엔진' 비유 제거, 결과를 보고 의도를 붙이지 않도록 경계 명시"
-      }
+        "reason": "편집 리뷰 B1: flag 전파"
+      },
+      "selection_flag": "게임 매출이 AI용 GPU 개발 자금이 됐다는 인과는 사후 해석일 수 있음. 당시 의도를 AI로 소급하지 않음(P055·H081 반영)."
     },
     {
       "episode_id": "S2E02",
@@ -582,7 +610,7 @@
       "screen_3d_event": "A point-contact device amplifies a signal, then fails a repeatability test across samples",
       "payoff": "The viewer can distinguish demonstrating a device once from producing it reliably, two different engineering problems",
       "next_episode": "S2E03",
-      "next_connection": "S2E02 makes the transistor reproducible; S2E03 moves to processors that execute instructions speculatively for speed, and to the data this exposed.",
+      "next_connection": "Once transistors could be made in volume, designers spent them on techniques for speed; S2E03 shows one of those techniques, speculative execution, and the data it exposed.",
       "selection": "RECOVERED_PR1_CORE",
       "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
       "audience_ref": "channel/audience.json",
@@ -605,8 +633,9 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
+        "revision": 2,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "'당신의 삶 전체를 움직이는' 과장·절대 표현 제거, 실제 사건(재현성 문제)으로 교체"
+        "reason": "편집 리뷰 B4: 연결 전제 복원"
       }
     },
     {
@@ -626,7 +655,7 @@
       "protagonist_conflict": "CPU architects and security researchers weighing performance against isolation between processes",
       "choice": "Execute instructions speculatively before access checks resolve; after disclosure, add mitigations",
       "screen_3d_event": "A rejected instruction leaves a cache state change that a second process measures by timing",
-      "payoff": "The viewer can see why discarding a speculative result does not remove every hardware side effect, and why mitigations involve a performance tradeoff",
+      "payoff": "The viewer can see why discarding a speculative result does not remove every hardware side effect; the size of the performance cost of mitigations is still to be verified",
       "next_episode": "S2E04",
       "next_connection": "S2E03 trades isolation for speed; S2E04 looks at early CMOS, where developers accepted lower speed to reduce power consumption.",
       "selection": "RECOVERED_PR1_CORE",
@@ -651,8 +680,9 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
+        "revision": 2,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "'Speed Trick'·'Everyone's Secrets' 과장·절대 표현을 취약점 명칭으로 교체"
+        "reason": "근거 리뷰 비차단: 완화책 성능 비용 단정 완화"
       }
     },
     {
@@ -718,7 +748,7 @@
       "screen_3d_event": "One instruction passes through different processor cores and their test benches",
       "payoff": "The viewer can separate what an open specification makes available from the design, verification and fabrication costs of a finished chip",
       "next_episode": "S2E06",
-      "next_connection": "S2E05 shows that a specification is a starting point; S2E06 shows the AlexNet experiment, where a specific hardware and software choice affected a result.",
+      "next_connection": "S2E05 separates a published specification from the hardware built on it; S2E06 looks at a case where existing graphics hardware, not a new design, made a 2012 training run practical. Thematic link, not causal.",
       "selection": "RECOVERED_PR1_CORE",
       "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
       "audience_ref": "channel/audience.json",
@@ -741,8 +771,9 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
+        "revision": 2,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "'아무도 소유하지 않은' 절대 표현 제거, 대상(RISC-V)을 명시"
+        "reason": "편집 리뷰 B4: 주제 연결 표시"
       }
     },
     {
@@ -762,7 +793,7 @@
       "protagonist_conflict": "AlexNet researchers facing training time and memory limits",
       "choice": "Split training across two GPUs",
       "screen_3d_event": "Image batches divide across two boards and combine at an evaluation result",
-      "payoff": "The viewer can see what splitting training across two GPUs enabled for one benchmark result, within the limits of that contest",
+      "payoff": "The viewer can see what splitting training across two GPUs enabled for one benchmark result, alongside the data and model choices that also shaped it",
       "next_episode": "S2E07",
       "next_connection": "One research result can influence investment; S2E07 asks how the industry coordinated investment around Moore's forecast of chip scaling.",
       "selection": "RECOVERED_PR1_CORE",
@@ -787,9 +818,11 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
+        "revision": 2,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "'Breakthrough' 과장 제거, 실험 내용과 범위로 좁힘"
-      }
+        "reason": "편집 리뷰 B1: flag 전파"
+      },
+      "selection_flag": "결과 변화를 GPU 두 장에만 귀속하면 데이터·모델의 기여를 지우는 인과 과장(H083 반영)."
     },
     {
       "episode_id": "S2E07",
@@ -804,11 +837,11 @@
       ],
       "main_p_id": "P010",
       "crosswalk_status": "SAME_RECORD",
-      "question": "How did a forecast become a schedule for industry investment?",
+      "question": "How was Moore's 1965 forecast later used in industry roadmaps?",
       "protagonist_conflict": "Chip firms and equipment suppliers synchronizing investment",
       "choice": "Coordinate research and capital spending around a scaling schedule",
       "screen_3d_event": "A wafer layout shrinks on schedule while a delayed tool delivery misses the next process window",
-      "payoff": "The viewer can see how a published forecast was turned into roadmap targets that chipmakers and equipment suppliers planned investment against",
+      "payoff": "The viewer can see how a published forecast was later written into roadmap targets; when it became an investment benchmark is still to be verified",
       "next_episode": "S2E08",
       "next_connection": "S2E07 assumes scaling keeps delivering useful gains; S2E08 asks what happens when raising clock speed stops being an affordable way to gain performance.",
       "selection": "NEW_PRODUCTION_JUDGMENT",
@@ -833,9 +866,11 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
+        "revision": 2,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "'공장 마감일' 비유를 원문·로드맵이라는 실제 대상으로 교체"
-      }
+        "reason": "편집 리뷰 B1, 근거 리뷰 비차단"
+      },
+      "selection_flag": "1965년 논문이 곧바로 투자 기준이 됐다는 전제는 채택 시점 근거 확인 전, 시간 순서를 인과로 압축할 위험(H030 반영)."
     },
     {
       "episode_id": "S2E08",
@@ -888,7 +923,7 @@
       "source_namespace": "PR1@3c66e4b",
       "original_id": "P046",
       "original_title_en": "The Day Intel Quit the Business It Invented",
-      "title_en": "Why Intel Left DRAM",
+      "title_en": "Intel's 1985 Exit From DRAM",
       "source_h_ids": [
         "H061"
       ],
@@ -915,9 +950,18 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
+        "revision": 2,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "제목은 사실형이라 유지; 'helped build it' 인과 단정을 제품 이력 서술로 완화"
-      }
+        "reason": "편집 리뷰 B3: '왜'형 제목 제거, P046과 통일"
+      },
+      "title_history": [
+        {
+          "field": "title_en",
+          "value": "Why Intel Left DRAM",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        }
+      ]
     },
     {
       "episode_id": "S3E02",
@@ -982,7 +1026,7 @@
       "screen_3d_event": "Two qualification benches test distinct customer requirements beside a falling price order",
       "payoff": "The viewer can see why product quality alone does not explain a national industry's market outcome",
       "next_episode": "S3E04",
-      "next_connection": "A changing market penalises the wrong cost structure; S3E04 looks at the self-aligned silicon gate, a process choice that changed what manufacturers could build economically.",
+      "next_connection": "S3E03 shows product mix, cost and customer requirements changing together; S3E04 looks at one process choice, the self-aligned silicon gate, that changed manufacturing cost.",
       "selection": "RECOVERED_PR1_CORE",
       "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
       "audience_ref": "channel/audience.json",
@@ -1006,8 +1050,9 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
+        "revision": 2,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "'Giants' 과장 제거, 품질-약점 단일 원인 전제를 검증 대상으로 표시"
+        "reason": "편집 리뷰 B2: 의인화와 단일 원인 단정 제거"
       }
     },
     {
@@ -1075,7 +1120,7 @@
       "screen_3d_event": "Illustrative model: an initially sparse good-die map improves across successive lots",
       "payoff": "The viewer can see market entry as repeated yield improvement across production lots, not a single announcement",
       "next_episode": "S3E06",
-      "next_connection": "S3E05 builds production capability; S3E06 shows another source of value, the erasable EPROM, which changed how customers reused a chip during development.",
+      "next_connection": "S3E05 shows a firm building production capability through repeated process learning; S3E06 looks at a product feature, the erasable EPROM window, that shortened customers' development cycles. Thematic link, not causal.",
       "selection": "RECOVERED_PR1_CORE",
       "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
       "audience_ref": "channel/audience.json",
@@ -1099,8 +1144,9 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
+        "revision": 2,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "검증 전 일화를 전제로 한 제목을 진입 사건 명사구로 교체"
+        "reason": "편집 리뷰 B4: 주제 연결 표시"
       }
     },
     {
@@ -1182,15 +1228,22 @@
           "value": "Two Components, One Bit of DRAM",
           "replaced_on": "2026-11-27",
           "by": "CIB-051"
+        },
+        {
+          "field": "title_ko",
+          "value": "데나드의 1T1C DRAM 셀",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
         }
       ],
-      "title_ko": "데나드의 1T1C DRAM 셀",
+      "title_ko": "데나드의 1트랜지스터 DRAM 셀",
       "language_review": {
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
+        "revision": 2,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "인물·대상을 명시하고 'continuous care' 의인화 표현 교체"
+        "reason": "편집 리뷰 비차단: 약어 해소"
       }
     },
     {
@@ -1207,7 +1260,7 @@
       ],
       "main_p_id": "P044",
       "crosswalk_status": "SAME_RECORD",
-      "question": "Why did inventing flash not decide which companies led its market?",
+      "question": "What did Toshiba's invention and later manufacturers each contribute to flash products?",
       "protagonist_conflict": "Inventors and manufacturers facing product and investment choices",
       "choice": "Convert a cell into reliable scalable products",
       "screen_3d_event": "An erase block resets, then a factory tests endurance and yield",
@@ -1236,9 +1289,11 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
+        "revision": 2,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "'Win' 경쟁 은유를 시장 주도권 표현으로 바꾸고 기업명(evidence_leads의 Toshiba) 명시"
-      }
+        "reason": "편집 리뷰 B1: 질문 축소, flag 전파"
+      },
+      "selection_flag": "'발명한 회사가 시장까지 갖는 것은 아니다'는 일반화는 근거 부족, 인텔 팀·첫 고객·제조 장애물 자료 부족(H048 반영)."
     },
     {
       "episode_id": "S4E01",
@@ -1247,7 +1302,7 @@
       "source_namespace": "PR1@3c66e4b",
       "original_id": "P089",
       "original_title_en": "The AI Chip Rebuilt to Slip Under a Law",
-      "title_en": "AI Chips Redesigned for 2022–23 Export Rules",
+      "title_en": "Export Control Thresholds and AI Chip Specifications, 2022–23",
       "source_h_ids": [
         "H099"
       ],
@@ -1255,16 +1310,16 @@
       "crosswalk_status": "SAME_ID_REFRAMED",
       "question": "How can an export rule change a chip before it ships?",
       "protagonist_conflict": "Chip suppliers and regulators facing changing performance thresholds",
-      "choice": "Redesign a product against the rules in force on a given date",
-      "screen_3d_event": "Interconnect bandwidth is reduced on a chip while an export check applies a dated performance threshold",
-      "payoff": "The viewer can see how a product specification and its export classification changed together; no claim is made about current legality",
+      "choice": "To be verified: how chip specifications related to the export thresholds in force on given dates",
+      "screen_3d_event": "A chip's specification sheet is laid against a dated export threshold; the classification changes with the date, not the chip",
+      "payoff": "The viewer can see how an export classification depends on product specifications on a given date; no claim is made about current legality or about a specific redesign",
       "next_episode": "S4E02",
-      "next_connection": "A dated export rule can change product design; S4E02 asks how wartime radar demand instead pulled material and device development forward.",
+      "next_connection": "A dated export rule ties product specifications to classification; S4E02 looks at a different public influence, wartime radar demand for purer material.",
       "selection": "RECOVERED_PR1_CORE",
       "selection_reason": "Part of the user-recovered PR #1 core (six episodes per season); the title is a working draft for review, not an approved title.",
       "audience_ref": "channel/audience.json",
       "evidence_status": "UNVERIFIED_RESEARCH_LEADS",
-      "evidence_leads": "관할 정부 원문 규정·개정일·적용 예외 분리",
+      "evidence_leads": "관할 정부 원문 규정·개정일·적용 예외 분리. 2022–23 기간 표기의 출처: DECISIONS.md CIB-049",
       "production_status": "NOT_STARTED",
       "media_status": "NOT_READY",
       "duration_policy": "8–9 min target; 6–12 min only where story warrants; measure final VO, never pad",
@@ -1275,16 +1330,30 @@
           "value": "The AI Chip Redesigned for Export Rules",
           "replaced_on": "2026-11-27",
           "by": "CIB-051"
+        },
+        {
+          "field": "title_en",
+          "value": "AI Chips Redesigned for 2022–23 Export Rules",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
+        },
+        {
+          "field": "title_ko",
+          "value": "2022–23년 수출 규제와 AI 칩 재설계",
+          "replaced_on": "2026-11-27",
+          "by": "CIB-051"
         }
       ],
-      "title_ko": "2022–23년 수출 규제와 AI 칩 재설계",
+      "title_ko": "2022–23년 수출 통제 기준과 AI 칩 사양",
       "language_review": {
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
+        "revision": 2,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "규정 시점(DECISIONS CIB-049의 2022–23 사례)을 제목에 넣어 범위 한정"
-      }
+        "reason": "편집 리뷰 B1, 근거 리뷰 비차단: 재설계 단정 제거, 기간 출처 표기"
+      },
+      "selection_flag": "특정 AI 칩이 규제 때문에 재설계됐다는 전제는 H099 기록에 없는 확장(P089 flag 반영). 규정과 사양의 관계로 좁힘."
     },
     {
       "episode_id": "S4E02",
@@ -1303,7 +1372,7 @@
       "protagonist_conflict": "Radar laboratories and material suppliers facing unreliable detection",
       "choice": "Improve crystal purity and contacts",
       "screen_3d_event": "A receiver misses an echo; a detector with purer crystal then resolves it",
-      "payoff": "The viewer can see how military demand accelerated specific material and device capabilities, without crediting it with the whole industry",
+      "payoff": "The viewer can see how military demand coincided with work on specific materials and devices; whether it produced the purification techniques is still to be verified",
       "next_episode": "S4E03",
       "next_connection": "Radar depended on suitable material; S4E03's 2019 licensing case shows why a fab cannot simply replace a restricted chemical with any available supply.",
       "selection": "RECOVERED_PR1_CORE",
@@ -1328,9 +1397,11 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
+        "revision": 2,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "'Radar's Demand' 의인화를 사건·대상 명사구로 교체"
-      }
+        "reason": "편집 리뷰 B1: flag 전파"
+      },
+      "selection_flag": "전시 수요가 결정 정제 기술을 낳았다는 인과는 생산·기술이전 기록 확인 전(P022 반영)."
     },
     {
       "episode_id": "S4E03",
@@ -1528,11 +1599,11 @@
       ],
       "main_p_id": "P074",
       "crosswalk_status": "SAME_RECORD",
-      "question": "How did government orders shape an early integrated-circuit market?",
+      "question": "What did NASA require when it bought and tested early integrated circuits?",
       "protagonist_conflict": "NASA and defense buyers facing reliability and procurement constraints",
       "choice": "Buy and qualify integrated circuits for demanding systems",
       "screen_3d_event": "A purchased IC survives environmental testing before entering a guidance module",
-      "payoff": "The viewer can see how government purchasing and test requirements shaped production, and that NASA and defense buyers had different needs",
+      "payoff": "The viewer can see how NASA's purchasing and test requirements related to early production, and that NASA and defense buyers had different needs; the share of purchases is still to be verified",
       "next_episode": "S4E08",
       "next_connection": "Procurement can support an industry's production; S4E08's US–Japan memory dispute shows how the resulting price and market access became matters of trade law.",
       "selection": "NEW_PRODUCTION_JUDGMENT",
@@ -1557,9 +1628,11 @@
         "decision": "CIB-051",
         "date": "2026-11-27",
         "task": "TASK-004",
+        "revision": 2,
         "standard": "editorial/LANGUAGE.md",
-        "reason": "'Retested' 사실 단정을 구매·시험 대상으로 좁히고 'make a market' 과장 완화"
-      }
+        "reason": "편집 리뷰 B1: 질문 축소, flag 전파"
+      },
+      "selection_flag": "구매 비중(60% 논쟁)과 첫 주문 성격이 검증 전이라 생산기술까지 바꿨다는 영향 범위는 과장 위험(H031 반영)."
     },
     {
       "episode_id": "S4E08",
