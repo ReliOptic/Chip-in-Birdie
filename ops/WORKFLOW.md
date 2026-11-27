@@ -38,7 +38,7 @@ python3 tools/channel.py task submit TASK-002 --actor worker-a --session actual-
 
 ## 독립 리뷰
 
-리뷰 메모에는 실제 파일 위치와 관찰을 적는다. editorial·viewer 리뷰는 문장 표현을 [LANGUAGE](../editorial/LANGUAGE.md) 리뷰 체크리스트로도 검토한다. 리뷰를 통과시키기 위한 일반적인 칭찬, 사용자 요구를 완화해 만든 합격, 확인하지 않은 영상 재생 주장은 허용하지 않는다.
+리뷰 메모에는 실제 파일 위치와 관찰을 적는다. editorial 리뷰는 문장 표현을 [LANGUAGE](../editorial/LANGUAGE.md) 리뷰 체크리스트로도 검토한다. viewer 리뷰는 AGENTS.md의 입력 범위를 따르고 이 기준을 새 컨텍스트에 넣지 않는다. 리뷰를 통과시키기 위한 일반적인 칭찬, 사용자 요구를 완화해 만든 합격, 확인하지 않은 영상 재생 주장은 허용하지 않는다.
 
 ```bash
 python3 tools/channel.py review add --task TASK-002 --role evidence --reviewer reviewer-b --model actual-model-id --session review-session-b --verdict pass --notes-file reviews/H039-evidence.md
