@@ -690,6 +690,41 @@ body:not(.ai-on) .ai-only{display:none!important}
 .a-l2 .nt i{width:16px;height:16px;border-radius:4px;background:#141a0c;border:1px solid #33461a}
 .stage .logo{display:block;width:100%;height:100%;object-fit:contain;object-position:left center}
 
+
+/* bridge */
+.a-br{display:flex;flex-direction:column;gap:22px;height:100%}
+.a-br .row{display:grid;grid-template-columns:120px 220px 1fr 260px;align-items:center;gap:0;height:200px}
+.a-br .row em{font:500 20px/1 var(--mono);font-style:normal;color:var(--t3)}
+.a-br .r2 em{color:var(--g)}
+.a-br .bx{height:72px;display:grid;place-items:center;border-radius:10px;font-size:24px;font-weight:600;border:1px solid #3a3a3a;background:#151515;padding:0 12px;text-align:center}
+.a-br .bx.n{border-color:#3d5a12}
+.a-br .bx.a.off{color:#666;border-style:dashed}
+.a-br .bx.a.on{background:#141a0c;border-color:var(--g);color:var(--t1)}
+.a-br .dst{display:flex;flex-direction:column;justify-content:space-between;height:200px;padding:0}
+.a-br .dst .bx{height:64px}
+.a-br .paths{position:relative;height:200px}
+.a-br .paths svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.a-br .x{position:absolute;left:62%;top:146px;font-size:28px;color:#e5484d;font-weight:600}
+.a-br .wl{position:absolute;left:30%;top:178px;font-size:18px;color:#888}
+.a-br .ag{position:absolute;left:34%;top:150px;padding:6px 12px;border-radius:8px;background:#141a0c;border:1px solid #3d5a12;font-size:18px;color:var(--t1);white-space:nowrap}
+.a-br .tm{display:grid;grid-template-columns:120px 1fr;gap:0;align-items:center;margin-top:6px}
+.a-br .tm .tr{grid-column:2;height:22px;border-radius:6px;background:#1a1a1a;overflow:hidden}
+.a-br .tm .shr{display:block;height:100%;width:0.8%;min-width:10px;background:var(--g)}
+.a-br .tm .lb{grid-column:2;display:flex;justify-content:space-between;align-items:baseline;margin-top:10px}
+.a-br .tm .o{font-size:22px;color:#777;text-decoration:line-through}
+.a-br .tm b{font-size:44px;font-weight:600;color:var(--g)}
+.reveal .slides section.present .a-br .tm.visible .shr{animation:a-shrink 1600ms var(--ease) both}
+@keyframes a-shrink{0%{width:100%;background:#555}60%{background:#555}100%{width:0.8%;background:var(--g)}}
+.reveal .slides section.present .a-br .r2.visible path.go{stroke-dasharray:600;animation:a-draw 900ms var(--ease) both;--l:600}
+/* flywheel: a highlight travels the loop */
+.reveal .slides section.present .a-fly .nd{animation:a-node 4s var(--ease) infinite;animation-delay:calc(var(--i) * 1s)}
+@keyframes a-node{0%,100%{border-color:#3a3a3a;background:#151515;color:var(--t1)}6%,22%{border-color:var(--g);background:#1b2a0a;color:#fff}}
+.reveal .slides section.present .a-fly path.arc{animation:a-arc 4s linear infinite;animation-delay:calc(var(--i) * 1s + 0.5s)}
+@keyframes a-arc{0%,100%{stroke:#cfcfcf}6%,22%{stroke:#76b900}}
+.reveal .slides section.present .a-fly .ctr{animation:a-fade 600ms var(--ease) both 300ms}
+/* stack: value creation vs value capture braces */
+.a-stack .brace span em{display:block;font-style:normal;font-size:17px;font-weight:400;color:var(--t3);margin-top:6px}
+
 /* ---------- phone ---------- */
 @media (max-width:900px){
   body{overflow:auto}
@@ -884,12 +919,12 @@ const ASSETS = {
     props:[['src','프로그램'],['t','대상 (|로 구분)']], d:{src:'program.cu', t:'게임용 GeForce|워크스테이션|데이터센터용 GPU'},
     render:p => `<div class="a-om"><div class="src">${pe('src', -1, -1, p.src)}</div><svg width="120" height="160" viewBox="0 0 120 160" aria-hidden="true"><path class="dr an" style="--l:600;${D(500)}" d="M0 80 C60 80 60 16 120 16 M0 80 H120 M0 80 C60 80 60 144 120 144" fill="none" stroke="#76b900" stroke-width="2"/></svg><div class="tg">${cells(p.t).map((x, k) => `<div class="an" style="${D(800 + k * 100)}">${pe('t', 0, k, x)}</div>`).join('')}</div></div>`},
   stack: {name:'플랫폼 계층 구조', nw:1180, nh:600,
-    props:[['rows','층 (아이콘|이름|설명|■ 또는 □) 위에서 아래로','textarea'],['top','□ 묶음 이름'],['bot','■ 묶음 이름']],
-    d:{rows:'robot|AI 모델 · 응용 프로그램|연구기관과 기업이 개발해 공개|□\nbranch|프레임워크 · 개발 도구|모델 학습과 배포에 쓰는 소프트웨어|□\ncubes|CUDA-X 라이브러리|1,000개 이상의 연산 라이브러리|■\nlayers|CUDA 플랫폼|컴파일러 · 런타임 · 프로그래밍 모델|■\nchip|GPU 하드웨어|GeForce에서 데이터센터용 GPU까지|■', top:'외부 개발자', bot:'NVIDIA 제공'},
+    props:[['rows','층 (아이콘|이름|설명|■ 또는 □) 위에서 아래로','textarea'],['top','□ 묶음 이름'],['topn','□ 묶음 설명'],['bot','■ 묶음 이름'],['botn','■ 묶음 설명']],
+    d:{rows:'robot|AI 모델 · 응용 프로그램|연구기관과 기업이 개발해 공개|□\nbranch|프레임워크 · 개발 도구|모델 학습과 배포에 쓰는 소프트웨어|□\ncubes|CUDA-X 라이브러리|1,000개 이상의 연산 라이브러리|■\nlayers|CUDA 플랫폼|컴파일러 · 런타임 · 프로그래밍 모델|■\nchip|GPU 하드웨어|GeForce에서 데이터센터용 GPU까지|■', top:'가치 창출', topn:'외부 개발자가 만든다', bot:'가치 획득', botn:'NVIDIA가 GPU 판매로 거둔다'},
     render:p => { const rs = lines(p.rows).map(cells); const n = rs.length; const h = Math.floor((600 - (n - 1) * 12) / n);
       const grp = f => rs.map((r, i) => ({r, i})).filter(o => (o.r[3] || '■').startsWith(f));
       const brace = (g, label, cls) => { if (!g.length) return ''; const y0 = g[0].i * (h + 12), y1 = g[g.length - 1].i * (h + 12) + h;
-        return `<div class="brace ${cls} an" style="top:${y0}px;height:${y1 - y0}px;${D(200 + n * 120)}"><span>${pe(label, -1, -1, p[label])}</span></div>`; };
+        return `<div class="brace ${cls} an" style="top:${y0}px;height:${y1 - y0}px;${D(200 + n * 120)}"><span>${pe(label, -1, -1, p[label])}<em>${pe(label + 'n', -1, -1, p[label + 'n'] || '')}</em></span></div>`; };
       return `<div class="a-stack">${rs.map((r, i) => { const f = (r[3] || '■').startsWith('■');
         return `<div class="ly ${f ? 'f' : 'o'} an" style="top:${i * (h + 12)}px;height:${h}px;${D(150 + (n - 1 - i) * 120)}">${ic(r[0])}<b>${pe('rows', i, 1, r[1])}</b><span>${pe('rows', i, 2, r[2] || '')}</span></div>`; }).join('')}
         ${brace(grp('□'), 'top', 'o')}${brace(grp('■'), 'bot', 'f')}</div>`; }},
@@ -900,8 +935,8 @@ const ASSETS = {
       const pt = a => [cx + r * Math.cos(a * Math.PI / 180), cy + r * Math.sin(a * Math.PI / 180)];
       const arc = k => { const a0 = ang[k] + 30, a1 = ang[k] + 62; const [x0, y0] = pt(a0), [x1, y1] = pt(a1); return `M${x0.toFixed(1)} ${y0.toFixed(1)} A ${r} ${r} 0 0 1 ${x1.toFixed(1)} ${y1.toFixed(1)}`; };
       return `<div class="a-fly"><svg viewBox="0 0 760 600" aria-hidden="true"><defs><marker id="fa" viewBox="0 0 12 12" refX="10" refY="6" markerUnits="userSpaceOnUse" markerWidth="16" markerHeight="16" orient="auto"><path d="M1 1.5 L11 6 L1 10.5 Z" fill="#cfcfcf"/></marker></defs>
-        ${[0, 1, 2, 3].map(k => `<path d="${arc(k)}" fill="none" stroke="#cfcfcf" stroke-width="3" stroke-linecap="round" marker-end="url(#fa)"/>`).join('')}</svg>
-        ${n.map((t, k) => { const [x, y] = pt(ang[k]); return `<div class="nd" style="left:${x.toFixed(0)}px;top:${y.toFixed(0)}px">${pe('nodes', 0, k, t)}</div>`; }).join('')}
+        ${[0, 1, 2, 3].map(k => `<path class="arc" style="--i:${k}" d="${arc(k)}" fill="none" stroke="#cfcfcf" stroke-width="3" stroke-linecap="round" marker-end="url(#fa)"/>`).join('')}</svg>
+        ${n.map((t, k) => { const [x, y] = pt(ang[k]); return `<div class="nd" style="--i:${k};left:${x.toFixed(0)}px;top:${y.toFixed(0)}px">${pe('nodes', 0, k, t)}</div>`; }).join('')}
         <div class="ctr">${pe('c', -1, -1, p.c).replace(/\n/g, '<br>')}</div></div>`; }},
   kv: {fluid:true, name:'항목 표 (키 | 값)', nw:560, nh:420,
     props:[['t','제목'],['rows','행 (키|값)','textarea']],
@@ -1079,6 +1114,24 @@ Object.assign(ASSETS, {
       return `<div class="a-l2">${col(p.lt, 'l', p.l)}<div class="arr"></div>${col(p.rt, 'r', p.r)}<div class="nt"><i></i>${pe('note', -1, -1, p.note)}</div></div>`; }},
 });
 
+
+Object.assign(ASSETS, {
+  bridge:{name:'전환 비용 전후 (닫힌 길과 열린 길)', nw:1408, nh:600,
+    props:[['l1','첫 줄 이름'],['l2','둘째 줄 이름'],['src','출발'],['nv','NVIDIA 쪽'],['amd','대안 칩'],['wall','막힌 이유'],['ai','다리 역할'],['old','과거 기간'],['now','2026년 기간']],
+    d:{l1:'지금까지', l2:'2026년', src:'CUDA 코드', nv:'NVIDIA GPU', amd:'AMD GPU', wall:'다시 짜야 함', ai:'AI 에이전트가 이식', old:'6~12개월', now:'약 3일'},
+    render:p => `<div class="a-br">
+      <div class="row r1"><em>${pe('l1', -1, -1, p.l1)}</em>
+        <div class="bx s">${pe('src', -1, -1, p.src)}</div>
+        <div class="paths"><svg viewBox="0 0 520 200" preserveAspectRatio="none"><path d="M0 100 C160 100 200 30 520 30" stroke="#cfcfcf" stroke-width="3" fill="none"/><path d="M0 100 C160 100 200 170 300 170" stroke="#555" stroke-width="3" stroke-dasharray="8 8" fill="none"/></svg><span class="x">✕</span><span class="wl">${pe('wall', -1, -1, p.wall)}</span></div>
+        <div class="dst"><div class="bx n">${pe('nv', -1, -1, p.nv)}</div><div class="bx a off">${pe('amd', -1, -1, p.amd)}</div></div></div>
+      <div class="row r2 fragment"><em>${pe('l2', -1, -1, p.l2)}</em>
+        <div class="bx s">${pe('src', -1, -1, p.src)}</div>
+        <div class="paths"><svg viewBox="0 0 520 200" preserveAspectRatio="none"><path class="go" d="M0 100 C160 100 200 30 520 30" stroke="#cfcfcf" stroke-width="3" fill="none"/><path class="go" d="M0 100 C160 100 200 170 520 170" stroke="#76b900" stroke-width="3" fill="none"/></svg><span class="ag">${pe('ai', -1, -1, p.ai)}</span></div>
+        <div class="dst"><div class="bx n">${pe('nv', -1, -1, p.nv)}</div><div class="bx a on">${pe('amd', -1, -1, p.amd)}</div></div></div>
+      <div class="tm fragment"><div class="tr"><i class="shr"></i></div><div class="lb"><span class="o">${pe('old', -1, -1, p.old)}</span><b class="num">${pe('now', -1, -1, p.now)}</b></div></div>
+    </div>`},
+});
+
 /* ============ BASE DECK ============ */
 const SECTIONS = ['커뮤니티 효과', 'AI 시대의 독점', '대체 움직임', '플랫폼 확장'];
 let uid = 0;
@@ -1094,7 +1147,7 @@ const EXEC = 'CUDA는 플랫폼|NVIDIA는 개발 기반만 제공하고, 프로�
 const BASE = [
  {id:'cover', kind:'cover', d:'20 5', o20:0, o5:0, els:[I('cover', 0, 0, 1600, 900, {radius:0, op:0.3, anim:'none'}), I('logo', 128, 96, 420, 80, {radius:0, fit:'contain', anim:'none'}), R(128, 540, 64, 6), T('NVIDIA CUDA의 플랫폼 전략', 128, 568, 1300, 100, {size:72, weight:600, lh:1.1}), T('KAIST 플랫폼과 비즈니스 · IMMS 박병진 · PMBA 조기원', 128, 684, 1300, 32, {size:22, color:'t2'})], notes:''},
 
- {id:'s05', kind:'content', sec:0, d:'20', o20:1, min:1.5, els:[H('CUDA 플랫폼의 구조'), A('stack', 96, 208, 940, 600), I('wave', 1104, 208, 400, 600)], notes:
+ {id:'s05', kind:'content', sec:0, d:'20', o20:1, min:1.5, els:[H('CUDA 플랫폼의 구조'), A('stack', 210, 200, 1180, 600)], notes:
 `CUDA는 NVIDIA가 만든 개발 기반입니다. 아래 세 층, GPU와 CUDA, 라이브러리는 NVIDIA가 만들고, 위의 프로그램과 AI 모델은 외부 개발자가 만듭니다.
 NVIDIA는 응용 프로그램을 직접 만들지 않습니다. 대신 외부가 만든 것이 쌓일수록 GPU가 필요해지는 구조를 만들었습니다.
 
@@ -1131,7 +1184,13 @@ NVIDIA는 더 이상 그래픽카드 회사가 아니라 AI 인프라 회사입�
 하지만 옮기려면 CUDA로 짠 코드를 다시 써야 했습니다. 지금까지는 그 비용이 대체를 막았습니다.
 
 [메모] 모두 추정치이며 출처마다 차이가 있다(AMD 5~12%).`},
- {id:'s11', kind:'scene', d:'20 5', o20:8, o5:3, min:1.5, min5:1, els:[A('sc_agent', 0, 0, 1600, 900), H('AMD 이식, 6~12개월에서 3일로')], notes:
+ {id:'pivot', kind:'content', sec:2, d:'20 5', o20:7.5, o5:3, min:1.5, min5:1.25, els:[H('AMD로 가는 길이 열렸다'), A('bridge', 96, 200, 1408, 600)], notes:
+`지금까지 CUDA 코드는 NVIDIA GPU에서만 돌았습니다. AMD로 옮기려면 다시 짜야 했고, 그 비용이 대체를 막았습니다.
+2026년에 이 길이 열렸습니다. Anthropic은 AI 에이전트가 CUDA 추론 코드를 AMD MI355X용으로 옮기는 데 약 3일이 걸렸다고 밝혔습니다. 예전에는 6~12개월이 걸리던 일입니다.
+해자의 핵심이던 전환 비용이 AI 때문에 무너지기 시작한 것입니다.
+
+[메모] 첫 클릭에 2026년 줄, 두 번째 클릭에 기간 막대가 12개월에서 3일로 줄어든다. 수치는 투자자 대상 자료의 회사 자체 발표이며 단일 모델의 추론 작업에 한정. 이 자료는 Anthropic의 모델인 Claude가 정리를 도왔다.`},
+ {id:'s11', kind:'scene', d:'', o20:8, o5:3, min:1.5, min5:1, els:[A('sc_agent', 0, 0, 1600, 900), H('AMD 이식, 6~12개월에서 3일로')], notes:
 `그 비용이 2026년에 무너지기 시작했습니다. Anthropic은 AI 모델이 CUDA 추론 코드를 AMD MI355X용으로 옮기는 데 약 3일이 걸렸다고 밝혔습니다. 예전에는 6~12개월이 걸리던 작업입니다.
 
 [메모] 투자자 대상 자료에 실린 회사 자체 발표이며, 모델 하나의 추론 작업에 한정된 수치다. 이 자료는 Anthropic의 모델인 Claude가 정리를 도왔다. 질문이 나오면 이 단서를 그대로 말한다. OpenAI도 자체 칩용 커널 작성을 AI에게 맡겼다는 2차 보도가 있다.`},
@@ -1141,12 +1200,12 @@ AI가 이식을 맡으면 두 번째 힘이 약해집니다. 축적은 남아 �
  {id:'s12', kind:'content', sec:2, d:'20', o20:10, min:1, els:[H('NVIDIA의 반론'), A('debate', 96, 216, 1408, 480), A('sharebar', 96, 760, 1408, 24)], notes:
 `NVIDIA의 반론도 있습니다. AI는 CUDA 코드도 더 빨리 짜 주기 때문에 오히려 CUDA 생태계가 더 커진다는 것입니다. 점유율도 아직 80%대입니다. 지금 판단하기는 이릅니다.`},
 
- {id:'s13', kind:'scene', d:'20 5', o20:11, o5:5, min:1.5, min5:0.5, els:[A('sc_hub', 0, 0, 1600, 900), H('허깅페이스 인수 결정')], notes:
+ {id:'s13', kind:'scene', d:'20', o20:11, o5:5, min:1.5, min5:0.5, els:[A('sc_hub', 0, 0, 1600, 900), H('허깅페이스 인수 결정')], notes:
 `2026년 9월 NVIDIA는 허깅페이스를 129억 달러에 인수하기로 했습니다. 허깅페이스는 개발자 1,800만 명이 모델 300만 개를 공유하는 오픈소스 AI 플랫폼입니다. 거래는 규제 승인을 거쳐 2027년 상반기에 끝날 예정입니다.
 NVIDIA는 인수 후에도 플랫폼을 열어 두고, NVIDIA 하드웨어를 쓰지 않아도 되게 하겠다고 공시했습니다.
 
 [메모] 인수 발표(9월)가 Anthropic 발표(11월)보다 먼저다. 대응 관계로 말하지 않는다. "인수했다"가 아니라 "인수하기로 했다".`},
- {id:'hf2', kind:'content', sec:3, o5:6, min5:0.75, d:'20 5', o20:12, min:1.5, els:[H('더 큰 플랫폼, 오픈소스 생태계'), A('layers2', 96, 208, 1408, 460), A('sticker', 96, 712, 1408, 96, {lb:'해석', t:'칩에 묶는 플랫폼에서, 모델이 모이는 생태계까지 보유하는 플랫폼으로 범위를 넓히는 움직임으로 읽을 수 있다'})], notes:
+ {id:'hf2', kind:'content', sec:3, o5:5, min5:0.75, d:'20 5', o20:12, min:1.5, els:[H('더 큰 플랫폼, 오픈소스 생태계'), A('layers2', 96, 208, 1408, 460), A('sticker', 96, 712, 1408, 96, {lb:'해석', t:'칩에 묶는 플랫폼에서, 모델이 모이는 생태계까지 보유하는 플랫폼으로 범위를 넓히는 움직임으로 읽을 수 있다'})], notes:
 `왼쪽은 지금까지의 CUDA 플랫폼입니다. NVIDIA는 GPU, CUDA, 라이브러리를 보유하고, 그 위의 프레임워크와 모델은 외부가 만들었습니다.
 허깅페이스 인수가 끝나면 맨 위에 모델 허브가 하나 더 생깁니다. 외부가 만든 모델이 모이는 자리를 NVIDIA가 보유하게 됩니다. 다만 이 층은 NVIDIA 칩에 묶여 있지 않습니다.
 칩에 묶는 플랫폼에서, 모델이 모이는 생태계까지 보유하는 플랫폼으로 범위를 넓히는 움직임으로 읽을 수 있습니다.
@@ -1155,7 +1214,7 @@ NVIDIA는 인수 후에도 플랫폼을 열어 두고, NVIDIA 하드웨어를 �
  {id:'s15', kind:'content', sec:3, d:'20', o20:13, o5:5, min:1, min5:0.5, els:[I('keynote', 0, 0, 1600, 900, {radius:0, op:0.2, anim:'none'}), H('남은 질문'), T('고착 없이도<br><span class="g">GPU 수요를 지킬 수 있는가</span>', 96, 232, 1408, 220, {size:84, weight:600, lh:1.15}),
    A('cards', 96, 540, 1408, 240, {items:'shield|허깅페이스의 중립성|AMD와 아마존도 투자자다. 중립성이 유지되는지가 첫 신호다|□\nrobot|AI 이식의 적용 범위|지금은 추론 작업이다. 학습으로 넓어지는지 본다|□\nchart|점유율 추이|2023년 약 87%에서 2026년 약 81%로|■', step:false})], notes:
 `CUDA는 커뮤니티가 쌓아 주고, 그것을 옮기기 어려워서 강했습니다. AI가 옮기는 일을 맡으면 두 번째 힘은 약해집니다. NVIDIA는 묶어 두지 않는 플랫폼을 인수하기로 했습니다. 고착 없이도 GPU 수요를 지킬 수 있는지가 앞으로 볼 지점입니다.`},
- {id:'take', kind:'content', sec:-1, d:'20 5', o20:14, o5:7, min:1, min5:0.5, els:[H('Take home'), A('execsum', 96, 200, 1408, 620, {rows:EXEC})], notes:
+ {id:'take', kind:'content', sec:-1, d:'20 5', o20:14, o5:6, min:1, min5:0.5, els:[H('Take home'), A('execsum', 96, 200, 1408, 620, {rows:EXEC})], notes:
 `정리하겠습니다. 화면의 여섯 줄이 오늘 발표의 전부입니다.`},
  {id:'refs', kind:'refs', d:'20 5', o20:99, o5:99, els:[H('참고자료'), T(
 '<b>CUDA 개발자 수</b> Jon Peddie Research, CUDA turns 20 with 11 million developers (NVIDIA SC26 발표)<br><b>AlexNet</b> Krizhevsky, Sutskever, Hinton. ImageNet classification with deep convolutional neural networks (2012)<br><b>FY2026 실적</b> NVIDIA Announces Financial Results for Fourth Quarter and Fiscal 2026<br><b>데이터센터 13배</b> PC Gamer, FY2026 데이터센터 실적 보도 (CFO 발언)<br><b>대형 클라우드 비중</b> TechRepublic (CFO 발언)<br><b>점유율</b> NewMarketPitch, Silicon Analysts, SwotPal, Oreate AI (추정치)<br><b>Anthropic AMD 이식</b> The Decoder, Mezha (Anthropic IPO 로드쇼 자료 보도)<br><b>NVIDIA 반론</b> Computer Weekly, CUDA at 20 (Ian Buck)<br><b>허깅페이스 인수</b> NVIDIA 블로그, SEC 8-K (2026.9.2), Yahoo Finance, 서울신문, IT데일리<br><b>FY2017 매출 구성, 제품별 가격대</b> 4-2조 발표 자료 NVIDIA Blue Ocean Strategy v2 (2026.5.20)<br><b>교재</b> Parker, Van Alstyne, Choudary. 《플랫폼 레볼루션》<br><b>장면</b> 재현 화면은 발표자가 그린 도식이며 실제 제품 화면이 아님. 사진은 4-2조 발표 자료(2026.5.20). NVIDIA 로고는 NVIDIA의 상표',
@@ -1889,7 +1948,7 @@ function move(dir){ const L = list(); const i = L.findIndex(s => s.id === curId)
   const a = L[i], b = L[j]; const oa = ord(a), ob = ord(b); setOrd(a, ob); setOrd(b, oa); if (oa === ob) setOrd(a, ob + dir * 0.01); changed(a); changed(b); renderAll(); }
 $('#bUp').onclick = () => move(-1); $('#bDown').onclick = () => move(1);
 $('#bText').onclick = addText; $('#bUndo').onclick = () => doUndo();
-document.querySelectorAll('#bar .seg button').forEach(b => b.onclick = () => { deck = b.dataset.deck; selId = null; renderAll(); });
+document.querySelectorAll('#bar .seg button').forEach(b => b.onclick = () => { deck = b.dataset.deck; clearSel(); hideAI(); curId = (list()[0] || {}).id; renderAll(); });
 function setTab(){ document.querySelectorAll('#tabs button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.tab === tab))); }
 document.querySelectorAll('#tabs button').forEach(b => b.onclick = () => { tab = b.dataset.tab; setTab(); renderPanel(); });
 
@@ -2403,12 +2462,12 @@ $('#aibar').addEventListener('click', ev => { const b = ev.target.closest('[data
 
 runAI = runAIv2;
 /* ============ PRESENT (Reveal.js) ============ */
-let rv = null; let wentFull = false;
+let rv = null; let wentFull = false; let presentFromCurrent = false;
 function fmt(m){ if (m == null || m === '') return ''; const t = Math.round(parseFloat(m) * 60); return Math.floor(t / 60) + ':' + String(t % 60).padStart(2, '0'); }
 function present(){
   if (editingText) finishText();
   if (typeof Reveal === 'undefined') { return; }
-  const L = list(); const start = Math.max(0, L.findIndex(s => s.id === curId));
+  const L = list(); const start = presentFromCurrent ? Math.max(0, L.findIndex(s => s.id === curId)) : 0; presentFromCurrent = false;
   const ov = $('#present'); ov.hidden = false;
   ov.querySelector('.slides').innerHTML = L.map(s => `<section data-id="${esc(s.id)}" data-transition="${['fade', 'slide', 'convex', 'zoom', 'none'].includes(s.tr) ? s.tr : 'fade'}"><div class="stage">${slideHTML(s, 'present')}</div></section>`).join('');
   rv = new Reveal(ov.querySelector('.reveal'), {width:1600, height:900, margin:0, minScale:0.05, maxScale:4, center:false, hash:false, history:false, embedded:true, keyboardCondition:null,
@@ -2455,7 +2514,7 @@ function exitPresent(){
   wentFull = false; selId = null; renderAll();
 }
 document.addEventListener('fullscreenchange', () => { if (!document.fullscreenElement && wentFull && rv) exitPresent(); });
-$('#bPlay').onclick = present;
+$('#bPlay').onclick = ev => { presentFromCurrent = ev.shiftKey || ev.altKey; present(); };
 let hotT; $('#present').addEventListener('mousemove', () => { const o = $('#present'); o.classList.add('hot'); clearTimeout(hotT); hotT = setTimeout(() => o.classList.remove('hot'), 1600); });
 
 /* ============ BOOT ============ */
