@@ -1,0 +1,46 @@
+{
+  "acceptance_evidence": [
+    "원제·ID·H/P 계보 보존 (tools/check_catalog.py 통과)",
+    "바꾼 제목의 이전 값 보존",
+    "새 사실 주장 추가 없음, 전제 미검증 항목 표시",
+    "LANGUAGE.md 체크리스트 기준 독립 편집 리뷰"
+  ],
+  "audience_ref": "channel/audience.json",
+  "claim": {
+    "actor": "claude-code",
+    "claimed_at": "2026-11-27T14:18:55.982585Z",
+    "lease_expires_at": "2026-11-27T20:18:55.982606Z",
+    "model": "claude-opus-5-5",
+    "session_id": "session_01PGnDYYRkzDyviPFVMqxNV2",
+    "session_id_source": "explicit"
+  },
+  "current_delivery_id": null,
+  "episode_id": null,
+  "history": [
+    {
+      "actor": "claude-code",
+      "at": "2026-11-27T14:18:55.982620Z",
+      "claim": {
+        "actor": "claude-code",
+        "claimed_at": "2026-11-27T14:18:55.982585Z",
+        "lease_expires_at": "2026-11-27T20:18:55.982606Z",
+        "model": "claude-opus-5-5",
+        "session_id": "session_01PGnDYYRkzDyviPFVMqxNV2",
+        "session_id_source": "explicit"
+      },
+      "event": "CLAIMED"
+    }
+  ],
+  "objective": "2026-11-27 사용자 지시(CIB-051)에 따라 시즌 정본 32편, 원본 카탈로그 H001–H100의 편집 필드, 재선정안 P001–P100, 채널·편집 운영 문서를 비유·비약·과장·의인화 없이 다시 쓴다. ID·계보·원제·출처 스냅샷은 보존하고, 전제가 검증되지 않은 주제는 표시한다.",
+  "release_implication": "none: task completion is not video READY or publication",
+  "required_review_roles": [
+    "editorial",
+    "evidence"
+  ],
+  "revision": 0,
+  "scope": "channel",
+  "status": "CLAIMED",
+  "task_id": "TASK-004",
+  "title": "LANGUAGE.md 기준으로 편집 자산 전면 재작성",
+  "updated_at": "2026-11-27T14:18:55.982624Z"
+}

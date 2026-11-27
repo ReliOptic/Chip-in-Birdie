@@ -6,6 +6,7 @@
 - viewer일 경우 실제 새 컨텍스트 입력 범위:
 - 판정: pass / changes_requested
 - 검토 방식: 모델 검토 / 실제 사람 시청 / 도구 검사 중 실제 수행한 것:
+- `editorial/LANGUAGE.md` 체크리스트 적용 여부와 범위:
 
 ## 발견
 

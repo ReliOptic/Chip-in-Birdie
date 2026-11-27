@@ -7,7 +7,7 @@
 | 역할 | 입력 | 산출 | 독립 검토 |
 |---|---|---|---|
 | 조사 | 사건·질문·공통 관객·기존 출처 | 주장별 근거·정확한 구간·반론·한계 | evidence |
-| 편집 | 검증 범위·사건·채널 약속 | 브리프·제목 후보·대본·편성 연결 | editorial, viewer |
+| 편집 | 검증 범위·사건·채널 약속·[표현과 논리 기준](../editorial/LANGUAGE.md) | 브리프·제목 후보·대본·편성 연결 | editorial, viewer |
 | 시각화·제작 | 대본 리비전·주장·음성 조건 | 장면·모델·영상·자막·오디오 | evidence, editorial, viewer 및 별도 미디어 QA |
 | 운영·분석 | 실제 관측·기간·유입 조건 | 관측 요약·수정 가설·검증 계획 | evidence, editorial |
 
@@ -38,7 +38,7 @@ python3 tools/channel.py task submit TASK-002 --actor worker-a --session actual-
 
 ## 독립 리뷰
 
-리뷰 메모에는 실제 파일 위치와 관찰을 적는다. 리뷰를 통과시키기 위한 일반적인 칭찬, 사용자 요구를 완화해 만든 합격, 확인하지 않은 영상 재생 주장은 허용하지 않는다.
+리뷰 메모에는 실제 파일 위치와 관찰을 적는다. editorial·viewer 리뷰는 문장 표현을 [LANGUAGE](../editorial/LANGUAGE.md) 리뷰 체크리스트로도 검토한다. 리뷰를 통과시키기 위한 일반적인 칭찬, 사용자 요구를 완화해 만든 합격, 확인하지 않은 영상 재생 주장은 허용하지 않는다.
 
 ```bash
 python3 tools/channel.py review add --task TASK-002 --role evidence --reviewer reviewer-b --model actual-model-id --session review-session-b --verdict pass --notes-file reviews/H039-evidence.md
@@ -87,6 +87,6 @@ python3 tools/channel.py task complete TASK-002 --actor coordinator
 
 ## 협업을 재현하는 기준
 
-같은 파일의 오래된 복사본을 근거로 승인하지 않도록 해시를 확인한다. 모델은 서로의 추론을 복제하기보다 공통 입력과 자신의 증거로 검토한다. 리뷰가 서로 충돌하면 중요도·근거·시청 영향으로 정리하고, 해결되지 않은 차단 의견을 다수결이나 평균 점수로 없애지 않는다.
+같은 파일의 오래된 복사본을 근거로 승인하지 않도록 해시를 확인한다. 모델은 서로의 추론을 그대로 따르지 않고 공통 입력과 자신의 증거로 검토한다. 리뷰가 서로 충돌하면 중요도·근거·시청 영향으로 정리하고, 해결되지 않은 차단 의견을 다수결이나 평균 점수로 없애지 않는다.
 
 구조 검사·모델 리뷰·사실 검증·실제 시청·게시 성과는 각각 다른 증거다. `verification/`에는 이번 저장소 자체의 검사 범위를 남긴다.
